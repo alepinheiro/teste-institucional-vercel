@@ -1,19 +1,19 @@
 <template>
 <div class="flex mt-auto mb-auto justify-between">
   <div class="flex ">
-    <div class="hover:text-primary cursor-pointer rounded-lg px-4 py-1">
-      <router-link to="/sobre" > Sobre </router-link>
+    <div class=" cursor-pointer rounded-lg px-4 py-1">
+      <router-link to="/sobre" class="" > Sobre </router-link>
     </div>
-    <div class="hover:text-primary cursor-pointer rounded-lg px-4 py-1">
+    <div class=" cursor-pointer rounded-lg px-4 py-1">
       <router-link to="/home-equity" > Home Equity  </router-link>
     </div>
-    <div class="hover:text-primary cursor-pointer rounded-lg px-4 py-1">
+    <div class=" cursor-pointer rounded-lg px-4 py-1">
       <router-link to="/financiamento-imobiliario" > Financiamento </router-link>
     </div>
-    <div class="hover:text-primary cursor-pointer rounded-lg px-4 py-1">
+    <div class=" cursor-pointer rounded-lg px-4 py-1">
       <router-link to="/parceiro" > Seja um Parceiro </router-link>
     </div>
-    <div class="hover:text-primary cursor-pointer rounded-lg px-4 py-1">
+    <div class=" cursor-pointer rounded-lg px-4 py-1">
       <a href="https://seja.best/"  style=" text-decoration: none;"
         target="_blank"> Portal</a>
     </div>
