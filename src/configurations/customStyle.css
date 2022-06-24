@@ -20,8 +20,17 @@
 .optionsCard {
   @apply cursor-pointer rounded-xl focus:border-secondary p-4 border-1 border-gray-300 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 hover:shadow-lg ;
 }
+.maxWidth{ 
+	@apply w-full  max-w-[1200px]  mr-auto ml-auto
+}
 
-
+.bgBannerPrimary {
+	background-image: url('https://res.cloudinary.com/djheoavst/image/upload/v1655931236/Imagens%20site/CAPA_2_tlmhob.png'); 
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
 /* move from / to  */
 
 @-webkit-keyframes moveToLeft {

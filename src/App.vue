@@ -1,17 +1,17 @@
 <template>
-  <div id="app" class="w-full  ">
+  <div id="app" class="w-full   font-sans">
     <router-view/>
-    <footer />
+    <footerComponent />
     <notificationPopUp />
   </div>
 </template>
 <script lang='ts'>
 import { NotificationInterface } from '@/interfaces/notification.interface';
 import notificationPopUp from '@/components/base/notificationPopUp.component.vue';
-import footer from '@/components/structure/footer.component.vue';
+import footerComponent from '@/components/structure/footer.component.vue';
 import { defineComponent } from 'vue'
 export default defineComponent({
-    components:{ notificationPopUp, footer  },
+    components:{ notificationPopUp, footerComponent  },
     data() {
       return{
         notification : {
@@ -23,6 +23,7 @@ export default defineComponent({
         } as NotificationInterface,
       }
     },
+   
     
 })
 </script>

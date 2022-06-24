@@ -12,6 +12,7 @@ module.exports = {
       xl: { min: "1280px" },
     },
     colors: {
+      WhiteTransparency:"var(--WhiteTransparency)",
       primary: "var(--primaryColor)",
       secondary: "var(--secondaryColor)",
       complementaryColor1:"var(--complementaryColor1)",
