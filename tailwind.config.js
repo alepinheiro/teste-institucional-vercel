@@ -13,6 +13,7 @@ module.exports = {
     },
     colors: {
       WhiteTransparency:"var(--WhiteTransparency)",
+      grayTransparency:"var(--grayTransparency)",
       primary: "var(--primaryColor)",
       secondary: "var(--secondaryColor)",
       complementaryColor1:"var(--complementaryColor1)",

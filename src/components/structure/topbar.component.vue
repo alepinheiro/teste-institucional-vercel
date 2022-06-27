@@ -4,8 +4,8 @@
     <img v-if="position==='top'" :src="$options.imageConfig.logoSejabest"  class="w-auto h-12 "/>
     <img v-if="position!=='top'" :src="$options.imageConfig.logoSejabestWhite"  class="w-auto h-12 "/>
   </div>
-  <menuComponent class="sm:hidden md:hidden" :class="{'text-white':(position!=='top'),'text-primary':(position==='top')}" />
-  <menuMobileComponent class="xl:hidden lg:hidden"  :color="color" />
+  <menuComponent class="sm:hidden md:hidden" :linkStyle="linkStyle" />
+  <menuMobileComponent class="xl:hidden lg:hidden"  :color="color" :linkStyle="linkStyle" />
 </div>
 </template>
 <script lang="ts">
@@ -21,11 +21,13 @@ export default defineComponent({
   data() {
     return {
       color:'fill-white',
+      linkStyle:'linkStyleDark'
     }
   },
   mounted() {
     if(this.position === 'top'){
       this.color = 'fill-textPrimary'
+      this.linkStyle = 'linkStyle'
     }
   },
 })
