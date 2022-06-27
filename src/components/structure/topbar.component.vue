@@ -1,5 +1,5 @@
 <template>
-<div class="w-full sm:px-2 md:px-2 flex py-4 justify-between" :class="{'bg-transparent':(position!=='top'),'bg-white':(position==='top')}">
+<div class="w-full  flex py-4 justify-between" :class="{'bg-transparent':(position!=='top'),'bg-white':(position==='top')}">
   <div class="pr-8">
     <img v-if="position==='top'" :src="$options.imageConfig.logoSejabest"  class="w-auto h-12 "/>
     <img v-if="position!=='top'" :src="$options.imageConfig.logoSejabestWhite"  class="w-auto h-12 "/>
@@ -24,8 +24,8 @@ export default defineComponent({
     }
   },
   mounted() {
-    if(this.position==='top'){
-      color='fill-menuIconColor'
+    if(this.position === 'top'){
+      this.color = 'fill-textPrimary'
     }
   },
 })
