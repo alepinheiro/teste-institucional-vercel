@@ -1,0 +1,22 @@
+:root {
+  --primaryColor: #0063f2;
+  --secondaryColor: #10069f;
+  --complementaryColor1: #FF671F;
+  --complementaryColor2: #0524DD;
+  --complementaryColor3: #A7A8AA;
+  --borderColor: #e4e4e7;
+  --bgDefaultColor: #fff;
+  --bgDarkColor: #e4e4e7;
+  --bglightColor: #fff;
+  --bgPopUpColor: #fff;
+  --textPrimaryColor: #3f3f46;
+  --textButtonPrimaryColor: #fff;
+  --textButtonSecondaryColor: #3f3f46;
+  --textSecondaryColor: #A7A8AA;
+  --textTopBarColor: #fff;
+  --inputColor: #e4e4e7;
+  --menuIconColor: #3f3f46;
+  --systemIconColor:#0063f2; 
+  --WhiteTransparency:#ffffff6d;
+
+  }
