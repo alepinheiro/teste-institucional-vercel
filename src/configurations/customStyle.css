@@ -21,13 +21,22 @@
 	@apply cursor-pointer rounded-xl focus:border-secondary p-4 border-1 border-gray-300 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 hover:shadow-lg;
   }
   .maxWidth {
-	@apply w-full  max-w-[1200px]  mr-auto ml-auto px-4;
+	@apply w-full  max-w-[1300px]  mr-auto ml-auto px-4;
   }
   .linkStyle {
 	@apply  text-primary  px-2 py-1 rounded-xl cursor-pointer mx-4 sm:mt-4;
   }
   .linkStyleDark {
 	@apply  text-white  sm:text-primary px-2 py-1 rounded-xl  cursor-pointer mx-4 sm:mt-4;
+  }
+  .buttonOrange{
+	@apply rounded-xl py-2 px-8 bg-complementaryColor1 text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100;
+  }
+  .buttonBlue{
+	@apply gradienteSB rounded-xl py-2 px-12  text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105;
+  }
+  .buttonWhite{
+	@apply bg-white rounded-xl py-2 px-12  text-primary font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105;
   }
   .lineDecoration{
     border-bottom: 5px solid transparent;
@@ -43,6 +52,11 @@
     height: 120px;
     border-radius: 10px;  /* will have no effect */
   }
+  .textDecoration{
+	border-bottom: 5px solid transparent;
+    border-image: linear-gradient(45deg, rgba(255, 0, 0, 0) , #27E0FF);
+    border-image-slice: 1;
+  }
   
   
   .bgBannerPrimary {
@@ -51,6 +65,36 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
+  }
+  .bgBannerArrowRight {
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656417395/Imagens%20site/Layout_-_1080x1080-1_hjk7cn.png");
+	background-size: 50% 100%;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: right 0%;
+  }
+  .bgBannerArrowRightSM {
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656417395/Imagens%20site/Layout_-_1080x1080-1_hjk7cn.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+  }
+  .bgBannerProducts{
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656685690/Imagens%20site/fundo_site_meio_xmhlui.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: right 0%;
+  }
+  .bgBannerBlue {
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656607422/Imagens%20site/Fundo_azul_ueukye.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
   }
   /* move from / to  */
   
@@ -169,6 +213,10 @@
   .nextPage {
 	-webkit-animation: moveFromRight 0.7s ease both;
 	animation: moveFromRight 0.7s ease both;
+  }
+  .AnimationmoveFromBottom{
+	-webkit-animation: moveFromBottom  0.7s ease both;
+	animation: moveFromBottom  0.7s ease both;
   }
   
  
