@@ -28,6 +28,9 @@ const image = {
     userWhite:"https://res.cloudinary.com/djheoavst/image/upload/v1656360657/Sejabest-Icones/Outline-branco/Usuario-outline-branco_nsb99j.svg",
     pcWhite:"https://res.cloudinary.com/djheoavst/image/upload/v1656360653/Sejabest-Icones/Outline-branco/Notebook-outline-branco_wsbxow.svg",
     moneyWhite:"https://res.cloudinary.com/djheoavst/image/upload/v1656360649/Sejabest-Icones/Outline-branco/Dinheiro-outline-branco_l3dso9.svg",
+    percentageWhite:"https://res.cloudinary.com/djheoavst/image/upload/v1656360653/Sejabest-Icones/Outline-branco/Porcentagem-outline-branco_wgre55.svg",
+    calendarWhite:"https://res.cloudinary.com/djheoavst/image/upload/v1656360647/Sejabest-Icones/Outline-branco/Calendario-outline-branco_q67zii.svg",
+    houseWhite:"https://res.cloudinary.com/djheoavst/image/upload/v1656360647/Sejabest-Icones/Outline-branco/Casa-outline-branco_qboapb.svg",
   },
   
 };
