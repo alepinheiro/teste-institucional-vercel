@@ -28,7 +28,7 @@
               <div class="text-xl sm:text-lg">Nos conte de quanto você precisa?</div>
               <inputMoney v-model="value" id="value" label=""  placeholder=""  />
               <div class="buttonBlue mt-12 text-center xl:text-xl w-full">
-                <a href="https://simulador.seja.best/"  style=" text-decoration: none;"
+                <a :href="$options.appSimulator"  style=" text-decoration: none;"
                   target="_blank">Simule seu crédito</a>
               </div>
           </div>

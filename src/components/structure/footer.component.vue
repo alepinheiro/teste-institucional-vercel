@@ -31,7 +31,7 @@
         <router-link to="/home-equity" class=" hover:text-textPrimary">Empréstimo com garantia de imóvel </router-link>
       </div>
       <div class="font-semibold text-textSecondary pb-4">
-        <a href="https://simulador.seja.best/" class="hover:text-textPrimary" style=" text-decoration: none;"
+        <a :href="$options.appSimulator" class="hover:text-textPrimary" style=" text-decoration: none;"
           target="_blank">Simule seu crédito </a>
       </div>
       <div class="font-semibold text-textSecondary pb-4">

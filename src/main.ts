@@ -34,6 +34,8 @@ app.component('selectBase', selectBase)
 app.mixin({
   created () {
       this.$options.imageConfig = image
+      this.$options.appSimulator = "https://simulador.seja.best/"
+      this.$options.appPartner = "https://parceiros.seja.best/register"
   }
 });
 app.config.globalProperties.$filters = {
