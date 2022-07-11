@@ -96,23 +96,48 @@
         </div>
       </div>
        
-
-
       <div class="w-full py-8 sm:pt-12 sm:pb-12 ">
         <div class="maxWidth flex h-screen sm:h-full" >
           <div class="mt-auto mb-auto w-full" >
-            <div class="text-center text-3xl  font-semibold text-primary pb-6">
+            <div class="text-center text-4xl  font-semibold text-primary pb-6">
               <span class=" textDecoration">Nossos números</span>  
             </div>
             <div class="flex w-full justify-around  sm:flex-wrap pt-8 sm:pt-0">
                 <div class="w-64 sm:w-full text-center">
                   <img :src="$options.imageConfig.icons.users" class="w-full sm:w-5/12 mr-auto ml-auto" />
-                  <div class="text-3xl font-semibold text-primary">+1000</div>
+                  <div class="text-3xl font-semibold text-primary">+2000</div>
                   <div class="text-primary pt-2">Propostas por mês</div>
                 </div>
                 <div class="w-64 sm:w-full text-center">
                   <img :src="$options.imageConfig.icons.money" class="w-full sm:w-5/12 mr-auto ml-auto" />
-                  <div class="text-3xl  font-semibold text-primary">+ R$300 milhões</div>
+                  <div class="text-3xl  font-semibold text-primary">+ R$400 milhões</div>
+                  <div class="text-primary pt-2">Emprestados</div>
+                </div>
+                <div class="w-64 sm:w-full text-center">
+                  <img :src="$options.imageConfig.icons.car" class="w-full sm:w-5/12 mr-auto ml-auto" />
+                  <div class="text-3xl font-semibold text-primary">+ R$2.5 bilhões</div>
+                  <div class="text-primary pt-2">Em solicitações</div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full py-8 sm:pt-12 sm:pb-12 ">
+        <div class="maxWidth flex h-screen sm:h-full" >
+          <div class="mt-auto mb-auto w-full" >
+            <div class="text-center text-4xl  font-semibold text-primary pb-6">
+              <span class=" textDecoration">Nossos números</span>  
+            </div>
+            <div class="flex w-full justify-around  sm:flex-wrap pt-8 sm:pt-0">
+                <div class="w-64 sm:w-full text-center">
+                  <img :src="$options.imageConfig.icons.users" class="w-full sm:w-5/12 mr-auto ml-auto" />
+                  <div class="text-3xl font-semibold text-primary">+2000</div>
+                  <div class="text-primary pt-2">Propostas por mês</div>
+                </div>
+                <div class="w-64 sm:w-full text-center">
+                  <img :src="$options.imageConfig.icons.money" class="w-full sm:w-5/12 mr-auto ml-auto" />
+                  <div class="text-3xl  font-semibold text-primary">+ R$400 milhões</div>
                   <div class="text-primary pt-2">Emprestados</div>
                 </div>
                 <div class="w-64 sm:w-full text-center">

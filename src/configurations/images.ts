@@ -25,7 +25,10 @@ const image = {
   phoneSemFila:"https://res.cloudinary.com/djheoavst/image/upload/v1657225654/mockups/CELULAR_01_PNG_1_hwa406.png",
   appClientMd:"https://res.cloudinary.com/djheoavst/image/upload/v1657304121/Imagens%20site/sess%C3%B5es_site_9_tcd8sl.png",
   clients:"https://res.cloudinary.com/djheoavst/image/upload/v1657539930/Imagens%20site/sess%C3%B5es_site_10_zl92tz.png",
+  graphic:"https://res.cloudinary.com/djheoavst/image/upload/v1657548973/Imagens%20site/sess%C3%B5es_site_11_gsbi6j.png",
   icons:{
+    check:"https://res.cloudinary.com/djheoavst/image/upload/v1656360907/Sejabest-Icones/Filled%20%28preenchido%29/Correto-filled_abhngh.svg",
+    error:"https://res.cloudinary.com/djheoavst/image/upload/v1656360908/Sejabest-Icones/Filled%20%28preenchido%29/Errado-filled_ptzctu.svg",
     doc:"https://res.cloudinary.com/djheoavst/image/upload/v1656360907/Sejabest-Icones/Filled%20%28preenchido%29/Documento-filled_cz864d.svg",
     phone:"https://res.cloudinary.com/djheoavst/image/upload/v1656360913/Sejabest-Icones/Filled%20%28preenchido%29/Smartphone-filled_yzxtzy.svg",
     calendar:"https://res.cloudinary.com/djheoavst/image/upload/v1656360905/Sejabest-Icones/Filled%20%28preenchido%29/Calendario-filled_tbhh1l.svg",
