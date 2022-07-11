@@ -17,7 +17,7 @@
       <router-link to="/parceiro" class="lineDecoration" > Seja um Parceiro </router-link>
     </div>
     <div :class="linkStyle">
-      <a href="https://seja.best/"  style=" text-decoration: none;" class="lineDecoration"
+      <a href="https://seja.best/portal/#destaques"  style=" text-decoration: none;" class="lineDecoration"
         target="_blank"> Portal</a>
     </div>
     

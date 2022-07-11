@@ -20,7 +20,7 @@
       <router-link to="/parceiro" class="hover:text-primary hover:font-semibold lineDecoration" > Seja um Parceiro </router-link>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" :class="linkStyle">
-      <a href="https://seja.best/"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold lineDecoration"
+      <a href="https://seja.best/portal/#destaques"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold lineDecoration"
         target="_blank"> Portal</a>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" class="mt-4 buttonComplementaryColor1">
