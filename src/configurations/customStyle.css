@@ -29,10 +29,10 @@
   .linkStyleDark {
 	@apply  text-white  sm:text-primary px-2 py-1 rounded-xl  cursor-pointer mx-4 sm:mt-4;
   }
-  .buttonOrange{
+  .buttonComplementaryColor1{
 	@apply rounded-xl py-2 px-8 bg-complementaryColor1 shadow-xl text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100;
   }
-  .buttonBlue{
+  .buttonGradient{
 	@apply gradienteSB rounded-xl py-2 px-12 shadow-xl text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105;
   }
   .buttonWhite{
@@ -81,7 +81,37 @@
 		height: 100%;
 		position: relative;
 	}
-	
+  }
+  .bgFinan{
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657287582/Imagens%20site/sess%C3%B5es_site_3_pul4z5.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  .bgWhiteArrow {
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657291092/Imagens%20site/sess%C3%B5es_site_4_hrafo9.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+  }
+  .bgBlueHalf{
+    background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657300947/Imagens%20site/sess%C3%B5es_site_5_cp0iwo.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  @media (max-width: 667px) {
+	.bgBlueHalf {
+		background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657300267/Imagens%20site/sess%C3%B5es_site_5_rlaba6.png");
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
   }
   .bgBannerArrowRight {
 	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656417395/Imagens%20site/Layout_-_1080x1080-1_hjk7cn.png");

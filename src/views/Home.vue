@@ -27,7 +27,7 @@
               <div class="text-3xl sm:text-2xl font-semibold pb-3 text-primary "><span class=" textDecoration"> Vamos começar?</span></div>
               <div class="text-xl sm:text-lg">Nos conte de quanto você precisa?</div>
               <inputMoney v-model="value" id="value" label=""  placeholder=""  />
-              <div class="buttonBlue mt-12 text-center xl:text-xl w-full">
+              <div class="buttonGradient mt-12 text-center xl:text-xl w-full">
                 <a :href="$options.appSimulator"  style=" text-decoration: none;"
                   target="_blank">Simule seu crédito</a>
               </div>

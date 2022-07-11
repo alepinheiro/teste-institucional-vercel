@@ -23,7 +23,7 @@
       <a href="https://seja.best/"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold lineDecoration"
         target="_blank"> Portal</a>
     </div>
-    <div @click="openProfileMenu= !openProfileMenu" class="mt-4 buttonOrange">
+    <div @click="openProfileMenu= !openProfileMenu" class="mt-4 buttonComplementaryColor1">
       <a :href="$options.appSimulator"  style=" text-decoration: none;"
         target="_blank">
         Simule seu crédito 

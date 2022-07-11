@@ -136,7 +136,7 @@
               E aí vem ser <span class=" textDecoration">Best</span> com a gente ?
             </div>
             <div class="flex sm:flex-wrap w-full justify-center pt-12">
-              <div class="buttonOrange mr-4 w-64 sm:w-full text-center">
+              <div class="buttonComplementaryColor1 mr-4 w-64 sm:w-full text-center">
                 <a :href="$options.appSimulator"  style=" text-decoration: none;"
                   target="_blank">Simule seu crédito</a>
               </div>

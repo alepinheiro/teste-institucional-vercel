@@ -23,7 +23,7 @@
     
   </div>
   <div class="flex">
-    <div class="buttonOrange">
+    <div class="buttonComplementaryColor1">
       <a :href="$options.appSimulator"  style=" text-decoration: none;"
         target="_blank">Simule seu crédito</a>
     </div>
