@@ -198,7 +198,7 @@
   <div class="w-full">
     <div class="maxWidth xl:h-screen lg:h-screen h-full flex justify-center" >
       <div class="mt-auto mb-auto">
-        <div class="text-4xl sm:text-2xl sm:pt-12 text-center font-semibold text-primary pb-12">Quem pode fazer um<br /><span class=" textDecoration">Financiamento Imobiliário?</span></div>
+        <div class="text-4xl sm:text-2xl pt-12 text-center font-semibold text-primary pb-12">Quem pode fazer um<br /><span class=" textDecoration">Financiamento Imobiliário?</span></div>
         <img :src="$options.imageConfig.clients" class="w-full h-auto" />
         <div class="flex justify-around flex-wrap text-primary text-center text-2xl sm:text-xl pt-12">
           <div class="sm:w-1/2 p-2">Empresários</div>

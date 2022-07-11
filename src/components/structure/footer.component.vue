@@ -1,6 +1,7 @@
 <template>
-<div class="w-full bg-zinc-100">
-  <div class="maxWidth flex sm:flex-wrap justify-between  ">
+<div class="w-full  xl:h-screen lg:h-screen flex justify-center bg-zinc-100">
+  <div class="mt-auto mb-auto ">
+  <div class="maxWidth flex sm:flex-wrap justify-between sm:pt-8 md:pt-8 ">
     <div class=" sm:w-full sm:text-center">
       <div class="text-xl font-semibold text-textPrimary py-4">Sobre</div>
       <div class="font-semibold text-textSecondary  pb-4">
@@ -72,7 +73,7 @@
       </div>
     </div> 
   </div>
-  <div class="maxWidth ">
+  <div class="maxWidth mt-12">
     <div class="w-full flex sm:flex-wrap border-b-1 justify-between py-2 sm:px-2">
       <div class="sm:w-full ">
         <img :src="$options.imageConfig.logoSejabestCinza"  class="w-auto h-12 sm:mr-auto sm:ml-auto "/>
@@ -120,7 +121,7 @@
        <img :src="$options.imageConfig.bacen"  class="w-auto h-8 "/>
     </div>
   </div>
-  
+  </div>
 </div>
 </template>
 <script lang="ts">
