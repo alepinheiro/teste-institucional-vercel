@@ -5,7 +5,6 @@
         <topbarComponent position="top" />
       </div>
   </div>
-
   <div class="w-full bgBannerArrowRight sm:hidden">
     <div class="maxWidth xl:h-screen lg:h-screen flex justify-between" >
       <div class="w-full flex mt-auto mb-auto">
@@ -71,7 +70,6 @@
         </div>
       </div>
   </div>
-  
   <div class="w-full bgBannerProducts sm:hidden md:py-12 py-36">
       <div class="pb-24 md:pb-12 text-4xl md:text-2xl font-semibold text-white text-center"><span class="textDecoration">Nossos Produtos</span></div>
       <div class="maxWidth  flex justify-around">
@@ -322,7 +320,6 @@
         </div>
       </div>
   </div>
-
   <div class="w-full bgBlueHalf">
     <div class="maxWidth xl:h-screen lg:h-screen md:py-20 flex " >
       <div class="w-full mt-auto mb-auto flex flex-wrap justify-between">
@@ -355,10 +352,9 @@
       </div>
     </div>
   </div>
-  
-  <div class="gradienteSB w-full ">
+  <div class="bg-gradient-to-r from-secondary to-primary w-full ">
     <div class="maxWidth flex h-screen sm:h-full " >
-         <div class="mt-auto mb-auto w-full flex justify-center sm:flex-wrap sm:text-center">
+      <div class="mt-auto mb-auto w-full flex justify-center sm:flex-wrap sm:text-center">
             <div class="w-5/12 md:w-1/2 sm:w-full mt-auto mb-auto text-white">
               <div class="text-4xl md:text-2xl sm:text-2xl font-semibold sm:text-center py-6">
                 <span class=" textDecoration">
@@ -377,10 +373,9 @@
               <img :src="$options.imageConfig.graphic"  class="w-11/12 mr-auto ml-auto h-auto "/>
             </div>
           </div>
-        </div>
+      </div>
     </div>
   </div>
-
   <div class="w-full ">
     <div class="maxWidth flex sm:h-full " >
       <div class="mt-auto mb-auto w-full  flex-wrap py-12">
@@ -477,8 +472,29 @@
             </div>
           </div>
         </div>
+  </div>
+  <div class="bgBannerPrimary w-full ">
+        <div class="maxWidth flex h-screen sm:h-full " >
+         <div class="mt-auto mb-auto w-full flex justify-between sm:flex-wrap">
+            <div class="w-5/12 md:w-1/2 sm:w-full mt-auto mb-auto text-white sm:pt-12">
+              <div class="text-4xl md:text-2xl font-semibold sm:text-center py-6">
+                <span class=" textDecoration">Você no centro!</span> 
+              </div>
+              <div class="pb-3 sm:text-center ">
+                Acreditamos que você merece uma experiência completa, que soma o melhor do atendimento humanizado 
+                e personalizado dos nossos especialistas com a tecnologia, simplificando e agilizando todo os processos.
+              </div>
+              <div class="py-4 sm:text-center" >
+                <a class="buttonComplementaryColor1" :href="$options.appSimulator"  style=" text-decoration: none;"
+                  target="_blank">Simule seu crédito</a>
+              </div>
+            </div>
+            <div class="w-5/12 md:w-1/2  sm:w-full mt-auto mb-auto">
+              <img :src="$options.imageConfig.phoneSemFila"  class="w-11/12 mr-auto ml-auto h-auto "/>
+            </div>
+          </div>
+        </div>
       </div>
-  
 
   <div class="w-full ">
     <div class="maxWidth  pb-20  flex flex-wrap" >
@@ -520,7 +536,8 @@
             </div>
           </div>
         </div>
-      </div>
+  </div>
+  
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
