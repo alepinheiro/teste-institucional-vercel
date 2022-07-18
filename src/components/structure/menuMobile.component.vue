@@ -21,10 +21,12 @@
       <a href="https://seja.best/"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold "
         target="_blank"> Portal</a>
     </div>
+
     <div @click="openProfileMenu= !openProfileMenu" class="bg-complementaryColor1 text-white rounded-lg px-4 py-2 font-semibold 
       transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100">
 
       <a href="https://simulador.seja.best/"  style=" text-decoration: none;"
+
         target="_blank">
         Simule seu crédito 
       </a>

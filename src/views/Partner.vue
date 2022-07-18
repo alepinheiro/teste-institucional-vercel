@@ -1,6 +1,5 @@
 <template>
-
-  <div class="">
+  <div class="text-textPrimary">
     <div class="w-full border-b-1">
       <div class="maxWidth " >
         <topbarComponent position="top" />
@@ -14,7 +13,7 @@
           <div class=" xl:mt-20 lg:mt-20 md:mt-8 text-4xl md:text-2xl font-semibold text-primary">Alavanque seus  </div>
           <div class=" text-4xl md:text-2xl font-semibold text-primary">resultados com o <span class=" textDecoration">BestHub.</span></div>
           <div class=" my-8 md:my-4 text-2xl md:text-lg text-textSecondary">O sistema de parceiros que vem revolucionando o mercado de crédito imobiliário.</div>
-          <button class=" buttonBlue text-xl md:mb-16"><a href="https://parceiros.seja.best/register" >Quero ser parceiro</a></button>
+          <button class=" buttonBlue text-xl md:mb-16"><a :href="$options.appPartner" >Quero ser parceiro</a></button>
         </div>
         <div class="w-7/12 mt-auto mb-auto ">
           <img :src="$options.imageConfig.bestHubGif"  class="w-full md:w-10/12 h-auto "/>
@@ -29,7 +28,7 @@
           <div class="text-2xl font-semibold text-primary">resultados com o <span class=" textDecoration">BestHub.</span></div>
           <div class=" my-6 text-textSecondary">O sistema de parceiros que vem revolucionando o mercado de crédito imobiliário.</div>
           <div class="text-center mb-8">
-          <button class="buttonBlue text-xl "><a href="https://parceiros.seja.best/register" >Quero ser parceiro</a></button>
+          <button class="buttonBlue text-xl "><a :href="$options.appPartner" >Quero ser parceiro</a></button>
           </div>
         </div>
         <div class="w-full py-48 bgBannerArrowRightSM">
@@ -181,7 +180,7 @@
       <div class="maxWidth  flex justify-around">
         <div class="mt-auto mb-auto w-4/12 md:w-1/2 md:pr-2">
           <div class=" bg-white w-full  border-1 rounded-xl shadow-2xl p-4">
-            <div class="text-white text-2xl md:text-2xl text-center font-semibold text-primary px-8">Home Equity: Crédito com <span class=" textDecoration">Garantia de Imóvel.</span>  </div>
+            <div class=" text-2xl md:text-2xl text-center font-semibold text-primary px-8">Home Equity: Crédito com <span class=" textDecoration">Garantia de Imóvel.</span>  </div>
             <div class="text-textSecondary text-center px-8 py-4">
               Crédito de uso livre para quem já possui o imóvel para dar em garantia.
             </div>
@@ -241,9 +240,9 @@
         </div>
         <div class="mt-auto mb-auto w-4/12  md:w-1/2 md:pl-2">
           <div class=" bg-white w-full  border-1 rounded-xl shadow-2xl p-4">
-            <div class="text-white text-2xl md:text-2xl text-center font-semibold text-primary px-8">Home Equity: Crédito com <span class=" textDecoration">Garantia de Imóvel.</span>  </div>
+            <div class="text-2xl md:text-2xl text-center font-semibold text-primary px-8 py-6"><span class=" textDecoration">Financiamento imobiliário</span>  </div>
             <div class="text-textSecondary text-center px-8 py-4">
-              Crédito de uso livre para quem já possui o imóvel para dar em garantia.
+              Linha de crédito para quem não possui o bem imóvel e quer efetuar a compra.
             </div>
             <div class="w-full flex border-b-1 py-4">
               <div class="w-2/12 flex justify-center">
@@ -254,7 +253,7 @@
               <div class="w-10/12 pl-4 mt-auto mb-auto">
                 <div class="text-xl text-primary">Taxas de juros</div>
                 <div class=" text-textSecondary">
-                  As menores taxas do mercado, a partir de 0,79% a.m + IPCA ou 1,29% a.m Fixa.
+                  A partir de 9,10% a.a + TR 
                 </div>
               </div>
             </div>
@@ -280,7 +279,7 @@
               <div class="w-10/12 pl-4 mt-auto mb-auto">
                 <div class="text-xl text-primary">Prazo</div>
                 <div class=" text-textSecondary">
-                  Até 240 meses para pagar
+                  Até 360 meses para pagar 
                 </div>
               </div>
             </div>
@@ -293,7 +292,7 @@
               <div class="w-10/12 pl-4 mt-auto mb-auto">
                 <div class="text-xl text-primary">Limite de crédito</div>
                 <div class=" text-textSecondary">
-                  Até 60% do valor de avaliação do imóvel.
+                  Até 90% do valor de avaliação do imóvel. 
                 </div>
               </div>
             </div>
@@ -306,7 +305,7 @@
       <div class="maxWidth  flex flex-wrap justify-around">
         <div class="mt-8 mb-4 w-full">
           <div class=" bg-white w-full  border-1 rounded-xl shadow-2xl p-4">
-            <div class="text-white text-2xl md:text-2xl text-center font-semibold text-primary px-8">Home Equity: Crédito com <span class=" textDecoration">Garantia de Imóvel.</span>  </div>
+            <div class="text-2xl md:text-2xl text-center font-semibold text-primary px-8">Home Equity: Crédito com <span class=" textDecoration">Garantia de Imóvel.</span>  </div>
             <div class="text-textSecondary text-center px-8 py-4">
               Crédito de uso livre para quem já possui o imóvel para dar em garantia.
             </div>
@@ -366,9 +365,9 @@
         </div>
         <div class="mb-8 w-full">
           <div class=" bg-white w-full  border-1 rounded-xl shadow-2xl p-4">
-            <div class="text-white text-2xl md:text-2xl text-center font-semibold text-primary px-8">Home Equity: Crédito com <span class=" textDecoration">Garantia de Imóvel.</span>  </div>
+            <div class=" text-2xl md:text-2xl text-center font-semibold text-primary px-8"><span class=" textDecoration">Financiamento imobiliário</span>  </div>
             <div class="text-textSecondary text-center px-8 py-4">
-              Crédito de uso livre para quem já possui o imóvel para dar em garantia.
+              Linha de crédito para quem não possui o bem imóvel e quer efetuar a compra.
             </div>
             <div class="w-full flex border-b-1 py-4">
               <div class="w-2/12 flex justify-center">
@@ -379,7 +378,7 @@
               <div class="w-10/12 pl-4 mt-auto mb-auto">
                 <div class="text-xl text-primary">Taxas de juros</div>
                 <div class=" text-textSecondary">
-                  As menores taxas do mercado, a partir de 0,79% a.m + IPCA ou 1,29% a.m Fixa.
+                  A partir de 9,10% a.a + TR 
                 </div>
               </div>
             </div>
@@ -405,7 +404,7 @@
               <div class="w-10/12 pl-4 mt-auto mb-auto">
                 <div class="text-xl text-primary">Prazo</div>
                 <div class=" text-textSecondary">
-                  Até 240 meses para pagar
+                  Até 360 meses para pagar 
                 </div>
               </div>
             </div>
@@ -418,7 +417,7 @@
               <div class="w-10/12 pl-4 mt-auto mb-auto">
                 <div class="text-xl text-primary">Limite de crédito</div>
                 <div class=" text-textSecondary">
-                  Até 60% do valor de avaliação do imóvel.
+                  Até 90% do valor de avaliação do imóvel. 
                 </div>
               </div>
             </div>
@@ -430,7 +429,7 @@
     <div class="w-full ">
       <div class="maxWidth  pb-20  flex flex-wrap" >
         <div class="w-full text-center">
-          <div class="w-full  font-semibold text-primary  text-5xl lg:text-3xl md:text-3xl sm:text-3xl md:py-16 lg:py-20 sm:py-16 py-30">  
+          <div class="w-full  font-semibold text-primary text-4xl md:text-2xl  md:py-16 lg:py-20 sm:py-16 py-30">  
           Quem já está<span class=" textDecoration"> decolando com a gente?</span></div>
         </div>
         <img :src="$options.imageConfig.banks"  class="w-full"/>
@@ -458,7 +457,7 @@
         <div class="w-1/3 sm:w-full text-center">
           <div class="w-full  font-semibold text-white  text-5xl lg:text-3xl md:text-3xl sm:text-3xl md:py-16 lg:py-20 sm:py-16 py-30">  Quais as vantagens do <span class=" textDecoration">BestHub?</span></div>
           <div class="w-full "><img :src="$options.imageConfig.bestHubMockupMd"  class="w-full h-auto"/></div>
-          <button class=" buttonWhite text-center text-xl mt-16"><a href="https://parceiros.seja.best/register" >Quero ser parceiro</a></button>
+          <button class=" buttonWhite text-center text-xl mt-16"><a :href="$options.appPartner" >Quero ser parceiro</a></button>
         </div>
         <div class="w-1/3 sm:w-full text-white text-right mb-auto mt-auto pl-12 md:pl-4 lg:pl-4 sm:pr-0">
           <div class="py-16 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105">
@@ -476,7 +475,6 @@
             </div>
           </div>
         </div>
-        
       </div>
     </div>
     <div class="w-full bgBannerBlue lg:hidden xl:hidden md:hidden text-white p-4">
@@ -515,7 +513,7 @@
       
       <div class="text-center ">
         <img :src="$options.imageConfig.bestHubMockupMd"  class="w-11/12 mr-auto ml-auto "/>
-        <button class=" buttonWhite text-center text-xl my-16"><a href="https://parceiros.seja.best/register" >Quero ser parceiro</a></button>
+        <button class=" buttonWhite text-center text-xl my-16"><a :href="$options.appPartner" >Quero ser parceiro</a></button>
       </div>
     </div>
     
