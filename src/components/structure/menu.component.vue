@@ -23,7 +23,10 @@
     
   </div>
   <div class="flex">
-    <div class="buttonOrange">
+
+    <div class="bg-complementaryColor1 rounded-lg px-4 py-1 font-semibold  text-white
+    transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105">
+
       <a href="https://simulador.seja.best/"  style=" text-decoration: none;"
         target="_blank">Simule seu crédito</a>
     </div>

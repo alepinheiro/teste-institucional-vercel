@@ -4,26 +4,26 @@
     <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" :class="color" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
   </div>
   <div v-if="openProfileMenu" class="w-full text-center border-1 max-w-sm bg-white rounded-xl shadow-xl z-40 fixed p-2 top-15 right-2 ">
-    <div @click="openProfileMenu= !openProfileMenu"  :class="linkStyle">
-      <router-link to="/" class="hover:text-primary hover:font-semibold lineDecoration" > Início </router-link>
+
+    <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
+      <router-link to="/sobre" class="hover:text-primary hover:font-semibold " > Sobre </router-link>
     </div>
-    <div @click="openProfileMenu= !openProfileMenu"  :class="linkStyle">
-      <router-link to="/sobre" class="hover:text-primary hover:font-semibold lineDecoration" > Sobre </router-link>
+    <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
+      <router-link to="/home-equity" class="hover:text-primary hover:font-semibold " > Home Equity  </router-link>
     </div>
-    <div @click="openProfileMenu= !openProfileMenu" :class="linkStyle">
-      <router-link to="/home-equity" class="hover:text-primary hover:font-semibold lineDecoration" > Home Equity  </router-link>
+    <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
+      <router-link to="/financiamento-imobiliario" class="hover:text-primary hover:font-semibold " > Financiamento </router-link>
     </div>
-    <div @click="openProfileMenu= !openProfileMenu" :class="linkStyle">
-      <router-link to="/financiamento-imobiliario" class="hover:text-primary hover:font-semibold lineDecoration" > Financiamento </router-link>
+    <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
+      <router-link to="/parceiro" class="hover:text-primary hover:font-semibold " > Seja um Parceiro </router-link>
     </div>
-    <div @click="openProfileMenu= !openProfileMenu" :class="linkStyle">
-      <router-link to="/parceiro" class="hover:text-primary hover:font-semibold lineDecoration" > Seja um Parceiro </router-link>
-    </div>
-    <div @click="openProfileMenu= !openProfileMenu" :class="linkStyle">
-      <a href="https://seja.best/"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold lineDecoration"
+    <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
+      <a href="https://seja.best/"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold "
         target="_blank"> Portal</a>
     </div>
-    <div @click="openProfileMenu= !openProfileMenu" class="mt-4 buttonOrange">
+    <div @click="openProfileMenu= !openProfileMenu" class="bg-complementaryColor1 text-white rounded-lg px-4 py-2 font-semibold 
+      transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100">
+
       <a href="https://simulador.seja.best/"  style=" text-decoration: none;"
         target="_blank">
         Simule seu crédito 
