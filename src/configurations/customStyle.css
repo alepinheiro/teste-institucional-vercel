@@ -1,5 +1,4 @@
 .inputBase {
-
   @apply rounded-xl focus:border-secondary border-gray-300 border-1 bg-white p-2 ;
 }
 .inputBaseError {
@@ -27,7 +26,6 @@
 
 .bgBannerPrimary {
 	background-image: url('https://res.cloudinary.com/djheoavst/image/upload/v1655931236/Imagens%20site/CAPA_2_tlmhob.png'); 
-
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -48,7 +46,37 @@
 		height: 100%;
 		position: relative;
 	}
-	
+  }
+  .bgFinan{
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657287582/Imagens%20site/sess%C3%B5es_site_3_pul4z5.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  .bgWhiteArrow {
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657291092/Imagens%20site/sess%C3%B5es_site_4_hrafo9.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+  }
+  .bgBlueHalf{
+    background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657300947/Imagens%20site/sess%C3%B5es_site_5_cp0iwo.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  @media (max-width: 1023px) {
+	.bgBlueHalf {
+		background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657300267/Imagens%20site/sess%C3%B5es_site_5_rlaba6.png");
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
   }
   .bgBannerArrowRight {
 	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656417395/Imagens%20site/Layout_-_1080x1080-1_hjk7cn.png");

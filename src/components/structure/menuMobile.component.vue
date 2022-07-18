@@ -17,6 +17,7 @@
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
       <router-link to="/parceiro" class="hover:text-primary hover:font-semibold " > Seja um Parceiro </router-link>
     </div>
+
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
       <a href="https://seja.best/"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold "
         target="_blank"> Portal</a>

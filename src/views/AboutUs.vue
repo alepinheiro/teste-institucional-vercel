@@ -76,7 +76,7 @@
       </div>
       
 
-      <div class="gradienteSB w-full ">
+      <div class="bg-gradient-to-r from-secondary to-primary w-full ">
         <div class="maxWidth flex h-screen sm:h-full " >
          <div class="mt-auto mb-auto w-full flex justify-between sm:flex-wrap">
             <div class="w-5/12 md:w-1/2 sm:w-full mt-auto mb-auto text-white">
@@ -95,24 +95,21 @@
           </div>
         </div>
       </div>
-       
-
-
       <div class="w-full py-8 sm:pt-12 sm:pb-12 ">
         <div class="maxWidth flex h-screen sm:h-full" >
           <div class="mt-auto mb-auto w-full" >
-            <div class="text-center text-3xl  font-semibold text-primary pb-6">
+            <div class="text-center text-4xl  font-semibold text-primary pb-6">
               <span class=" textDecoration">Nossos números</span>  
             </div>
             <div class="flex w-full justify-around  sm:flex-wrap pt-8 sm:pt-0">
                 <div class="w-64 sm:w-full text-center">
                   <img :src="$options.imageConfig.icons.users" class="w-full sm:w-5/12 mr-auto ml-auto" />
-                  <div class="text-3xl font-semibold text-primary">+1000</div>
+                  <div class="text-3xl font-semibold text-primary">+2000</div>
                   <div class="text-primary pt-2">Propostas por mês</div>
                 </div>
                 <div class="w-64 sm:w-full text-center">
                   <img :src="$options.imageConfig.icons.money" class="w-full sm:w-5/12 mr-auto ml-auto" />
-                  <div class="text-3xl  font-semibold text-primary">+ R$300 milhões</div>
+                  <div class="text-3xl  font-semibold text-primary">+ R$400 milhões</div>
                   <div class="text-primary pt-2">Emprestados</div>
                 </div>
                 <div class="w-64 sm:w-full text-center">
@@ -136,7 +133,7 @@
               E aí vem ser <span class=" textDecoration">Best</span> com a gente ?
             </div>
             <div class="flex sm:flex-wrap w-full justify-center pt-12">
-              <div class="buttonOrange mr-4 w-64 sm:w-full text-center">
+              <div class="buttonComplementaryColor1 mr-4 w-64 sm:w-full text-center">
                 <a :href="$options.appSimulator"  style=" text-decoration: none;"
                   target="_blank">Simule seu crédito</a>
               </div>

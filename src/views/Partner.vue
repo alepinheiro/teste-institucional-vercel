@@ -13,7 +13,7 @@
           <div class=" xl:mt-20 lg:mt-20 md:mt-8 text-4xl md:text-2xl font-semibold text-primary">Alavanque seus  </div>
           <div class=" text-4xl md:text-2xl font-semibold text-primary">resultados com o <span class=" textDecoration">BestHub.</span></div>
           <div class=" my-8 md:my-4 text-2xl md:text-lg text-textSecondary">O sistema de parceiros que vem revolucionando o mercado de crédito imobiliário.</div>
-          <button class=" buttonBlue text-xl md:mb-16"><a :href="$options.appPartner" >Quero ser parceiro</a></button>
+          <button class=" buttonGradient text-xl md:mb-16"><a :href="$options.appPartner" >Quero ser parceiro</a></button>
         </div>
         <div class="w-7/12 mt-auto mb-auto ">
           <img :src="$options.imageConfig.bestHubGif"  class="w-full md:w-10/12 h-auto "/>
@@ -28,7 +28,7 @@
           <div class="text-2xl font-semibold text-primary">resultados com o <span class=" textDecoration">BestHub.</span></div>
           <div class=" my-6 text-textSecondary">O sistema de parceiros que vem revolucionando o mercado de crédito imobiliário.</div>
           <div class="text-center mb-8">
-          <button class="buttonBlue text-xl "><a :href="$options.appPartner" >Quero ser parceiro</a></button>
+          <button class="buttonGradient text-xl "><a :href="$options.appPartner" >Quero ser parceiro</a></button>
           </div>
         </div>
         <div class="w-full py-48 bgBannerArrowRightSM">
@@ -279,7 +279,7 @@
               <div class="w-10/12 pl-4 mt-auto mb-auto">
                 <div class="text-xl text-primary">Prazo</div>
                 <div class=" text-textSecondary">
-                  Até 360 meses para pagar 
+                  Até 420 meses para pagar 
                 </div>
               </div>
             </div>
@@ -404,7 +404,7 @@
               <div class="w-10/12 pl-4 mt-auto mb-auto">
                 <div class="text-xl text-primary">Prazo</div>
                 <div class=" text-textSecondary">
-                  Até 360 meses para pagar 
+                  Até 420 meses para pagar 
                 </div>
               </div>
             </div>
