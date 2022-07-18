@@ -13,6 +13,7 @@ module.exports = {
     },
     colors: {
       WhiteTransparency:"var(--WhiteTransparency)",
+      grayTransparency:"var(--grayTransparency)",
       primary: "var(--primaryColor)",
       secondary: "var(--secondaryColor)",
       complementaryColor1:"var(--complementaryColor1)",
@@ -125,6 +126,7 @@ module.exports = {
       42: "10.5rem",
       44: "11rem",
       48: "12rem",
+      52: "13rem",
       56: "14rem",
       60: "15rem",
       64: "16rem",

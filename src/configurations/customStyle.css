@@ -1,4 +1,5 @@
 .inputBase {
+
   @apply rounded-xl focus:border-secondary border-gray-300 border-1 bg-white p-2 ;
 }
 .inputBaseError {
@@ -26,78 +27,162 @@
 
 .bgBannerPrimary {
 	background-image: url('https://res.cloudinary.com/djheoavst/image/upload/v1655931236/Imagens%20site/CAPA_2_tlmhob.png'); 
+
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	position: relative;
   }
-/* move from / to  */
-
-@-webkit-keyframes moveToLeft {
-	from { }
-	to { -webkit-transform: translateX(-100%); }
-}
-@keyframes moveToLeft {
-	from { }
-	to { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
-}
-
-@-webkit-keyframes moveFromLeft {
-	from { -webkit-transform: translateX(-100%); }
-}
-@keyframes moveFromLeft {
-	from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
-}
-
-@-webkit-keyframes moveToRight { 
-	from { }
-	to { -webkit-transform: translateX(100%); }
-}
-@keyframes moveToRight { 
-	from { }
-	to { -webkit-transform: translateX(100%); transform: translateX(100%); }
-}
-
-@-webkit-keyframes moveFromRight {
-	from { -webkit-transform: translateX(100%); }
-}
-@keyframes moveFromRight {
-	from { -webkit-transform: translateX(100%); transform: translateX(100%); }
-}
-
-@-webkit-keyframes moveToTop {
-	from { }
-	to { -webkit-transform: translateY(-100%); }
-}
-@keyframes moveToTop {
-	from { }
-	to { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
-}
-
-@-webkit-keyframes moveFromTop {
-	from { -webkit-transform: translateY(-100%); }
-}
-@keyframes moveFromTop {
-	from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
-}
-
-@-webkit-keyframes moveToBottom {
-	from { }
-	to { -webkit-transform: translateY(100%); }
-}
-@keyframes moveToBottom {
-	from { }
-	to { -webkit-transform: translateY(100%); transform: translateY(100%); }
-}
-
-@-webkit-keyframes moveFromBottom {
-	from { -webkit-transform: translateY(100%); }
-}
-@keyframes moveFromBottom {
-	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
-}
-
-.nextPage {
-  -webkit-animation: moveFromRight .7s ease both;
-	animation: moveFromRight .7s ease both;
-}
+  .bgBannerArrowRight {
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656417395/Imagens%20site/Layout_-_1080x1080-1_hjk7cn.png");
+	background-size: 50% 100%;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: right 0%;
+  }
+  .bgBannerArrowRightSM {
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656417395/Imagens%20site/Layout_-_1080x1080-1_hjk7cn.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+  }
+  .bgBannerProducts{
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656685690/Imagens%20site/fundo_site_meio_xmhlui.png");
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: right 0%;
+  }
+  .bgBannerBlue {
+	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656607422/Imagens%20site/Fundo_azul_ueukye.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+  }
+  /* move from / to  */
+  
+  @-webkit-keyframes moveToLeft {
+	from {
+	}
+	to {
+	  -webkit-transform: translateX(-100%);
+	}
+  }
+  @keyframes moveToLeft {
+	from {
+	}
+	to {
+	  -webkit-transform: translateX(-100%);
+	  transform: translateX(-100%);
+	}
+  }
+  
+  @-webkit-keyframes moveFromLeft {
+	from {
+	  -webkit-transform: translateX(-100%);
+	}
+  }
+  @keyframes moveFromLeft {
+	from {
+	  -webkit-transform: translateX(-100%);
+	  transform: translateX(-100%);
+	}
+  }
+  
+  @-webkit-keyframes moveToRight {
+	from {
+	}
+	to {
+	  -webkit-transform: translateX(100%);
+	}
+  }
+  @keyframes moveToRight {
+	from {
+	}
+	to {
+	  -webkit-transform: translateX(100%);
+	  transform: translateX(100%);
+	}
+  }
+  
+  @-webkit-keyframes moveFromRight {
+	from {
+	  -webkit-transform: translateX(100%);
+	}
+  }
+  @keyframes moveFromRight {
+	from {
+	  -webkit-transform: translateX(100%);
+	  transform: translateX(100%);
+	}
+  }
+  
+  @-webkit-keyframes moveToTop {
+	from {
+	}
+	to {
+	  -webkit-transform: translateY(-100%);
+	}
+  }
+  @keyframes moveToTop {
+	from {
+	}
+	to {
+	  -webkit-transform: translateY(-100%);
+	  transform: translateY(-100%);
+	}
+  }
+  
+  @-webkit-keyframes moveFromTop {
+	from {
+	  -webkit-transform: translateY(-100%);
+	}
+  }
+  @keyframes moveFromTop {
+	from {
+	  -webkit-transform: translateY(-100%);
+	  transform: translateY(-100%);
+	}
+  }
+  
+  @-webkit-keyframes moveToBottom {
+	from {
+	}
+	to {
+	  -webkit-transform: translateY(100%);
+	}
+  }
+  @keyframes moveToBottom {
+	from {
+	}
+	to {
+	  -webkit-transform: translateY(100%);
+	  transform: translateY(100%);
+	}
+  }
+  
+  @-webkit-keyframes moveFromBottom {
+	from {
+	  -webkit-transform: translateY(100%);
+	}
+  }
+  @keyframes moveFromBottom {
+	from {
+	  -webkit-transform: translateY(100%);
+	  transform: translateY(100%);
+	}
+  }
+  
+  .nextPage {
+	-webkit-animation: moveFromRight 0.7s ease both;
+	animation: moveFromRight 0.7s ease both;
+  }
+  .AnimationmoveFromBottom{
+	-webkit-animation: moveFromBottom  0.7s ease both;
+	animation: moveFromBottom  0.7s ease both;
+  }
+  

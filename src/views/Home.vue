@@ -3,6 +3,13 @@
   <div class="bgBannerPrimary">
     <div class="maxWidth  h-screen" >
       <topbarComponent position="relative" />
+      <div class="flex flex-wrap mt-24">
+        <div class="text-white">
+          <div class="text-3xl font-semibold ">Empréstimo com as menores taxas do mercado</div>
+        </div>
+        <div></div>
+      </div>
+      
     </div>
   
   </div>

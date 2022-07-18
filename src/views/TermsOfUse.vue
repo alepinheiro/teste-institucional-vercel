@@ -1,8 +1,10 @@
 <template>
 <div>
   <div class="">
+
     <div class="maxWidth " >
       <topbarComponent position="top" />
+
       <h1 class="text-textPrimary text-2xl font-semibold py-4">
         Termos de Uso do Site 
       </h1>
