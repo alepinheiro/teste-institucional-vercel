@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="w-full   font-sans">
+  <div id="app" class="w-full defaultFont">
     <router-view/>
     <footerComponent />
     <notificationPopUp />

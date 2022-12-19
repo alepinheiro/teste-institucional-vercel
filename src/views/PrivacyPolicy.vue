@@ -1,15 +1,18 @@
 <template>
 <div>
-  <div class="">
-    <div class="w-full border-b-1">
+  <div class="bg-bglightColor">
+    <div class="w-full gradienteSB">
       <div class="maxWidth " >
-        <topbarComponent position="top" />
+        <topbarComponent position="relative" />
+      </div>
+      <div class="maxWidth " >
+        <h1 class="text-white text-4xl font-semibold pb-12 pt-16">
+          Política de Privacidade 
+        </h1>
       </div>
     </div>
-    <div class="maxWidth " >
-      <h1 class="text-textPrimary text-2xl font-semibold py-4">
-        Política de Privacidade 
-      </h1>
+    <div class="maxWidth py-12" >
+    
       <div class="text-textPrimary ">
         <div>Este site é mantido e operado por SejaBest Fintech de crédito imobiliário LTDA.</div>
         <div>
@@ -24,13 +27,13 @@
         <div class="pl-3 pb-3">- Seus direitos em relação aos seus dados pessoais;</div>
         <div class="pl-3 pb-3">- Como entrar em contato conosco.</div>
         
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">1. Quem deve utilizar nosso site</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">1. Quem deve utilizar nosso site</div>
         <div class="pl-3 pb-3">Nosso site só deve ser utilizado por pessoas com mais de dezoito anos de idade. 
           Sendo assim, crianças e adolescentes não devem utilizá-lo</div>
         
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">2. Dados que coletamos e motivos da coleta</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">2. Dados que coletamos e motivos da coleta</div>
         <div class="pl-3 pb-3">Nosso site coleta e utiliza alguns dados pessoais de nossos usuários, de acordo com o disposto nesta seção.</div>
-        <div class="pl-3 pb-3">1. Dados pessoais fornecidos expressamente pelo usuário</div>
+        <div class="pl-3 pb-3 font-semibold">1. Dados pessoais fornecidos expressamente pelo usuário</div>
         <div class="pl-6 pb-3">Nós coletamos os seguintes dados pessoais que nossos usuários nos fornecem expressamente ao utilizar nosso site:</div>
         <ul class="pl-9 pb-3">
             <li>- Nome Completo</li>  
@@ -47,12 +50,12 @@
         <div class="pl-9 pb-3">- Quando o usuário quiser fazer uma simulação de crédito</div>
         <div class="pl-6 pb-3">Os dados fornecidos por nossos usuários são coletados com as seguintes finalidades:</div>
         <div class="pl-9 pb-3">- Para que nosso algoritmo verifique se o usuário está elegível as politicas de crédito.</div>
-        <div class="pl-3 pb-3">2. Dados sensíveis</div>
+        <div class="pl-3 pb-3 font-semibold">2. Dados sensíveis</div>
         <div class="pl-6 pb-3">Não serão coletados dados sensíveis de nossos usuários, assim entendidos aqueles definidos nos arts. 
         11 e seguintes da Lei de Proteção de Dados Pessoais. Assim, não haverá coleta de dados sobre origem racial ou étnica, 
         convicção religiosa, opinião política, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, 
         dado referente à saúde ou à vida sexual, dado genético ou biométrico, quando vinculado a uma pessoa natural.</div>
-        <div class="pl-3 pb-3">3. Cookies</div>
+        <div class="pl-3 pb-3 font-semibold">3. Cookies</div>
         <div class="pl-6 pb-3">Cookies são pequenos arquivos de texto baixados automaticamente em seu dispositivo quando você 
         acessa e navega por um site. Eles servem, basicamente, para seja possível identificar dispositivos, atividades 
         e preferências de usuários.</div>
@@ -104,14 +107,14 @@
           <a href="https://www.opera.com/help/tutorials/security/privacy/">Opera:  <br/>
             https://www.opera.com/help/tutorials/security/privacy/ </a>
         </div>
-        <div class="pl-3 pb-3">4. Coleta de dados não previstos expressamente</div>
+        <div class="pl-3 pb-3 font-semibold">4. Coleta de dados não previstos expressamente</div>
         <div class="pl-6 pb-3">Eventualmente, outros tipos de dados não previstos expressamente nesta Política 
           de Privacidade poderão ser coletados, desde que sejam fornecidos com o consentimento do usuário, ou, ainda,
           que a coleta seja permitida com fundamento em outra base legal prevista em lei.</div>
         <div class="pl-6 pb-3">Em qualquer caso, a coleta de dados e as atividades de tratamento dela 
           decorrentes serão informadas aos usuários do site.</div>
         
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">3. Compartilhamento de dados pessoais com terceiros</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">3. Compartilhamento de dados pessoais com terceiros</div>
         <div class="pl-3 pb-3">Nós compartilhamos alguns dos dados pessoais mencionados nesta seção com terceiros.</div>
         <div class="pl-3 pb-3">Os dados compartilhados são os seguintes:</div>
         <div class="pl-3 pb-3">Alguns dados são compartilhados com os parceiros financeiros da BEST, tais como 
@@ -137,13 +140,13 @@
         <div class="pl-3 pb-3">Além das situações aqui informadas, é possível que compartilhemos dados com terceiros para cumprir alguma determinação legal ou regulatória, ou, ainda, para cumprir alguma ordem expedida por autoridade pública.</div>
         <div class="pl-3 pb-3">Em qualquer caso, o compartilhamento de dados pessoais observará todas as leis e regras aplicáveis, buscando sempre garantir a segurança dos dados de nosso usuários, observados os padrões técnicos empregados no mercado.</div>
        
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">4. Por quanto tempo seus dados pessoais serão armazenados</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">4. Por quanto tempo seus dados pessoais serão armazenados</div>
         <div class="pl-3 pb-3">Os dados pessoais coletados pelo site são armazenados e utilizados por período de tempo que 
           corresponda ao necessário para atingir as finalidades elencadas neste documento e que considere os direitos de seus titulares,
           os direitos do controlador do site e as disposições legais ou regulatórias aplicáveis.</div>
         <div class="pl-3 pb-3">Uma vez expirados os períodos de armazenamento dos dados pessoais, eles são removidos de nossas bases de dados ou anonimizados, salvo nos casos em que houver a possibilidade ou a necessidade de armazenamento em virtude de disposição legal ou regulatória.</div>
         
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">5. Bases legais para o tratamento de dados pessoais</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">5. Bases legais para o tratamento de dados pessoais</div>
         <div class="pl-3 pb-3">Uma base legal para o tratamento de dados pessoais nada mais é que um fundamento jurídico, previsto em lei,
           que justifica o justifica. Assim, cada operação de tratamento de dados pessoais precisa ter uma base legal a ela correspondente.</div>
         <div class="pl-3 pb-3">Nós tratamos os dados pessoais de nossos usuários nas seguintes hipóteses:</div>
@@ -159,7 +162,7 @@
           Encarregado de Proteção de Dados Pessoais por algum dos canais informados nesta Política de Privacidade, na seção “Como 
           entrar em contato conosco”.</div>
 
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">6. Direitos do usuário</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">6. Direitos do usuário</div>
         <div class="pl-3 pb-3">O usuário do site possui os seguintes direitos, conferidos pela Lei de Proteção de Dados Pessoais:</div>
         <ul class="pl-6 pb-3">
           <li>- confirmação da existência de tratamento;    </li>  
@@ -181,7 +184,7 @@
           identificaçãoo, a fim de resguardar nossos direitos e os direitos de terceiros. Isto somente será feito, porém, se for 
           absolutamente necessário, e o requerente receberá todas as informações relacionadas.</div>
         
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">7. Medidas de segurança no tratamento de dados pessoais</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">7. Medidas de segurança no tratamento de dados pessoais</div>
         <div class="pl-3 pb-3">Empregamos medidas técnicas e organizativas aptas a proteger os dados pessoais de acessos não 
           autorizados e de situações de destruição, perda, extravio ou alteração desses dados.</div>
         <div class="pl-3 pb-3">As medidas que utilizamos levam em consideração a natureza dos dados, o contexto e a 
@@ -203,17 +206,17 @@
           relevante para qualquer de nossos usuários, comunicaremos os afetados e a Autoridade Nacional de Proteção de Dados acerca 
           do ocorrido, em conformidade com o disposto na Lei Geral de Proteção de Dados.</div>
 
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">8. Reclamação a uma autoridade de controle</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">8. Reclamação a uma autoridade de controle</div>
         <div class="pl-3 pb-3">Sem prejuízo de qualquer outra via de recurso administrativo ou judicial, os titulares 
           de dados pessoais que se sentirem, de qualquer forma, lesados, podem apresentar reclamação à Autoridade Nacional de
            Proteção de Dados.</div>
 
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">9. Alterações nesta política</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">9. Alterações nesta política</div>
         <div class="pl-3 pb-3">A presente versão desta Política de Privacidade foi atualizada pela última vez em: 30/10/2020.</div>
         <div class="pl-3 pb-3">Nos reservamos o direito de modificar, a qualquer momento, as presentes normas, especialmente para adaptá-las às eventuais alterações feitas em nosso site, seja pela disponibilização de novas funcionalidades, seja pela supressão ou modificação daquelas já existentes.</div>
         <div class="pl-3 pb-3">Sempre que houver uma modifição, nossos usuários serão notificados acerca da mudança.</div>
         
-        <div class="text-textPrimary  font-semibold pt-4 pb-2">10. Como entrar em contato conosco</div>
+        <div class="text-primary  font-semibold pt-4 pb-2">10. Como entrar em contato conosco</div>
         <div class="pl-3 pb-3">Para esclarecer quaisquer dúvidas sobre esta Política de Privacidade ou sobre os dados pessoais que tratamos, entre em contato com nosso Encarregado de Proteção de Dados Pessoais, por algum dos canais mencionados abaixo:</div>
         <div class="pl-3 pb-3">E-mail: central@seja.best</div>
         <div class="pl-3 pb-3">Telefone: +55 47 99112-1006</div>

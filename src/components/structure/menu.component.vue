@@ -23,9 +23,9 @@
     
   </div>
   <div class="flex">
-    <div class="buttonComplementaryColor1">
-      <a :href="$options.appSimulator"  style=" text-decoration: none;"
-        target="_blank">Simule seu crédito</a>
+    <div class="buttonComplementaryColor1 text-center">
+      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+        target="_blank">Faça uma simulação</a>
     </div>
   </div>
 </div>

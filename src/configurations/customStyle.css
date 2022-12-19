@@ -1,4 +1,119 @@
-.inputBase {
+  @font-face {
+	font-family: "Public Sans Light";
+	src: local("Public Sans Light"),
+	 url("/fonts/Public_Sans/static/PublicSans-Light.ttf") format("truetype");
+  }
+  @font-face {
+	font-family: "Public Sans";
+	src: local("Public Sans Light"),
+	 url("/fonts/Public_Sans/static/PublicSans-Regular.ttf") format("truetype");
+  }
+  @font-face {
+	font-family: "Public Sans Bold";
+	src: local("Public Sans Bold"),
+	 url("/fonts/Public_Sans/static/PublicSans-Bold.ttf") format("truetype");
+  }
+  @font-face {
+	font-family: "Darker Grotesque";
+	src: local("Darker Grotesque"),
+	 url("/fonts/Darker_Grotesque/DarkerGrotesque-Regular.ttf") format("truetype");
+  }
+  @font-face {
+	font-family: "Darker Grotesque Bold";
+	src: local("Darker Grotesque Bold"),
+	 url("/fonts/Darker_Grotesque/DarkerGrotesque-Bold.ttf") format("truetype");
+  }
+  
+  .titleFont{
+	font-family:"Darker Grotesque";
+	
+  }
+  .titleFontBold{
+	font-family:"Darker Grotesque Bold";
+	
+  }
+  .defaultFont{
+	font-family:"Public Sans";
+  }
+  .defaultFontLight{
+	font-family:"Public Sans Light";
+  }
+  .defaultFontBold{
+	font-family:"Public Sans Bold";
+  }
+  .bgBusinessman{
+	background-image: url("/images/partner/ImagemAbertura.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  .bgManWithPhone{
+	background-image: url("/images/Home/ImagemHomeGradiente.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  .bgCashBest{
+	background-image: url("/images/cashBest/VideoCashBestDesktop.gif");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  .bgFinanBest{
+	background-image: url("/images/finanBest/VideoFinanBestDesktop.gif");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  .bgIcon{
+	background-image: url("/images/Home/IconeBestTransparenteEsquerda.png");
+	background-size: 20%;
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-repeat: no-repeat;
+  }
+  .gradienteSBLight {
+	background: #0524DD;
+	background: linear-gradient(180deg, #0524DD 0%, #10069f 50%, #10069f 100%);
+  }
+  .gradienteSBLight2 {
+	background: #10069f;
+	background: linear-gradient(180deg, #10069f 0%, #0524DD 50%, #0524DD 100%);
+  }
+  .gradienteSBHome {
+	background: #070e37;
+	background: linear-gradient(180deg, #070e37 0%, #070e37 50%, #10069f 100%);
+  }
+  .gradienteSBDark {
+	background: #070e37;
+	background: linear-gradient(145deg, #070e37 0%, #100696 50%, #10069f 100%);
+  }
+  .maxWidth {
+	@apply w-full  max-w-[1200px] sm:max-w-full  mr-auto ml-auto sm:p-4 md:py-4 md:px-12 lg:p-4 ;
+  }
+  .bgMeioAzul{
+	background-image: url("/images/Home/fundoMeio.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+
+  .tooltip {
+	@apply invisible absolute;
+  }
+  
+  .has-tooltip:hover .tooltip {
+	@apply visible z-50;
+  }
+
+
+  .inputBase {
 	@apply rounded-xl focus:border-secondary border-gray-200 border-1 bg-gray-200  p-2;
   }
   .inputBaseError {
@@ -20,14 +135,12 @@
   .optionsCard {
 	@apply cursor-pointer rounded-xl focus:border-secondary p-4 border-1 border-gray-300 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 hover:shadow-lg;
   }
-  .maxWidth {
-	@apply w-full  max-w-[1300px]  mr-auto ml-auto px-4;
-  }
+  
   .linkStyle {
 	@apply  text-primary  px-2 py-1 rounded-xl cursor-pointer mx-4 sm:mt-4;
   }
   .linkStyleDark {
-	@apply  text-white  sm:text-primary px-2 py-1 rounded-xl  cursor-pointer mx-4 sm:mt-4;
+	@apply  text-white md:text-primary sm:text-primary px-2 py-1 rounded-xl  cursor-pointer mx-4 sm:mt-4;
   }
   .buttonComplementaryColor1{
 	@apply rounded-xl py-2 px-8 bg-complementaryColor1 shadow-xl text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100;
@@ -60,14 +173,14 @@
   
   
   .bgBannerPrimary {
-	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1655931236/Imagens%20site/CAPA_2_tlmhob.png");
+	background-image: url("/images/CAPA_2_tlmhob.png");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	position: relative;
   }
   .bgMidias {
-	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657228222/Imagens%20site/youtube_alkyqq.png");
+	background-image: url("/images/youtube_alkyqq.png");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -75,7 +188,7 @@
   }
   @media (max-width: 1023px) {
 	.bgMidias {
-		background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657281085/Imagens%20site/sess%C3%B5es_site_1_p9of6s.png");
+		background-image: url("/images/sess%C3%B5es_site_1_p9of6s.png");
 		background-size: cover;
 		width: 100%;
 		height: 100%;
@@ -83,14 +196,14 @@
 	}
   }
   .bgFinan{
-	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657287582/Imagens%20site/sess%C3%B5es_site_3_pul4z5.png");
+	background-image: url("/images/sess%C3%B5es_site_3_pul4z5.png");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	position: relative;
   }
   .bgWhiteArrow {
-	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657291092/Imagens%20site/sess%C3%B5es_site_4_hrafo9.png");
+	background-image: url("/images/sess%C3%B5es_site_4_hrafo9.png");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -98,7 +211,7 @@
 
   }
   .bgBlueHalf{
-    background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657300947/Imagens%20site/sess%C3%B5es_site_5_cp0iwo.png");
+    background-image: url("/images/sess%C3%B5es_site_5_cp0iwo.png");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -106,7 +219,7 @@
   }
   @media (max-width: 1023px) {
 	.bgBlueHalf {
-		background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657300267/Imagens%20site/sess%C3%B5es_site_5_rlaba6.png");
+		background-image: url("/images/sess%C3%B5es_site_5_rlaba6.png");
 		background-size: cover;
 		width: 100%;
 		height: 100%;
@@ -114,7 +227,7 @@
 	}
   }
   .bgBannerArrowRight {
-	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656417395/Imagens%20site/Layout_-_1080x1080-1_hjk7cn.png");
+	background-image: url("/images/Layout_-_1080x1080-1_hjk7cn.png");
 	background-size: 50% 100%;
 	width: 100%;
 	height: 100%;
@@ -122,14 +235,14 @@
 	background-position: right 0%;
   }
   .bgBannerArrowRightSM {
-	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656417395/Imagens%20site/Layout_-_1080x1080-1_hjk7cn.png");
+	background-image: url("/images/Layout_-_1080x1080-1_hjk7cn.png");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
   }
   .bgBannerProducts{
-	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656685690/Imagens%20site/fundo_site_meio_xmhlui.png");
+	background-image: url("/images/fundo_site_meio_xmhlui.png");
 	background-size: 100% 100%;
 	width: 100%;
 	height: 100%;
@@ -137,14 +250,14 @@
 	background-position: right 0%;
   }
   .bgBannerBlueRight{
-	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1657050842/Imagens%20site/6_iehzhf.png");
+	background-image: url("/images/6_iehzhf.png");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
   }
   .bgBannerBlue {
-	background-image: url("https://res.cloudinary.com/djheoavst/image/upload/v1656607422/Imagens%20site/Fundo_azul_ueukye.png");
+	background-image: url("/images/Fundo_azul_ueukye.png");
 	background-size: cover;
 	width: 100%;
 	height: 100%;

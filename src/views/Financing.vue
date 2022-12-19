@@ -1,378 +1,512 @@
 <template>
-<div class="text-textPrimary">
-  <div class="bgBannerPrimary">
-    <div class="maxWidth xl:h-screen lg:h-screen" >
-      <topbarComponent position="relative" />
-      <div class="w-full flex flex-wrap justify-between mt-24 md:mt-4 sm:mt-4">
-        <div class="sm:w-full md:w-7/12 text-white md:pr-4   mt-auto mb-auto">
-          <div class="text-4xl sm:text-2xl md:text-2xl  font-semibold">Está procurando por um <br />Financiamento Imobiliário?<br/> </div>
-          <div class="font-semibold lg:text-2xl xl:text-2xl md:pt-4 pb-2 sm:pt-4  pt-16"><span class=" textDecoration">Aqui é o lugar certo!</span> </div>
-          <div class="font-semibold lg:text-2xl xl:text-2xl md:pb-4  sm:pt-4  pb-16"> 
+<div class="w-full bg-bglight2Color">
+  <div class="text-textPrimary ">
+    <div class="bgFinanBest sm:hidden md:hidden">
+      <div class="maxWidth xl:h-screen lg:h-screen" >
+        <topbarComponent position="relative" />
+        <div class="w-full flex mt-6 md:mt-4 sm:mt-4">
+          
+          
+          <div @click="showVideo=true" class="h-[500px] p-16 w-[600px]  md:w-7/12 text-white md:pr-4 sm:hidden ">
             
-            No financiamento imobiliário  você pode <br/>
-            garantir seu imóvel pagando a longo prazo<br/>   
-            com parcelas que cabem no seu bolso. </div>
-          <div class=" flex justify-between sm:justify-around">
-            <div class="">
-              <img :src="$options.imageConfig.icons.percentageWhite"  class="w-20 mr-auto ml-auto"/>
-              <div class="text-sm text-center">Taxa a partir de<br/>  9,10% a.a + TR </div>
-            </div>
-            <div class="">
-              <img :src="$options.imageConfig.icons.moneyWhite"  class="w-20 mr-auto ml-auto"/>
-               <div class="text-sm text-center">Prazo de até<br/> 420 X</div>
-            </div>
-            <div class="sm:hidden">
-              <img :src="$options.imageConfig.icons.calendarWhite"  class="w-20 mr-auto ml-auto"/>
-               <div class="text-sm text-center">Atendimento personalizado<br/>7 dias por semana</div>
+          </div>
+          <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
+            <div class="bg-bglight2Color rounded-xl w-full shadow-2xl p-12">
+                <div class="text-5xl titleFontBold text-primary  pb-6" >
+                  <div>Conheça o <span class="textDecoration">FinanBest</span> </div>
+                  <div class=" titleFontBold pt-2  " >
+                    O financiamento imobiliário da SejaBest.
+                  </div>
+                </div>
+                <div class=" py-4  pb-6">
+                  Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
+                  transparente e com o auxilio do nosso time de especialistas!
+                </div>
+                <div class="flex w-full items-center border-b-1 border-secondary pb-4">
+                  <div class="w-1/12 pr-6 mt-auto mb-auto">
+                    <img  :src="$options.imageConfig.iconSejaBest"  class="w-6 h-auto ">
+                  </div>
+                  <div class="w-11/12 text-lg "> 
+                    Sem <span class="text-primary">Filas.</span> 
+                    Sem <span class="text-primary">gerentes.</span>  
+                    Sem <span class="text-primary">complexidades</span> 
+                  </div>
+                </div>
+                <div class="w-10/12 text-xl text-primary pt-2 font-semibold "> 
+                  De quanto você precisa?
+                </div>
+                <div class="w-full flex  items-end justify-between">
+                  <div class="w-9/12 pr-1">
+                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                  </div>
+                  <div class="w-3/12 ">
+                    <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
+                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      target="_blank">Simular</a>
+                    </div>
+                  </div>
+                </div>
+                
             </div>
           </div>
         </div>
-        <div class="pt-24 md:pt-4 sm:py-8 md:w-5/12 max-w-sm w-full md:mr-auto md:ml-auto sm:mr-auto sm:ml-auto mb-8">
-          <div class="bg-white rounded-xl w-full shadow-2xl p-4 py-24 md:py-12 sm:py-12">
-              <div class="text-3xl sm:text-2xl font-semibold pb-3 text-primary "><span class=" textDecoration"> Vamos começar?</span></div>
-              <div class="text-xl sm:text-lg">Nos conte de quanto você precisa?</div>
-              <inputMoney v-model="value" id="value" label=""  placeholder=""  />
-              <div class="buttonGradient mt-12 text-center xl:text-xl w-full">
-                <a :href="$options.appSimulator"  style=" text-decoration: none;"
-                  target="_blank">Simule seu crédito</a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="w-full ">
-      <div class="maxWidth xl:h-screen lg:h-screen flex flex-wrap justify-between" >
-        <div class="w-5/12 sm:hidden md:hidden sm:pt-8 md:pt-8  mt-auto  mb-auto">
-
-          <div class="text-4xl  font-semibold text-primary">O que podemos </div>
-          <div class="text-4xl  font-semibold text-primary"><span class=" textDecoration">fazer por você?</span></div>
-          
-        </div>
-        <div class="w-full xl:hidden lg:hidden sm:pt-16 md:pt-16  mt-auto  mb-auto">
-
-          <div class="text-2xl md:text-4xl  sm:text-center  md:text-center font-semibold text-primary">O que podemos <span class=" textDecoration">fazer por você?</span></div>
-          
-        </div>
-        <div class="w-7/12 sm:w-full md:w-full pt-4 mt-auto mb-auto ">
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.phone"  class="w-24"/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Totalmente digital</div>
-              <div class=" text-textSecondary">
-                Simule seu crédito e acompanhe seu processo sem precisar se deslocar até uma agência!
-              </div>
-            </div>
-          </div>
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.calendar"  class="w-24"/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">7 dias por semana</div>
-              <div class=" text-textSecondary">
-                Atendimento personalizado, bancos só funcionam nos próprios horários.
-              </div>
-            </div>
-          </div>
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.user"  class="w-24"/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Descubra o seu perfil em tempo real</div>
-              <div class=" text-textSecondary">
-                Diferente dos bancos tradicionais, não é necessário esperar dias para saber se tem crédito, 
-                não precisa abrir contas, fazer aplicações, movimentar meses para conseguir o crédito. 
-              </div>
-            </div>
-          </div>
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.percentage"  class="w-24"/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Transparência total</div>
-              <div class=" text-textSecondary">
-                Não cobramos nenhuma taxa antecipada e a plataforma é 100% gratuita.
-              </div>
-            </div>
-          </div>
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.money"  class="w-24 "/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Ganho no sucesso</div>
-              <div class=" text-textSecondary">
-                Somos focados no êxito, diferente do gerente que tem seu confortável salário e metas a cumprir, 
-                você não é a prioridade dele, portanto precisamos lhe indicar uma boa taxa para fazermos negócio.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="w-full bgBlueHalf">
-    <div class="maxWidth xl:h-screen lg:h-screen flex flex-wrap justify-between" >
-      <div class="w-7/12 lg:w-8/12 lg:pl-12 sm:w-full sm:mt-24 md:pt-8  mt-auto  mb-auto">
-
-          <div class="text-4xl  sm:text-2xl font-semibold text-white"><span class=" textDecoration">Financiamento </span></div>
-          <div class="text-4xl  sm:text-2xl pt-2 font-semibold text-white"><span class=" textDecoration">imobiliário.</span></div>
-          <div class=" pt-8 text-white">
-            O financiamento imobiliário é uma linha de crédito <br/>
-            destinada a quem precisa comprar um imóvel e não <br/>
-            dispõe de todo recurso ou até mesmo não pretende <br/>
-            desembolsar integralmente o valor da compra devido <br/>
-            as condições atrativas da modalidade. 
-          </div>
-      </div>
-        <div class="w-5/12 lg:w-4/12 sm:w-full  sm:pt-80 mt-auto mb-auto ">
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.percentage"  class="w-24"/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Taxas de juros</div>
-              <div class=" text-textSecondary">
-                A partir de 9,10% a.a + TR
-              </div>
-            </div>
-          </div>
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.house"  class="w-24"/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Perfil de imóvel </div>
-              <div class=" text-textSecondary">
-                Casa, apartamento ou sala comercial
-              </div>
-            </div>
-          </div>
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.calendar"  class="w-24"/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Prazo</div>
-              <div class=" text-textSecondary">
-                Até 420 meses para pagar
-              </div>
-            </div>
-          </div>
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.money"  class="w-24 "/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Limite de crédito</div>
-              <div class=" text-textSecondary">
-                Até 90% do valor de avaliação do imóvel.
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-  <div class="w-full">
-    <div class="maxWidth xl:h-screen lg:h-screen h-full flex justify-center" >
-      <div class="mt-auto mb-auto">
-        <div class="text-4xl sm:text-2xl pt-12 text-center font-semibold text-primary pb-12">Quem pode fazer um<br /><span class=" textDecoration">Financiamento Imobiliário?</span></div>
-        <img :src="$options.imageConfig.clients" class="w-full h-auto" />
-        <div class="flex justify-around flex-wrap text-primary text-center text-2xl sm:text-xl pt-12">
-          <div class="sm:w-1/2 p-2">Empresários</div>
-          <div class="sm:w-1/2 p-2">Autônomos</div>
-          <div class="sm:w-1/2 p-2">Profissionais liberais</div>
-          <div class="sm:w-1/2 p-2">Aposentados</div>
-        </div>
-        <div class="flex justify-evenly flex-wrap text-primary text-center text-2xl sm:text-xl pt-6">
-          <div class="sm:w-1/2 p-2">Assaláriados</div>
-          <div class="sm:w-1/2 p-2">Pensionistas</div>
-          <div class="sm:w-1/2 p-2">Funcionários Públicos</div>
-        </div>
-        <div class="text-center text-primary text-2xl sm:text-xl pt-6">
-          Pessoa Jurídica também pode fazer Financiamento Imobiliário!
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="w-full ">
-      <div class="maxWidth xl:h-screen lg:h-screen flex flex-wrap justify-between" >
-        <div class="w-5/12 sm:hidden md:hidden sm:pt-8 md:pt-8  mt-auto  mb-auto">
-
-          <div class="text-4xl  font-semibold text-primary">Por que fazer o</div>
-          <div class="text-4xl  font-semibold text-primary"><span class=" textDecoration">financiamento imobiliário?</span></div>
-          
-        </div>
-        <div class="w-full xl:hidden lg:hidden sm:pt-16 md:pt-16  mt-auto  mb-auto">
-
-          <div class="text-2xl md:text-4xl  sm:text-center  md:text-center font-semibold text-primary">Por que fazer o <span class=" textDecoration">financiamento imobiliário?</span></div>
-          
-        </div>
-        <div class="w-7/12 sm:w-full md:w-full pt-4 mt-auto mb-auto ">
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.lightning"  class="w-24"/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Alavancagem</div>
-              <div class=" text-textSecondary">
-                Cliente não descapitaliza, utiliza o financiamento e faz o recurso trabalhar a seu favor.
-              </div>
-            </div>
-          </div>
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.money"  class="w-24"/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Continua investindo. </div>
-              <div class=" text-textSecondary">
-                ideal para oportunidades no mercado imobiliário, com o financiamento o cliente continua com o capital investido.
-              </div>
-            </div>
-          </div>
-          <div class="w-full flex border-b-1 py-4">
-            <div class="w-2/12 flex justify-center">
-              <div class="mt-auto mb-auto">
-              <img :src="$options.imageConfig.icons.heart"  class="w-24 "/>
-              </div>
-            </div>
-            <div class="w-10/12 pl-4 mt-auto mb-auto">
-              <div class="text-xl text-primary">Experiência do cliente.</div>
-              <div class=" text-textSecondary">
-                Entrega uma experiência completa para seu cliente, ele não precisa buscar a solução no mercado com uma péssima experiência.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="w-full bgBannerBlue sm:hidden">
-      <div class="maxWidth md:pb-16 lg:pb-20 sm:pb-16 pb-30 flex flex-wrap" >
-        <div class="w-1/3 sm:w-full text-white mb-auto mt-auto pr-12 md:pr-4 sm:pr-0">
-          <div class="py-20  transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="text-3xl  font-bold sm:text-md pb-2"><span class=" textDecoration">PASSO 1</span></div>
-            <div class="text-xl md:text-md font-bold sm:text-md">Simule e solicite.</div>
-            <div class="md:text-sm sm:text-sm">
-              Pré-aprovação em tempo real porque seu tempo é valioso.
-            </div>
-          </div>
-          <div class="pb-16 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="text-3xl  font-bold sm:text-md pb-2"><span class=" textDecoration">PASSO 2</span></div>
-            <div class="text-xl md:text-md font-bold sm:text-md">Envie seus documentos.</div>
-            <div class="md:text-sm sm:text-sm">
-              Envie os documentos de acordo com seu perfil para aprovarmos seu crédito de forma efetiva! 
-            </div>
-          </div>
-        </div>
-        <div class="w-1/3 sm:w-full text-center">
-          <div class="w-full  font-semibold text-white  text-4xl lg:text-3xl md:text-3xl sm:text-3xl md:py-16 lg:py-20 sm:py-16 py-30">  
-          O seu Financiamento imobiliário <span class=" textDecoration">em 4 Passos</span></div>
-          <div class="w-full "><img :src="$options.imageConfig.appClientMd"  class="w-full h-auto"/></div>
-          <button class=" buttonWhite text-center text-xl mt-16"><a :href="$options.appSimulator" >Quero simular</a></button>
-        </div>
-        <div class="w-1/3 sm:w-full text-white text-right mb-auto mt-auto pl-12 md:pl-4 lg:pl-4 sm:pr-0">
-          <div class="py-20 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="text-3xl  font-bold sm:text-md pb-2"><span class=" textDecoration">PASSO 3</span></div>
-            <div class="text-xl md:text-md font-bold sm:text-md">
-              Avaliação do imóvel e formalização.
-            </div>
-            <div class="md:text-sm sm:text-sm">
-              Fique tranquilo que nesta etapa temos um especialista para lhe auxiliar até o fim do processo.
-            </div>
-          </div>
-          <div class="pb-16 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="text-3xl  font-bold sm:text-md pb-2"><span class=" textDecoration">PASSO 4</span></div>
-            <div class="text-xl md:text-md font-bold sm:text-md">
-              Liberação do recurso. 
-            </div>
-            <div class="md:text-sm sm:text-sm">
-              Agora é com você! Aproveite a liberdade para realizar aquele sonho e tirar os projetos do papel!
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-  <div class="w-full bgBannerBlue lg:hidden xl:hidden md:hidden text-white p-4">
-      <div class="text-2xl  text-center  font-semibold ">
-        <div class="py-12">O seu Financiamento imobiliario<br /> <span class=" textDecoration">em 4 Passos</span></div>
         
       </div>
-      <div class="mb-4 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 border-l-4 border-white pl-4">
-        <div class="text-md font-bold pb-2"><span class=" textDecoration">PASSO 1</span></div>
-        <div class="text-md font-bold">Simule e solicite.</div>
-        <div class="text-sm pb-4">
-          Pré-aprovação em tempo real porque seu tempo é valioso. 
+      
+    </div>
+    <div class=" xl:hidden lg:hidden md:hidden">
+      <div class="maxWidth pb-12" >
+        <topbarComponent position="top" />
+        <div class="w-full ">
+          <div @click="showVideo=true" class="w-full pt-4">
+            <img :src="$options.imageConfig.finanBest.phoneVideo"  class="w-full h-auto "/>
+          </div>
+          <div class="py-8  w-full">
+            <div class="">
+                <div class="text-4xl titleFontBold text-primary  pb-6 pr-8" >
+                  <div>Conheça o <span class="textDecoration">FinanBest</span> </div>
+                  <div class=" titleFontBold pt-2  " >
+                    O financiamento imobiliário da SejaBest.
+                  </div>
+                </div>
+                <div class=" py-4  pb-6">
+                  Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
+                  transparente e com o auxilio do nosso time de especialistas!
+                </div>
+                <div class="flex w-full items-center border-b-1 border-secondary pb-4">
+                  <div class="w-1/12 pr-6 mt-auto mb-auto">
+                    <img  :src="$options.imageConfig.iconSejaBest"  class="w-12 h-auto ">
+                  </div>
+                  <div class="w-11/12 text-lg "> 
+                    Sem <span class="text-primary">Filas.</span> 
+                    Sem <span class="text-primary">gerentes.</span>  
+                    Sem <span class="text-primary">complexidades</span> 
+                  </div>
+                </div>
+                <div class="w-10/12 text-xl text-primary pt-2 font-semibold "> 
+                  De quanto você precisa?
+                </div>
+                <div class="w-full flex  items-end justify-between">
+                  <div class="w-9/12 pr-1">
+                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                  </div>
+                  <div class="w-3/12 ">
+                    <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
+                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      target="_blank">Simular</a>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+          
         </div>
-      </div>
-      <div class="mb-4 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 text-right border-r-4 border-white pr-4">
-        <div class="text-md font-bold pb-2"><span class=" textDecoration">PASSO 2</span></div>
-        <div class="text-md font-bold">Envie seus documentos.</div>
-        <div class="text-sm pb-4">
-          Envie os documentos de acordo com seu perfil para aprovarmos seu crédito de forma efetiva! 
-        </div>
-      </div>
-      <div class="mb-4 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 border-l-4 border-white pl-4">
-        <div class="text-md font-bold pb-2"><span class=" textDecoration">PASSO 3</span></div>
-        <div class="text-md font-bold">Avaliação do imóvel e formalização.</div>
-        <div class="text-sm pb-4">
-          Fique tranquilo que nesta etapa temos um especialista para lhe auxiliar até o fim do processo. 
-        </div>
-      </div>
-      <div class="mb-4 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 text-right border-r-4 border-white pr-4">
-        <div class="text-md font-bold pb-2"><span class=" textDecoration">PASSO 4</span></div>
-        <div class="text-md font-bold">Liberação do recurso. </div>
-        <div class="text-sm pb-4">
-          Agora é com você! Aproveite a liberdade para realizar aquele sonho e tirar os projetos do papel! 
-        </div>
+        
       </div>
       
-      <div class="text-center ">
-        <img :src="$options.imageConfig.bestHubMockupMd"  class="w-11/12 mr-auto ml-auto "/>
-        <button class=" buttonWhite text-center text-xl my-16"><a :href="$options.appSimulator" >Quero simular</a></button>
+    </div>
+    <div class=" sm:hidden xl:hidden lg:hidden">
+      <div class="maxWidth mb-12" >
+        <topbarComponent position="top" />
+        <div class="w-full flex">
+          
+          <div class="w-1/2 pt-4 mt-auto mb-auto ">
+            <div class="">
+                <div class="text-4xl titleFontBold text-primary  pb-6 pr-8" >
+                  <div>Conheça o <span class="textDecoration">FinanBest</span> </div>
+                  <div class=" titleFontBold pt-2  " >
+                    O financiamento imobiliário da SejaBest.
+                  </div>
+                </div>
+                <div class=" py-4  pb-6">
+                  Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
+                  transparente e com o auxilio do nosso time de especialistas!
+                </div>
+                <div class="flex w-full items-center border-b-1 border-secondary pb-4">
+                  <div class="w-1/12 pr-6 mt-auto mb-auto">
+                    <img  :src="$options.imageConfig.iconSejaBest"  class="w-12 h-auto ">
+                  </div>
+                  <div class="w-11/12 text-lg "> 
+                    Sem <span class="text-primary">Filas.</span> 
+                    Sem <span class="text-primary">gerentes.</span>  
+                    Sem <span class="text-primary">complexidades</span> 
+                  </div>
+                </div>
+                <div class="w-10/12 text-xl text-primary pt-2 font-semibold "> 
+                  De quanto você precisa?
+                </div>
+                <div class="w-full flex  items-end justify-between">
+                  <div class="w-9/12 pr-1">
+                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                  </div>
+                  <div class="w-3/12 ">
+                    <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
+                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      target="_blank">Simular</a>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+          </div>
+          <div @click="showVideo=true" class="w-1/2 text-white md:pr-4 sm:hidden mt-auto mb-auto">
+            
+            <img :src="$options.imageConfig.cashBest.phoneVideoMd"  class="w-8/12 h-auto mr-auto ml-auto "/>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <div class="maxWidth flex py-36 sm:pb-4 sm:pt-0 ">
+      <div class="w-1/4 sm:w-1/2 mt-auto mb-auto pr-4">
+        <div class="text-4xl sm:text-2xl md:text-2xl text-primary">
+          Apenas vantagens para você
+        </div>
+        <div class="py-6 sm:text-sm sm:py-2 text-primary">
+          Descubra porque o <span class="text-complementaryColor3">FinanBest</span> 
+          pode ser a sua melhor opção de Financiamento Imobiliário.
+        </div>
+      </div>
+      <div class="w-3/4 sm:w-1/2 mt-auto mb-auto">
+        <div class="bg-primary sm:hidden md:hidden  rounded-2xl ">
+          <Splide :options=" {type:'loop', perPage: 2, perMove: 1, padding: '10rem', drag   : 'free',
+             rewind : true, focus  : 'center', pagination:true} " aria-label="Vantagens para você">
+            <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderPhones">
+              <div  class="">
+                <img :src="slide.img" 
+                class="px-4 " :alt="slide.alt">
+              </div>
+            </SplideSlide>
+              
+          </Splide>
+        </div>
+        <div class="bg-primary xl:hidden lg:hidden sm:hidden  rounded-2xl ">
+          <Splide :options=" {type:'loop', perPage: 2, perMove: 1,  drag   : 'free',
+            } " aria-label="Vantagens para você">
+            <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderPhones">
+              <div  class="w-full">
+                <img :src="slide.img" 
+                class="px-4" :alt="slide.alt">
+              </div>
+            </SplideSlide>
+              
+          </Splide>
+        </div>
+        <div class="bg-bglightColor xl:hidden lg:hidden md:hidden  rounded-2xl ">
+          <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free',
+            } " aria-label="Vantagens para você">
+            <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderPhones">
+              <div  class="w-full">
+                <img :src="slide.img" 
+                class="px-4" :alt="slide.alt">
+              </div>
+            </SplideSlide>
+              
+          </Splide>
+        </div>
+        
+      </div>
+    </div>
+    <div class="maxWidth flex md:mt-12">
+      <div class="w-6/12 sm:w-[0.3] mt-auto mb-auto py-16">
+        <img :src="$options.imageConfig.finanBest.photoKeys"  class="w-11/12 mr-4 ml-auto h-auto"/>
+        
+      </div>
+      <div class="w-6/12 sm:w-[0.7] mt-auto mb-auto">
+        <div class="text-8xl sm:text-3xl lg:text-7xl md:text-6xl titleFontBold text-right text-primary pt-8" >
+          A chave para os seus<span class="textDecoration"> Sonhos.</span>
+        </div>
+        <div class=" text-lg  sm:text-xs md:text-sm text-right w-11/12 mr-0 ml-auto mt-12 sm:mt-6">
+          Aqui realizamos o sonho da casa própria! Com o financiamento imobiliário da SejaBest 
+          você pode garantir ótimas taxas, além de ter à disposição um assessor que irá te auxiliar 
+          do início ao fim do processo. 
+          É um investimento seguro que possui diversas vantagens a curto e longo prazo. Com condições facilitadas, 
+          o FinanBest é perfeito para você!
+        </div>
+        <div class="pt-6 sm:pt-4 text-right pb-12" >
+          <button class="buttonComplementaryColor1"><a class="sm:text-sm text-2xl"
+            :href="$options.information.appSimulator"  style=" text-decoration: none;"
+            target="_blank">Faça uma simulação</a> </button>
+        </div>
+      </div>
+    </div>
+    
+   
+    
+  </div>
+  <div class=" w-full mt-8 flex justify-center sm:hidden md:hidden">
+    <div class="ml-auto  mr-auto maxWidth">
+      <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : true ,  height   : '25rem',trimSpace: 'move', 
+        rewind : true, pagination:false, direction: 'ttb', arrows:true} " aria-label="Você pode obter o recurso para:">
+        <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderTutorial">
+          <div  class="">
+            <img :src="slide.img" class="px-4 lg:pt-12" :alt="slide.alt">
+          </div>
+        </SplideSlide>
+      </Splide>  
+    </div>  
+  </div>
+  <div class="maxWidth xl:hidden lg:hidden">
+    <div class="titleFontBold text-5xl sm:text-4xl text-primary text-center py-12"> É tão simples que você só<br/> precisa de <span class="text-complementaryColor1 ">4 etapas</span></div>
+    <div class="bg-bglight2Color shadow-xl border-1 rounded-xl p-4">
+      <div class="flex w-full ">
+        <div @click="showTutorial(1)" class="mt-auto mb-auto text-xl pr-4 text-primary">
+           
+            <i v-if="!tutorial.show1" class="ti ti-angle-right" ></i>
+            <i v-if="tutorial.show1" class="ti ti-angle-down" ></i>
+        </div>
+        <div class="text-primary text-2xl titleFontBold pr-2">
+          <span class="text-complementaryColor1">#1</span> Simule e solicite.
+        </div>
+        
+      </div>
+      <div class=" p-4" v-if="tutorial.show1">
+        A simulação é feita através do nosso <a :href="$options.information.appSimulator" class="text-primary" style=" text-decoration: none;"
+            target="_blank">simulador.</a> Em até minutos você tem o resultado, porque seu tempo é valioso.
+      </div>
+    </div>
+    <div class="bg-bglight2Color mt-4 shadow-xl border-1 rounded-xl p-4">
+      <div class="flex w-full ">
+        <div @click="showTutorial(2)" class="mt-auto mb-auto text-xl pr-4 text-primary">
+           
+            <i v-if="!tutorial.show2" class="ti ti-angle-right" ></i>
+            <i v-if="tutorial.show2" class="ti ti-angle-down" ></i>
+        </div>
+        <div class="text-primary text-2xl titleFontBold pr-2">
+          <span class="text-complementaryColor1">#2</span> Envie seus documentos
+        </div>
+        
+      </div>
+      <div class=" p-4" v-if="tutorial.show2">
+        Para uma análise de crédito mais detalhada, envie os documentos solicitados.
+         Após o envio, seus documentos serão analisados e será enviada uma proposta concreta.     
+      </div>
+    </div>
+    <div class="bg-bglight2Color mt-4 shadow-xl border-1 rounded-xl p-4">
+      <div class="flex w-full ">
+        <div @click="showTutorial(3)" class="mt-auto mb-auto text-xl pr-4 text-primary">
+           
+            <i v-if="!tutorial.show3" class="ti ti-angle-right" ></i>
+            <i v-if="tutorial.show3" class="ti ti-angle-down" ></i>
+        </div>
+        <div class="text-primary text-2xl titleFontBold pr-2">
+          <span class="text-complementaryColor1">#3</span> Avaliação do Imóvel
+        </div>
+        
+      </div>
+      <div class=" p-4" v-if="tutorial.show3">
+        Nesta etapa, o imóvel passará por uma avaliação que irá certificar que o mesmo está apto para ser a garantia do processo. 
+      </div>
+    </div>
+    <div class="bg-bglight2Color mt-4 shadow-xl border-1 rounded-xl p-4">
+      <div class="flex w-full ">
+        <div @click="showTutorial(4)" class="mt-auto mb-auto text-xl pr-4 text-primary">
+           
+            <i v-if="!tutorial.show4" class="ti ti-angle-right" ></i>
+            <i v-if="tutorial.show4" class="ti ti-angle-down" ></i>
+        </div>
+        <div class="text-primary text-2xl titleFontBold pr-2">
+          <span class="text-complementaryColor1">#4</span> Liberação do recurso
+        </div>
+        
+      </div>
+      <div class=" p-4" v-if="tutorial.show4">
+        Depois de passar por todas as etapas e a documentação estiver concluída, 
+        seu recurso será liberado! Aqui encerramos a operaçãocom êxito, 
+        sempre entregando a melhor experiência ao cliente!
+      </div>
+    </div>
+  </div>
+  <div class="w-full pb-12 pt-16 sm:pt-0">
+      <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto" >
+        <div class="mt-auto mb-auto w-full bg-bglight2Color shadow-xl border-1 rounded-2xl flex-wrap p-6">
+        
+          <div class="w-full flex  py-4 ">
+            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl  text-primary text-center">Por que ser Best?</div>
+            <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
+              <img :src="$options.imageConfig.logoVertical"  class="w-30 sm:w-24 h-auto mr-auto ml-auto"/>
+            </div>
+            <div class="w-1/3  sm:w-1/4  mt-auto mb-0 text-center">
+              <div class="text-textSecondary text-3xl sm:text-2xl mt-auto mb-auto px-4"> Bancos</div>
+            </div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg"> As menores taxas do mercado </div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg"> Múltiplas opções de banco </div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Plataforma multiprodutos</div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Transparência</div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Processo agilizado</div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Atendimento 7 dias por semana</div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Assessoria personalizada</div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Totalmente Digital</div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Sem burocracias</div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex border-b py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Sem filas</div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+          <div class="w-full flex py-3  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Foco no cliente</div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+          </div>
+        </div>
       </div>
   </div>
+  <div class="w-full bg-gradient-to-r from-primary to-secondary pb-4  mt-16 sm:mt-24 md:mt-24" >
+    <div class="maxWidth flex justify-center ">
+      <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
+       <img :src="$options.imageConfig.home.photoFooter"  
+         class="w-full   absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
+      </div>
+      <div class="w-9/12 sm:w-6/12 md:w-8/12">
+        <div class="text-white pt-4 titleFontBold text-5xl lg:text-4xl md:text-3xl sm:text-xl text-right">
+           E aí, vamos ser<br/> Best com a gente?
+        </div>
+        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-sm" >
+         <button class="buttonComplementaryColor1">
+          <a 
+            :href="$options.information.appSimulator"  style=" text-decoration: none;"
+            target="_blank">Faça uma simulação</a></button>
+        </div>
+        <div class="w-full flex">
+          <div class="w-9/12 lg:w-8/12 sm:w-5/12 md:w-7/12 border-b-1 border-white mt-auto mb-auto"></div>
+          <div class="w-3/12 lg:w-4/12 sm:w-7/12 md:w-5/12 text-right text-white">
+            <div class="font-semibold sm:text-xs md:text-sm">Gaspar Motta Filho</div>
+            <div class="text-sm sm:text-2xs">CEO & Founder - SejaBest</div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
+    :videoStyle="videoStyle" @closePopUp="showVideo=false" />
 </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import popUpVideo from "@/components/base/popUpVideo.component.vue"
 import topbarComponent from '@/components/structure/topbar.component.vue';
 export default defineComponent({
-  name: 'Home',
+  name: 'HomeEquity',
   components:{
-    topbarComponent 
+    topbarComponent , popUpVideo
   },
   data() {
     return {
       isVisible:false,
-      value:250000,
+      value:300000,
+      showVideo:false,
+      videoStyle: "w-full h-[36rem] mr-auto ml-auto rounded-2xl ",
+      videoUrl:"https://www.youtube.com/embed/eDWFe4Wrb2A",
+      tutorial:{
+        show1:false,
+        show2:false,
+        show3:false,
+        show4:false,
+      }
     }
   },
+  methods: {
+      showTutorial(item){
+        if(item===1 && this.tutorial.show1==false){
+          this.tutorial={
+            show1:true,
+            show2:false,
+            show3:false,
+            show4:false,
+          }
+        }else if(item===2 && this.tutorial.show2==false){
+          this.tutorial={
+            show1:false,
+            show2:true,
+            show3:false,
+            show4:false,
+          }
+        }else if(item===3 && this.tutorial.show3==false){
+          this.tutorial={
+            show1:false,
+            show2:false,
+            show3:true,
+            show4:false,
+          }
+        }else if(item===4 && this.tutorial.show4==false){
+          this.tutorial={
+            show1:false,
+            show2:false,
+            show3:false,
+            show4:true,
+          }
+        }else if(item===1 && this.tutorial.show1){
+          this.tutorial={
+            show1:false,
+            show2:false,
+            show3:false,
+            show4:false,
+          }
+        }else if(item===2 && this.tutorial.show2){
+          this.tutorial={
+            show1:false,
+            show2:false,
+            show3:false,
+            show4:false,
+          }
+        }else if(item===3 && this.tutorial.show3){
+          this.tutorial={
+            show1:false,
+            show2:false,
+            show3:false,
+            show4:false,
+          }
+        }else if(item===4 && this.tutorial.show4){
+          this.tutorial={
+            show1:false,
+            show2:false,
+            show3:false,
+            show4:false,
+          }
+        }
+
+      }
+  },
+ 
 })
 </script>
