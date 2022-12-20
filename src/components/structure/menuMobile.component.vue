@@ -14,7 +14,7 @@
       <router-link to="/home-equity" class="hover:text-primary hover:font-semibold lineDecoration" > Home Equity  </router-link>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" :class="linkStyle">
-      <router-link to="/financiamento-imobiliario" class="hover:text-primary hover:font-semibold lineDecoration" > Financiamento </router-link>
+      <router-link to="/financing" class="hover:text-primary hover:font-semibold lineDecoration" > Financiamento </router-link>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" :class="linkStyle">
       <router-link to="/parceiro" class="hover:text-primary hover:font-semibold lineDecoration" > Seja um Parceiro </router-link>

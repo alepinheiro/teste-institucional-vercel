@@ -69,6 +69,7 @@ const image = {
     mockupPhonesDesktopCrop:"/images/Home/MockupPhonesDesktopCrop.png",
     mockupPhonesSM:"/images/Home/MockupPhonesMobile.png",
     photoFooter: "/images/Home/FotoGaspar.png",
+    reclameaqui:"/images/Home/reclameaqui.png"
   },
   finanBest:{
     phoneVideo:"/images/finanBest/VideoFinanBestMobile.gif",

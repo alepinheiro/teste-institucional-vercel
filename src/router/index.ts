@@ -12,19 +12,24 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/AboutUs.vue"),
   },
   {
-    path: "/como-funciona",
-    name: "Works",
-    component: () => import("@/views/Works.vue"),
-  },
-  {
     path: "/home-equity",
     name: "HomeEquity",
     component: () => import("@/views/HomeEquity.vue"),
   },
   {
-    path: "/financiamento-imobiliario",
+    path: "/emprestimo-com-garantia-de-imovel/cashbest",
+    name: "HomeEquityLP",
+    component: () => import("@/views/HomeEquityLP.vue"),
+  },
+  {
+    path: "/financing",
     name: "Financing",
     component: () => import("@/views/Financing.vue"),
+  },
+  {
+    path: "/financiamento-imobiliario/finanBest",
+    name: "FinancingLP",
+    component: () => import("@/views/FinancingLP.vue"),
   },
   {
     path: "/parceiro",

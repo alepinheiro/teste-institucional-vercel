@@ -61,43 +61,44 @@
           <div @click="showVideo=true" class="w-full pt-4">
             <img :src="$options.imageConfig.finanBest.phoneVideo"  class="w-full h-auto "/>
           </div>
-          <div class="py-8  w-full">
+          <div class="py-4  w-full">
             <div class="">
-                <div class="text-4xl titleFontBold text-primary  pb-6 pr-8" >
+                <div class="text-4xl titleFontBold text-primary  pb-4 pr-8" >
                   <div>Conheça o <span class="textDecoration">FinanBest</span> </div>
-                  <div class=" titleFontBold pt-2  " >
+                  <div class="text-xl titleFontBold pt-2  " >
                     O financiamento imobiliário da SejaBest.
                   </div>
                 </div>
-                <div class=" py-4  pb-6">
+                <div class="   pb-6">
                   Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
                   transparente e com o auxilio do nosso time de especialistas!
                 </div>
-                <div class="flex w-full items-center border-b-1 border-secondary pb-4">
-                  <div class="w-1/12 pr-6 mt-auto mb-auto">
-                    <img  :src="$options.imageConfig.iconSejaBest"  class="w-12 h-auto ">
+                <div class="bg-primary p-4 rounded-xl">
+                  <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
+                    <div class="w-2/12 pr-2 mt-auto mb-auto">
+                      <img  :src="$options.imageConfig.iconSejaBestWhite"  class="w-18 h-auto ">
+                    </div>
+                    <div class="w-11/12 text-lg text-white"> 
+                      Sem <span class="text-complementaryColor3">Filas.</span> 
+                      Sem <span class="text-complementaryColor3">gerentes.</span>  
+                      Sem <span class="text-complementaryColor3">complexidades</span> 
+                    </div>
                   </div>
-                  <div class="w-11/12 text-lg "> 
-                    Sem <span class="text-primary">Filas.</span> 
-                    Sem <span class="text-primary">gerentes.</span>  
-                    Sem <span class="text-primary">complexidades</span> 
+                  <div class="w-10/12 text-xl text-white pt-2 font-semibold "> 
+                    De quanto você precisa?
                   </div>
-                </div>
-                <div class="w-10/12 text-xl text-primary pt-2 font-semibold "> 
-                  De quanto você precisa?
-                </div>
-                <div class="w-full flex  items-end justify-between">
-                  <div class="w-9/12 pr-1">
-                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
-                  </div>
-                  <div class="w-3/12 ">
-                    <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
-                      target="_blank">Simular</a>
+                  <div class="w-full flex  items-end justify-between">
+                    <div class="w-9/12 pr-1">
+                      <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                    </div>
+                    <div class="w-3/12 ">
+                      <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
+                        <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                        target="_blank">Simular</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                
             </div>
           </div>
           
@@ -209,7 +210,7 @@
         
       </div>
     </div>
-    <div class="maxWidth flex md:mt-12">
+    <div class="maxWidth sm:hidden flex md:mt-12">
       <div class="w-6/12 sm:w-[0.3] mt-auto mb-auto py-16">
         <img :src="$options.imageConfig.finanBest.photoKeys"  class="w-11/12 mr-4 ml-auto h-auto"/>
         
@@ -232,7 +233,55 @@
         </div>
       </div>
     </div>
-    
+    <div class="maxWidth xl:hidden lg:hidden md:hidden">
+      <div class="text-3xl  titleFontBold text-center text-primary pt-8" >
+          A chave para os seus<span class="textDecoration"> Sonhos.</span>
+        </div>
+        <div class=" w-full text-center py-8 ">
+          Aqui realizamos o sonho da casa própria! Com o financiamento imobiliário da SejaBest 
+          você pode garantir ótimas taxas, além de ter à disposição um assessor que irá te auxiliar 
+          do início ao fim do processo. 
+          É um investimento seguro que possui diversas vantagens a curto e longo prazo. Com condições facilitadas, 
+          o FinanBest é perfeito para você!
+        </div>
+      <div class="border-1 gradienteSBDark  rounded-xl w-full text-white ">
+            <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
+              <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
+              <div class="text-xl titleFont">As melhores soluções em </div>
+              <div class="text-xl titleFont">Financiamento imobiliário</div>
+            </div>
+            <div class="w-full p-6 rounded-b-xl ">
+              <div class="w-full flex  items-center">
+                <div class="pr-6 ">
+                  <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                </div>
+                <div class="text-xl w-full">
+                  Taxas a partir de 9,70% a.a. + taxas referencial
+                </div>
+              </div>
+              <div class="w-full flex pt-8 items-center">
+                <div class="pr-6 ">
+                  <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                </div>
+                <div class="text-xl w-full">
+                  Pague em até 420 meses
+                </div>
+              </div>
+              <div class="w-full flex pt-8 items-center">
+                <div class="pr-6 ">
+                  <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                </div>
+                <div class="text-xl w-full">
+                  Os melhores bancos do mercado
+                </div>
+              </div>
+              <div class="buttonComplementaryColor1 mt-8 text-center">
+                <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                  target="_blank">Faça uma simulação</a>
+              </div>
+            </div>
+          </div>
+    </div>
    
     
   </div>
@@ -400,7 +449,7 @@
         <div class="text-white pt-4 titleFontBold text-5xl lg:text-4xl md:text-3xl sm:text-xl text-right">
            E aí, vamos ser<br/> Best com a gente?
         </div>
-        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-sm" >
+        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
          <button class="buttonComplementaryColor1">
           <a 
             :href="$options.information.appSimulator"  style=" text-decoration: none;"
@@ -426,7 +475,7 @@ import { defineComponent } from 'vue';
 import popUpVideo from "@/components/base/popUpVideo.component.vue"
 import topbarComponent from '@/components/structure/topbar.component.vue';
 export default defineComponent({
-  name: 'HomeEquity',
+  name: 'Financing',
   components:{
     topbarComponent , popUpVideo
   },

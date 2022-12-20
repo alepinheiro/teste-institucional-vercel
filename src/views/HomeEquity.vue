@@ -57,14 +57,14 @@
       <div class="maxWidth " >
         <topbarComponent position="relative" />
         <div class="w-full ">
-          <div @click="showVideo=true" class="w-full ">
+          <div @click="showVideo=true" class="w-full mt-4">
             <img :src="$options.imageConfig.cashBest.phoneVideo"  class="w-full h-auto "/>
           </div>
-          <div class="py-8  w-full">
+          <div class="py-8 sm:py-4  w-full">
             <div class=" rounded-xl w-full ">
-                <div class="text-5xl titleFontBold  text-white  pb-6" >
+                <div class="text-4xl titleFontBold  text-white  pb-2" >
                   <div>Conheça o <span class="textDecoration text-complementaryColor3">CashBest</span> </div>
-                  <div class="text-5xl titleFontBold pt-2 text-white  " >
+                  <div class="text-4xl titleFontBold pt-2 text-white  " >
                     O Home Equity da SejaBest
                   </div>
                 </div>
@@ -72,31 +72,32 @@
                   Receba até <span class="font-semibold">60% do valor</span> do seu imóvel como capital para usar como quiser.
                   <span class="text-complementaryColor3"> Assista ao lado e saiba como.</span>
                 </div>
-                <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
-                  <div class="w-2/12 pr-6 mt-auto mb-auto">
-                    <img  :src="$options.imageConfig.iconSejaBestWhite"  class="w-12 h-auto ">
+                <div class="bg-bglight2Color p-4 rounded-xl">
+                  <div class="flex w-full items-center border-b-1 border-primary pb-4">
+                    <div class="w-2/12 pr-6 mt-auto mb-auto">
+                      <img  :src="$options.imageConfig.iconSejaBest"  class="w-6 h-auto ">
+                    </div>
+                    <div class="w-10/12 text-lg "> 
+                      Sem <span class="text-primary">Filas.</span> 
+                      Sem <span class=" text-primary">gerentes.</span>  
+                      Sem <span class=" text-primary">complexidades</span> 
+                    </div>
                   </div>
-                  <div class="w-10/12 text-lg text-white"> 
-                    Sem <span class="text-complementaryColor3">Filas.</span> 
-                    Sem <span class="text-complementaryColor3">gerentes.</span>  
-                    Sem <span class="text-complementaryColor3">complexidades</span> 
+                  <div class="w-10/12 text-xl  pt-2 font-semibold text-textPrimary"> 
+                    De quanto você precisa?
                   </div>
-                </div>
-                <div class="w-10/12 text-xl text-white pt-2 font-semibold text-textPrimary"> 
-                  De quanto você precisa?
-                </div>
-                <div class="w-full flex  items-end justify-between">
-                  <div class="w-9/12 pr-1">
-                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
-                  </div>
-                  <div class="w-3/12 ">
-                    <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
-                      target="_blank">Simular</a>
+                  <div class="w-full flex  items-end justify-between">
+                    <div class="w-9/12 pr-1">
+                      <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                    </div>
+                    <div class="w-3/12 ">
+                      <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
+                        <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                        target="_blank">Simular</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                
             </div>
           </div>
           
@@ -158,7 +159,57 @@
       </div>
       
     </div>
-    <div class="maxWidth flex md:mt-12">
+    <div class="md:hidden xl:hidden lg:hidden maxWidth">
+      <div class="text-8xl lg:text-6xl text-center pb-8 sm:text-5xl md:text-6xl titleFontBold  text-white  " >
+          E o que é <br/>Home<span class="textDecoration">  Equity?</span>
+        </div>
+      <div class="text-white text-sm text-center pb-6">
+          É o Crédito com Garantia de Imóvel, também conhecido como Home Equity,
+          é a modalidade ideal para quem quer as menores taxas de juros do 
+          mercado e um longo prazo para pagamento. Nessa modalidade, você 
+          utiliza sua casa, apartamento ou sala comercial como garantia de
+          crédito e desfruta das melhores condições disponíveis no mercado.
+        </div>
+      <div class="border-1  rounded-xl w-full text-white mr-4">
+            <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
+              <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
+              <div class="text-xl titleFont">Conheça o Crédito com </div>
+              <div class="text-xl titleFont">garantia de imóvel</div>
+            </div>
+            <div class="w-full p-6 bg-secondary rounded-b-xl">
+              <div class="w-full flex  items-center">
+                <div class="pr-6 ">
+                  <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                </div>
+                <div class="text-xl w-full">
+                  As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
+                </div>
+              </div>
+              <div class="w-full flex pt-6 items-center">
+                <div class="pr-6 ">
+                  <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                </div>
+                <div class="text-xl w-full">
+                  Prazos de até 20 anos
+                </div>
+              </div>
+              <div class="w-full flex pt-6 items-center">
+                <div class="pr-6 ">
+                  <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                </div>
+                <div class="text-xl w-full">
+                  Até 60% do valor do imóvel como capital
+                </div>
+              </div>
+              <div class="buttonComplementaryColor1 mt-6 text-center">
+                <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                  target="_blank">Faça uma simulação</a>
+              </div>
+            </div>
+          </div>
+    
+    </div>
+    <div class="maxWidth sm:hidden flex md:mt-12">
       <div class="w-6/12 sm:w-4/12 mt-auto mb-auto">
         <img :src="$options.imageConfig.cashBest.photoMan"  class="w-full h-auto "/>
       </div>
@@ -477,7 +528,7 @@
         <div class="text-white pt-4 titleFontBold text-5xl lg:text-4xl md:text-3xl sm:text-xl text-right">
            E aí, vamos ser<br/> Best com a gente?
         </div>
-        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-sm" >
+        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
          <button class="buttonComplementaryColor1">
           <a 
             :href="$options.information.appSimulator"  style=" text-decoration: none;"

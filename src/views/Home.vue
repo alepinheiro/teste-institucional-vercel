@@ -108,7 +108,7 @@
                   <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
-                  As menores taxas do mercado, a partir de 0,79% a.m. + IPCA ou 1,29% a.m. Fixa
+                  As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
                 </div>
               </div>
               <div class="w-full flex pt-6 items-center">
@@ -145,7 +145,7 @@
                   <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
-                  Taxas a partir de 9,10% a.a. + taxas referencial
+                  Taxas a partir de 9,70% a.a. + taxas referencial
                 </div>
               </div>
               <div class="w-full flex pt-8 items-center">
@@ -188,7 +188,7 @@
                         <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
-                        As menores taxas do mercado, a partir de 0,79% a.m. + IPCA ou 1,29% a.m. Fixa
+                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
                       </div>
                     </div>
                     <div class="w-full flex pt-6 items-center">
@@ -229,7 +229,7 @@
                         <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
-                        Taxas a partir de 9,10% a.a. + taxas referencial
+                        Taxas a partir de 9,70% a.a. + taxas referencial
                       </div>
                     </div>
                     <div class="w-full flex pt-8 items-center">
@@ -503,7 +503,7 @@
         <div class="text-white pt-4 titleFontBold text-5xl lg:text-4xl md:text-3xl sm:text-xl text-right">
            E aí, vamos ser<br/> Best com a gente?
         </div>
-        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-sm" >
+        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
          <button class="buttonComplementaryColor1">
           <a 
             :href="$options.information.appSimulator"  style=" text-decoration: none;"
@@ -533,7 +533,7 @@ export default defineComponent({
   data() {
     return {
       isVisible:false,
-      value:1000000,
+      value:250000,
     }
   },
 })

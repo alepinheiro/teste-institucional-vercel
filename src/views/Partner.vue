@@ -152,7 +152,7 @@
                   <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
-                  As menores taxas do mercado, a partir de 0,79% a.m. + IPCA ou 1,29% a.m. Fixa
+                  As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
                 </div>
               </div>
               <div class="w-full flex pt-6 items-center">
@@ -189,7 +189,7 @@
                   <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
-                  Taxas a partir de 9,10% a.a. + taxas referencial
+                  Taxas a partir de 9,70% a.a. + taxas referencial
                 </div>
               </div>
               <div class="w-full flex pt-8 items-center">
@@ -232,7 +232,7 @@
                         <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
-                        As menores taxas do mercado, a partir de 0,79% a.m. + IPCA ou 1,29% a.m. Fixa
+                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
                       </div>
                     </div>
                     <div class="w-full flex pt-6 items-center">
@@ -273,7 +273,7 @@
                         <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
-                        Taxas a partir de 9,10% a.a. + taxas referencial
+                        Taxas a partir de 9,70% a.a. + taxas referencial
                       </div>
                     </div>
                     <div class="w-full flex pt-8 items-center">

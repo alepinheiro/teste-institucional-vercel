@@ -28,7 +28,7 @@
         </div>
         
       </div>
-      <div class="w-full bg-primary ">
+      <div class="w-full bg-primary pt-8">
         <div class="text-center maxWidth  text-4xl sm:text-2xl md:text-3xl pt-12 text-white">
           Por isso, a <span class="text-bold ">SejaBest</span> foi constrída sobre 
           <span class="text-bold textDecoration">3 pilares:</span>
@@ -170,7 +170,7 @@
           </div>
           </div>
         </div>
-        <div class="maxWidth xl:hidden lg:hidden pt-16 pb-[11rem]">
+        <div class="maxWidth xl:hidden lg:hidden py-16 ">
           <div @click="showPillarsSM(1)" class="bg-bglight2Color cursor-pointer  shadow-xl border-1 rounded-xl ">
             <div class="flex w-full justify-between">
               <div class="w-5/12 "  >
@@ -236,13 +236,11 @@
               </div>
             </div>
           </div>
-         
+          <div class="pb-24"></div>
         </div>
-
-        
       </div>
       <div class="maxWidth">
-        <div class=" w-full  bg-bglight2Color border-1 rounded-xl shadow-lg -mt-32 lg:-mt-48 flex">
+        <div class=" w-full  bg-bglight2Color border-1 rounded-xl shadow-lg -mt-32 lg:-mt-48 sm:mt-[-5rem] md:mt-[-5rem] flex">
           <div class="w-1/2  ">
           <img :src="$options.imageConfig.aboutUs.bestVersion" alt="Homem e mulher se abraçando felizes"  
             class="sm:w-full  h-auto rounded-l-xl "/>
@@ -329,8 +327,8 @@
             <div class="xl:w-2/3 lg:w-2/3 md:w-2/3 text-primary pb-8 text-6xl md:text-4xl sm:text-4xl titleFontBold text-right mr-0 ml-auto">
               Seja<span class="textDecoration">Best</span> você também.
             </div>
-            <div class=" px-4">
-              <button class="buttonComplementaryColor1 sm:p-2 md:p-2"><a class="sm:text-sm text-2xl "
+            <div class="sm:px-1 px-4">
+              <button class="buttonComplementaryColor1 sm:py-1 md:p-2"><a class="sm:text-xs text-2xl "
                 :href="$options.information.appSimulator"  style=" text-decoration: none;"
                 target="_blank">Faça uma simulação</a> </button>
             </div>

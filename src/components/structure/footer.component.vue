@@ -47,7 +47,7 @@
     <div class="  ">
       <div class="text-xl font-semibold text-textSecondary py-4">Podutos</div>
       <div class="sm:text-sm text-textSecondary  pb-6">
-        <router-link to="/financiamento-imobiliario" class=" hover:text-textSecondary">Financiamento  </router-link>
+        <router-link to="/financing" class=" hover:text-textSecondary">Financiamento  </router-link>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
         <router-link to="/home-equity" class=" hover:text-textSecondary">Home Equity </router-link>
@@ -75,6 +75,12 @@
             Escritório  <i  class=" ti ti-arrow-top-right" ></i>
           </a>
         </div>
+        <div id="ra-verified-seal">
+          <a href="https://www.reclameaqui.com.br/empresa/best-fintech-de-credito-imobiliario/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=horizontal" class="hover:text-textPrimary " style=" text-decoration: none;"
+            target="_blank">
+            <img :src="$options.imageConfig.home.reclameaqui"   class="w-auto h-12 rounded-xl"/>
+          </a>
+        </div>
       </div>
     </div>
     <div class=" sm:hidden ">
@@ -100,6 +106,13 @@
         <a :href="$options.information.location" class="hover:text-textPrimary " style=" text-decoration: none;"
           target="_blank">
           Escritório  <i  class=" ti ti-arrow-top-right" ></i>
+        </a>
+      </div>
+
+      <div id="ra-verified-seal">
+        <a href="https://www.reclameaqui.com.br/empresa/best-fintech-de-credito-imobiliario/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=horizontal" class="hover:text-textPrimary " style=" text-decoration: none;"
+          target="_blank">
+          <img :src="$options.imageConfig.home.reclameaqui"   class="w-auto h-12 rounded-xl"/>
         </a>
       </div>
     </div> 
