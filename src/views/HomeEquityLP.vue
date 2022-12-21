@@ -165,7 +165,7 @@
         </div>
       <div class="text-white text-sm text-center pb-6">
           É o Crédito com Garantia de Imóvel, também conhecido como Home Equity,
-          é a modalidade ideal para quem quer as menores taxas de juros do 
+           ideal para quem quer as menores taxas de juros do 
           mercado e um longo prazo para pagamento. Nessa modalidade, você 
           utiliza sua casa, apartamento ou sala comercial como garantia de
           crédito e desfruta das melhores condições disponíveis no mercado.
@@ -219,7 +219,7 @@
         </div>
         <div class="text-white text-xl  sm:text-xs md:text-sm text-right w-11/12 mr-0 ml-auto mt-12 sm:mt-6">
           É o Crédito com Garantia de Imóvel, também conhecido como Home Equity,
-          é a modalidade ideal para quem quer as menores taxas de juros do 
+           ideal para quem quer as menores taxas de juros do 
           mercado e um longo prazo para pagamento. Nessa modalidade, você 
           utiliza sua casa, apartamento ou sala comercial como garantia de
           crédito e desfruta das melhores condições disponíveis no mercado.

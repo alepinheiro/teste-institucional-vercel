@@ -7,6 +7,7 @@ const image = {
   iconSejaBest:"/images/logoBest/Simbolo-degrade.png",
   iconSejaBestWhite:"/images/logoBest/iconSejaBestWhite.svg",
   bacen:"/images/LogoParceiros/LogoBancoCentraldoBrasil.svg", 
+  imagePageUnavailable: "/images/VetorPersonagens.svg",
   bg:{
     manWithPhone:"/images/Home/ImagemHomeGradiente.png",
   },

@@ -20,7 +20,7 @@
                 </div>
                 <div class=" py-4  pb-6">
                   Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
-                  transparente e com o auxilio do nosso time de especialistas!
+                  transparente e com o auxílio do nosso time de especialistas!
                 </div>
                 <div class="flex w-full items-center border-b-1 border-secondary pb-4">
                   <div class="w-1/12 pr-6 mt-auto mb-auto">
@@ -70,7 +70,7 @@
                 </div>
                 <div class="   pb-6">
                   Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
-                  transparente e com o auxilio do nosso time de especialistas!
+                  transparente e com o auxílio do nosso time de especialistas!
                 </div>
                 <div class="bg-primary p-4 rounded-xl">
                   <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
@@ -121,7 +121,7 @@
                 </div>
                 <div class=" py-4  pb-6">
                   Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
-                  transparente e com o auxilio do nosso time de especialistas!
+                  transparente e com o auxílio do nosso time de especialistas!
                 </div>
                 <div class="flex w-full items-center border-b-1 border-secondary pb-4">
                   <div class="w-1/12 pr-6 mt-auto mb-auto">

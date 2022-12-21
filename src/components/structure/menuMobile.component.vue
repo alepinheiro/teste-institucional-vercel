@@ -20,8 +20,7 @@
       <router-link to="/parceiro" class="hover:text-primary hover:font-semibold lineDecoration" > Seja um Parceiro </router-link>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" :class="linkStyle">
-      <a href="https://seja.best/portal/#destaques"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold lineDecoration"
-        target="_blank"> Portal</a>
+      <router-link to="/portal" class="hover:text-primary hover:font-semibold lineDecoration" > Portal</router-link>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" class="mt-4 buttonComplementaryColor1">
       <a :href="$options.information.appSimulator"  style=" text-decoration: none;"

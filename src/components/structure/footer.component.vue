@@ -8,8 +8,7 @@
         <router-link to="/sobre" class=" hover:text-textSecondary">  Sobre a SejaBest </router-link>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
-        <a href="https://seja.best/" class="hover:text-textSecondary" style=" text-decoration: none;"
-          target="_blank"> Portal  </a>
+        <router-link to="/portal" class=" hover:text-textSecondary">  Portal  </router-link >
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
         <router-link to="/parceiro" class=" hover:text-textSecondary">Seja um Parceiro </router-link>

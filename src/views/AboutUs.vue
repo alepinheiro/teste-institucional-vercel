@@ -30,7 +30,7 @@
       </div>
       <div class="w-full bg-primary pt-8">
         <div class="text-center maxWidth  text-4xl sm:text-2xl md:text-3xl pt-12 text-white">
-          Por isso, a <span class="text-bold ">SejaBest</span> foi constrída sobre 
+          Por isso, a <span class="text-bold ">SejaBest</span> foi construída sobre 
           <span class="text-bold textDecoration">3 pilares:</span>
         </div>
         <div class="w-full sm:hidden md:hidden">
@@ -248,7 +248,7 @@
           <div class="w-1/2 mt-auto mb-auto">
             <div class="text-5xl px-8 sm:px-2 titleFont md:text-3xl sm:text-sm text-primary font-semibold">
               E fazemos isso pois acreditamos que o <span class="font-bold">acesso ao crédito</span> 
-              pode levar as pessoas a sua <span class="font-bold textDecoration">melhor</span>
+              pode levar as pessoas à sua <span class="font-bold textDecoration">melhor</span>
               <span class="font-bold"> versão.</span> 
             </div>
           </div>

@@ -318,7 +318,7 @@
             </div>
             <div class="py-6   text-xl md:text-lg ">
               Aqui você vivencia uma nova experiência com crédito imobiliário. Temos as melhores 
-              taxas do mercado e unimos atendimento Humanizado com muita tecnonogia para você e seu cliente.
+              taxas do mercado e unimos atendimento humanizado com muita tecnologia para você e seu cliente.
             </div>
             <div class=" px-4 sm:text-center">
               <button class="buttonComplementaryColor1  "><a class="sm:text-sm text-2xl md:text-xl"
@@ -418,7 +418,7 @@
               </div>
               <div class="w-full pl-4 mt-auto mb-auto">
                 <div class="text-primary text-2xl sm:text-xl">
-                  Potencialize seu ganhos.
+                  Potencialize seus ganhos.
                 </div>
                 <div clas="text-textPrimary text-sm sm:text-[0.4rem] pt-2">
                   Com uma solução multibancos, você oferece as melhores condições para seus clientes 
@@ -434,10 +434,10 @@
         <div class="w-7/12 flex justify-center mt-auto mb-auto">
           <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8 text-white">
             <div class="text-5xl sm:text-2xl md:text-4xl font-semibold ">
-              Somos <span class="textDecoration">autoridades</span> no assunto.
+              Somos <span class="textDecoration">autoridade</span> no assunto.
             </div>
             <div class="text-xl sm:text-sm md:text-sm sm:pt-4 md:pt-4 lg:pt-8  pt-10">
-              Através de nossos canais, a SejaBest é referencia quando se fala em Financiamento Imobiliário.
+              Através de nossos canais, a SejaBest é referencia quando se fala em crédito Imobiliário.
               <span class="font-semibold">Confira:</span>
             </div>
             
