@@ -1,18 +1,13 @@
 <template>
 <div>
-  <div class="bg-bglightColor">
-    <div class="w-full gradienteSB">
-      <div class="maxWidth " >
-        <topbarComponent position="relative" />
-      </div>
-      <div class="maxWidth " >
-        <h1 class="text-white text-4xl font-semibold pb-12 pt-16">
-          Termos de uso 
-        </h1>
-      </div>
-    </div>
-    <div class="maxWidth py-12" >
-      
+  <div class="">
+
+    <div class="maxWidth " >
+      <topbarComponent position="top" />
+
+      <h1 class="text-textPrimary text-2xl font-semibold py-4">
+        Termos de Uso do Site 
+      </h1>
       <div class="text-textPrimary ">
         <div class="text-primary  font-semibold pt-4 pb-2">1. Termos</div>
         <div class="pl-3 pb-3">Ao acessar ao site SejaBest Fintech de Crédito Imobiliário, concorda em cumprir estes termos de serviço, 
