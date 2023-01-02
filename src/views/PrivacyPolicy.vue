@@ -1,13 +1,18 @@
 <template>
 <div>
-  <div class="">
-
-    <div class="maxWidth " >
-      <topbarComponent position="top" />
-
-      <h1 class="text-textPrimary text-2xl font-semibold py-4">
-        Política de Privacidade 
-      </h1>
+  <div class="bg-bglightColor">
+    <div class="w-full gradienteSB">
+      <div class="maxWidth " >
+        <topbarComponent position="relative" />
+      </div>
+      <div class="maxWidth " >
+        <h1 class="text-white text-4xl font-semibold pb-12 pt-16">
+          Política de Privacidade 
+        </h1>
+      </div>
+    </div>
+    <div class="maxWidth py-12" >
+    
       <div class="text-textPrimary ">
         <div>Este site é mantido e operado por SejaBest Fintech de crédito imobiliário LTDA.</div>
         <div>
