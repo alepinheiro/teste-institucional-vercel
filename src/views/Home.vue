@@ -422,7 +422,7 @@
   <div class="maxWidth   sm:bg-bglightColor mr-auto ml-auto">
       <div class="w-full text-center">
         <div class="text-4xl pt-24 sm:pt-8 md:pt-8 sm:text-2xl text-primary font-bold">
-          As melhores plataformas multibancos 
+          A melhor plataforma multibancos 
         </div>
         <div class="text-textSecondary text-xl ">
           Conheça os parceiros que estão decolando com a <span class="font-semibold">SejaBest</span>.
@@ -536,5 +536,13 @@ export default defineComponent({
       value:250000,
     }
   },
+  metaInfo () {
+    return {
+      title: "SejaBest",
+      meta: [
+        { vmid: 'description', name: 'description', content: "Crédito Imobiliário nunca foi tão fácil. Conheça as melhores soluções em Crédito Imobiliário do mercado: Conheça o Crédito com garantia de imóvel e o financiamento imobiliário" }
+      ]
+    }
+  }
 })
 </script>

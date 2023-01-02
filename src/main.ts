@@ -8,8 +8,8 @@ import { createHead } from '@vueuse/head'
 import VueCookies from 'vue-cookies'
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
 import VueSplide from '@splidejs/vue-splide'
-import '@splidejs/vue-splide/css';
-
+import '@splidejs/vue-splide/css'
+import { createMetaManager } from 'vue-meta'
 
 // componentes globais
 import inputBase from '@/components/base/inputBase.component.vue'
@@ -27,6 +27,7 @@ app.use(VueTheMask)
 app.use(VueCookies)
 app.use(createHead())
 app.use( VueSplide );
+app.use(createMetaManager())
 // componentes globais
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.component('font-awesome-layers', FontAwesomeLayers)

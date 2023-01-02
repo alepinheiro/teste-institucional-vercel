@@ -558,6 +558,14 @@ export default defineComponent({
   components:{
     topbarComponent , popUpVideo
   },
+  metaInfo () {
+    return {
+      title: "Crédito com Garantia de Imóvel - Home Equity",
+      meta: [
+        { vmid: 'description', name: 'description', content: "E o que é Home Equity? É o Crédito com Garantia de Imóvel, também conhecido como Home Equity, ideal para quem quer as menores taxas de juros do mercado e um longo prazo para pagamento. Nessa modalidade, você utiliza sua casa, apartamento ou sala comercial como garantia de crédito e desfruta das melhores condições disponíveis no mercado.  " }
+      ]
+    }
+  },
   data() {
     return {
       isVisible:false,

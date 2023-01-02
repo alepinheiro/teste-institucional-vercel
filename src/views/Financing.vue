@@ -479,6 +479,14 @@ export default defineComponent({
   components:{
     topbarComponent , popUpVideo
   },
+  metaInfo () {
+    return {
+      title: "Conheça o FinanBest. O financiamento imobiliário da SejaBest.",
+      meta: [
+        { vmid: 'description', name: 'description', content: "Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, transparente e com o auxílio do nosso time de especialistas!" }
+      ]
+    }
+  },
   data() {
     return {
       isVisible:false,

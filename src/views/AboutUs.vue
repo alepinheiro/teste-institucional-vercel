@@ -362,6 +362,14 @@ export default defineComponent({
       }
     }
   },
+  metaInfo () {
+    return {
+      title: "Sobre a SejaBest",
+      meta: [
+        { vmid: 'description', name: 'description', content: "A SejaBest é um fintech focada no mercado de crédito, atuando por meio de dois produtos: Financiamento imobiliário e empréstimo com garantia de imóvel (Home Equity). Mais de 10 anos de experiência em crédito Imobiliario, temos uma missão clara: Transformar o acesso ao Crédito Imobiliário para todos os brasileiros. " }
+      ]
+    }
+  },
   methods: {
       showPillarsSM(item){
         if(item===1 && this.PillarsSM.show1==false){

@@ -165,7 +165,7 @@
       </div>
       <div class="text-xs text-textSecondary ">
         Seja.best pertence à Best fintech de crédito imobiliário, CNPJ 26.915.796/0001-04, com sede na 
-        Rua Miguel Matte, 687, sala 801, Ed. Evolution – CEP 88331-085, Pioneiros, Balneário Camboriú – SC.
+        Rua Miguel Matte, 687, sala 801, Ed. Evolution – CEP 88331-030, Pioneiros, Balneário Camboriú – SC.
       </div>
       <div class=""> 
         <bacenImage  class="w-40 h-auto  " />

@@ -36,6 +36,7 @@
     "vue-currency-input": "^2.4.0",
     "vue-gtm": "^3.5.0",
     "vue-lazytube": "^1.1.1",
+    "vue-meta": "^3.0.0-alpha.10",
     "vue-router": "^4.0.13",
     "vue-the-mask": "^0.11.1",
     "yarn": "^1.22.19"

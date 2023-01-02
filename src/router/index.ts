@@ -33,7 +33,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/portal",
-    name: "FinancingLP",
+    name: "portal",
     component: () => import("@/views/PageUnavailable.vue"),
   },
   {
