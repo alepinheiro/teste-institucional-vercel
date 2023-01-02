@@ -19,7 +19,7 @@
                   </div>
                 </div>
                 <div class=" py-4  pb-6">
-                  Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
+                  Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
                   transparente e com o auxílio do nosso time de especialistas!
                 </div>
                 <div class="flex w-full items-center border-b-1 border-secondary pb-4">
@@ -69,7 +69,7 @@
                   </div>
                 </div>
                 <div class="   pb-6">
-                  Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
+                  Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
                   transparente e com o auxílio do nosso time de especialistas!
                 </div>
                 <div class="bg-primary p-4 rounded-xl">
@@ -120,7 +120,7 @@
                   </div>
                 </div>
                 <div class=" py-4  pb-6">
-                  Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
+                  Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
                   transparente e com o auxílio do nosso time de especialistas!
                 </div>
                 <div class="flex w-full items-center border-b-1 border-secondary pb-4">
@@ -482,7 +482,7 @@ export default defineComponent({
     return {
       title: "Conheça o FinanBest. O financiamento imobiliário da SejaBest.",
       meta: [
-        { vmid: 'description', name: 'description', content: "Finanacie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, transparente e com o auxílio do nosso time de especialistas!" }
+        { vmid: 'description', name: 'description', content: "Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, transparente e com o auxílio do nosso time de especialistas!" }
       ]
     }
   },
