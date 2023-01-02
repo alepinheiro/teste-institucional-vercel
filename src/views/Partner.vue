@@ -34,7 +34,7 @@
     <div class="maxWidth  " >
       <topbarComponent position="top" />
       <div class="w-full gradienteSBLight2 mt-4 rounded-2xl text-white ">
-        <img :src="$options.imageConfig.partner.businessman"  class="w-full rounded-t-2xl h-auto mr-auto ml-auto"/>
+        <img :src="$options.imageConfig.partner.businessman" alt="BestHub"  class="w-full rounded-t-2xl h-auto mr-auto ml-auto"/>
         <div class=" w-full rounded-t-xl">
           <div class="text-white w-full p-6 ">
               <div class="text-6xl titleFontBold  " >
@@ -45,7 +45,7 @@
               </div>
               <div class="text-center">
                 <button class="buttonComplementaryColor1 "><a class="sm:text-sm text-2xl "
-                  :href="$options.information.apppartnerRegistration"  style=" text-decoration: none;"
+                  :href="$options.information.apppartnerRegistration"   style=" text-decoration: none;"
                   target="_blank">Quero ser parceiro</a> </button>
               </div>  
           
@@ -59,7 +59,7 @@
       <div class="maxWidth">
         <div class="w-full flex flex-wrap pt-8 sm:pt-16 xl:py-32 lg:py-32 md:py-24">
           <div class="w-1/2 mt-auto mb-auto sm:w-full md:w-full md:hidden sm:hidden">
-            <img :src="$options.imageConfig.partner.manIcon" 
+            <img :src="$options.imageConfig.partner.manIcon" alt="Parceiro Best"
               class="sm:w-full md:w-11/12 w-8/12  h-auto  "/>
           </div>
           <div class="w-1/2 sm:w-full md:w-full mt-auto mb-auto flex flex-wrap text-white">
@@ -69,7 +69,7 @@
             <div class="mt-8 md:mt-6 sm:mt-4  mr-12 md:mr-0 sm:mr-0  w-1/2 sm:pr-2 md:pr-2">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12 ">
                 <div class="mt-auto mb-auto">
-                  <img :src="$options.imageConfig.icons.phoneFill"  class="w-auto h-8 "/>
+                  <img :src="$options.imageConfig.icons.phoneFill" alt="1"  class="w-auto h-8 "/>
                 </div>
                 <div class="w-full pl-4 mt-auto mb-auto">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
@@ -82,7 +82,7 @@
             <div class="mt-8 md:mt-6 sm:mt-4 ml-auto mr-12 w-1/2 md:mr-0 sm:mr-0 md:ml-0 sm:ml-0 sm:pl-2 md:pl-2">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12">
                 <div class="mt-auto mb-auto">
-                  <img :src="$options.imageConfig.icons.calendarFill"  class="w-auto h-8 "/>
+                  <img :src="$options.imageConfig.icons.calendarFill" alt="2"  class="w-auto h-8 "/>
                 </div>
                 <div class="w-full pl-4 mt-auto mb-auto">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
@@ -95,7 +95,7 @@
             <div class="mt-8 w-1/2 ml-8  md:mr-0 sm:mr-0 md:ml-0 sm:ml-0 sm:pr-2 md:pr-2">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12 ">
                 <div class="mt-auto mb-auto">
-                  <img :src="$options.imageConfig.icons.percentageFill"  class="w-auto h-8 "/>
+                  <img :src="$options.imageConfig.icons.percentageFill" alt="3"  class="w-auto h-8 "/>
                 </div>
                 <div class="w-full pl-4 mt-auto mb-auto">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
@@ -108,7 +108,7 @@
             <div class="mt-8  ml-auto mr-0 w-1/2 md:mr-0 sm:mr-0 md:ml-0 sm:ml-0 sm:pl-2 md:pl-2">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12 ">
                 <div class="mt-auto mb-auto ">
-                  <img :src="$options.imageConfig.icons.moneyFill"  class="w-auto h-8 "/>
+                  <img :src="$options.imageConfig.icons.moneyFill" alt="4" class="w-auto h-8 "/>
                 </div>
                 <div class="w-full pl-4 mt-auto mb-auto">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
@@ -121,7 +121,7 @@
             <div class="mt-8   xl:w-9/12 w-8/12  mr-auto ml-auto">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12 ">
                 <div class="mt-auto mb-auto">
-                  <img :src="$options.imageConfig.icons.userFill"  class="w-auto h-8 "/>
+                  <img :src="$options.imageConfig.icons.userFill" alt="5" class="w-auto h-8 "/>
                 </div>
                 <div class="w-full pl-4 mt-auto mb-auto">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
@@ -149,7 +149,7 @@
             <div class="w-full p-6 bg-secondary rounded-b-xl">
               <div class="w-full flex  items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
@@ -157,7 +157,7 @@
               </div>
               <div class="w-full flex pt-6 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Prazos de até 20 anos
@@ -165,7 +165,7 @@
               </div>
               <div class="w-full flex pt-6 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Até 60% do valor do imóvel como capital
@@ -186,7 +186,7 @@
             <div class="w-full p-6 rounded-b-xl ">
               <div class="w-full flex  items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Taxas a partir de 9,70% a.a. + taxas referencial
@@ -194,7 +194,7 @@
               </div>
               <div class="w-full flex pt-8 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Pague em até 420 meses
@@ -202,7 +202,7 @@
               </div>
               <div class="w-full flex pt-8 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.moneyFill" alt="Banco"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Os melhores bancos do mercado
@@ -229,7 +229,7 @@
                   <div class="w-full p-6 bg-secondary rounded-b-xl">
                     <div class="w-full flex  items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
@@ -237,7 +237,7 @@
                     </div>
                     <div class="w-full flex pt-6 items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Prazos de até 20 anos
@@ -245,7 +245,7 @@
                     </div>
                     <div class="w-full flex pt-6 items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor" class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Até 60% do valor do imóvel como capital
@@ -270,7 +270,7 @@
                   <div class="w-full p-6 rounded-b-xl ">
                     <div class="w-full flex  items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Taxas a partir de 9,70% a.a. + taxas referencial
@@ -278,7 +278,7 @@
                     </div>
                     <div class="w-full flex pt-8 items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Praza" class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Pague em até 420 meses
@@ -286,7 +286,7 @@
                     </div>
                     <div class="w-full flex pt-8 items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Os melhores bancos do mercado
@@ -338,18 +338,18 @@
             </div>
           </div>
           <div class="w-full pt-16 sm:pt-8 md:pt-8 flex flex-wrap justify-center">
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.cashme"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.inter"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.rodobens"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.piratini"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.santander"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.daycoval"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.pontte"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.creditas"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.itau"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.libra"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.wimo"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.bari"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.cashme" alt="Cashme" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.inter" alt="Inter" class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.rodobens" alt="Rodobens" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.piratini" alt="Piratini"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.santander" alt="Santander"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.daycoval" alt="Daycoval"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.pontte" alt="Pontte" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.creditas" alt="Creditas" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.itau" alt="Itaú"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.libra" alt="Libra"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.wimo" alt="Wimo" class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.bari" alt="Bari" class="w-44 sm:w-32 md:w-36 h-auto "/></div>
           </div>
           
         </div>
@@ -357,7 +357,7 @@
       <div class="w-full maxWidth xl:py-32 lg:py-32 py-12">
         <div class="w-full flex flex-wrap justify-center ">
           <div class="p-4 w-1/2 sm:w-full ">
-            <img :src="$options.imageConfig.logoBestHub"  class="w-auto h-28 sm:h-18 sm:ml-auto sm:mr-auto"/>
+            <img :src="$options.imageConfig.logoBestHub" alt="BestHub"  class="w-auto h-28 sm:h-18 sm:ml-auto sm:mr-auto"/>
           </div>
           <div class="p-4 w-1/2 sm:w-full">
             <div class="text-white text-6xl sm:text-2xl w-9/12 sm:w-full sm:text-center sm:pb-8">
@@ -369,7 +369,7 @@
           <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
             <div class="bg-bglightColor rounded-xl flex p-4 h-36">
               <div class="mt-auto mb-auto">
-                <img :src="$options.imageConfig.icons.phoneFill"  class="w-auto h-18 sm:h-12 "/>
+                <img :src="$options.imageConfig.icons.phoneFill" alt="Vantagem"  class="w-auto h-18 sm:h-12 "/>
               </div>
               <div class="w-full pl-4 mt-auto mb-auto">
                 <div class="text-primary text-2xl sm:text-xl">
@@ -384,7 +384,7 @@
           <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
             <div class="bg-bglightColor rounded-xl flex p-4 h-36">
               <div class="mt-auto mb-auto">
-                <img :src="$options.imageConfig.icons.notebookFill"  class="w-auto h-18 sm:h-12 "/>
+                <img :src="$options.imageConfig.icons.notebookFill" alt="Plataforma BestHub"  class="w-auto h-18 sm:h-12 "/>
               </div>
               <div class="w-full pl-4 mt-auto mb-auto">
                 <div class="text-primary text-2xl sm:text-xl">
@@ -399,7 +399,7 @@
           <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
             <div class="bg-bglightColor rounded-xl flex p-4 h-36">
               <div class="mt-auto mb-auto">
-                <img :src="$options.imageConfig.icons.userFill"  class="w-auto h-18 sm:h-12 "/>
+                <img :src="$options.imageConfig.icons.userFill" alt="Perfil do cliente"  class="w-auto h-18 sm:h-12 "/>
               </div>
               <div class="w-full pl-4 mt-auto mb-auto">
                 <div class="text-primary text-2xl sm:text-xl">
@@ -414,7 +414,7 @@
           <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
             <div class="bg-bglightColor rounded-xl flex p-4 h-36">
               <div class="mt-auto mb-auto">
-                <img :src="$options.imageConfig.icons.moneyFill"  class="w-auto h-18 sm:h-12 "/>
+                <img :src="$options.imageConfig.icons.moneyFill" alt="Plataforma multibancos" class="w-auto h-18 sm:h-12 "/>
               </div>
               <div class="w-full pl-4 mt-auto mb-auto">
                 <div class="text-primary text-2xl sm:text-xl">
@@ -474,8 +474,8 @@
           </div>
         </div>
         <div class="w-5/12 flex justify-end">
-          <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop"  class="w-8/12 lg:w-full mr-0 ml-auto sm:hidden md:hidden h-auto "/>
-          <img :src="$options.imageConfig.home.mockupPhonesSM"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto "/>
+          <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop" alt="BestHub"  class="w-8/12 lg:w-full mr-0 ml-auto sm:hidden md:hidden h-auto "/>
+          <img :src="$options.imageConfig.home.mockupPhonesSM" alt="BestHub"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto "/>
         </div>
       </div>
     

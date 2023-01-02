@@ -77,7 +77,7 @@
         <div id="ra-verified-seal">
           <a href="https://www.reclameaqui.com.br/empresa/best-fintech-de-credito-imobiliario/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=horizontal" class="hover:text-textPrimary " style=" text-decoration: none;"
             target="_blank">
-            <img :src="$options.imageConfig.home.reclameaqui"   class="w-auto h-12 rounded-xl"/>
+            <img :src="$options.imageConfig.home.reclameaqui" alt="Empresa verificada Reclame Aqui "    class="w-auto h-12 rounded-xl"/>
           </a>
         </div>
       </div>
@@ -111,7 +111,7 @@
       <div id="ra-verified-seal">
         <a href="https://www.reclameaqui.com.br/empresa/best-fintech-de-credito-imobiliario/?utm_source=referral&utm_medium=embbed&utm_campaign=ra_verificada&utm_term=horizontal" class="hover:text-textPrimary " style=" text-decoration: none;"
           target="_blank">
-          <img :src="$options.imageConfig.home.reclameaqui"   class="w-auto h-12 rounded-xl"/>
+          <img :src="$options.imageConfig.home.reclameaqui" alt="Empresa verificada Reclame Aqui "   class="w-auto h-12 rounded-xl"/>
         </a>
       </div>
     </div> 
@@ -119,7 +119,7 @@
   <div class="maxWidth mt-12">
     <div class="w-full flex sm:flex-wrap  justify-between py-2 sm:px-2">
       <div class="sm:w-5/12">
-        <img :src="$options.imageConfig.logoSejabestGray"  class="w-40 sm:w-11/12 h-auto  "/>
+        <img :src="$options.imageConfig.logoSejabestGray" alt="Logo SejaBest "  class="w-40 sm:w-11/12 h-auto  "/>
       </div>
       <div class="sm:w-7/12 flex justify-end sm:mr-0 sm:ml-auto mt-auto mb-auto ">
         <a :href="$options.information.socialMedia.youtube" style=" text-decoration: none;"

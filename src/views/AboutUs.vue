@@ -37,27 +37,27 @@
           <div class="maxWidth flex justify-evenly  pt-12 sm:pt-4">
             <div class="">
               <div class=" py-4" v-on:mouseover="isVisiblePillars.show1=true" v-on:mouseleave="isVisiblePillars.show1=false">
-                <img v-if="isVisiblePillars.show1" :src="$options.imageConfig.aboutUs.pillars.color.education"
+                <img v-if="isVisiblePillars.show1" :src="$options.imageConfig.aboutUs.pillars.color.education"  alt="Educação "
                 class="w-64 h-90  rounded-xl cursor-pointer  "/>
-                <img v-if="!isVisiblePillars.show1" :src="$options.imageConfig.aboutUs.pillars.pb.education"
+                <img v-if="!isVisiblePillars.show1" :src="$options.imageConfig.aboutUs.pillars.pb.education"  alt="Educação "
                 class="w-64 h-90  rounded-xl cursor-pointer  "/>
               </div>
               
             </div> 
             <div >
               <div class=" py-4" v-on:mouseover="isVisiblePillars.show2=true" v-on:mouseleave="isVisiblePillars.show2=false">
-                <img v-if="isVisiblePillars.show2"  :src="$options.imageConfig.aboutUs.pillars.color.technology"
+                <img v-if="isVisiblePillars.show2"  :src="$options.imageConfig.aboutUs.pillars.color.technology" alt="Tecnologia"
                 class="w-64 h-90 rounded-xl cursor-pointer  "/>
-                <img v-if="!isVisiblePillars.show2"  :src="$options.imageConfig.aboutUs.pillars.pb.technology"
+                <img v-if="!isVisiblePillars.show2"  :src="$options.imageConfig.aboutUs.pillars.pb.technology" alt="Tecnologia"
                 class="w-64 h-90 rounded-xl cursor-pointer  "/>
               </div>
               
             </div> 
             <div >
               <div class=" py-4" v-on:mouseover="isVisiblePillars.show3=true" v-on:mouseleave="isVisiblePillars.show3=false">
-                <img v-if="isVisiblePillars.show3"  :src="$options.imageConfig.aboutUs.pillars.color.humanized"
+                <img v-if="isVisiblePillars.show3"  :src="$options.imageConfig.aboutUs.pillars.color.humanized" alt="Experiência Humanizada"
                 class="w-64 h-90 rounded-xl cursor-pointer "/>
-                <img v-if="!isVisiblePillars.show3" :src="$options.imageConfig.aboutUs.pillars.pb.humanized"
+                <img v-if="!isVisiblePillars.show3" :src="$options.imageConfig.aboutUs.pillars.pb.humanized" alt="Experiência Humanizada"
                 class="w-64 h-90  rounded-xl cursor-pointer  "/>
               </div>
               
@@ -173,10 +173,10 @@
         <div class="maxWidth xl:hidden lg:hidden py-16 ">
           <div @click="showPillarsSM(1)" class="bg-bglight2Color cursor-pointer  shadow-xl border-1 rounded-xl ">
             <div class="flex w-full justify-between">
-              <div class="w-5/12 "  >
-                <img v-if="!PillarsSM.show1" :src="$options.imageConfig.aboutUs.pillars.sm.education" 
+              <div class="w-5/12 "  > 
+                <img v-if="!PillarsSM.show1" :src="$options.imageConfig.aboutUs.pillars.sm.education"   alt="Educação"
                 class="w-full rounded-l-xl "  />
-                <img v-if="PillarsSM.show1" :src="$options.imageConfig.aboutUs.pillars.smColor.education" 
+                <img v-if="PillarsSM.show1" :src="$options.imageConfig.aboutUs.pillars.smColor.education"  alt="Educação"
                 class="w-full  rounded-xl p-1 " />
               </div>
               <div class="text-primary w-5/12 text-center mt-auto mb-auto px-2 text-2xl font-semibold"> Educação</div>
@@ -196,9 +196,9 @@
           <div @click="showPillarsSM(2)" class="bg-bglight2Color cursor-pointer mt-4 shadow-xl border-1 rounded-xl ">
             <div class="flex w-full justify-between">
               <div class="w-5/12 "  >
-                <img v-if="!PillarsSM.show2" :src="$options.imageConfig.aboutUs.pillars.sm.technology" 
+                <img v-if="!PillarsSM.show2" :src="$options.imageConfig.aboutUs.pillars.sm.technology"  alt="Tecnologia"
                 class="w-full rounded-l-xl "  />
-                <img v-if="PillarsSM.show2" :src="$options.imageConfig.aboutUs.pillars.smColor.technology" 
+                <img v-if="PillarsSM.show2" :src="$options.imageConfig.aboutUs.pillars.smColor.technology"  alt="Tecnologia"
                 class="w-full  rounded-xl p-1 " />
               </div>
               <div class="text-primary w-5/12 text-center mt-auto mb-auto px-2 text-2xl font-semibold"> Tecnologia</div>
@@ -218,9 +218,9 @@
           <div @click="showPillarsSM(3)" class="bg-bglight2Color cursor-pointer mt-4 shadow-xl border-1 rounded-xl ">
             <div class="flex w-full justify-between">
               <div class="w-5/12 "  >
-                <img v-if="!PillarsSM.show3" :src="$options.imageConfig.aboutUs.pillars.sm.humanized" 
+                <img v-if="!PillarsSM.show3" :src="$options.imageConfig.aboutUs.pillars.sm.humanized"  alt="Experiência Humanizada"
                 class="w-full rounded-l-xl "  />
-                <img v-if="PillarsSM.show3" :src="$options.imageConfig.aboutUs.pillars.smColor.humanized" 
+                <img v-if="PillarsSM.show3" :src="$options.imageConfig.aboutUs.pillars.smColor.humanized"  alt="Experiência Humanizada"
                 class="w-full  rounded-xl p-1 " />
               </div>
               <div class="text-primary w-5/12 text-center mt-auto mb-auto px-2 text-2xl font-semibold"> Experiência Humanizada</div>
@@ -272,31 +272,31 @@
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://valor.globo.com/brasil/coluna/bndes-se-une-a-fintechs-para-baratear-credito.ghtml" 
               style=" text-decoration: none;" target="_blank">
-             <img :src="$options.imageConfig.logoMedia.gray.valorEconomico"  class="w-8/12 h-auto "/>
+             <img :src="$options.imageConfig.logoMedia.gray.valorEconomico" alt="Valor economico"  class="w-8/12 h-auto "/>
             </a>
           </div>
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://revistapegn.globo.com/Startups/noticia/2019/03/programa-de-capacitacao-startup-sc-divulga-lista-de-selecionados.html" 
               style=" text-decoration: none;" target="_blank">
-              <img :src="$options.imageConfig.logoMedia.gray.peqEmpresasGrandesNegocios"  class="w-8/12 h-auto "/>
+              <img :src="$options.imageConfig.logoMedia.gray.peqEmpresasGrandesNegocios" alt="pequenas empresas grandes negócios" class="w-8/12 h-auto "/>
             </a>
           </div>
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://imobireport.com.br/fintechs-de-credito-imobiliario-apostam-na-tecnologia-agilidade-e-multidisciplinaridade-para-superar-momento-de-alta-da-selic/" 
               style=" text-decoration: none;" target="_blank">
-              <img :src="$options.imageConfig.logoMedia.gray.imobileReport"  class="w-8/12 h-auto "/>
+              <img :src="$options.imageConfig.logoMedia.gray.imobileReport" alt="imobireport" class="w-8/12 h-auto "/>
             </a>
           </div>
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://economiasc.com/2021/08/06/fintech-aproxima-brasileiros-de-home-equity-modalidade-de-credito-imobiliario-com-melhores-taxas-no-mercado/?utm_source=seja.best" 
               style=" text-decoration: none;" target="_blank">
-              <img :src="$options.imageConfig.logoMedia.gray.economiaSC"  class="w-8/12 h-auto "/>
+              <img :src="$options.imageConfig.logoMedia.gray.economiaSC" alt="economia SC" class="w-8/12 h-auto "/>
             </a>
           </div>
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://revistapegn.globo.com/Startups/noticia/2019/03/programa-de-capacitacao-startup-sc-divulga-lista-de-selecionados.html" 
               style=" text-decoration: none;" target="_blank">
-              <img :src="$options.imageConfig.logoMedia.gray.agenciaOGlobo"  class="w-8/12 h-auto "/>
+              <img :src="$options.imageConfig.logoMedia.gray.agenciaOGlobo" alt="agencia O Globo"  class="w-8/12 h-auto "/>
             </a>
           </div>
         </div>

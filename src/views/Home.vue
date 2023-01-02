@@ -19,7 +19,7 @@
                 <div class="text-sm py-4">Pré-aprove o seu crédito em até 20 minutos.</div>
                 <div class="flex w-full items-center border-b-1 border-textSecondary pb-2">
                   <div class="w-2/12 pr-6 mt-auto mb-auto">
-                    <img  :src="$options.imageConfig.iconSejaBest"  class="w-full h-auto ">
+                    <img  :src="$options.imageConfig.iconSejaBest" alt="SejaBest"  class="w-full h-auto ">
                   </div>
                   <div class="w-10/12 text-xl text-textPrimary"> 
                     Sem Filas. Sem gerentes. Sem complexidades
@@ -50,7 +50,7 @@
     <div class="maxWidth  xl:hidden lg:hidden" >
       <topbarComponent position="relative" />
       <div class="w-full gradienteSBHome mt-4 rounded-2xl text-white ">
-        <img :src="$options.imageConfig.bg.manWithPhone"  class="w-full rounded-t-2xl h-auto mr-auto ml-auto"/>
+        <img :src="$options.imageConfig.bg.manWithPhone" alt="Crédito Imobiliário"  class="w-full rounded-t-2xl h-auto mr-auto ml-auto"/>
         <div class=" w-full rounded-t-xl">
         <div class="p-4">
           <div class="text-5xl md:text-6xl titleFontBold   mt-[-3.8rem] " >
@@ -61,7 +61,7 @@
           <div class="text-sm py-6 md:text-lg text-center">Pré-aprove o seu crédito em até 20 minutos.</div>
           <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
             <div class="w-2/12 pr-6 mt-auto mb-auto">
-              <img  :src="$options.imageConfig.iconSejaBestWhite"  class="w-12 h-auto ">
+              <img  :src="$options.imageConfig.iconSejaBestWhite" alt="SejaBest"  class="w-12 h-auto ">
             </div>
             <div class="w-10/12 text-lg text-white"> 
               Sem <span class="text-complementaryColor3">Filas.</span> 
@@ -105,7 +105,7 @@
             <div class="w-full p-6 bg-secondary rounded-b-xl">
               <div class="w-full flex  items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
@@ -113,7 +113,7 @@
               </div>
               <div class="w-full flex pt-6 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Prazos de até 20 anos
@@ -121,7 +121,7 @@
               </div>
               <div class="w-full flex pt-6 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Até 60% do valor do imóvel como capital
@@ -142,7 +142,7 @@
             <div class="w-full p-6 rounded-b-xl ">
               <div class="w-full flex  items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Taxas a partir de 9,70% a.a. + taxas referencial
@@ -150,7 +150,7 @@
               </div>
               <div class="w-full flex pt-8 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Pague em até 420 meses
@@ -158,7 +158,7 @@
               </div>
               <div class="w-full flex pt-8 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.moneyFill" alt="Valor" class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Os melhores bancos do mercado
@@ -185,7 +185,7 @@
                   <div class="w-full p-6 bg-secondary rounded-b-xl">
                     <div class="w-full flex  items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
@@ -193,7 +193,7 @@
                     </div>
                     <div class="w-full flex pt-6 items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Prazos de até 20 anos
@@ -201,7 +201,7 @@
                     </div>
                     <div class="w-full flex pt-6 items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Até 60% do valor do imóvel como capital
@@ -226,7 +226,7 @@
                   <div class="w-full p-6 rounded-b-xl ">
                     <div class="w-full flex  items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Taxas a partir de 9,70% a.a. + taxas referencial
@@ -234,7 +234,7 @@
                     </div>
                     <div class="w-full flex pt-8 items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Pague em até 420 meses
@@ -242,7 +242,7 @@
                     </div>
                     <div class="w-full flex pt-8 items-center">
                       <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill"  class="w-9 h-8  "/>
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
                       </div>
                       <div class="text-xl w-full">
                         Os melhores bancos do mercado
@@ -266,7 +266,7 @@
           <div class="w-full flex  py-4 ">
             <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl  text-primary text-center">Por que ser Best?</div>
             <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
-              <img :src="$options.imageConfig.logoVertical"  class="w-30 sm:w-24 h-auto mr-auto ml-auto"/>
+              <img :src="$options.imageConfig.logoVertical" alt="SejaBest"  class="w-30 sm:w-24 h-auto mr-auto ml-auto"/>
             </div>
             <div class="w-1/3  sm:w-1/4  mt-auto mb-0 text-center">
               <div class="text-textSecondary text-3xl sm:text-2xl mt-auto mb-auto px-4"> Bancos</div>
@@ -274,58 +274,58 @@
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg"> As menores taxas do mercado </div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg"> Múltiplas opções de banco </div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Plataforma multiprodutos</div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Transparência</div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Processo agilizado</div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Atendimento 7 dias por semana</div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Assessoria personalizada</div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Totalmente Digital</div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Sem burocracias</div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Sem filas</div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex py-3  ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Foco no cliente</div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
         </div>
       </div>
@@ -333,13 +333,13 @@
     <div class="w-full maxWidth pt-24 sm:pt-8 md:py-12 sm:bg-bglightColor">
       <div class=" w-full px-4 bg-bglightColor rounded-2xl sm:hidden flex justify-center">
         <div class="pt-12 pr-12">
-          <img :src="$options.imageConfig.home.phoneProposal"  class="w-80  h-auto mr-auto ml-auto"/>
+          <img :src="$options.imageConfig.home.phoneProposal" alt="Mais de 2000 propostas todo mês"  class="w-80  h-auto mr-auto ml-auto"/>
         </div>
         <div class="pr-12">
-          <img :src="$options.imageConfig.home.phoneLend"  class="w-80   h-auto mr-auto ml-auto"/>
+          <img :src="$options.imageConfig.home.phoneLend" alt="Mais de R$ 500 milhões emprestados" class="w-80   h-auto mr-auto ml-auto"/>
         </div>
         <div class="pt-12 ">
-          <img :src="$options.imageConfig.home.phoneRequested"  class="w-80  h-auto mr-auto ml-auto"/>
+          <img :src="$options.imageConfig.home.phoneRequested" alt="Mais de R$ 2.5 bilhões em solicitações" class="w-80  h-auto mr-auto ml-auto"/>
         </div>
       </div>
       <div class="bg-primary xl:hidden lg:hidden md:hidden  rounded-2xl ">
@@ -390,14 +390,14 @@
           </div>
         </div>
         <div class="w-6/12 ">
-          <img :src="$options.imageConfig.home.phoneMan"  class="w-full h-auto rounded-r-2xl"/>
+          <img :src="$options.imageConfig.home.phoneMan" alt="Crédito imobiliário" class="w-full h-auto rounded-r-2xl"/>
         </div>
       </div>
   </div> 
   <div class="maxWidth xl:hidden lg:hidden">
     <div class="bg-white rounded-2xl w-full">
       <div class="rounded-t-2xl bg-primary pb-4" ></div>
-      <img :src="$options.imageConfig.home.phoneManSM"  class="w-full h-auto "/>
+      <img :src="$options.imageConfig.home.phoneManSM" alt="Crédito imobiliário" class="w-full h-auto "/>
       <div class="p-8">
       
         <div class="text-6xl sm:text-4xl titleFontBold text-center text-primary  " >
@@ -429,18 +429,18 @@
         </div>
       </div>
       <div class="w-full pt-16 sm:pt-8 md:pt-8 flex flex-wrap justify-center">
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.cashme"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.inter"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.rodobens"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.piratini"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.santander"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.daycoval"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.pontte"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.creditas"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.itau"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.libra"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.wimo"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.bari"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.cashme" alt="cashme"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.inter" alt="inter"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.rodobens" alt="rodobens"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.piratini" alt="piratini"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.santander" alt="santander"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.daycoval" alt="daycoval"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.pontte" alt="pontte" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.creditas" alt="creditas"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.itau" alt="Itaú"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.libra" alt="Libra"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.wimo" alt="Wimo"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.bari" alt="Bari"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
       </div>
       <div class="p-6 w-9/12 mr-auto ml-auto border-b-1 sm:p-2 md:p-2 border-textSecondary"></div>
   </div>
@@ -488,15 +488,15 @@
       </div>
      </div>
      <div class="w-5/12 flex justify-end">
-       <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop"  class="w-8/12 lg:w-full mr-0 ml-auto sm:hidden md:hidden h-auto "/>
-       <img :src="$options.imageConfig.home.mockupPhonesSM"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto "/>
+       <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop" alt="SejaBest Mídias Sociais"  class="w-8/12 lg:w-full mr-0 ml-auto sm:hidden md:hidden h-auto "/>
+       <img :src="$options.imageConfig.home.mockupPhonesSM"   alt="SejaBest Mídias Sociais"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto "/>
      </div>
   </div>
 
   <div class="w-full bg-gradient-to-r from-primary to-secondary pb-4 mt-[-4rem]" >
     <div class="maxWidth flex justify-center ">
       <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
-       <img :src="$options.imageConfig.home.photoFooter"  
+       <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
          class="w-full   absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
       </div>
       <div class="w-9/12 sm:w-6/12 md:w-8/12">
