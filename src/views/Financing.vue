@@ -493,7 +493,7 @@ export default defineComponent({
       value:300000,
       showVideo:false,
       videoStyle: "w-full h-[36rem] mr-auto ml-auto rounded-2xl ",
-      videoUrl:"https://www.youtube.com/embed/eDWFe4Wrb2A",
+      videoUrl:"https://www.youtube.com/embed/Mlg8eDX61uE",
       tutorial:{
         show1:false,
         show2:false,
