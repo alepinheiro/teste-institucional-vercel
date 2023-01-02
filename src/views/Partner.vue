@@ -34,13 +34,13 @@
     <div class="maxWidth  " >
       <topbarComponent position="top" />
       <div class="w-full gradienteSBLight2 mt-4 rounded-2xl text-white ">
-        <img :src="$options.imageConfig.partner.businessman" alt="BestHub"  class="w-full rounded-t-2xl h-auto mr-auto ml-auto"/>
+        <img :src="$options.imageConfig.partner.businessman" alt="BestHub"  class="w-auto h-60 rounded-t-2xl  mr-auto ml-auto"/>
         <div class=" w-full rounded-t-xl">
-          <div class="text-white w-full p-6 ">
-              <div class="text-6xl titleFontBold  " >
+          <div class="text-white w-full p-4 ">
+              <div class="text-4xl titleFontBold  " >
                 Alavanque seus resultados com o <span class="textDecoration"> BestHub. </span>
               </div>
-              <div class=" py-8">
+              <div class=" py-4">
                 O sistema de parceiros que vem revolucionando o mercado de crédito imobiliário.
               </div>
               <div class="text-center">
@@ -219,7 +219,7 @@
           <Splide  :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
             } " aria-label="Vantagens para você">
             <SplideSlide >
-              <div class="w-10/12 mr-auto ml-auto max-w-sm p-4">
+              <div class="w-11/12 mr-auto ml-auto max-w-sm p-4">
                 <div class="border-1 rounded-xl w-full text-white ">
                   <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
                     <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
@@ -260,7 +260,7 @@
               </div>
             </SplideSlide>
             <SplideSlide >
-              <div class="w-10/12 mr-auto ml-auto max-w-sm p-4">
+              <div class="w-11/12 mr-auto ml-auto max-w-sm p-4">
                 <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
                   <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
                     <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
@@ -313,10 +313,10 @@
             <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-4xl md:text-3xl sm:text-3xl font-semibold text-right mr-0 ml-auto">
               Como o BestHub pode ajudar o seu <span class="text-complementaryColor3">negócio?</span>
             </div>
-            <div class="pt-6  text-xl md:text-lg ">
+            <div class="pt-6  text-xl md:text-lg sm:text-center">
               Uma plataforma multibanco e 100% digital. As melhores opções do mercado na palma da sua mão.
             </div>
-            <div class="py-6   text-xl md:text-lg ">
+            <div class="py-6   text-xl md:text-lg sm:text-center ">
               Aqui você vivencia uma nova experiência com crédito imobiliário. Temos as melhores 
               taxas do mercado e unimos atendimento humanizado com muita tecnologia para você e seu cliente.
             </div>
@@ -330,7 +330,7 @@
       <div class="bg-bglightColor xl:pb-40 lg:pb-40">
         <div class="maxWidth    mr-auto ml-auto">
           <div class="w-full text-center">
-            <div class="text-4xl pt-40 sm:pt-8 md:pt-8 sm:text-2xl text-primary">
+            <div class="text-4xl pt-40 sm:pt-8 md:pt-8 sm:text-2xl text-primary font-semibold">
                A melhor plataforma multibancos 
             </div>
             <div class="text-textSecondary text-xl ">
@@ -367,7 +367,7 @@
         </div> 
         <div class="w-full flex flex-wrap justify-center pt-16 sm:pt-0">
           <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.phoneFill" alt="Vantagem"  class="w-auto h-18 sm:h-12 "/>
               </div>
@@ -382,7 +382,7 @@
             </div>
           </div>
           <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.notebookFill" alt="Plataforma BestHub"  class="w-auto h-18 sm:h-12 "/>
               </div>
@@ -397,7 +397,7 @@
             </div>
           </div>
           <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.userFill" alt="Perfil do cliente"  class="w-auto h-18 sm:h-12 "/>
               </div>
@@ -412,7 +412,7 @@
             </div>
           </div>
           <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.moneyFill" alt="Plataforma multibancos" class="w-auto h-18 sm:h-12 "/>
               </div>
