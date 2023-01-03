@@ -9,13 +9,13 @@
               class="sm:w-full md:w-11/12 w-8/12  h-auto  "/>
           </div>
           <div class="w-1/2 text-right mt-auto mb-auto ">
-            <div class=" text-xl md:text-sm sm:text-xs mr-auto ml-auto font-semibold ">
+            <h1><div class=" text-xl md:text-sm sm:text-xs mr-auto ml-auto font-semibold ">
               Mais de 10 anos de experiência em <br/> crédito Imobiliario, temos uma missão clara:
             </div>
             <div class="text-primary text-6xl md:text-4xl sm:text-lg titleFontBold pt-6 pb-12 sm:pt-0 sm:pb-2">
               Transformar o acesso ao Crédito Imobiliário para 
               <span class="textDecoration">todos</span> os brasileiros.
-            </div>
+            </div></h1>
             <div class="border-r-4 border-primary px-4">
               <div class="font-semibold text-xl md:text-sm sm:text-xs">
                 Gaspar Motta Filho

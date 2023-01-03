@@ -13,10 +13,10 @@
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
             <div class="bg-bglight2Color rounded-xl w-full shadow-2xl p-12">
                 <div class="text-5xl titleFontBold text-primary  pb-6" >
-                  <div>Conheça o <span class="textDecoration">FinanBest</span> </div>
+                  <h1><div>Conheça o <span class="textDecoration">FinanBest</span> </div>
                   <div class=" titleFontBold pt-2  " >
                     O financiamento imobiliário da SejaBest.
-                  </div>
+                  </div></h1>
                 </div>
                 <div class=" py-4  pb-6">
                   Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 
@@ -63,10 +63,10 @@
           <div class="py-4  w-full">
             <div class="">
                 <div class="text-4xl titleFontBold text-primary  pb-4 pr-8" >
-                  <div>Conheça o <span class="textDecoration">FinanBest</span> </div>
+                  <h1><div>Conheça o <span class="textDecoration">FinanBest</span> </div>
                   <div class="text-xl titleFontBold pt-2  " >
                     O financiamento imobiliário da SejaBest.
-                  </div>
+                  </div></h1>
                 </div>
                 <div class="   pb-6">
                   Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, 

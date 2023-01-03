@@ -8,7 +8,7 @@
           <div class=" max-w-[400px] w-full md:mr-auto md:ml-auto sm:mr-auto sm:ml-auto ">
             <div class="text-white w-full  ">
               <div class="text-6xl titleFontBold  " >
-                Alavanque seus resultados com o <span class="textDecoration"> BestHub. </span>
+               <h1> Alavanque seus resultados com o <span class="textDecoration"> BestHub. </span></h1>
               </div>
               <div class=" py-8">
                 O sistema de parceiros que vem revolucionando o mercado de crédito imobiliário.
