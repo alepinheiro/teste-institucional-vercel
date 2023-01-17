@@ -4,7 +4,7 @@ const information = {
         instagram: "https://www.instagram.com/seja.best/",
         youtube: "https://www.youtube.com/c/SejaBest/videos?sub_confirmation=1",
         linkedin:"https://www.linkedin.com/company/bestsf/",
-        telegram:"https://www.linkedin.com/company/bestsf/",
+        telegram:" https://t.me/sejabest?utm_source=landingpagenews&utm_campaign=bestnewstelegram&utm_content=telegramsejabest",
         whatsapp: "https://api.whatsapp.com/send?1=pt_br&phone=554733110180&text=simular",
     },
     jobs:"https://www.linkedin.com/company/sejabest/jobs/",

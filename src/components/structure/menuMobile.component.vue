@@ -6,28 +6,27 @@
   <div v-if="openProfileMenu" class="w-full text-center border-1 max-w-sm bg-white rounded-xl shadow-xl z-40 fixed p-2 top-15 right-2 ">
 
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
-      <router-link to="/sobre" class="hover:text-primary hover:font-semibold " > Sobre </router-link>
+      <router-link :to="'/sobre'+this.$root.utms" class="hover:text-primary hover:font-semibold " > Sobre </router-link>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
-      <router-link to="/home-equity" class="hover:text-primary hover:font-semibold " > Home Equity  </router-link>
+      <router-link :to="'/home-equity'+this.$root.utms" class="hover:text-primary hover:font-semibold " > Home Equity  </router-link>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
-      <router-link to="/financiamento-imobiliario" class="hover:text-primary hover:font-semibold " > Financiamento </router-link>
+      <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="hover:text-primary hover:font-semibold " > Financiamento </router-link>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
-      <router-link to="/parceiro" class="hover:text-primary hover:font-semibold " > Seja um Parceiro </router-link>
+      <router-link :to="'/parceiro'+this.$root.utms" class="hover:text-primary hover:font-semibold " > Seja um Parceiro </router-link>
     </div>
 
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
-      <a href="https://seja.best/"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold "
+      <a :href="'https://seja.best/'+this.$root.utms"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold "
         target="_blank"> Portal</a>
     </div>
 
     <div @click="openProfileMenu= !openProfileMenu" class="bg-complementaryColor1 text-white rounded-lg px-4 py-2 font-semibold 
       transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100">
 
-      <a href="https://simulador.seja.best/"  style=" text-decoration: none;"
-
+      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
         target="_blank">
         Simule seu crédito 
       </a>

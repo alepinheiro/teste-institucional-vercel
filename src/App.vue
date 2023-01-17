@@ -21,8 +21,10 @@ export default defineComponent({
           showMessage: false,
           buttonText:'Continuar'
         } as NotificationInterface,
+        utms:"" as String
       }
     },
+    
    
     
 })

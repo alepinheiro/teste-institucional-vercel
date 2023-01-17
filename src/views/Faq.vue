@@ -89,5 +89,6 @@ export default defineComponent({
   beforeMount() {
     this.checkOrgName()
   }
+  
 })
 </script>

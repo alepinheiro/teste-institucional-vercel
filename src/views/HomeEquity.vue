@@ -14,8 +14,9 @@
                     O Home Equity da SejaBest
                   </div></h1>
                 </div>
-                <div class=" py-4 text-white pb-6">
-                  Receba até <span class="font-semibold">60% do valor</span> do seu imóvel como capital para usar como quiser.
+                <div class=" pt-0 text-white pb-6">
+                  As menores taxas do mercado, a partir de <span class="font-semibold">0,88% a.m + IPCA ou fixa 1,49% a.m.</span>
+                  Pegando até  <span class="font-semibold">60% do valor</span> do seu imóvel como capital para usar como quiser,  você tem até 240 meses para pagar.
                   <span class="text-complementaryColor3"> Assista ao lado e saiba como.</span>
                 </div>
                 <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
@@ -37,7 +38,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -69,8 +70,9 @@
                   </div></h1>
                 </div>
                 <div class=" py-4 text-white pb-6">
-                  Receba até <span class="font-semibold">60% do valor</span> do seu imóvel como capital para usar como quiser.
-                  <span class="text-complementaryColor3"> Assista ao lado e saiba como.</span>
+                  As menores taxas do mercado, a partir de <span class="font-semibold">0,88% a.m + IPCA ou fixa 1,49% a.m.</span>
+                  Pegando até  <span class="font-semibold">60% do valor</span> do seu imóvel como capital para usar como quiser,  você tem até 240 meses para pagar.
+                  <span class="text-complementaryColor3"> Assista acima e saiba como.</span>
                 </div>
                 <div class="bg-bglight2Color p-4 rounded-xl">
                   <div class="flex w-full items-center border-b-1 border-primary pb-4">
@@ -92,7 +94,7 @@
                     </div>
                     <div class="w-3/12 ">
                       <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                        <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Simular</a>
                       </div>
                     </div>
@@ -120,7 +122,8 @@
                   </div>
                 </div>
                 <div class=" py-4 text-white pb-6">
-                  Receba até <span class="font-semibold">60% do valor</span> do seu imóvel como capital para usar como quiser.
+                  As menores taxas do mercado, a partir de <span class="font-semibold">0,88% a.m + IPCA ou fixa 1,49% a.m.</span>
+                  Pegando até  <span class="font-semibold">60% do valor</span> do seu imóvel como capital para usar como quiser,  você tem até 240 meses para pagar.
                   <span class="text-complementaryColor3"> Assista ao lado e saiba como.</span>
                 </div>
                 <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
@@ -142,7 +145,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -202,7 +205,7 @@
                 </div>
               </div>
               <div class="buttonComplementaryColor1 mt-6 text-center">
-                <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                   target="_blank">Faça uma simulação</a>
               </div>
             </div>
@@ -226,7 +229,7 @@
         </div>
         <div class="pt-6 sm:pt-4 text-right" >
           <button class="buttonComplementaryColor1"><a class="sm:text-sm text-2xl"
-            :href="$options.information.appSimulator"  style=" text-decoration: none;"
+            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a> </button>
         </div>
       </div>
@@ -391,7 +394,7 @@
         
       </div>
       <div class=" p-4" v-if="tutorial.show1">
-        A simulação é feita através do nosso <a :href="$options.information.appSimulator" class="text-primary" style=" text-decoration: none;"
+        A simulação é feita através do nosso <a :href="$options.information.appSimulator+this.$root.utms" class="text-primary" style=" text-decoration: none;"
             target="_blank">simulador.</a> Em até minutos você tem o resultado, porque seu tempo é valioso.
       </div>
     </div>
@@ -531,7 +534,7 @@
         <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
          <button class="buttonComplementaryColor1">
           <a 
-            :href="$options.information.appSimulator"  style=" text-decoration: none;"
+            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a></button>
         </div>
         <div class="w-full flex">
@@ -643,6 +646,12 @@ export default defineComponent({
 
       }
   },
+  mounted() {
+    if( this.$route.fullPath.includes("?") ){
+      var fullUrl = this.$route.fullPath.split("?")
+      this.$root.utms="?"+(fullUrl[1])  
+    }
+  }
  
 })
 </script>

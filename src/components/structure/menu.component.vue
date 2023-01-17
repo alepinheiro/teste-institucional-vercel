@@ -2,22 +2,22 @@
 <div class="flex mt-auto mb-auto justify-between">
   <div class="flex ">
     <div :class="linkStyle">
-      <router-link to="/" class="lineDecoration" > Início </router-link>
+      <router-link :to="'/'+this.$root.utms" class="lineDecoration" > Início </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link to="/sobre" class="lineDecoration" > Sobre </router-link>
+      <router-link :to="'/sobre'+this.$root.utms" class="lineDecoration" > Sobre </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link to="/home-equity" class="lineDecoration" > Home Equity  </router-link>
+      <router-link :to="'/home-equity'+this.$root.utms" class="lineDecoration" > Home Equity  </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link to="/financing" class="lineDecoration" > Financiamento </router-link>
+      <router-link :to="'/financing'+this.$root.utms" class="lineDecoration" > Financiamento </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link to="/parceiro" class="lineDecoration" > Seja um Parceiro </router-link>
+      <router-link :to="'/parceiro'+this.$root.utms" class="lineDecoration" > Seja um Parceiro </router-link>
     </div>
     <div :class="linkStyle">
-       <router-link to="/portal" class="lineDecoration" > Portal</router-link>
+       <router-link :to="'/portal'+this.$root.utms" class="lineDecoration" > Portal</router-link>
     </div>
     
   </div>
@@ -26,7 +26,7 @@
     <div class="bg-complementaryColor1 rounded-lg px-4 py-1 font-semibold  text-white
     transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105">
 
-      <a href="https://simulador.seja.best/"  style=" text-decoration: none;"
+      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
 
         target="_blank">Simule seu crédito</a>
     </div>

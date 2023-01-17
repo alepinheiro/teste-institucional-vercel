@@ -172,7 +172,7 @@
                 </div>
               </div>
               <div class="buttonComplementaryColor1 mt-6 text-center">
-                <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                   target="_blank">Faça uma simulação</a>
               </div>
             </div>
@@ -209,7 +209,7 @@
                 </div>
               </div>
               <div class="buttonComplementaryColor1 mt-8 text-center">
-                <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                   target="_blank">Faça uma simulação</a>
               </div>
             </div>
@@ -252,7 +252,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-6 text-center">
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -293,7 +293,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-8 text-center">
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -511,5 +511,11 @@ export default defineComponent({
       value:1000000,
     }
   },
+  mounted() {
+    if( this.$route.fullPath.includes("?") ){
+      var fullUrl = this.$route.fullPath.split("?")
+      this.$root.utms="?"+(fullUrl[1])  
+    }
+  }
 })
 </script>

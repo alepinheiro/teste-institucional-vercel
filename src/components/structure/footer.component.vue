@@ -5,13 +5,13 @@
     <div class=" sm:w-1/2 ">
       <div class="text-xl font-semibold text-textSecondary py-4">Sobre</div>
       <div class="sm:text-sm text-textSecondary  pb-6"> 
-        <router-link to="/sobre" class=" hover:text-textSecondary">  Sobre a SejaBest </router-link>
+        <router-link :to="'/sobre'+this.$root.utms" class=" hover:text-textSecondary">  Sobre a SejaBest </router-link>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
-        <router-link to="/portal" class=" hover:text-textSecondary">  Portal  </router-link >
+        <router-link :to="'/portal'+this.$root.utms" class=" hover:text-textSecondary">  Portal  </router-link >
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
-        <router-link to="/parceiro" class=" hover:text-textSecondary">Seja um Parceiro </router-link>
+        <router-link :to="'/parceiro'+this.$root.utms" class=" hover:text-textSecondary">Seja um Parceiro </router-link>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
         <a :href="$options.information.appPartner" class="hover:text-textSecondary" style=" text-decoration: none;"
@@ -46,13 +46,13 @@
     <div class="  ">
       <div class="text-xl font-semibold text-textSecondary py-4">Podutos</div>
       <div class="sm:text-sm text-textSecondary  pb-6">
-        <router-link to="/financing" class=" hover:text-textSecondary">Financiamento  </router-link>
+        <router-link :to="'/financing'+this.$root.utms" class=" hover:text-textSecondary">Financiamento  </router-link>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
-        <router-link to="/home-equity" class=" hover:text-textSecondary">Home Equity </router-link>
+        <router-link :to="'/home-equity'+this.$root.utms" class=" hover:text-textSecondary">Home Equity </router-link>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
-        <a :href="$options.information.appSimulator" class="hover:text-textSecondary" style=" text-decoration: none;"
+        <a :href="$options.information.appSimulator+this.$root.utms" class="hover:text-textSecondary" style=" text-decoration: none;"
           target="_blank">Simule seu crédito </a>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
@@ -60,10 +60,10 @@
           target="_blank">Acesse sua conta </a>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
-        <router-link to="/termos-de-uso" class=" hover:text-textPrimary">Termos de uso  </router-link>
+        <router-link :to="'/termos-de-uso'+this.$root.utms" class=" hover:text-textPrimary">Termos de uso  </router-link>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
-        <router-link to="/politica-de-privacidade" class=" hover:text-textSecondary">Política de Privacidade </router-link>
+        <router-link :to="'/politica-de-privacidade'+this.$root.utms" class=" hover:text-textSecondary">Política de Privacidade </router-link>
       </div>
       <div class="md:hidden xl:hidden lg:hidden ">
         <div class="text-xl font-semibold text-textSecondary pt-4">Precisa de ajuda?</div>

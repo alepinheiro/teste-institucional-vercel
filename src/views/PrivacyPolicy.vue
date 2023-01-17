@@ -240,5 +240,11 @@ export default defineComponent({
       isVisible:false,
     }
   },
+  mounted() {
+    if( this.$route.fullPath.includes("?") ){
+      var fullUrl = this.$route.fullPath.split("?")
+      this.$root.utms="?"+(fullUrl[1])  
+    }
+  }
 })
 </script>

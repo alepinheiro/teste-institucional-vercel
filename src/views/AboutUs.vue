@@ -329,7 +329,7 @@
             </div>
             <div class="sm:px-1 px-4">
               <button class="buttonComplementaryColor1 sm:py-1 md:p-2"><a class="sm:text-xs text-2xl "
-                :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                 target="_blank">Faça uma simulação</a> </button>
             </div>
           </div>
@@ -432,5 +432,11 @@ export default defineComponent({
 
       }
   },
+  mounted() {
+    if( this.$route.fullPath.includes("?") ){
+      var fullUrl = this.$route.fullPath.split("?")
+      this.$root.utms="?"+(fullUrl[1])  
+    }
+  }
 })
 </script>

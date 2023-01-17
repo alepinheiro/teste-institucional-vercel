@@ -22,6 +22,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/HomeEquityLP.vue"),
   },
   {
+    path: "/como-funciona",
+    name: "HomeEquityLP2",
+    component: () => import("@/views/HomeEquityLP.vue"),
+  },
+  {
+    path: "/emprestimo-com-garantia-de-imovel",
+    name: "HomeEquityLP1",
+    component: () => import("@/views/HomeEquityLP.vue"),
+  },
+  {
     path: "/financing",
     name: "Financing",
     component: () => import("@/views/Financing.vue"),
@@ -29,6 +39,11 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/financiamento-imobiliario/finanBest",
     name: "FinancingLP",
+    component: () => import("@/views/FinancingLP.vue"),
+  },
+  {
+    path: "/financiamento-imobiliario",
+    name: "FinancingLP1",
     component: () => import("@/views/FinancingLP.vue"),
   },
   {

@@ -34,7 +34,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -78,7 +78,7 @@
             </div>
           <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -128,7 +128,7 @@
                 </div>
               </div>
               <div class="buttonComplementaryColor1 mt-6 text-center">
-                <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                   target="_blank">Faça uma simulação</a>
               </div>
             </div>
@@ -165,7 +165,7 @@
                 </div>
               </div>
               <div class="buttonComplementaryColor1 mt-8 text-center">
-                <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                   target="_blank">Faça uma simulação</a>
               </div>
             </div>
@@ -208,7 +208,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-6 text-center">
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -249,7 +249,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-8 text-center">
-                      <a :href="$options.information.appSimulator"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -412,7 +412,7 @@
         </div>
         <div class=" ">
           <div class=" pt-8  w-full  text-white text-center" >
-            <a :href="$options.information.appSimulator"  class="buttonComplementaryColor1 py-3" style=" text-decoration: none;"
+            <a :href="$options.information.appSimulator+this.$root.utms"  class="buttonComplementaryColor1 py-3" style=" text-decoration: none;"
               target="_blank">Conheça a SejaBest</a>
           </div>
         </div>
@@ -506,7 +506,7 @@
         <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
          <button class="buttonComplementaryColor1">
           <a 
-            :href="$options.information.appSimulator"  style=" text-decoration: none;"
+            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a></button>
         </div>
         <div class="w-full flex">
@@ -542,6 +542,12 @@ export default defineComponent({
       meta: [
         { vmid: 'description', name: 'description', content: "Crédito Imobiliário nunca foi tão fácil. Conheça as melhores soluções em Crédito Imobiliário do mercado: Conheça o Crédito com garantia de imóvel e o financiamento imobiliário" }
       ]
+    }
+  },
+  mounted() {
+    if( this.$route.fullPath.includes("?") ){
+      var fullUrl = this.$route.fullPath.split("?")
+      this.$root.utms="?"+(fullUrl[1])  
     }
   }
 })
