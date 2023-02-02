@@ -11,7 +11,7 @@
       <router-link :to="'/home-equity'+this.$root.utms" class="lineDecoration" > Home Equity  </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link :to="'/financing'+this.$root.utms" class="lineDecoration" > Financiamento </router-link>
+      <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="lineDecoration" > Financiamento </router-link>
     </div>
     <div :class="linkStyle">
       <router-link :to="'/parceiro'+this.$root.utms" class="lineDecoration" > Seja um Parceiro </router-link>

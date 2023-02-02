@@ -46,7 +46,7 @@
     <div class="  ">
       <div class="text-xl font-semibold text-textSecondary py-4">Podutos</div>
       <div class="sm:text-sm text-textSecondary  pb-6">
-        <router-link :to="'/financing'+this.$root.utms" class=" hover:text-textSecondary">Financiamento  </router-link>
+        <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class=" hover:text-textSecondary">Financiamento  </router-link>
       </div>
       <div class="sm:text-sm text-textSecondary pb-6">
         <router-link :to="'/home-equity'+this.$root.utms" class=" hover:text-textSecondary">Home Equity </router-link>
