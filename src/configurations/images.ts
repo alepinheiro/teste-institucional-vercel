@@ -4,6 +4,7 @@ const image = {
   logoSejabestGray:"/images/logoBest/logoGray.svg",
   logoBestHub:"/images/logoBest/LogoBestHub.svg",
   logoVertical:"/images/logoBest/Logotipo-vertical-azul.png",
+  logoVerticalWhite:"/images/logoBest/Logotipo SejaBestVerticalWhite.svg",
   iconSejaBest:"/images/logoBest/Simbolo-degrade.png",
   iconSejaBestWhite:"/images/logoBest/iconSejaBestWhite.svg",
   bacen:"/images/LogoParceiros/LogoBancoCentraldoBrasil.svg", 
@@ -124,12 +125,27 @@ const image = {
   icons:{
     percentageFill:"/images/SejabestIcones/iconePorcentagemFill.svg",
     calendarFill:"/images/SejabestIcones/iconeCalendarioFill.svg",
+    calendarOutline:"/images/SejabestIcones/iconeCalendárioOutlineWhite.svg",
     moneyFill:"/images/SejabestIcones/iconeDinheiroFill.svg",
     checkFill:"/images/SejabestIcones/iconeCheckFill.svg",
     errorFill:"/images/SejabestIcones/iconeErradoFill.svg",
+    errorDark:"/images/SejabestIcones/iconeErradoDark.svg",
     phoneFill:"/images/SejabestIcones/iconeCelularFill.svg",
     userFill:"/images/SejabestIcones/iconePessoaFill.svg",
     notebookFill:"/images/SejabestIcones/iconeNotebookFill.svg",
+    errorBlue: "/images/SejabestIcones/iconeErradoAzul.svg",
+    checkBlue:"/images/SejabestIcones/iconeCheckBlue.svg",
+    checkCompleto:"/images/SejabestIcones/iconeCheckfillCompleto.svg",
+    checkWhite:"/images/SejabestIcones/iconeCheckWhite.svg",
+    grafico:"images/SejabestIcones/iconeGráficoBranco.svg",
+    setaDireita:"images/SejabestIcones/iconeSetaDireita.svg",
+    setaBaixo:"images/SejabestIcones/iconeSetaBaixo.svg",
+      outline:{
+        whiteBlueClock:"/images/SejabestIcones/WhiteAndBlue/iconeRelógio.svg",
+        whiteBluePhone:"/images/SejaBestIcones/WhiteAndBlue/iconeCelularOutline.svg",
+        whiteBlueCalendar:"/images/SejaBestIcones/WhiteAndBlue/iconeCalendárioOutline.svg",
+        whiteBlueMoney:"/images/SejaBestIcones/WhiteAndBlue/iconeDinheiroOutline.svg",
+      },
   },
   logoMedia: {
     gray:{
@@ -169,9 +185,28 @@ const image = {
       santander: "/images/LogoPartners/colorfull/LogoSantander.svg",
       wimo: "/images/LogoPartners/colorfull/LogoWimo.svg",
     },
-
-  }
-  
+    white: {
+      bari: "/images/LogoPartners/white/LogoBancoBari.svg",
+      daycoval: "/images/LogoPartners/white/LogoBancoDaycoval.svg",
+      inter: "/images/LogoPartners/white/LogoBancoInter.svg",
+      cashme: "/images/LogoPartners/white/LogoCashme.svg",
+      creditas: "/images/LogoPartners/white/LogoCreditas.svg",
+      itau: "/images/LogoPartners/white/LogoItau.svg",
+      libra: "/images/LogoPartners/white/LogoLibra.svg",
+      piratini: "/images/LogoPartners/white/LogoPiratini.svg",
+      pontte: "/images/LogoPartners/white/LogoPontte.svg",
+      rodobens: "/images/LogoPartners/white/LogoRodobens.svg",
+      santander: "/images/LogoPartners/white/LogoSantander.svg",
+      wimo: "/images/LogoPartners/white/LogoWimo.svg",
+    },
+  },
+  bestCar:{
+    carroNotas: "/images/BestCar/CARRO_1.png",
+    gráficoBestCar: "/images/BestCar/gráficobestCar.svg",
+    carro: "/images/BestCar/CARRO_2.png",
+    gráficoFinan: "/images/BestCar/GRÁFICO_FINANCIAMENTO.svg",
+    imgMulher: "/images/BestCar/IMAGEM_MULHER.png"
+  },
 };
 
 export default image;
