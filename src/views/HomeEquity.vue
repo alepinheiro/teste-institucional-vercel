@@ -26,7 +26,7 @@
                   <div class="w-10/12 text-lg text-white"> 
                     Sem <span class="text-complementaryColor3">Filas.</span> 
                     Sem <span class="text-complementaryColor3">gerentes.</span>  
-                    Sem <span class="text-complementaryColor3">complexidades</span> 
+                    Sem <span class="text-complementaryColor3">complexidade</span> 
                   </div>
                 </div>
                 <div class="w-10/12 text-xl text-white pt-2 font-semibold text-textPrimary"> 
@@ -82,7 +82,7 @@
                     <div class="w-10/12 text-lg "> 
                       Sem <span class="text-primary">Filas.</span> 
                       Sem <span class=" text-primary">gerentes.</span>  
-                      Sem <span class=" text-primary">complexidades</span> 
+                      Sem <span class=" text-primary">complexidade</span> 
                     </div>
                   </div>
                   <div class="w-10/12 text-xl  pt-2 font-semibold text-textPrimary"> 
@@ -133,7 +133,7 @@
                   <div class="w-10/12 text-lg text-white"> 
                     Sem <span class="text-complementaryColor3">Filas.</span> 
                     Sem <span class="text-complementaryColor3">gerentes.</span>  
-                    Sem <span class="text-complementaryColor3">complexidades</span> 
+                    Sem <span class="text-complementaryColor3">complexidade</span> 
                   </div>
                 </div>
                 <div class="w-10/12 text-xl text-white pt-2 font-semibold text-textPrimary"> 

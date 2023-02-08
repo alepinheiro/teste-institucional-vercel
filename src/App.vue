@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="w-full defaultFont">
+  <div id="app" class="w-full defaultFont" v-if="!isLoading">
     <router-view/>
     <footerComponent />
     <notificationPopUp />
@@ -14,6 +14,7 @@ export default defineComponent({
     components:{ notificationPopUp, footerComponent  },
     data() {
       return{
+        isLoading:true,
         notification : {
           type: 'warning',
           title: "Aviso",
@@ -24,6 +25,16 @@ export default defineComponent({
         utms:"" as String
       }
     },
+  mounted() {
+    if( this.$route.fullPath.includes("?") ){
+      var fullUrl = this.$route.fullPath.split("?")
+      this.$root.utms="?"+(fullUrl[1])  
+    }
+    setTimeout(() => {  
+      this.isLoading=false 
+    }, 100);
+    console.log(this.isLoading)
+  }
     
    
     

@@ -19,7 +19,7 @@
     </div>
 
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
-      <a :href="'https://seja.best/'+this.$root.utms"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold "
+      <a :href="'https://portal.seja.best/'+this.$root.utms"  style=" text-decoration: none;"  class="hover:text-primary hover:font-semibold "
         target="_blank"> Portal</a>
     </div>
 

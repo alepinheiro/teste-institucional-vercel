@@ -17,7 +17,8 @@
       <router-link :to="'/parceiro'+this.$root.utms" class="lineDecoration" > Seja um Parceiro </router-link>
     </div>
     <div :class="linkStyle">
-       <router-link :to="'/portal'+this.$root.utms" class="lineDecoration" > Portal</router-link>
+      <a :href="'https://portal.seja.best/'+this.$root.utms" class="lineDecoration"
+        target="_blank"> Portal</a>
     </div>
     
   </div>
