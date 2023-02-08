@@ -33,7 +33,6 @@ export default defineComponent({
     setTimeout(() => {  
       this.isLoading=false 
     }, 100);
-    console.log(this.isLoading)
   }
     
    
