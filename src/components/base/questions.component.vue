@@ -5,11 +5,11 @@
         <div
           :class="{'bg-primary text-white rounded-t-2xl':(show==true),
         'bg-bgDefaultColor text-primary rounded-2xl':(show==false)}"
-          style="cursor: pointer; display: flex; font-size: 16px;" class="justify-between p-6 "
+          style="cursor: pointer; display: flex; font-size: 16px;" class="justify-between p-6 sm:p-2"
           @click="showAnswer()"
         >
-          <div class=" text-lg  pr-2">{{ title }}</div>
-          <div class="mt-auto mb-auto text-xl">
+          <div class=" text-xl font-semibold pr-2 sm:pr-1 sm:text-xs">{{ title }}</div>
+          <div class="mt-auto mb-auto text-xl sm:text-xs ">
            
             <i v-if="!show" class="ti ti-angle-right" ></i>
             <i v-if="show" class="ti ti-angle-down" ></i>

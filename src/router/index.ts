@@ -66,6 +66,16 @@ const routes: Array<RouteRecordRaw> = [
     name: "TermsOfUse",
     component: () => import("@/views/TermsOfUse.vue"),
   },
+  {
+    path: "/BestCar",
+    name: "BestCar",
+    component: () => import("@/views/BestCarLP.vue"),
+  },
+  {
+    path: "/BestCarFinan",
+    name: "BestCarFinan",
+    component: () => import("@/views/BestCarFinanLP.vue"),
+  }
 ];
 
 const router = createRouter({
