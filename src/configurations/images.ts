@@ -137,9 +137,11 @@ const image = {
     checkBlue:"/images/SejabestIcones/iconeCheckBlue.svg",
     checkCompleto:"/images/SejabestIcones/iconeCheckfillCompleto.svg",
     checkWhite:"/images/SejabestIcones/iconeCheckWhite.svg",
-    grafico:"images/SejabestIcones/iconeGráficoBranco.svg",
+    checkAqua:"/images/SejabestIcones/iconeCheckAqua.svg",
+    grafico:"images/SejabestIcones/iconeGraficoBranco.svg",
     setaDireita:"images/SejabestIcones/iconeSetaDireita.svg",
     setaBaixo:"images/SejabestIcones/iconeSetaBaixo.svg",
+    setaBaixowhite:"images/SejabestIcones/iconeSetaBaixoWhite.svg",
       outline:{
         whiteBlueClock:"/images/SejabestIcones/WhiteAndBlue/iconeRelógio.svg",
         whiteBluePhone:"/images/SejaBestIcones/WhiteAndBlue/iconeCelularOutline.svg",

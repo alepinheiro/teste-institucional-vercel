@@ -72,12 +72,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/TermsOfUse.vue"),
   },
   {
-    path: "/BestCar",
+    path: "/emprestimo-com-garantia-de-veiculo/BestCar",
     name: "BestCar",
     component: () => import("@/views/BestCarLP.vue"),
   },
   {
-    path: "/BestCarFinan",
+    path: "/financiamento-veicular",
     name: "BestCarFinan",
     component: () => import("@/views/BestCarFinanLP.vue"),
   }
@@ -86,6 +86,9 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  }
 });
 
 export default router;

@@ -163,13 +163,13 @@
     height: 120px;
     border-radius: 10px;  /* will have no effect */
   }
-  .lineDecoration:hover {
+  	.lineDecoration:hover {
 	border-bottom: 5px solid transparent;
     border-image: linear-gradient(45deg, rgba(255, 0, 0, 0) , #27E0FF);
     border-image-slice: 1;
     height: 120px;
-    border-radius: 10px;  /* will have no effect */
-  }
+    border-radius: 10px; }
+
   .textDecoration{
 	border-bottom: 5px solid transparent;
     border-image: linear-gradient(45deg, rgba(255, 0, 0, 0) , #27E0FF);
@@ -408,4 +408,8 @@
 .bgLigthGrey{
 	background-color:rgba(234,234,234,255);
 	;
+}
+
+.borderWhite{
+	border: solid 1px white;
 }

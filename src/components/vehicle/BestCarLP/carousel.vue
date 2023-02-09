@@ -21,6 +21,17 @@ export default defineComponent({
     name: 'Carousel',
 })
 </script>
-<style lang="">
-    
+
+<style>
+  @media (max-width: 667px) {
+    .splide__arrow--prev {
+      left: 0em;
+	  }
+    .splide__arrow--next {
+      right: 0em;
+    }
+    .splide__pagination {
+      bottom: -0.5em;
+    }
+}
 </style>

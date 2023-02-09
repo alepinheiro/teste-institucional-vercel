@@ -1,8 +1,12 @@
 <template>
 <div class="w-full  flex xl:py-8  justify-between" :class="{'bg-transparent':(position!=='top'),'bg-transparent':(position==='top')}">
   <div class="pr-8">
-    <img v-if="position==='top'" :src="$options.imageConfig.logoSejabest" alt="Logo SejaBest "  class="w-auto h-12 "/>
-    <img v-if="position!=='top'" :src="$options.imageConfig.logoSejabestWhite" alt="Logo SejaBest "  class="w-auto h-12 "/>
+    <router-link :to="'/'+this.$root.utms" class="lineDecoration" >
+      <img v-if="position==='top'" :src="$options.imageConfig.logoSejabest" alt="Logo SejaBest "  class="w-auto h-12 "/>
+    </router-link>
+    <router-link :to="'/'+this.$root.utms" class="lineDecoration" >
+      <img v-if="position!=='top'" :src="$options.imageConfig.logoSejabestWhite" alt="Logo SejaBest "  class="w-auto h-12 "/>
+    </router-link>     
   </div>
   <menuComponent class="sm:hidden md:hidden" :linkStyle="linkStyle" />
   <menuMobileComponent class="xl:hidden lg:hidden"  :color="color" :linkStyle="linkStyle" />

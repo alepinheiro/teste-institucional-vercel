@@ -26,9 +26,9 @@
                     <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
                     </div>
                     <div class="w-3/12 ">
-                    <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center text-xs sm:mb-1" >
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                      target="_blank">Simular</a>
+                      <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center text-xs sm:mb-1" >
+                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Simular</a>
                     </div>
                     </div>
                     </div>
@@ -39,10 +39,10 @@
         </div>
 
         <div class="flex pt-6">
-          <div class="w-5/12 mb-auto sm:w-full sm:hidden">
-            <img :src="$options.imageConfig.bestCar.carroNotas" alt="" class="lg:w-[28rem] xl:w-[40rem] md:w-[20rem] sm:hidden max-w-3xl">
+          <div class="w-5/12 mb-auto md:mt-8 sm:w-full sm:hidden">
+            <img :src="$options.imageConfig.bestCar.carroNotas" alt="" class="lg:w-[28rem] xl:w-[40rem] md:w-[22rem] sm:hidden max-w-3xl">
           </div>
-          <div class="sm:w-full sm:text-left mb-auto text-primary xl:ml-14 xl:mt-24 lg:mt-16 lg:ml-12 md:ml-6 lg:w-7/12 w-6/12">
+          <div class="sm:w-full sm:text-left mb-auto text-primary xl:ml-14 xl:mt-24 lg:mt-16  md:mt-10 lg:ml-12 md:ml-2 md:w-[55%] lg:w-7/12 w-6/12">
             <div class="md:w-full sm:text-center text-5xl  md:text-2xl lg:text-4xl sm:text-3xl text-center font-semibold mr-0">
               Com o FinanBest você tem: 
             </div>
@@ -97,27 +97,27 @@
             </div>
         </div>
     </div>
-    <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-0 lg:pt-0 md:pt-0" >
-        <div class="maxWidth flex justify-center ">
+    <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-3 lg:pt-0 md:pt-0" >
+        <div class="maxWidth sm:p-0 p-0Max  flex justify-center ">
             <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
                 <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
-                    class="w-full sm:w-[80%]   absolute bottom-[-1.77rem] sm:bottom-[-2.4rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
+                    class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-1.4rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto "/>
             </div>
-        <div class="w-9/12 sm:w-6/12 md:w-8/12">
-            <div class="text-white pt-4 titleFontBold text-7xl lg:text-4xl md:text-3xl sm:text-xl text-right mr-16 sm:mr-0">
+        <div class="w-9/12 sm:w-6/12 md:w-8/12  sm:mr-2">
+            <div class="text-white pt-4 sm:pt-1 titleFontBold text-7xl lg:text-6xl md:text-5xl sm:text-2xl textphoneMini text-right md:mr-1 sm:mr-0">
                 E aí, vamos ser<br/> Best com a gente?
         </div>
         <div class="w-full flex">
-            <div class="flex pt-4 justify-end w-full">
-                   <div class="mt-4 mr-4 text-lg sm:text-xs sm:mr-1 text-white pt-2 text-textPrimary"> 
+            <div class="flex pt-4 sm:pt-2 justify-end w-full">
+                   <div class="mt-4 mr-2 text-lg md:text-base md:text-right sm:text-xs sm:mr-1 text-white pt-2 text-textPrimary"> 
                       De quanto você precisa?
                     </div>
-                    <div class="flex items-end w-5/12 sm:w-full gap-4 sm:gap-0">
-                    <div class="w-9/12 pr-1">
-                        <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                    <div class="flex items-end w-5/12 md:w-[58%] sm:w-full gap-4 md:gap-1 sm:gap-0">
+                    <div class="w-9/12 sm:w-full pr-1">
+                        <inputMoney class="w-full " v-model="value" id="value" label=""  placeholder=""  />
                     </div>
-                    <div class="w-3/12 ">
-                        <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
+                    <div class="w-4/12 ">
+                        <div class="  p-2 w-full sm:p-1 bg-complementaryColor1 rounded-xl text-white text-center" >
                             <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                              target="_blank" class="sm:hidden">Simular</a>
                              <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
@@ -152,5 +152,37 @@ export default defineComponent({
 </script>
 
 <style>
-    
+  /* estilo das setas do carrosel */
+
+    .splide__arrow svg {
+      fill: #fff;
+    }
+    .splide__arrow{
+      opacity: 10;
+    }
+
+    @media (max-width: 667px) {
+      .inputBase{
+        padding: 0.25rem;
+    }
+  }
+
+ 
+    @media (max-width:667px) {
+      .p-0Max.maxWidth{
+        padding: 0rem;
+      }
+    }
+
+    @media (max-width:380px) {
+      .max-90{
+        width: 90%;
+      }
+    }
+      @media (max-width:380px) {
+      .textphoneMini{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+    }
 </style>

@@ -2,7 +2,7 @@
 <div>
     <headVideo />
     <!-- Div sem video apenas para mobile -->
-    <div class="maxWidth xl:h-screen lg:h-screen xl:hidden lg:hidden md:hidden bg-primary" >
+    <div class="maxWidth xl:h-screen lg:h-screen xl:hidden lg:hidden md:hidden bg-secondary" >
         <div class="w-full flex pt-20 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
             <div class="bg-primary rounded-xl w-full shadow-2xl p-6">

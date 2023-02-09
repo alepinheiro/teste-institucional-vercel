@@ -6,9 +6,13 @@
         <topbarComponent position="relative" />
         <div class="w-full px-24 sm:px-0 flex flex-wrap justify-between mt-6 md:mt-4 sm:mt-4">
           <div class=" md:w-7/12 text-white md:pr-4 sm:hidden  mt-auto mb-auto">
-            
+            <div class="flex flex-row borderWhite xl:p-1 lg:p-1 xl:text-lg lg:text-lg absolute xl:mt-40 xl:ml-28 lg:mt-32 lg:ml-32 gap-4 rounded-md">
+                <a class="text-left xl:mt-1 px-1">Saiba Mais</a>
+               <img :src="$options.imageConfig.icons.setaBaixowhite" alt="SejaBest"  class="xl:w-8 lg:w-7 borderWhite rounded-full xl:ml-3 lg:ml-3 xl:mr-2 lg:mr-1 xl:p-2 lg:p-2 h-auto "/>
+          </div>
           </div>
           <div class="md:pt-4 sm:py-8 max-w-[400px] w-full md:mr-auto md:ml-auto sm:mr-auto sm:ml-auto ">
+ 
             <div class="bg-WhiteTransparency rounded-xl w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-primary  " >
                   <div>Crédito Imobiliário nunca foi </div>
@@ -39,11 +43,10 @@
                     </div>
                   </div>
                 </div>
-                
             </div>
           </div>
         </div>
-        
+
       </div>
       
     </div>
@@ -99,8 +102,8 @@
           <div class="border-1  rounded-xl w-4/12 md:w-5/12 lg:w-5/12 text-white mr-4">
             <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
               <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
-              <div class="text-xl titleFont">Conheça o Crédito com </div>
-              <div class="text-xl titleFont">garantia de imóvel</div>
+              <div class="text-xl defaultFontt">Conheça o Crédito com </div>
+              <div class="text-xl defaultFontt">garantia de imóvel</div>
             </div>
             <div class="w-full p-6 bg-secondary rounded-b-xl">
               <div class="w-full flex  items-center">
@@ -136,8 +139,8 @@
           <div class="border-1 gradienteSBDark  rounded-xl w-4/12 md:w-5/12 lg:w-5/12 text-white ml-4">
             <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
               <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
-              <div class="text-xl titleFont">As melhores soluções em </div>
-              <div class="text-xl titleFont">Financiamento imobiliário</div>
+              <div class="text-xl defaultFont">As melhores soluções em </div>
+              <div class="text-xl defaultFont">Financiamento imobiliário</div>
             </div>
             <div class="w-full p-6 rounded-b-xl ">
               <div class="w-full flex  items-center">
@@ -179,8 +182,8 @@
                 <div class="border-1 rounded-xl w-full text-white ">
                   <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
                     <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
-                    <div class="text-xl titleFont">Conheça o Crédito com </div>
-                    <div class="text-xl titleFont">garantia de imóvel</div>
+                    <div class="text-xl defaultFont">Conheça o Crédito com </div>
+                    <div class="text-xl defaultFont">garantia de imóvel</div>
                   </div>
                   <div class="w-full p-6 bg-secondary rounded-b-xl">
                     <div class="w-full flex  items-center">
@@ -220,8 +223,10 @@
                 <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
                   <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
                     <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
-                    <div class="text-xl titleFont">As melhores soluções em </div>
-                    <div class="text-xl titleFont">Financiamento imobiliário</div>
+                    <div class="text-xl defaultFont">As melhores soluções em </div>
+                    <div class="text-xl defaultFont
+                    
+                    ">Financiamento imobiliário</div>
                   </div>
                   <div class="w-full p-6 rounded-b-xl ">
                     <div class="w-full flex  items-center">
@@ -261,10 +266,10 @@
     </div>
     <div class="w-full pt-24 md:pt-8 sm:pt-8 sm:bg-bglightColor">
       <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto" >
-        <div class="mt-auto mb-auto w-full bg-bglightColor rounded-2xl flex-wrap p-6">
-        
-          <div class="w-full flex  py-4 ">
-            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl  text-primary text-center">Por que ser Best?</div>
+        <div class="mt-auto mb-auto w-full bg-bglightColor rounded-2xl flex-wrap p-6 flex justify-center">
+          <div class="w-10/12">
+          <div class="w-full flex ml-8 py-4 ">
+            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl xl:text-3xl text-primary defaultFontBold text-center">Por que ser Best?</div>
             <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
               <img :src="$options.imageConfig.logoVertical" alt="SejaBest"  class="w-30 sm:w-24 h-auto mr-auto ml-auto"/>
             </div>
@@ -272,61 +277,62 @@
               <div class="text-textSecondary text-3xl sm:text-2xl mt-auto mb-auto px-4"> Bancos</div>
             </div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg"> As menores taxas do mercado </div>
+          <div class="w-full flex border-b py-3 ml-8">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> As menores taxas do mercado </div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg"> Múltiplas opções de banco </div>
+          <div class="w-full flex border-b py-3 ml-8">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> Múltiplas opções de banco </div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Plataforma multiprodutos</div>
+          <div class="w-full flex border-b py-3 ml-8">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Plataforma multiprodutos</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Transparência</div>
+          <div class="w-full flex border-b py-3 ml-8">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Transparência</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Processo agilizado</div>
+          <div class="w-full flex border-b py-3 ml-8">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Processo agilizado</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Atendimento 7 dias por semana</div>
+          <div class="w-full flex border-b py-3 ml-8">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Atendimento 7 dias por semana</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Assessoria personalizada</div>
+          <div class="w-full flex border-b py-3 ml-8 ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Assessoria personalizada</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Totalmente Digital</div>
+          <div class="w-full flex border-b py-3 ml-8 ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Totalmente Digital</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Sem burocracias</div>
+          <div class="w-full flex border-b py-3 ml-8 ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem burocracias</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Sem filas</div>
+          <div class="w-full flex border-b py-3 ml-8 ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem filas</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Foco no cliente</div>
+          <div class="w-full flex py-3 ml-8 ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Foco no cliente</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -371,22 +377,27 @@
   </div>  
   <div class="w-full bgMeioAzul p-4 sm:hidden md:hidden pt-24 sm:pt-8">
       <div class="maxWidth p-0 shadow-lg bg-bglightColor rounded-2xl flex flex-wrap">
-        <div class="w-6/12 mt-auto mb-auto ">
-          <div class="pl-28 py-16">
-            <div class="text-6xl titleFontBold  text-primary  " >
+        <div class="w-6/12 mb-auto ">
+          <div class="pl-24 lg:pl-12 py-16 ">
+            <div class="text-6xl xl:text-7xl titleFontBold text-primary xl:leading-[3.5rem] lg:leading-[3rem]  " >
                 <div>Você está </div>
               <div  class="flex ">
                 <div>no</div>&nbsp; <div class="pb-1 textDecoration">centro</div><div>&nbsp;das</div>
               </div>
               <div>nossas decisões </div>
             </div>
-            <div class="pt-4 text-textSecondary">
+            <div class="pt-6 lg:pt-6 text-xl lg:text-lg text-textSecondary">
               Acreditamos que você merece uma experiência <br/>
               completa, que soma o melhor do nosso atendimento <br/>
               humanizado e personalizado dos nossos <br/>
               especialistas com a tecnologia, simplificando e <br/>
               agilizando todos os processos.
             </div>
+            <router-link :to="'/sobre'+this.$root.utms">
+              <div class="  p-2 w-6/12 bg-complementaryColor1 rounded-md text-white text-center text-xl sm:mb-1 mt-14" >
+                Conheça a SejaBest
+              </div> 
+            </router-link>
           </div>
         </div>
         <div class="w-6/12 ">
@@ -410,12 +421,11 @@
               especialistas com a tecnologia, simplificando e 
               agilizando todos os processos.
         </div>
-        <div class=" ">
-          <div class=" pt-8  w-full  text-white text-center" >
-            <a :href="$options.information.appSimulator+this.$root.utms"  class="buttonComplementaryColor1 py-3" style=" text-decoration: none;"
-              target="_blank">Conheça a SejaBest</a>
+        <router-link :to="'/sobre'+this.$root.utms" >
+          <div class=" pt-8 w-full  text-white text-center" >
+            <a>Conheça a SejaBest</a>
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -446,7 +456,7 @@
   </div>
   <div class="w-full  pt-10 sm:pt-4 md:pt-4 pb-16 mr-auto ml-auto flex">
      <div class="w-7/12 flex justify-center mt-auto mb-auto">
-      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8 ">
+      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8 2xl:ml-auto ">
         <div class="text-5xl sm:text-2xl md:text-4xl font-semibold text-primary">
           Quem não é visto,  não é <span class="textDecoration">lembrado.</span>
         </div>
