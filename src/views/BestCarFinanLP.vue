@@ -39,10 +39,10 @@
         </div>
 
         <div class="flex pt-6">
-          <div class="w-5/12 mb-auto md:mt-8 sm:w-full sm:hidden">
-            <img :src="$options.imageConfig.bestCar.carroNotas" alt="" class="lg:w-[28rem] xl:w-[40rem] md:w-[22rem] sm:hidden max-w-3xl">
+          <div class="w-5/12 mb-auto md:mt-10 sm:w-full sm:hidden">
+            <img :src="$options.imageConfig.bestCar.carroNotas" alt="" class="lg:w-[28rem] xl:w-[40rem] md:w-[20rem] sm:hidden max-w-3xl">
           </div>
-          <div class="sm:w-full sm:text-left mb-auto text-primary xl:ml-14 xl:mt-24 lg:mt-16  md:mt-10 lg:ml-12 md:ml-2 md:w-[55%] lg:w-7/12 w-6/12">
+          <div class="sm:w-full sm:text-left mb-auto text-primary xl:ml-14 xl:mt-24 lg:mt-16  md:mt-10 lg:ml-12 md:ml-[1.2rem] md:w-[55%] lg:w-7/12 w-6/12">
             <div class="md:w-full sm:text-center text-5xl  md:text-2xl lg:text-4xl sm:text-3xl text-center font-semibold mr-0">
               Com o FinanBest você tem: 
             </div>
