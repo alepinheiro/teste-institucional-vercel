@@ -32,18 +32,13 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/HomeEquityLP.vue"),
   },
   {
-    path: "/financing",
+    path: "/financiamento-imobiliario",
     name: "Financing",
     component: () => import("@/views/Financing.vue"),
   },
   {
     path: "/financiamento-imobiliario/finanBest",
     name: "FinancingLP",
-    component: () => import("@/views/FinancingLP.vue"),
-  },
-  {
-    path: "/financiamento-imobiliario",
-    name: "FinancingLP1",
     component: () => import("@/views/FinancingLP.vue"),
   },
   {
