@@ -22,7 +22,7 @@
                     <img  :src="$options.imageConfig.iconSejaBest" alt="SejaBest"  class="w-full h-auto ">
                   </div>
                   <div class="w-10/12 text-xl text-textPrimary"> 
-                    Sem Filas. Sem gerentes. Sem complexidades
+                    Sem Filas. Sem gerentes. Sem complexidade
                   </div>
                 </div>
                 <div class="w-10/12 text-xl pt-2 font-semibold text-textPrimary"> 
@@ -66,7 +66,7 @@
             <div class="w-10/12 text-lg text-white"> 
               Sem <span class="text-complementaryColor3">Filas.</span> 
               Sem <span class="text-complementaryColor3">gerentes.</span>  
-              Sem <span class="text-complementaryColor3">complexidades</span> 
+              Sem <span class="text-complementaryColor3">complexidade</span> 
             </div>
           </div>
           <div class="w-10/12 text-xl pt-2 font-semibold "> 
