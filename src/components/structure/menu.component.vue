@@ -2,22 +2,22 @@
 <div class="flex mt-auto mb-auto justify-between">
   <div class="flex ">
     <div :class="linkStyle">
-      <router-link :to="'/'+this.$root.utms" class="lineDecoration" > Início </router-link>
+      <router-link :to="'/'+this.$root.utms" class="decoration" > Início </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link :to="'/sobre'+this.$root.utms" class="lineDecoration" > Sobre </router-link>
+      <router-link :to="'/sobre'+this.$root.utms" class="decoration" activeClass: > Sobre </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link :to="'/home-equity'+this.$root.utms" class="lineDecoration" > Home Equity  </router-link>
+      <router-link :to="'/home-equity'+this.$root.utms" class="decoration" > Home Equity  </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="lineDecoration" > Financiamento </router-link>
+      <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="decoration" > Financiamento </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link :to="'/parceiro'+this.$root.utms" class="lineDecoration" > Seja um Parceiro </router-link>
+      <router-link :to="'/parceiro'+this.$root.utms" class="decoration" > Seja um Parceiro </router-link>
     </div>
     <div :class="linkStyle">
-      <a :href="'https://portal.seja.best/'+this.$root.utms" class="lineDecoration"
+      <a :href="'https://portal.seja.best/'+this.$root.utms" class="decoration"
         target="_blank"> Portal</a>
     </div>
     

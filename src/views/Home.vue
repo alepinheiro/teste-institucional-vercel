@@ -456,8 +456,8 @@
   </div>
   <div class="w-full  pt-10 sm:pt-4 md:pt-4 pb-16 mr-auto ml-auto flex">
      <div class="w-7/12 flex justify-center mt-auto mb-auto">
-      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8 2xl:ml-auto ">
-        <div class="text-5xl sm:text-2xl md:text-4xl font-semibold text-primary">
+      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8  marginl-12R marginl-42R marginl-40R marginl-50R">
+        <div class="text-5xl sm:text-2xl md:text-4xl font-semibold text-primary ">
           Quem não é visto,  não é <span class="textDecoration">lembrado.</span>
         </div>
         <div class="text-xl sm:text-sm md:text-sm sm:pt-4 md:pt-4 lg:pt-8 text-textSecondary pt-10">
@@ -503,32 +503,38 @@
      </div>
   </div>
 
-  <div class="w-full bg-gradient-to-r from-primary to-secondary pb-4 mt-[-4rem]" >
-    <div class="maxWidth flex justify-center ">
-      <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
-       <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
-         class="w-full   absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
-      </div>
-      <div class="w-9/12 sm:w-6/12 md:w-8/12">
-        <div class="text-white pt-4 titleFontBold text-5xl lg:text-4xl md:text-3xl sm:text-xl text-right">
-           E aí, vamos ser<br/> Best com a gente?
-        </div>
-        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
-         <button class="buttonComplementaryColor1">
-          <a 
-            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-            target="_blank">Faça uma simulação</a></button>
+  <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-3 lg:pt-0 md:pt-0" >
+        <div class="maxWidth sm:p-0 p-0Max  flex justify-center ">
+            <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
+                <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
+                    class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-2.5rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto "/>
+            </div>
+        <div class="w-9/12 sm:w-6/12 md:w-8/12  sm:mr-2">
+            <div class="text-white pt-4 sm:pt-1 titleFontBold text-7xl lg:text-6xl md:text-5xl sm:text-2xl textphoneMini text-right md:mr-1 sm:mr-0">
+                E aí, vamos ser<br/> Best com a gente?
         </div>
         <div class="w-full flex">
-          <div class="w-9/12 lg:w-8/12 sm:w-5/12 md:w-7/12 border-b-1 border-white mt-auto mb-auto"></div>
-          <div class="w-3/12 lg:w-4/12 sm:w-7/12 md:w-5/12 text-right text-white">
-            <div class="font-semibold sm:text-xs md:text-sm">Gaspar Motta Filho</div>
-            <div class="text-sm sm:text-2xs">CEO & Founder - SejaBest</div>
-          </div>
+            <div class="flex pt-4 sm:pt-2 justify-end w-full">
+                   <div class="mt-4 mr-2 text-lg md:text-base md:text-right sm:text-xs sm:mr-1 text-white pt-2 text-textPrimary"> 
+                      De quanto você precisa?
+                    </div>
+                    <div class="flex items-end w-5/12 md:w-[58%] sm:w-full gap-4 md:gap-1 sm:gap-0">
+                    <div class="w-9/12 sm:w-full pr-1">
+                        <inputMoney class="w-full " v-model="value" id="value" label=""  placeholder=""  />
+                    </div>
+                    <div class="w-4/12 ">
+                        <div class="  p-2 w-full sm:p-1 bg-complementaryColor1 rounded-xl text-white text-center" >
+                            <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                             target="_blank" class="sm:hidden">Simular</a>
+                             <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                             target="_blank" class="sm:visible sm:text-xs xl:hidden lg:hidden md:hidden">Ir</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
         </div>
       </div>
     </div>
-   
   </div>
 </div>
 </template>
@@ -562,3 +568,36 @@ export default defineComponent({
   }
 })
 </script>
+
+<style>
+  
+  @media (min-width: 1880px) and (max-width:2000px) {
+    .marginl-12R{
+      margin-left: 12rem;
+    }
+    
+  }
+
+  @media (min-width: 2001) and (max-width:2549rem) {
+    .marginl-42R{
+      margin-left: 24rem;
+    }
+  }
+
+  @media (min-width: 2550) and (max-width:2870px) {
+    .marginl-40R{
+      margin-left: 40rem;
+    }
+  }
+
+  @media (min-width: 2871) {
+    .marginl-50R{
+      margin-left: 50rem;
+    }
+  }
+  @media (max-width: 667px) {
+      .inputBase{
+        padding: 0.25rem;
+    }
+  }
+</style>

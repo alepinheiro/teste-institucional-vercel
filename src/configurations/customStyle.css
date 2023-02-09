@@ -176,6 +176,12 @@
     border-image-slice: 1;
   }
   
+  .decoration.router-link-active{
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(45deg, rgba(255, 0, 0, 0) , #27E0FF);
+    border-image-slice: 1;
+  }
+
   
   .bgBannerPrimary {
 	background-image: url("/images/CAPA_2_tlmhob.png");
