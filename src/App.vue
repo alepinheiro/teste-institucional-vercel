@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="w-full defaultFont" v-if="!isLoading">
+  <div id="app" class="w-full defaultFont">
     <router-view/>
-    <footerComponent />
+    <footerComponent  v-if="!isLoading" />
     <notificationPopUp />
   </div>
 </template>
@@ -32,7 +32,7 @@ export default defineComponent({
     }
     setTimeout(() => {  
       this.isLoading=false 
-    }, 100);
+    }, 200);
   }
     
    
