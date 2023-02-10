@@ -4,8 +4,7 @@
     <div class="bgCashBest sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
         <topbarComponent position="relative" />
-        <div class="w-full flex mt-6 md:mt-4 sm:mt-4">
-          
+        <div class="w-full flex mt-6 xl:mt-28 lg:mt-24 md:mt-4 sm:mt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
             <div class="bg-primary rounded-xl w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-white  pb-6" >
@@ -214,7 +213,8 @@
     </div>
     <div class="maxWidth sm:hidden flex md:mt-12">
       <div class="w-6/12 sm:w-4/12 mt-auto mb-auto">
-        <img :src="$options.imageConfig.cashBest.photoMan" alt="Home Equity" class="w-full h-auto "/>
+        <img :src="$options.imageConfig.cashBest.photoMan" alt="Home Equity" class="w-full h-auto xl:absolute lg:absolute 
+        xl:w-116 lg:w-[28rem] xl:bottom-[-33rem] lg:bottom-[-31rem]"/>
       </div>
       <div class="w-6/12 sm:w-8/12 mt-auto mb-auto">
         <div class="text-8xl lg:text-6xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
@@ -236,17 +236,17 @@
     </div>
     <div class="maxWidth flex py-24 sm:py-12">
       <div class="w-1/4 sm:w-1/2 text-white mt-auto mb-auto pr-4">
-        <div class="text-4xl sm:text-2xl md:text-2xl ">
-          Apenas vantagens para você
+        <div class="text-4xl sm:text-2xl md:text-2xl title-font ">
+          Apenas vantagens<br /> para você
         </div>
-        <div class="py-6 sm:text-sm sm:py-2 ">
+        <div class="py-6 text-lg sm:text-sm sm:py-2 ">
           Descubra porque o <span class="text-complementaryColor3">CashBest</span> 
           pode ser a sua melhor opção de Crédito.
         </div>
       </div>
       <div class="w-3/4 sm:w-1/2 mt-auto mb-auto">
-        <div class="bg-bglightColor sm:hidden md:hidden  rounded-2xl ">
-          <Splide :options=" {type:'loop', perPage: 2, perMove: 1, padding: '10rem', drag   : 'free',
+        <div class="bg-bglightColor sm:hidden md:hidden rounded-2xl ">
+          <Splide :options=" {type:'loop', perPage: 2, perMove: 1, padding: '6rem', drag   : 'free',
              rewind : true, focus  : 'center', pagination:true} " aria-label="Vantagens para você">
             <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderPhones">
               <div  class="">
@@ -356,11 +356,11 @@
         
       </div>
       <div class="w-1/4 md:w-1/3 sm:w-1/2 text-right text-white mt-auto mb-auto pr-4">
-        <div class="text-4xl md:text-2xl sm:text-2xl ">
+        <div class="text-4xl md:text-2xl sm:text-2xl titleFontBold">
           Faça o que você quiser
           com <br/><span class="text-complementaryColor3">seu dinheiro</span>
         </div>
-        <div class="py-6">
+        <div class="py-6 xl:text-lg">
           Depois que os recursos forem liberados na sua conta, você pode usar do jeito que quiser.
         </div>
       </div>
@@ -369,8 +369,8 @@
   </div>
   <div class=" w-full xl:mt-[-10rem] sm:mt-[-8rem] flex justify-center sm:hidden md:hidden">
     <div class="ml-auto  mr-auto maxWidth">
-      <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : true ,  height   : '25rem',trimSpace: 'move', 
-        rewind : true, pagination:false, direction: 'ttb', arrows:true} " aria-label="Você pode obter o recurso para:">
+      <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free' ,  height   : '25rem',trimSpace: 'move', 
+        rewind : true, pagination:true, arrows:true}" aria-label="Você pode obter o recurso para:">
         <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderTutorial">
           <div  class="">
             <img :src="slide.img" class="px-4 lg:pt-12" :alt="slide.alt">
@@ -655,3 +655,28 @@ export default defineComponent({
  
 })
 </script>
+
+
+<style>
+  .splide__arrow svg {
+	  fill: #d1d1d1;
+  }
+
+  .splide__arrow--prev {
+    left: -2em;
+  }
+
+  .splide__arrow--next {
+    right: -2em;
+  }
+
+  @media ( min-width: 1024px) and (max-width: 1279px) {
+      .splide__arrow--prev {
+    left: -1em;
+  }
+
+  .splide__arrow--next {
+    right: -1em;
+  }
+  }
+</style>

@@ -92,26 +92,14 @@ const image = {
     ],
     sliderMoney1:[
       {img:"/images/cashBest/ImagensSeuDinheiro/ReformarOuConstruir.png", alt:"Reformar ou construir."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/AbrirUmNegocio.png", alt:"Abrir um negócio."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/CapitaldeGiro.png", alt:"Capital de giro."},
       {img:"/images/cashBest/ImagensSeuDinheiro/Investir.png", alt:"Investir."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/ObtencaoDeBens.png", alt:"Obtenção de bens."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/PagarSuasDividas.png", alt:"Pagar suas dividas."},
     ],
     sliderMoney2:[
-      {img:"/images/cashBest/ImagensSeuDinheiro/CapitaldeGiro.png", alt:"Capital de giro."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/Investir.png", alt:"Investir."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/ObtencaoDeBens.png", alt:"Obtenção de bens."},
       {img:"/images/cashBest/ImagensSeuDinheiro/PagarSuasDividas.png", alt:"Pagar suas dividas."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/ReformarOuConstruir.png", alt:"Reformar ou construir."},
       {img:"/images/cashBest/ImagensSeuDinheiro/AbrirUmNegocio.png", alt:"Abrir um negócio."},
     ],
     sliderMoney3:[
-      {img:"/images/cashBest/ImagensSeuDinheiro/PagarSuasDividas.png", alt:"Pagar suas dividas."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/ReformarOuConstruir.png", alt:"Reformar ou construir."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/AbrirUmNegocio.png", alt:"Abrir um negócio."},
       {img:"/images/cashBest/ImagensSeuDinheiro/CapitaldeGiro.png", alt:"Capital de giro."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/Investir.png", alt:"Investir."},
       {img:"/images/cashBest/ImagensSeuDinheiro/ObtencaoDeBens.png", alt:"Obtenção de bens."},
     ],
     sliderTutorial:[

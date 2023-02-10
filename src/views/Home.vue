@@ -578,19 +578,19 @@ export default defineComponent({
     
   }
 
-  @media (min-width: 2001) and (max-width:2549rem) {
+  @media (min-width: 2001px) and (max-width:2549rem) {
     .marginl-42R{
       margin-left: 24rem;
     }
   }
 
-  @media (min-width: 2550) and (max-width:2870px) {
+  @media (min-width: 2550px) and (max-width:2870px) {
     .marginl-40R{
       margin-left: 40rem;
     }
   }
 
-  @media (min-width: 2871) {
+  @media (min-width: 2871px) {
     .marginl-50R{
       margin-left: 50rem;
     }
@@ -600,4 +600,6 @@ export default defineComponent({
         padding: 0.25rem;
     }
   }
+
+
 </style>
