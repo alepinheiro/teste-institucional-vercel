@@ -25,7 +25,7 @@
             {{ textAux }}
           </p>
         </div>
-        <div class="w-1/2 sm:w-full">
+        <div v-if="withVideo!==false" class="w-1/2 sm:w-full" >
           <videoBase :url="videoUrl" :style="videoStyle" />
         </div>
       </div>
@@ -44,10 +44,11 @@ export default defineComponent({
       textAux: String,
       videoUrl: String,
       videoStyle: String,
+      withVideo: Boolean,
     },
   data() {
     return {
-      show: false
+      show: false,
     }
   },
   methods: {

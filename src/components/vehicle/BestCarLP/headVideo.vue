@@ -143,10 +143,10 @@
           </div>
         </div>
       </div>
+      <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
+      :videoStyle="videoStyle" @closePopUp="showVideo=false" /> 
     </div>
     <!--fim do video mobile-->
-    <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
-      :videoStyle="videoStyle" @closePopUp="showVideo=false" /> 
     </div>
 </div>
 </template>
