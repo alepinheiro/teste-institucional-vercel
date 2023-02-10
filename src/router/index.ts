@@ -66,6 +66,10 @@ const routes: Array<RouteRecordRaw> = [
     name: "BestCar",
     component: () => import("@/views/BestCarLP.vue"),
   },
+  {path:"/emprestimo-com-garantia-de-veiculo",
+    name: "BestCarLP",
+    component: () => import("@/views/BestCarLP.vue"),
+  },
   {
     path: "/financiamento-veicular",
     name: "BestCarFinan",

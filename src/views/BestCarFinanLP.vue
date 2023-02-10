@@ -1,46 +1,9 @@
 <template lang="">
     <div>
         <topBarVideo />
-
-        <!-- Div com conteúdo sem vídeo para mobile-->
-        <div class="maxWidth xl:h-screen lg:h-screen xl:hidden lg:hidden md:hidden" >
-        <div class="w-full flex pt-20 md:pt-8 sm:pt-4">
-          <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
-            <div class="bg-primary rounded-xl w-full shadow-2xl p-6">
-                <div class="text-4xl titleFontBold  text-white  pb-6" >
-                  <h1><div><span class="textDecoration italic text-white">FinanBest:</span> </div>
-                  <div class="text-4xl titleFontBold pt-2 text-white  " >
-                    Financiamento veicular da SejaBest
-                  </div></h1>
-                </div>
-                  <div class=" pt-0 text-white pb-8 border-div-video">
-                    Escolha o carro, novo ou usado, e financie até 100% do valor. Faça uma simulação agora
-                    e veja como ficam as parcelas.
-                  </div> 
-                  <div class="flex pt-2">
-                   <div class="w-6/12 text-sm text-white pt-2 font-semibold text-textPrimary"> 
-                      De quanto <br /> você precisa?
-                    </div>
-                    <div class="w-full flex items-end gap-0">
-                    <div class="w-9/12 pr-1">
-                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
-                    </div>
-                    <div class="w-3/12 ">
-                      <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center text-xs sm:mb-1" >
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                        target="_blank">Simular</a>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-          </div>  
-        </div>
-
         <div class="flex pt-6">
-          <div class="w-5/12 mb-auto md:mt-10 sm:w-full sm:hidden">
-            <img :src="$options.imageConfig.bestCar.carroNotas" alt="" class="lg:w-[28rem] xl:w-[40rem] md:w-[20rem] sm:hidden max-w-3xl">
+          <div class="w-5/12 mb-auto mt-16 sm:w-full sm:hidden">
+            <img :src="$options.imageConfig.bestCar.carroNotas" alt="" class="lg:w-[30rem] xl:w-[40rem] md:w-[20rem] sm:hidden max-w-3xl">
           </div>
           <div class="sm:w-full sm:text-left mb-auto text-primary xl:ml-14 xl:mt-24 lg:mt-16  md:mt-10 lg:ml-12 md:ml-[1.2rem] md:w-[55%] lg:w-7/12 w-6/12">
             <div class="md:w-full sm:text-center text-5xl  md:text-2xl lg:text-4xl sm:text-3xl text-center font-semibold mr-0">
@@ -82,15 +45,10 @@
             </div>
         </div>
         <div class="bgLigthGrey">
-            <partnersLabelGrey />
-            <div class="maxWidth pt-20 py-16">
-                <h1 class="text-4xl sm:text-2xl font-bold text-secondary pb-8">Dúvidas frequentes</h1>  
-                <FaqFinan />
-            </div>
-                <h1 class="maxWidth text-4xl sm:text-2xl text-secondary text-center pt-12 pb-5">
-                    Quem sonhou, se organizou e<br />
-                    investiu com a ajuda da SejaBest
-                </h1>
+            <h1 class="maxWidth text-4xl sm:text-2xl text-secondary text-center pt-12 pb-5">
+                Quem sonhou, se organizou e<br />
+                  investiu com a ajuda da SejaBest
+            </h1>
             <Carousel />
             <div>
                 <comparativeBoardFinan />
