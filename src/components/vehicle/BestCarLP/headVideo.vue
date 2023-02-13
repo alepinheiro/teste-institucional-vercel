@@ -7,7 +7,7 @@
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
             <div class="bg-primary rounded-xl w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-white  pb-6" >
-                  <h1><div><span class="textDecoration text-white">BestCar:</span> </div>
+                  <h1><div><span class="textDecoration flex w-52 pb-1 text-white">BestCar:</span> </div>
                   <div class="text-6xl titleFontBold pt-2 text-white  " >
                     Empréstimo com garantia de veículo
                   </div></h1>
@@ -48,7 +48,7 @@
           <div class="w-1/2 pt-4 mt-auto mb-auto ">
             <div class="">
                 <div class="text-5xl titleFontBold  text-white  pb-6" >
-                  <h1><div><span class="textDecoration text-complementaryColor3">BestCar</span> </div>
+                  <h1><div><span class="textDecoration flex w-42 pb-1 text-complementaryColor3">BestCar</span> </div>
                   <div class="text-5xl titleFontBold pt-2 text-white  " >
                     Empréstimo com garantia de veículo
                   </div></h1>
@@ -102,7 +102,7 @@
           <div class="py-8 sm:py-4  w-full">
             <div class=" rounded-xl w-full ">
                 <div class="text-4xl titleFontBold  text-white  pb-2" >
-                  <h1><div><span class="textDecoration text-complementaryColor3">BestCar</span> </div>
+                  <h1><div><span class="textDecoration flex w-30 pb-1 text-complementaryColor3">BestCar</span> </div>
                   <div class="text-4xl titleFontBold pt-2 text-white  " >
                     Empréstimo com garantia de veículo
                   </div></h1>
@@ -143,10 +143,10 @@
           </div>
         </div>
       </div>
+      <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
+      :videoStyle="videoStyle" @closePopUp="showVideo=false" /> 
     </div>
     <!--fim do video mobile-->
-    <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
-      :videoStyle="videoStyle" @closePopUp="showVideo=false" /> 
     </div>
 </div>
 </template>

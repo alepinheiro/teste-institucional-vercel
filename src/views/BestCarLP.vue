@@ -1,11 +1,11 @@
 <template lang="">
 <div>
-      <headVideo />
-      <div class="gradientPrimaryToSecondary">
-          <section2 />
-          <section3 />
-          <section4 />
-      </div>
+  <headVideo />
+  <div class="gradientPrimaryToSecondary">
+        <section2 />
+        <section3 />
+        <section4 />
+  </div>
     <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-0 lg:pt-0 md:pt-0" >
         <div class="maxWidth flex justify-center ">
             <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
@@ -15,7 +15,7 @@
         <div class="w-9/12 sm:w-6/12 md:w-8/12">
             <div class="text-white pt-4 titleFontBold text-5xl lg:text-4xl md:text-3xl sm:text-xl text-right">
                 E aí, vamos ser<br/> Best com a gente?
-        </div>
+            </div>
         <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
          <button class="buttonComplementaryColor1">
           <a 
@@ -31,7 +31,6 @@
         </div>
       </div>
     </div>
-   
   </div>
 </div>
 </template>

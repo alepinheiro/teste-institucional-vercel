@@ -33,6 +33,7 @@ export default defineComponent({
   components: { questions,topbarComponent },
   data(){
     return {
+      withVideo:true,
       perguntas: [],
       videoStyle: "w-full h-80 mr-auto ml-auto  xl:rounded-br-2xl lg:rounded-br-2xl md:rounded-br-2xl"
     }
