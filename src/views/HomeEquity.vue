@@ -214,7 +214,7 @@
     <div class="maxWidth sm:hidden flex md:mt-12">
       <div class="w-6/12 sm:w-4/12 mt-auto mb-auto">
         <img :src="$options.imageConfig.cashBest.photoMan" alt="Home Equity" class="w-full h-auto xl:absolute lg:absolute 
-        xl:w-116 lg:w-[28rem] xl:bottom-[-33rem] lg:bottom-[-31rem]"/>
+        xl:w-116 lg:w-[28rem] xl:bottom-[-33rem] lg:bottom-[-31rem] mb-0rem"/>
       </div>
       <div class="w-6/12 sm:w-8/12 mt-auto mb-auto">
         <div class="text-8xl lg:text-6xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
@@ -671,12 +671,20 @@ export default defineComponent({
   }
 
   @media ( min-width: 1024px) and (max-width: 1279px) {
-      .splide__arrow--prev {
-    left: -1em;
+    .splide__arrow--prev {
+      left: -1em;
+  }
+    .splide__arrow--next {
+      right: -1em;
+  }
   }
 
-  .splide__arrow--next {
-    right: -1em;
+  @media ( min-width: 1024px) and (max-width: 1550px) {
+    .mb-0rem{
+      margin-bottom: 0rem;
   }
+    .mt-0rem{
+      
+    }
   }
 </style>
