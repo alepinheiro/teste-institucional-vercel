@@ -7,7 +7,7 @@
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
             <div class="bg-primary rounded-xl w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-white  pb-6" >
-                  <h1><div><span class="textDecoration italic text-white">FinanBest:</span> </div>
+                  <h1><div><span class="textDecoration pb-1 italic text-white flex w-60">FinanBest:</span> </div>
                   <div class="text-6xl titleFontBold pt-2 text-white  " >
                     Financiamento veicular da SejaBest
                   </div></h1>
@@ -45,15 +45,13 @@
           <div class="w-1/2 pt-4 mt-auto mb-auto ">
             <div class="">
                 <div class="text-5xl titleFontBold  text-white  pb-6" >
-                  <h1><div>Conheça o <span class="textDecoration text-complementaryColor3">CashBest</span> </div>
+                  <h1><div><span class="textDecoration pb-1 text-complementaryColor3 flex w-54">FinanBest:</span> </div>
                   <div class="text-5xl titleFontBold pt-2 text-white  " >
-                    O Home Equity da SejaBest
+                    Financiamento veicular da SejaBest
                   </div></h1>
                 </div>
                 <div class=" py-4 text-white pb-6">
-                  As menores taxas do mercado, a partir de <span class="font-semibold">0,88% a.m + IPCA ou fixa 1,49% a.m.</span>
-                  Pegando até  <span class="font-semibold">60% do valor</span> do seu imóvel como capital para usar como quiser,  você tem até 240 meses para pagar.
-                  <span class="text-complementaryColor3"> Assista ao lado e saiba como.</span>
+                  Escolha o carro, novo ou usado, e financie até 100% do valor. Faça uma simulação agora e veja como ficam as parcelas. 
                 </div>
                 <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
                   <div class="w-2/12 pr-6 mt-auto mb-auto">
@@ -98,7 +96,7 @@
           <div class="py-8 sm:py-4  w-full">
             <div class=" rounded-xl w-full ">
                 <div class="text-4xl titleFontBold  text-white  pb-2" >
-                  <h1><div><span class="textDecoration text-complementaryColor3">BestCar</span> </div>
+                  <h1><div><span class="textDecoration pb-1 text-complementaryColor3 flex w-60 sm:w-40">FinanBest:</span> </div>
                   <div class="text-4xl titleFontBold pt-2 text-white  " >
                     Empréstimo com garantia de veículo
                   </div></h1>

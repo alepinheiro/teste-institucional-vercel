@@ -6,10 +6,10 @@
         <topbarComponent position="relative" />
         <div class="w-full px-24 sm:px-0 flex flex-wrap justify-between mt-6 md:mt-4 sm:mt-4">
           <div class=" md:w-7/12 text-white md:pr-4 sm:hidden  mt-auto mb-auto">
-            <div class="flex flex-row borderWhite xl:p-1 lg:p-1 xl:text-lg lg:text-lg absolute xl:mt-40 xl:ml-28 lg:mt-32 lg:ml-32 gap-4 rounded-md">
+            <a class="flex flex-row borderWhite xl:p-1 lg:p-1 xl:text-lg lg:text-lg absolute xl:mt-40 xl:ml-28 lg:mt-32 lg:ml-32 gap-4 rounded-md" href="#anchor">
                 <a class="text-left xl:mt-1 px-1">Saiba Mais</a>
                <img :src="$options.imageConfig.icons.setaBaixowhite" alt="SejaBest"  class="xl:w-8 lg:w-7 borderWhite rounded-full xl:ml-3 lg:ml-3 xl:mr-2 lg:mr-1 xl:p-2 lg:p-2 h-auto "/>
-          </div>
+            </a>
           </div>
           <div class="md:pt-4 sm:py-8 max-w-[400px] w-full md:mr-auto md:ml-auto sm:mr-auto sm:ml-auto ">
  
@@ -92,10 +92,10 @@
       </div>
     </div>
     <div class="maxWidth pt-24 md:pt-8 sm:pt-8">
-        <div class="text-6xl lg:text-5xl md:text-4xl sm:px-8 sm:text-4xl titleFontBold  text-white  text-center  " >
+        <div class="text-6xl lg:text-5xl md:text-4xl sm:px-8 sm:text-4xl titleFontBold  text-white  text-center" id="anchor" >
           Como a SejaBest pode te ajudar hoje?
         </div>
-        <div class="text-3xl sm:text-2xl  titleFontBold  text-white  text-center pt-4 pb-20 sm:pb-8" >
+        <div class="text-3xl sm:text-2xl  titleFontBold  text-white  text-center pt-4 pb-20 sm:pb-8">
           Conheça as melhores soluções em Crédito Imobiliário do mercado:
         </div>
         <div class="w-full flex justify-center pb-16 sm:hidden">
