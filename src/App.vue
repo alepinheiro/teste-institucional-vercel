@@ -32,7 +32,7 @@ export default defineComponent({
     }
     setTimeout(() => {  
       this.isLoading=false 
-    }, 200);
+    }, 300);
   }
     
    
