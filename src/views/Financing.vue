@@ -165,7 +165,7 @@
         <div class="text-4xl sm:text-2xl md:text-2xl text-primary">
           Apenas vantagens para você
         </div>
-        <div class="py-6 sm:text-sm sm:py-2 text-primary">
+        <div class="py-6 sm:text-base sm:py-2 text-primary">
           Descubra porque o <span class="text-complementaryColor3">FinanBest</span> 
           pode ser a sua melhor opção de Financiamento Imobiliário.
         </div>
@@ -177,7 +177,7 @@
             <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderPhones">
               <div  class="">
                 <img :src="slide.img" 
-                class="px-4 " :alt="slide.alt">
+                class="px-1" :alt="slide.alt">
               </div>
             </SplideSlide>
               

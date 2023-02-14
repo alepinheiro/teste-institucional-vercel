@@ -87,7 +87,7 @@ const image = {
       {img:"/images/cashBest/Celulares/02.png", alt:"As menores parcelas do mercado."},
       {img:"/images/cashBest/Celulares/03.png", alt:"As menores taxas de crédito."},
       {img:"/images/cashBest/Celulares/04.png", alt:"Atendimento humanizado 7 dias por semana."},
-      {img:"/images/cashBest/Celulares/05.png", alt:"Prazos de até 20 anos."},
+      {img:"/images/cashBest/Celulares/prazo.png", alt:"Prazos de até 420 meses."},
       
     ],
     sliderMoney1:[

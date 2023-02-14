@@ -456,9 +456,9 @@
   </div>
   <div class="w-full  pt-10 sm:pt-4 md:pt-4 pb-16 mr-auto ml-auto flex">
      <div class="w-7/12 flex justify-center mt-auto mb-auto">
-      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8  marginl-12R marginl-42R marginl-40R marginl-50R">
+      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8  marginl-15R marginl-24R marginl-40R marginl-50R">
         <div class="text-5xl sm:text-2xl md:text-4xl font-semibold text-primary ">
-          Quem não é visto,  não é <span class="textDecoration">lembrado.</span>
+          Transformando sua vida através da <span class="textDecoration">informação.</span>
         </div>
         <div class="text-xl sm:text-sm md:text-sm sm:pt-4 md:pt-4 lg:pt-8 text-textSecondary pt-10">
           Siga a <span class="font-semibold">SejaBest</span> em todos os nossos canais pra ficar por dentro de 
@@ -570,36 +570,8 @@ export default defineComponent({
 </script>
 
 <style>
-  
-  @media (min-width: 1880px) and (max-width:2000px) {
-    .marginl-12R{
-      margin-left: 12rem;
-    }
-    
+  .splide__arrow svg {
+	  fill: #d1d1d1;
   }
-
-  @media (min-width: 2001px) and (max-width:2549rem) {
-    .marginl-42R{
-      margin-left: 24rem;
-    }
-  }
-
-  @media (min-width: 2550px) and (max-width:2870px) {
-    .marginl-40R{
-      margin-left: 40rem;
-    }
-  }
-
-  @media (min-width: 2871px) {
-    .marginl-50R{
-      margin-left: 50rem;
-    }
-  }
-  @media (max-width: 667px) {
-      .inputBase{
-        padding: 0.25rem;
-    }
-  }
-
 
 </style>
