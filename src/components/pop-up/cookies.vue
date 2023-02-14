@@ -1,5 +1,5 @@
 <template>
-    <div v-if="visible" class="h-40 sm:h-36 justify-center flex rounded-2xl cookiesPopUP bottom-0 float-right fixed maxWidth"  >
+    <div v-if="visible" class="h-40 sm:h-36 justify-center flex cookiesPopUP bottom-0 float-right fixed maxWidth"  >
         <div class="flex items-center">
             <div class="flex flex-col p-10 sm:p-6 ">
                 <h1 class="text-2xl sm:text-lg font-bold text-primary">Nós usamos cookies</h1>

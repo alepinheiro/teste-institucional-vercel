@@ -480,3 +480,12 @@
 	box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
 	border-radius: 2rem 2rem 0% 0%;
 }
+
+/*Top-Bar responsiva */
+@media (min-width:1024px) and (max-width:1279px) {
+	.linkStyleDark{
+		padding-left: 0rem;
+		padding-right: 0rem;
+		margin-right: 1.25rem;
+	}
+}
