@@ -470,3 +470,13 @@
       margin-top:0rem;
     }
 }
+
+
+/* pop up cookies styles */
+.cookiesPopUP{
+	background: var(--bglightColor);
+	-webkit-box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
+	-moz-box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
+	box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
+	border-radius: 2rem 2rem 0% 0%;
+}

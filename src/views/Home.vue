@@ -537,19 +537,25 @@
     </div>
   </div>
 </div>
+  <!--  v-if="showCookies"  deve ser colocado abaixo-->
+  <div class="flex justify-center no-blur-content">
+    <cookiesPopUp />
+  </div>  
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 import topbarComponent from '@/components/structure/topbar.component.vue';
+import cookiesPopUp from '@/components/pop-up/cookies.vue';
 export default defineComponent({
   name: 'Home',
   components:{
-    topbarComponent 
+    topbarComponent, cookiesPopUp
   },
   data() {
     return {
       isVisible:false,
       value:250000,
+      showCookies: false
     }
   },
   metaInfo () {
@@ -565,6 +571,13 @@ export default defineComponent({
       var fullUrl = this.$route.fullPath.split("?")
       this.$root.utms="?"+(fullUrl[1])  
     }
+    /* Função para aparecer somente se é a primeira visita, creio que pode ser reutilizado
+    if (!localStorage.getItem('isVisited')) {
+      localStorage.setItem('isVisited', true);
+      this.showCookies= true;
+    } else {
+      this.showCookies= false;
+    } */
   }
 })
 </script>

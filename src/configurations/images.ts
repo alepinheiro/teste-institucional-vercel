@@ -195,8 +195,11 @@ const image = {
     gráficoBestCar: "/images/BestCar/gráficobestCar.svg",
     carro: "/images/BestCar/CARRO_2.png",
     gráficoFinan: "/images/BestCar/GRÁFICO_FINANCIAMENTO.svg",
-    imgMulher: "/images/BestCar/IMAGEM_MULHER.png"
+    imgMulher: "/images/BestCar/IMAGEM_MULHER.png",
   },
+  ilustrations:{
+    cookie:"/images/ilustration/Cookie2.svg"
+  }
 };
 
 export default image;

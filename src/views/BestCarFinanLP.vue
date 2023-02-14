@@ -1,5 +1,5 @@
 <template lang="">
-    <div>
+      <div>
         <topBarVideo />
         <div class="flex pt-6">
           <div class="w-5/12 mb-auto mt-16 sm:w-full sm:hidden">
@@ -88,7 +88,10 @@
       </div>
     </div>
   </div>
-</div>  
+  </div>
+  <div class="flex justify-center">
+    <cookiesPopUp />
+  </div>  
 </template>
 
 <script>
@@ -100,13 +103,13 @@ import partnersLabelGrey from '@/components/vehicle/BestCarFinan/partnersLabelGr
 import FaqFinan from '@/components/vehicle/BestCarFinan/FaqFinan.vue';
 import Carousel from '@/components/vehicle/BestCarLP/carousel.vue';
 import comparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue';
+import cookiesPopUp from '@/components/pop-up/cookies.vue';
 export default defineComponent({
     name: "BestCarFinanLP",
     components:{ topBarVideo,cardWhite,stepByStep,partnersLabelGrey,
-        FaqFinan,Carousel,comparativeBoardFinan
-    }
+        FaqFinan,Carousel,comparativeBoardFinan,cookiesPopUp
+    },
 })
-
 </script>
 
 <style>
