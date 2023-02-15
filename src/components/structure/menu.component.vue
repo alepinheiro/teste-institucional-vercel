@@ -11,7 +11,7 @@
       <router-link :to="'/home-equity'+this.$root.utms" class="decoration" > Home Equity  </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="decoration" > Financiamento </router-link>
+      <dropdownMenu />
     </div>
     <div :class="linkStyle">
       <router-link :to="'/parceiro'+this.$root.utms" class="decoration" > Seja um Parceiro </router-link>
@@ -36,14 +36,19 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
+import dropdownMenu from './dropdownMenu.vue';
 export default defineComponent({
   name: 'menuComponent',
+  components: {
+    dropdownMenu,
+  },
   props:{
-    linkStyle:String
+    linkStyle:String,
   },
   data() {
     return {
       isVisible:false,
+      link:[],
     }
   },
 
