@@ -287,8 +287,8 @@
   </div>
   <div class=" w-full mt-8 flex justify-center sm:hidden md:hidden">
     <div class="ml-auto  mr-auto maxWidth">
-      <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : true ,  height   : '25rem',trimSpace: 'move', 
-        rewind : true, pagination:false, direction: 'ttb', arrows:true} " aria-label="Você pode obter o recurso para:">
+      <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free' ,  height   : '25rem',trimSpace: 'move', 
+        rewind : true, pagination:true, arrows:true} " aria-label="Você pode obter o recurso para:">
         <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderTutorial">
           <div  class="">
             <img :src="slide.img" class="px-4 lg:pt-12" :alt="slide.alt">
@@ -573,3 +573,26 @@ export default defineComponent({
  
 })
 </script>
+
+<style>
+    .splide__arrow svg {
+	  fill: #d1d1d1;
+  }
+
+  .splide__arrow--prev {
+    left: -2em;
+  }
+
+  .splide__arrow--next {
+    right: -2em;
+  }
+
+  @media ( min-width: 1024px) and (max-width: 1279px) {
+    .splide__arrow--prev {
+      left: -1.5em;
+  }
+    .splide__arrow--next {
+      right: -1.5em;
+  }
+  }
+</style>
