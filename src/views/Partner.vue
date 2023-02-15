@@ -34,9 +34,9 @@
     <div class="maxWidth  " >
       <topbarComponent position="top" />
       <div class="w-full gradienteSBLight2 mt-4 rounded-2xl text-white ">
-        <img :src="$options.imageConfig.partner.businessman" alt="BestHub"  class="w-auto h-60 rounded-t-2xl  mr-auto ml-auto"/>
+        <img :src="$options.imageConfig.partner.businessman" alt="BestHub"  class="w-full h-full rounded-t-2xl md:w-full md:h-full  mr-auto ml-auto"/>
         <div class=" w-full rounded-t-xl">
-          <div class="text-white w-full p-4 ">
+          <div class="text-white w-full p-4 sm:text-center md:flex md:flex-col md:items-center ">
               <div class="text-4xl titleFontBold  " >
                 Alavanque seus resultados com o <span class="textDecoration"> BestHub. </span>
               </div>
@@ -71,7 +71,7 @@
                 <div class="mt-auto mb-auto">
                   <img :src="$options.imageConfig.icons.phoneFill" alt="1"  class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                     Totalmente digital
                   </div>
@@ -84,7 +84,7 @@
                 <div class="mt-auto mb-auto">
                   <img :src="$options.imageConfig.icons.calendarFill" alt="2"  class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                      7 dias por semana
                   </div>
@@ -97,7 +97,7 @@
                 <div class="mt-auto mb-auto">
                   <img :src="$options.imageConfig.icons.percentageFill" alt="3"  class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                     Transparência total
                   </div>
@@ -110,7 +110,7 @@
                 <div class="mt-auto mb-auto ">
                   <img :src="$options.imageConfig.icons.moneyFill" alt="4" class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                     Ganho no sucesso
                   </div>
@@ -123,7 +123,7 @@
                 <div class="mt-auto mb-auto">
                   <img :src="$options.imageConfig.icons.userFill" alt="5" class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                     Perfil do cliente em tempo real
                   </div>
@@ -356,70 +356,70 @@
       <div class="w-full maxWidth xl:py-32 lg:py-32 py-12 xl:pb-8">
         <div class="w-full flex flex-wrap justify-center ">
           <div class="p-4 w-1/2 sm:w-full ">
-            <img :src="$options.imageConfig.logoBestHub" alt="BestHub"  class="w-auto h-28 sm:h-18 sm:ml-auto sm:mr-auto xl:ml-20"/>
+            <img :src="$options.imageConfig.logoBestHub" alt="BestHub"  class="w-auto h-28 sm:h-18 sm:ml-auto md:w-10/12 sm:mr-auto xl:ml-20"/>
           </div>
-          <div class="p-4 w-1/2 sm:w-full">
-            <div class="text-white text-6xl sm:text-2xl w-9/12 sm:w-full sm:text-center sm:pb-8 xl:ml-20">
+          <div class="p-4 w-1/2 sm:w-full mt-auto">
+            <div class="text-white text-6xl md:text-4xl sm:text-2xl w-9/12 md:w-full sm:w-full sm:text-center sm:pb-8 xl:ml-20">
               Um hub <span class="textDecoration">cheio </span>  de vantagens.
             </div>
           </div>
         </div> 
         <div class="w-full flex flex-wrap justify-center pt-16 sm:pt-0">
-          <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto ">
+          <div class="px-4 md:pl-0 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 md:h-48 sm:h-auto ">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.phoneFill" alt="Vantagem"  class="w-auto h-18 sm:h-12 "/>
               </div>
-              <div class="w-full pl-4 mt-auto mb-auto" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
-                <div class="text-primary text-2xl sm:text-xl">
+              <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
+                <div class="text-primary text-2xl md:text-xl sm:text-xl">
                   Plataforma multibancos integrada.
                 </div>
-                <div clas="text-textPrimary text-sm sm:text-[0.4rem] pt-2">
+                <div clas="text-textPrimary text-sm md:text-base sm:text-[0.4rem] pt-2">
                   Simule, elabore suas propostas e gerencie tudo em um único ambiente totalmente digitalizado.
                 </div>
               </div>
             </div>
           </div>
-          <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto ">
+          <div class="px-4 md:pl-0 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 md:h-48 sm:h-auto ">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.notebookFill" alt="Plataforma BestHub"  class="w-auto h-18 sm:h-12 "/>
               </div>
-              <div class="w-full pl-4 mt-auto mb-auto" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
-                <div class="text-primary text-2xl sm:text-xl">
+              <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
+                <div class="text-primary text-2xl md:text-xl sm:text-xl">
                   Plataforma White Label.
                 </div>
-                <div clas="text-textPrimary text-sm sm:text-[0.4rem] pt-2">
+                <div clas="text-textPrimary text-sm md:text-base sm:text-[0.4rem] pt-2">
                   Com o BestHub você usa sua própria marca, entregando uma experiência diferenciada para seus cliente.
                 </div>
               </div>
             </div>
           </div>
-          <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto ">
+          <div class="px-4 md:pl-0 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 md:h-48 sm:h-auto ">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.userFill" alt="Perfil do cliente"  class="w-auto h-18 sm:h-12 "/>
               </div>
-              <div class="w-full pl-4 mt-auto mb-auto" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
-                <div class="text-primary text-2xl sm:text-xl">
+              <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
+                <div class="text-primary text-2xl md:text-xl sm:text-xl">
                   Perfil de crédito do cliente em tempo real.
                 </div>
-                <div clas="text-textPrimary text-sm sm:text-[0.4rem] pt-2">
+                <div clas="text-textPrimary text-sm md:text-base sm:text-[0.4rem] pt-2">
                   Em poucos cliques você descobre o perfil de crédito do seu cliente no mercado bancário.
                 </div>
               </div>
             </div>
           </div>
-          <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto ">
+          <div class="px-4 md:pl-0 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 md:h-48 sm:h-auto ">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.moneyFill" alt="Plataforma multibancos" class="w-auto h-18 sm:h-12 "/>
               </div>
-              <div class="w-full pl-4 mt-auto mb-auto" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
-                <div class="text-primary text-2xl sm:text-xl">
+              <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm">
+                <div class="text-primary text-2xl md:text-xl sm:text-xl">
                   Potencialize seus ganhos.
                 </div>
-                <div clas="text-textPrimary text-sm sm:text-[0.4rem] pt-2">
+                <div clas="text-textPrimary text-sm sm:text-xs pt-2">
                   Com uma solução multibancos, você oferece as melhores condições para seus clientes 
                   com uma excelente remuneração por produtividade.
                 </div>
@@ -527,31 +527,6 @@ export default defineComponent({
    @media (min-width:1880px) {
     .marginXL{
       margin-top: 7rem;
-    }
-   }
-
-   @media (min-width: 1880px) and (max-width:2000px) {
-    .marginl-12R{
-      margin-left: 12rem;
-    }
-    
-  }
-
-  @media (min-width: 2001px) and (max-width:2549rem) {
-    .marginl-24R{
-      margin-left: 24rem;
-    }
-  }
-
-  @media (min-width: 2550px) and (max-width:2870px) {
-    .marginl-40R{
-      margin-left: 40rem;
-    }
-  }
-
-  @media (min-width: 2871px) {
-    .marginl-50R{
-      margin-left: 50rem;
     }
   }
 </style>

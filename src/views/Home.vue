@@ -265,72 +265,72 @@
         </div>
     </div>
     <div class="w-full pt-24 md:pt-8 sm:pt-8 sm:bg-bglightColor">
-      <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto" >
+      <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto sm:ml-0S" >
         <div class="mt-auto mb-auto w-full bg-bglightColor rounded-2xl flex-wrap p-6 flex justify-center">
           <div class="w-10/12">
-          <div class="w-full flex ml-8 py-4 ">
-            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl xl:text-3xl text-primary defaultFontBold text-center">Por que ser Best?</div>
-            <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
-              <img :src="$options.imageConfig.logoVertical" alt="SejaBest"  class="w-30 sm:w-24 h-auto mr-auto ml-auto"/>
+          <div class="w-full flex ml-8 sm:ml-0 py-4 ">
+            <div class="w-1/3 sm:w-[50%] mt-auto mb-0 text-2xl sm:leading-5 sm:text-xl xl:text-3xl text-primary defaultFontBold text-center">Por que ser Best?</div>
+            <div class="w-1/3  sm:w-[25%]  mt-auto mb-0">
+              <img :src="$options.imageConfig.logoVertical" alt="SejaBest"  class="w-30 sm:w-24 h-auto mr-auto ml-auto sm:ml-0"/>
             </div>
-            <div class="w-1/3  sm:w-1/4  mt-auto mb-0 text-center">
-              <div class="text-textSecondary text-3xl sm:text-2xl mt-auto mb-auto px-4"> Bancos</div>
+            <div class="w-1/3  sm:w-[25%] mt-auto mb-0 text-center">
+              <div class="text-textSecondary text-3xl sm:text-xl mt-auto mb-auto px-4"> Bancos</div>
             </div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> As menores taxas do mercado </div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> Múltiplas opções de banco </div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Plataforma multiprodutos</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Transparência</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Processo agilizado</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Atendimento 7 dias por semana</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8 ">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0 ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Assessoria personalizada</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8 ">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0 ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Totalmente Digital</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8 ">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0 ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem burocracias</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3 ml-8 ">
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0 ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem filas</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex py-3 ml-8 ">
+          <div class="w-full flex py-3 ml-8 sm:ml-0 ">
             <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Foco no cliente</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
         </div>
         </div>
@@ -507,7 +507,7 @@
         <div class="maxWidth sm:p-0 p-0Max  flex justify-center ">
             <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
                 <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
-                    class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-2.5rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto "/>
+                    class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-1.4rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto "/>
             </div>
         <div class="w-9/12 sm:w-6/12 md:w-8/12  sm:mr-2">
             <div class="text-white pt-4 sm:pt-1 titleFontBold text-7xl lg:text-6xl md:text-5xl sm:text-2xl textphoneMini text-right md:mr-1 sm:mr-0">
