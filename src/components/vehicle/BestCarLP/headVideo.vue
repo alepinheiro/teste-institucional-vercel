@@ -1,6 +1,6 @@
 <template lang="">
   <div class="w-full h-full">
-    <div class="bgCashBest">
+    <div class="bgBestcar sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
         <div class="w-full flex pt-20 md:pt-8 sm:pt-4">
@@ -41,12 +41,13 @@
         </div>
         </div>
      </div>
-     <!-- Video Responsivo para tablets-->
-      <div class=" sm:hidden xl:hidden lg:hidden">
-        <div class="maxWidth " >
-        <div class="w-full flex">
-          <div class="w-1/2 pt-4 mt-auto mb-auto ">
-            <div class="">
+    </div>
+         <!-- Video Responsivo para tablets-->
+    <div class=" sm:hidden xl:hidden lg:hidden bg-primary">
+      <div class="maxWidth " >
+        <div class="w-full flex items-center justify-center">
+          <div class="w-6/2 pt-4 mt-auto mb-auto justify-cente item-center">
+                <div class="bg-secondary p-6 rounded-lg shadow-lg">
                 <div class="text-5xl titleFontBold  text-white  pb-6" >
                   <h1><div><span class="textDecoration flex w-42 pb-1 text-complementaryColor3">BestCar</span> </div>
                   <div class="text-5xl titleFontBold pt-2 text-white  " >
@@ -76,30 +77,18 @@
                   <div class="w-9/12 pr-1">
                     <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
                   </div>
-                  <div class="w-3/12 ">
-                    <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                      target="_blank">Simular</a>
-                    </div>
-                  </div>
                 </div>
             </div>
           </div>
-          <div @click="showVideo=true" class="w-1/2 text-white md:pr-4 sm:hidden mt-auto mb-auto">
-            <img :src="$options.imageConfig.cashBest.phoneVideoMd" alt="Video crédito com garantia de imóvel"  class="w-8/12 h-auto mr-auto ml-auto "/>
-          </div>
         </div>
-      </div>
     </div>
+  </div>
     <!--Inicio video Mobile-->
-    <div class=" xl:hidden lg:hidden md:hidden">
+    <div class=" xl:hidden lg:hidden md:hidden bg-primary">
       <div class="maxWidth " >
         <topbarComponent position="relative" />
         <div class="w-full ">
-          <div @click="showVideo=true" class="w-full mt-4">
-            <img :src="$options.imageConfig.cashBest.phoneVideo" alt="Video crédito com garantia de imóvel" class="w-full h-auto "/>
-          </div>
-          <div class="py-8 sm:py-4  w-full">
+          <div class="py-8 sm:py-4  w-full bg-secondary p-6 rounded-lg">
             <div class=" rounded-xl w-full ">
                 <div class="text-4xl titleFontBold  text-white  pb-2" >
                   <h1><div><span class="textDecoration flex w-30 pb-1 text-complementaryColor3">BestCar</span> </div>
@@ -113,7 +102,7 @@
                   com taxas a partir de  <span class="font-semibold">0.00% ao mês</span> 
                   <span class="text-white font-bold"> e prazos de té 000 meses.</span>
                 </div>
-                <div class="bg-bglight2Color p-4 rounded-xl">
+                <div class="bg-bglight2Color p-3 rounded-xl">
                   <div class="flex w-full items-center border-b-1 border-primary pb-4">
                     <div class="w-2/12 pr-6 mt-auto mb-auto">
                       <img  :src="$options.imageConfig.iconSejaBest" alt="SejaBest" class="w-6 h-auto ">
@@ -143,9 +132,6 @@
           </div>
         </div>
       </div>
-      <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
-      :videoStyle="videoStyle" @closePopUp="showVideo=false" /> 
-    </div>
     <!--fim do video mobile-->
     </div>
 </div>
