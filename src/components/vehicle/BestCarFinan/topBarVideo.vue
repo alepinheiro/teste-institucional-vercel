@@ -2,6 +2,7 @@
   <div class="w-full h-full">
     <div class="bgFinanCar sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
+        <topbarComponent class="relative"/>
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
         <div class="w-full flex pt-20 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
@@ -140,9 +141,10 @@
 <script>
 import { defineComponent } from 'vue';
 import popUpVideo from "@/components/base/popUpVideo.component.vue"
+import topbarComponent from '@/components/structure/topbar.component.vue';
 export default defineComponent ({
     name: "topBarVideo",
-    components: {popUpVideo},
+    components: {popUpVideo, topbarComponent},
     data() {
       return {
         isVisible:false,
