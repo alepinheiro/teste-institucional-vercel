@@ -63,22 +63,24 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/emprestimo-com-garantia-de-veiculo/BestCar",
-    name: "BestCar",
+    name: "BestCarLP",
     component: () => import("@/views/BestCarLP.vue"),
   },
   {path:"/emprestimo-com-garantia-de-veiculo",
-    name: "BestCarLP",
-    component: () => import("@/views/BestCarLP.vue"),
+    name: "BestCar",
+    component: () => import("@/views/BestCar.vue"),
   },
   {
     path: "/financiamento-veicular",
     name: "BestCarFinan",
-    component: () => import("@/views/BestCarFinanLP.vue"),
+    component: () => import("@/views/BestCarFinan.vue"),
   },
-  {path:"/sandbox",
-  name: "teste",
-  component: () => import("@/components/vehicle/BestCarFinan/playground.vue"),
+  {
+  path: "/financiamento-veicular/BestCarFinan",
+  name: "BestCarFinanLP",
+  component: () => import("@/views/BestCarFinanLP.vue"),
   },
+
 ];
 
 const router = createRouter({

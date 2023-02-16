@@ -36,7 +36,7 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import dropdownMenu from './dropdownMenu.vue';
+import dropdownMenu from '../base/dropdownMenu.vue';
 export default defineComponent({
   name: 'menuComponent',
   components: {
