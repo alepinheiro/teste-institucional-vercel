@@ -11,8 +11,31 @@
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
       <router-link :to="'/home-equity'+this.$root.utms" class="hover:text-primary hover:font-semibold " > Home Equity  </router-link>
     </div>
-    <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
-      <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="hover:text-primary hover:font-semibold " > Financiamento </router-link>
+    <!--Dropdown Mobile-->
+    <div class="flex flex-col items-center" :class="{'borderB-complementary': dropdownOpen}">
+      <button @click="toggleDropdown" class=" cursor-pointer flex items-center px-4 py-2"  :class="{'text-complementaryColor1': dropdownOpen }">
+        Para você
+      <svg :class="['w-4 h-4 ml-2', dropdownOpen ? 'transform rotate-180' : '']" viewBox="0 0 20 20" fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        />
+      </svg>
+      </button>
+      <div  class=" py-2 px-4" :class="{hidden: !dropdownOpen}">
+        <ul class="flex flex-col space-y-2">
+        <li>
+          <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="block text-textPrimary px-2 py-1" > Financiamento </router-link>
+        </li>
+        <li>
+          <router-link :to="'/financiamento-veicular'+this.$root.utms" class="text-textPrimary block  px-2 py-1" >Financiamento de veículo</router-link>
+        </li>
+        <li>
+          <router-link :to="'/emprestimo-com-garantia-de-veiculo'+this.$root.utms" class="text-textPrimary block  px-2 py-1" >Empréstimo com garantia de veículo</router-link>
+        </li> 
+        </ul>
+      </div>
     </div>
     <div @click="openProfileMenu= !openProfileMenu" class=" cursor-pointer rounded-lg px-4 py-2">
       <router-link :to="'/parceiro'+this.$root.utms" class="hover:text-primary hover:font-semibold " > Seja um Parceiro </router-link>
@@ -46,7 +69,13 @@ export default defineComponent({
     return {
       openProfileMenu:false,
       isVisible:false,
+      dropdownOpen:false,
     }
   },
+  methods: {
+    toggleDropdown() {
+      this.dropdownOpen = !this.dropdownOpen;
+    }
+  }
 })
 </script>

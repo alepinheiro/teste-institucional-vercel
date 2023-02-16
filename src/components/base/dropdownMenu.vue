@@ -1,14 +1,14 @@
 <template>
-  <div class="relative shadow-md" @mouseenter="showPopOver = true" @mouseleave="showPopOver = false">
+  <div class="relative" @mouseenter="showPopOver = true" @mouseleave="showPopOver = false">
     <div class="decoration"  :color="color" :linkStyle="linkStyle" >Para você</div>
     <div v-if="showPopOver" class="absolute z-10 w-48 p-2 bg-white rounded shadow-lg">
-      <div :class="linkStyle">
+      <div class="px-1 py-1">
       <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="text-textPrimary hover:text-complementaryColor1 text-sm" > Financiamento </router-link>
       </div>
-      <div :class="linkStyle">
+      <div class="px-1 py-1">
       <router-link :to="'/financiamento-veicular'+this.$root.utms" class="text-textPrimary hover:text-complementaryColor1 text-sm" >Financiamento de veículo</router-link>
       </div>
-      <div :class="linkStyle">
+      <div class="px-1 py-1">
       <router-link :to="'/emprestimo-com-garantia-de-veiculo'+this.$root.utms" class="text-textPrimary hover:text-complementaryColor1 text-sm" >Empréstimo com garantia de veículo</router-link>
       </div>
     </div>

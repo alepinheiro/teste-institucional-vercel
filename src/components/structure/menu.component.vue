@@ -54,3 +54,18 @@ export default defineComponent({
 
 })
 </script>
+
+<style>
+@media (min-width:1024px) and (max-width:1279px) {
+	.linkStyleDark{
+		padding-left: 0rem;
+		padding-right: 0rem;
+		margin-right: 1.25rem;
+	}
+  .linkStyle{
+		padding-left: 0rem;
+		padding-right: 0rem;
+		margin-right: 1.25rem;
+	}
+}
+</style>
