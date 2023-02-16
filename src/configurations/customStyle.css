@@ -77,6 +77,20 @@
 	position: relative;
 	background-repeat: no-repeat;
   }
+  .bgBestcar{
+	background-image: url("/images/BestCar/CABECALHO_BESTCAR.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  .bgFinanCar{
+	background-image: url("/images/BestCar/CABECALHO_FINAN_VEICULOS.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
   .gradienteSBLight {
 	background: #0524DD;
 	background: linear-gradient(180deg, #0524DD 0%, #10069f 50%, #10069f 100%);
