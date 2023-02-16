@@ -196,6 +196,8 @@ const image = {
     carro: "/images/BestCar/CARRO_2.png",
     gráficoFinan: "/images/BestCar/GRÁFICO_FINANCIAMENTO.svg",
     imgMulher: "/images/BestCar/IMAGEM_MULHER.png",
+    imgBestCar:"/images/BestCar/CABEÇALHO_BESTCAR.png",
+    imgFinanCar:"/images/BestCar/CABEÇALHO_FINANVEICULOS.png",
   },
   ilustrations:{
     cookie:"/images/ilustration/Cookie2.svg"
