@@ -495,8 +495,15 @@
 	border-radius: 2rem 2rem 0% 0%;
 }
 
-/*Top-Bar responsiva */
+/*bordas popOver e dropdown*/
 
 .borderB-complementary{
 	border-bottom:1.5px solid var(--complementaryColor1)
-};
+}
+
+.optionsHover:hover{
+	background: #e0e0e06e;
+    border-radius: 0.5rem;
+	color: var(--complementaryColor1);
+	font-style: var(--complementaryColor1);
+}

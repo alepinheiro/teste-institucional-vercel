@@ -5,13 +5,10 @@
       <router-link :to="'/'+this.$root.utms" class="decoration" > Início </router-link>
     </div>
     <div :class="linkStyle">
-      <router-link :to="'/sobre'+this.$root.utms" class="decoration" activeClass: > Sobre </router-link>
-    </div>
-    <div :class="linkStyle">
-      <router-link :to="'/home-equity'+this.$root.utms" class="decoration" > Home Equity  </router-link>
-    </div>
-    <div :class="linkStyle">
       <dropdownMenu />
+    </div>
+    <div :class="linkStyle">
+      <dropdownForB />
     </div>
     <div :class="linkStyle">
       <router-link :to="'/parceiro'+this.$root.utms" class="decoration" > Seja um Parceiro </router-link>
@@ -20,7 +17,9 @@
       <a :href="'https://portal.seja.best/'+this.$root.utms" class="decoration"
         target="_blank"> Portal</a>
     </div>
-    
+    <div :class="linkStyle">
+      <router-link :to="'/sobre'+this.$root.utms" class="decoration" activeClass: > Sobre </router-link>
+    </div>
   </div>
   <div class="flex">
 
@@ -37,10 +36,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import dropdownMenu from '../base/dropdownMenu.vue';
+import dropdownForB from '../base/dropdownForB.vue';
 export default defineComponent({
   name: 'menuComponent',
   components: {
-    dropdownMenu,
+    dropdownMenu, dropdownForB,
   },
   props:{
     linkStyle:String,
