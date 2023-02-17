@@ -5,7 +5,7 @@
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
         <div class="w-full flex pt-20 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
-            <div class="bg-primary rounded-xl w-full shadow-2xl p-12">
+            <div class="bg-primary rounded-xl w-full shadow-2xl p-12 mt-xxl xl:mt-8  lg:mt-12">
                 <div class="text-6xl titleFontBold  text-white  pb-6" >
                   <h1><div><span class="textDecoration flex w-52 pb-1 text-white">BestCar:</span> </div>
                   <div class="text-6xl titleFontBold pt-2 text-white  " >
@@ -159,6 +159,10 @@ export default defineComponent({
   },
 })
 </script>
-<style lang="">
-    
+<style>
+  @media (min-width:1880px){
+    .mt-xxl{
+      margin-top:9rem
+  }
+}
 </style>

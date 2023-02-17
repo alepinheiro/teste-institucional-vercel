@@ -35,7 +35,7 @@
               Porque você já sai com o carro assim que fecha o contrato.<br/>Além disso, a taxa de juro é 
               mais baixa em comparação com linhas de crédito tradicionais
             </div>
-            <div class=" p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-lg" >
+            <div class=" p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-xl" >
                 <a>Quero contratar</a>
             </div>
             </div>

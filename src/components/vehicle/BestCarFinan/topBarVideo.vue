@@ -3,9 +3,9 @@
     <div class="bgFinanCar sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
-        <div class="w-full flex pt-20 md:pt-8 sm:pt-4">
+        <div class="w-full flex pt-4 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
-            <div class="bg-primary rounded-xl w-full shadow-2xl p-12">
+            <div class="bg-primary rounded-xl w-full shadow-2xl p-12 xl:mt-30 mt-xxl lg:mt-12">
                 <div class="text-6xl titleFontBold  text-white  pb-6" >
                   <h1><div><span class="textDecoration pb-1 italic text-white flex w-60">FinanBest:</span> </div>
                   <div class="text-6xl titleFontBold pt-2 text-white  " >
@@ -160,6 +160,11 @@ export default defineComponent ({
   }, 
 })
 </script>
-<style lang="">
-    
+<style>
+  @media (min-width:1880px){
+    .mt-xxl{
+      margin-top:13 rem
+  }
+}
+
 </style>

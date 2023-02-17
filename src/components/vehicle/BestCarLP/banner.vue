@@ -15,7 +15,7 @@
                 São os juros mensais do <br class="sm:hidden"/>empréstimo usando <br class="sm:hidden"/>
                 o veículo como garantia.
             </div>
-            <div class="rounded-lg p-2 sm:p-1 sm:text-xs w-6/12 sm:w-full font-bold sm:font-normal bg-complementaryColor1 mt-4 sm:mt-1 mb-4 text-white text-center uppercase lg:w-5/6 md:w-5/6 md:text-sm md:p-1" >
+            <div class="rounded-xl p-2 sm:p-1 sm:text-xs w-6/12 sm:w-full font-bold sm:font-normal bg-complementaryColor1 mt-4 sm:mt-1 mb-4 text-white text-center uppercase lg:w-5/6 md:w-5/6 md:text-sm md:p-1" >
                 <a>Quero simular agora</a>
             </div>
           </div>
