@@ -89,7 +89,7 @@
       <div class="maxWidth " >
         <topbarComponent position="relative" />
         <div class="w-full ">
-          <div class="py-8 sm:py-4  w-full bg-secondary p-6 rounded-lg">
+          <div class="py-8 sm:py-4  mt-4  w-full bg-secondary p-6 rounded-lg">
             <div class=" rounded-xl w-full ">
                 <div class="text-4xl titleFontBold  text-white  pb-2" >
                   <h1><div><span class="textDecoration flex w-30 pb-1 text-complementaryColor3">BestCar</span> </div>
