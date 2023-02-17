@@ -61,7 +61,7 @@
                 <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
                     class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-1.4rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto "/>
             </div>
-        <div class="w-9/12 sm:w-6/12 md:w-8/12  sm:mr-2">
+        <div class="w-9/12 sm:w-6/12 md:w-8/12 sm:mr-2">
             <div class="text-white pt-4 sm:pt-1 titleFontBold text-7xl lg:text-6xl md:text-5xl sm:text-2xl textphoneMini text-right md:mr-1 sm:mr-0">
                 E aí, vamos ser<br/> Best com a gente?
         </div>
