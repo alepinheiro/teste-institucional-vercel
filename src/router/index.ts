@@ -80,6 +80,11 @@ const routes: Array<RouteRecordRaw> = [
   name: "BestCarFinanLP",
   component: () => import("@/views/BestCarFinanLP.vue"),
   },
+  {
+    path: "/teste",
+    name: "teste",
+    component: () => import("@/views/carousel.vue"),
+  },
 
 ];
 
