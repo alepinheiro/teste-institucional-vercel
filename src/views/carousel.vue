@@ -1,11 +1,8 @@
 <template lang="">
   <div class="w-screen h-screen">
-    <div class="container">
-  <input type="radio" name="slider" id="item-1" checked>
-  <input type="radio" name="slider" id="item-2">
-  <input type="radio" name="slider" id="item-3">
-  <div class="cards">
-    <label class="card w-4/12" for="item-1" id="song-1">
+  <div class="container">
+    <div class="cards">
+     <label class="card w-4/12" for="item-1" id="song-1">
       <div class="border-1  rounded-xl text-white mr-4">
             <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
               <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
@@ -124,6 +121,7 @@
             </div>
           </div>
     </label>
+
   </div>
 </div>
   </div>
@@ -132,6 +130,7 @@
 export default {
   
 }
+
 </script>
 <style>
 html, body {
@@ -175,23 +174,16 @@ img {
   border-radius: 10px;
   object-fit: cover;
 }
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-  transform: translatex(-40%) scale(0.8);
-  opacity: 0.4;
-  z-index: 0;
-}
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+
+.item:disabled {
   transform: translatex(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+.card .active{
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
-}
-#item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img {
-  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
 
