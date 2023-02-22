@@ -502,8 +502,12 @@
 }
 
 .optionsHover:hover{
-	background: #e0e0e06e;
+	background: #ffffff82;
     border-radius: 0.5rem;
 	color: var(--complementaryColor1);
 	font-style: var(--complementaryColor1);
+}
+
+.bgPopUpHover{
+	background: #e0e0e0de;
 }

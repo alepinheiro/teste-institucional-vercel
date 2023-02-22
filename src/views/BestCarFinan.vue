@@ -103,11 +103,10 @@ import partnersLabelGrey from '@/components/vehicle/BestCarFinan/partnersLabelGr
 import FaqFinan from '@/components/vehicle/BestCarFinan/FaqFinan.vue';
 import Carousel from '@/components/vehicle/BestCarLP/carousel.vue';
 import comparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue';
-import cookiesPopUp from '@/components/pop-up/cookies.vue';
 export default defineComponent({
     name: "BestCarFinanLP",
     components:{ topBarVideo,cardWhite,stepByStep,partnersLabelGrey,
-        FaqFinan,Carousel,comparativeBoardFinan,cookiesPopUp
+        FaqFinan,Carousel,comparativeBoardFinan,
     },
 })
 </script>

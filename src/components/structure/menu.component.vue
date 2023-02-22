@@ -36,7 +36,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import dropdownMenu from '../base/dropdownMenu.vue';
-import dropdownForB from '../base/dropdownForB.vue';
+import dropdownForB from '../base/PopUpForBusiness.vue';
 export default defineComponent({
   name: 'menuComponent',
   components: {
