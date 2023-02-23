@@ -1,6 +1,6 @@
 <template lang="">
     <div class="flex flex-wrap justify-center pb-24 sm:pb-0 pt-10">
-    <div class="mb-8 w-1/2 md:pl-0  md:pr-3  px-4 sm:w-full sm:px-0">
+    <div class="mb-8 w-1/2 md:pl-0  md:pr-3  pr-4 pl-0 sm:w-full sm:px-0">
     <div class=" shadow-2xl p-6 sm:p-3  bg-primary rounded-lg flex gap-4 items-center sm:h-[130px] md:h-[170px] text-white" @mouseenter="hover = true" @mouseleave="hover = false" :class="{ 'hover': hover }">
         <img :src="$options.imageConfig.icons.phoneFill" alt="icone celular" class="w-16 md:w-12 sm:w-14" />
         <div class="gap-y-2 sm:gap-y-1 flex flex-col" >
@@ -14,7 +14,7 @@
         </div>        
     </div>
     </div>
-    <div class="mb-8 w-1/2 md:pl-0  md:pr-3  px-4 sm:w-full sm:px-0">
+    <div class="mb-8 w-1/2 md:pl-0  md:pr-3  pr-0 pl-4 sm:w-full sm:px-0">
     <div class=" shadow-2xl p-6 md:p-4 sm:p-3 bg-primary rounded-lg flex gap-4 items-center sm:h-[130px] md:h-[170px] text-white " id="card" @mouseenter="hover2 = true" @mouseleave="hover2 = false" :class="{ 'hover': hover2 }">
         <img :src="$options.imageConfig.icons.notebookFill" alt="icone notebook" class="w-16 md:w-12 sm:w-12 sm:ml-3" />
         <div class="gap-y-2 sm:gap-y-1 md:gap-y-4  flex flex-col">
@@ -28,7 +28,7 @@
         </div>        
     </div>
     </div>
-    <div class="mb-8 w-1/2 md:pl-0  md:pr-3  px-4 sm:w-full sm:px-0">
+    <div class="mb-8 w-1/2 md:pl-0  md:pr-3  pr-4 pl-0 sm:w-full sm:px-0">
     <div class=" shadow-2xl p-6 sm:p-2 bg-primary rounded-lg flex gap-4 items-center sm:h-[130px] md:h-[170px]  text-white md:p-4" id="card" @mouseenter="hover3 = true" @mouseleave="hover3 = false" :class="{ 'hover': hover3 }">
         <img :src="$options.imageConfig.icons.moneyFill" alt="icone dinheiro" class="w-16 md:w-12 sm:w-12 sm:ml-3" />
         <div class="gap-y-2 sm:gap-y-1 md:gap-y-0 flex flex-col">
@@ -42,7 +42,7 @@
         </div>        
     </div>
     </div>
-    <div class="mb-8 w-1/2 md:pl-0  md:pr-3  px-4 sm:w-full sm:px-0">
+    <div class="mb-8 w-1/2 md:pl-0  md:pr-3  pr-0 pl-4 sm:w-full sm:px-0">
         <div class=" shadow-2xl p-6 sm:p-3 bg-primary rounded-lg flex gap-4 items-center sm:h-[130px] md:h-[170px] text-white md:p-4 " id="card" @mouseenter="hover4 = true" @mouseleave="hover4 = false" :class="{ 'hover': hover4 }">
                 <img :src="$options.imageConfig.icons.calendarOutline" alt="icone dinheiro" class="w-16 md:w-12 sm:w-12 sm:ml-3" />
             <div class="gap-y-2 sm:gap-y-1 flex flex-col">
