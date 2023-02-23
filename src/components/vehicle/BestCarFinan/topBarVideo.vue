@@ -44,19 +44,19 @@
       <div class=" sm:hidden xl:hidden lg:hidden">
       <div class="maxWidth bg-primary " >
         <div class="w-full flex justify-center items-center">
-          <div class="w-2/2 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6 ">
+          <div class="w-10/12 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6 ">
             <div class="">
-                <div class="text-5xl titleFontBold  text-white  pb-6" >
-                  <h1><div><span class="textDecoration pb-1 text-complementaryColor3 flex w-54">FinanBest:</span> </div>
-                  <div class="text-5xl titleFontBold pt-2 text-white  " >
+                <div class="text-5xl titleFontBold pt-2 text-white  pb-6" >
+                  <h1><div><span class="textDecoration pb-1 text-complementaryColor3 flex w-48">FinanBest:</span> </div>
+                  <div class="text-4xl titleFontBold pt-2 text-white  " >
                     Financiamento veicular da SejaBest
                   </div></h1>
                 </div>
-                <div class=" py-4 text-white pb-6">
+                <div class=" text-white pb-6 text-lg">
                   Escolha o carro, novo ou usado, e financie até 100% do valor. Faça uma simulação agora e veja como ficam as parcelas. 
                 </div>
                 <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
-                  <div class="w-1/12 pr-4 mt-auto mb-auto">
+                  <div class="pr-1 mt-auto mb-auto">
                     <img  :src="$options.imageConfig.iconSejaBestWhite" alt="SejaBest"  class="w-12 h-auto ">
                   </div>
                   <div class="w-10/12 text-lg text-white"> 
@@ -68,7 +68,7 @@
                 <div class="w-10/12 text-xl text-white pt-2 font-semibold text-textPrimary"> 
                   De quanto você precisa?
                 </div>
-                <div class="w-full flex  items-end justify-between">
+                <div class="w-full flex  items-end justify-between pb-2">
                   <div class="w-9/12 pr-1">
                     <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
                   </div>
