@@ -148,13 +148,11 @@ export default defineComponent({
       this.dropdown2 = !this.dropdown2;
     },
     removeClass() {
-      // Remove a classe "my-class" do elemento
       this.dropdown2 = false;
       const dropdownDisabled = document.querySelector('#dropdown2');
       dropdownDisabled.classList.remove('optionsOpen');
     },
     removeClassDropdown2() {
-      // Remove a classe "my-class" do elemento
       this.dropdownOpen = false;
       const dropdownClosed = document.querySelector('#dropdown1');
       dropdownClosed.classList.remove('optionsOpen');
