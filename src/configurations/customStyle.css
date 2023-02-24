@@ -196,7 +196,6 @@
     border-image-slice: 1;
   }
 
-  
   .bgBannerPrimary {
 	background-image: url("/images/CAPA_2_tlmhob.png");
 	background-size: cover;
@@ -495,11 +494,31 @@
 	border-radius: 2rem 2rem 0% 0%;
 }
 
-/*Top-Bar responsiva */
-@media (min-width:1024px) and (max-width:1279px) {
-	.linkStyleDark{
-		padding-left: 0rem;
-		padding-right: 0rem;
-		margin-right: 1.25rem;
-	}
+/*bordas popOver e dropdown*/
+
+.borderB-complementary{
+	border-bottom:1.5px solid var(--complementaryColor1)
+}
+
+.optionsHover:hover{
+	background: #ffffff82;
+    border-radius: 0.5rem;
+	color: var(--complementaryColor1);
+	font-style: var(--complementaryColor1);
+}
+.optionsOpen{
+	background: #ffffff82;
+    border-radius: 0.5rem;
+	color: var(--complementaryColor1);
+	font-style: var(--complementaryColor1);
+}
+.bgPopUpHover{
+	background: #e0e0e0eb;
+}
+
+.shadowDark{
+	--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 39%), 0 4px 6px -4px rgb(0 0 0 / 42%);
+	--tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
 }

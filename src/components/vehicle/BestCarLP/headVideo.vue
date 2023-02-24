@@ -2,6 +2,7 @@
   <div class="w-full h-full">
     <div class="bgBestcar sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
+      <topbarComponent class="relative"/>
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
         <div class="w-full flex pt-20 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
@@ -88,7 +89,7 @@
       <div class="maxWidth " >
         <topbarComponent position="relative" />
         <div class="w-full ">
-          <div class="py-8 sm:py-4  w-full bg-secondary p-6 rounded-lg">
+          <div class="py-8 sm:py-4  mt-4  w-full bg-secondary p-6 rounded-lg">
             <div class=" rounded-xl w-full ">
                 <div class="text-4xl titleFontBold  text-white  pb-2" >
                   <h1><div><span class="textDecoration flex w-30 pb-1 text-complementaryColor3">BestCar</span> </div>
@@ -138,10 +139,11 @@
 </template>
 <script>
 import { defineComponent } from 'vue';
-import popUpVideo from "@/components/base/popUpVideo.component.vue"
+import popUpVideo from "@/components/base/popUpVideo.component.vue";
+import topbarComponent from '@/components/structure/topbar.component.vue';
 export default defineComponent({
   name: "headVideo",
-  components:{popUpVideo},
+  components:{popUpVideo, topbarComponent},
   data() {
     return {
       isVisible:false,

@@ -26,7 +26,6 @@ const image = {
       alt:"",
     },
   ],
-  
   aboutUs:{ 
     photoCEO: "/images/aboutUs/FotoGaspar.png",
     photoCOO: "/images/aboutUs/FotoGabi.png",

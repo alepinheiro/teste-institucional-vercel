@@ -55,6 +55,7 @@
             </div>
         </div>
     </div>
+    
     <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-3 lg:pt-0 md:pt-0" >
         <div class="maxWidth sm:p-0 p-0Max  flex justify-center ">
             <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
@@ -103,11 +104,10 @@ import partnersLabelGrey from '@/components/vehicle/BestCarFinan/partnersLabelGr
 import FaqFinan from '@/components/vehicle/BestCarFinan/FaqFinan.vue';
 import Carousel from '@/components/vehicle/BestCarLP/carousel.vue';
 import comparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue';
-import cookiesPopUp from '@/components/pop-up/cookies.vue';
 export default defineComponent({
     name: "BestCarFinanLP",
     components:{ topBarVideo,cardWhite,stepByStep,partnersLabelGrey,
-        FaqFinan,Carousel,comparativeBoardFinan,cookiesPopUp
+        FaqFinan,Carousel,comparativeBoardFinan,
     },
 })
 </script>

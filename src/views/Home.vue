@@ -532,25 +532,20 @@
     </div>
   </div>
 </div>
-  <!--  v-if="showCookies"  deve ser colocado abaixo-->
-  <div class="flex justify-center no-blur-content">
-    <cookiesPopUp />
-  </div>  
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 import topbarComponent from '@/components/structure/topbar.component.vue';
-import cookiesPopUp from '@/components/pop-up/cookies.vue';
 export default defineComponent({
   name: 'Home',
   components:{
-    topbarComponent, cookiesPopUp
+    topbarComponent,
   },
   data() {
     return {
+      
       isVisible:false,
       value:250000,
-      showCookies: false
     }
   },
   methods: {
