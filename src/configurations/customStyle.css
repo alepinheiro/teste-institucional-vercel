@@ -507,7 +507,19 @@
 	color: var(--complementaryColor1);
 	font-style: var(--complementaryColor1);
 }
-
+.optionsOpen{
+	background: #ffffff82;
+    border-radius: 0.5rem;
+	color: var(--complementaryColor1);
+	font-style: var(--complementaryColor1);
+}
 .bgPopUpHover{
-	background: #e0e0e0de;
+	background: #e0e0e0eb;
+}
+
+.shadowDark{
+	--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 39%), 0 4px 6px -4px rgb(0 0 0 / 42%);
+	--tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
 }

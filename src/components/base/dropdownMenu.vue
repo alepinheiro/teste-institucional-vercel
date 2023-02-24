@@ -1,7 +1,7 @@
 <template>
   <div class="relative" @mouseenter="showPopOver = true" @mouseleave="showPopOver = false">
     <div class="decoration"  :color="color" :linkStyle="linkStyle" >Para você</div>
-    <div v-if="showPopOver" class="absolute z-10 w-[18rem] p-2 bgPopUpHover rounded-lg shadow-lg" >
+    <div v-if="showPopOver" class="absolute z-10 w-[18rem] p-2 bgPopUpHover rounded-lg shadowDark" >
       <div class="px-2 py-3 optionsHover hover:shadow-md text-textPrimary flex flex-row items-center w-full justify-between" @mouseover="hover = true" @mouseout="hover = false">
         <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="text-sm" > Financiamento </router-link>
         <svg v-show="hover" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-o group-hover:opacity-100 " viewBox="0 0 20 20" fill="currentColor">
