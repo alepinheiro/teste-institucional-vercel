@@ -1,13 +1,15 @@
 <template>
-<div class="w-full bg-bglightColor overflow-x-hidden overflow-y-hidden">
+
+<div class="w-full bg-bglightColor overflow-x-hidden overflow-y-hidden scroll-smooth">
+
   <div class="text-textPrimary gradienteSBHome">
     <div class="bgManWithPhone sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
         <topbarComponent position="relative" />
         <div class="w-full px-24 sm:px-0 flex flex-wrap justify-between mt-6 md:mt-4 sm:mt-4">
           <div class=" md:w-7/12 text-white md:pr-4 sm:hidden  mt-auto mb-auto">
-            <a class="flex flex-row borderWhite xl:p-1 lg:p-1 xl:text-lg lg:text-lg absolute xl:mt-40 xl:ml-28 lg:mt-32 lg:ml-32 gap-4 rounded-md" href="#anchor">
-                <a class="text-left xl:mt-1 px-1">Saiba Mais</a>
+            <a class="flex flex-row borderWhite xl:p-1 lg:p-1 xl:text-lg lg:text-lg absolute xl:mt-40 xl:ml-28 lg:mt-32 lg:ml-32 gap-4 rounded-md cursor-pointer" @click="scrollToElement('#SaibaMaisAbaixo')">
+                <span class="text-left xl:mt-1 px-1">Saiba Mais</span>
                <img :src="$options.imageConfig.icons.setaBaixowhite" alt="SejaBest"  class="xl:w-8 lg:w-7 borderWhite rounded-full xl:ml-3 lg:ml-3 xl:mr-2 lg:mr-1 xl:p-2 lg:p-2 h-auto "/>
             </a>
           </div>
@@ -92,7 +94,7 @@
       </div>
     </div>
     <div class="maxWidth pt-24 md:pt-8 sm:pt-8">
-        <div class="text-6xl lg:text-5xl md:text-4xl sm:px-8 sm:text-4xl titleFontBold  text-white  text-center" id="anchor" >
+        <div class="text-6xl lg:text-5xl md:text-4xl sm:px-8 sm:text-4xl titleFontBold  text-white  text-center" id="SaibaMaisAbaixo" >
           Como a SejaBest pode te ajudar hoje?
         </div>
         <div class="text-3xl sm:text-2xl  titleFontBold  text-white  text-center pt-4 pb-20 sm:pb-8">
@@ -549,6 +551,14 @@ export default defineComponent({
       isVisible:false,
       value:250000,
       showCookies: false
+    }
+  },
+  methods: {
+    scrollToElement(elementId) {
+      window.scrollTo({
+        top: document.querySelector(elementId).offsetTop,
+        behavior: 'smooth'
+      });
     }
   },
   metaInfo () {

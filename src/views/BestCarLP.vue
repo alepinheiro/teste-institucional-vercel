@@ -10,7 +10,7 @@
         <div class="maxWidth flex justify-center ">
             <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
                 <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
-                    class="w-full   absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
+                    class="w-full absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
             </div>
         <div class="w-9/12 sm:w-6/12 md:w-8/12">
             <div class="text-white pt-4 titleFontBold text-5xl lg:text-4xl md:text-3xl sm:text-xl text-right">

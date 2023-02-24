@@ -56,14 +56,14 @@
 	position: relative;
   }
   .bgCashBest{
-	background-image: url("/images/cashBest/VideoCashBestDesktop.gif");
+	background-image:url("/images/cashBest/VideoCashBestDesktop.gif");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	position: relative;
   }
   .bgFinanBest{
-	background-image: url("/images/finanBest/VideoFinanBestDesktop.gif");
+	background-image:url("/images/finanBest/VideoFinanBestDesktop.gif");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -76,6 +76,20 @@
 	height: auto;
 	position: relative;
 	background-repeat: no-repeat;
+  }
+  .bgBestcar{
+	background-image: url("/images/BestCar/CABECALHO_BESTCAR.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  .bgFinanCar{
+	background-image: url("/images/BestCar/CABECALHO_FINAN_VEICULOS.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
   }
   .gradienteSBLight {
 	background: #0524DD;
