@@ -1,7 +1,7 @@
 <template>
-  <div class="text-textPrimary bg-bglight2Color">
+  <div class="text-textPrimary bg-bglight2Color overflow-x-hidden overflow-y-hidden">
     <div class="w-full  ">
-      <div class="maxWidth p-0" >
+      <div class="maxWidth p-aboutPage p-0" >
         <topbarComponent class="p-4" position="top" />
         <div class="w-full flex pt-8 sm:pt-4 px-4">
           <div class="w-1/2 mb-0 mt-auto">
@@ -34,31 +34,31 @@
           <span class="text-bold textDecoration">3 pilares:</span>
         </div>
         <div class="w-full sm:hidden md:hidden">
-          <div class="maxWidth flex justify-evenly  pt-12 sm:pt-4">
+          <div class="maxWidth xl:gap-15 lg:gap-10 flex justify-evenly  pt-12 sm:pt-4">
             <div class="">
-              <div class=" py-4" v-on:mouseover="isVisiblePillars.show1=true" v-on:mouseleave="isVisiblePillars.show1=false">
+              <div class=" py-4" v-on:click="isVisiblePillars.show1=true, isVisiblePillars.show2=false, isVisiblePillars.show3=false">
                 <img v-if="isVisiblePillars.show1" :src="$options.imageConfig.aboutUs.pillars.color.education"  alt="Educação "
-                class="w-64 h-90  rounded-xl cursor-pointer  "/>
+                class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  "/>
                 <img v-if="!isVisiblePillars.show1" :src="$options.imageConfig.aboutUs.pillars.pb.education"  alt="Educação "
-                class="w-64 h-90  rounded-xl cursor-pointer  "/>
+                class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  "/>
               </div>
               
             </div> 
             <div >
-              <div class=" py-4" v-on:mouseover="isVisiblePillars.show2=true" v-on:mouseleave="isVisiblePillars.show2=false">
+              <div class=" py-4" v-on:click="isVisiblePillars.show2=true, isVisiblePillars.show1=false, isVisiblePillars.show3=false">
                 <img v-if="isVisiblePillars.show2"  :src="$options.imageConfig.aboutUs.pillars.color.technology" alt="Tecnologia"
-                class="w-64 h-90 rounded-xl cursor-pointer  "/>
+                class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  "/>
                 <img v-if="!isVisiblePillars.show2"  :src="$options.imageConfig.aboutUs.pillars.pb.technology" alt="Tecnologia"
-                class="w-64 h-90 rounded-xl cursor-pointer  "/>
+                class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  "/>
               </div>
               
             </div> 
             <div >
-              <div class=" py-4" v-on:mouseover="isVisiblePillars.show3=true" v-on:mouseleave="isVisiblePillars.show3=false">
+              <div class=" py-4" v-on:click="isVisiblePillars.show3=true, isVisiblePillars.show1=false,isVisiblePillars.show2=false">
                 <img v-if="isVisiblePillars.show3"  :src="$options.imageConfig.aboutUs.pillars.color.humanized" alt="Experiência Humanizada"
-                class="w-64 h-90 rounded-xl cursor-pointer "/>
+                class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer "/>
                 <img v-if="!isVisiblePillars.show3" :src="$options.imageConfig.aboutUs.pillars.pb.humanized" alt="Experiência Humanizada"
-                class="w-64 h-90  rounded-xl cursor-pointer  "/>
+                class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  "/>
               </div>
               
             </div> 
@@ -246,21 +246,21 @@
             class="sm:w-full  h-auto rounded-l-xl "/>
           </div>
           <div class="w-1/2 mt-auto mb-auto">
-            <div class="text-5xl px-8 sm:px-2 titleFont md:text-3xl sm:text-sm text-primary font-semibold">
-              E fazemos isso pois acreditamos que o <span class="font-bold">acesso ao crédito</span> 
-              pode levar as pessoas à sua <span class="font-bold textDecoration">melhor</span>
-              <span class="font-bold"> versão.</span> 
+            <div class="text-4xl lg:text-right lg:leading-normal xl:text-right xl:text-5xl px-8 sm:px-2 titleFont md:text-3xl sm:text-sm text-primary defaultFontLight">
+              E fazemos isso pois acreditamos que o <span class="defaultFontBold">acesso ao crédito</span> 
+              pode levar as pessoas à sua <span class="defaultFontBold textDecoration">melhor</span>
+              <span class="defaultFontBold"> versão.</span> 
             </div>
           </div>
         </div>
       </div>
-      <div class="maxWidth">
-        <div class="text-2xl  w-full xl:w-2/3 lg:w-2/3 xl:text-4xl py-16 sm:py-8 text-center mr-auto ml-auto">  
+      <div class="maxWidth flex flex-col">
+        <div class="text-2xl lg:text-3xl w-full xl:w-2/3 lg:w-2/3 xl:text-4xl py-16 sm:py-8 text-center mr-auto ml-auto">  
          Conheça o time de <span class="font-semibold">especialistas</span> responsável por tornar esta missão uma 
          <span class="font-semibold">realidade:</span>
          </div>
         <img :src="$options.imageConfig.aboutUs.team" alt="Time Best"  
-          class="w-full  h-auto rounded-l-xl sm:hidden md:hidden"/>
+          class="w-full xl:max-w-[90rem] xl:w-[90rem] lg:max-w-[80rem] lg:w-[80rem] h-auto rounded-l-xl sm:hidden md:hidden self-center"/>
         <img :src="$options.imageConfig.aboutUs.teamSM" alt="Time Best"  
           class="w-full  h-auto rounded-l-xl xl:hidden lg:hidden"/>
       </div>
@@ -271,32 +271,32 @@
         <div class="w-full pt-16 sm:pt-8 md:pt-8 flex flex-wrap justify-center">
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://valor.globo.com/brasil/coluna/bndes-se-une-a-fintechs-para-baratear-credito.ghtml" 
-              style=" text-decoration: none;" target="_blank">
-             <img :src="$options.imageConfig.logoMedia.gray.valorEconomico" alt="Valor economico"  class="w-8/12 h-auto "/>
+              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+             <img :src="$options.imageConfig.logoMedia.gray.valorEconomico" alt="Valor economico"  class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1"/>
             </a>
           </div>
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://revistapegn.globo.com/Startups/noticia/2019/03/programa-de-capacitacao-startup-sc-divulga-lista-de-selecionados.html" 
-              style=" text-decoration: none;" target="_blank">
-              <img :src="$options.imageConfig.logoMedia.gray.peqEmpresasGrandesNegocios" alt="pequenas empresas grandes negócios" class="w-8/12 h-auto "/>
+              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+              <img :src="$options.imageConfig.logoMedia.gray.peqEmpresasGrandesNegocios" alt="pequenas empresas grandes negócios" class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1"/>
             </a>
           </div>
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://imobireport.com.br/fintechs-de-credito-imobiliario-apostam-na-tecnologia-agilidade-e-multidisciplinaridade-para-superar-momento-de-alta-da-selic/" 
-              style=" text-decoration: none;" target="_blank">
-              <img :src="$options.imageConfig.logoMedia.gray.imobileReport" alt="imobireport" class="w-8/12 h-auto "/>
+              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+              <img :src="$options.imageConfig.logoMedia.gray.imobileReport" alt="imobireport" class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1"/>
             </a>
           </div>
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://economiasc.com/2021/08/06/fintech-aproxima-brasileiros-de-home-equity-modalidade-de-credito-imobiliario-com-melhores-taxas-no-mercado/?utm_source=seja.best" 
-              style=" text-decoration: none;" target="_blank">
-              <img :src="$options.imageConfig.logoMedia.gray.economiaSC" alt="economia SC" class="w-8/12 h-auto "/>
+              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+              <img :src="$options.imageConfig.logoMedia.gray.economiaSC" alt="economia SC" class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1"/>
             </a>
           </div>
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a href="https://revistapegn.globo.com/Startups/noticia/2019/03/programa-de-capacitacao-startup-sc-divulga-lista-de-selecionados.html" 
-              style=" text-decoration: none;" target="_blank">
-              <img :src="$options.imageConfig.logoMedia.gray.agenciaOGlobo" alt="agencia O Globo"  class="w-8/12 h-auto "/>
+              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+              <img :src="$options.imageConfig.logoMedia.gray.agenciaOGlobo" alt="agencia O Globo"  class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1"/>
             </a>
           </div>
         </div>

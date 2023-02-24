@@ -1,5 +1,5 @@
 <template>
-<div class="w-full bg-bglight2Color">
+<div class="w-full bg-bglight2Color overflow-x-hidden overflow-y-hidden">
   <div class="text-textPrimary ">
     <div class="bgFinanBest sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
@@ -165,7 +165,7 @@
         <div class="text-4xl sm:text-2xl md:text-2xl text-primary">
           Apenas vantagens para você
         </div>
-        <div class="py-6 sm:text-sm sm:py-2 text-primary">
+        <div class="py-6 sm:text-base sm:py-2 text-primary">
           Descubra porque o <span class="text-complementaryColor3">FinanBest</span> 
           pode ser a sua melhor opção de Financiamento Imobiliário.
         </div>
@@ -177,7 +177,7 @@
             <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderPhones">
               <div  class="">
                 <img :src="slide.img" 
-                class="px-4 " :alt="slide.alt">
+                class="px-1" :alt="slide.alt">
               </div>
             </SplideSlide>
               
@@ -244,7 +244,7 @@
           É um investimento seguro que possui diversas vantagens a curto e longo prazo. Com condições facilitadas, 
           o FinanBest é perfeito para você!
         </div>
-      <div class="border-1 gradienteSBDark  rounded-xl w-full text-white ">
+      <div class="border-1 gradienteSBDark  rounded-xl w-full text-white flex flex-col self-center ">
             <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
               <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
               <div class="text-xl titleFont">As melhores soluções em </div>
@@ -287,8 +287,8 @@
   </div>
   <div class=" w-full mt-8 flex justify-center sm:hidden md:hidden">
     <div class="ml-auto  mr-auto maxWidth">
-      <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : true ,  height   : '25rem',trimSpace: 'move', 
-        rewind : true, pagination:false, direction: 'ttb', arrows:true} " aria-label="Você pode obter o recurso para:">
+      <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free' ,  height   : '25rem',trimSpace: 'move', 
+        rewind : true, pagination:true, arrows:true} " aria-label="Você pode obter o recurso para:">
         <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderTutorial">
           <div  class="">
             <img :src="slide.img" class="px-4 lg:pt-12" :alt="slide.alt">
@@ -450,14 +450,14 @@
            E aí, vamos ser<br/> Best com a gente?
         </div>
         <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
-         <button class="buttonComplementaryColor1">
+         <button class="p-1 px-2 text-sm bg-complementaryColor1 rounded-lg text-white md:w-6/12 lg:w-4/12 xl:w-4/12">
           <a 
             :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a></button>
         </div>
         <div class="w-full flex">
-          <div class="w-9/12 lg:w-8/12 sm:w-5/12 md:w-7/12 border-b-1 border-white mt-auto mb-auto"></div>
-          <div class="w-3/12 lg:w-4/12 sm:w-7/12 md:w-5/12 text-right text-white">
+          <div class="w-9/12 lg:w-8/12 sm:w-[30%] md:w-7/12 border-b-1 border-white mt-auto mb-auto"></div>
+          <div class="w-3/12 lg:w-4/12 sm:w-[70%] md:w-5/12 text-right text-white">
             <div class="font-semibold sm:text-xs md:text-sm">Gaspar Motta Filho</div>
             <div class="text-sm sm:text-2xs">CEO & Founder - SejaBest</div>
           </div>
@@ -573,3 +573,26 @@ export default defineComponent({
  
 })
 </script>
+
+<style>
+    .splide__arrow svg {
+	  fill: #d1d1d1;
+  }
+
+  .splide__arrow--prev {
+    left: -1em;
+  }
+
+  .splide__arrow--next {
+    right: -1em;
+  }
+
+  @media ( min-width: 1024px) and (max-width: 1279px) {
+    .splide__arrow--prev {
+      left: -1em;
+  }
+    .splide__arrow--next {
+      right: -1em;
+  }
+  }
+</style>

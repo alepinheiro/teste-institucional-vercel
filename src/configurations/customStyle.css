@@ -433,3 +433,73 @@
 .borderWhite{
 	border: solid 1px white;
 }
+
+.glitchBlue{
+	box-shadow: 0 0 20px #0063f2, 0 0 20px #0063f2;
+	border-radius: 0.75rem;
+}
+.glitchBlue:hover{
+	box-shadow: 0 0 20px #0063f2, 0 0 20px #0063f2;
+	border-radius: 0.75rem;
+}
+
+/* usefull classes */
+
+  
+@media (min-width: 1880px) and (max-width:2000px) {
+    .marginl-15R{
+      margin-left: 15rem;
+    }
+    
+}
+
+@media (min-width: 2001px) and (max-width:2549rem) {
+    .marginl-24R{
+      margin-left: 24rem;
+    }
+}
+
+@media (min-width: 2550px) and (max-width:2870px) {
+    .marginl-40R{
+      margin-left: 40rem;
+    }
+}
+
+@media (min-width: 2871px) {
+	.marginl-50R{
+      margin-left: 50rem;
+	}
+}
+@media (max-width: 667px) {
+    .inputBase{
+    padding: 0.25rem;
+    }
+}
+
+@media ( min-width: 1024px) and (max-width: 1550px) {
+    .mb-0rem{
+      margin-bottom: 0rem;
+  }
+    .mt-0rem{
+      margin-top:0rem;
+    }
+}
+
+
+/* pop up cookies styles */
+.cookiesPopUP{
+	background: var(--bglightColor);
+	-webkit-box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
+	-moz-box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
+	box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
+	border-radius: 2rem 2rem 0% 0%;
+}
+
+/*Top-Bar responsiva */
+@media (min-width:1024px) and (max-width:1279px) {
+	.linkStyleDark{
+		padding-left: 0rem;
+		padding-right: 0rem;
+		margin-right: 1.25rem;
+	}
+}

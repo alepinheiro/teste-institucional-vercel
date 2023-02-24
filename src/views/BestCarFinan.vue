@@ -35,7 +35,7 @@
               Porque você já sai com o carro assim que fecha o contrato.<br/>Além disso, a taxa de juro é 
               mais baixa em comparação com linhas de crédito tradicionais
             </div>
-            <div class=" p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-xl" >
+            <div class=" p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-lg" >
                 <a>Quero contratar</a>
             </div>
             </div>
@@ -61,7 +61,7 @@
                 <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
                     class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-1.4rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto "/>
             </div>
-        <div class="w-9/12 sm:w-6/12 md:w-8/12 sm:mr-2">
+        <div class="w-9/12 sm:w-6/12 md:w-8/12  sm:mr-2">
             <div class="text-white pt-4 sm:pt-1 titleFontBold text-7xl lg:text-6xl md:text-5xl sm:text-2xl textphoneMini text-right md:mr-1 sm:mr-0">
                 E aí, vamos ser<br/> Best com a gente?
         </div>
