@@ -503,19 +503,20 @@
      </div>
   </div>
 
-  <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-3 lg:pt-0 md:pt-0" >
-        <div class="maxWidth sm:p-0 p-0Max  flex justify-center ">
-            <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
-                <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
-                    class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-1.4rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto "/>
-            </div>
-        <div class="w-9/12 sm:w-6/12 md:w-8/12  sm:mr-2">
-            <div class="text-white pt-4 sm:pt-1 titleFontBold text-7xl lg:text-6xl md:text-5xl sm:text-2xl textphoneMini text-right md:mr-1 sm:mr-0">
+  <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-3 lg:pt-0 md:pt-0 sm:h-44" >
+        <div class="maxWidth sm:p-0 p-0 sm:flex sm:justify-end flex justify-center ">
+          <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho" class="absolute mr-[60%] mt-[-5rem] w-[10rem] h-auto md:hidden lg:hidden xl:hidden"/>
+          <div class="w-3/12 sm:w-6/12 md:w-4/12 relative sm:hidden">
+            <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
+              class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-1.4rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto sm:hidden"/>
+          </div>
+        <div class="w-9/12 sm:w-[65%] sm:justify-end md:w-8/12 ">
+            <div class="text-white pt-4 sm:pt-0 titleFontBold text-7xl lg:text-6xl md:text-5xl sm:text-2xl textphoneMini text-right md:mr-1 sm:mr-0">
                 E aí, vamos ser<br/> Best com a gente?
         </div>
         <div class="w-full flex">
-            <div class="flex pt-4 sm:pt-2 justify-end w-full">
-                   <div class="mt-4 mr-2 text-lg md:text-base md:text-right sm:text-xs sm:mr-1 text-white pt-2 text-textPrimary"> 
+            <div class="flex pt-4 sm:pt-0 justify-end w-full">
+                   <div class="mt-4 mr-2 text-lg md:text-base md:text-right sm:text-xs sm:mr-1 text-white pt-2 sm:pt-0 sm:mt-0 text-textPrimary self-center"> 
                       De quanto você precisa?
                     </div>
                     <div class="flex items-end w-5/12 md:w-[58%] sm:w-full gap-4 md:gap-1 sm:gap-0">
