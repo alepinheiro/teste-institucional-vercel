@@ -1,5 +1,5 @@
 <template>
-  <div class="text-textPrimary bg-bglight2Color">
+  <div class="text-textPrimary bg-bglight2Color overflow-x-hidden overflow-y-hidden">
     <div class="w-full  ">
       <div class="maxWidth p-aboutPage p-0" >
         <topbarComponent class="p-4" position="top" />

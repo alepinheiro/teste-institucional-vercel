@@ -1,5 +1,5 @@
 <template>
-<div class="w-full bg-bglightColor">
+<div class="w-full bg-bglightColor overflow-x-hidden overflow-y-hidden">
   <div class="text-textPrimary gradienteSBHome">
     <div class="bgManWithPhone sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >

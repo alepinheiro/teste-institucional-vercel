@@ -1,5 +1,5 @@
 <template>
-<div class="w-full bg-bglight2Color">
+<div class="w-full bg-bglight2Color overflow-x-hidden overflow-y-hidden">
   <div class="text-textPrimary ">
     <div class="bgFinanBest sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
@@ -580,19 +580,19 @@ export default defineComponent({
   }
 
   .splide__arrow--prev {
-    left: -2em;
+    left: -1em;
   }
 
   .splide__arrow--next {
-    right: -2em;
+    right: -1em;
   }
 
   @media ( min-width: 1024px) and (max-width: 1279px) {
     .splide__arrow--prev {
-      left: -1.5em;
+      left: -1em;
   }
     .splide__arrow--next {
-      right: -1.5em;
+      right: -1em;
   }
   }
 </style>

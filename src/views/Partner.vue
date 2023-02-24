@@ -1,5 +1,5 @@
 <template>
-<div class="w-full gradienteSBLight2">
+<div class="w-full gradienteSBLight2 overflow-x-hidden overflow-y-hidden">
   <div class="text-textPrimary ">
     <div class="bgBusinessman sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
