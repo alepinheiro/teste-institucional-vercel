@@ -83,7 +83,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/teste",
     name: "teste",
-    component: () => import("@/views/carousel.vue"),
+    component: () => import("@/views/testingCarousel.vue"),
   },
 
 ];
