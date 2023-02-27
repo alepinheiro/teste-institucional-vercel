@@ -236,7 +236,7 @@
     </div>
     <div class="maxWidth flex py-24 sm:py-12">
       <div class="w-1/4 sm:w-1/2 text-white mt-auto mb-auto pr-4">
-        <div class="text-4xl sm:text-2xl md:text-2xl title-font ">
+        <div class="text-4xl sm:text-2xl md:text-2xl title-font font-bold">
           Apenas vantagens<br /> para você
         </div>
         <div class="py-6 text-lg sm:text-sm sm:py-2 ">

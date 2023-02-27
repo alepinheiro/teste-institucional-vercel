@@ -28,7 +28,7 @@
         <div class="bg-secondary">
         <div class="maxWidth flex flex-wrap pt-8 sm:pt-16 xl:py-20 lg:py-32 md:py-24 sm:hidden">
           <div class="w-1/2 sm:w-full mb-auto lg:p-4 text-white">
-            <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-4xl md:text-3xl sm:text-3xl font-semibold mr-0">
+            <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-4xl md:text-3xl sm:text-3xl font-bold mr-0">
               Por que fazer um financiamento de veículo?
             </div>
             <div class="py-6 pr-36 lg:pr-28 md:pr-12 text-xl md:text-lg sm:text-center ">
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="bgLigthGrey">
-            <h1 class="maxWidth text-4xl sm:text-2xl text-secondary text-center pt-12 pb-5">
+            <h1 class="maxWidth text-4xl sm:text-2xl text-secondary text-center pt-12 pb-5 font-bold">
                 Quem sonhou, se organizou e<br />
                   investiu com a ajuda da SejaBest
             </h1>
@@ -56,35 +56,28 @@
         </div>
     </div>
     
-    <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-3 lg:pt-0 md:pt-0" >
-        <div class="maxWidth sm:p-0 p-0Max  flex justify-center ">
-            <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
-                <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
-                    class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-1.4rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto "/>
-            </div>
-        <div class="w-9/12 sm:w-6/12 md:w-8/12  sm:mr-2">
-            <div class="text-white pt-4 sm:pt-1 titleFontBold text-7xl lg:text-6xl md:text-5xl sm:text-2xl textphoneMini text-right md:mr-1 sm:mr-0">
-                E aí, vamos ser<br/> Best com a gente?
+    <div class="w-full bg-gradient-to-r from-primary to-secondary pb-4  mt-16 sm:mt-24 md:mt-24" >
+    <div class="maxWidth flex justify-center ">
+      <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
+       <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
+         class="w-full   absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
+      </div>
+      <div class="w-9/12 sm:w-6/12 md:w-8/12">
+        <div class="text-white pt-4 titleFontBold text-5xl lg:text-4xl md:text-3xl sm:text-xl text-right">
+           E aí, vamos ser<br/> Best com a gente?
+        </div>
+        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
+         <button class="p-1 px-2 text-sm bg-complementaryColor1 rounded-lg text-white md:w-6/12 lg:w-4/12 xl:w-4/12">
+          <a 
+            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+            target="_blank">Faça uma simulação</a></button>
         </div>
         <div class="w-full flex">
-            <div class="flex pt-4 sm:pt-2 justify-end w-full">
-                   <div class="mt-4 mr-2 text-lg md:text-base md:text-right sm:text-xs sm:mr-1 text-white pt-2 text-textPrimary"> 
-                      De quanto você precisa?
-                    </div>
-                    <div class="flex items-end w-5/12 md:w-[58%] sm:w-full gap-4 md:gap-1 sm:gap-0">
-                    <div class="w-9/12 sm:w-full pr-1">
-                        <inputMoney class="w-full " v-model="value" id="value" label=""  placeholder=""  />
-                    </div>
-                    <div class="w-4/12 ">
-                        <div class="  p-2 w-full sm:p-1 bg-complementaryColor1 rounded-xl text-white text-center" >
-                            <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                             target="_blank" class="sm:hidden">Simular</a>
-                             <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                             target="_blank" class="sm:visible sm:text-xs xl:hidden lg:hidden md:hidden">Ir</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+          <div class="w-9/12 lg:w-8/12 sm:w-[30%] md:w-7/12 border-b-1 border-white mt-auto mb-auto"></div>
+          <div class="w-3/12 lg:w-4/12 sm:w-[70%] md:w-5/12 text-right text-white">
+            <div class="font-semibold sm:text-xs md:text-sm">Gaspar Motta Filho</div>
+            <div class="text-sm sm:text-2xs">CEO & Founder - SejaBest</div>
+          </div>
         </div>
       </div>
     </div>

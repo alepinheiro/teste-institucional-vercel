@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="w-full pb-32 pt-24 md:pb-24 sm:pt-0 sm:pb-20">
+  <div class="w-full pb-32 pt-24 md:pb-24 sm:pt-0 sm:pb-28">
       <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto" >
         <div class="mt-auto mb-auto w-full bg-bgDarkColor shadow-xl rounded-2xl flex-wrap p-6 sm:p-2">
         

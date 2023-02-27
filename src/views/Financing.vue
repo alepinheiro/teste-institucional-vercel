@@ -162,7 +162,7 @@
     </div>
     <div class="maxWidth flex py-36 sm:pb-4 sm:pt-0 ">
       <div class="w-1/4 sm:w-1/2 mt-auto mb-auto pr-4">
-        <div class="text-4xl sm:text-2xl md:text-2xl text-primary">
+        <div class="text-4xl sm:text-2xl md:text-2xl text-primary font-bold">
           Apenas vantagens para você
         </div>
         <div class="py-6 sm:text-base sm:py-2 text-primary">
@@ -373,7 +373,7 @@
         <div class="mt-auto mb-auto w-full bg-bglight2Color shadow-xl border-1 rounded-2xl flex-wrap p-6">
         
           <div class="w-full flex  py-4 ">
-            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl  text-primary text-center">Por que ser Best?</div>
+            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl  text-primary text-center font-bold">Por que ser Best?</div>
             <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
               <img :src="$options.imageConfig.logoVertical" alt="SejaBest"  class="w-30 sm:w-24 h-auto mr-auto ml-auto"/>
             </div>
@@ -464,7 +464,6 @@
         </div>
       </div>
     </div>
-   
   </div>
   <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
     :videoStyle="videoStyle" @closePopUp="showVideo=false" />
