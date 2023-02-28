@@ -91,6 +91,13 @@
 	height: 100%;
 	position: relative;
   }
+  .bgFooter{
+	background-image: url("/images/Home/Rodapé.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
   .gradienteSBLight {
 	background: #0524DD;
 	background: linear-gradient(180deg, #0524DD 0%, #10069f 50%, #10069f 100%);
@@ -114,6 +121,10 @@
   }
   .maxWidth {
 	@apply w-full  max-w-[1200px] sm:max-w-full  mr-auto ml-auto sm:p-4 md:py-4 md:px-12 lg:p-4 ;
+  }
+
+  .maxWidthNone.maxWidth {
+	@apply w-full  max-w-[1200px] sm:max-w-full  mr-auto ml-auto sm:p-0 md:py-0 md:px-0 lg:p-0 ;
   }
   .bgMeioAzul{
 	background-image: url("/images/Home/fundoMeio.png");

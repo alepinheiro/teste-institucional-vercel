@@ -21,8 +21,8 @@
             <div class="maxWidth xl:mt-11 lg:mt-6 md:mt-6 px-28 sm:px-8">
                 <P class="text-secondary md:text-sm text-lg text-center">
                     Com o carro na mão, você paga a <span class="font-bold underline">primeira parcela</span>
-                    45 dias depois da aprovação. <br />Lembrando que o cálculo final do financiamento 
-                    considera o valor do veículo <br /> financiado,entrada, quantidade de parccelas e juros.
+                    45 dias depois da aprovação. <br class="sm:hidden"/>Lembrando que o cálculo final do financiamento 
+                    considera o valor do veículo <br class="sm:hidden"/> financiado,entrada, quantidade de parccelas e juros.
                 </P>
             </div>
         </div>
@@ -89,10 +89,9 @@
       </div>
     </div>
   </div>
+  <rodape />
   </div>
-  <div class="flex justify-center">
-    <cookiesPopUp />
-  </div>  
+</div>  
 </template>
 
 <script>
@@ -104,10 +103,11 @@ import partnersLabelGrey from '@/components/vehicle/BestCarFinan/partnersLabelGr
 import FaqFinan from '@/components/vehicle/BestCarFinan/FaqFinan.vue';
 import Carousel from '@/components/vehicle/BestCarLP/carousel.vue';
 import comparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue';
+import rodape from '@/components/base/rodape.vue';
 export default defineComponent({
     name: "BestCarFinanLP",
     components:{ topBarVideo,cardWhite,stepByStep,partnersLabelGrey,
-        FaqFinan,Carousel,comparativeBoardFinan,
+        FaqFinan,Carousel,comparativeBoardFinan, rodape
     },
 })
 </script>

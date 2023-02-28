@@ -198,9 +198,6 @@ const image = {
     imgBestCar: "/images/BestCar/CABELHO_BESTCAR.png",
     imgFinanCar: "/images/BestCar/CABELHO_FINANCAR.png",
   },
-  ilustrations:{
-    cookie:"/images/ilustration/Cookie2.svg"
-  }
 };
 
 export default image;

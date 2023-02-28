@@ -162,7 +162,7 @@
       
     </div>
     <div class="md:hidden xl:hidden lg:hidden maxWidth">
-      <div class="text-8xl lg:text-6xl text-center pb-8 sm:text-5xl md:text-6xl titleFontBold  text-white  " >
+      <div class="text-7xl lg:text-5xl text-center pb-8 sm:text-5xl md:text-6xl titleFontBold  text-white  " >
           E o que é <br/>Home<span class="textDecoration">  Equity?</span>
         </div>
       <div class="text-white text-sm text-center pb-6">
@@ -216,8 +216,8 @@
         <img :src="$options.imageConfig.cashBest.photoMan" alt="Home Equity" class="w-full h-auto xl:absolute lg:absolute 
         xl:w-116 lg:w-[28rem] xl:bottom-[-34rem] lg:bottom-[-31rem] mb-0rem"/>
       </div>
-      <div class="w-6/12 sm:w-8/12 mt-auto mb-auto">
-        <div class="text-8xl lg:text-6xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
+      <div class="w-6/12 sm:w-8/12 mt-auto mb-auto xl:mt-3 lg:mt-3">
+        <div class="text-7xl lg:text-5xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
           E o que é <br/>Home<span class="textDecoration">  Equity?</span>
         </div>
         <div class="text-white text-xl  sm:text-xs md:text-sm text-right w-11/12 mr-0 ml-auto mt-12 sm:mt-6">
@@ -370,8 +370,8 @@
   <div class=" w-full xl:mt-[-10rem] sm:mt-[-8rem] flex justify-center sm:hidden md:hidden">
     <div class="ml-auto  mr-auto maxWidth">
       <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free' ,  height   : '25rem',trimSpace: 'move', 
-        rewind : true, pagination:true, arrows:true}" aria-label="Você pode obter o recurso para:">
-        <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderTutorial">
+        rewind : true, pagination:true, arrows:true}" aria-label="Você pode obter o recurso para:"  class="blueSplide">
+        <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderTutorial"  ref="splide">
           <div  class="">
             <img :src="slide.img" class="px-4 lg:pt-12" :alt="slide.alt">
           </div>
@@ -380,7 +380,7 @@
     </div>  
   </div>
   <div class="maxWidth xl:hidden lg:hidden">
-    <div class="titleFontBold text-5xl sm:text-4xl text-primary text-center py-12"> É tão simples que você só<br/> precisa de <span class="text-complementaryColor1 ">4 etapas</span></div>
+    <div class="titleFontBold text-5xl sm:text-4xl text-primary text-center py-12"> É tão simples que você só precisa de <span class="text-complementaryColor1 ">4 etapas</span></div>
     <div class="bg-bglight2Color shadow-xl border-1 rounded-xl p-4">
       <div class="flex w-full ">
         <div @click="showTutorial(1)" class="mt-auto mb-auto text-xl pr-4 text-primary">
@@ -522,32 +522,7 @@
         </div>
       </div>
   </div>
-  <div class="w-full bg-gradient-to-r from-primary to-secondary pb-4  mt-16 sm:mt-24 md:mt-24" >
-    <div class="maxWidth flex justify-center ">
-      <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
-       <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta"
-         class="w-full absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
-      </div>
-      <div class="w-9/12 sm:w-6/12 md:w-8/12">
-        <div class="text-white pt-4 titleFontBold text-7xl lg:text-4xl md:text-3xl sm:text-xl text-right">
-           E aí, vamos ser<br/> Best com a gente?
-        </div>
-        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
-         <button class="p-1 px-2 text-sm bg-complementaryColor1 rounded-lg text-white md:w-6/12 lg:w-4/12 xl:w-4/12">
-          <a 
-            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-            target="_blank">Faça uma simulação</a></button>
-        </div>
-        <div class="w-full flex">
-          <div class="w-9/12 lg:w-8/12 sm:w-[30%] md:w-7/12 border-b-1 border-white mt-auto mb-auto"></div>
-          <div class="w-3/12 lg:w-4/12 sm:w-[70%] md:w-5/12 text-right text-white">
-            <div class="font-semibold sm:text-xs md:text-sm">Gaspar Motta Filho</div>
-            <div class="text-sm sm:text-2xs">CEO & Founder - SejaBest</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <rodape />
   <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
     :videoStyle="videoStyle" @closePopUp="showVideo=false" />
 </div>
@@ -556,10 +531,11 @@
 import { defineComponent } from 'vue';
 import popUpVideo from "@/components/base/popUpVideo.component.vue"
 import topbarComponent from '@/components/structure/topbar.component.vue';
+import rodape from '@/components/base/rodape.vue';
 export default defineComponent({
   name: 'HomeEquity',
   components:{
-    topbarComponent , popUpVideo
+    topbarComponent , popUpVideo, rodape
   },
   metaInfo () {
     return {
@@ -584,6 +560,7 @@ export default defineComponent({
       }
     }
   },
+  
   methods: {
       showTutorial(item){
         if(item===1 && this.tutorial.show1==false){
@@ -661,13 +638,13 @@ export default defineComponent({
   .splide__arrow svg {
 	  fill: #d1d1d1;
   }
-
+  
   .splide__arrow--prev {
-    left: -1em;
+    left: -1.5em;
   }
 
   .splide__arrow--next {
-    right: -1em;
+    right: -1.5em;
   }
 
   @media ( min-width: 1024px) and (max-width: 1279px) {
