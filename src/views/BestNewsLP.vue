@@ -12,27 +12,27 @@
                 </text>
             </div>   
             <div class="flex flex-wrap md:flex-row items-center md:justify-center sm:justify-center">
-                <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-10/12 sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[17.2rem] p-6 lg:p-5 flex flex-col shadow-md rounded-xl md:my-8 sm:my-6 ">
+                <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-10/12 sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] p-6 lg:p-5 flex flex-col shadow-md rounded-xl md:my-8 sm:my-6 ">
                     <img :src="$options.imageConfig.bestNews.youBest" class="w-36 lg:w-30 pb-2 pt-2 lg:pt-4  md:self-center sm:self-center"/>
-                    <text class="text-lg lg:text-base lg:mb-1 lg:leading-5 flex items-center self-center md:text-center sm:text-center xl:leading-8 ">
+                    <text class="text-lg lg:text-base lg:mb-1 lg:leading-6 flex items-center self-center md:text-center sm:text-center xl:leading-8 ">
                         Veja explicações sobre financiamento imobiliário, empréstimo com garantia de imóvel e informações sobre taxas.
                     </text>
                     <button class="bg-complementaryColor1 btnShine mt-5 lg:mt-0 rounded-xl p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full lg:normal-case  md:w-6/12 sm:w-7/12 sm:text-sm xl:text-sm">
                         Assista de graça
                     </button>
                 </div>
-            <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-10/12 sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[17.2rem] p-6 lg:p-5 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-6 lg:ml-4">
+            <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-10/12 sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] p-6 lg:p-5 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-6 lg:ml-4">
                 <img :src="$options.imageConfig.bestNews.bestNewsTelegram" class="w-36 lg:w-30 pb-2 pt-2 lg:pt-4 md:self-center sm:self-center"/>
-                <text class="text-lg lg:text-base lg:mb-1 lg:leading-5 flex items-center self-center md:text-center sm:text-center xl:leading-8">
+                <text class="text-lg lg:text-base lg:mb-1 lg:leading-6 flex items-center self-center md:text-center sm:text-center xl:leading-8">
                     Ao entrar no nosso grupo no telegram, você recebe o conteúdo novo antes de todo mundo, assim que a gente posta.
                 </text>
                 <button class="bg-complementaryColor1 btnShine mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full md:w-6/12 sm:w-7/12 sm:text-sm  lg:normal-case xl:text-sm">
                     Exlcusividade agora
                 </button>
             </div>
-            <div class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-10/12 sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[17.2rem] p-6 lg:p-5 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-6 lg:ml-4">
+            <div class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-10/12 sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] p-6 lg:p-5 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-6 lg:ml-4">
                 <img :src="$options.imageConfig.bestNews.bestNewsLinkedin" class="w-36 lg:w-30 pb-2 pt-4  md:self-center sm:self-center"/>
-                <text class="text-lg lg:text-base lg:mb-1 lg:leading-5 flex items-center self-center md:text-center sm:text-center xl:leading-8 ">
+                <text class="text-lg lg:text-base lg:mb-1 lg:leading-6 flex items-center self-center md:text-center sm:text-center xl:leading-8 ">
                     Vamos conversar sobre empreendedorismo, carreira, rotina da empresa e, claro, o que você precisa para ser Best.
                 </text>
                 <div class="md:justify-center md:flex sm:flex sm:justify-center">
