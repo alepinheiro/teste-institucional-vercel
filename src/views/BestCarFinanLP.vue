@@ -77,9 +77,9 @@
                     </div>
                     <div class="w-4/12 ">
                         <div class="  p-2 w-full sm:p-1 bg-complementaryColor1 rounded-xl text-white text-center" >
-                            <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                            <a :href="$options.information.appVehicleSimulator+this.$root.utms"  style=" text-decoration: none;"
                              target="_blank" class="sm:hidden">Simular</a>
-                             <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                             <a :href="$options.information.appVehicleSimulator+this.$root.utms"  style=" text-decoration: none;"
                              target="_blank" class="sm:visible sm:text-xs xl:hidden lg:hidden md:hidden">Ir</a>
                         </div>
                     </div>
