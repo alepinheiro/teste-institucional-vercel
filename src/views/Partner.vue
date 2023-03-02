@@ -309,7 +309,7 @@
               class="sm:w-full md:w-11/12 h-auto  xl:max-w-3xl xl:w-[42rem]"/>
           </div>
           <div class="w-1/2 sm:w-full text-right sm:text-left mt-auto mb-auto text-white">
-            <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-5xl md:text-3xl sm:text-3xl font-semibold text-right mr-0 ml-auto">
+            <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-5xl md:text-3xl sm:text-3xl font-bold text-right mr-0 ml-auto">
               Como o BestHub pode ajudar o seu <span class="text-complementaryColor3">negócio?</span>
             </div>
             <div class="pt-6  text-xl md:text-lg sm:text-center">
@@ -329,7 +329,7 @@
       <div class="bg-bglightColor xl:pb-40 lg:pb-40">
         <div class="maxWidth    mr-auto ml-auto">
           <div class="w-full text-center">
-            <div class="text-4xl pt-40 sm:pt-8 md:pt-8 sm:text-2xl text-primary font-semibold">
+            <div class="text-4xl pt-40 sm:pt-8 md:pt-8 sm:text-2xl text-primary font-bold">
                A melhor plataforma multibancos 
             </div>
             <div class="text-textSecondary text-xl ">
@@ -359,7 +359,7 @@
             <img :src="$options.imageConfig.logoBestHub" alt="BestHub"  class="w-auto h-28 sm:h-18 sm:ml-auto md:w-10/12 sm:mr-auto xl:ml-20"/>
           </div>
           <div class="p-4 w-1/2 sm:w-full mt-auto">
-            <div class="text-white text-6xl md:text-4xl sm:text-2xl w-9/12 md:w-full sm:w-full sm:text-center sm:pb-8 xl:ml-20">
+            <div class="text-white text-6xl md:text-4xl sm:text-2xl w-9/12 md:w-full sm:w-full sm:text-center sm:pb-8 xl:ml-20 font-bold">
               Um hub <span class="textDecoration">cheio </span>  de vantagens.
             </div>
           </div>

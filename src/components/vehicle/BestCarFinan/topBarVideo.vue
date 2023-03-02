@@ -1,10 +1,10 @@
 <template lang="">
   <div class="w-full h-full">
     <div class="bgFinanCar sm:hidden md:hidden">
-      <div class="maxWidth xl:h-screen lg:h-screen" >
-        <topbarComponent class="relative444"/>
+      <div class="maxWidth xl:h-[95vh] lg:h-screen" >
+        <topbarComponent class="relative"/>
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
-        <div class="w-full flex pt-4 md:pt-8 sm:pt-4">
+        <div class="w-full flex pt-26 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
             <div class="bg-primary rounded-xl  w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-white  pb-6" >

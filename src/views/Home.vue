@@ -456,7 +456,7 @@
       </div>
       <div class="p-6 w-9/12 mr-auto ml-auto border-b-1 sm:p-2 md:p-2 border-textSecondary"></div>
   </div>
-  <div class="w-full  pt-10 sm:pt-4 md:pt-4 pb-16 mr-auto ml-auto flex">
+  <div class="w-full  pt-10 sm:pt-4 md:pt-4 mr-auto ml-auto flex">
      <div class="w-7/12 flex justify-center mt-auto mb-auto">
       <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8  marginl-15R marginl-24R marginl-40R marginl-50R">
         <div class="text-5xl sm:text-2xl md:text-4xl font-semibold text-primary ">
@@ -504,42 +504,18 @@
        <img :src="$options.imageConfig.home.mockupPhonesSM"   alt="SejaBest Mídias Sociais"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto "/>
      </div>
   </div>
+  <rodape />
 
-  <div class="w-full bg-gradient-to-r from-primary to-secondary pb-4  mt-16 sm:mt-24 md:mt-24" >
-    <div class="maxWidth flex justify-center ">
-      <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
-       <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta"
-         class="w-full absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
-      </div>
-      <div class="w-9/12 sm:w-6/12 md:w-8/12">
-        <div class="text-white pt-4 titleFontBold text-7xl lg:text-4xl md:text-3xl sm:text-xl text-right">
-           E aí, vamos ser<br/> Best com a gente?
-        </div>
-        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs " >
-         <button class=" p-1 px-2 text-sm bg-complementaryColor1 rounded-lg text-white md:w-6/12 lg:w-4/12 xl:w-4/12">
-          <a 
-            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-            target="_blank">Faça uma simulação</a></button>
-        </div>
-        <div class="w-full flex">
-          <div class="w-9/12 lg:w-8/12 sm:w-[30%] md:w-7/12 border-b-1 border-white mt-auto mb-auto"></div>
-          <div class="w-3/12 lg:w-4/12 sm:w-[70%] md:w-5/12 text-right text-white">
-            <div class="font-semibold sm:text-xs md:text-sm">Gaspar Motta Filho</div>
-            <div class="text-sm sm:text-2xs">CEO & Founder - SejaBest</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 import topbarComponent from '@/components/structure/topbar.component.vue';
+import rodape from '@/components/base/rodape.vue';
 export default defineComponent({
   name: 'Home',
   components:{
-    topbarComponent,
+    topbarComponent, rodape
   },
   data() {
     return {
