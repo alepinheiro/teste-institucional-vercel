@@ -1,11 +1,12 @@
 <template lang="">
   <div class="w-full h-full">
     <div class="bgFinanCar sm:hidden md:hidden">
-      <div class="maxWidth xl:h-screen lg:h-screen" >
+      <div class="maxWidth xl:h-[95vh] lg:h-screen" >
+        <topbarComponent class="relative"/>
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
-        <div class="w-full flex pt-4 md:pt-8 sm:pt-4">
+        <div class="w-full flex pt-26 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
-            <div class="bg-primary rounded-xl w-full shadow-2xl p-12 xl:mt-30 mt-xxl lg:mt-12">
+            <div class="bg-primary rounded-xl  w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-white  pb-6" >
                   <h1><div><span class="textDecoration pb-1 italic text-white flex w-60">FinanBest:</span> </div>
                   <div class="text-6xl titleFontBold pt-2 text-white  " >
@@ -89,7 +90,7 @@
       <div class="maxWidth bg-primary" >
         <topbarComponent position="relative" />
         <div class="w-full">
-          <div class="py-8 bg-secondary sm:py-4 p-6 rounded-lg shadow-md w-full">
+          <div class="py-8 bg-secondary sm:py-4 p-6 mt-4 rounded-lg shadow-md w-full">
             <div class=" rounded-xl w-full ">
                 <div class="text-4xl titleFontBold  text-white  pb-2" >
                   <h1><div><span class="textDecoration pb-1 text-complementaryColor3 flex w-60 sm:w-40">FinanBest:</span> </div>
@@ -140,9 +141,10 @@
 <script>
 import { defineComponent } from 'vue';
 import popUpVideo from "@/components/base/popUpVideo.component.vue"
+import topbarComponent from '@/components/structure/topbar.component.vue';
 export default defineComponent ({
     name: "topBarVideo",
-    components: {popUpVideo},
+    components: {popUpVideo, topbarComponent},
     data() {
       return {
         isVisible:false,

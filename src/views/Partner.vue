@@ -1,11 +1,11 @@
 <template>
-<div class="w-full gradienteSBLight2">
+<div class="w-full gradienteSBLight2 overflow-x-hidden overflow-y-hidden">
   <div class="text-textPrimary ">
     <div class="bgBusinessman sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
         <topbarComponent position="relative" />
         <div class="w-full px-24 sm:px-0 flex flex-wrap justify-between mt-20 ">
-          <div class=" max-w-[400px] w-full md:mr-auto md:ml-auto sm:mr-auto sm:ml-auto ">
+          <div class=" max-w-[400px] w-full md:mr-auto md:ml-auto sm:mr-auto sm:ml-auto marginXL">
             <div class="text-white w-full  ">
               <div class="text-6xl titleFontBold  " >
                <h1> Alavanque seus resultados com o <span class="textDecoration"> BestHub. </span></h1>
@@ -34,9 +34,9 @@
     <div class="maxWidth  " >
       <topbarComponent position="top" />
       <div class="w-full gradienteSBLight2 mt-4 rounded-2xl text-white ">
-        <img :src="$options.imageConfig.partner.businessman" alt="BestHub"  class="w-auto h-60 rounded-t-2xl  mr-auto ml-auto"/>
+        <img :src="$options.imageConfig.partner.businessman" alt="BestHub"  class="w-full h-full rounded-t-2xl md:w-full md:h-full  mr-auto ml-auto"/>
         <div class=" w-full rounded-t-xl">
-          <div class="text-white w-full p-4 ">
+          <div class="text-white w-full p-4 sm:text-center md:flex md:flex-col md:items-center ">
               <div class="text-4xl titleFontBold  " >
                 Alavanque seus resultados com o <span class="textDecoration"> BestHub. </span>
               </div>
@@ -57,21 +57,21 @@
     </div>
     
       <div class="maxWidth">
-        <div class="w-full flex flex-wrap pt-8 sm:pt-16 xl:py-32 lg:py-32 md:py-24">
+        <div class="w-full flex flex-wrap pt-8 sm:pt-16 xl:py-32 xl:pb-20 lg:py-32 md:py-24">
           <div class="w-1/2 mt-auto mb-auto sm:w-full md:w-full md:hidden sm:hidden">
             <img :src="$options.imageConfig.partner.manIcon" alt="Parceiro Best"
-              class="sm:w-full md:w-11/12 w-8/12  h-auto  "/>
+              class="sm:w-full md:w-11/12 w-9/12  h-auto  "/>
           </div>
           <div class="w-1/2 sm:w-full md:w-full mt-auto mb-auto flex flex-wrap text-white">
-            <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:w-full sm:text-center md:text-center text-4xl pb-4 md:text-3xl sm:text-2xl font-semibold ">
+            <div class="xl:w-12/12 lg:w-2/3 md:w-full sm:w-full sm:text-center md:text-center text-4xl pb-4 md:text-3xl sm:text-2xl font-semibold ">
               Por que ser um parceiro <span class="textDecoration">Best?</span>
             </div>
-            <div class="mt-8 md:mt-6 sm:mt-4  mr-12 md:mr-0 sm:mr-0  w-1/2 sm:pr-2 md:pr-2">
+            <div class="mt-8 md:mt-6 sm:mt-4  mr-12 md:mr-0 sm:mr-0  w-1/2 sm:pr-2 md:pr-2" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glitchBlue': glitch }">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12 ">
                 <div class="mt-auto mb-auto">
                   <img :src="$options.imageConfig.icons.phoneFill" alt="1"  class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                     Totalmente digital
                   </div>
@@ -79,12 +79,12 @@
                 </div>
               </div>
             </div>
-            <div class="mt-8 md:mt-6 sm:mt-4 ml-auto mr-12 w-1/2 md:mr-0 sm:mr-0 md:ml-0 sm:ml-0 sm:pl-2 md:pl-2">
+            <div class="mt-4 md:mt-6 sm:mt-4 ml-auto mr-12 w-1/2 md:mr-0 sm:mr-0 md:ml-0 sm:ml-0 sm:pl-2 md:pl-2" @mouseenter="glitch2 = true" @mouseleave="glitch2 = false" :class="{ 'glitchBlue': glitch2 }">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12">
                 <div class="mt-auto mb-auto">
                   <img :src="$options.imageConfig.icons.calendarFill" alt="2"  class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                      7 dias por semana
                   </div>
@@ -92,12 +92,12 @@
                 </div>
               </div>
             </div>
-            <div class="mt-8 w-1/2 ml-8  md:mr-0 sm:mr-0 md:ml-0 sm:ml-0 sm:pr-2 md:pr-2">
+            <div class="mt-4 w-1/2 ml-8  md:mr-0 sm:mr-0 md:ml-0 sm:ml-0 sm:pr-2 md:pr-2"  @mouseenter="glitch3 = true" @mouseleave="glitch3 = false" :class="{ 'glitchBlue': glitch3 }">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12 ">
                 <div class="mt-auto mb-auto">
                   <img :src="$options.imageConfig.icons.percentageFill" alt="3"  class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                     Transparência total
                   </div>
@@ -105,12 +105,12 @@
                 </div>
               </div>
             </div>
-            <div class="mt-8  ml-auto mr-0 w-1/2 md:mr-0 sm:mr-0 md:ml-0 sm:ml-0 sm:pl-2 md:pl-2">
+            <div class="mt-4 ml-auto mr-0 w-1/2 md:mr-0 sm:mr-0 md:ml-0 sm:ml-0 sm:pl-2 md:pl-2"  @mouseenter="glitch4 = true" @mouseleave="glitch4 = false" :class="{ 'glitchBlue': glitch4 }">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12 ">
                 <div class="mt-auto mb-auto ">
                   <img :src="$options.imageConfig.icons.moneyFill" alt="4" class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                     Ganho no sucesso
                   </div>
@@ -118,12 +118,12 @@
                 </div>
               </div>
             </div>
-            <div class="mt-8   xl:w-9/12 w-8/12  mr-auto ml-auto">
+            <div class="mt-4 xl:w-9/12 w-8/12  mr-auto ml-auto"  @mouseenter="glitch5 = true" @mouseleave="glitch5 = false" :class="{ 'glitchBlue': glitch5 }">
               <div class="bg-bglightColor rounded-xl w-full flex p-2 h-12 ">
                 <div class="mt-auto mb-auto">
                   <img :src="$options.imageConfig.icons.userFill" alt="5" class="w-auto h-8 "/>
                 </div>
-                <div class="w-full pl-4 mt-auto mb-auto">
+                <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm">
                   <div class="text-primary xl:text-2xl text-xl sm:text-sm">
                     Perfil do cliente em tempo real
                   </div>
@@ -139,12 +139,12 @@
           Conheça nossos produtos.
         </div>
         
-        <div class="w-full flex justify-center pb-16 sm:hidden">
+        <div class="w-full flex justify-center pb-14 sm:hidden">
           <div class="border-1  rounded-xl w-4/12 md:w-5/12 lg:w-5/12 text-white mr-4">
             <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
               <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
-              <div class="text-xl titleFont">Conheça o Crédito com </div>
-              <div class="text-xl titleFont">garantia de imóvel</div>
+              <div class="text-xl titleFont defaultFont">Conheça o Crédito com </div>
+              <div class="text-xl titleFont defaultFont">garantia de imóvel</div>
             </div>
             <div class="w-full p-6 bg-secondary rounded-b-xl">
               <div class="w-full flex  items-center">
@@ -180,8 +180,8 @@
           <div class="border-1 gradienteSBDark  rounded-xl w-4/12 md:w-5/12 lg:w-5/12 text-white ml-4">
             <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
               <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
-              <div class="text-sm titleFont">As melhores soluções em </div>
-              <div class="text-sm titleFont">Financiamento imobiliário</div>
+              <div class="text-xl defaultFont">As melhores soluções em </div>
+              <div class="text-xl defaultFont">Financiamento imobiliário</div>
             </div>
             <div class="w-full p-6 rounded-b-xl ">
               <div class="w-full flex  items-center">
@@ -305,12 +305,11 @@
       </div>
       <div class="maxWidth flex flex-wrap pt-8 sm:pt-16 xl:py-32 lg:py-32 md:py-24">
           <div class="w-1/2 mt-auto mb-auto sm:w-full">
-            
             <img :src="$options.imageConfig.partner.mockupTablet" alt="BestHub"  
-              class="sm:w-full md:w-11/12 w-full  h-auto  "/>
+              class="sm:w-full md:w-11/12 h-auto  xl:max-w-3xl xl:w-[42rem]"/>
           </div>
           <div class="w-1/2 sm:w-full text-right sm:text-left mt-auto mb-auto text-white">
-            <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-4xl md:text-3xl sm:text-3xl font-semibold text-right mr-0 ml-auto">
+            <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-5xl md:text-3xl sm:text-3xl font-bold text-right mr-0 ml-auto">
               Como o BestHub pode ajudar o seu <span class="text-complementaryColor3">negócio?</span>
             </div>
             <div class="pt-6  text-xl md:text-lg sm:text-center">
@@ -330,7 +329,7 @@
       <div class="bg-bglightColor xl:pb-40 lg:pb-40">
         <div class="maxWidth    mr-auto ml-auto">
           <div class="w-full text-center">
-            <div class="text-4xl pt-40 sm:pt-8 md:pt-8 sm:text-2xl text-primary font-semibold">
+            <div class="text-4xl pt-40 sm:pt-8 md:pt-8 sm:text-2xl text-primary font-bold">
                A melhor plataforma multibancos 
             </div>
             <div class="text-textSecondary text-xl ">
@@ -354,73 +353,73 @@
           
         </div>
       </div>
-      <div class="w-full maxWidth xl:py-32 lg:py-32 py-12">
+      <div class="w-full maxWidth xl:py-32 lg:py-32 py-12 xl:pb-8">
         <div class="w-full flex flex-wrap justify-center ">
           <div class="p-4 w-1/2 sm:w-full ">
-            <img :src="$options.imageConfig.logoBestHub" alt="BestHub"  class="w-auto h-28 sm:h-18 sm:ml-auto sm:mr-auto"/>
+            <img :src="$options.imageConfig.logoBestHub" alt="BestHub"  class="w-auto h-28 sm:h-18 sm:ml-auto md:w-10/12 sm:mr-auto xl:ml-20"/>
           </div>
-          <div class="p-4 w-1/2 sm:w-full">
-            <div class="text-white text-6xl sm:text-2xl w-9/12 sm:w-full sm:text-center sm:pb-8">
+          <div class="p-4 w-1/2 sm:w-full mt-auto">
+            <div class="text-white text-6xl md:text-4xl sm:text-2xl w-9/12 md:w-full sm:w-full sm:text-center sm:pb-8 xl:ml-20 font-bold">
               Um hub <span class="textDecoration">cheio </span>  de vantagens.
             </div>
           </div>
         </div> 
         <div class="w-full flex flex-wrap justify-center pt-16 sm:pt-0">
-          <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto">
+          <div class="px-4 md:pl-0 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 md:h-48 sm:h-auto ">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.phoneFill" alt="Vantagem"  class="w-auto h-18 sm:h-12 "/>
               </div>
-              <div class="w-full pl-4 mt-auto mb-auto">
-                <div class="text-primary text-2xl sm:text-xl">
+              <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
+                <div class="text-primary text-2xl md:text-xl sm:text-xl">
                   Plataforma multibancos integrada.
                 </div>
-                <div clas="text-textPrimary text-sm sm:text-[0.4rem] pt-2">
+                <div clas="text-textPrimary text-sm md:text-base sm:text-[0.4rem] pt-2">
                   Simule, elabore suas propostas e gerencie tudo em um único ambiente totalmente digitalizado.
                 </div>
               </div>
             </div>
           </div>
-          <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto">
+          <div class="px-4 md:pl-0 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 md:h-48 sm:h-auto ">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.notebookFill" alt="Plataforma BestHub"  class="w-auto h-18 sm:h-12 "/>
               </div>
-              <div class="w-full pl-4 mt-auto mb-auto">
-                <div class="text-primary text-2xl sm:text-xl">
+              <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
+                <div class="text-primary text-2xl md:text-xl sm:text-xl">
                   Plataforma White Label.
                 </div>
-                <div clas="text-textPrimary text-sm sm:text-[0.4rem] pt-2">
+                <div clas="text-textPrimary text-sm md:text-base sm:text-[0.4rem] pt-2">
                   Com o BestHub você usa sua própria marca, entregando uma experiência diferenciada para seus cliente.
                 </div>
               </div>
             </div>
           </div>
-          <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto">
+          <div class="px-4 md:pl-0 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 md:h-48 sm:h-auto ">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.userFill" alt="Perfil do cliente"  class="w-auto h-18 sm:h-12 "/>
               </div>
-              <div class="w-full pl-4 mt-auto mb-auto">
-                <div class="text-primary text-2xl sm:text-xl">
+              <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
+                <div class="text-primary text-2xl md:text-xl sm:text-xl">
                   Perfil de crédito do cliente em tempo real.
                 </div>
-                <div clas="text-textPrimary text-sm sm:text-[0.4rem] pt-2">
+                <div clas="text-textPrimary text-sm md:text-base sm:text-[0.4rem] pt-2">
                   Em poucos cliques você descobre o perfil de crédito do seu cliente no mercado bancário.
                 </div>
               </div>
             </div>
           </div>
-          <div class="px-4 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
-            <div class="bg-bglightColor rounded-xl flex p-4 h-36 sm:h-auto">
+          <div class="px-4 md:pl-0 mb-8 w-1/2 sm:w-full sm:px-0 transition duration-450 ease-in-out transform hover:translate-y-1 hover:scale-105">
+            <div class="bg-bglightColor rounded-xl flex p-4 h-36 md:h-48 sm:h-auto ">
               <div class="mt-auto mb-auto">
                 <img :src="$options.imageConfig.icons.moneyFill" alt="Plataforma multibancos" class="w-auto h-18 sm:h-12 "/>
               </div>
-              <div class="w-full pl-4 mt-auto mb-auto">
-                <div class="text-primary text-2xl sm:text-xl">
+              <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm">
+                <div class="text-primary text-2xl md:text-xl sm:text-xl">
                   Potencialize seus ganhos.
                 </div>
-                <div clas="text-textPrimary text-sm sm:text-[0.4rem] pt-2">
+                <div clas="text-textPrimary text-sm sm:text-xs pt-2">
                   Com uma solução multibancos, você oferece as melhores condições para seus clientes 
                   com uma excelente remuneração por produtividade.
                 </div>
@@ -432,7 +431,7 @@
       </div>
       <div class="w-full  pt-10 sm:pt-4 md:pt-4  mr-auto ml-auto flex">
         <div class="w-7/12 flex justify-center mt-auto mb-auto">
-          <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8 text-white">
+          <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8 text-white marginl-40R marginl-12R marginl-50R marginl-24R">
             <div class="text-5xl sm:text-2xl md:text-4xl font-semibold ">
               Somos <span class="textDecoration">autoridade</span> no assunto.
             </div>
@@ -509,6 +508,11 @@ export default defineComponent({
     return {
       isVisible:false,
       value:1000000,
+      glitch: false,
+      glitch2: false,
+      glitch3: false,
+      glitch4: false,
+      glitch5: false,
     }
   },
   mounted() {
@@ -519,3 +523,10 @@ export default defineComponent({
   }
 })
 </script>
+<style>
+   @media (min-width:1880px) {
+    .marginXL{
+      margin-top: 7rem;
+    }
+  }
+</style>

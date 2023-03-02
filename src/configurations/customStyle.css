@@ -91,6 +91,13 @@
 	height: 100%;
 	position: relative;
   }
+  .bgFooter{
+	background-image: url("/images/Home/Rodapé.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
   .gradienteSBLight {
 	background: #0524DD;
 	background: linear-gradient(180deg, #0524DD 0%, #10069f 50%, #10069f 100%);
@@ -114,6 +121,10 @@
   }
   .maxWidth {
 	@apply w-full  max-w-[1200px] sm:max-w-full  mr-auto ml-auto sm:p-4 md:py-4 md:px-12 lg:p-4 ;
+  }
+
+  .maxWidthNone.maxWidth {
+	@apply w-full  max-w-[1200px] sm:max-w-full  mr-auto ml-auto sm:p-0 md:py-0 md:px-0 lg:p-0 ;
   }
   .bgMeioAzul{
 	background-image: url("/images/Home/fundoMeio.png");
@@ -196,7 +207,6 @@
     border-image-slice: 1;
   }
 
-  
   .bgBannerPrimary {
 	background-image: url("/images/CAPA_2_tlmhob.png");
 	background-size: cover;
@@ -432,4 +442,94 @@
 
 .borderWhite{
 	border: solid 1px white;
+}
+
+.glitchBlue{
+	box-shadow: 0 0 20px #0063f2, 0 0 20px #0063f2;
+	border-radius: 0.75rem;
+}
+.glitchBlue:hover{
+	box-shadow: 0 0 20px #0063f2, 0 0 20px #0063f2;
+	border-radius: 0.75rem;
+}
+
+/* usefull classes */
+
+  
+@media (min-width: 1880px) and (max-width:2000px) {
+    .marginl-15R{
+      margin-left: 15rem;
+    }
+    
+}
+
+@media (min-width: 2001px) and (max-width:2549rem) {
+    .marginl-24R{
+      margin-left: 24rem;
+    }
+}
+
+@media (min-width: 2550px) and (max-width:2870px) {
+    .marginl-40R{
+      margin-left: 40rem;
+    }
+}
+
+@media (min-width: 2871px) {
+	.marginl-50R{
+      margin-left: 50rem;
+	}
+}
+@media (max-width: 667px) {
+    .inputBase{
+    padding: 0.25rem;
+    }
+}
+
+@media ( min-width: 1024px) and (max-width: 1550px) {
+    .mb-0rem{
+      margin-bottom: 0rem;
+  }
+    .mt-0rem{
+      margin-top:0rem;
+    }
+}
+
+
+/* pop up cookies styles */
+.cookiesPopUP{
+	background: var(--bglightColor);
+	-webkit-box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
+	-moz-box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
+	box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
+	border-radius: 2rem 2rem 0% 0%;
+}
+
+/*bordas popOver e dropdown*/
+
+.borderB-complementary{
+	border-bottom:1.5px solid var(--complementaryColor1)
+}
+
+.optionsHover:hover{
+	background: #ffffff82;
+    border-radius: 0.5rem;
+	color: var(--complementaryColor1);
+	font-style: var(--complementaryColor1);
+}
+.optionsOpen{
+	background: #ffffff82;
+    border-radius: 0.5rem;
+	color: var(--complementaryColor1);
+	font-style: var(--complementaryColor1);
+}
+.bgPopUpHover{
+	background: #e0e0e0eb;
+}
+
+.shadowDark{
+	--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 39%), 0 4px 6px -4px rgb(0 0 0 / 42%);
+	--tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
 }

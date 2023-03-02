@@ -26,7 +26,6 @@ const image = {
       alt:"",
     },
   ],
-  
   aboutUs:{ 
     photoCEO: "/images/aboutUs/FotoGaspar.png",
     photoCOO: "/images/aboutUs/FotoGabi.png",
@@ -87,31 +86,19 @@ const image = {
       {img:"/images/cashBest/Celulares/02.png", alt:"As menores parcelas do mercado."},
       {img:"/images/cashBest/Celulares/03.png", alt:"As menores taxas de crédito."},
       {img:"/images/cashBest/Celulares/04.png", alt:"Atendimento humanizado 7 dias por semana."},
-      {img:"/images/cashBest/Celulares/05.png", alt:"Prazos de até 20 anos."},
+      {img:"/images/cashBest/Celulares/prazo.png", alt:"Prazos de até 420 meses."},
       
     ],
     sliderMoney1:[
       {img:"/images/cashBest/ImagensSeuDinheiro/ReformarOuConstruir.png", alt:"Reformar ou construir."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/AbrirUmNegocio.png", alt:"Abrir um negócio."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/CapitaldeGiro.png", alt:"Capital de giro."},
       {img:"/images/cashBest/ImagensSeuDinheiro/Investir.png", alt:"Investir."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/ObtencaoDeBens.png", alt:"Obtenção de bens."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/PagarSuasDividas.png", alt:"Pagar suas dividas."},
     ],
     sliderMoney2:[
-      {img:"/images/cashBest/ImagensSeuDinheiro/CapitaldeGiro.png", alt:"Capital de giro."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/Investir.png", alt:"Investir."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/ObtencaoDeBens.png", alt:"Obtenção de bens."},
       {img:"/images/cashBest/ImagensSeuDinheiro/PagarSuasDividas.png", alt:"Pagar suas dividas."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/ReformarOuConstruir.png", alt:"Reformar ou construir."},
       {img:"/images/cashBest/ImagensSeuDinheiro/AbrirUmNegocio.png", alt:"Abrir um negócio."},
     ],
     sliderMoney3:[
-      {img:"/images/cashBest/ImagensSeuDinheiro/PagarSuasDividas.png", alt:"Pagar suas dividas."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/ReformarOuConstruir.png", alt:"Reformar ou construir."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/AbrirUmNegocio.png", alt:"Abrir um negócio."},
       {img:"/images/cashBest/ImagensSeuDinheiro/CapitaldeGiro.png", alt:"Capital de giro."},
-      {img:"/images/cashBest/ImagensSeuDinheiro/Investir.png", alt:"Investir."},
       {img:"/images/cashBest/ImagensSeuDinheiro/ObtencaoDeBens.png", alt:"Obtenção de bens."},
     ],
     sliderTutorial:[

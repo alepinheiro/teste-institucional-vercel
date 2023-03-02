@@ -163,7 +163,7 @@
       
     </div>
     <div class="md:hidden xl:hidden lg:hidden maxWidth">
-      <div class="text-8xl lg:text-6xl text-center pb-8 sm:text-5xl md:text-6xl titleFontBold  text-white  " >
+      <div class="text-7xl lg:text-5xl text-center pb-8 sm:text-5xl md:text-6xl titleFontBold  text-white  " >
           E o que é <br/>Home<span class="textDecoration">  Equity?</span>
         </div>
       <div class="text-white text-sm text-center pb-6">
@@ -217,7 +217,7 @@
         <img :src="$options.imageConfig.cashBest.photoMan" alt="Home Equity" class="w-full h-auto "/>
       </div>
       <div class="w-6/12 sm:w-8/12 mt-auto mb-auto">
-        <div class="text-8xl lg:text-6xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
+        <div class="text-7xl lg:text-5xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
           E o que é <br/>Home<span class="textDecoration">  Equity?</span>
         </div>
         <div class="text-white text-xl  sm:text-xs md:text-sm text-right w-11/12 mr-0 ml-auto mt-12 sm:mt-6">

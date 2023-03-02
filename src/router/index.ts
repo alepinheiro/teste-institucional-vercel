@@ -63,16 +63,17 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: "/emprestimo-com-garantia-de-veiculo/BestCar",
-    name: "BestCar",
+    name: "BestCarLP",
     component: () => import("@/views/BestCarLP.vue"),
   },
   {path:"/emprestimo-com-garantia-de-veiculo",
-    name: "BestCarLP",
-    component: () => import("@/views/BestCarLP.vue"),
+    name: "BestCar",
+    component: () => import("@/views/BestCar.vue"),
   },
   {
     path: "/financiamento-veicular",
     name: "BestCarFinan",
+<<<<<<< HEAD
     component: () => import("@/views/BestCarFinanLP.vue"),
   },
   {
@@ -80,6 +81,16 @@ const routes: Array<RouteRecordRaw> = [
   name: "BestNews",
   component: () => import("@/views/BestNewsLP.vue"),
   },
+=======
+    component: () => import("@/views/BestCarFinan.vue"),
+  },
+  {
+  path: "/financiamento-veicular/BestCarFinan",
+  name: "BestCarFinanLP",
+  component: () => import("@/views/BestCarFinanLP.vue"),
+  },
+
+>>>>>>> staging
 ];
 
 const router = createRouter({
