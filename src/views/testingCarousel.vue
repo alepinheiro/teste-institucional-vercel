@@ -10,7 +10,7 @@
                     <path d="M7.5 5.5l-6 6 6 6l1.41-1.41L4.33 12l4.58-4.58z"/>
                 </svg>
             </button>
-            <button @click= "clickNext(), moveR()" class="w-4 h-4" id="nextBtn">
+            <button @click= "clickNext()" class="w-4 h-4" id="nextBtn">
                 <svg class="arrow-right w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M7.5 5.5l-6 6 6 6l1.41-1.41L4.33 12l4.58-4.58z"/>
                 </svg>
@@ -55,6 +55,7 @@ export default {
             topic3: "Os melhores bancos do mercado",
             btnMt: "xl:mt-8",
             internCard: "xl:pt-8",
+            translateX: 0,
          },
          {
             titlePart1: "Finan",
@@ -66,6 +67,7 @@ export default {
             topic3: "Os melhores bancos do mercado",
             btnMt: "xl:mt-8",
             internCard: "xl:pt-8",
+            translateX: 0,
          },    
         ]
     },
@@ -106,6 +108,7 @@ export default {
   transition: all .3s ease-in-out;
   z-index: 1;
   opacity: 1;
+
 }
 
 
