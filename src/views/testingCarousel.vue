@@ -1,123 +1,201 @@
-<template lang="">
-    <div class="w-screen h-screen">
-        <div class="flex flex-wrap flex-row maxWidth justify-center w-full">
-            <carousel  v-for="(card, index) in cards" :key="card.id"  
-            :titlePart1="card.titlePart1" :titlePart2="card.titlePart2" :subtitle1="card.subtitle1" :subtitle2="card.subtitle2"
-            :topic1="card.topic1" :topic2="card.topic2" :topic3="card.topic3" :btnMt="card.btnMt" :internCard="card.internCard" :activeIndex="activeIndex" :class="{ 'cardActive': index === activeIndex, 'cardInative': index !== activeIndex}"/>
-          <div class="flex flex-wrap sticky xl:mt-[2%] lg:mt-[3%] gap-28">
-            <button @click="clickPrev()" class="w-4 h-4" id="prevBtn">
-                <svg class="arrow-left w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M7.5 5.5l-6 6 6 6l1.41-1.41L4.33 12l4.58-4.58z"/>
-                </svg>
-            </button>
-            <button @click= "clickNext()" class="w-4 h-4" id="nextBtn">
-                <svg class="arrow-right w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M7.5 5.5l-6 6 6 6l1.41-1.41L4.33 12l4.58-4.58z"/>
-                </svg>
-            </button>
-        </div>
-
-        </div>
-    </div>
+<template>
+  <div class="maxWidth h-screen overflow-hidden">
+  <carousel :itemsToShow="3" :wrapAround="true" :transition="400" >
+    <slide :key="slide"  :style="{'width' : auto}">
+      <div class="w-full  max-w-sm p-4">
+                <div class="border-1 rounded-xl w-full text-white ">
+                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
+                    <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
+                    <div class="text-xl defaultFont">Conheça o Crédito com </div>
+                    <div class="text-xl defaultFont">garantia de imóvel</div>
+                  </div>
+                  <div class="w-full p-6 bg-secondary rounded-b-xl">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Prazos de até 20 anos
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Até 60% do valor do imóvel como capital
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-6 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
+                    </div>
+                  </div>
+                </div>
+              </div>        
+    </slide>
+    <slide :key="slide" :style="{'width' : auto}">
+      <div class="w-full  max-w-sm p-4">
+                <div class="border-1 rounded-xl w-full text-white ">
+                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
+                    <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
+                    <div class="text-xl defaultFont">Conheça o Crédito com </div>
+                    <div class="text-xl defaultFont">garantia de imóvel</div>
+                  </div>
+                  <div class="w-full p-6 bg-secondary rounded-b-xl">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Prazos de até 20 anos
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Até 60% do valor do imóvel como capital
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-6 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
+                    </div>
+                  </div>
+                </div>
+              </div>        
+    </slide>
+    <slide :key="slide" :style="{'width' : auto}" >
+      <div class="w-full  max-w-sm p-4">
+                <div class="border-1 rounded-xl w-full text-white ">
+                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
+                    <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
+                    <div class="text-xl defaultFont">Conheça o Crédito com </div>
+                    <div class="text-xl defaultFont">garantia de imóvel</div>
+                  </div>
+                  <div class="w-full p-6 bg-secondary rounded-b-xl">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Prazos de até 20 anos
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Até 60% do valor do imóvel como capital
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-6 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
+                    </div>
+                  </div>
+                </div>
+              </div>        
+    </slide>
+    <template #addons>
+      <navigation />
+      <pagination />
+    </template>
+  </carousel>
+</div>
 </template>
+
 <script>
-import carousel from '@/components/pop-up/carousel.vue';
+
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+
 export default {
-    components: {carousel},
-    data(){
-        return {
-            cards:[],
-            activeIndex: 1,
-        }
-    },
-    methods: {
-    cardCount() {
-        this.cards = [
-        {
-            titlePart1: 'Cash',
-            titlePart2: 'Best',
-            subtitle1: 'Conheça o Crédito com',
-            subtitle2: "garantia de imóvel",
-            topic1: "Taxa As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa",
-            topic2: "Prazos de até 20 anos",
-            topic3: " Até 60% do valor do imóvel como capital",
-            btnMt: "xl:mt-6",
-            internCard: "xl:pt-6",
- 
-        },
-        {
-            titlePart1: "Finan",
-            titlePart2:"Best",
-            subtitle1: "As melhores soluções em",
-            subtitle2: "Financiamento imobiliário",
-            topic1: "Taxas a partir de 9,70% a.a. + taxas referencial",
-            topic2: "Pague em até 420 meses",
-            topic3: "Os melhores bancos do mercado",
-            btnMt: "xl:mt-8",
-            internCard: "xl:pt-8",
-            translateX: 0,
-         },
-         {
-            titlePart1: "Finan",
-            titlePart2:"Best",
-            subtitle1: "As melhores soluções em",
-            subtitle2: "Financiamento imobiliário",
-            topic1: "Taxas a partir de 9,70% a.a. + taxas referencial",
-            topic2: "Pague em até 420 meses",
-            topic3: "Os melhores bancos do mercado",
-            btnMt: "xl:mt-8",
-            internCard: "xl:pt-8",
-            translateX: 0,
-         },    
-        ]
-    },
-    clickNext(){
-        const numCards = this.cards
-
-        if(this.activeIndex === numCards.length - 1){
-            this.activeIndex = 0
-        } else{
-            this.activeIndex++
-        }
-    },
-
-    clickPrev(){
-        if(this.activeIndex === 0 ){
-            this.activeIndex = 2
-        } else{
-            this.activeIndex--
-        }
-    },
-
- },
- beforeMount() {
-    this.cardCount()
+  name: 'App',
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
+  },
+  data(){
+    return{
+      auto: 'auto',
+    }
   }
 }
 </script>
-<style>
-.cardInative{
-  transform: scale(0.8);
-  transform-style: preserve-3d; /* para colocar no container do carousel*/
+<style scoped>
+
+
+.carousel__viewport {
+  perspective: 1000px;
+  height: 100%;
+}
+.carousel__track {
+  transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+  transition: 0.5s;
+}
+
+.carousel__slide {
+  opacity: 0.9;
+  transform: rotateY(-20deg) scale(0.8);
+}
+
+.carousel__slide--active ~ .carousel__slide {
+  transform: rotateY(20deg) scale(0.8);
+}
+
+.carousel__slide--prev {
+  opacity: 0.8;
+  transform: rotateY(-10deg) scale(0.8);
   z-index: 0;
-  opacity: 0.5;
+  margin-left: 4rem;
+  
 }
 
-.cardActive {
-  position: relative;
-  transition: all .3s ease-in-out;
-  z-index: 1;
+.carousel__slide--next {
+  opacity: 0.8;
+  transform: rotateY(10deg)  scale(0.8);
+  z-index: 0;
+}
+
+.carousel__slide--active {
   opacity: 1;
-
+  transform: rotateY(0) scale(1);
+  z-index: 1;
 }
-
-
-.arrow-right{
-    fill:black;
-    transform: rotate(180deg);
-}
-.arrow-left{
-    fill:black;
-
+.carousel__slide--clone{
+  display: none;
 }
 </style>
