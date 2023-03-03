@@ -296,9 +296,13 @@ export default {
 @media (min-width: 1280px) {
   .carousel__track{
     margin: 0 -1570px !important;
-
   }
+    .carousel__next {
+    right: 45px;
 }
+
+}
+
 
 @media (min-width: 1024px) and (max-width: 1279px ) {
   .carousel__track{
