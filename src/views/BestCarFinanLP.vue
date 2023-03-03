@@ -56,6 +56,7 @@
             </div>
         </div>
     </div>
+
     <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-3 lg:pt-0 md:pt-0" >
         <div class="maxWidth sm:p-0 p-0Max  flex justify-center ">
             <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
@@ -90,7 +91,6 @@
     </div>
   </div>
   <rodape />
-  </div>
 </div>  
 </template>
 

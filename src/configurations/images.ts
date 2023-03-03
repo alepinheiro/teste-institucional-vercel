@@ -198,6 +198,13 @@ const image = {
     imgBestCar: "/images/BestCar/CABELHO_BESTCAR.png",
     imgFinanCar: "/images/BestCar/CABELHO_FINANCAR.png",
   },
+  bestNews:{
+    doublePhone: "/images/BestNews/celularNews.png",
+    bgSejaBestSide: "/images/BestNews/bgSide.png",
+    bestNewsLinkedin: "/images/BestNews/Logo BestNewsLinkedin.svg",
+    bestNewsTelegram: "/images/BestNews/LogoBestNewsTelegram.svg",
+    youBest: "/images/BestNews/Logo YouBest.svg",
+  },
 };
 
 export default image;
