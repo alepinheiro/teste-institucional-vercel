@@ -26,7 +26,7 @@
                     </div>
                     <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorVeicular+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                     </div>
@@ -72,7 +72,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorVeicular+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="w-3/12 ">
                       <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        <a :href="$options.information.simuladorVeicular+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Simular</a>
                       </div>
                     </div>

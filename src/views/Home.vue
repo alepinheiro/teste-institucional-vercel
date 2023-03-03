@@ -138,7 +138,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-6 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -181,7 +181,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-8 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -222,7 +222,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-8 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorVeicular+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -263,7 +263,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-6 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorVeicular+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -309,7 +309,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-6 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -352,7 +352,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-8 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -393,7 +393,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-8 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorVeicular+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
@@ -434,7 +434,7 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 mt-6 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.simuladorVeicular+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Faça uma simulação</a>
                     </div>
                   </div>
