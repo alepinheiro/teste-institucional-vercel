@@ -197,9 +197,11 @@ const image = {
     gráficoFinan: "/images/BestCar/GRÁFICO_FINANCIAMENTO.svg",
     imgMulher: "/images/BestCar/IMAGEM_MULHER.png",
   },
-  ilustrations:{
-    cookie:"/images/ilustration/Cookie2.svg"
-  }
+  partnersNew:{
+    newCashme:"/images/Home/novosParceiros/SELO CASHME 2022.png",
+    seloC6:"/images/Home/novosParceiros/SELO CONEXÃO C6.png",
+    seloDaycoval:"/images/Home/novosParceiros/SELO DAYCOVAL 2022.png",
+  },
 };
 
 export default image;

@@ -99,9 +99,9 @@
           Conheça as melhores soluções em Crédito Imobiliário do mercado:
         </div>
         <div>
-          <testingCarousel />
+          <testingCarousel  class="md:hidden sm:hidden lg:hidden"/>
         </div>
-        <div class="w-full md:hidden lg:hidden xl:hidden">
+        <div class="w-full  md:hidden sm:hidden xl:hidden">
           <Splide  :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
             } " aria-label="Vantagens para você">
             <SplideSlide >
@@ -187,9 +187,278 @@
                   </div>
                 </div>
               </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div class="w-full mr-auto ml-auto max-w-sm md:w-11/12 p-4" id="card3">
+                <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
+                  <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
+                    <div class="text-4xl titleFont">Car<span class="font-semibold">Best</span></div>
+                    <div class="text-xl defaultFont">Empréstimo com</div>
+                    <div class="text-xl defaultFont">Garantia de veículo</div>
+                  </div>
+                  <div class="w-full p-6 rounded-b-xl ">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Taxas a partir de 1,59% a.a. + taxas referenciais
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-8 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Pague em até 60 meses
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-8 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                       Use seu carro, utilitário ou caminhão
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-8 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
+                    </div>
+                  </div>
+                </div>
+              </div>       
+    </SplideSlide>
+    <SplideSlide>
+      <div class="w-full  max-w-sm md:w-11/12 p-4 ml-auto mr-auto" >
+                <div class="border-1 rounded-xl w-full text-white ">
+                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
+                    <div class="text-4xl titleFont">Financiamento veicular</div>
+                    <div class="text-xl defaultFont">Seu sonho de ter um</div>
+                    <div class="text-xl defaultFont">veículo está a uma simulação!</div>
+                  </div>
+                  <div class="w-full p-6 bg-secondary rounded-b-xl">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        As menores taxas do mercado, a partir de 1,49% + taxa referencial
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Pague em até 5 anos
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Financiamento de carros novos e seminovos.
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-6 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
+                    </div>
+                  </div>
+                </div>
+              </div>        
             </SplideSlide>  
           </Splide>  
         </div>
+        <div class="w-full lg:hidden xl:hidden">
+          <Splide  :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
+            } " aria-label="Vantagens para você">
+            <SplideSlide >
+              <div class="w-10/12 mr-auto ml-auto max-w-sm p-4">
+                <div class="border-1 rounded-xl w-full text-white ">
+                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
+                    <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
+                    <div class="text-xl defaultFont">Conheça o Crédito com </div>
+                    <div class="text-xl defaultFont">garantia de imóvel</div>
+                  </div>
+                  <div class="w-full p-6 bg-secondary rounded-b-xl">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Prazos de até 20 anos
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Até 60% do valor do imóvel como capital
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-6 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SplideSlide>
+            <SplideSlide >
+              <div class="w-10/12 mr-auto ml-auto max-w-sm p-4">
+                <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
+                  <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
+                    <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
+                    <div class="text-xl defaultFont">As melhores soluções em </div>
+                    <div class="text-xl defaultFont
+                    
+                    ">Financiamento imobiliário</div>
+                  </div>
+                  <div class="w-full p-6 rounded-b-xl ">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Taxas a partir de 9,70% a.a. + taxas referencial
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-8 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Pague em até 420 meses
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-8 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Os melhores bancos do mercado
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-8 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div class="w-full mr-auto ml-auto max-w-sm md:w-11/12 p-4" id="card3">
+                <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
+                  <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
+                    <div class="text-4xl titleFont">Car<span class="font-semibold">Best</span></div>
+                    <div class="text-xl defaultFont">Empréstimo com</div>
+                    <div class="text-xl defaultFont">Garantia de veículo</div>
+                  </div>
+                  <div class="w-full p-6 rounded-b-xl ">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Taxas a partir de 1,59% a.a. + taxas referenciais
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-8 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Pague em até 60 meses
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-8 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                       Use seu carro, utilitário ou caminhão
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-8 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
+                    </div>
+                  </div>
+                </div>
+              </div>       
+    </SplideSlide>
+    <SplideSlide>
+      <div class="w-full  max-w-sm md:w-11/12 p-4 ml-auto mr-auto" >
+                <div class="border-1 rounded-xl w-full text-white ">
+                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
+                    <div class="text-4xl titleFont">Financiamento veicular</div>
+                    <div class="text-xl defaultFont">Seu sonho de ter um</div>
+                    <div class="text-xl defaultFont">veículo está a uma simulação!</div>
+                  </div>
+                  <div class="w-full p-6 bg-secondary rounded-b-xl">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        As menores taxas do mercado, a partir de 1,49% + taxa referencial
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Pague em até 5 anos
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-xl w-full">
+                        Financiamento de carros novos e seminovos.
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-6 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
+                    </div>
+                  </div>
+                </div>
+              </div>        
+            </SplideSlide>   
+          </Splide>  
+        </div>
+    </div>
+    <div class="w-full pt-30 pb-10 md:pt-8 sm:pt-8 flex justify-center flex-col items-center">
+      <p class="defaultFontBold text-5xl md:text-3xl sm:text-2xl  text-white sm:text-center"> Reconhecida pelo mercado nacional </p>
+      <p class=" mt-1 text-2xl md:text-xl sm:text-lg text-white"> Conheça nossos últimos destaques </p>
+      <div class="maxWidth flex flex-row justify-between mt-6">
+        <div class="w-1/3 sm:w-2/4 sm:pl-4  mb-auto mt-4">
+          <img :src="$options.imageConfig.partnersNew.newCashme" alt="SejaBest"  class="w-44 sm:w-36 h-auto mr-auto ml-auto sm:ml-0"/>
+        </div>
+        <div class="w-1/3 sm:w-2/4 sm:flex  sm:justify-center sm:pl-4 mt-auto mb-auto">
+          <img :src="$options.imageConfig.partnersNew.seloC6" alt="SejaBest"  class="w-44 sm:w-36 sm:self-center h-auto mr-auto ml-auto sm:ml-0"/>
+        </div>
+        <div class="w-1/3 sm:w-2/4 sm:pl-4 mt-auto mb-auto">
+          <img :src="$options.imageConfig.partnersNew.seloDaycoval" alt="SejaBest"  class="w-44 sm:w-36 h-auto mr-auto ml-auto sm:ml-0"/>
+        </div>
+      </div>
+
     </div>
     <div class="w-full pt-24 md:pt-8 sm:pt-8 sm:bg-bglightColor">
       <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto sm:ml-0S" >
@@ -473,12 +742,16 @@
 import { defineComponent } from 'vue';
 import topbarComponent from '@/components/structure/topbar.component.vue';
 import cookiesPopUp from '@/components/pop-up/cookies.vue';
-import testingCarousel from './testingCarousel.vue';
+import testingCarousel from '@/components/pop-up/carouselHome.vue';
+import { SplideSlide } from '@splidejs/vue-splide';
 export default defineComponent({
   name: 'Home',
   components:{
-    topbarComponent, cookiesPopUp,testingCarousel
-  },
+    topbarComponent,
+    cookiesPopUp,
+    testingCarousel,
+    SplideSlide
+},
   data() {
     return {
       isVisible:false,
