@@ -1,5 +1,5 @@
 <template>
-  <div class="text-textPrimary bg-bglight2Color">
+  <div class="text-textPrimary bg-bglight2Color overflow-x-hidden overflow-y-hidden">
     <div class="w-full  ">
       <div class="maxWidth p-aboutPage p-0" >
         <topbarComponent class="p-4" position="top" />
@@ -29,7 +29,7 @@
         
       </div>
       <div class="w-full bg-primary pt-8">
-        <div class="text-center maxWidth  text-4xl sm:text-2xl md:text-3xl pt-12 text-white">
+        <div class="text-center maxWidth  text-4xl sm:text-2xl md:text-3xl pt-12 text-white font-bold">
           Por isso, a <span class="text-bold ">SejaBest</span> foi construída sobre 
           <span class="text-bold textDecoration">3 pilares:</span>
         </div>
