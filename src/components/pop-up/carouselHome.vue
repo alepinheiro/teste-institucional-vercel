@@ -298,7 +298,7 @@ export default {
 
 @media (min-width: 1024px) and (max-width: 1279px ) {
   .carousel__track{
-    margin: 0 0 0 -218vh!important;
+    margin: 0 0 0 -290vh!important;
 
   }
 }
