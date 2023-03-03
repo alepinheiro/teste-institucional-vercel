@@ -2,7 +2,7 @@
   <div class="w-full bg-gradient-to-r from-primary to-secondary pb-4  bgFooter " >
     <div class="maxWidth flex justify-center sm:h-auto md:h-[200px]">
       <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta"
-         class="lg:hidden md:hidden xl:hidden w-[10rem] absolute bottom-[-1.77rem] sm:bottom-[-0.5rem] sm:left-[-0.5rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
+         class="lg:hidden md:hidden xl:hidden w-[10rem] absolute bottom-[-1.77rem] sm:bottom-[-0.5rem] sm:left-[0.25rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
       <div class="w-3/12 sm:w-6/12 md:w-4/12 relative sm:hidden">
        <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta"
          class="w-full absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>

@@ -65,7 +65,7 @@
   import FaqFinan from "@/components/vehicle/BestCarFinan/FaqFinan.vue";
   import Carousel from "@/components/vehicle/BestCarLP/carousel.vue";
   import comparativeBoardFinan from "@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue";
-  import rodape from "@/components/base/rodape.vue";
+  import rodape from "@/components/base/bannerBottomPage.vue";
   export default defineComponent({
     name: "BestCarFinanLP",
     components: { topBarVideo, cardWhite, stepByStep, partnersLabelGrey, FaqFinan, Carousel, comparativeBoardFinan, rodape },

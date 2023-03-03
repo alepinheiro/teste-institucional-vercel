@@ -458,7 +458,7 @@
   </div>
   <div class="w-full  pt-10 sm:pt-4 md:pt-4 mr-auto ml-auto flex">
      <div class="w-7/12 sm:w-9/12 flex justify-center mt-auto mb-auto">
-      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 sm:p-0 sm:pl-1 md:pl-8  marginl-15R marginl-24R marginl-40R marginl-50R">
+      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 sm:p-0 sm:pl-6 md:pl-8  marginl-15R marginl-24R marginl-40R marginl-50R">
         <div class="text-5xl sm:text-2xl md:text-4xl font-semibold text-primary ">
           Transformando sua vida através da <span class="textDecoration">informação.</span>
         </div>
@@ -511,7 +511,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import topbarComponent from '@/components/structure/topbar.component.vue';
-import rodape from '@/components/base/rodape.vue';
+import rodape from '@/components/base/bannerBottomPage.vue';
 export default defineComponent({
   name: 'Home',
   components:{

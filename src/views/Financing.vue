@@ -448,7 +448,7 @@
 import { defineComponent } from 'vue';
 import popUpVideo from "@/components/base/popUpVideo.component.vue"
 import topbarComponent from '@/components/structure/topbar.component.vue';
-import rodape from '@/components/base/rodape.vue';
+import rodape from '@/components/base/bannerBottomPage.vue';
 export default defineComponent({
   name: 'Financing',
   components:{
