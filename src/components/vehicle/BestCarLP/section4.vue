@@ -4,7 +4,7 @@
             <h1 class="text-4xl sm:text-3xl font-bold text-white pb-8">Dúvidas frequentes</h1>   
             <Faq />
         </div>
-        <h1 class="maxWidth text-4xl sm:text-2xl text-white text-center pt-5l pb-5 sm:pb-2 font-bold">
+        <h1 class="maxWidth text-4xl sm:text-2xl text-white text-center pt-5l pb-5 sm:pb-2">
             Quem sonhou, se organizou e<br />
             investiu com a ajuda da SejaBest
         </h1>

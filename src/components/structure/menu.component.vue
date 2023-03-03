@@ -5,10 +5,13 @@
       <router-link :to="'/'+this.$root.utms" class="decoration" > Início </router-link>
     </div>
     <div :class="linkStyle">
-      <dropdownMenu />
+      <router-link :to="'/sobre'+this.$root.utms" class="decoration" activeClass: > Sobre </router-link>
     </div>
     <div :class="linkStyle">
-      <dropdownForB />
+      <router-link :to="'/home-equity'+this.$root.utms" class="decoration" > Home Equity  </router-link>
+    </div>
+    <div :class="linkStyle">
+      <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="decoration" > Financiamento </router-link>
     </div>
     <div :class="linkStyle">
       <router-link :to="'/parceiro'+this.$root.utms" class="decoration" > Seja um Parceiro </router-link>
@@ -17,9 +20,7 @@
       <a :href="'https://portal.seja.best/'+this.$root.utms" class="decoration"
         target="_blank"> Portal</a>
     </div>
-    <div :class="linkStyle">
-      <router-link :to="'/sobre'+this.$root.utms" class="decoration" activeClass: > Sobre </router-link>
-    </div>
+    
   </div>
   <div class="flex">
 
@@ -27,6 +28,7 @@
     transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:px-1 lg:text-sm">
 
       <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+
         target="_blank">Simule seu crédito</a>
     </div>
   </div>
@@ -34,13 +36,8 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
-import dropdownMenu from '../base/dropdownMenu.vue';
-import dropdownForB from '../base/PopUpForBusiness.vue';
 export default defineComponent({
   name: 'menuComponent',
-  components: {
-    dropdownMenu, dropdownForB,
-  },
   props:{
     linkStyle:String
   },
@@ -52,18 +49,3 @@ export default defineComponent({
 
 })
 </script>
-
-<style>
-@media (min-width:1024px) and (max-width:1279px) {
-	.linkStyleDark{
-		padding-left: 0rem;
-		padding-right: 0rem;
-		margin-right: 1.25rem;
-	}
-  .linkStyle{
-		padding-left: 0rem;
-		padding-right: 0rem;
-		margin-right: 1.25rem;
-	}
-}
-</style>

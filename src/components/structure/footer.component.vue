@@ -165,7 +165,7 @@
          de juros de 1,09% ao mês + IPCA, Sistema de Amortização Price. CET de 16,38% ao ano.
       </div>
       <div class="text-xs text-textSecondary ">
-        Seja.best pertence à Sejabest Fintech de Credito Imobiliario LTDA, CNPJ 26.915.796/0001-04, com sede na 
+        Seja.best pertence à Best fintech de crédito imobiliário, CNPJ 26.915.796/0001-04, com sede na 
         Rua Miguel Matte, 687, sala 801, Ed. Evolution – CEP 88331-030, Pioneiros, Balneário Camboriú – SC.
       </div>
       <div class=""> 

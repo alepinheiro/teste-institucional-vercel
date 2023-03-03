@@ -38,7 +38,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="w-3/12 ">
                       <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                        <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Simular</a>
                       </div>
                     </div>
@@ -145,7 +145,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -163,7 +163,7 @@
       
     </div>
     <div class="md:hidden xl:hidden lg:hidden maxWidth">
-      <div class="text-7xl lg:text-5xl text-center pb-8 sm:text-5xl md:text-6xl titleFontBold  text-white  " >
+      <div class="text-8xl lg:text-6xl text-center pb-8 sm:text-5xl md:text-6xl titleFontBold  text-white  " >
           E o que é <br/>Home<span class="textDecoration">  Equity?</span>
         </div>
       <div class="text-white text-sm text-center pb-6">
@@ -205,7 +205,7 @@
                 </div>
               </div>
               <div class="buttonComplementaryColor1 mt-6 text-center">
-                <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
+                <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                   target="_blank">Faça uma simulação</a>
               </div>
             </div>
@@ -217,7 +217,7 @@
         <img :src="$options.imageConfig.cashBest.photoMan" alt="Home Equity" class="w-full h-auto "/>
       </div>
       <div class="w-6/12 sm:w-8/12 mt-auto mb-auto">
-        <div class="text-7xl lg:text-5xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
+        <div class="text-8xl lg:text-6xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
           E o que é <br/>Home<span class="textDecoration">  Equity?</span>
         </div>
         <div class="text-white text-xl  sm:text-xs md:text-sm text-right w-11/12 mr-0 ml-auto mt-12 sm:mt-6">
@@ -229,7 +229,7 @@
         </div>
         <div class="pt-6 sm:pt-4 text-right" >
           <button class="buttonComplementaryColor1"><a class="sm:text-sm text-2xl"
-            :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
+            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a> </button>
         </div>
       </div>
@@ -394,7 +394,7 @@
         
       </div>
       <div class=" p-4" v-if="tutorial.show1">
-        A simulação é feita através do nosso <a :href="$options.information.appRealEstateSimulator+this.$root.utms" class="text-primary" style=" text-decoration: none;"
+        A simulação é feita através do nosso <a :href="$options.information.appSimulator+this.$root.utms" class="text-primary" style=" text-decoration: none;"
             target="_blank">simulador.</a> Em até minutos você tem o resultado, porque seu tempo é valioso.
       </div>
     </div>
@@ -534,7 +534,7 @@
         <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
          <button class="buttonComplementaryColor1">
           <a 
-            :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
+            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a></button>
         </div>
         <div class="w-full flex">
