@@ -17,18 +17,22 @@
                     <text class="text-lg lg:text-sm lg:mb-1 lg:leading-6 flex items-center self-center sm:text-center xl:leading-8 md:text-sm">
                         Veja explicações sobre financiamento imobiliário, empréstimo com garantia de imóvel e informações sobre taxas.
                     </text>
+                    <a :href="$options.information.socialMediaUTM.youtube"  >
                     <button class="bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 mt-5 lg:mt-0 rounded-xl p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full lg:normal-case md:normal-case  md:w-full sm:w-7/12 sm:text-sm xl:text-sm">
                         Assista de graça
                     </button>
+                    </a>
                 </div>
             <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4">
                 <img :src="$options.imageConfig.bestNews.bestNewsTelegram" class="w-36 md:w-28  lg:w-30 pb-2 pt-2 lg:pt-4 sm:self-center"/>
                 <text class="text-lg lg:text-sm lg:mb-1 lg:leading-6 flex items-center self-center sm:text-center xl:leading-8  md:text-sm">
                     Ao entrar no nosso grupo no telegram, você recebe o conteúdo novo antes de todo mundo, assim que a gente posta.
                 </text>
+                <a  :href="$options.information.socialMediaUTM.telegram" >
                 <button class="bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full md:w-full sm:w-7/12 sm:text-sm  lg:normal-case md:normal-case xl:text-sm">
                     Exlcusividade agora
                 </button>
+                </a>
             </div>
             <div class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4">
                 <img :src="$options.imageConfig.bestNews.bestNewsLinkedin" class="w-36 md:w-28  lg:w-30 pb-2 pt-4 sm:self-center"/>
@@ -36,9 +40,11 @@
                     Vamos conversar sobre empreendedorismo, carreira, rotina da empresa e, claro, o que você precisa para ser Best.
                 </text>
                 <div class="md:justify-center md:flex sm:flex sm:justify-center">
+                <a  :href="$options.information.socialMediaUTM.linkedin"  >
                 <button class="bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 mt-5 lg:mt-0 rounded-xl p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full lg:normal-case md:normal-case md:w-full sm:w-7/12 sm:text-sm  xl:text-sm">
                     Quero ser best
                 </button>
+                </a>
                 </div>               
             </div>
             </div>
