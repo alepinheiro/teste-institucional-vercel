@@ -1,5 +1,5 @@
 <template>
-<div class="w-full bg-bglight2Color">
+<div class="w-full bg-bglight2Color overflow-x-hidden overflow-y-hidden">
   <div class="text-textPrimary gradienteSBLight">
     <div class="bgCashBest sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
@@ -37,7 +37,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="w-3/12 ">
                       <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Simular</a>
                       </div>
                     </div>
@@ -144,7 +144,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -162,7 +162,7 @@
       
     </div>
     <div class="md:hidden xl:hidden lg:hidden maxWidth">
-      <div class="text-8xl lg:text-6xl text-center pb-8 sm:text-5xl md:text-6xl titleFontBold  text-white  " >
+      <div class="text-7xl lg:text-5xl text-center pb-8 sm:text-5xl md:text-6xl titleFontBold  text-white  " >
           E o que é <br/>Home<span class="textDecoration">  Equity?</span>
         </div>
       <div class="text-white text-sm text-center pb-6">
@@ -204,7 +204,7 @@
                 </div>
               </div>
               <div class="buttonComplementaryColor1 mt-6 text-center">
-                <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                   target="_blank">Faça uma simulação</a>
               </div>
             </div>
@@ -216,8 +216,8 @@
         <img :src="$options.imageConfig.cashBest.photoMan" alt="Home Equity" class="w-full h-auto xl:absolute lg:absolute 
         xl:w-116 lg:w-[28rem] xl:bottom-[-34rem] lg:bottom-[-31rem] mb-0rem"/>
       </div>
-      <div class="w-6/12 sm:w-8/12 mt-auto mb-auto">
-        <div class="text-8xl lg:text-6xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
+      <div class="w-6/12 sm:w-8/12 mt-auto mb-auto xl:mt-3 lg:mt-3">
+        <div class="text-7xl lg:text-5xl sm:text-5xl md:text-6xl titleFontBold text-right text-white  " >
           E o que é <br/>Home<span class="textDecoration">  Equity?</span>
         </div>
         <div class="text-white text-xl  sm:text-xs md:text-sm text-right w-11/12 mr-0 ml-auto mt-12 sm:mt-6">
@@ -229,14 +229,14 @@
         </div>
         <div class="pt-6 sm:pt-4 text-right" >
           <button class="buttonComplementaryColor1"><a class="sm:text-sm text-2xl"
-            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+            :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a> </button>
         </div>
       </div>
     </div>
     <div class="maxWidth flex py-24 sm:py-12">
       <div class="w-1/4 sm:w-1/2 text-white mt-auto mb-auto pr-4">
-        <div class="text-4xl sm:text-2xl md:text-2xl title-font ">
+        <div class="text-4xl sm:text-2xl md:text-2xl title-font font-bold">
           Apenas vantagens<br /> para você
         </div>
         <div class="py-6 text-lg sm:text-sm sm:py-2 ">
@@ -370,8 +370,8 @@
   <div class=" w-full xl:mt-[-10rem] sm:mt-[-8rem] flex justify-center sm:hidden md:hidden">
     <div class="ml-auto  mr-auto maxWidth">
       <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free' ,  height   : '25rem',trimSpace: 'move', 
-        rewind : true, pagination:true, arrows:true}" aria-label="Você pode obter o recurso para:">
-        <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderTutorial">
+        rewind : true, pagination:true, arrows:true}" aria-label="Você pode obter o recurso para:"  class="blueSplide">
+        <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderTutorial"  ref="splide">
           <div  class="">
             <img :src="slide.img" class="px-4 lg:pt-12" :alt="slide.alt">
           </div>
@@ -380,7 +380,7 @@
     </div>  
   </div>
   <div class="maxWidth xl:hidden lg:hidden">
-    <div class="titleFontBold text-5xl sm:text-4xl text-primary text-center py-12"> É tão simples que você só<br/> precisa de <span class="text-complementaryColor1 ">4 etapas</span></div>
+    <div class="titleFontBold text-5xl sm:text-4xl text-primary text-center py-12"> É tão simples que você só precisa de <span class="text-complementaryColor1 ">4 etapas</span></div>
     <div class="bg-bglight2Color shadow-xl border-1 rounded-xl p-4">
       <div class="flex w-full ">
         <div @click="showTutorial(1)" class="mt-auto mb-auto text-xl pr-4 text-primary">
@@ -394,7 +394,7 @@
         
       </div>
       <div class=" p-4" v-if="tutorial.show1">
-        A simulação é feita através do nosso <a :href="$options.information.appSimulator+this.$root.utms" class="text-primary" style=" text-decoration: none;"
+        A simulação é feita através do nosso <a :href="$options.information.appRealEstateSimulator+this.$root.utms" class="text-primary" style=" text-decoration: none;"
             target="_blank">simulador.</a> Em até minutos você tem o resultado, porque seu tempo é valioso.
       </div>
     </div>
@@ -452,10 +452,10 @@
   </div>
   <div class="w-full py-12">
       <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto" >
-        <div class="mt-auto mb-auto w-full bg-bglight2Color shadow-xl border-1 rounded-2xl flex-wrap flex justify-center p-6">
-          <div class="w-10/12">
+        <div class="mt-auto mb-auto w-full bg-bglight2Color shadow-xl border-1 rounded-2xl flex-wrap flex justify-center p-6 sm:p-2">
+          <div class="w-10/12 sm:w-11/12">
           <div class="w-full flex ml-8 sm:ml-0 py-4 ">
-            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl sm:text-xl sm:leading-5 text-primary text-center">Por que ser Best?</div>
+            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl sm:text-xl sm:leading-5 text-primary text-center font-bold">Por que ser Best?</div>
             <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
               <img :src="$options.imageConfig.logoVertical" alt="SejaBest" class="w-30 sm:w-24 h-auto mr-auto ml-auto"/>
             </div>
@@ -464,91 +464,65 @@
             </div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> As menores taxas do mercado </div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base"> As menores taxas do mercado </div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> Múltiplas opções de banco </div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base"> Múltiplas opções de banco </div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Plataforma multiprodutos</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Plataforma multiprodutos</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Transparência</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Transparência</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Processo agilizado</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Processo agilizado</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Atendimento 7 dias por semana</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Atendimento 7 dias por semana</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Assessoria personalizada</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Assessoria personalizada</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Totalmente Digital</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Totalmente Digital</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem burocracias</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Sem burocracias</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem filas</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Sem filas</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Foco no cliente</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Foco no cliente</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           </div>
         </div>
       </div>
   </div>
-  <div class="w-full bg-gradient-to-r from-primary to-secondary pb-4  mt-16 sm:mt-24 md:mt-24" >
-    <div class="maxWidth flex justify-center ">
-      <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
-       <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta"
-         class="w-full absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
-      </div>
-      <div class="w-9/12 sm:w-6/12 md:w-8/12">
-        <div class="text-white pt-4 titleFontBold text-7xl lg:text-4xl md:text-3xl sm:text-xl text-right">
-           E aí, vamos ser<br/> Best com a gente?
-        </div>
-        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
-         <button class="buttonComplementaryColor1">
-          <a 
-            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-            target="_blank">Faça uma simulação</a></button>
-        </div>
-        <div class="w-full flex">
-          <div class="w-9/12 lg:w-8/12 sm:w-5/12 md:w-7/12 border-b-1 border-white mt-auto mb-auto"></div>
-          <div class="w-3/12 lg:w-4/12 sm:w-7/12 md:w-5/12 text-right text-white">
-            <div class="font-semibold sm:text-xs md:text-sm">Gaspar Motta Filho</div>
-            <div class="text-sm sm:text-2xs">CEO & Founder - SejaBest</div>
-          </div>
-        </div>
-      </div>
-    </div>
-   
-  </div>
+  <rodape />
   <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
     :videoStyle="videoStyle" @closePopUp="showVideo=false" />
 </div>
@@ -557,10 +531,11 @@
 import { defineComponent } from 'vue';
 import popUpVideo from "@/components/base/popUpVideo.component.vue"
 import topbarComponent from '@/components/structure/topbar.component.vue';
+import rodape from '@/components/base/bannerBottomPage.vue';
 export default defineComponent({
   name: 'HomeEquity',
   components:{
-    topbarComponent , popUpVideo
+    topbarComponent , popUpVideo, rodape
   },
   metaInfo () {
     return {
@@ -585,6 +560,7 @@ export default defineComponent({
       }
     }
   },
+  
   methods: {
       showTutorial(item){
         if(item===1 && this.tutorial.show1==false){
@@ -660,23 +636,23 @@ export default defineComponent({
 
 <style>
   .splide__arrow svg {
-	  fill: #d1d1d1;
+	  fill: #7c7979;
   }
-
+  
   .splide__arrow--prev {
-    left: -2em;
+    left: -1.5em;
   }
 
   .splide__arrow--next {
-    right: -2em;
+    right: -1.5em;
   }
 
   @media ( min-width: 1024px) and (max-width: 1279px) {
     .splide__arrow--prev {
-      left: -1.5em;
+      left: -1em;
   }
     .splide__arrow--next {
-      right: -1.5em;
+      right: -1em;
   }
   }
 

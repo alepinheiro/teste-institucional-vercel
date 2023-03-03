@@ -26,7 +26,6 @@ const image = {
       alt:"",
     },
   ],
-  
   aboutUs:{ 
     photoCEO: "/images/aboutUs/FotoGaspar.png",
     photoCOO: "/images/aboutUs/FotoGabi.png",
@@ -129,7 +128,7 @@ const image = {
     grafico:"/images/SejabestIcones/iconeGraficoBranco.svg",
     setaDireita:"/images/SejabestIcones/iconeSetaDireita.svg",
     setaBaixo:"/images/SejabestIcones/iconeSetaBaixo.svg",
-    setaBaixowhite:"/images/SejabestIcones/iconeSetaBaixoWhite.svg",
+    setaBaixowhite:"/images/SejabestIcones/IconeSetaBaixoWhite.svg",
       outline:{
         whiteBlueClock:"/images/SejabestIcones/WhiteAndBlue/iconeRelógio.svg",
         whiteBluePhone:"/images/SejaBestIcones/WhiteAndBlue/iconeCelularOutline.svg",
@@ -196,11 +195,15 @@ const image = {
     carro: "/images/BestCar/CARRO_2.png",
     gráficoFinan: "/images/BestCar/GRÁFICO_FINANCIAMENTO.svg",
     imgMulher: "/images/BestCar/IMAGEM_MULHER.png",
+    imgBestCar: "/images/BestCar/CABELHO_BESTCAR.png",
+    imgFinanCar: "/images/BestCar/CABELHO_FINANCAR.png",
   },
-  partnersNew:{
-    newCashme:"/images/Home/novosParceiros/SELO CASHME 2022.png",
-    seloC6:"/images/Home/novosParceiros/SELO CONEXÃO C6.png",
-    seloDaycoval:"/images/Home/novosParceiros/SELO DAYCOVAL 2022.png",
+  bestNews:{
+    doublePhone: "/images/BestNews/celularNews.png",
+    bgSejaBestSide: "/images/BestNews/bgSide.png",
+    bestNewsLinkedin: "/images/BestNews/LogoBestNewsLinkedin.svg",
+    bestNewsTelegram: "/images/BestNews/LogoBestNewsTelegram.svg",
+    youBest: "/images/BestNews/LogoYouBest.svg",
   },
 };
 
