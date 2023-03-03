@@ -43,7 +43,7 @@
               </div>        
     </slide>
     <slide :key="slide" :style="{'width' : auto}" >
-      <div class="w-full mr-auto ml-auto max-w-sm p-4">
+      <div class="w-full mr-auto ml-auto max-w-sm p-4" id="card2">
                 <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
                   <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
                     <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
@@ -86,7 +86,7 @@
               </div>       
     </slide>
     <slide :key="slide" :style="{'width' : auto}" :class="{'moveCloseL' : Index1}">
-      <div class="w-full mr-auto ml-auto max-w-sm p-4">
+      <div class="w-full mr-auto ml-auto max-w-sm p-4" id="card3">
                 <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
                   <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
                     <div class="text-4xl titleFont">Car<span class="font-semibold">Best</span></div>
@@ -127,7 +127,7 @@
               </div>       
     </slide>
     <slide :key="slide" :style="{'width' : auto}" >
-      <div class="w-full  max-w-sm p-4">
+      <div class="w-full  max-w-sm p-4"  id="card4" >
                 <div class="border-1 rounded-xl w-full text-white ">
                   <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
                     <div class="text-4xl titleFont">Financiamento veicular</div>
@@ -204,7 +204,7 @@ export default {
 }
 .carousel__track {
   transform-style: preserve-3d;
-  transform: translateX(-129.8%)  !important;
+  transform: translateX(-129.2%)  !important;
   margin: 0 0 0 0 !important;
 
 }
@@ -214,7 +214,7 @@ export default {
 }
 
 .carousel__slide {
-  opacity: 0.9;
+  opacity: 0.8;
   transform: rotateY(0deg) scale(0.8);
 }
 
@@ -224,7 +224,7 @@ export default {
 
 .carousel__slide--prev {
   opacity: 0.8;
-  transform:  translateX(20%) scale(0.8);
+  transform:  translateX(10%) scale(0.8);
   z-index: 0;
   
 }
@@ -257,7 +257,26 @@ export default {
     background-color: var(--vc-pgn-background-color);
 }
 
-#2{
+#card4{
+  transform: translateX(-73%);
+}
 
+
+#card3{
+  transform: translateX(-31%);
+}
+
+.carousel__slide--prev > #card2 {
+  transform: translateX(-41%);
+}
+.carousel__slide> #card2 {
+  transform: translateX(-30%);
+}
+
+.carousel__slide--prev > #card2 {
+  transform: translateX(-41%);
+}
+.carousel__slide> #card2 {
+  transform: translateX(-30%);
 }
 </style>
