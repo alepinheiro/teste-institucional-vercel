@@ -15,7 +15,7 @@
  
             <div class="bg-WhiteTransparency rounded-xl w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-primary  " >
-                  <div>Crédito Imobiliário nunca foi </div>
+                  <div>Crédito nunca foi </div>
                   <div  class="flex ">
                     <div>tão</div> <div class="pb-1 textDecoration">&nbsp;fácil.</div>
                   </div>
@@ -58,7 +58,7 @@
         <div class="p-4">
           <div class="text-5xl md:text-6xl titleFontBold   mt-[-3.8rem] " >
             <div class="text-center">
-              Crédito Imobiliário nunca foi tão <span class="textDecoration">fácil.</span>
+              Crédito nunca foi tão <span class="textDecoration">fácil.</span>
             </div>
           </div>
           <div class="text-sm py-6 md:text-lg text-center">Pré-aprove o seu crédito em até 20 minutos.</div>
@@ -96,7 +96,7 @@
           Como a SejaBest pode te ajudar hoje?
         </div>
         <div class="text-3xl sm:text-2xl  titleFontBold  text-white  text-center pt-4 pb-20 sm:pb-8">
-          Conheça as melhores soluções em Crédito Imobiliário do mercado:
+          Conheça as melhores soluções em Crédito do mercado:
         </div>
         <div>
           <testingCarousel  class="md:hidden sm:hidden "/>
@@ -733,10 +733,10 @@
     </div>
   </div>
 </div>
-  <!--  v-if="showCookies"  deve ser colocado abaixo-->
+  <!--  v-if="showCookies"  deve ser colocado abaixo
   <div class="flex justify-center no-blur-content">
     <cookiesPopUp />
-  </div>  
+  </div>  -->
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
