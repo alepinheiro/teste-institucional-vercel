@@ -1,8 +1,8 @@
 <template>
   <div class="overflow-hidden maxWidth">
-  <carousel :itemsToShow="3" :transition="300" :itemsToScroll="1" wrapAround="true" :modelValue="0">
-    <slide :key="slide"  :style="{'width' : auto}">
-      <div class="w-full  max-w-sm p-4">
+  <carousel :itemsToShow="3" :transition="500" :itemsToScroll="1" wrapAround="true" :modelValue="1">
+    <slide :key="slide"  :style="{'width' : auto}" >
+      <div class="w-full  max-w-sm p-4" id="card1">
                 <div class="border-1 rounded-xl w-full text-white ">
                   <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
                     <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
@@ -198,85 +198,101 @@ export default {
 </script>
 <style>
 
-.carousel__viewport {
-  perspective: 1000px;
-  height: 100%;
+.carousel__slide {
+  padding: 5px;
+
 }
+
+.carousel__viewport {
+  perspective: 2000px;
+}
+
 .carousel__track {
   transform-style: preserve-3d;
-  transform: translateX(-129.2%)  !important;
-  margin: 0 0 0 0 !important;
-
 }
 
 .carousel__slide--sliding {
-  transition: 0.5s;
+  transition: all .5s ease-in-out;
 }
 
 .carousel__slide {
-  opacity: 0.8;
-  transform: rotateY(0deg) scale(0.8);
+  opacity: 0.9;
+  transform: rotateY(-20deg) scale(0.8s);
 }
 
 .carousel__slide--active ~ .carousel__slide {
-  transform: translateX(-20%) scale(0.8);
-}
-
-.carousel__slide--prev {
-  opacity: 0.8;
-  transform:  translateX(10%) scale(0.8);
-  z-index: 0;
-  
-}
-
-.carousel__slide--next {
-  opacity: 0.8;
-  transform: scale(0.8);
-  z-index: 0;
-}
-
-.carousel__slide--active {
-  opacity: 1;
-  transform: rotateY(0) scale(1);
+  transform: rotateY(0deg) scale(0.8);
   z-index: 1;
 }
 
-.carousel__prev {
-    left: 30px;
-}
-.carousel__pagination-button:hover::after, .carousel__pagination-button--active::after {
-    background-color: white;
+.carousel__slide--active{
+  z-index:10;
+  transform: rotateY(0deg) scale(1);
 }
 
-.carousel__pagination-button::after {
-    display: block;
-    content: '';
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius:100%;
-    background-color: var(--vc-pgn-background-color);
-}
+.carousel__slide--prev {
+  opacity: 1;
+  transform: rotateY(0deg) scale(0.8);
 
-#card4{
-  transform: translateX(-73%);
 }
 
 
-#card3{
-  transform: translateX(-31%);
+
+.carousel__slide--next {
+  opacity: 1;
+  transform: rotateY(0deg) scale(0.8);
 }
 
-.carousel__slide--prev > #card2 {
-  transform: translateX(-41%);
+.carousel__slide--next > #card4{
+  transform: translateX(-40%);
+  opacity: 0.5;
+  z-index: 0;
 }
-.carousel__slide> #card2 {
-  transform: translateX(-30%);
+.carousel__slide--prev > #card4{
+  transform: translateX(40%);
+  z-index: 0;
+  opacity: 0.5;
 }
 
-.carousel__slide--prev > #card2 {
-  transform: translateX(-41%);
+.carousel__slide--next > #card3{
+  transform: translateX(-40%);
+  opacity: 0.5;
+  z-index: 0;
 }
-.carousel__slide> #card2 {
-  transform: translateX(-30%);
+.carousel__slide--prev > #card3{
+  transform: translateX(40%);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.carousel__slide--next > #card2{
+  transform: translateX(-40%);
+  opacity: 0.5;
+  z-index: 0;
+}
+.carousel__slide--prev > #card2{
+  transform: translateX(40%);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.carousel__slide--next > #card1{
+  transform: translateX(-40%);
+  opacity: 0.5;
+  z-index: 0;
+}
+.carousel__slide--prev > #card1{
+  transform: translateX(40%);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.carousel__icon {
+    fill: white;
+
+}
+.carousel__slide--active {
+  opacity: 1;
+  transform: rotateY(0) scale(1);
 }
 </style>
