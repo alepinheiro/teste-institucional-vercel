@@ -2,7 +2,7 @@
     <div class="overflow-x-hidden w-screen h-screen md:h-auto sm:h-auto bg-gradient-to-r from-primary to-[#08025d] md:bg-gradient-to-t md:from-primary md:to-[#08025d]  sm:bg-gradient-to-t sm:from-primary sm:to-[#08025d] flex md:flex sm:flex">
         <img :src="$options.imageConfig.bestNews.bgSejaBestSide" class="absolute h-full w-auto cover lg:w-6/12  md:hidden sm:hidden"/>
         <div class="flex items-center justify-center w-6/12 divResize lg:w-6/12  md:hidden sm:hidden ">
-            <img :src="$options.imageConfig.bestNews.doublePhone" class="absolute left-[2%] top-[30%]  w-[26rem] lg:w-[21rem] lg:mt-14 imgResize"/>
+            <img :src="$options.imageConfig.bestNews.doublePhone" class="absolute left-[2%] top-[30%]  w-[26rem] lg:w-[21rem] lg:mt-4 imgResize"/>
         </div>
         <div class="flex flex-col justify-center maxWidth z-10 pl-4  h-full ">
             <div class=" flex md:flex-col sm:flex-col sm:p-1 gap-11rem xl:gap-20 lg:justify-center lg:gap-24 mb-6 md:mb-12 sm:mb-8 sm:ml-3">
