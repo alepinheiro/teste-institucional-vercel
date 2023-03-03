@@ -24,6 +24,12 @@
       </button>
       <div  class=" py-2 ml-2 px-4 shadow-lg" :class="{hidden: !dropdownOpen}">
         <ul class="flex flex-col space-y-2 ">
+          <li class="w-full flex flex-row justify-between items-center" @mouseover="hover4 = true"  @mouseout="hover4 = false">
+          <router-link :to="'/home-equity'+this.$root.utms" class="hover:text-primary hover:font-semibold text-textPrimary  py-1 " > Home Equity  </router-link>
+          <svg v-show="hover4" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z" clip-rule="evenodd" />
+          </svg>
+          </li>
         <li class="w-full flex flex-row justify-between items-center" @mouseover="hover1 = true"  @mouseout="hover1 = false">
           <router-link :to="'/financiamento-imobiliario'+this.$root.utms" class="block text-textPrimary py-1 hover:font-semibold" :class="{'text-primary': hover1}" > Financiamento </router-link>
           <svg v-show="hover1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
