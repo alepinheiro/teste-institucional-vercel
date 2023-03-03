@@ -128,7 +128,7 @@ const image = {
     grafico:"/images/SejabestIcones/iconeGraficoBranco.svg",
     setaDireita:"/images/SejabestIcones/iconeSetaDireita.svg",
     setaBaixo:"/images/SejabestIcones/iconeSetaBaixo.svg",
-    setaBaixowhite:"/images/SejabestIcones/iconeSetaBaixoWhite.svg",
+    setaBaixowhite:"/images/SejabestIcones/IconeSetaBaixoWhite.svg",
       outline:{
         whiteBlueClock:"/images/SejabestIcones/WhiteAndBlue/iconeRelógio.svg",
         whiteBluePhone:"/images/SejaBestIcones/WhiteAndBlue/iconeCelularOutline.svg",

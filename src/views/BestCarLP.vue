@@ -19,7 +19,7 @@
         <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
          <button class="buttonComplementaryColor1">
           <a 
-            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+            :href="$options.information.appVehicleSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a></button>
         </div>
         <div class="w-full flex">
