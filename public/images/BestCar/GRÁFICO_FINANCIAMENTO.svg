@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2043.96 625.61">
+  <defs>
+    <style>
+      @font-face {
+	      font-family: "Darker Grotesque";
+	      src: local("Darker Grotesque"),
+	      url("/fonts/Darker_Grotesque/DarkerGrotesque-Regular.ttf") format("truetype");
+      }
+
+      @font-face {
+	      font-family: "Darker Grotesque Bold";
+	      src: local("Darker Grotesque Bold"),
+	      url("/fonts/Darker_Grotesque/DarkerGrotesque-Bold.ttf") format("truetype");
+      }
+      .cls-1 {
+        font-size: 26.55px;
+      }
+
+      .cls-1, .cls-2 {
+	      font-family: Darker Grotesque;
+        font-style: italic;
+        font-weight: 300;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 49.38px;
+      }
+
+      .cls-3 {
+	      font-family: Darker Grotesque;
+        font-size: 75px;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        fill: #0524dd;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1" data-name="Camada 1">
+    <g>
+      <rect class="cls-4" x="566.78" y="-168.42" width="246.11" height="582.96" rx="12.65" ry="12.65" transform="translate(812.9 -566.78) rotate(90)"/>
+      <text class="cls-2" transform="translate(0 75.17)"><tspan x="0" y="0">Financiamento</tspan><tspan x="99.7" y="63.23">de veículo</tspan></text>
+      <text class="cls-3" transform="translate(481.1 146.36)"><tspan x="0" y="0">20% ao ano</tspan></text>
+      <rect class="cls-4" x="1098.1" y="-398.27" width="246.11" height="1645.59" rx="13.8" ry="13.8" transform="translate(1645.69 -796.63) rotate(90)"/>
+      <text class="cls-2" transform="translate(59.01 408.26)"><tspan x="0" y="0">Empréstimo</tspan><tspan x="94.32" y="63.23">pessoal</tspan></text>
+      <text class="cls-1" transform="translate(1686.13 619.24)"><tspan x="0" y="0">Fonte: Banco Central do Brasil</tspan></text>
+      <text class="cls-3" transform="translate(1490.32 447.83)"><tspan x="0" y="0">143% ao ano</tspan></text>
+    </g>
+  </g>
+</svg>
