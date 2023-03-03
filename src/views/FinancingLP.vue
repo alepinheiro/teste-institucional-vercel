@@ -41,7 +41,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -92,7 +92,7 @@
                     </div>
                     <div class="w-3/12 ">
                       <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Simular</a>
                       </div>
                     </div>
@@ -142,7 +142,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -227,7 +227,7 @@
         </div>
         <div class="pt-6 sm:pt-4 text-right pb-12" >
           <button class="buttonComplementaryColor1"><a class="sm:text-sm text-2xl"
-            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+            :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a> </button>
         </div>
       </div>
@@ -275,7 +275,7 @@
                 </div>
               </div>
               <div class="buttonComplementaryColor1 mt-8 text-center">
-                <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                   target="_blank">Faça uma simulação</a>
               </div>
             </div>
@@ -311,7 +311,7 @@
         
       </div>
       <div class=" p-4" v-if="tutorial.show1">
-        A simulação é feita através do nosso <a :href="$options.information.appSimulator+this.$root.utms" class="text-primary" style=" text-decoration: none;"
+        A simulação é feita através do nosso <a :href="$options.information.appRealEstateSimulator+this.$root.utms" class="text-primary" style=" text-decoration: none;"
             target="_blank">simulador.</a> Em até minutos você tem o resultado, porque seu tempo é valioso.
       </div>
     </div>
@@ -451,7 +451,7 @@
         <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
          <button class="buttonComplementaryColor1">
           <a 
-            :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+            :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a></button>
         </div>
         <div class="w-full flex">

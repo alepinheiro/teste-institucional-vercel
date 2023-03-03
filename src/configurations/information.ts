@@ -12,7 +12,9 @@ const information = {
     appPartner:"https://parceiros.seja.best/login",
     appClient: "https://app.seja.best/",
     apppartnerRegistration:"https://parceiros.seja.best/register",
-    appSimulator: "https://simulador.seja.best/"
+    appSimulator: "https://simulador.seja.best/",
+    appRealEstateSimulator: "https://simulador.seja.best/imovel",
+    appVehicleSimulator:"https://simulador.seja.best/veiculo",
 };
 
 export default information;
