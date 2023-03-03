@@ -204,8 +204,6 @@ const image = {
     bestNewsLinkedin: "/images/BestNews/Logo BestNewsLinkedin.svg",
     bestNewsTelegram: "/images/BestNews/LogoBestNewsTelegram.svg",
     youBest: "/images/BestNews/Logo YouBest.svg",
-
-
   },
 };
 
