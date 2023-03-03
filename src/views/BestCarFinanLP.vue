@@ -37,7 +37,7 @@
               mais baixa em comparação com linhas de crédito tradicionais
             </div>
             <div class=" p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-xl" >
-                <a>Quero contratar</a>
+                <a :href="$options.information.appVehicleSimulator+this.$root.utms"  target="_blank">Quero contratar</a>
             </div>
             </div>
             <div class="w-1/2 mt-auto mb-auto sm:w-full">
