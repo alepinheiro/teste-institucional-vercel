@@ -5,38 +5,38 @@
             <img :src="$options.imageConfig.bestNews.doublePhone" class="absolute left-[2%] top-[30%]  w-[26rem] lg:w-[21rem] lg:mt-14 imgResize"/>
         </div>
         <div class="flex flex-col justify-center maxWidth z-10 pl-4  h-full ">
-            <div class=" flex md:flex-col sm:flex-col sm:p-1 gap-11rem xl:gap-20 lg:justify-center lg:gap-24 mb-6 md:mb-12 sm:mb-8 md:px-12">
+            <div class=" flex md:flex-col sm:flex-col sm:p-1 gap-11rem xl:gap-20 lg:justify-center lg:gap-24 mb-6 md:mb-12 sm:mb-8 sm:ml-3">
                 <img :src="$options.imageConfig.logoSejabestWhite" class="w-48 lg:w-36 md:self-start xl:self-center"/>
-                <text class="text-white w-full items-center lg:flex xl:flex  md:w-full sm:w-full lg:w-8/12 text-base xl:text-xl sm:text-left sm:text-xl md:self-center md:text-xl ">
+                <text class="text-white w-full items-center lg:flex xl:flex  md:w-full sm:w-full lg:w-8/12 text-base xl:text-xl sm:text-left sm:text-xl md:self-center md:text-xl sm:mt-5 md:mt-6">
                     Aprenda tudo sobre financiamento, modalidades de empréstimo e acompanhe o mercado financeiro todos os dias.
                 </text>
             </div>   
             <div class="flex flex-wrap md:flex-row items-center md:justify-center sm:justify-center">
-                <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-10/12 sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] p-6 lg:p-5 flex flex-col shadow-md rounded-xl md:my-8 sm:my-6 ">
-                    <img :src="$options.imageConfig.bestNews.youBest" class="w-36 lg:w-30 pb-2 pt-2 lg:pt-4  md:self-center sm:self-center"/>
-                    <text class="text-lg lg:text-base lg:mb-1 lg:leading-6 flex items-center self-center md:text-center sm:text-center xl:leading-8 ">
+                <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mr-2 flex flex-col shadow-md rounded-xl md:my-8 sm:my-1 ">
+                    <img :src="$options.imageConfig.bestNews.youBest" class="w-36 md:w-28 lg:w-30 pb-2 pt-2 lg:pt-4 sm:self-center"/>
+                    <text class="text-lg lg:text-sm lg:mb-1 lg:leading-6 flex items-center self-center sm:text-center xl:leading-8 md:text-sm">
                         Veja explicações sobre financiamento imobiliário, empréstimo com garantia de imóvel e informações sobre taxas.
                     </text>
-                    <button class="bg-complementaryColor1 btnShine mt-5 lg:mt-0 rounded-xl p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full lg:normal-case  md:w-6/12 sm:w-7/12 sm:text-sm xl:text-sm">
+                    <button class="bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 mt-5 lg:mt-0 rounded-xl p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full lg:normal-case md:normal-case  md:w-full sm:w-7/12 sm:text-sm xl:text-sm">
                         Assista de graça
                     </button>
                 </div>
-            <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-10/12 sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] p-6 lg:p-5 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-6 lg:ml-4">
-                <img :src="$options.imageConfig.bestNews.bestNewsTelegram" class="w-36 lg:w-30 pb-2 pt-2 lg:pt-4 md:self-center sm:self-center"/>
-                <text class="text-lg lg:text-base lg:mb-1 lg:leading-6 flex items-center self-center md:text-center sm:text-center xl:leading-8">
+            <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4">
+                <img :src="$options.imageConfig.bestNews.bestNewsTelegram" class="w-36 md:w-28  lg:w-30 pb-2 pt-2 lg:pt-4 sm:self-center"/>
+                <text class="text-lg lg:text-sm lg:mb-1 lg:leading-6 flex items-center self-center sm:text-center xl:leading-8  md:text-sm">
                     Ao entrar no nosso grupo no telegram, você recebe o conteúdo novo antes de todo mundo, assim que a gente posta.
                 </text>
-                <button class="bg-complementaryColor1 btnShine mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full md:w-6/12 sm:w-7/12 sm:text-sm  lg:normal-case xl:text-sm">
+                <button class="bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full md:w-full sm:w-7/12 sm:text-sm  lg:normal-case md:normal-case xl:text-sm">
                     Exlcusividade agora
                 </button>
             </div>
-            <div class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-10/12 sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] p-6 lg:p-5 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-6 lg:ml-4">
-                <img :src="$options.imageConfig.bestNews.bestNewsLinkedin" class="w-36 lg:w-30 pb-2 pt-4  md:self-center sm:self-center"/>
-                <text class="text-lg lg:text-base lg:mb-1 lg:leading-6 flex items-center self-center md:text-center sm:text-center xl:leading-8 ">
+            <div class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4">
+                <img :src="$options.imageConfig.bestNews.bestNewsLinkedin" class="w-36 md:w-28  lg:w-30 pb-2 pt-4 sm:self-center"/>
+                <text class="text-lg lg:text-sm lg:mb-1 lg:leading-6 flex items-center self-center sm:text-center xl:leading-8 md:text-sm">
                     Vamos conversar sobre empreendedorismo, carreira, rotina da empresa e, claro, o que você precisa para ser Best.
                 </text>
                 <div class="md:justify-center md:flex sm:flex sm:justify-center">
-                <button class="bg-complementaryColor1 btnShine mt-5 lg:mt-0 rounded-xl p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full lg:normal-case md:w-6/12 sm:w-7/12 sm:text-sm  xl:text-sm">
+                <button class="bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 mt-5 lg:mt-0 rounded-xl p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full lg:normal-case md:normal-case md:w-full sm:w-7/12 sm:text-sm  xl:text-sm">
                     Quero ser best
                 </button>
                 </div>               
