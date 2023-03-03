@@ -56,41 +56,7 @@
             </div>
         </div>
     </div>
-    <div class="w-full bg-gradient-to-r from-primary to-secondary pt-16 pb-4 sm:mt-0 sm:pt-3 lg:pt-0 md:pt-0" >
-        <div class="maxWidth sm:p-0 p-0Max  flex justify-center ">
-            <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
-                <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
-                    class="w-full sm:w-[65%]  max-90 absolute bottom-[-1.77rem] sm:bottom-[-1.4rem] md:bottom-[-2.6rem] lg:bottom-[-2.7rem] h-auto "/>
-            </div>
-        <div class="w-9/12 sm:w-6/12 md:w-8/12 sm:mr-2">
-            <div class="text-white pt-4 sm:pt-1 titleFontBold text-7xl lg:text-6xl md:text-5xl sm:text-2xl textphoneMini text-right md:mr-1 sm:mr-0">
-                E aí, vamos ser<br/> Best com a gente?
-        </div>
-        <div class="w-full flex">
-            <div class="flex pt-4 sm:pt-2 justify-end w-full">
-                   <div class="mt-4 mr-2 text-lg md:text-base md:text-right sm:text-xs sm:mr-1 text-white pt-2 text-textPrimary"> 
-                      De quanto você precisa?
-                    </div>
-                    <div class="flex items-end w-5/12 md:w-[58%] sm:w-full gap-4 md:gap-1 sm:gap-0">
-                    <div class="w-9/12 sm:w-full pr-1">
-                        <inputMoney class="w-full " v-model="value" id="value" label=""  placeholder=""  />
-                    </div>
-                    <div class="w-4/12 ">
-                        <div class="  p-2 w-full sm:p-1 bg-complementaryColor1 rounded-xl text-white text-center" >
-                            <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                             target="_blank" class="sm:hidden">Simular</a>
-                             <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                             target="_blank" class="sm:visible sm:text-xs xl:hidden lg:hidden md:hidden">Ir</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <rodape />
-  </div>
 </div>  
 </template>
 
