@@ -216,12 +216,12 @@ export default {
 }
 
 .carousel__slide {
-  opacity: 0.9;
+  opacity: 0.5;
   transform: rotateY(-20deg) scale(0.8s);
 }
 
 .carousel__slide--active ~ .carousel__slide {
-  transform: rotateY(0deg) scale(0.8);
+  transform: rotateY(0deg) scale(0.85);
   z-index: 1;
 }
 
@@ -231,55 +231,47 @@ export default {
 }
 
 .carousel__slide--prev {
-  opacity: 1;
-  transform: rotateY(0deg) scale(0.8);
+  opacity: 0.5;
+  transform: rotateY(0deg) scale(0.85);
 
 }
 .carousel__slide--next {
-  opacity: 1;
-  transform: rotateY(0deg) scale(0.8);
+  opacity: 0.5;
+  transform: rotateY(0deg) scale(0.85);
 }
   
 .carousel__slide--next > #card4{
-  transform: translateX(-40%);
   opacity: 0.5;
   z-index: 0;
 }
 .carousel__slide--prev > #card4{
-  transform: translateX(40%);
   z-index: 0;
   opacity: 0.5;
 }
 
 .carousel__slide--next > #card3{
-  transform: translateX(-40%);
   opacity: 0.5;
   z-index: 0;
 }
 .carousel__slide--prev > #card3{
-  transform: translateX(40%);
   z-index: 0;
   opacity: 0.5;
 }
 
 .carousel__slide--next > #card2{
-  transform: translateX(-40%);
   opacity: 0.5;
   z-index: 0;
 }
 .carousel__slide--prev > #card2{
-  transform: translateX(40%);
   z-index: 0;
   opacity: 0.5;
 }
 
 .carousel__slide--next > #card1{
-  transform: translateX(-40%);
   opacity: 0.5;
   z-index: 0;
 }
 .carousel__slide--prev > #card1{
-  transform: translateX(40%);
   z-index: 0;
   opacity: 0.5;
 }
@@ -298,7 +290,7 @@ export default {
     margin: 0 -1570px !important;
   }
     .carousel__next {
-    right: 45px;
+    right: 10px;
 }
 
 }
@@ -306,7 +298,7 @@ export default {
 
 @media (min-width: 1024px) and (max-width: 1279px ) {
   .carousel__track{
-    margin: 0 -50vh  0 -200vh!important;
+    margin: 0 0 0 -218vh!important;
 
   }
 }

@@ -99,7 +99,7 @@
           Conheça as melhores soluções em Crédito Imobiliário do mercado:
         </div>
         <div>
-          <testingCarousel  class="md:hidden sm:hidden lg:hidden"/>
+          <testingCarousel  class="md:hidden sm:hidden "/>
         </div>
         <div class="w-full  md:hidden sm:hidden xl:hidden">
           <Splide  :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
