@@ -452,10 +452,10 @@
   </div>
   <div class="w-full py-12">
       <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto" >
-        <div class="mt-auto mb-auto w-full bg-bglight2Color shadow-xl border-1 rounded-2xl flex-wrap flex justify-center p-6">
-          <div class="w-10/12">
+        <div class="mt-auto mb-auto w-full bg-bglight2Color shadow-xl border-1 rounded-2xl flex-wrap flex justify-center p-6 sm:p-2">
+          <div class="w-10/12 sm:w-11/12">
           <div class="w-full flex ml-8 sm:ml-0 py-4 ">
-            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl sm:text-xl sm:leading-5 text-primary text-center">Por que ser Best?</div>
+            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl sm:text-xl sm:leading-5 text-primary text-center font-bold">Por que ser Best?</div>
             <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
               <img :src="$options.imageConfig.logoVertical" alt="SejaBest" class="w-30 sm:w-24 h-auto mr-auto ml-auto"/>
             </div>
@@ -464,59 +464,59 @@
             </div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> As menores taxas do mercado </div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base"> As menores taxas do mercado </div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> Múltiplas opções de banco </div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base"> Múltiplas opções de banco </div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Plataforma multiprodutos</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Plataforma multiprodutos</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Transparência</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Transparência</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Processo agilizado</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Processo agilizado</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Atendimento 7 dias por semana</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Atendimento 7 dias por semana</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Assessoria personalizada</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Assessoria personalizada</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Totalmente Digital</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Totalmente Digital</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem burocracias</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Sem burocracias</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex border-b py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem filas</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Sem filas</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           <div class="w-full flex py-3 ml-8 sm:ml-0">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Foco no cliente</div>
-            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-base">Foco no cliente</div>
+            <div class="w-1/3 sm:w-1/4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4 sm:pl-4 mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-6 h-auto mr-auto ml-auto"/></div>
           </div>
           </div>
         </div>
@@ -636,7 +636,7 @@ export default defineComponent({
 
 <style>
   .splide__arrow svg {
-	  fill: #d1d1d1;
+	  fill: #7c7979;
   }
   
   .splide__arrow--prev {

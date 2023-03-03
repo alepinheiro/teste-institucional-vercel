@@ -201,9 +201,9 @@ const image = {
   bestNews:{
     doublePhone: "/images/BestNews/celularNews.png",
     bgSejaBestSide: "/images/BestNews/bgSide.png",
-    bestNewsLinkedin: "/images/BestNews/Logo BestNewsLinkedin.svg",
+    bestNewsLinkedin: "/images/BestNews/LogoBestNewsLinkedin.svg",
     bestNewsTelegram: "/images/BestNews/LogoBestNewsTelegram.svg",
-    youBest: "/images/BestNews/Logo YouBest.svg",
+    youBest: "/images/BestNews/LogoYouBest.svg",
   },
 };
 
