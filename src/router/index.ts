@@ -73,7 +73,6 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/financiamento-veicular",
     name: "BestCarFinan",
-<<<<<<< HEAD
     component: () => import("@/views/BestCarFinanLP.vue"),
   },
   {
@@ -81,16 +80,12 @@ const routes: Array<RouteRecordRaw> = [
   name: "BestNews",
   component: () => import("@/views/BestNewsLP.vue"),
   },
-=======
-    component: () => import("@/views/BestCarFinan.vue"),
-  },
   {
   path: "/financiamento-veicular/BestCarFinan",
   name: "BestCarFinanLP",
   component: () => import("@/views/BestCarFinanLP.vue"),
   },
 
->>>>>>> staging
 ];
 
 const router = createRouter({
