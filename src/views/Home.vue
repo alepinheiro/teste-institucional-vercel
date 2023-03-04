@@ -101,7 +101,7 @@
           Conheça as melhores soluções em Crédito Imobiliário do mercado:
         </div>
         <!--carousel animado lg e xl-->
-        <carouselHome class="md:hidden sm:hidden"/>
+        <carouselHome class="md:hidden sm:hidden lg:hidden"/>
         <div class="w-full md:hidden lg:hidden xl:hidden">
           <Splide  :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
             } " aria-label="Vantagens para você">
@@ -274,7 +274,7 @@
           </Splide>  
         </div>
         <!-- slider md-->
-        <div class="w-full sm:hidden lg:hidden xl:hidden">
+        <div class="w-full sm:hidden  xl:hidden">
           <Splide  :options=" {type:'loop', perPage: 2, perMove: 1,  drag   : 'free', pagination:false,
             } " aria-label="Vantagens para você">
             <SplideSlide >
