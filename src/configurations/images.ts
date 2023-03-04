@@ -205,6 +205,11 @@ const image = {
     bestNewsTelegram: "/images/BestNews/LogoBestNewsTelegram.svg",
     youBest: "/images/BestNews/LogoYouBest.svg",
   },
+  partnersNew:{
+    newCashme:"/images/Home/novosParceiros/SELO CASHME 2022.png",
+    seloC6:"/images/Home/novosParceiros/SELO CONEXÃO C6.png",
+    seloDaycoval:"/images/Home/novosParceiros/SELO DAYCOVAL 2022.png",
+  },
 };
 
 export default image;
