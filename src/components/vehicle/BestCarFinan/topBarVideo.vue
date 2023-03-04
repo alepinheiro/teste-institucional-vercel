@@ -44,7 +44,8 @@
     </div>
       <div class=" sm:hidden xl:hidden lg:hidden">
       <div class="maxWidth bg-primary " >
-        <div class="w-full flex justify-center items-center">
+        <topbarComponent class="relative"/>
+        <div class="w-full flex justify-center items-center pt-6">
           <div class="w-10/12 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6 ">
             <div class="">
                 <div class="text-5xl titleFontBold pt-2 text-white  pb-6" >
