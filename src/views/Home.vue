@@ -446,6 +446,20 @@
         </div>
         </div>
     </div>
+    <div class="w-full pt-30 pb-10 md:pt-8 sm:pt-8 flex justify-center flex-col items-center">
+      <p class="defaultFontBold text-5xl md:text-3xl sm:text-2xl  text-white sm:text-center"> Reconhecida pelo mercado nacional </p>
+      <p class=" mt-1 text-2xl md:text-xl sm:text-lg text-white"> Conheça nossos últimos destaques </p>
+      <div class="maxWidth flex flex-row justify-between mt-6">
+        <div class="w-1/3 sm:w-2/4 sm:pl-4  mb-auto mt-4">
+          <img :src="$options.imageConfig.partnersNew.newCashme" alt="SejaBest"  class="w-44 sm:w-36 h-auto mr-auto ml-auto sm:ml-0"/>
+        </div>
+        <div class="w-1/3 sm:w-2/4 sm:flex  sm:justify-center sm:pl-4 mt-auto mb-auto">
+          <img :src="$options.imageConfig.partnersNew.seloC6" alt="SejaBest"  class="w-44 sm:w-36 sm:self-center h-auto mr-auto ml-auto sm:ml-0"/>
+        </div>
+        <div class="w-1/3 sm:w-2/4 sm:pl-4 mt-auto mb-auto">
+          <img :src="$options.imageConfig.partnersNew.seloDaycoval" alt="SejaBest"  class="w-44 sm:w-36 h-auto mr-auto ml-auto sm:ml-0"/>
+        </div>
+    </div>
     <div class="w-full pt-24 md:pt-8 sm:pt-8 sm:bg-bglightColor">
       <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto sm:ml-0S" >
         <div class="mt-auto mb-auto w-full bg-bglightColor rounded-2xl flex-wrap p-6 sm:p-2 flex justify-center">
