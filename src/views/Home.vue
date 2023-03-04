@@ -698,6 +698,7 @@
        <img :src="$options.imageConfig.home.mockupPhonesSM"   alt="SejaBest Mídias Sociais"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto sm:h-[80%] "/>
      </div>
   </div>
+</div>
   <rodape />
 </template>
 <script lang="ts">
