@@ -130,9 +130,9 @@ const image = {
     setaBaixo:"/images/SejabestIcones/iconeSetaBaixo.svg",
     setaBaixowhite:"/images/SejabestIcones/IconeSetaBaixoWhite.svg",
       outline:{
-        whiteBlueClock:"/images/SejabestIcones/WhiteAndBlue/iconeRelógio.svg",
+        whiteBlueClock:"/images/SejabestIcones/WhiteAndBlue/iconeRelogio.svg",
         whiteBluePhone:"/images/SejaBestIcones/WhiteAndBlue/iconeCelularOutline.svg",
-        whiteBlueCalendar:"/images/SejaBestIcones/WhiteAndBlue/iconeCalendárioOutline.svg",
+        whiteBlueCalendar:"/images/SejaBestIcones/WhiteAndBlue/iconeCalendarioOutline.svg",
         whiteBlueMoney:"/images/SejaBestIcones/WhiteAndBlue/iconeDinheiroOutline.svg",
       },
   },
