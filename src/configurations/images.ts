@@ -129,11 +129,11 @@ const image = {
     setaDireita:"/images/SejabestIcones/iconeSetaDireita.svg",
     setaBaixo:"/images/SejabestIcones/iconeSetaBaixo.svg",
     setaBaixowhite:"/images/SejabestIcones/IconeSetaBaixoWhite.svg",
-      outline:{
-        whiteBlueClock:"/images/SejabestIcones/WhiteAndBlue/iconeRelogio.svg",
-        whiteBluePhone:"/images/SejaBestIcones/WhiteAndBlue/iconeCelularOutline.svg",
-        whiteBlueCalendar:"/images/SejaBestIcones/WhiteAndBlue/iconeCalendarioOutline.svg",
-        whiteBlueMoney:"/images/SejaBestIcones/WhiteAndBlue/iconeDinheiroOutline.svg",
+      outlineWB:{
+        whiteBlueClock:"/images/SejabestIcones/whiteAndBlue/iconeRelogio.svg",
+        whiteBluePhone:"/images/SejaBestIcones/whiteAndBlue/iconeCelularOutline.svg",
+        whiteBlueCalendar:"/images/SejaBestIcones/whiteAndBlue/iconeCalendarioOutline.svg",
+        whiteBlueMoney:"/images/SejaBestIcones/whiteAndBlue/iconeDinheiroOutline.svg",
       },
   },
   logoMedia: {
