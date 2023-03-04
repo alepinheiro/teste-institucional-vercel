@@ -106,19 +106,19 @@
           <Splide  :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
             } " aria-label="Vantagens para você">
             <SplideSlide >
-              <div class="w-10/12 mr-auto ml-auto max-w-sm p-4">
+              <div class="w-11/12 mr-auto ml-auto max-w-sm p-4">
                 <div class="border-1 rounded-xl w-full text-white ">
                   <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-                    <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
-                    <div class="text-xl defaultFont">Conheça o Crédito com </div>
-                    <div class="text-xl defaultFont">garantia de imóvel</div>
+                    <div class="text-3xl titleFont">Cash<span class="font-semibold">Best</span></div>
+                    <div class="text-lg defaultFont">Conheça o Crédito com </div>
+                    <div class="text-lg defaultFont">garantia de imóvel</div>
                   </div>
-                  <div class="w-full p-6 bg-secondary rounded-b-xl">
+                  <div class="w-full p-4 bg-secondary rounded-b-xl  justify-between flex flex-col">
                     <div class="w-full flex  items-center">
                       <div class="pr-6 ">
                         <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                       </div>
-                      <div class="text-xl w-full">
+                      <div class="text-lg w-full">
                         As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
                       </div>
                     </div>
@@ -126,7 +126,7 @@
                       <div class="pr-6 ">
                         <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                       </div>
-                      <div class="text-xl w-full">
+                      <div class="text-lg  w-full">
                         Prazos de até 20 anos
                       </div>
                     </div>
@@ -134,7 +134,7 @@
                       <div class="pr-6 ">
                         <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
                       </div>
-                      <div class="text-xl w-full">
+                      <div class="text-lg  w-full">
                         Até 60% do valor do imóvel como capital
                       </div>
                     </div>
@@ -147,21 +147,21 @@
               </div>
             </SplideSlide>
             <SplideSlide >
-              <div class="w-10/12 mr-auto ml-auto max-w-sm p-4">
+              <div class="w-11/12  mr-auto ml-auto max-w-sm p-4">
                 <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
                   <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-                    <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
-                    <div class="text-xl defaultFont">As melhores soluções em </div>
-                    <div class="text-xl defaultFont
+                    <div class="text-3xl titleFont">Finan<span class="font-semibold">Best</span></div>
+                    <div class="text-lg defaultFont">As melhores soluções em </div>
+                    <div class="text-lg defaultFont
                     
                     ">Financiamento imobiliário</div>
                   </div>
-                  <div class="w-full p-6 rounded-b-xl ">
+                  <div class="w-full p-4 rounded-b-xl ">
                     <div class="w-full flex  items-center">
                       <div class="pr-6 ">
                         <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                       </div>
-                      <div class="text-xl w-full">
+                      <div class="text-lg  w-full">
                         Taxas a partir de 9,70% a.a. + taxas referencial
                       </div>
                     </div>
@@ -169,7 +169,7 @@
                       <div class="pr-6 ">
                         <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                       </div>
-                      <div class="text-xl w-full">
+                      <div class="text-lg  w-full">
                         Pague em até 420 meses
                       </div>
                     </div>
@@ -177,7 +177,7 @@
                       <div class="pr-6 ">
                         <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
                       </div>
-                      <div class="text-xl w-full">
+                      <div class="text-lg  w-full">
                         Os melhores bancos do mercado
                       </div>
                     </div>
@@ -190,7 +190,7 @@
               </div>
             </SplideSlide>
             <SplideSlide>
-              <div class="w-full mr-auto ml-auto max-w-sm p-4">
+              <div class="w-11/12  mr-auto ml-auto max-w-sm p-4">
                   <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
                     <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
                       <div class="text-3xl titleFont">Car<span class="font-semibold">Best</span></div>
@@ -206,7 +206,7 @@
                           Taxas a partir de 1,59% a.a. + taxas referenciais
                         </div>
                       </div>
-                      <div class="w-full flex pt-8 items-center">
+                      <div class="w-full flex pt-6 items-center">
                         <div class="pr-6 ">
                           <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                         </div>
@@ -214,7 +214,7 @@
                           Pague em até 60 meses
                         </div>
                       </div>
-                      <div class="w-full flex pt-8 items-center">
+                      <div class="w-full flex pt-6 items-center">
                         <div class="pr-6 ">
                           <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
                         </div>
@@ -231,7 +231,7 @@
                 </div>       
             </SplideSlide>
             <SplideSlide >
-              <div class="w-full mr-auto ml-auto max-w-sm p-4"  >
+              <div class="w-11/12 mr-auto ml-auto max-w-sm p-4"  >
                   <div class="border-1 rounded-xl w-full text-white ">
                     <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
                       <div class="text-3xl titleFont">Financiamento veicular</div>
@@ -273,12 +273,12 @@
             </SplideSlide>  
           </Splide>  
         </div>
-        <!-- slider md-->
-        <div class="w-full sm:hidden  xl:hidden">
+        <!-- slider md e lg-->
+        <div class="w-full sm:hidden xl:hidden">
           <Splide  :options=" {type:'loop', perPage: 2, perMove: 1,  drag   : 'free', pagination:false,
             } " aria-label="Vantagens para você">
             <SplideSlide >
-              <div class="w-full mr-atuo ml-auto max-w-sm p-4">
+              <div class="w-full mr-auto ml-auto max-w-sm p-4">
                 <div class="border-1 rounded-xl w-full text-white ">
                   <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
                     <div class="text-3xl titleFont">Cash<span class="font-semibold">Best</span></div>
@@ -757,6 +757,33 @@ export default defineComponent({
 <style>
   .splide__arrow svg {
 	  fill: #d1d1d1;
+  }
+
+  @media (max-width: 667px) {
+    .splide__arrow--next {
+    right: -1em;
+  }
+  .splide__arrow--prev {
+    left: -1em;
+  }
+  }
+
+  @media (min-width: 668px) and ( max-width: 1023px) {
+    .splide__arrow--next {
+    right: -1em;
+  }
+  .splide__arrow--prev {
+    left: -1em;
+  }
+  }
+
+  @media (min-width: 1024px) and ( max-width:1279px) {
+    .splide__arrow--next {
+    right: 2em;
+  }
+  .splide__arrow--prev {
+    left: 2em;
+  }
   }
 
 </style>
