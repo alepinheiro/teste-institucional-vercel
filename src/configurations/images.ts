@@ -131,9 +131,9 @@ const image = {
     setaBaixowhite:"/images/SejabestIcones/IconeSetaBaixoWhite.svg",
       outlineWB:{
         whiteBlueClock:"/images/SejabestIcones/whiteAndBlue/iconeRelogio.svg",
-        whiteBluePhone:"/images/SejaBestIcones/whiteAndBlue/iconeCelularOutline.svg",
-        whiteBlueCalendar:"/images/SejaBestIcones/whiteAndBlue/iconeCalendarioOutline.svg",
-        whiteBlueMoney:"/images/SejaBestIcones/whiteAndBlue/iconeDinheiroOutline.svg",
+        whiteBluePhone:"/images/SejaBestIcones/whiteAndBlue/iconeCelular.svg",
+        whiteBlueCalendar:"/images/SejaBestIcones/whiteAndBlue/iconeCalendario.svg",
+        whiteBlueMoney:"/images/SejaBestIcones/whiteAndBlue/iconeDinheiro.svg",
       },
   },
   logoMedia: {
