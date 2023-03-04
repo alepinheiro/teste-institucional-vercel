@@ -178,7 +178,7 @@ const image = {
       bari: "/images/LogoPartners/white/LogoBancoBari.svg",
       daycoval: "/images/LogoPartners/white/LogoBancoDaycoval.svg",
       inter: "/images/LogoPartners/white/LogoBancoInter.svg",
-      cashme: "/images/LogoPartners/white/LogoCashme.svg",
+      cashMe: "/images/LogoPartners/white/LogoCashMeWhite.svg",
       creditas: "/images/LogoPartners/white/LogoCreditas.svg",
       itau: "/images/LogoPartners/white/LogoItau.svg",
       libra: "/images/LogoPartners/white/LogoLibra.svg",
