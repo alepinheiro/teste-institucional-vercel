@@ -15,9 +15,9 @@
                 </div>
                   <div class=" pt-0 text-white pb-8 border-b">
                     Use o seu carro como garantia em troca das melhores taxas.Você consegue crédito para
-                    seus objetivos fincanceiros <span class="font-semibold">sem precisar veder o veículo</span>
-                    com taxas a partir de  <span class="font-semibold">0.00% ao mês</span> 
-                    <span class="text-white font-bold"> e prazos de té 000 meses.</span>
+                    seus objetivos fincanceiros <span class="font-semibold">sem precisar vender o veículo</span>
+                    com taxas a partir de  <span class="font-semibold">1,59% ao mês</span> 
+                    <span class="text-white font-bold"> e prazos de até 60 meses.</span>
                   </div> 
                   <div class="flex pt-2">
                    <div class="w-6/12 text-lg text-white pt-2 font-semibold text-textPrimary"> 
@@ -46,6 +46,7 @@
          <!-- Video Responsivo para tablets-->
     <div class=" sm:hidden xl:hidden lg:hidden bg-primary">
       <div class="maxWidth " >
+        <topbarComponent class="relative"/>
         <div class="w-full flex items-center justify-center">
           <div class="w-6/2 pt-4 mt-auto mb-auto justify-cente item-center">
                 <div class="bg-secondary p-6 rounded-lg shadow-lg">
@@ -57,9 +58,9 @@
                 </div>
                 <div class=" py-4 text-white pb-6">
                   Use o seu carro como garantia em troca das melhores taxas.Você consegue crédito para
-                  seus objetivos fincanceiros <span class="font-semibold">sem precisar veder o veículo</span>
-                  com taxas a partir de  <span class="font-semibold">0.00% ao mês</span> 
-                  <span class="text-white font-bold"> e prazos de té 000 meses.</span>
+                  seus objetivos fincanceiros <span class="font-semibold">sem precisar vender o veículo</span>
+                  com taxas a partir de  <span class="font-semibold">1,59% ao mês</span> 
+                  <span class="text-white font-bold"> e prazos de até 60 meses.</span>
                 </div>
                 <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
                   <div class="w-2/12 pr-6 mt-auto mb-auto">
@@ -99,9 +100,9 @@
                 </div>
                 <div class=" py-4 text-white pb-6">
                   Use o seu carro como garantia em troca das melhores taxas.Você consegue crédito para
-                  seus objetivos fincanceiros <span class="font-semibold">sem precisar veder o veículo</span>
-                  com taxas a partir de  <span class="font-semibold">0.00% ao mês</span> 
-                  <span class="text-white font-bold"> e prazos de té 000 meses.</span>
+                  seus objetivos fincanceiros <span class="font-semibold">sem precisar vender o veículo</span>
+                  com taxas a partir de  <span class="font-semibold">1,59% ao mês</span> 
+                  <span class="text-white font-bold"> e prazos de até 60 meses.</span>
                 </div>
                 <div class="bg-bglight2Color p-3 rounded-xl">
                   <div class="flex w-full items-center border-b-1 border-primary pb-4">

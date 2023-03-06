@@ -129,11 +129,11 @@ const image = {
     setaDireita:"/images/SejabestIcones/iconeSetaDireita.svg",
     setaBaixo:"/images/SejabestIcones/iconeSetaBaixo.svg",
     setaBaixowhite:"/images/SejabestIcones/IconeSetaBaixoWhite.svg",
-      outline:{
-        whiteBlueClock:"/images/SejabestIcones/WhiteAndBlue/iconeRelógio.svg",
-        whiteBluePhone:"/images/SejaBestIcones/WhiteAndBlue/iconeCelularOutline.svg",
-        whiteBlueCalendar:"/images/SejaBestIcones/WhiteAndBlue/iconeCalendárioOutline.svg",
-        whiteBlueMoney:"/images/SejaBestIcones/WhiteAndBlue/iconeDinheiroOutline.svg",
+      outlineWB:{
+        whiteBlueClock:"/images/SejabestIcones/whiteAndBlue/iconeRelogio.svg",
+        whiteBluePhone:"/images/SejaBestIcones/whiteAndBlue/iconeCelular.svg",
+        whiteBlueCalendar:"/images/SejaBestIcones/whiteAndBlue/iconeCalendario.svg",
+        whiteBlueMoney:"/images/SejaBestIcones/whiteAndBlue/iconeDinheiro.svg",
       },
   },
   logoMedia: {
@@ -178,7 +178,7 @@ const image = {
       bari: "/images/LogoPartners/white/LogoBancoBari.svg",
       daycoval: "/images/LogoPartners/white/LogoBancoDaycoval.svg",
       inter: "/images/LogoPartners/white/LogoBancoInter.svg",
-      cashme: "/images/LogoPartners/white/LogoCashme.svg",
+      cashMe: "/images/LogoPartners/white/LogoCashMeWhite.svg",
       creditas: "/images/LogoPartners/white/LogoCreditas.svg",
       itau: "/images/LogoPartners/white/LogoItau.svg",
       libra: "/images/LogoPartners/white/LogoLibra.svg",
@@ -204,6 +204,11 @@ const image = {
     bestNewsLinkedin: "/images/BestNews/LogoBestNewsLinkedin.svg",
     bestNewsTelegram: "/images/BestNews/LogoBestNewsTelegram.svg",
     youBest: "/images/BestNews/LogoYouBest.svg",
+  },
+  partnersNew:{
+    newCashme:"/images/Home/novosParceiros/SELO CASHME 2022.png",
+    seloC6:"/images/Home/novosParceiros/SELO CONEXÃO C6.png",
+    seloDaycoval:"/images/Home/novosParceiros/SELO DAYCOVAL 2022.png",
   },
 };
 

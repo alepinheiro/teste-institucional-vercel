@@ -44,7 +44,8 @@
     </div>
       <div class=" sm:hidden xl:hidden lg:hidden">
       <div class="maxWidth bg-primary " >
-        <div class="w-full flex justify-center items-center">
+        <topbarComponent class="relative"/>
+        <div class="w-full flex justify-center items-center pt-6">
           <div class="w-10/12 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6 ">
             <div class="">
                 <div class="text-5xl titleFontBold pt-2 text-white  pb-6" >
@@ -101,8 +102,8 @@
                 <div class=" py-4 text-white pb-6">
                   Use o seu carro como garantia em troca das melhores taxas.Você consegue crédito para
                   seus objetivos fincanceiros <span class="font-semibold">sem precisar veder o veículo</span>
-                  com taxas a partir de  <span class="font-semibold">0.00% ao mês</span> 
-                  <span class="text-white font-bold"> e prazos de té 000 meses.</span>
+                  com taxas a partir de  <span class="font-semibold">1,49% ao mês</span> 
+                  <span class="text-white font-bold"> e prazos de até 5 anos.</span>
                 </div>
                 <div class="bg-bglight2Color p-4 rounded-xl">
                   <div class="flex w-full items-center border-b-1 border-primary pb-4">
