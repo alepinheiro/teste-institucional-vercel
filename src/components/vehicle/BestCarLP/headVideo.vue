@@ -148,7 +148,7 @@ export default defineComponent({
   data() {
     return {
       isVisible:false,
-      value:300000,
+      value:60000,
       showVideo:false,
       videoStyle: "w-full h-[36rem] mr-auto ml-auto rounded-2xl ",
       videoUrl:"https://www.youtube.com/embed/Mlg8eDX61uE",
