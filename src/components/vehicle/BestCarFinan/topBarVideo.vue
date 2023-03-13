@@ -4,7 +4,7 @@
       <div class="maxWidth xl:h-[95vh] lg:h-screen" >
         <topbarComponent class="relative"/>
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
-        <div class="w-full flex pt-26 md:pt-8 sm:pt-4">
+        <div class="w-full flex pt-12 pt-xxl lg:pt-24 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
             <div class="bg-primary rounded-xl  w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-white  pb-6" >
@@ -23,7 +23,7 @@
                     </div>
                     <div class="w-full flex items-end gap-4">
                     <div class="w-9/12 pr-1">
-                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                    <inputMoney class="w-full" v-model="value" id="value"  placeholder="60.000,00"  />
                     </div>
                     <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
@@ -149,7 +149,7 @@ export default defineComponent ({
     data() {
       return {
         isVisible:false,
-        value:300000,
+        value:60000,
         showVideo:false,
         videoStyle: "w-full h-[36rem] mr-auto ml-auto rounded-2xl ",
         videoUrl:"https://www.youtube.com/embed/Mlg8eDX61uE",
@@ -165,8 +165,8 @@ export default defineComponent ({
 </script>
 <style>
   @media (min-width:1880px){
-    .mt-xxl{
-      margin-top:13 rem
+    .pt-xxl{
+      padding-top:6.5rem;
   }
 }
 
