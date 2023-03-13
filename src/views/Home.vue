@@ -6,10 +6,7 @@
         <topbarComponent position="relative" />
         <div class="w-full px-24 sm:px-0 flex flex-wrap justify-between mt-6 md:mt-4 sm:mt-4">
           <div class=" md:w-7/12 text-white md:pr-4 sm:hidden  mt-auto mb-auto">
-            <a class="flex flex-row borderWhite xl:p-1 lg:p-1 xl:text-lg lg:text-lg absolute xl:mt-40 xl:ml-28 lg:mt-32 lg:ml-32 gap-4 rounded-md" href="#anchor">
-                <a class="text-left xl:mt-1 px-1">Saiba Mais</a>
-               <img :src="$options.imageConfig.icons.setaBaixowhite" alt="SejaBest"  class="xl:w-8 lg:w-7 borderWhite rounded-full xl:ml-3 lg:ml-3 xl:mr-2 lg:mr-1 xl:p-2 lg:p-2 h-auto "/>
-            </a>
+            
           </div>
           <div class="md:pt-4 sm:py-8 max-w-[400px] w-full md:mr-auto md:ml-auto sm:mr-auto sm:ml-auto ">
  
