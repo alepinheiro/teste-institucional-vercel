@@ -25,7 +25,7 @@
             {{ textAux }}
           </p>
         </div>
-        <div v-if="withVideo!==false" class="w-1/2 sm:w-full" >
+        <div v-if="withVideo" class="w-1/2 sm:w-full" >
           <videoBase :url="videoUrl" :style="videoStyle" />
         </div>
       </div>

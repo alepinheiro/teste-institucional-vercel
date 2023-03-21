@@ -76,10 +76,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/BestCarFinan.vue"),
   },
   {
+  path: "/best-news",
+  name: "BestNews",
+  component: () => import("@/views/BestNewsLP.vue"),
+  },
+  {
   path: "/financiamento-veicular/BestCarFinan",
   name: "BestCarFinanLP",
   component: () => import("@/views/BestCarFinanLP.vue"),
   },
+
 ];
 
 const router = createRouter({

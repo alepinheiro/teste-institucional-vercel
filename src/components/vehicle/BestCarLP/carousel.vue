@@ -23,6 +23,7 @@ export default defineComponent({
 </script>
 
 <style>
+
   @media (max-width: 667px) {
     .splide__arrow--prev {
       left: 0em;

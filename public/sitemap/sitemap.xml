@@ -167,4 +167,37 @@
       <priority>0.9</priority>
 
    </url>  
+   <url>
+
+      <loc>https://seja.best/financiamento-veicular/BestCarFinan</loc>
+
+      <lastmod>2023-03-21</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>  
+   <url>
+
+      <loc>https://seja.best/best-news</loc>
+
+      <lastmod>2023-03-21</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url> 
+   <url>
+
+      <loc>https://portal.seja.best/</loc>
+
+      <lastmod>2023-03-21</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url> 
 </urlset>

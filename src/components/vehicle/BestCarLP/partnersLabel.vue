@@ -9,7 +9,7 @@
             </div>
           </div>
           <div class="w-full pt-16 sm:pt-8 md:pt-8 flex flex-wrap justify-center">
-            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.cashme" alt="Cashme" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+            <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.cashMe" alt="Cashme" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
             <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.inter" alt="Inter" class="w-44 sm:w-32 md:w-36 h-auto "/></div>
             <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.rodobens" alt="Rodobens" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
             <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.piratini" alt="Piratini"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>

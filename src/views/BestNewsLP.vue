@@ -1,13 +1,13 @@
 <template>
-    <div class="overflow-x-hidden w-screen h-screen md:h-auto sm:h-auto bg-gradient-to-r from-primary to-[#08025d] md:bg-gradient-to-t md:from-primary md:to-[#08025d]  sm:bg-gradient-to-t sm:from-primary sm:to-[#08025d] flex md:flex sm:flex">
+    <div class="overflow-x-hidden h-screen md:h-auto sm:h-auto bg-gradient-to-r from-primary to-[#08025d] md:bg-gradient-to-t md:from-primary md:to-[#08025d]  sm:bg-gradient-to-t sm:from-primary sm:to-[#08025d] flex md:flex sm:flex">
         <img :src="$options.imageConfig.bestNews.bgSejaBestSide" class="absolute h-full w-auto cover lg:w-6/12  md:hidden sm:hidden"/>
         <div class="flex items-center justify-center w-6/12 divResize lg:w-6/12  md:hidden sm:hidden ">
             <img :src="$options.imageConfig.bestNews.doublePhone" class="absolute left-[2%] top-[30%]  w-[26rem] lg:w-[21rem] lg:mt-4 imgResize"/>
         </div>
-        <div class="flex flex-col justify-center maxWidth z-10 pl-4  h-full ">
+        <div class="flex flex-col justify-center maxWidth z-10  h-full ">
             <div class=" flex md:flex-col sm:flex-col sm:p-1 gap-11rem xl:gap-20 lg:justify-center lg:gap-24 mb-6 md:mb-12 sm:mb-8 sm:ml-3">
                 <img :src="$options.imageConfig.logoSejabestWhite" class="w-48 lg:w-36 md:self-start xl:self-center"/>
-                <text class="text-white w-full items-center lg:flex xl:flex  md:w-full sm:w-full lg:w-8/12 text-base xl:text-xl sm:text-left sm:text-xl md:self-center md:text-xl sm:mt-5 md:mt-6">
+                <text class="text-white w-full items-center xl:pr-8 pr-4 md:w-full sm:w-full lg:w-8/12 text-base xl:text-xl sm:text-left sm:text-xl md:self-center md:text-xl sm:mt-5 md:mt-6">
                     Aprenda tudo sobre financiamento, modalidades de empréstimo e acompanhe o mercado financeiro todos os dias.
                 </text>
             </div>   
@@ -15,9 +15,9 @@
                 <div class=" cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mr-2 flex flex-col shadow-md rounded-xl md:my-8 sm:my-1 ">
                     <img :src="$options.imageConfig.bestNews.youBest" class="w-36 md:w-28 lg:w-30 pb-2 pt-2 lg:pt-4 sm:self-center"/>
                     <text class="text-lg lg:text-sm lg:mb-1 lg:leading-6 flex items-center self-center sm:text-center xl:leading-8 md:text-sm">
-                        Veja explicações sobre financiamento imobiliário, empréstimo com garantia de imóvel e informações sobre taxas.
+                        Veja explicações sobre Financiamento Imobiliário, empréstimo com garantia de imóvel e informações sobre taxas.
                     </text>
-                    <a :href="$options.information.socialMediaUTM.youtube"   class=" bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm  lg:normal-case md:normal-case xl:text-sm">
+                    <a :href="$options.information.socialMediaUTM.youtube"   class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm  lg:normal-case md:normal-case xl:text-sm">
                         Assista grátis
                     </a>
                 </div>
@@ -26,7 +26,7 @@
                 <text class="text-lg lg:text-sm lg:mb-1 lg:leading-6 flex items-center self-center sm:text-center xl:leading-8  md:text-sm">
                     Ao entrar no nosso grupo no telegram, você recebe o conteúdo novo antes de todo mundo, assim que a gente posta.
                 </text>
-                <a  :href="$options.information.socialMediaUTM.telegram"  class=" bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm  lg:normal-case md:normal-case xl:text-sm">
+                <a  :href="$options.information.socialMediaUTM.telegram"  class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm  lg:normal-case md:normal-case xl:text-sm">
                     Exlcusividade agora
                 </a>
             </div>
@@ -36,7 +36,7 @@
                     Vamos conversar sobre empreendedorismo, carreira, rotina da empresa e, claro, o que você precisa para ser Best.
                 </text>
                 <div class="md:justify-center md:flex sm:flex sm:justify-center">
-                <a  :href="$options.information.socialMediaUTM.linkedin"  class=" bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2  flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg uppercase lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm  lg:normal-case md:normal-case xl:text-sm">
+                <a  :href="$options.information.socialMediaUTM.linkedin"  class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2  flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg  lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm  lg:normal-case md:normal-case xl:text-sm">
                     Quero ser best
                 </a>
                 </div>               

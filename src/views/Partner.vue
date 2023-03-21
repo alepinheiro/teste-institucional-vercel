@@ -1,5 +1,5 @@
 <template>
-<div class="w-full gradienteSBLight2">
+<div class="w-full gradienteSBLight2 overflow-x-hidden overflow-y-hidden">
   <div class="text-textPrimary ">
     <div class="bgBusinessman sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
@@ -8,7 +8,7 @@
           <div class=" max-w-[400px] w-full md:mr-auto md:ml-auto sm:mr-auto sm:ml-auto marginXL">
             <div class="text-white w-full  ">
               <div class="text-6xl titleFontBold  " >
-               <h1> Alavanque seus resultados com o <span class="textDecoration"> BestHub. </span></h1>
+               <h1> Alavanque seus resultados com o <span class="textDecoration"> BestHub </span></h1>
               </div>
               <div class=" py-8">
                 O sistema de parceiros que vem revolucionando o mercado de crédito imobiliário.
@@ -37,10 +37,10 @@
         <img :src="$options.imageConfig.partner.businessman" alt="BestHub"  class="w-full h-full rounded-t-2xl md:w-full md:h-full  mr-auto ml-auto"/>
         <div class=" w-full rounded-t-xl">
           <div class="text-white w-full p-4 sm:text-center md:flex md:flex-col md:items-center ">
-              <div class="text-4xl titleFontBold  " >
-                Alavanque seus resultados com o <span class="textDecoration"> BestHub. </span>
+              <div class="text-5xl titleFontBold  " >
+                Alavanque seus resultados com o <span class="textDecoration"> BestHub </span>
               </div>
-              <div class=" py-4">
+              <div class="text-xl py-4">
                 O sistema de parceiros que vem revolucionando o mercado de crédito imobiliário.
               </div>
               <div class="text-center">
@@ -136,190 +136,37 @@
       </div>
       <div class="maxWidth pt-24 md:pt-8 sm:pt-8 xl:pb-0">
         <div class="text-6xl lg:text-5xl pb-24 md:pb-8 sm:pb-8 md:text-4xl sm:px-8 sm:text-4xl titleFontBold  text-white  text-center  " >
-          Conheça nossos produtos.
+          Conheça nossos produtos
         </div>
         
-        <div class="w-full flex justify-center pb-14 sm:hidden">
-          <div class="border-1  rounded-xl w-4/12 md:w-5/12 lg:w-5/12 text-white mr-4">
-            <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-              <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
-              <div class="text-xl titleFont defaultFont">Conheça o Crédito com </div>
-              <div class="text-xl titleFont defaultFont">garantia de imóvel</div>
-            </div>
-            <div class="w-full p-6 bg-secondary rounded-b-xl">
-              <div class="w-full flex  items-center">
-                <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                </div>
-                <div class="text-xl w-full">
-                  As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
-                </div>
-              </div>
-              <div class="w-full flex pt-6 items-center">
-                <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                </div>
-                <div class="text-xl w-full">
-                  Prazos de até 20 anos
-                </div>
-              </div>
-              <div class="w-full flex pt-6 items-center">
-                <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
-                </div>
-                <div class="text-xl w-full">
-                  Até 60% do valor do imóvel como capital
-                </div>
-              </div>
-              <div class="buttonComplementaryColor1 mt-6 text-center">
-                <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
-                  target="_blank">Faça uma simulação</a>
-              </div>
-            </div>
-          </div>
-          <div class="border-1 gradienteSBDark  rounded-xl w-4/12 md:w-5/12 lg:w-5/12 text-white ml-4">
-            <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-              <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
-              <div class="text-xl defaultFont">As melhores soluções em </div>
-              <div class="text-xl defaultFont">Financiamento imobiliário</div>
-            </div>
-            <div class="w-full p-6 rounded-b-xl ">
-              <div class="w-full flex  items-center">
-                <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-9 h-8  "/>
-                </div>
-                <div class="text-xl w-full">
-                  Taxas a partir de 9,70% a.a. + taxas referencial
-                </div>
-              </div>
-              <div class="w-full flex pt-8 items-center">
-                <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                </div>
-                <div class="text-xl w-full">
-                  Pague em até 420 meses
-                </div>
-              </div>
-              <div class="w-full flex pt-8 items-center">
-                <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.moneyFill" alt="Banco"  class="w-9 h-8  "/>
-                </div>
-                <div class="text-xl w-full">
-                  Os melhores bancos do mercado
-                </div>
-              </div>
-              <div class="buttonComplementaryColor1 mt-8 text-center">
-                <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
-                  target="_blank">Faça uma simulação</a>
-              </div>
-            </div>
-          </div>
-        </div> 
-        <div class="w-full md:hidden lg:hidden xl:hidden">
-          <Splide  :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
-            } " aria-label="Vantagens para você">
-            <SplideSlide >
-              <div class="w-11/12 mr-auto ml-auto max-w-sm p-4">
-                <div class="border-1 rounded-xl w-full text-white ">
-                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-                    <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
-                    <div class="text-xl titleFont">Conheça o Crédito com </div>
-                    <div class="text-xl titleFont">garantia de imóvel</div>
-                  </div>
-                  <div class="w-full p-6 bg-secondary rounded-b-xl">
-                    <div class="w-full flex  items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-xl w-full">
-                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-6 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-xl w-full">
-                        Prazos de até 20 anos
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-6 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-xl w-full">
-                        Até 60% do valor do imóvel como capital
-                      </div>
-                    </div>
-                    <div class="buttonComplementaryColor1 mt-6 text-center">
-                      <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
-                        target="_blank">Faça uma simulação</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide >
-              <div class="w-11/12 mr-auto ml-auto max-w-sm p-4">
-                <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
-                  <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-                    <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
-                    <div class="text-sm titleFont">As melhores soluções em </div>
-                    <div class="text-sm titleFont">Financiamento imobiliário</div>
-                  </div>
-                  <div class="w-full p-6 rounded-b-xl ">
-                    <div class="w-full flex  items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-xl w-full">
-                        Taxas a partir de 9,70% a.a. + taxas referencial
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-8 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill" alt="Praza" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-xl w-full">
-                        Pague em até 420 meses
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-8 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-xl w-full">
-                        Os melhores bancos do mercado
-                      </div>
-                    </div>
-                    <div class="buttonComplementaryColor1 mt-8 text-center">
-                      <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
-                        target="_blank">Faça uma simulação</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SplideSlide>  
-          </Splide>  
+
+        <div class="md:hidden sm:hidden">
+          <carouselHome />
+        </div>
+        <div class="xl:hidden md:hidden lg:hidden">
+          <carouselHomeMobile />
+        </div>
+        <div class="xl:hidden sm:hidden lg:hidden">
+          <carouselHomeTablet />
         </div>
       </div>
       <div class="maxWidth flex flex-wrap pt-8 sm:pt-16 xl:py-32 lg:py-32 md:py-24">
-          <div class="w-1/2 mt-auto mb-auto sm:w-full">
+          <div class="w-1/2 md:w-7/12 mt-auto mb-auto sm:w-full">
             <img :src="$options.imageConfig.partner.mockupTablet" alt="BestHub"  
-              class="sm:w-full md:w-11/12 h-auto  xl:max-w-3xl xl:w-[42rem]"/>
+              class="sm:w-full md:w-11/12 h-auto w-full"/>
           </div>
-          <div class="w-1/2 sm:w-full text-right sm:text-left mt-auto mb-auto text-white">
-            <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-5xl md:text-3xl sm:text-3xl font-semibold text-right mr-0 ml-auto">
+          <div class="w-1/2 md:w-5/12 sm:w-full text-right sm:text-left mt-auto mb-auto text-white">
+            <div class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-4xl md:text-3xl sm:text-3xl font-bold text-right mr-0 ml-auto">
               Como o BestHub pode ajudar o seu <span class="text-complementaryColor3">negócio?</span>
             </div>
-            <div class="pt-6  text-xl md:text-lg sm:text-center">
+            <div class="pt-6 sm:text-base text-xl md:text-base sm:text-center">
               Uma plataforma multibanco e 100% digital. As melhores opções do mercado na palma da sua mão.
             </div>
-            <div class="py-6   text-xl md:text-lg sm:text-center ">
+            <div class="py-6 sm:pt-4 sm:text-base  text-xl md:text-base sm:text-center ">
               Aqui você vivencia uma nova experiência com crédito imobiliário. Temos as melhores 
               taxas do mercado e unimos atendimento humanizado com muita tecnologia para você e seu cliente.
             </div>
-            <div class=" px-4 sm:text-center">
+            <div class=" sm:text-center">
               <button class="buttonComplementaryColor1  "><a class="sm:text-sm text-2xl md:text-xl"
                 :href="$options.information.apppartnerRegistration"  style=" text-decoration: none;"
                 target="_blank">Quero ser parceiro</a> </button>
@@ -329,7 +176,7 @@
       <div class="bg-bglightColor xl:pb-40 lg:pb-40">
         <div class="maxWidth    mr-auto ml-auto">
           <div class="w-full text-center">
-            <div class="text-4xl pt-40 sm:pt-8 md:pt-8 sm:text-2xl text-primary font-semibold">
+            <div class="text-4xl pt-40 sm:pt-8 md:pt-8 sm:text-2xl text-primary font-bold">
                A melhor plataforma multibancos 
             </div>
             <div class="text-textSecondary text-xl ">
@@ -359,8 +206,8 @@
             <img :src="$options.imageConfig.logoBestHub" alt="BestHub"  class="w-auto h-28 sm:h-18 sm:ml-auto md:w-10/12 sm:mr-auto xl:ml-20"/>
           </div>
           <div class="p-4 w-1/2 sm:w-full mt-auto">
-            <div class="text-white text-6xl md:text-4xl sm:text-2xl w-9/12 md:w-full sm:w-full sm:text-center sm:pb-8 xl:ml-20">
-              Um hub <span class="textDecoration">cheio </span>  de vantagens.
+            <div class="text-white text-6xl md:text-4xl sm:text-2xl w-9/12 md:w-full sm:w-full sm:text-center sm:pb-8 xl:ml-20 font-bold">
+              Um hub <span class="textDecoration">cheio </span>  de vantagens
             </div>
           </div>
         </div> 
@@ -372,7 +219,7 @@
               </div>
               <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
                 <div class="text-primary text-2xl md:text-xl sm:text-xl">
-                  Plataforma multibancos integrada.
+                  Plataforma multibancos integrada
                 </div>
                 <div clas="text-textPrimary text-sm md:text-base sm:text-[0.4rem] pt-2">
                   Simule, elabore suas propostas e gerencie tudo em um único ambiente totalmente digitalizado.
@@ -387,7 +234,7 @@
               </div>
               <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
                 <div class="text-primary text-2xl md:text-xl sm:text-xl">
-                  Plataforma White Label.
+                  Plataforma White Label
                 </div>
                 <div clas="text-textPrimary text-sm md:text-base sm:text-[0.4rem] pt-2">
                   Com o BestHub você usa sua própria marca, entregando uma experiência diferenciada para seus cliente.
@@ -402,7 +249,7 @@
               </div>
               <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm" @mouseenter="glitch = true" @mouseleave="glitch = false" :class="{ 'glichBlue': glitch }">
                 <div class="text-primary text-2xl md:text-xl sm:text-xl">
-                  Perfil de crédito do cliente em tempo real.
+                  Perfil de crédito do cliente em tempo real
                 </div>
                 <div clas="text-textPrimary text-sm md:text-base sm:text-[0.4rem] pt-2">
                   Em poucos cliques você descobre o perfil de crédito do seu cliente no mercado bancário.
@@ -417,7 +264,7 @@
               </div>
               <div class="w-full pl-4 md:pl-1 mt-auto mb-auto md:text-sm sm:text-sm">
                 <div class="text-primary text-2xl md:text-xl sm:text-xl">
-                  Potencialize seus ganhos.
+                  Potencialize seus ganhos
                 </div>
                 <div clas="text-textPrimary text-sm sm:text-xs pt-2">
                   Com uma solução multibancos, você oferece as melhores condições para seus clientes 
@@ -429,13 +276,13 @@
 
         </div>
       </div>
-      <div class="w-full  pt-10 sm:pt-4 md:pt-4  mr-auto ml-auto flex">
-        <div class="w-7/12 flex justify-center mt-auto mb-auto">
-          <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 md:pl-8 text-white marginl-40R marginl-12R marginl-50R marginl-24R">
-            <div class="text-5xl sm:text-2xl md:text-4xl font-semibold ">
-              Somos <span class="textDecoration">autoridade</span> no assunto.
+      <div class="w-full  sm:py-4 sm:pl-4 md:pt-4  mr-auto ml-auto flex">
+        <div class="w-7/12 lg:w-5/12 xl:pl-[11.3rem] md:pl-4 flex justify-center mt-auto mb-auto ">
+          <div class="w-7/12  md:w-full lg:w-8/12 sm:w-full  py-4 md:pl-8 text-white marginl-40R marginl-12R marginl-50R marginl-24R">
+            <div class="text-5xl sm:text-2xl md:text-4xl font-semibold sm:pt-32">
+              Somos <span class="textDecoration">autoridade</span> no assunto
             </div>
-            <div class="text-xl sm:text-sm md:text-sm sm:pt-4 md:pt-4 lg:pt-8  pt-10">
+            <div class="text-xl sm:text-sm md:text-sm pt-4 lg:pt-8">
               Através de nossos canais, a SejaBest é referencia quando se fala em crédito Imobiliário.
               <span class="font-semibold">Confira:</span>
             </div>
@@ -465,22 +312,19 @@
                 </svg>
               </a>
             </div>
-            <div class="pb-[6rem] xl:pb-28">
+            <div class="pb-[6rem] xl:pb-24">
                 <button class="buttonComplementaryColor1 sm:p-2 md:p-2"><a class="sm:text-sm text-2xl "
                   :href="$options.information.apppartnerRegistration"  style=" text-decoration: none;"
                   target="_blank">Quero ser parceiro</a> </button>
               </div>
           </div>
         </div>
-        <div class="w-5/12 flex justify-end">
-          <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop" alt="BestHub"  class="w-8/12 lg:w-full mr-0 ml-auto sm:hidden md:hidden h-auto "/>
-          <img :src="$options.imageConfig.home.mockupPhonesSM" alt="BestHub"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto "/>
+        <div class="w-5/12 lg:w-7/12 flex justify-end">
+          <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop" alt="SejaBest Mídias Sociais"  class="w-[48rem]  lg:w-full imgPhonesW xl:mt-[6.5em] xl:absolute  mr-0 ml-auto xl:hidden sm:hidden md:hidden h-auto "/>
+          <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop" alt="SejaBest Mídias Sociais"  class="w-[50rem]  lg:w-full imgPhonesW imgPhonePartner xl:mt-[-2em] xl:absolute  mr-0 ml-auto lg:hidden sm:hidden md:hidden h-auto "/>
+          <img :src="$options.imageConfig.home.mockupPhonesSM"   alt="SejaBest Mídias Sociais"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto sm:h-[80%] sm:self-end"/>
         </div>
       </div>
-    
-    
-    
-    
   </div>  
     
     
@@ -491,11 +335,17 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import topbarComponent from '@/components/structure/topbar.component.vue';
+import CarouselHomeMobile from '@/components/base/carouselHomeMobile.vue';
+import carouselHome from '@/components/base/carouselHome.vue';
+import carouselHomeTablet from '@/components/base/carouselHomeTablet.vue';
 export default defineComponent({
   name: 'Home',
   components:{
-    topbarComponent 
-  },
+    topbarComponent,
+    CarouselHomeMobile,
+    carouselHome,
+    carouselHomeTablet
+},
   metaInfo () {
     return {
       title: "Como o BestHub pode ajudar o seu negócio?",
@@ -529,4 +379,20 @@ export default defineComponent({
       margin-top: 7rem;
     }
   }
+
+  @media (min-width: 1850px){
+    .imgPhonesW{
+      width: 55rem;
+      margin-top: -5.15rem
+    }
+    
+}
+
+@media (max-width: 1433px){
+    .imgPhonePartner{
+      width: 52rem;
+      margin-top: -1.5em
+    }
+    
+}
 </style>

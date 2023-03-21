@@ -1,21 +1,20 @@
 <template>
-<div class="w-full bg-bglight2Color">
+<div class="w-full bg-bglight2Color overflow-x-hidden overflow-y-hidden">
   <div class="text-textPrimary ">
     <div class="bgFinanBest sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
-        
-        <div class="w-full flex pt-20 md:pt-4 sm:pt-4">
+        <div class="w-full flex ">
           
           
           <div @click="showVideo=true" class="h-[500px] p-16 w-[600px]  md:w-7/12 text-white md:pr-4 sm:hidden ">
             
           </div>
-          <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
-            <div class="bg-bglight2Color rounded-xl w-full shadow-2xl p-12">
+          <div class="md:pt-4 sm:py-8 max-w-[600px] w-full ">
+            <div class="bg-bglight2Color rounded-xl w-full shadow-2xl p-12 ">
                 <div class="text-5xl titleFontBold text-primary  pb-6" >
-                  <h1><div>Conheça o <span class="textDecoration">FinanBest</span> </div>
+                  <h1><div>Conheça o <span class="textDecoration">FinanBest,</span> </div>
                   <div class=" titleFontBold pt-2  " >
-                    O financiamento imobiliário da SejaBest.
+                    O Financiamento Imobiliário da SejaBest.
                   </div></h1>
                 </div>
                 <div class=" py-4  pb-6">
@@ -24,7 +23,7 @@
                 </div>
                 <div class="flex w-full items-center border-b-1 border-secondary pb-4">
                   <div class="w-1/12 pr-6 mt-auto mb-auto">
-                    <img  :src="$options.imageConfig.iconSejaBest" alt="SejaBest"  class="w-6 h-auto ">
+                    <img  :src="$options.imageConfig.iconSejaBest" alt="SejaBest" class="w-6 h-auto ">
                   </div>
                   <div class="w-11/12 text-lg "> 
                     Sem <span class="text-primary">Filas.</span> 
@@ -41,7 +40,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -58,14 +57,14 @@
       <div class="maxWidth pb-12" >
         <div class="w-full ">
           <div @click="showVideo=true" class="w-full pt-4">
-            <img :src="$options.imageConfig.finanBest.phoneVideo" alt="Video financiamento imobiliário"  class="w-full h-auto "/>
+            <img :src="$options.imageConfig.finanBest.phoneVideo" alt="Video Financiamento Imobiliário"  class="w-full h-auto "/>
           </div>
           <div class="py-4  w-full">
             <div class="">
                 <div class="text-4xl titleFontBold text-primary  pb-4 pr-8" >
-                  <h1><div>Conheça o <span class="textDecoration">FinanBest</span> </div>
+                  <h1><div>Conheça o <span class="textDecoration">FinanBest,</span> </div>
                   <div class="text-xl titleFontBold pt-2  " >
-                    O financiamento imobiliário da SejaBest.
+                    O Financiamento Imobiliário da SejaBest.
                   </div></h1>
                 </div>
                 <div class="   pb-6">
@@ -75,7 +74,7 @@
                 <div class="bg-primary p-4 rounded-xl">
                   <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
                     <div class="w-2/12 pr-2 mt-auto mb-auto">
-                      <img  :src="$options.imageConfig.iconSejaBestWhite" alt="SejaBest"  class="w-18 h-auto ">
+                      <img  :src="$options.imageConfig.iconSejaBestWhite" alt="SejaBest" class="w-18 h-auto ">
                     </div>
                     <div class="w-11/12 text-lg text-white"> 
                       Sem <span class="text-complementaryColor3">Filas.</span> 
@@ -92,7 +91,7 @@
                     </div>
                     <div class="w-3/12 ">
                       <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                        <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
+                        <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                         target="_blank">Simular</a>
                       </div>
                     </div>
@@ -108,15 +107,14 @@
     </div>
     <div class=" sm:hidden xl:hidden lg:hidden">
       <div class="maxWidth mb-12" >
-        <topbarComponent position="top" />
         <div class="w-full flex">
           
           <div class="w-1/2 pt-4 mt-auto mb-auto ">
             <div class="">
                 <div class="text-4xl titleFontBold text-primary  pb-6 pr-8" >
-                  <div>Conheça o <span class="textDecoration">FinanBest</span> </div>
+                  <div>Conheça o <span class="textDecoration">FinanBest,</span> </div>
                   <div class=" titleFontBold pt-2  " >
-                    O financiamento imobiliário da SejaBest.
+                    O Financiamento Imobiliário da SejaBest.
                   </div>
                 </div>
                 <div class=" py-4  pb-6">
@@ -125,7 +123,7 @@
                 </div>
                 <div class="flex w-full items-center border-b-1 border-secondary pb-4">
                   <div class="w-1/12 pr-6 mt-auto mb-auto">
-                    <img  :src="$options.imageConfig.iconSejaBest" alt="SejaBest"  class="w-12 h-auto ">
+                    <img  :src="$options.imageConfig.iconSejaBest" alt="SejaBest" class="w-12 h-auto ">
                   </div>
                   <div class="w-11/12 text-lg "> 
                     Sem <span class="text-primary">Filas.</span> 
@@ -142,7 +140,7 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
+                      <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                   </div>
@@ -152,20 +150,20 @@
           </div>
           <div @click="showVideo=true" class="w-1/2 text-white md:pr-4 sm:hidden mt-auto mb-auto">
             
-            <img :src="$options.imageConfig.cashBest.phoneVideoMd" alt="Video financiamento imobiliário" class="w-8/12 h-auto mr-auto ml-auto "/>
+            <img :src="$options.imageConfig.cashBest.phoneVideoMd" alt="video Financiamento Imobiliário" class="w-8/12 h-auto mr-auto ml-auto "/>
           </div>
         </div>
         
       </div>
       
     </div>
-    <div class="maxWidth flex py-36 sm:pb-4 sm:pt-0 ">
+    <div class="maxWidth flex pt-10 pb-26 sm:pb-4 sm:pt-0 ">
       <div class="w-1/4 sm:w-1/2 mt-auto mb-auto pr-4">
-        <div class="text-4xl sm:text-2xl md:text-2xl text-primary">
+        <div class="text-4xl sm:text-2xl md:text-2xl text-primary font-bold">
           Apenas vantagens para você
         </div>
-        <div class="py-6 sm:text-sm sm:py-2 text-primary">
-          Descubra porque o <span class="text-complementaryColor3">FinanBest</span> 
+        <div class="py-6 sm:text-base sm:py-2 text-primary">
+          Descubra porque o <span class="text-complementaryColor3 font-bold">FinanBest</span> 
           pode ser a sua melhor opção de Financiamento Imobiliário.
         </div>
       </div>
@@ -176,7 +174,7 @@
             <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderPhones">
               <div  class="">
                 <img :src="slide.img" 
-                class="px-4 " :alt="slide.alt">
+                class="px-1" :alt="slide.alt">
               </div>
             </SplideSlide>
               
@@ -211,7 +209,7 @@
     </div>
     <div class="maxWidth sm:hidden flex md:mt-12">
       <div class="w-6/12 sm:w-[0.3] mt-auto mb-auto py-16">
-        <img :src="$options.imageConfig.finanBest.photoKeys" alt="Financiamento imobiliário - foto chaves" class="w-11/12 mr-4 ml-auto h-auto"/>
+        <img :src="$options.imageConfig.finanBest.photoKeys" alt="Financiamento Imobiliário"  class="w-11/12 mr-4 ml-auto h-auto"/>
         
       </div>
       <div class="w-6/12 sm:w-[0.7] mt-auto mb-auto">
@@ -219,15 +217,14 @@
           A chave para os seus<span class="textDecoration"> Sonhos.</span>
         </div>
         <div class=" text-lg  sm:text-xs md:text-sm text-right w-11/12 mr-0 ml-auto mt-12 sm:mt-6">
-          Aqui realizamos o sonho da casa própria! Com o financiamento imobiliário da SejaBest 
-          você pode garantir ótimas taxas, além de ter à disposição um assessor que irá te auxiliar 
-          do início ao fim do processo. 
-          É um investimento seguro que possui diversas vantagens a curto e longo prazo. Com condições facilitadas, 
-          o FinanBest é perfeito para você!
+          Aqui realizamos o sonho da casa própria! Com o financiamento imobiliário da SejaBest, 
+            você pode garantir ótimas taxas, além de ter à sua disposição um assessor que vai te 
+            auxiliar do início ao fim do processo. É um investimento seguro com diversas vantagens 
+            a curto e a longo prazo. Com condições facilitadas, o FinanBest é perfeito para você!
         </div>
         <div class="pt-6 sm:pt-4 text-right pb-12" >
           <button class="buttonComplementaryColor1"><a class="sm:text-sm text-2xl"
-            :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
+            :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
             target="_blank">Faça uma simulação</a> </button>
         </div>
       </div>
@@ -237,17 +234,16 @@
           A chave para os seus<span class="textDecoration"> Sonhos.</span>
         </div>
         <div class=" w-full text-center py-8 ">
-          Aqui realizamos o sonho da casa própria! Com o financiamento imobiliário da SejaBest 
-          você pode garantir ótimas taxas, além de ter à disposição um assessor que irá te auxiliar 
-          do início ao fim do processo. 
-          É um investimento seguro que possui diversas vantagens a curto e longo prazo. Com condições facilitadas, 
-          o FinanBest é perfeito para você!
+          Aqui realizamos o sonho da casa própria! Com o financiamento imobiliário da SejaBest, 
+            você pode garantir ótimas taxas, além de ter à sua disposição um assessor que vai te 
+            auxiliar do início ao fim do processo. É um investimento seguro com diversas vantagens 
+            a curto e a longo prazo. Com condições facilitadas, o FinanBest é perfeito para você!
         </div>
-      <div class="border-1 gradienteSBDark  rounded-xl w-full text-white ">
+      <div class="border-1 gradienteSBDark  rounded-xl w-full text-white flex flex-col self-center ">
             <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
               <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
               <div class="text-xl titleFont">As melhores soluções em </div>
-              <div class="text-xl titleFont">Financiamento imobiliário</div>
+              <div class="text-xl titleFont">Financiamento Imobiliário</div>
             </div>
             <div class="w-full p-6 rounded-b-xl ">
               <div class="w-full flex  items-center">
@@ -260,7 +256,7 @@
               </div>
               <div class="w-full flex pt-8 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.calendarFill" alt="Pazo"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo"  class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Pague em até 420 meses
@@ -268,14 +264,14 @@
               </div>
               <div class="w-full flex pt-8 items-center">
                 <div class="pr-6 ">
-                  <img :src="$options.imageConfig.icons.moneyFill" alt="Banco"  class="w-9 h-8  "/>
+                  <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
                 </div>
                 <div class="text-xl w-full">
                   Os melhores bancos do mercado
                 </div>
               </div>
               <div class="buttonComplementaryColor1 mt-8 text-center">
-                <a :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
+                <a :href="$options.information.appRealEstateSimulator+this.$root.utms"  style=" text-decoration: none;"
                   target="_blank">Faça uma simulação</a>
               </div>
             </div>
@@ -286,8 +282,8 @@
   </div>
   <div class=" w-full mt-8 flex justify-center sm:hidden md:hidden">
     <div class="ml-auto  mr-auto maxWidth">
-      <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : true ,  height   : '25rem',trimSpace: 'move', 
-        rewind : true, pagination:false, direction: 'ttb', arrows:true} " aria-label="Você pode obter o recurso para:">
+      <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free' ,  height   : '25rem',trimSpace: 'move', 
+        rewind : true, pagination:true, arrows:true} " aria-label="Você pode obter o recurso para:">
         <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderTutorial">
           <div  class="">
             <img :src="slide.img" class="px-4 lg:pt-12" :alt="slide.alt">
@@ -297,7 +293,7 @@
     </div>  
   </div>
   <div class="maxWidth xl:hidden lg:hidden">
-    <div class="titleFontBold text-5xl sm:text-4xl text-primary text-center py-12"> É tão simples que você só<br/> precisa de <span class="text-complementaryColor1 ">4 etapas</span></div>
+    <div class="titleFontBold text-5xl sm:text-4xl text-primary text-center py-12"> É tão simples que você só precisa de <span class="text-complementaryColor1 ">4 etapas</span></div>
     <div class="bg-bglight2Color shadow-xl border-1 rounded-xl p-4">
       <div class="flex w-full ">
         <div @click="showTutorial(1)" class="mt-auto mb-auto text-xl pr-4 text-primary">
@@ -311,7 +307,7 @@
         
       </div>
       <div class=" p-4" v-if="tutorial.show1">
-        A simulação é feita através do nosso <a :href="$options.information.simuladorImovel+this.$root.utms" class="text-primary" style=" text-decoration: none;"
+        A simulação é feita através do nosso <a :href="$options.information.appRealEstateSimulator+this.$root.utms" class="text-primary" style=" text-decoration: none;"
             target="_blank">simulador.</a> Em até minutos você tem o resultado, porque seu tempo é valioso.
       </div>
     </div>
@@ -367,104 +363,78 @@
       </div>
     </div>
   </div>
-  <div class="w-full pb-12 pt-16 sm:pt-0">
-      <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto" >
-        <div class="mt-auto mb-auto w-full bg-bglight2Color shadow-xl border-1 rounded-2xl flex-wrap p-6">
+  <div class="w-full pb-16 mb-12 pt-16 sm:pt-0">
+      <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto sm:ml-0S" >
+        <div class="mt-auto mb-auto w-full bg-bglight2Color shadow-xl border-1 rounded-2xl flex-wrap flex justify-center p-6">
         
-          <div class="w-full flex  py-4 ">
-            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-2xl  text-primary text-center">Por que ser Best?</div>
-            <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
-              <img :src="$options.imageConfig.logoVertical" alt="SejaBest"  class="w-30 sm:w-24 h-auto mr-auto ml-auto"/>
+          <div class="w-full flex py-4 ">
+            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-3xl sm:text-base ml-8 text-primary text-center  font-bold">Por que ser Best?</div>
+            <div class="w-1/3   sm:w-1/4   mt-auto mb-0">
+              <img :src="$options.imageConfig.logoVertical" alt="SejaBest"  class="w-24 sm:w-18 h-auto mr-auto ml-auto"/>
             </div>
-            <div class="w-1/3  sm:w-1/4  mt-auto mb-0 text-center">
+            <div class="w-1/3  sm:w-1/4 mt-auto mb-0 text-center">
               <div class="text-textSecondary text-3xl sm:text-2xl mt-auto mb-auto px-4"> Bancos</div>
             </div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg"> As menores taxas do mercado </div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> As menores taxas do mercado </div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg"> Múltiplas opções de banco </div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg"> Múltiplas opções de banco </div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Plataforma multiprodutos</div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Plataforma multiprodutos</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Transparência</div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Transparência</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Processo agilizado</div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Processo agilizado</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Atendimento 7 dias por semana</div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Atendimento 7 dias por semana</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Assessoria personalizada</div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Assessoria personalizada</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Totalmente Digital</div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Totalmente Digital</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Sem burocracias</div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem burocracias</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex border-b py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Sem filas</div>
+          <div class="w-full flex border-b py-3 ml-8 sm:ml-0  ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Sem filas</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
-          <div class="w-full flex py-3  ">
-            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-2xl sm:text-lg">Foco no cliente</div>
+          <div class="w-full flex py-3 ml-8 sm:ml-0 ">
+            <div class="w-1/3 sm:w-2/4  mt-auto mb-auto text-center text-textSecondary text-xl sm:text-lg">Foco no cliente</div>
             <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.checkFill"  alt="Contém" class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
-            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
+            <div class="w-1/3 sm:w-1/4  mt-auto mb-auto sm:pl-4"><img :src="$options.imageConfig.icons.errorFill"  alt="Não contém"  class="w-8 sm:w-7 h-auto mr-auto ml-auto"/></div>
           </div>
         </div>
       </div>
   </div>
-  <div class="w-full bg-gradient-to-r from-primary to-secondary pb-4  mt-16 sm:mt-24 md:mt-24" >
-    <div class="maxWidth flex justify-center ">
-      <div class="w-3/12 sm:w-6/12 md:w-4/12 relative">
-       <img :src="$options.imageConfig.home.photoFooter"  alt="Gaspar Motta Filho"
-         class="w-full   absolute bottom-[-1.77rem] sm:bottom-[-2.6rem] md:bottom-[-2.78rem] lg:bottom-[-2.9rem] h-auto "/>
-      </div>
-      <div class="w-9/12 sm:w-6/12 md:w-8/12">
-        <div class="text-white pt-4 titleFontBold text-5xl lg:text-4xl md:text-3xl sm:text-xl text-right">
-           E aí, vamos ser<br/> Best com a gente?
-        </div>
-        <div class="py-10 md:py-4 lg:py-6 sm:py-2 text-right sm:text-xs" >
-         <button class="buttonComplementaryColor1">
-          <a 
-            :href="$options.information.simuladorImovel+this.$root.utms"  style=" text-decoration: none;"
-            target="_blank">Faça uma simulação</a></button>
-        </div>
-        <div class="w-full flex">
-          <div class="w-9/12 lg:w-8/12 sm:w-5/12 md:w-7/12 border-b-1 border-white mt-auto mb-auto"></div>
-          <div class="w-3/12 lg:w-4/12 sm:w-7/12 md:w-5/12 text-right text-white">
-            <div class="font-semibold sm:text-xs md:text-sm">Gaspar Motta Filho</div>
-            <div class="text-sm sm:text-2xs">CEO & Founder - SejaBest</div>
-          </div>
-        </div>
-      </div>
-    </div>
-   
-  </div>
+  <rodape />
   <popUpVideo  v-if="showVideo" :videoUrl="videoUrl" 
     :videoStyle="videoStyle" @closePopUp="showVideo=false" />
 </div>
@@ -473,14 +443,15 @@
 import { defineComponent } from 'vue';
 import popUpVideo from "@/components/base/popUpVideo.component.vue"
 import topbarComponent from '@/components/structure/topbar.component.vue';
+import rodape from '@/components/base/bannerBottomPage.vue';
 export default defineComponent({
-  name: 'FinancingLP',
+  name: 'Financing',
   components:{
-    topbarComponent , popUpVideo
+    topbarComponent , popUpVideo, rodape
   },
   metaInfo () {
     return {
-      title: "Conheça o FinanBest. O financiamento imobiliário da SejaBest.",
+      title: "Conheça o FinanBest. O Financiamento Imobiliário da SejaBest.",
       meta: [
         { vmid: 'description', name: 'description', content: "Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, transparente e com o auxílio do nosso time de especialistas!" }
       ]
@@ -572,3 +543,26 @@ export default defineComponent({
  
 })
 </script>
+
+<style>
+  .splide__arrow svg {
+	  fill: #0063f2;
+  }
+
+  .splide__arrow--prev {
+    left: -2em;
+  }
+
+  .splide__arrow--next {
+    right: -1.5em;
+  }
+
+  @media ( min-width: 1024px) and (max-width: 1279px) {
+    .splide__arrow--prev {
+      left: -1em;
+  }
+    .splide__arrow--next {
+      right: -1em;
+  }
+  }
+</style>
