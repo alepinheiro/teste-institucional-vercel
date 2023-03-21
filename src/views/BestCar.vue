@@ -1,6 +1,6 @@
 <template lang="">
 <div>
-  <headVideo />
+  <headVideo :isLP="false"/>
   <div class="gradientPrimaryToSecondary">
         <section2 />
         <section3 />
@@ -23,6 +23,8 @@ export default defineComponent({
     }
 })
 </script>
-<style lang="">
-    
+<style>
+.splide__arrow svg{
+  fill: #1c79fa;
+ }
 </style>

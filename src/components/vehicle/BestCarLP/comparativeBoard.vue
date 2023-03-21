@@ -4,11 +4,11 @@
         <div class="mt-auto mb-auto w-full bg-bgDarkColor shadow-xl rounded-2xl flex-wrap p-6 sm:p-2 flex justify-center">
         
           <div class="w-full flex  ml-8 sm:ml-0 py-4 ">
-            <div class="w-1/3 sm:w-[50%] sm:text-xl mt-auto mb-0 text-3xl font-bold text-complementaryColor3 text-center">Por que ser Best?</div>
-            <div class="w-1/3  sm:w-[25%]  mt-auto mb-0">
-              <img :src="$options.imageConfig.logoVerticalWhite" alt="SejaBest"  class="w-30 sm:w-20 h-auto mr-auto ml-auto"/>
+            <div class="w-1/3 sm:w-2/4 text-3xl sm:text-xl mt-auto mb-0  font-bold text-complementaryColor3 text-center">Por que ser Best?</div>
+            <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
+              <img :src="$options.imageConfig.logoVerticalWhite" alt="SejaBest"  class="w-28 sm:w-20 h-auto mr-auto ml-auto"/>
             </div>
-            <div class="w-1/3  sm:w-[25%] mt-auto mb-0 text-center">
+            <div class="w-1/3  sm:w-1/4 mt-auto mb-0 text-center">
               <div class="text-white text-2xl sm:text-sm mt-auto mb-auto px-4"> Bancos</div>
             </div>
           </div>

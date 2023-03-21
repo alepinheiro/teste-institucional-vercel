@@ -27,10 +27,4 @@ export default defineComponent({
 </script>
 
 <style>
-    .splide__arrow svg {
-        fill: #fff;
-    }
-    .splide__arrow{
-    opacity: 10;
-    }
 </style>

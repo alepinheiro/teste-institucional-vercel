@@ -6,20 +6,24 @@
     <div class="bgManWithPhone sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen" >
         <topbarComponent position="relative" />
-        <div class="w-full px-24 sm:px-0 flex flex-wrap justify-between mt-6 md:mt-4 sm:mt-4">
-          <div class=" md:w-7/12 text-white md:pr-4 sm:hidden  mt-auto mb-auto">
-            <a class="flex flex-row borderWhite xl:p-1 lg:p-1 xl:text-lg lg:text-lg absolute xl:mt-40 xl:ml-28 lg:mt-32 lg:ml-32 gap-4 rounded-md cursor-pointer" @click="scrollToElement('#SaibaMaisAbaixo')">
-                <span class="text-left xl:mt-1 px-1">Saiba Mais</span>
-               <img :src="$options.imageConfig.icons.setaBaixowhite" alt="SejaBest"  class="xl:w-8 lg:w-7 borderWhite rounded-full xl:ml-3 lg:ml-3 xl:mr-2 lg:mr-1 xl:p-2 lg:p-2 h-auto "/>
-            </a>
+        <div class="w-full px-24 sm:px-0 flex flex-wrap justify-between  mt-12 md:mt-4 sm:mt-4">
+          <div class="w-1/2 text-white md:pr-4 sm:hidden  mt-auto mb-0">
+            <div class=" flex justify-center">
+              <img :src="$options.imageConfig.awards.chashmeIcon" alt="Campeão de vendas CashMe 2022"  class="w-12 mr-2 h-auto"/>
+              <img :src="$options.imageConfig.awards.DaycovalIcon" alt="Campeão de vendas Daycoval 2022"  class="w-12 h-auto"/>
+              <div class="text-white mt-auto mb-auto p-4 text-xl">
+                <span class="font-semibold">Campeões de vendas de 2022</span><br/> pelos bancos 
+                <span class="font-semibold">CashMe</span> e <span class="font-semibold">Daycoval</span>
+              </div>
+            </div>
           </div>
           <div class="md:pt-4 sm:py-8 max-w-[400px] w-full md:mr-auto md:ml-auto sm:mr-auto sm:ml-auto ">
  
             <div class="bg-WhiteTransparency rounded-xl w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-primary  " >
-                  <div>Crédito Imobiliário nunca foi </div>
+                  <div>Conseguir Crédito nunca foi </div>
                   <div  class="flex ">
-                    <div>tão</div> <div class="pb-1 textDecoration">&nbsp;fácil.</div>
+                    <div>tão</div> <div class="pb-1 textDecoration">&nbsp;fácil</div>
                   </div>
                 </div>
                 <div class="text-sm py-4">Pré-aprove o seu crédito em até 20 minutos.</div>
@@ -60,7 +64,7 @@
         <div class="p-4">
           <div class="text-5xl md:text-6xl titleFontBold   mt-[-3.8rem] " >
             <div class="text-center">
-              Crédito Imobiliário nunca foi tão <span class="textDecoration">fácil.</span>
+              Conseguir Crédito nunca foi tão <span class="textDecoration">fácil</span>
             </div>
           </div>
           <div class="text-sm py-6 md:text-lg text-center">Pré-aprove o seu crédito em até 20 minutos.</div>
@@ -93,383 +97,163 @@
         </div>
       </div>
     </div>
-    <div class="maxWidth pt-24 md:pt-8 sm:pt-8">
-        <div class="text-6xl lg:text-5xl md:text-4xl sm:px-8 sm:text-4xl titleFontBold  text-white  text-center" id="SaibaMaisAbaixo" >
+    <div class="maxWidth pt-24  sm:pt-8">
+        <div class="text-6xl lg:text-5xl md:text-4xl sm:px-8 sm:text-4xl titleFontBold  text-white  text-center md:pt-12 lg:pt-24" id="SaibaMaisAbaixo" >
           Como a SejaBest pode te ajudar hoje?
         </div>
         <div class="text-3xl sm:text-2xl  titleFontBold  text-white  text-center pt-4 pb-20 sm:pb-8">
-          Conheça as melhores soluções em Crédito Imobiliário do mercado:
+          Conheça as melhores soluções em Crédito do mercado:
         </div>
-        <!--carousel animado lg e xl-->
-        <carouselHome class="md:hidden sm:hidden lg:hidden"/>
-        <div class="w-full md:hidden lg:hidden xl:hidden">
-          <Splide  :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
-            } " aria-label="Vantagens para você">
-            <SplideSlide >
-              <div class="w-11/12 mr-auto ml-auto max-w-sm p-4">
-                <div class="border-1 rounded-xl w-full text-white ">
-                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-                    <div class="text-3xl titleFont">Cash<span class="font-semibold">Best</span></div>
-                    <div class="text-lg defaultFont">Conheça o Crédito com </div>
-                    <div class="text-lg defaultFont">garantia de imóvel</div>
-                  </div>
-                  <div class="w-full p-4 bg-secondary rounded-b-xl  justify-between flex flex-col">
-                    <div class="w-full flex  items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg w-full">
-                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-6 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg  w-full">
-                        Prazos de até 20 anos
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-6 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg  w-full">
-                        Até 60% do valor do imóvel como capital
-                      </div>
-                    </div>
-                    <div class="buttonComplementaryColor1 mt-6 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                        target="_blank">Faça uma simulação</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide >
-              <div class="w-11/12  mr-auto ml-auto max-w-sm p-4">
-                <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
-                  <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-                    <div class="text-3xl titleFont">Finan<span class="font-semibold">Best</span></div>
-                    <div class="text-lg defaultFont">As melhores soluções em </div>
-                    <div class="text-lg defaultFont
-                    
-                    ">Financiamento imobiliário</div>
-                  </div>
-                  <div class="w-full p-4 rounded-b-xl ">
-                    <div class="w-full flex  items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg  w-full">
-                        Taxas a partir de 9,70% a.a. + taxas referencial
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-8 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg  w-full">
-                        Pague em até 420 meses
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-8 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg  w-full">
-                        Os melhores bancos do mercado
-                      </div>
-                    </div>
-                    <div class="buttonComplementaryColor1 mt-8 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                        target="_blank">Faça uma simulação</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide>
-              <div class="w-11/12  mr-auto ml-auto max-w-sm p-4">
-                  <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
-                    <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-                      <div class="text-3xl titleFont">Car<span class="font-semibold">Best</span></div>
-                      <div class="text-lg defaultFont">Empréstimo com</div>
-                      <div class="text-lg defaultFont">Garantia de veículo</div>
-                    </div>
-                    <div class="w-full p-4 rounded-b-xl justify-between flex flex-col">
-                      <div class="w-full flex  items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          Taxas a partir de 1,59% a.a. + taxas referenciais
-                        </div>
-                      </div>
-                      <div class="w-full flex pt-6 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          Pague em até 60 meses
-                        </div>
-                      </div>
-                      <div class="w-full flex pt-6 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                         Use seu carro, utilitário ou caminhão
-                        </div>
-                      </div>
-                      <div class="buttonComplementaryColor1 mt-8 text-center">
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                          target="_blank">Faça uma simulação</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>       
-            </SplideSlide>
-            <SplideSlide >
-              <div class="w-11/12 mr-auto ml-auto max-w-sm p-4"  >
-                  <div class="border-1 rounded-xl w-full text-white ">
-                    <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-                      <div class="text-3xl titleFont">Financiamento veicular</div>
-                      <div class="text-lg defaultFont">Seu sonho de ter um</div>
-                      <div class="text-lg defaultFont">veículo está a uma simulação!</div>
-                    </div>
-                    <div class="w-full p-4 bg-secondary rounded-b-xl justify-between flex flex-col">
-                      <div class="w-full flex  items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          As menores taxas do mercado, a partir de 1,49% + taxa referencial
-                        </div>
-                      </div>
-                      <div class="w-full flex pt-6 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          Pague em até 5 anos
-                        </div>
-                      </div>
-                      <div class="w-full flex pt-6 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          Financiamento de carros novos e seminovos.
-                        </div>
-                      </div>
-                      <div class="buttonComplementaryColor1 mt-6 text-center">
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                          target="_blank">Faça uma simulação</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>        
-            </SplideSlide>  
-          </Splide>  
+        <!--carousel animado -->
+        <div class="md:hidden sm:hidden">
+          <carouselHome />
         </div>
-        <!-- slider md e lg-->
-        <div class="w-full sm:hidden xl:hidden">
-          <Splide  :options=" {type:'loop', perPage: 2, perMove: 1,  drag   : 'free', pagination:false,
-            } " aria-label="Vantagens para você">
-            <SplideSlide >
-              <div class="w-full mr-auto ml-auto max-w-sm p-4">
-                <div class="border-1 rounded-xl w-full text-white ">
-                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-                    <div class="text-3xl titleFont">Cash<span class="font-semibold">Best</span></div>
-                    <div class="text-lg defaultFont">Conheça o Crédito com </div>
-                    <div class="text-lg defaultFont">garantia de imóvel</div>
-                  </div>
-                  <div class="w-full p-4 bg-secondary rounded-b-xl justify-between flex flex-col">
-                    <div class="w-full flex  items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg w-full">
-                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-6 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg w-full">
-                        Prazos de até 20 anos
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-6 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg w-full">
-                        Até 60% do valor do imóvel como capital
-                      </div>
-                    </div>
-                    <div class="buttonComplementaryColor1 mt-6 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                        target="_blank">Faça uma simulação</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SplideSlide>
-            <SplideSlide >
-              <div class="w-full mr-auto ml-auto max-w-sm p-4">
-                <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
-                  <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-                    <div class="text-3xl titleFont">Finan<span class="font-semibold">Best</span></div>
-                    <div class="text-lg defaultFont">As melhores soluções em </div>
-                    <div class="text-lg defaultFont">Financiamento imobiliário</div>
-                  </div>
-                  <div class="w-full p-4 rounded-b-xl justify-between flex flex-col">
-                    <div class="w-full flex  items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg w-full">
-                        Taxas a partir de 9,70% a.a. + taxas referencial
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-8 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg w-full">
-                        Pague em até 420 meses
-                      </div>
-                    </div>
-                    <div class="w-full flex pt-8 items-center">
-                      <div class="pr-6 ">
-                        <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
-                      </div>
-                      <div class="text-lg w-full">
-                        Os melhores bancos do mercado
-                      </div>
-                    </div>
-                    <div class="buttonComplementaryColor1 mt-8 text-center">
-                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                        target="_blank">Faça uma simulação</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SplideSlide>  
-            <!--novos slides-->
-            <SplideSlide>
-              <div class="w-full mr-auto ml-auto max-w-sm p-4">
-                  <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
-                    <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-                      <div class="text-3xl titleFont">Car<span class="font-semibold">Best</span></div>
-                      <div class="text-lg defaultFont">Empréstimo com</div>
-                      <div class="text-lg defaultFont">Garantia de veículo</div>
-                    </div>
-                    <div class="w-full p-4 rounded-b-xl justify-between flex flex-col">
-                      <div class="w-full flex  items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          Taxas a partir de 1,59% a.a. + taxas referenciais
-                        </div>
-                      </div>
-                      <div class="w-full flex pt-8 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          Pague em até 60 meses
-                        </div>
-                      </div>
-                      <div class="w-full flex pt-8 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                         Use seu carro, utilitário ou caminhão
-                        </div>
-                      </div>
-                      <div class="buttonComplementaryColor1 mt-8 text-center">
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                          target="_blank">Faça uma simulação</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>       
-            </SplideSlide>
-            <SplideSlide >
-              <div class="w-full mr-auto ml-auto max-w-sm p-4"  >
-                  <div class="border-1 rounded-xl w-full text-white ">
-                    <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-                      <div class="text-3xl titleFont">Financiamento veicular</div>
-                      <div class="text-lg defaultFont">Seu sonho de ter um</div>
-                      <div class="text-lg defaultFont">veículo está a uma simulação!</div>
-                    </div>
-                    <div class="w-full p-4 bg-secondary rounded-b-xl justify-between flex flex-col">
-                      <div class="w-full flex  items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          As menores taxas do mercado, a partir de 1,49% + taxa referencial
-                        </div>
-                      </div>
-                      <div class="w-full flex pt-6 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          Pague em até 5 anos
-                        </div>
-                      </div>
-                      <div class="w-full flex pt-6 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-lg w-full">
-                          Financiamento de carros novos e seminovos.
-                        </div>
-                      </div>
-                      <div class="buttonComplementaryColor1 mt-6 text-center">
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                          target="_blank">Faça uma simulação</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>        
-            </SplideSlide>
-            </Splide>  
+        <div class="xl:hidden md:hidden lg:hidden">
+          <carouselHomeMobile />
+        </div>
+        <div class="xl:hidden sm:hidden lg:hidden">
+          <carouselHomeTablet />
         </div>
         </div>
-      <div class="w-full pt-36 pb-10 md:pt-16 sm:pt-8 flex justify-center flex-col items-center">
+      <div class="w-full pt-36 pb-36 md:pt-16  md:pb-16 sm:pt-8 sm:pb-8 flex justify-center flex-col items-center">
         <p class="defaultFontBold text-5xl md:text-3xl sm:text-2xl  text-white sm:text-center"> Reconhecida pelo mercado nacional </p>
         <p class=" mt-1 text-2xl md:text-xl sm:text-lg text-white"> Conheça nossos últimos destaques </p>
-        <div class="maxWidth flex flex-row justify-between mt-6">
+        <div class="maxWidth flex flex-row justify-between mt-6 align-center">
           <div class="w-1/3 sm:w-2/4 sm:pl-4  mb-auto mt-4">
-            <img :src="$options.imageConfig.partnersNew.newCashme" alt="SejaBest"  class="w-44 sm:w-36 h-auto mr-auto ml-auto sm:ml-0"/>
-          </div>
-          <div class="w-1/3 sm:w-2/4 sm:flex  sm:justify-center sm:pl-4 mt-auto mb-auto">
-            <img :src="$options.imageConfig.partnersNew.seloC6" alt="SejaBest"  class="w-44 sm:w-36 sm:self-center h-auto mr-auto ml-auto sm:ml-0"/>
+            <img :src="$options.imageConfig.awards.newCashme" alt="SejaBest"  class="w-36 sm:w-30 h-auto mr-auto ml-auto "/>
           </div>
           <div class="w-1/3 sm:w-2/4 sm:pl-4 mt-auto mb-auto">
-            <img :src="$options.imageConfig.partnersNew.seloDaycoval" alt="SejaBest"  class="w-44 sm:w-36 h-auto mr-auto ml-auto sm:ml-0"/>
+            <img :src="$options.imageConfig.awards.seloDaycoval" alt="SejaBest"  class="w-44 sm:w-40 mt-2 h-auto mr-auto ml-auto sm:ml-auto sm:mr-0"/>
+          </div>
+          <div class="w-1/3 sm:w-2/4 sm:flex  sm:justify-center sm:pl-4 mt-auto mb-auto">
+            <img :src="$options.imageConfig.awards.seloC6" alt="SejaBest"  class="w-44 sm:w-36 sm:self-center mt-3 h-auto mr-auto ml-auto"/>
           </div>
       </div>
     </div>
-    <div class="w-full pt-24 md:pt-8 sm:pt-8 sm:bg-bglightColor">
-      <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto sm:ml-0S" >
+    <div class="maxWidth bg-secondary rounded-xl mt-14 mb-14 amr-auto ml-auto">
+      <div class="w-full text-center">
+        <div class="text-4xl pt-24 sm:pt-8 md:pt-8 sm:text-2xl text-white font-bold">
+          A melhor plataforma multibancos 
+        </div>
+        <div class="text-white text-xl ">
+          Conheça os parceiros que estão decolando com a <span class="font-semibold">SejaBest</span>.
+        </div>
+      </div>
+      <div class="w-full pt-16 sm:pt-8 md:pt-8 flex flex-wrap justify-center">
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.cashMe" alt="cashme"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.inter" alt="inter"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.rodobens" alt="rodobens"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.piratini" alt="piratini"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.santander" alt="santander"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.daycoval" alt="daycoval"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.pontte" alt="pontte" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.creditas" alt="creditas"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.itau" alt="Itaú"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.libra" alt="Libra"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.wimo" alt="Wimo"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.white.bari" alt="Bari"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
+      </div>
+      <div class="p-6 w-9/12 mr-auto ml-auto sm:p-2 md:p-2"></div>
+  </div>
+    <div class="w-full maxWidth pt-24 sm:pt-8 md:py-12 sm:bg-bglightColor">
+      <div class=" w-full px-4 bg-bglightColor rounded-2xl sm:hidden flex justify-center">
+        <div class="pt-12 pr-12">
+          <img :src="$options.imageConfig.home.phoneProposal" alt="Mais de 2000 propostas todo mês"  class="w-80  h-auto mr-auto ml-auto"/>
+        </div>
+        <div class="pr-12">
+          <img :src="$options.imageConfig.home.phoneLend" alt="Mais de R$ 500 milhões emprestados" class="w-80   h-auto mr-auto ml-auto"/>
+        </div>
+        <div class="pt-12 ">
+          <img :src="$options.imageConfig.home.phoneRequested" alt="Mais de R$ 2.5 bilhões em solicitações" class="w-80  h-auto mr-auto ml-auto"/>
+        </div>
+      </div>
+      <div class="bg-primary xl:hidden lg:hidden md:hidden  rounded-2xl ">
+          <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
+            } " aria-label="Vantagens para você">
+            <SplideSlide >
+              <div  class="w-8/12 mr-auto ml-auto ">
+                <img :src="$options.imageConfig.home.phoneProposal" 
+                class="px-4" alt="Mais de 2000 propostas todo mês">
+              </div>
+            </SplideSlide>
+            <SplideSlide >
+              <div  class="w-8/12 mr-auto ml-auto">
+                <img :src="$options.imageConfig.home.phoneLend" 
+                class="px-4" alt="Mais de R$ 500 milhões emprestados">
+              </div>
+            </SplideSlide>
+            <SplideSlide >
+              <div  class="w-8/12 mr-auto ml-auto">
+                <img :src="$options.imageConfig.home.phoneRequested" 
+                class="px-4" alt="Mais de R$ 2.5 bilhões em solicitações">
+              </div>
+            </SplideSlide>
+              
+          </Splide>
+        </div>
+    </div>
+    
+  </div>  
+  <div class="w-full bgMeioAzul p-4 sm:hidden md:hidden pt-24 sm:pt-8">
+      <div class="maxWidth p-0 shadow-lg bg-bglightColor rounded-2xl flex flex-wrap">
+        <div class="w-6/12 mb-auto ">
+          <div class="pl-24 lg:pl-12 py-16 ">
+            <div class="text-6xl xl:text-7xl titleFontBold text-primary xl:leading-[3.5rem] lg:leading-[3rem]  " >
+                <div class="titleFontBold">Você está </div>
+              <div  class="flex titleFontBold">
+                <div>no</div>&nbsp; <div class="pb-1 textDecoration">centro</div><div>&nbsp;das</div>
+              </div>
+              <div class="titleFontBold">nossas decisões </div>
+            </div>
+            <div class="pt-6 lg:pt-6 text-xl lg:text-lg text-textSecondary">
+              Você merece uma experiência completa, que soma o atendimento humanizado e personalizado dos nossos especialistas com a tecnologia. O que vai simplificar e agilizar todo o seu processo de negociação.
+            </div>
+            <router-link :to="'/sobre'+this.$root.utms">
+              <div class="  p-2 w-6/12 buttonComplementaryColor1 text-center sm:mb-1 mt-14" >
+                Conheça a SejaBest
+              </div> 
+            </router-link>
+          </div>
+        </div>
+        <div class="w-6/12 ">
+          <img :src="$options.imageConfig.home.phoneMan" alt="Crédito imobiliário" class="w-full h-auto rounded-r-2xl"/>
+        </div>
+      </div>
+  </div> 
+  <div class="maxWidth xl:hidden lg:hidden">
+    <div class="bg-white rounded-2xl w-full">
+      <div class="rounded-t-2xl bg-primary pb-4" ></div>
+      <img :src="$options.imageConfig.home.phoneManSM" alt="Crédito imobiliário" class="w-full h-auto "/>
+      <div class="p-8">
+      
+        <div class="text-6xl sm:text-4xl titleFontBold text-center text-primary  " >
+          Você está no <span class="textDecoration">centro</span> das nossas decisões.
+        </div>
+        <div class="text-textSecondary md:text-xl pt-8 text-justify">
+              Acreditamos que você merece uma experiência 
+              completa, que soma o melhor do nosso atendimento 
+              humanizado e personalizado dos nossos 
+              especialistas com a tecnologia, simplificando e 
+              agilizando todos os processos.
+        </div>
+        <router-link :to="'/sobre'+this.$root.utms" >
+          <div class=" mt-4 buttonComplementaryColor1 text-center" >
+            <a>Conheça a SejaBest</a>
+          </div>
+        </router-link>
+      </div>
+    </div>
+  </div>
+  <div class="w-full pt-24 md:pt-8 sm:pt-8 sm:bg-bglightColor">
+      <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto sm:ml-0S shadow-xl rounded-xl border-1" >
         <div class="mt-auto mb-auto w-full bg-bglightColor rounded-2xl flex-wrap p-6 sm:p-2 flex justify-center">
           <div class="w-10/12 sm:w-11/12">
           <div class="w-full flex ml-8 sm:ml-0 py-4 ">
-            <div class="w-1/3 sm:w-[50%] mt-auto mb-0 text-2xl sm:leading-5 sm:text-xl sm:mr- xl:text-3xl text-primary defaultFontBold text-center">Por que ser Best?</div>
-            <div class="w-1/3  sm:w-[25%]  mt-auto mb-0">
-              <img :src="$options.imageConfig.logoVertical" alt="SejaBest"  class="w-30 sm:w-24 h-auto mr-auto ml-auto sm:ml-2"/>
+            <div class="w-1/3 sm:w-2/4 mt-auto mb-0 text-3xl sm:text-xl   text-primary titleFontBold text-center">Por que ser Best?</div>
+            <div class="w-1/3  sm:w-1/4  mt-auto mb-0">
+              <img :src="$options.imageConfig.logoVertical" alt="SejaBest"  class="w-24 sm:w-24 h-auto mr-auto ml-auto sm:ml-2"/>
             </div>
-            <div class="w-1/3  sm:w-[25%] mt-auto mb-0 text-center">
+            <div class="w-1/3  sm:w-1/4 mt-auto mb-0 text-center">
               <div class="text-textSecondary text-3xl sm:text-xl mt-auto mb-auto px-4 sm:px-0 sm:ml-4"> Bancos</div>
             </div>
           </div>
@@ -532,136 +316,18 @@
         </div>
       </div>
     </div>
-    <div class="w-full maxWidth pt-24 sm:pt-8 md:py-12 sm:bg-bglightColor">
-      <div class=" w-full px-4 bg-bglightColor rounded-2xl sm:hidden flex justify-center">
-        <div class="pt-12 pr-12">
-          <img :src="$options.imageConfig.home.phoneProposal" alt="Mais de 2000 propostas todo mês"  class="w-80  h-auto mr-auto ml-auto"/>
-        </div>
-        <div class="pr-12">
-          <img :src="$options.imageConfig.home.phoneLend" alt="Mais de R$ 500 milhões emprestados" class="w-80   h-auto mr-auto ml-auto"/>
-        </div>
-        <div class="pt-12 ">
-          <img :src="$options.imageConfig.home.phoneRequested" alt="Mais de R$ 2.5 bilhões em solicitações" class="w-80  h-auto mr-auto ml-auto"/>
-        </div>
-      </div>
-      <div class="bg-primary xl:hidden lg:hidden md:hidden  rounded-2xl ">
-          <Splide :options=" {type:'loop', perPage: 1, perMove: 1,  drag   : 'free', pagination:false,
-            } " aria-label="Vantagens para você">
-            <SplideSlide >
-              <div  class="w-8/12 mr-auto ml-auto ">
-                <img :src="$options.imageConfig.home.phoneProposal" 
-                class="px-4" alt="Mais de 2000 propostas todo mês">
-              </div>
-            </SplideSlide>
-            <SplideSlide >
-              <div  class="w-8/12 mr-auto ml-auto">
-                <img :src="$options.imageConfig.home.phoneLend" 
-                class="px-4" alt="Mais de R$ 500 milhões emprestados">
-              </div>
-            </SplideSlide>
-            <SplideSlide >
-              <div  class="w-8/12 mr-auto ml-auto">
-                <img :src="$options.imageConfig.home.phoneRequested" 
-                class="px-4" alt="Mais de R$ 2.5 bilhões em solicitações">
-              </div>
-            </SplideSlide>
-              
-          </Splide>
-        </div>
-    </div>
-    
-  </div>  
-  <div class="w-full bgMeioAzul p-4 sm:hidden md:hidden pt-24 sm:pt-8">
-      <div class="maxWidth p-0 shadow-lg bg-bglightColor rounded-2xl flex flex-wrap">
-        <div class="w-6/12 mb-auto ">
-          <div class="pl-24 lg:pl-12 py-16 ">
-            <div class="text-6xl xl:text-7xl titleFontBold text-primary xl:leading-[3.5rem] lg:leading-[3rem]  " >
-                <div>Você está </div>
-              <div  class="flex ">
-                <div>no</div>&nbsp; <div class="pb-1 textDecoration">centro</div><div>&nbsp;das</div>
-              </div>
-              <div>nossas decisões </div>
-            </div>
-            <div class="pt-6 lg:pt-6 text-xl lg:text-lg text-textSecondary">
-              Acreditamos que você merece uma experiência <br/>
-              completa, que soma o melhor do nosso atendimento <br/>
-              humanizado e personalizado dos nossos <br/>
-              especialistas com a tecnologia, simplificando e <br/>
-              agilizando todos os processos.
-            </div>
-            <router-link :to="'/sobre'+this.$root.utms">
-              <div class="  p-2 w-6/12 bg-complementaryColor1 rounded-md text-white text-center text-xl sm:mb-1 mt-14" >
-                Conheça a SejaBest
-              </div> 
-            </router-link>
-          </div>
-        </div>
-        <div class="w-6/12 ">
-          <img :src="$options.imageConfig.home.phoneMan" alt="Crédito imobiliário" class="w-full h-auto rounded-r-2xl"/>
-        </div>
-      </div>
-  </div> 
-  <div class="maxWidth xl:hidden lg:hidden">
-    <div class="bg-white rounded-2xl w-full">
-      <div class="rounded-t-2xl bg-primary pb-4" ></div>
-      <img :src="$options.imageConfig.home.phoneManSM" alt="Crédito imobiliário" class="w-full h-auto "/>
-      <div class="p-8">
-      
-        <div class="text-6xl sm:text-4xl titleFontBold text-center text-primary  " >
-          Você está no <span class="textDecoration">centro</span> das nossas decisões.
-        </div>
-        <div class="text-textSecondary md:text-xl pt-8 text-justify">
-              Acreditamos que você merece uma experiência 
-              completa, que soma o melhor do nosso atendimento 
-              humanizado e personalizado dos nossos 
-              especialistas com a tecnologia, simplificando e 
-              agilizando todos os processos.
-        </div>
-        <router-link :to="'/sobre'+this.$root.utms" >
-          <div class=" pt-8 w-full  text-white text-center" >
-            <a>Conheça a SejaBest</a>
-          </div>
-        </router-link>
-      </div>
-    </div>
-  </div>
-  <div class="maxWidth   sm:bg-bglightColor mr-auto ml-auto">
-      <div class="w-full text-center">
-        <div class="text-4xl pt-24 sm:pt-8 md:pt-8 sm:text-2xl text-primary font-bold">
-          A melhor plataforma multibancos 
-        </div>
-        <div class="text-textSecondary text-xl ">
-          Conheça os parceiros que estão decolando com a <span class="font-semibold">SejaBest</span>.
-        </div>
-      </div>
-      <div class="w-full pt-16 sm:pt-8 md:pt-8 flex flex-wrap justify-center">
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.cashme" alt="cashme"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.inter" alt="inter"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.rodobens" alt="rodobens"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.piratini" alt="piratini"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.santander" alt="santander"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.daycoval" alt="daycoval"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.pontte" alt="pontte" class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.creditas" alt="creditas"  class="w-44 sm:w-36 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.itau" alt="Itaú"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.libra" alt="Libra"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.wimo" alt="Wimo"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-        <div class="w-1/4 md:w-1/3 sm:w-1/2 pb-12 sm:pb-4 md:pb-8 flex justify-center"><img :src="$options.imageConfig.logoPartners.gray.bari" alt="Bari"  class="w-44 sm:w-32 md:w-36 h-auto "/></div>
-      </div>
-      <div class="p-6 w-9/12 mr-auto ml-auto border-b-1 sm:p-2 md:p-2 border-textSecondary"></div>
-  </div>
   <div class="w-full  pt-10 sm:pt-4 md:pt-4 mr-auto ml-auto flex">
      <div class="w-7/12 sm:w-9/12 flex justify-center mt-auto mb-auto">
-      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 sm:p-0 sm:pl-6 md:pl-8  marginl-15R marginl-24R marginl-40R marginl-50R">
-        <div class="text-5xl sm:text-2xl md:text-4xl font-semibold text-primary ">
-          Transformando sua vida através da <span class="textDecoration">informação.</span>
+      <div class="w-7/12 md:w-full lg:w-8/12 sm:w-full p-4 sm:p-0 sm:pl-6 md:pl-8  marginl-15R marginl-24R marginl-40R marginl-50R z-10">
+        <div class="text-5xl sm:text-2xl md:text-4xl titleFontBold text-primary ">
+          Quem não é visto não é <span class="textDecoration">lembrado</span>
         </div>
         <div class="text-xl sm:text-sm md:text-sm sm:pt-4 md:pt-4 lg:pt-8 text-textSecondary pt-10">
           Siga a <span class="font-semibold">SejaBest</span> em todos os nossos canais pra ficar por dentro de 
           <span class="font-semibold">notícias, novidades e oportunidades</span> do mercado financeiro.
         </div>
         <div class="text-xl md:text-sm md:pt-2 sm:text-sm sm:pt-2 lg:pt-4 text-textSecondary pt-8">
-          conheça nosso <a :href="$options.information.socialMedia.youtube" style=" text-decoration: none;"
+          Conheça nosso <a :href="$options.information.socialMedia.youtube" style=" text-decoration: none;"
           target="_blank" class="text-primary font-semibold"> canal no YouTube.</a>  Conteúdos educativos 
           <span class="font-semibold"> gratuitos </span> sobre tudo do mercado de Financiamento Imobiliário.
           
@@ -694,8 +360,9 @@
       </div>
      </div>
      <div class="w-5/12 flex justify-end">
-       <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop" alt="SejaBest Mídias Sociais"  class="w-8/12 lg:w-full mr-0 ml-auto sm:hidden md:hidden h-auto "/>
-       <img :src="$options.imageConfig.home.mockupPhonesSM"   alt="SejaBest Mídias Sociais"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto sm:h-[80%] "/>
+      <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop" alt="SejaBest Mídias Sociais"  class="w-[48rem]  lg:w-full imgPhonesW xl:mt-[6.5em] xl:absolute  mr-0 ml-auto xl:hidden sm:hidden md:hidden h-auto "/>
+       <img :src="$options.imageConfig.home.mockupPhonesDesktopCrop" alt="SejaBest Mídias Sociais"  class="w-[48rem]  lg:w-full imgPhonesW xl:mt-[6.2em] xl:absolute  mr-0 ml-auto lg:hidden sm:hidden md:hidden h-auto "/>
+       <img :src="$options.imageConfig.home.mockupPhonesSM"   alt="SejaBest Mídias Sociais"  class="w-full md:w-8/12 mr-0 ml-auto xl:hidden lg:hidden h-auto sm:h-[80%] sm:self-end"/>
      </div>
   </div>
 </div>
@@ -707,13 +374,17 @@ import topbarComponent from '@/components/structure/topbar.component.vue';
 import rodape from '@/components/base/bannerBottomPage.vue';
 import carouselHome from '@/components/base/carouselHome.vue';
 import { SplideSlide } from '@splidejs/vue-splide';
+import carouselHomeTablet from '@/components/base/carouselHomeTablet.vue';
+import carouselHomeMobile from '@/components/base/carouselHomeMobile.vue'
 export default defineComponent({
   name: 'Home',
   components:{
     topbarComponent,
     rodape,
     carouselHome,
-    SplideSlide
+    SplideSlide,
+    carouselHomeTablet,
+    carouselHomeMobile
 },
   data() {
     return {
@@ -734,7 +405,7 @@ export default defineComponent({
     return {
       title: "SejaBest",
       meta: [
-        { vmid: 'description', name: 'description', content: "Crédito Imobiliário nunca foi tão fácil. Conheça as melhores soluções em Crédito Imobiliário do mercado: Conheça o Crédito com garantia de imóvel e o financiamento imobiliário" }
+        { vmid: 'description', name: 'description', content: "Crédito Imobiliário nunca foi tão fácil. Conheça as melhores soluções em Crédito Imobiliário do mercado: Conheça o Crédito com Garantia de Imóvel e o Financiamento Imobiliário" }
       ]
     }
   },
@@ -766,6 +437,10 @@ export default defineComponent({
   .splide__arrow--prev {
     left: -1em;
   }
+  .swiper-button-prev,
+  .swiper-button-next{
+      display: none;
+    }
   }
 
   @media (min-width: 668px) and ( max-width: 1023px) {
@@ -775,6 +450,11 @@ export default defineComponent({
   .splide__arrow--prev {
     left: -1em;
   }
+
+  .swiper-button-prev,
+  .swiper-button-next{
+      display: none;
+    }
   }
 
   @media (min-width: 1024px) and ( max-width:1279px) {
@@ -785,5 +465,13 @@ export default defineComponent({
     left: 2em;
   }
   }
+
+  @media (min-width: 1850px){
+    .imgPhonesW{
+      width: 55rem;
+      margin-top: -1.5rem
+    }
+    
+}
 
 </style>

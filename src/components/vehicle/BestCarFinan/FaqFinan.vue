@@ -4,7 +4,7 @@
       <div class="pb-6">
         <questions v-for="i in perguntas" :key="i.id" 
           :title="i.title" :text="i.text" :textAux="i.text2"
-          :videoUrl="i.videoUrl" :videoStyle="videoStyle" />
+          :videoUrl="i.videoUrl" :videoStyle="videoStyle" :withVideo="false" />
       </div>
     </div>
     </div>
@@ -27,7 +27,7 @@ export default defineComponent({
       this.perguntas = [
         {
           title: 'Estou negativado, consigo fazer o financiamento de carro?',
-          text: 'A SejaBest é uma fintech de crédito imobiliário, que visa trazer agilidade e segurança por meio da tecnologia para pessoas que buscam: financiamento imobiliário ou home equity (crédito com garantia de imóvel).',
+          text: 'A SejaBest é uma fintech de crédito imobiliário, que visa trazer agilidade e segurança por meio da tecnologia para pessoas que buscam: Financiamento Imobiliário ou Home Equity (Crédito com Garantia de Imóvel).',
           text2:null,
           videoUrl: 'https://www.youtube.com/embed/rb49Jt9dt4M',
         },
@@ -51,7 +51,7 @@ export default defineComponent({
         },
         {
           title: 'Quais documentos sâo necessários para fazer o financiamento?',
-          text: 'Financiamento imobiliário é uma modalidade de crédito, onde o banco empresta capital para que você possa adquirir seu imóvel.',
+          text: 'Financiamento Imobiliário é uma modalidade de crédito, onde o banco empresta capital para que você possa adquirir seu imóvel.',
           text2: null,
           videoUrl: 'https://www.youtube.com/embed/HakXQ0t9Sb0',
         },

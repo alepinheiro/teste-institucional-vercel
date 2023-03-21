@@ -327,8 +327,8 @@
             <div class="xl:w-2/3 lg:w-2/3 md:w-2/3 text-primary pb-8 text-6xl md:text-4xl sm:text-4xl titleFontBold text-right mr-0 ml-auto">
               Seja<span class="textDecoration">Best</span> você também.
             </div>
-            <div class="sm:px-1 px-4">
-              <button class="buttonComplementaryColor1 sm:py-1 md:p-2"><a class="sm:text-xs text-2xl "
+            <div class="sm:w-full">
+              <button class="bg-complementaryColor1 sm:p-2 md:p-2 text-white defaultFontBold rounded-xl px-8 p-3 sm:px-4 md:px-4"><a class="sm:text-sm text-2xl "
                 :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                 target="_blank">Faça uma simulação</a> </button>
             </div>
@@ -366,7 +366,7 @@ export default defineComponent({
     return {
       title: "Sobre a SejaBest",
       meta: [
-        { vmid: 'description', name: 'description', content: "A SejaBest é um fintech focada no mercado de crédito, atuando por meio de dois produtos: Financiamento imobiliário e empréstimo com garantia de imóvel (Home Equity). Mais de 10 anos de experiência em crédito Imobiliario, temos uma missão clara: Transformar o acesso ao Crédito Imobiliário para todos os brasileiros. " }
+        { vmid: 'description', name: 'description', content: "A SejaBest é um fintech focada no mercado de crédito, atuando por meio de dois produtos: Financiamento Imobiliário e empréstimo com garantia de imóvel (Home Equity). Mais de 10 anos de experiência em crédito Imobiliario, temos uma missão clara: Transformar o acesso ao Crédito Imobiliário para todos os brasileiros. " }
       ]
     }
   },

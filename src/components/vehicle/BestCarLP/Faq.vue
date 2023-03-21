@@ -3,7 +3,7 @@
     <div class="" >
       <div class="pb-6">
         <questions v-for="i in perguntas" :key="i.id" 
-          :title="i.title" :text="i.text" :textAux="i.text2"/>
+          :title="i.title" :text="i.text" :textAux="i.text2" :withVideo="false"/>
       </div>
     </div>
   </div>

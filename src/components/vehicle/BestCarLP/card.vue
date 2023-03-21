@@ -36,7 +36,7 @@
                 Até 90% do valor do veículo
             </h1>
             <p class="text-lg leading-loose lg:leading-8 md:text-sm sm:text-xs ">
-                Se o carro custa R$50 mil, você pode consseguir crédito aprovado de até R$ 45
+                Se o carro custa R$50 mil, você pode conseguir crédito aprovado de até R$ 45
                 para pagar conta, investir,<span class="md:hidden"> fazer poupança ,</span>etc.
             </p>
         </div>        
@@ -50,7 +50,7 @@
                     Até 5 anos de prazo
                  </h1>
                 <p class="text-lg leading-loose md:text-sm sm:text-xs ">
-                    Você tem até 60 meses para quitar as parcelas,que sâo as mesmas
+                    Você tem até 60 meses para quitar as parcelas, que sâo as mesmas
                     (Tabela Price) até você terminar de quitar as prestações.
                  </p>
         </div>        

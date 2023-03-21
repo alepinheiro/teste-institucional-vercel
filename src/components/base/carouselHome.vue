@@ -1,305 +1,348 @@
 <template>
-    <div class="overflow-hidden maxWidth">
-    <carousel :itemsToShow="3" :transition="800" :itemsToScroll="1" wrapAround="true" :modelValue="0">
-      <slide :key="slide"  :style="{'width' : auto}" >
-        <div class="w-full max-w-sm md:w-11/12 p-4" id="card1">
-                  <div class="border-1 rounded-xl w-full text-white ">
-                    <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-                      <div class="text-4xl titleFont">Cash<span class="font-semibold">Best</span></div>
-                      <div class="text-xl defaultFont">Conheça o Crédito com </div>
-                      <div class="text-xl defaultFont">garantia de imóvel</div>
+  <swiper
+      :initialSlide="1"
+      :slidesPerView="3"
+      :centeredSlides="true"
+      :spaceBetween="10"
+      :navigation="true"
+      :autoHeight="false"
+      :pagination="{
+          clickable: true,
+        }"
+      :modules="modules"
+      class="MySwiper swiper"
+  >
+      
+      <swiper-slide id="testimonial1">
+        <div class="w-full  mr-auto ml-auto max-w-sm p-4">
+                <div class="border-1 w-full gradienteSBDark h-[480px] rounded-xl text-white flex flex-col">
+                  <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
+                    <div class="text-3xl titleFont">Finan<span class="font-semibold">Best</span></div>
+                    <div class="text-base xl:text-lg defaultFont">As melhores soluções em </div>
+                    <div class="text-base xl:text-lg defaultFont
+                    
+                    ">Financiamento Imobiliário</div>
+                  </div>
+                  <div class="w-full p-4 rounded-b-xl mt-auto">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-base xl:text-lg  w-full">
+                        Taxas a partir de 9,70% a.a. + taxas referencial
+                      </div>
                     </div>
-                    <div class="w-full p-6 bg-secondary rounded-b-xl">
-                      <div class="w-full flex  items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-xl w-full">
-                          As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
-                        </div>
+                    <div class="w-full flex pt-8 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                       </div>
-                      <div class="w-full flex pt-6 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-xl w-full">
-                          Prazos de até 20 anos
-                        </div>
+                      <div class="text-base xl:text-lg  w-full">
+                        Pague em até 420 meses
                       </div>
-                      <div class="w-full flex pt-6 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-xl w-full">
-                          Até 60% do valor do imóvel como capital
-                        </div>
+                    </div>
+                    <div class="w-full flex pt-8 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
                       </div>
-                      <div class="buttonComplementaryColor1 mt-6 text-center">
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                          target="_blank">Faça uma simulação</a>
+                      <div class="text-base xl:text-lg  w-full">
+                        Os melhores bancos do mercado
                       </div>
                     </div>
                   </div>
-                </div>        
-      </slide>
-      <slide :key="slide" :style="{'width' : auto}" >
-        <div class="w-full mr-auto ml-auto max-w-sm md:w-11/12 p-4" id="card2">
-                  <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
-                    <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-                      <div class="text-4xl titleFont">Finan<span class="font-semibold">Best</span></div>
-                      <div class="text-xl defaultFont">As melhores soluções em </div>
-                      <div class="text-xl defaultFont
-                      
-                      ">Financiamento imobiliário</div>
+                  <div class="buttonComplementaryColor1 text-center mt-auto mb-5 w-10/12 self-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
                     </div>
-                    <div class="w-full p-6 rounded-b-xl ">
-                      <div class="w-full flex  items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-xl w-full">
-                          Taxas a partir de 9,70% a.a. + taxas referencial
-                        </div>
+                </div>
+              </div>
+      </swiper-slide>
+      <swiper-slide id="testimonial2">
+        <div class="w-full mr-auto ml-auto max-w-sm p-4">
+                <div class="border-1 rounded-xl  bg-secondary  h-[480px] w-full text-white flex flex-col">
+                  <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
+                    <div class="text-3xl titleFont">Cash<span class="font-semibold">Best</span></div>
+                    <div class="text-base xl:text-lg defaultFont">Conheça o Crédito com </div>
+                    <div class="text-base xl:text-lg defaultFont">Garantia de Imóvel</div>
+                  </div>
+                  <div class="w-full p-4 rounded-b-xl  justify-between flex flex-col mt-auto">
+                    <div class="w-full flex  items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                       </div>
-                      <div class="w-full flex pt-8 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-xl w-full">
-                          Pague em até 420 meses
-                        </div>
+                      <div class="text-base xl:text-lg w-full">
+                        As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
                       </div>
-                      <div class="w-full flex pt-8 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-xl w-full">
-                          Os melhores bancos do mercado
-                        </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                       </div>
-                      <div class="buttonComplementaryColor1 mt-8 text-center">
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                          target="_blank">Faça uma simulação</a>
+                      <div class="text-base xl:text-lg  w-full">
+                        Prazos de até 240 meses
+                      </div>
+                    </div>
+                    <div class="w-full flex pt-6 items-center">
+                      <div class="pr-6 ">
+                        <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
+                      </div>
+                      <div class="text-base xl:text-lg  w-full">
+                        Até 60% do valor do imóvel como capital
                       </div>
                     </div>
                   </div>
-                </div>       
-      </slide>
-      <slide :key="slide" :style="{'width' : auto}" :class="{'moveCloseL' : Index1}">
-        <div class="w-full mr-auto ml-auto max-w-sm md:w-11/12 p-4" id="card3">
-                  <div class="border-1 w-full gradienteSBDark  rounded-xl text-white ">
-                    <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-                      <div class="text-4xl titleFont">Car<span class="font-semibold">Best</span></div>
-                      <div class="text-xl defaultFont">Empréstimo com</div>
-                      <div class="text-xl defaultFont">Garantia de veículo</div>
+                  <div class="buttonComplementaryColor1 mt-auto mb-5 self-center w-10/12 text-center">
+                      <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        target="_blank">Faça uma simulação</a>
                     </div>
-                    <div class="w-full p-6 rounded-b-xl ">
+                </div>
+          </div>
+      </swiper-slide>
+      <swiper-slide id="testimonial3">
+        <div class="w-full  mr-auto ml-auto max-w-sm p-4">
+                  <div class="border-1 w-full gradienteSBDark  h-[480px] rounded-xl text-white flex flex-col">
+                    <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
+                      <div class="text-3xl titleFont">Car<span class="font-semibold">Best</span></div>
+                      <div class="text-base xl:text-lg defaultFont">Empréstimo com</div>
+                      <div class="text-base xl:text-lg defaultFont">Garantia de Veículo</div>
+                    </div>
+                    <div class="w-full p-4 rounded-b-xl justify-between flex flex-col mt-auto">
                       <div class="w-full flex  items-center">
                         <div class="pr-6 ">
                           <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
                         </div>
-                        <div class="text-xl w-full">
+                        <div class="text-base xl:text-lg w-full">
                           Taxas a partir de 1,59% a.a. + taxas referenciais
                         </div>
                       </div>
-                      <div class="w-full flex pt-8 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-xl w-full">
-                          Pague em até 60 meses
-                        </div>
-                      </div>
-                      <div class="w-full flex pt-8 items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-xl w-full">
-                         Use seu carro, utilitário ou caminhão
-                        </div>
-                      </div>
-                      <div class="buttonComplementaryColor1 mt-8 text-center">
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                          target="_blank">Faça uma simulação</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>       
-      </slide>
-      <slide :key="slide" :style="{'width' : auto}" >
-        <div class="w-full  max-w-sm md:w-11/12 p-4"  id="card4" >
-                  <div class="border-1 rounded-xl w-full text-white ">
-                    <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-                      <div class="text-4xl titleFont">Financiamento veicular</div>
-                      <div class="text-xl defaultFont">Seu sonho de ter um</div>
-                      <div class="text-xl defaultFont">veículo está a uma simulação!</div>
-                    </div>
-                    <div class="w-full p-6 bg-secondary rounded-b-xl">
-                      <div class="w-full flex  items-center">
-                        <div class="pr-6 ">
-                          <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
-                        </div>
-                        <div class="text-xl w-full">
-                          As menores taxas do mercado, a partir de 1,49% + taxa referencial
-                        </div>
-                      </div>
                       <div class="w-full flex pt-6 items-center">
                         <div class="pr-6 ">
                           <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
                         </div>
-                        <div class="text-xl w-full">
-                          Pague em até 5 anos
+                        <div class="text-base xl:text-lg w-full">
+                          Pague em até 60 meses
+                        </div>
+                      </div>
+                      <div class="w-full flex pt-6 items-center">
+                        <div class="pr-6 ">
+                          <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-9 h-8  "/>
+                        </div>
+                        <div class="text-base xl:text-lg w-full">
+                         Use seu carro, utilitário ou caminhão
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-auto self-center mb-5 w-10/12 text-center">
+                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
+                          target="_blank">Faça uma simulação</a>
+                      </div>
+                  </div>
+                </div>       
+      </swiper-slide>
+      <swiper-slide>
+        <div class="w-full mr-auto ml-auto max-w-sm p-4"  >
+                  <div class="border-1 rounded-xl bg-secondary h-[480px] w-full text-white flex flex-col">
+                    <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
+                      <div class="text-3xl titleFont">Finan<span class="font-semibold">Best</span> Veicular</div>
+                      <div class="text-base xl:text-lg defaultFont">Seu sonho de ter um</div>
+                      <div class="text-base xl:text-lg defaultFont">veículo está a uma simulação!</div>
+                    </div>
+                    <div class="w-full p-4 bg-secondary rounded-b-xl justify-between flex flex-col mt-auto">
+                      <div class="w-full flex  items-center">
+                        <div class="pr-6 ">
+                          <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa"  class="w-9 h-8  "/>
+                        </div>
+                        <div class="text-base xl:text-lg w-full">
+                          As menores taxas do mercado, a partir de 1,49% + taxa referencial
+                        </div>
+                      </div>
+                      <div class="w-full flex pt-6 items-center mt-auto">
+                        <div class="pr-6 ">
+                          <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-9 h-8  "/>
+                        </div>
+                        <div class="text-base xl:text-lg w-full">
+                          Pague em até 60 meses
                         </div>
                       </div>
                       <div class="w-full flex pt-6 items-center">
                         <div class="pr-6 ">
                           <img :src="$options.imageConfig.icons.moneyFill" alt="Valor"  class="w-9 h-8  "/>
                         </div>
-                        <div class="text-xl w-full">
-                          Financiamento de carros novos e seminovos.
+                        <div class="text-base xl:text-lg w-full">
+                          Financiamento de carros novos e seminovos
                         </div>
                       </div>
-                      <div class="buttonComplementaryColor1 mt-6 text-center">
+                    </div>
+                    <div class="buttonComplementaryColor1 mt-auto self-center mb-5 w-10/12 text-center">
                         <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
                           target="_blank">Faça uma simulação</a>
                       </div>
-                    </div>
                   </div>
-                </div>        
-              </slide>
-      <template #addons>
-        <div>
-          <navigation />
-        </div>
-      </template>
-    </carousel>
-  </div>
-  </template>
+                </div>         
+      </swiper-slide>
+  </swiper>
   
-  <script>
+    </template>
+    <script>
+      // Import Swiper Vue.js components
+      import { Swiper, SwiperSlide } from 'swiper/vue';
+      // Import Swiper styles
+      import 'swiper/css';
+      import 'swiper/css/navigation';
+      import 'swiper/css/pagination';
+      // import required modules
+      import { Pagination,Navigation } from 'swiper';
+    
+      export default {
+        components: {
+          Swiper,
+          SwiperSlide,
+        },
+        setup() {
+          return {
+            modules: [Pagination,Navigation],
+          };
+        },
+      };
+    </script>
   
-  import 'vue3-carousel/dist/carousel.css'
-  import { Carousel, Slide, Navigation } from 'vue3-carousel'
-  
-  export default {
-    name: 'App',
-    components: {
-      Carousel,
-      Slide,
-      Navigation,
-    },
-    data(){
-      return{
-        auto: 'auto',
-        Index1: 2
-      }
-    }
-  }
-  </script>
   <style>
   
-  .carousel__slide {
-    padding: 5px;
-  
+   .swiper {
+     padding: 1.5em;
+  }
+   .swiper .content-wrapper {
+     position: relative;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
+     grid-template-areas: ".";
+     width: 100%;
+     justify-items: center;
+     align-items: center;
+  }
+   .swiper .content-wrapper .content {
+     padding: 3em 1.5em;
+     text-align: center;
+     display: grid;
+     justify-items: center;
+     align-items: center;
+     margin: 0 auto;
+     color: #000;
+  }
+   .swiper .content-wrapper .content :first-child {
+     margin: 0;
+  }
+   .swiper .content-wrapper .content .swiper-avatar {
+     width: 100%;
+     max-width: 200px;
+     height: auto;
+  }
+   .swiper .content-wrapper .content .swiper-avatar img {
+     border-radius: 500px;
+  }
+   .swiper .content-wrapper .content .cite {
+     font-size: 14px;
+     font-weight: bold;
+  }
+   .swiper .swiper-slide {
+     margin: 0;
+     height: auto;
+     width: 100%;
+     padding: 0;
+     opacity: 0.2;
+    border-radius: 6px;
+     transition: all 0.6s ease-in-out !important;
   }
   
-  .carousel__viewport {
-    perspective: 2000px;
+   .swiper .swiper-slide.swiper-slide-active {
+     opacity: 1;
+     transition: all 0.6s ease-in-out;
+     transform: scale(1.1);
   }
-  
-  .carousel__track {
-    transform-style: preserve-3d;
-  }
-  
-  .carousel__slide--sliding {
-    transition: all .5s ease-in-out;
-  }
-  
-  .carousel__slide {
-    opacity: 0.5;
-    transform: rotateY(-20deg) scale(0.8s);
-  }
-  
-  .carousel__slide--active ~ .carousel__slide {
-    transform: rotateY(0deg) scale(0.85);
-    z-index: 1;
-  }
-  
-  .carousel__slide--active{
-    z-index:10;
-    transform: rotateY(0deg) scale(1);
-  }
-  
-  .carousel__slide--prev {
-    opacity: 0.5;
-    transform: rotateY(0deg) scale(0.85);
-  
-  }
-  .carousel__slide--next {
-    opacity: 0.5;
-    transform: rotateY(0deg) scale(0.85);
-  }
-    
-  .carousel__slide--next > #card4{
-    opacity: 0.5;
-    z-index: 0;
-  }
-  .carousel__slide--prev > #card4{
-    z-index: 0;
-    opacity: 0.5;
-  }
-  
-  .carousel__slide--next > #card3{
-    opacity: 0.5;
-    z-index: 0;
-  }
-  .carousel__slide--prev > #card3{
-    z-index: 0;
-    opacity: 0.5;
-  }
-  
-  .carousel__slide--next > #card2{
-    opacity: 0.5;
-    z-index: 0;
-  }
-  .carousel__slide--prev > #card2{
-    z-index: 0;
-    opacity: 0.5;
-  }
-  
-  .carousel__slide--next > #card1{
-    opacity: 0.5;
-    z-index: 0;
-  }
-  .carousel__slide--prev > #card1{
-    z-index: 0;
-    opacity: 0.5;
-  }
-  
-  .carousel__icon {
-      fill: white;
-  
-  }
-  .carousel__slide--active {
-    opacity: 1;
-    transform: rotateY(0) scale(1);
-  }
-  
-  @media (min-width: 1280px) {
-    .carousel__track{
-      margin: 0 -1570px !important;
-    }
-      .carousel__next {
-      right: 10px;
-  }
-  
+   .swiper .swiper-nav-wrapper {
+     bottom: 0;
+     left: 0;
+     right: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     width: auto;
+     padding-top: 3em;
   }
   
   
-  @media (min-width: 1024px) and (max-width: 1279px ) {
-    .carousel__track{
-      margin: 0 0 0 -245vh!important;
-  
-    }
+  .swiper-button-prev {
+     top: 2.6rem !important;
+     top: auto;
+     left: auto;
+     right: -43%;
+     position: relative !important;
   }
+  .swiper-button-next {
+     top: 1rem!important;
+     top: auto;
+     left: auto;
+     right: -55%;
+     position: relative !important;
+  }
+  .swiper-button-prev:after {
+     display: none;
+  }
+  .swiper-button-next:after {
+     display: none;
+  }
+  .swiper-button-next {
+     background-image: url("data:image/svg+xml,%0A%3Csvg width='9px' height='16px' viewBox='0 0 9 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M8.674805,7.066406 L1.924805,0.316406 C1.696288,0.105468 1.432619,0 1.133789,0 C0.834959,0 0.57129,0.105468 0.342773,0.316406 C0.114257,0.544923 0,0.808592 0,1.107422 C0,1.406251 0.114257,1.669921 0.342773,1.898438 L6.301758,7.857422 L0.342773,13.816406 C0.114257,14.044923 0,14.308592 0,14.607422 C0,14.906251 0.114257,15.169921 0.342773,15.398438 C0.465821,15.521485 0.584472,15.609375 0.69873,15.662109 C0.812989,15.714844 0.958007,15.741211 1.133789,15.741211 C1.309571,15.741211 1.454589,15.714844 1.568848,15.662109 C1.683106,15.609375 1.801757,15.521485 1.924805,15.398438 L8.674805,8.648438 C8.903321,8.419921 9.017578,8.156251 9.017578,7.857422 C9.017578,7.558592 8.903321,7.294923 8.674805,7.066406 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+     width: 24px;
+     height: 26px;
+     background-size: 24px 24px;
+     background-repeat: no-repeat;
+     margin: 0;
+     padding: 0;
+  }
+  .swiper-button-prev {
+     background-image: url("data:image/svg+xml,%0A%3Csvg width='9px' height='16px' viewBox='0 0 9 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='chevron-right' transform='translate(4.508789, 7.870605) rotate(-180.000000) translate(-4.508789, -7.870605) translate(-0.000000, -0.000000)' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M8.674805,7.066406 L1.924805,0.316406 C1.696288,0.105468 1.432619,0 1.133789,0 C0.834959,0 0.57129,0.105468 0.342773,0.316406 C0.114257,0.544923 0,0.808592 0,1.107422 C0,1.406251 0.114257,1.669921 0.342773,1.898438 L6.301758,7.857422 L0.342773,13.816406 C0.114257,14.044923 0,14.308592 0,14.607422 C0,14.906251 0.114257,15.169921 0.342773,15.398438 C0.465821,15.521485 0.584472,15.609375 0.69873,15.662109 C0.812989,15.714844 0.958007,15.741211 1.133789,15.741211 C1.309571,15.741211 1.454589,15.714844 1.568848,15.662109 C1.683106,15.609375 1.801757,15.521485 1.924805,15.398438 L8.674805,8.648438 C8.903321,8.419921 9.017578,8.156251 9.017578,7.857422 C9.017578,7.558592 8.903321,7.294923 8.674805,7.066406 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+     width: 24px;
+     height: 26px;
+     background-size: 24px 24px;
+     background-repeat: no-repeat;
+     margin: 0;
+     padding: 0;
+  }
+   .swiper-pagination {
+     margin: 0;
+     padding: 0;
+     width: auto;
+     position: relative !important;
+     display: block;
+     width: auto;
+  }
+   .swiper-pagination .swiper-pagination-bullets {
+     margin: 0;
+  }
+   .swiper-pagination .swiper-pagination-bullets .swiper-pagination-bullet {
+     margin: 0;
+     background: #fff !important;
+  }
+   .swiper-pagination-bullet {
+     background: #fff !important;
+     transition: all 0.2s ease-in-out;
+  }
+   .swiper-pagination-bullets.swiper-pagination-horizontal {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     bottom: 0;
+     top: 0.5;
+     bottom: 0;
+     width: auto;
+     padding: 0 1.5em;
+  }
+   .swiper-pagination-bullet-active {
+     transform: scale(1.5);
+  }
+  
   </style>
+    

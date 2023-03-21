@@ -1,14 +1,14 @@
 <template lang="">
   <div class="w-full h-full">
     <div class="bgFinanCar sm:hidden md:hidden">
-      <div class="maxWidth xl:h-[95vh] lg:h-screen" >
-        <topbarComponent class="relative"/>
+      <div class="maxWidth  xl:h-screen lg:h-screen" >
+        <topbarComponent class="relative" :class="{'hidden': isLP}"/>
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
         <div class="w-full flex pt-12 pt-xxl lg:pt-24 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
             <div class="bg-primary rounded-xl  w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold  text-white  pb-6" >
-                  <h1><div><span class="textDecoration pb-1 italic text-white flex w-60">FinanBest:</span> </div>
+                  <h1><div><span class="textDecoration pb-1 italic text-white flex w-60">FinanBest</span> </div>
                   <div class="text-6xl titleFontBold pt-2 text-white  " >
                     Financiamento veicular da SejaBest
                   </div></h1>
@@ -49,7 +49,7 @@
           <div class="w-10/12 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6 ">
             <div class="">
                 <div class="text-5xl titleFontBold pt-2 text-white  pb-6" >
-                  <h1><div><span class="textDecoration pb-1 text-complementaryColor3 flex w-48">FinanBest:</span> </div>
+                  <h1><div><span class="textDecoration pb-1 text-complementaryColor3 flex w-48">FinanBest</span> </div>
                   <div class="text-4xl titleFontBold pt-2 text-white  " >
                     Financiamento veicular da SejaBest
                   </div></h1>
@@ -94,13 +94,13 @@
           <div class="py-8 bg-secondary sm:py-4 p-6 mt-4 rounded-lg shadow-md w-full">
             <div class=" rounded-xl w-full ">
                 <div class="text-4xl titleFontBold  text-white  pb-2" >
-                  <h1><div><span class="textDecoration pb-1 text-complementaryColor3 flex w-60 sm:w-40">FinanBest:</span> </div>
+                  <h1><div><span class="textDecoration pb-1 text-complementaryColor3 flex w-60 sm:w-40">FinanBest</span> </div>
                   <div class="text-4xl titleFontBold pt-2 text-white  " >
-                    Empréstimo com garantia de veículo
+                    Empréstimo com Garantia de Veículo
                   </div></h1>
                 </div>
                 <div class=" py-4 text-white pb-6">
-                  Use o seu carro como garantia em troca das melhores taxas.Você consegue crédito para
+                  Use o seu carro como garantia em troca das melhores taxas. Você consegue crédito para
                   seus objetivos fincanceiros <span class="font-semibold">sem precisar veder o veículo</span>
                   com taxas a partir de  <span class="font-semibold">1,49% ao mês</span> 
                   <span class="text-white font-bold"> e prazos de até 5 anos.</span>
@@ -146,10 +146,13 @@ import topbarComponent from '@/components/structure/topbar.component.vue';
 export default defineComponent ({
     name: "topBarVideo",
     components: {popUpVideo, topbarComponent},
+    props: {
+      isLP: Boolean
+    },
     data() {
       return {
         isVisible:false,
-        value:60000,
+        value:40000,
         showVideo:false,
         videoStyle: "w-full h-[36rem] mr-auto ml-auto rounded-2xl ",
         videoUrl:"https://www.youtube.com/embed/Mlg8eDX61uE",

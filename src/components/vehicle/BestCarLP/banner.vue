@@ -11,12 +11,12 @@
                     </h1>
                 </div>
             </div>
-            <div class="pt-4 text-white text-3xl sm:text-base sm:text-center sm:mt-1  leading-relaxed font-light md:text-xl lg:text-2xl">
+            <div class="pt-4 text-white text-3xl sm:text-xl sm:text-center py-4 sm:pt-8 font-light md:text-xl lg:text-2xl">
                 São os juros mensais do <br class="sm:hidden"/>empréstimo usando <br class="sm:hidden"/>
                 o veículo como garantia.
             </div>
             <div class="rounded-xl p-2 sm:p-2 sm:text-xs w-6/12 sm:flex sm:items-center sm:justify-center sm:w-7/12  sm:self-center font-bold sm:font-normal bg-complementaryColor1 mt-4 sm:mt-5  text-white text-center uppercase lg:w-5/6 md:w-5/6 md:text-sm md:p-1" >
-                <a>Quero simular agora</a>
+                <a :href="$options.information.appVehicleSimulator+this.$root.utms"  target="_blank">Quero simular agora</a>
             </div>
           </div>
         </div>

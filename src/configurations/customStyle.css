@@ -42,14 +42,14 @@
 	font-family:"Public Sans Bold";
   }
   .bgBusinessman{
-	background-image: url("/images/partner/ImagemAbertura.png");
+	background-image: url("/images/partner/ImagemAbertura.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	position: relative;
   }
   .bgManWithPhone{
-	background-image: url("/images/Home/ImagemHomeGradiente.png");
+	background-image: url("/images/Home/ImagemHomeGradiente.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -70,7 +70,7 @@
 	position: relative;
   }
   .bgIcon{
-	background-image: url("/images/Home/IconeBestTransparenteEsquerda.png");
+	background-image: url("/images/Home/IconeBestTransparenteEsquerda.webp");
 	background-size: 20%;
 	width: 100%;
 	height: auto;
@@ -78,21 +78,21 @@
 	background-repeat: no-repeat;
   }
   .bgBestcar{
-	background-image: url("/images/BestCar/CABECALHO_BESTCAR.png");
+	background-image: url("/images/BestCar/CABECALHO_BESTCAR.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	position: relative;
   }
   .bgFinanCar{
-	background-image: url("/images/BestCar/CABECALHO_FINAN_VEICULOS.png");
+	background-image: url("/images/BestCar/CABECALHO_FINAN_VEICULOS.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	position: relative;
   }
   .bgFooter{
-	background-image: url("/images/Home/Rodapé.png");
+	background-image: url("/images/Home/Rodapé.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -127,7 +127,7 @@
 	@apply w-full  max-w-[1200px] sm:max-w-full  mr-auto ml-auto sm:p-0 md:py-0 md:px-0 lg:p-0 ;
   }
   .bgMeioAzul{
-	background-image: url("/images/Home/fundoMeio.png");
+	background-image: url("/images/Home/fundoMeio.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -208,14 +208,14 @@
   }
 
   .bgBannerPrimary {
-	background-image: url("/images/CAPA_2_tlmhob.png");
+	background-image: url("/images/CAPA_2_tlmhob.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	position: relative;
   }
   .bgMidias {
-	background-image: url("/images/youtube_alkyqq.png");
+	background-image: url("/images/youtube_alkyqq.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -223,7 +223,7 @@
   }
   @media (max-width: 1023px) {
 	.bgMidias {
-		background-image: url("/images/sess%C3%B5es_site_1_p9of6s.png");
+		background-image: url("/images/sess%C3%B5es_site_1_p9of6s.webp");
 		background-size: cover;
 		width: 100%;
 		height: 100%;
@@ -231,14 +231,14 @@
 	}
   }
   .bgFinan{
-	background-image: url("/images/sess%C3%B5es_site_3_pul4z5.png");
+	background-image: url("/images/sess%C3%B5es_site_3_pul4z5.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	position: relative;
   }
   .bgWhiteArrow {
-	background-image: url("/images/sess%C3%B5es_site_4_hrafo9.png");
+	background-image: url("/images/sess%C3%B5es_site_4_hrafo9.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -246,7 +246,7 @@
 
   }
   .bgBlueHalf{
-    background-image: url("/images/sess%C3%B5es_site_5_cp0iwo.png");
+    background-image: url("/images/sess%C3%B5es_site_5_cp0iwo.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -254,7 +254,7 @@
   }
   @media (max-width: 1023px) {
 	.bgBlueHalf {
-		background-image: url("/images/sess%C3%B5es_site_5_rlaba6.png");
+		background-image: url("/images/sess%C3%B5es_site_5_rlaba6.webp");
 		background-size: cover;
 		width: 100%;
 		height: 100%;
@@ -262,7 +262,7 @@
 	}
   }
   .bgBannerArrowRight {
-	background-image: url("/images/Layout_-_1080x1080-1_hjk7cn.png");
+	background-image: url("/images/Layout_-_1080x1080-1_hjk7cn.webp");
 	background-size: 50% 100%;
 	width: 100%;
 	height: 100%;
@@ -270,14 +270,14 @@
 	background-position: right 0%;
   }
   .bgBannerArrowRightSM {
-	background-image: url("/images/Layout_-_1080x1080-1_hjk7cn.png");
+	background-image: url("/images/Layout_-_1080x1080-1_hjk7cn.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
   }
   .bgBannerProducts{
-	background-image: url("/images/fundo_site_meio_xmhlui.png");
+	background-image: url("/images/fundo_site_meio_xmhlui.webp");
 	background-size: 100% 100%;
 	width: 100%;
 	height: 100%;
@@ -285,14 +285,14 @@
 	background-position: right 0%;
   }
   .bgBannerBlueRight{
-	background-image: url("/images/6_iehzhf.png");
+	background-image: url("/images/6_iehzhf.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
   }
   .bgBannerBlue {
-	background-image: url("/images/Fundo_azul_ueukye.png");
+	background-image: url("/images/Fundo_azul_ueukye.webp");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -458,7 +458,7 @@
   
 @media (min-width: 1880px) and (max-width:2000px) {
     .marginl-15R{
-      margin-left: 15rem;
+      margin-left: 10rem;
     }
     
 }

@@ -37,13 +37,13 @@
           </svg>
         </li >
         <li class="w-full flex flex-row justify-between items-center" @mouseover="hover2 = true"   @mouseout="hover2 = false">
-          <router-link :to="'/financiamento-veicular'+this.$root.utms" class="text-textPrimary block py-1 hover:font-semibold" :class="{'text-primary': hover2}">Financiamento de veículo</router-link>
+          <router-link :to="'/financiamento-veicular'+this.$root.utms" class="text-textPrimary block py-1 hover:font-semibold" :class="{'text-primary': hover2}">Financiamento de Veículo</router-link>
           <svg v-show="hover2" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z" clip-rule="evenodd" />
         </svg>
         </li>
         <li class="w-full flex flex-row justify-between items-center" @mouseover="hover3 = true"  @mouseout="hover3 = false">
-          <router-link :to="'/emprestimo-com-garantia-de-veiculo'+this.$root.utms" class="text-textPrimary block py-1  hover:font-semibold" :class="{'text-primary': hover3}">Empréstimo com garantia de veículo</router-link>
+          <router-link :to="'/emprestimo-com-garantia-de-veiculo'+this.$root.utms" class="text-textPrimary block py-1  hover:font-semibold" :class="{'text-primary': hover3}">Empréstimo com Garantia de Veículo</router-link>
           <svg v-show="hover3" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z" clip-rule="evenodd" />
         </svg>
@@ -80,13 +80,13 @@
         </svg>
         </li>
         <li class="w-full flex flex-row justify-between items-center" @mouseover="hover6 = true"  @mouseout="hover6 = false">
-          <router-link :to="'/financiamento-veicular'+this.$root.utms" class="text-textPrimary block  py-1 hover:text-primary hover:font-semibold" >Financiamento de veículo</router-link>
+          <router-link :to="'/financiamento-veicular'+this.$root.utms" class="text-textPrimary block  py-1 hover:text-primary hover:font-semibold" >Financiamento de Veículo</router-link>
           <svg v-show="hover6" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z" clip-rule="evenodd" />
         </svg>
         </li>
         <li class="w-full flex flex-row justify-between items-center" @mouseover="hover7 = true"  @mouseout="hover7 = false">
-          <router-link :to="'/emprestimo-com-garantia-de-veiculo'+this.$root.utms" class="text-textPrimary block  py-1 hover:text-primary hover:font-semibold" >Empréstimo com garantia de veículo</router-link>
+          <router-link :to="'/emprestimo-com-garantia-de-veiculo'+this.$root.utms" class="text-textPrimary block  py-1 hover:text-primary hover:font-semibold" >Empréstimo com Garantia de Veículo</router-link>
           <svg v-show="hover7" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z" clip-rule="evenodd" />
         </svg>
