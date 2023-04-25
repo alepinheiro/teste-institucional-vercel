@@ -5,7 +5,7 @@
           <div class="pl-20 md:pl-4 sm:pl-4 py-4 sm:flex sm:flex-col">
             <div class="text-7xl titleFontBold sm:mt-1 text-white lg:text-5xl md:text-3xl sm:self-center sm:items-center " >
                 <div class="flex gap-4 sm:self-center sm:justify-center">
-                    <img :src="$options.imageConfig.icons.grafico" class="mt-auto w-2/12 sm:w-10 md:w-10 lg:w-16" /> 
+                    <img :src="$options.imageConfig.icons.grafico" class="mt-auto w-2/12 sm:w-10 md:w-10 lg:w-16" />
                     <h1 class="sm:text-4xl lg:text-5xl md:text-4xl text-7xl ">
                       1,59%
                     </h1>
@@ -31,7 +31,8 @@
 
 import { defineComponent, ComponentPublicInstance } from 'vue';
 
-type IRootExtension = ComponentPublicInstance & { [key: string]: any }
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
 export default defineComponent({
     name: 'Banner'

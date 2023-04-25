@@ -46,7 +46,7 @@ app.mixin({
 });
 app.config.globalProperties.$filters = {
   // formatos aceitos listados em https://momentjs.com/
-  formatDate(date: any, format: string){
+  formatDate(date: Date, format: string){
     return moment(date).format(format)
   }
 }

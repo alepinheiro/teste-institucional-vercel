@@ -4,7 +4,7 @@
       :class="{ ' titleInputsError': (error !== undefined && error !== ''), 'titleInputs': (!(error !== undefined && error !== '')) }">
       <label :for="id">{{ label }}</label>
     </div>
-    <select 
+    <select
       :id="id" :value="modelValue" :class="{
       'inputBaseError w-full':
         (error !== undefined && error !== ''),
@@ -44,7 +44,10 @@ export default defineComponent({
       default: ''
     },
     options: {
-      type: Array as () => Array<any>,
+      type: Array as () => Array<{
+        value: string,
+        text: string
+      }>,
       default: () => []
     },
   },
@@ -54,8 +57,11 @@ export default defineComponent({
     }
   },
   methods: {
-    emitValue(e: any) {
-      this.$emit('update:modelValue', e.target.value)
+    emitValue(e: Event) {
+      const element = e.target as HTMLSelectElement
+      if(element){
+        this.$emit('update:modelValue', element.value )
+      }
     }
   },
 })

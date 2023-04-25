@@ -14,8 +14,8 @@
             </div>
             </div>
             <div class="w-1/2 mt-auto mb-auto sm:w-full">
-                <img 
-                :src= $options.imageConfig.bestCar.gráficoBestCar alt="BestHub"  
+                <img
+                :src= $options.imageConfig.bestCar.gráficoBestCar alt="BestHub"
                 class="sm:w-full md:w-11/12 w-full h-auto  "/>
             </div>
         </div>
@@ -28,12 +28,13 @@
 import partnersLabel from './partnersLabel.vue';
 import { defineComponent, ComponentPublicInstance } from 'vue';
 
-type IRootExtension = ComponentPublicInstance & { [key: string]: any }
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
 export default defineComponent({
     name: 'Section3',
     components: {partnersLabel
-    } 
+    }
 })
 
 </script>

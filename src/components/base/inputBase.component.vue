@@ -1,11 +1,11 @@
 <template>
   <div>
     <div
-      :class="{ ' titleInputsError': (error !== undefined && error !== ''), 
+      :class="{ ' titleInputsError': (error !== undefined && error !== ''),
       'titleInputs': (!(error !== undefined && error !== '')) }">
       <label :for="id">{{ label }}</label>
     </div>
-    <input 
+    <input
       :id="id" :value="modelValue" :type="type" :placeholder="placeholder" :class="{
       'inputBaseError w-full':
         (error !== undefined && error !== ''),
@@ -52,8 +52,9 @@ export default defineComponent({
     }
   },
   methods: {
-    emitValue(e: any) {
-      this.$emit('update:modelValue', e.target.value)
+    emitValue(e: Event) {
+      const element = e.target as HTMLSelectElement
+      this.$emit('update:modelValue', element.value)
     }
   },
 })

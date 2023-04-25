@@ -2,7 +2,7 @@
   <div class="w-full h-full">
     <div class="bgFinanCar sm:hidden md:hidden">
       <div class="maxWidth  xl:h-screen lg:h-screen" >
-        <topbarComponent class="relative" :class="{'hidden': isLP}"/>
+        <TopbarComponent class="relative" :class="{'hidden': isLP}"/>
       <div class="maxWidth xl:h-screen lg:h-screen  sm:hidden md:hidden" >
         <div class="w-full flex pt-12 pt-xxl lg:pt-24 md:pt-8 sm:pt-4">
           <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
@@ -16,9 +16,9 @@
                   <div class=" pt-0 text-white pb-8 border-div-video">
                     Escolha o carro, novo ou usado, e financie até 100% do valor. Faça uma simulação agora
                     e veja como ficam as parcelas.
-                  </div> 
+                  </div>
                   <div class="flex pt-2">
-                   <div class="w-6/12 text-lg text-white pt-2 font-semibold text-textPrimary"> 
+                   <div class="w-6/12 text-lg text-white pt-2 font-semibold text-textPrimary">
                       De quanto <br /> você precisa?
                     </div>
                     <div class="w-full flex items-end gap-4">
@@ -27,7 +27,7 @@
                     </div>
                     <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a 
+                      <a
                       :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
@@ -45,7 +45,7 @@
     </div>
       <div class=" sm:hidden xl:hidden lg:hidden">
       <div class="maxWidth bg-primary " >
-        <topbarComponent class="relative"/>
+        <TopbarComponent class="relative"/>
         <div class="w-full flex justify-center items-center pt-6">
           <div class="w-10/12 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6 ">
             <div class="">
@@ -56,19 +56,19 @@
                   </div></h1>
                 </div>
                 <div class=" text-white pb-6 text-lg">
-                  Escolha o carro, novo ou usado, e financie até 100% do valor. Faça uma simulação agora e veja como ficam as parcelas. 
+                  Escolha o carro, novo ou usado, e financie até 100% do valor. Faça uma simulação agora e veja como ficam as parcelas.
                 </div>
                 <div class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4">
                   <div class="pr-1 mt-auto mb-auto">
                     <img  :src="$options.imageConfig.iconSejaBestWhite" alt="SejaBest"  class="w-12 h-auto ">
                   </div>
-                  <div class="w-10/12 text-lg text-white"> 
-                    Sem <span class="text-complementaryColor3">Filas.</span> 
-                    Sem <span class="text-complementaryColor3">gerentes.</span>  
-                    Sem <span class="text-complementaryColor3">complexidades</span> 
+                  <div class="w-10/12 text-lg text-white">
+                    Sem <span class="text-complementaryColor3">Filas.</span>
+                    Sem <span class="text-complementaryColor3">gerentes.</span>
+                    Sem <span class="text-complementaryColor3">complexidades</span>
                   </div>
                 </div>
-                <div class="w-10/12 text-xl text-white pt-2 font-semibold text-textPrimary"> 
+                <div class="w-10/12 text-xl text-white pt-2 font-semibold text-textPrimary">
                   De quanto você precisa?
                 </div>
                 <div class="w-full flex  items-end justify-between pb-2">
@@ -77,8 +77,8 @@
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a 
-                      :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  
+                      <a
+                      :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"
                       style=" text-decoration: none;" target="_blank">Simular</a>
                     </div>
                   </div>
@@ -91,7 +91,7 @@
     <!--Inicio video Mobile-->
     <div class=" xl:hidden lg:hidden md:hidden">
       <div class="maxWidth bg-primary" >
-        <topbarComponent position="relative" />
+        <TopbarComponent position="relative" />
         <div class="w-full">
           <div class="py-8 bg-secondary sm:py-4 p-6 mt-4 rounded-lg shadow-md w-full">
             <div class=" rounded-xl w-full ">
@@ -104,7 +104,7 @@
                 <div class=" py-4 text-white pb-6">
                   Use o seu carro como garantia em troca das melhores taxas. Você consegue crédito para
                   seus objetivos fincanceiros <span class="font-semibold">sem precisar veder o veículo</span>
-                  com taxas a partir de  <span class="font-semibold">1,49% ao mês</span> 
+                  com taxas a partir de  <span class="font-semibold">1,49% ao mês</span>
                   <span class="text-white font-bold"> e prazos de até 5 anos.</span>
                 </div>
                 <div class="bg-bglight2Color p-4 rounded-xl">
@@ -112,13 +112,13 @@
                     <div class="w-1/12 pr-1 mt-auto mb-auto">
                       <img  :src="$options.imageConfig.iconSejaBest" alt="SejaBest" class="w-6 h-auto ">
                     </div>
-                    <div class="w-10/12 text-md "> 
-                      Sem <span class="text-primary">Filas.</span> 
-                      Sem <span class=" text-primary">gerentes.</span>  
-                      Sem <span class=" text-primary">complexidade</span> 
+                    <div class="w-10/12 text-md ">
+                      Sem <span class="text-primary">Filas.</span>
+                      Sem <span class=" text-primary">gerentes.</span>
+                      Sem <span class=" text-primary">complexidade</span>
                     </div>
                   </div>
-                  <div class="w-10/12 text-xl  pt-2 font-semibold text-textPrimary"> 
+                  <div class="w-10/12 text-xl  pt-2 font-semibold text-textPrimary">
                     De quanto você precisa?
                   </div>
                   <div class="w-full flex  items-end justify-between">
@@ -127,7 +127,7 @@
                     </div>
                     <div class="w-3/12 ">
                       <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                        <a 
+                        <a
                         :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  style=" text-decoration: none;"
                         target="_blank">Simular</a>
                       </div>
@@ -143,14 +143,18 @@
 </template>
 
 <script lang="ts">
+
 import { ComponentPublicInstance, defineComponent } from 'vue';
 import TopbarComponent from '@/components/structure/topbar.component.vue';
 
-type IRootExtension = ComponentPublicInstance & { [key: string]: any }
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
 export default defineComponent ({
     name: "TopBarVideo",
-    components: {TopbarComponent},
+    components: {
+      TopbarComponent
+    },
     props: {
       isLP: Boolean
     },
@@ -168,7 +172,7 @@ export default defineComponent ({
           show4:false,
       }
     }
-  }, 
+  },
 })
 </script>
 
