@@ -4,7 +4,7 @@
       :class="{ ' titleInputsError': (error !== undefined && error !== ''), 'titleInputs': (!(error !== undefined && error !== '')) }">
       <label :for="id">{{ label }}</label>
     </div>
-    <input 
+    <input
       :id="id" ref="inputRef" type="text" :placeholder="placeholder" :class="{
       'inputBaseError w-full':
         (error !== undefined && error !== ''),
@@ -55,7 +55,7 @@ export default defineComponent({
       autoSign: true as boolean,
       useGrouping: true as boolean,
       accountingSign: false as boolean
-    } 
+    }
 
     const { inputRef } = useCurrencyInput(options)
 

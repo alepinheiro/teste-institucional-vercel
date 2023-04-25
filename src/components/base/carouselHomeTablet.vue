@@ -1,9 +1,9 @@
 <template>
-  <swiper 
-    :initial-slide="1" 
-    :slides-per-view="1.8" 
-    :centered-slides="true" 
-    :space-between="0" 
+  <swiper
+    :initial-slide="1"
+    :slides-per-view="1.8"
+    :centered-slides="true"
+    :space-between="0"
     :navigation="true"
     :auto-height="false" :loop="true" :pagination="{
       clickable: true,
@@ -127,7 +127,7 @@
             </div>
           </div>
           <div class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center">
-            <a 
+            <a
               :href="$options.information.appSimulator + $root.utms" style="text-decoration: none;"
               target="_blank">Faça uma simulação</a>
           </div>
@@ -169,7 +169,7 @@
             </div>
           </div>
           <div class="buttonComplementaryColor1 w-11/12 flex self-center mt-auto mb-5 justify-center text-center">
-            <a 
+            <a
               :href="$options.information.appSimulator + $root.utms" style="text-decoration: none;"
               target="_blank">Faça uma simulação</a>
           </div>
@@ -200,7 +200,7 @@ export default {
   },
 };
 </script>
-    
+
 <style>
 .swiper {
   padding: 1.5em;
@@ -362,4 +362,3 @@ export default {
   top: 1.2rem;
 }
 </style>
-      

@@ -1,11 +1,11 @@
 <template>
-  <swiper 
-    :initial-slide="1" 
-    :slides-per-view="3" 
-    :centered-slides="true" 
-    :space-between="10" 
+  <swiper
+    :initial-slide="1"
+    :slides-per-view="3"
+    :centered-slides="true"
+    :space-between="10"
     :navigation="true"
-    :auto-height="false" 
+    :auto-height="false"
     :pagination="{
       clickable: true,
     }" :modules="modules" class="MySwiper swiper">
@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="buttonComplementaryColor1 text-center mt-auto mb-5 w-10/12 self-center">
-            <a 
+            <a
               :href="$options.information.appSimulator + $root.utms" style=" text-decoration: none;"
               target="_blank">
               Faça uma simulação
@@ -90,7 +90,7 @@
             </div>
           </div>
           <div class="buttonComplementaryColor1 mt-auto mb-5 self-center w-10/12 text-center">
-            <a 
+            <a
               :href="$options.information.appSimulator + $root.utms" style=" text-decoration: none;"
               target="_blank">Faça uma simulação</a>
           </div>
@@ -132,7 +132,7 @@
             </div>
           </div>
           <div class="buttonComplementaryColor1 mt-auto self-center mb-5 w-10/12 text-center">
-            <a 
+            <a
               :href="$options.information.appSimulator + $root.utms" style=" text-decoration: none;"
               target="_blank">Faça uma simulação
             </a>
@@ -175,7 +175,7 @@
             </div>
           </div>
           <div class="buttonComplementaryColor1 mt-auto self-center mb-5 w-10/12 text-center">
-            <a 
+            <a
               :href="$options.information.appSimulator + $root.utms" style=" text-decoration: none;"
               target="_blank">Faça uma simulação</a>
           </div>
@@ -206,7 +206,7 @@ export default {
   },
 };
 </script>
-  
+
 <style>
 .swiper {
   padding: 1.5em;
@@ -362,5 +362,5 @@ export default {
 
 .swiper-pagination-bullet-active {
   transform: scale(1.5);
-}</style>
-    
+}
+</style>
