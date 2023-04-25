@@ -2,17 +2,18 @@
   <div class="mb-4 bg-bgDefaultColor rounded-2xl">
     <div class=" header">
       <div>
-        <div
-          :class="{'bg-primary text-white rounded-t-2xl':(show==true),
-        'bg-bgDefaultColor text-primary rounded-2xl':(show==false)}"
+        <div 
+          :class="{
+            'bg-primary text-white rounded-t-2xl': (show == true),
+            'bg-bgDefaultColor text-primary rounded-2xl': (show == false)
+          }"
           style="cursor: pointer; display: flex; font-size: 16px;" class="justify-between p-6 sm:p-4"
-          @click="showAnswer()"
-        >
+          @click="showAnswer()">
           <div class=" text-xl font-semibold pr-2 sm:pr-1 sm:text-xs">{{ title }}</div>
           <div class="mt-auto mb-auto text-xl sm:text-xs ">
-           
-            <i v-if="!show" class="ti ti-angle-right" ></i>
-            <i v-if="show" class="ti ti-angle-down" ></i>
+
+            <i v-if="!show" class="ti ti-angle-right"></i>
+            <i v-if="show" class="ti ti-angle-down"></i>
           </div>
         </div>
       </div>
@@ -21,11 +22,11 @@
           <p class="sm:text-sm italic text-textPrimary">
             {{ text }}
           </p>
-          <p v-if="textAux!==undefined && textAux!==null" class="sm:text-sm italic text-textPrimary">
+          <p v-if="textAux !== undefined && textAux !== null" class="sm:text-sm italic text-textPrimary">
             {{ textAux }}
           </p>
         </div>
-        <div v-if="withVideo" class="w-1/2 sm:w-full" >
+        <div v-if="withVideo" class="w-1/2 sm:w-full">
           <videoBase :url="videoUrl" :style="videoStyle" />
         </div>
       </div>
@@ -37,15 +38,33 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'questions',
+  name: 'Questions',
   props: {
-      title: String,
-      text: String,
-      textAux: String,
-      videoUrl: String,
-      videoStyle: String,
-      withVideo: Boolean,
+    title: {
+      type: String,
+      default: ''
     },
+    text: {
+      type: String,
+      default: ''
+    },
+    textAux: {
+      type: String || null,
+      default: null
+    },
+    videoUrl: {
+      type: String,
+      default: ''
+    },
+    videoStyle: {
+      type: String,
+      default: ''
+    },
+    withVideo: {
+      type: Boolean,
+      default: false
+    },
+  },
   data() {
     return {
       show: false,

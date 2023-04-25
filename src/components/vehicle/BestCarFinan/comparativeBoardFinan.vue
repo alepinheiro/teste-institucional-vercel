@@ -74,7 +74,7 @@
 <script>
 import { defineComponent } from 'vue';
 export default defineComponent({
-    name: 'comparativeBoard',
+    name: 'ComparativeBoard',
 })
 </script>
 <style lang="">

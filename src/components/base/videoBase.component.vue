@@ -1,5 +1,6 @@
 <template>
-  <iframe :class="style" :src="url+'?controls=0'" 
+  <iframe 
+    :class="style" :src="url+'?controls=0'" 
     title="YouTube video player" frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen>
   </iframe>
@@ -10,10 +11,16 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'videoBase',
+  name: 'VideoBase',
   props: {
-    url: String,
-    style: String,
+    url: {
+      type: String,
+      default: ''
+    },
+    style: {
+      type: String,
+      default: ''
+    },
   },
   data() {
     return {

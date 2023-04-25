@@ -1,4 +1,4 @@
-<template lang="">
+<template>
 <div class="maxWidth  mr-auto ml-auto">
           <div class="w-full text-center">
             <div class="text-4xl pt-28 sm:pt-8 md:pt-8 sm:text-2xl text-white font-semibold">
@@ -24,12 +24,14 @@
           </div>
 </div>          
 </template>
-<script>
+
+<script lang="ts">
+
 import { defineComponent } from 'vue';
 export default defineComponent ({
-    name:'partnersLabel'
+    name:'PartnersLabel'
 })
+
 </script>
-<style lang="">
-    
-</style>
+
+<style></style>

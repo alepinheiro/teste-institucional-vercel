@@ -1,13 +1,13 @@
-<template lang="">
+<template>
       <div>
-        <topBarVideo :isLP="false"/>
+        <TopBarVideo :is-lp="false"/>
         <div class="flex pt-6  maxWidth">
           <div class="w-5/12 md:w-4/12 mb-auto mt-16 xl:mt-6 md:mt-10 sm:w-full sm:hidden md:hidden">
             <img :src="$options.imageConfig.bestCar.carroNotas" alt="" class="absolute left-[-4rem] lg:left-[-3rem] md:left-[-4rem] lg:w-[30rem] xl:w-[45rem] md:w-[24rem] sm:hidden max-w-3xl">
           </div>
           <div class="sm:w-full sm:text-left mb-auto text-primary xl:ml-24 xl:mt-24 lg:mt-16  md:mt-10 lg:ml-12  lg:w-7/12 w-full md:justify-center md:flex md:flex-col">
             <div class=" sm:pt-20 md:w-full sm:text-center text-5xl  md:text-2xl lg:text-4xl sm:text-3xl text-center font-semibold mr-0 flex justify-end md:justify-center lg:justify-center sm:justify-center ">
-              Com o FinanBest você tem: 
+              Com o FinanBest você tem:
             </div>
                 <cardWhite />
             </div>
@@ -16,13 +16,13 @@
             <h1 class="xl:text-5xl lg:text-4xl md:text-3xl sm:text-xl text-secondary font-bold text-center xl:mb-16 lg:mb-12 md:mb-12 sm:mb-10 ">
                 Passo a passo <span class="text-primary">para financiar seu carro</span>
             </h1>
-            <stepByStep />
+            <StepByStep />
             <div class="maxWidth xl:mt-11 lg:mt-6 md:mt-6 px-28 sm:px-8">
-                <P class="text-secondary md:text-sm text-lg text-center">
+                <p class="text-secondary md:text-sm text-lg text-center">
                     Com o carro na mão, você paga a <span class="font-bold underline">primeira parcela</span>
-                    45 dias depois da aprovação. <br class="sm:hidden"/> Lembrando que o cálculo final do financiamento 
+                    45 dias depois da aprovação. <br class="sm:hidden"/> Lembrando que o cálculo final do financiamento
                     considera o valor do veículo <br class="sm:hidden"/>  financiado, entrada, quantidade de parccelas e juros.
-                </P>
+                </p>
             </div>
         </div>
         <div class="bg-secondary">
@@ -36,12 +36,13 @@
 
             </div>
             <div class=" p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-lg" >
-                <a :href="$options.information.appVehicleSimulator+this.$root.utms"  target="_blank">Quero contratar</a>
+                <a :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  target="_blank">Quero contratar</a>
             </div>
             </div>
             <div class="w-1/2 mt-auto mb-auto sm:w-full">
-                <img :src= $options.imageConfig.bestCar.gráficoFinan alt="BestHub"  
-                class="sm:w-full md:w-11/12 w-full h-auto  "/>
+                <img
+                  :src= $options.imageConfig.bestCar.gráficoFinan alt="BestHub"
+                  class="sm:w-full md:w-11/12 w-full h-auto  "/>
             </div>
         </div>
         <div class="bgLigthGrey">
@@ -55,25 +56,33 @@
             </div>
         </div>
     </div>
-    <rodape />
+    <Rodape />
 
-  </div> 
+  </div>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import topBarVideo from '@/components/vehicle/BestCarFinan/topBarVideo.vue';
-import cardWhite from '@/components/vehicle/BestCarFinan/cardWhite.vue';
-import stepByStep from '@/components/vehicle/BestCarFinan/stepByStep.vue';
-import partnersLabelGrey from '@/components/vehicle/BestCarFinan/partnersLabelGrey.vue';
-import FaqFinan from '@/components/vehicle/BestCarFinan/FaqFinan.vue';
-import CarouselFinan from '@/components/vehicle/BestCarFinan/carouselFinan.vue';
-import comparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue';
-import rodape from '@/components/base/bannerBottomPage.vue';
+<script lang="ts">
+
+import { defineComponent, ComponentPublicInstance } from 'vue'
+import TopBarVideo from '@/components/vehicle/BestCarFinan/topBarVideo.vue'
+import cardWhite from '@/components/vehicle/BestCarFinan/cardWhite.vue'
+import StepByStep from '@/components/vehicle/BestCarFinan/stepByStep.vue'
+import CarouselFinan from '@/components/vehicle/BestCarFinan/carouselFinan.vue'
+import comparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue'
+import Rodape from '@/components/base/bannerBottomPage.vue'
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
+
 export default defineComponent({
     name: "BestCarFinanLP",
-    components:{ topBarVideo,cardWhite,stepByStep,partnersLabelGrey,
-        FaqFinan,CarouselFinan,comparativeBoardFinan, rodape
+    components:{
+      TopBarVideo,
+      cardWhite,
+      StepByStep,
+      CarouselFinan,
+      comparativeBoardFinan,
+      Rodape
     },
 })
 </script>
@@ -90,7 +99,7 @@ export default defineComponent({
     }
   }
 
- 
+
     @media (max-width:667px) {
       .p-0Max.maxWidth{
         padding: 0rem;

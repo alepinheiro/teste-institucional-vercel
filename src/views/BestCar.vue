@@ -1,30 +1,42 @@
-<template lang="">
+<template>
+
 <div>
-  <headVideo :isLP="false"/>
+  <HeadVideo :is-lp="false"/>
   <div class="gradientPrimaryToSecondary">
-        <section2 />
-        <section3 />
-        <section4 />
+        <Section2 />
+        <Section3 />
+        <Section4 />
   </div>
-  <rodape />
+  <Rodape />
 </div>
+
 </template>
 
-<script>
+<script lang="ts">
+
 import { defineComponent } from 'vue';
-import section2 from '@/components/vehicle/BestCarLP/section2.vue';
-import section3 from '@/components/vehicle/BestCarLP/section3.vue';
-import section4 from '@/components/vehicle/BestCarLP/section4.vue';
-import headVideo from '@/components/vehicle/BestCarLP/headVideo.vue';
-import rodape from '@/components/base/bannerBottomPage.vue';
+import Section2 from '@/components/vehicle/BestCarLP/section2.vue';
+import Section3 from '@/components/vehicle/BestCarLP/section3.vue';
+import Section4 from '@/components/vehicle/BestCarLP/section4.vue';
+import HeadVideo from '@/components/vehicle/BestCarLP/headVideo.vue';
+import Rodape from '@/components/base/bannerBottomPage.vue';
+
 export default defineComponent({
     name:'BestCarLP',
-    components: {section2,section3,section4,headVideo, rodape
+    components: {
+      Section2,
+      Section3,
+      Section4,
+      HeadVideo, 
+      Rodape
     }
 })
 </script>
+
 <style>
+
 .splide__arrow svg{
   fill: #1c79fa;
- }
+}
+
 </style>
