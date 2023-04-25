@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div class="w-full h-full">
     <div class="bgBestcar sm:hidden md:hidden z-10">
       <div class="maxWidth xl:h-screen lg:h-screen" >
@@ -25,11 +25,12 @@
                     </div>
                     <div class="w-full flex items-end gap-4">
                     <div class="w-9/12 pr-1">
-                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                    <inputMoney id="value" v-model="value" class="w-full" label="" placeholder=""  />
                     </div>
                     <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appVehicleSimulator+this.$root.utms"  style="text-decoration: none;"
+                      <a 
+                      :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  style="text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                     </div>
@@ -37,7 +38,7 @@
             </div>
           </div>
         </div>
-          <div @click="showVideo=true" class="h-[500px] p-16 w-[600px]  md:w-7/12 text-white md:pr-4 sm:hidden ">
+          <div class="h-[500px] p-16 w-[600px]  md:w-7/12 text-white md:pr-4 sm:hidden" @click="showVideo=true">
         </div>
         </div>
         </div>
@@ -77,7 +78,7 @@
                 </div>
                 <div class="w-full flex  items-end justify-between">
                   <div class="w-9/12 pr-1">
-                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                    <inputMoney id="value" v-model="value" class="w-full" label="" placeholder=""  />
                   </div>
                 </div>
             </div>
@@ -120,11 +121,13 @@
                   </div>
                   <div class="w-full flex  items-end justify-between">
                     <div class="w-9/12 pr-1">
-                      <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                      <inputMoney id="value" v-model="value" class="w-full" label="" placeholder=""  />
                     </div>
                     <div class="w-3/12 ">
                       <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                        <a :href="$options.information.appVehicleSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        <a 
+                        :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  
+                        style=" text-decoration: none;"
                         target="_blank">Simular</a>
                       </div>
                     </div>
@@ -138,37 +141,41 @@
     </div>
 </div>
 </template>
-<script>
-import { defineComponent } from 'vue';
-import popUpVideo from "@/components/base/popUpVideo.component.vue";
+
+<script lang="ts">
+
+import { defineComponent, ComponentPublicInstance } from 'vue';
 import topbarComponent from '@/components/structure/topbar.component.vue';
+
+type IRootExtension = ComponentPublicInstance & { [key: string]: any }
+
 export default defineComponent({
-  name: "headVideo",
-  components:{popUpVideo, topbarComponent},
+  name: "HeadVideo",
+  components: { topbarComponent },
   props: {
     isLP: Boolean
   },
   data() {
     return {
-      isVisible:false,
-      value:40000,
-      showVideo:false,
+      isVisible: false,
+      value: 40000,
+      showVideo: false,
       videoStyle: "w-full h-[36rem] mr-auto ml-auto rounded-2xl ",
-      videoUrl:"https://www.youtube.com/embed/Mlg8eDX61uE",
-      tutorial:{
-        show1:false,
-        show2:false,
-        show3:false,
-        show4:false,
+      videoUrl: "https://www.youtube.com/embed/Mlg8eDX61uE",
+      tutorial: {
+        show1: false,
+        show2: false,
+        show3: false,
+        show4: false,
       }
     }
   },
 })
 </script>
 <style>
-  @media (min-width:1880px){
-    .mt-xxl{
-      margin-top:9rem
+@media (min-width:1880px) {
+  .mt-xxl {
+    margin-top: 9rem
   }
 }
 </style>

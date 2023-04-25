@@ -1,11 +1,11 @@
 <template>
     <swiper
-        :initialSlide="1"
-        :slidesPerView="1"
-        :centeredSlides="true"
-        :spaceBetween="0"
+        :initial-slide="1"
+        :slides-per-view="1"
+        :centered-slides="true"
+        :space-between="0"
         :navigation="true"
-        :autoHeight="false"
+        :auto-height="false"
         :loop="true"
         :pagination="{
             clickable: true,
@@ -48,8 +48,9 @@
                       </div>
                     </div>
                         <div class="buttonComplementaryColor1 w-11/12 text-center mt-auto self-center mb-5">
-                            <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                                target="_blank">Faça uma simulação</a>
+                            <a 
+                              :href="$options.information.appSimulator+$root.utms"  style=" text-decoration: none;"
+                              target="_blank">Faça uma simulação</a>
                         </div>
                   </div>
             </div>
@@ -60,9 +61,10 @@
                     <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
                       <div class="text-3xl titleFont">Finan<span class="font-semibold">Best</span></div>
                       <div class="text-base pl-2 defaultFont">As melhores soluções em </div>
-                      <div class="text-base pl-2 defaultFont
-                      
-                      ">Financiamento Imobiliário</div>
+                      <div 
+                        class="text-base pl-2 defaultFont">
+                        Financiamento Imobiliário
+                      </div>
                     </div>
                     <div class="w-full p-3 rounded-b-xl mt-auto">
                       <div class="w-full flex  items-center">
@@ -91,8 +93,11 @@
                       </div>
                     </div>
                     <div class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center">
-                        <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                          target="_blank">Faça uma simulação</a>
+                        <a 
+                          :href="$options.information.appSimulator+$root.utms"  style=" text-decoration: none;"
+                          target="_blank">
+                          Faça uma simulação
+                        </a>
                     </div>
                   </div>
                 </div>
@@ -132,8 +137,11 @@
                         </div>
                       </div>
                         <div class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center">
-                          <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                            target="_blank">Faça uma simulação</a>
+                          <a 
+                            :href="$options.information.appSimulator+$root.utms" style=" text-decoration: none;"
+                            target="_blank">
+                            Faça uma simulação
+                          </a>
                         </div>
                     </div>
                   </div>       
@@ -173,8 +181,11 @@
                         </div>
                       </div>
                       <div class="buttonComplementaryColor1 w-11/12 flex self-center mt-auto mb-5 justify-center text-center">
-                          <a :href="$options.information.appSimulator+this.$root.utms"  style=" text-decoration: none;"
-                            target="_blank">Faça uma simulação</a>
+                          <a 
+                            :href="$options.information.appSimulator+$root.utms" style=" text-decoration: none;"
+                            target="_blank">
+                            Faça uma simulação
+                          </a>
                         </div>
                     </div>
                   </div>         

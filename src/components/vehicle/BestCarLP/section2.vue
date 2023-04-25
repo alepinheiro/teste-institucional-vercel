@@ -1,8 +1,9 @@
-<template lang="">
+<template>
     <div>
         <div class="maxWidth flex flex-wrap pt-0">
           <div class="w-1/2 mt-auto mb-auto sm:w-full sm:hidden">
-            <img :src="$options.imageConfig.bestCar.carro" alt="BestHub"  
+            <img 
+              :src="$options.imageConfig.bestCar.carro" alt="BestHub"  
               class="sm:w-full md:max-w-[30rem] lg:max-w-3xl max-w-4xl h-auto  xl:sticky xl:mt-[-35%] z-0"/>
           </div>
           <div class="w-1/2 sm:w-full text-right mt-auto xl:mt-24 mb-auto text-white">
@@ -24,18 +25,18 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue';
 import card from '@/components/vehicle/BestCarLP/card.vue'
 import banner from '@/components/vehicle/BestCarLP/banner.vue'
 export default defineComponent({
-    name:'section2',
-    components: {card,banner
+    name:'Section2',
+    components: {
+      card,
+      banner
     }
 })
 </script>
 
-<style lang="">
-    
-</style>
+<style></style>
 

@@ -1,4 +1,4 @@
-<template lang="">
+<template>
     <div class="">
         <div class="maxWidth flex flex-wrap pt-8 sm:pt-16 xl:py-20 lg:py-32 md:py-24 sm:hidden">
           <div class="w-1/2 sm:w-full mb-auto text-white">
@@ -10,11 +10,12 @@
               do mercado. Olhe no gráfico ao lado e compare.
             </div>
             <div class=" p-2 w-4/12 md:w-6/12 lg:w-6/12 md:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-xl" >
-                <a :href="$options.information.appVehicleSimulator+this.$root.utms"  target="_blank">Quero contratar</a>
+                <a :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  target="_blank">Quero contratar</a>
             </div>
             </div>
             <div class="w-1/2 mt-auto mb-auto sm:w-full">
-                <img :src= $options.imageConfig.bestCar.gráficoBestCar alt="BestHub"  
+                <img 
+                :src= $options.imageConfig.bestCar.gráficoBestCar alt="BestHub"  
                 class="sm:w-full md:w-11/12 w-full h-auto  "/>
             </div>
         </div>
@@ -22,15 +23,19 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+
 import partnersLabel from './partnersLabel.vue';
-import { defineComponent } from 'vue';
+import { defineComponent, ComponentPublicInstance } from 'vue';
+
+type IRootExtension = ComponentPublicInstance & { [key: string]: any }
+
 export default defineComponent({
-    name: 'section3',
+    name: 'Section3',
     components: {partnersLabel
     } 
 })
+
 </script>
-<style lang="">
-    
-</style>
+
+<style></style>

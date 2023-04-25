@@ -1,35 +1,53 @@
-<template> 
+<template>
   <div>
-    <div :class="{' titleInputsError': (error!==undefined && error!==''),'titleInputs':(!(error!==undefined && error!==''))}">
+    <div
+      :class="{ ' titleInputsError': (error !== undefined && error !== ''), 'titleInputs': (!(error !== undefined && error !== '')) }">
       <label :for="id">{{ label }}</label>
     </div>
-    <input :id="id" ref="inputRef" type="text" :placeholder="placeholder"
-      :class="{'inputBaseError w-full':
-        (error!==undefined && error!==''),
-        'inputBase w-full':
-        (!(error!==undefined && error!==''))}"  >
-    <div class="textError px-2" v-if="error!==undefined && error!==''"> {{ error }} </div>
+    <input 
+      :id="id" ref="inputRef" type="text" :placeholder="placeholder" :class="{
+      'inputBaseError w-full':
+        (error !== undefined && error !== ''),
+      'inputBase w-full':
+        (!(error !== undefined && error !== ''))
+    }">
+    <div v-if="error !== undefined && error !== ''" class="textError px-2" > {{ error }} </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { useCurrencyInput } from 'vue-currency-input'
+import { CurrencyDisplay, CurrencyInputOptions, useCurrencyInput } from 'vue-currency-input'
 
 export default defineComponent({
-  name: 'inputMoney',
+  name: 'InputMoney',
   props: {
-    id: String,
-    error: String,
-    label: String,
-    placeholder: String,
-    modelValue: Number, 
+    id: {
+      type: String,
+      default: ''
+    },
+    error: {
+      type: String,
+      default: ''
+    },
+    label: {
+      type: String,
+      default: ''
+    },
+    placeholder: {
+      type: String,
+      default: ''
+    },
+    modelValue: {
+      type: Number,
+      default: 0
+    },
   },
-  setup(props) {
-    const options = {
+  setup() {
+    const options: CurrencyInputOptions = {
       currency: 'BRL' as string,
-      currencyDisplay: 'narrowSymbol' as string,
-      precision: 2 as Number,
+      currencyDisplay: 'narrowSymbol' as CurrencyDisplay,
+      precision: 2 as number,
       hideCurrencySymbolOnFocus: false as boolean,
       hideGroupingSeparatorOnFocus: false as boolean,
       hideNegligibleDecimalDigitsOnFocus: false as boolean,
@@ -37,7 +55,7 @@ export default defineComponent({
       autoSign: true as boolean,
       useGrouping: true as boolean,
       accountingSign: false as boolean
-    } as any
+    } 
 
     const { inputRef } = useCurrencyInput(options)
 

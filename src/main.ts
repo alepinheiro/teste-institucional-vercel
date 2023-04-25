@@ -23,19 +23,20 @@ import ('./configurations/customStyle.css')
 import image from './configurations/images'
 import information from './configurations/information'
 const app = createApp(App);
-app.use(VueTheMask)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+app.use(VueTheMask as any)
 app.use(VueCookies)
 app.use(createHead())
 app.use( VueSplide );
 app.use(createMetaManager())
 // componentes globais
-app.component('font-awesome-icon', FontAwesomeIcon)
-app.component('font-awesome-layers', FontAwesomeLayers)
-app.component('font-awesome-layer-text', FontAwesomeLayersText)
-app.component('inputBase', inputBase)
-app.component('inputMoney', inputMoney)
-app.component('selectBase', selectBase)
-app.component('videoBase', videoBase)
+app.component('FontAwesomeIcon', FontAwesomeIcon)
+app.component('FontAwesomeLayers', FontAwesomeLayers)
+app.component('FontAwesomeLayerText', FontAwesomeLayersText)
+app.component('InputBase', inputBase)
+app.component('InputMoney', inputMoney)
+app.component('SelectBase', selectBase)
+app.component('VideoBase', videoBase)
 
 app.mixin({
   created () {

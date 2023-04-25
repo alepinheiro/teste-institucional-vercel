@@ -1,31 +1,52 @@
 <template>
   <div class="">
-    <div :class="{' titleInputsError': (error!==undefined && error!==''),'titleInputs':(!(error!==undefined && error!==''))}">
+    <div
+      :class="{ ' titleInputsError': (error !== undefined && error !== ''), 'titleInputs': (!(error !== undefined && error !== '')) }">
       <label :for="id">{{ label }}</label>
     </div>
-    <select :id="id" :value="modelValue"
-      @input="emitValue" :class="{'inputBaseError w-full':
-        (error!==undefined && error!==''),
-        'inputBase w-full':
-        (!(error!==undefined && error!==''))}" >
+    <select 
+      :id="id" :value="modelValue" :class="{
+      'inputBaseError w-full':
+        (error !== undefined && error !== ''),
+      'inputBase w-full':
+        (!(error !== undefined && error !== ''))
+      }" @input="emitValue">
       <option value=""> {{ placeholder }} </option>
-      <option  v-for="i in options" :value="i.value"> {{i.text}} </option>
+      <option v-for="i in options" :key="i.value" :value="i.value" > {{ i.text }} </option>
     </select>
-    <div class="textError" v-if="error!==undefined && error!==''"> {{error}} </div>
+    <div v-if="error !== undefined && error !== ''" class="textError"> {{ error }} </div>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'selectBase',
+  name: 'SelectBase',
   props: {
-    error: String,
-    id: String,
-    label: String,
-    placeholder: String,
-    modelValue: String,
-    options: Array as () => Array<any>,
+    error: {
+      type: String,
+      default: ''
+    },
+    id: {
+      type: String,
+      default: ''
+    },
+    label: {
+      type: String,
+      default: ''
+    },
+    placeholder: {
+      type: String,
+      default: ''
+    },
+    modelValue: {
+      type: String,
+      default: ''
+    },
+    options: {
+      type: Array as () => Array<any>,
+      default: () => []
+    },
   },
   emits: ['update:modelValue'],
   data() {
@@ -34,7 +55,6 @@ export default defineComponent({
   },
   methods: {
     emitValue(e: any) {
-
       this.$emit('update:modelValue', e.target.value)
     }
   },

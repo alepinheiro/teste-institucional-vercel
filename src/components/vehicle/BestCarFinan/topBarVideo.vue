@@ -23,11 +23,12 @@
                     </div>
                     <div class="w-full flex items-end gap-4">
                     <div class="w-9/12 pr-1">
-                    <inputMoney class="w-full" v-model="value" id="value"  placeholder="60.000,00"  />
+                    <inputMoney id="value" v-model="value" class="w-full" placeholder="60.000,00"  />
                     </div>
                     <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appVehicleSimulator+this.$root.utms"  style=" text-decoration: none;"
+                      <a 
+                      :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  style=" text-decoration: none;"
                       target="_blank">Simular</a>
                     </div>
                     </div>
@@ -35,7 +36,7 @@
                 </div>
           </div>
         </div>
-          <div @click="showVideo=true" class="h-[500px] p-16 w-[600px]  md:w-7/12 text-white md:pr-4 sm:hidden ">
+          <div class="h-[500px] p-16 w-[600px]  md:w-7/12 text-white md:pr-4 sm:hidden" @click="showVideo=true" >
           </div>
         </div>
       </div>
@@ -72,12 +73,13 @@
                 </div>
                 <div class="w-full flex  items-end justify-between pb-2">
                   <div class="w-9/12 pr-1">
-                    <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                    <inputMoney id="value" v-model="value" class="w-full" label=""  placeholder=""  />
                   </div>
                   <div class="w-3/12 ">
                     <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                      <a :href="$options.information.appVehicleSimulator+this.$root.utms"  style=" text-decoration: none;"
-                      target="_blank">Simular</a>
+                      <a 
+                      :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  
+                      style=" text-decoration: none;" target="_blank">Simular</a>
                     </div>
                   </div>
                 </div>
@@ -121,11 +123,12 @@
                   </div>
                   <div class="w-full flex  items-end justify-between">
                     <div class="w-9/12 pr-1">
-                      <inputMoney class="w-full" v-model="value" id="value" label=""  placeholder=""  />
+                      <inputMoney id="value" v-model="value" class="w-full" label="" placeholder=""  />
                     </div>
                     <div class="w-3/12 ">
                       <div class="  p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center" >
-                        <a :href="$options.information.appVehicleSimulator+this.$root.utms"  style=" text-decoration: none;"
+                        <a 
+                        :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"  style=" text-decoration: none;"
                         target="_blank">Simular</a>
                       </div>
                     </div>
@@ -139,13 +142,15 @@
     </div>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-import popUpVideo from "@/components/base/popUpVideo.component.vue"
-import topbarComponent from '@/components/structure/topbar.component.vue';
+<script lang="ts">
+import { ComponentPublicInstance, defineComponent } from 'vue';
+import TopbarComponent from '@/components/structure/topbar.component.vue';
+
+type IRootExtension = ComponentPublicInstance & { [key: string]: any }
+
 export default defineComponent ({
-    name: "topBarVideo",
-    components: {popUpVideo, topbarComponent},
+    name: "TopBarVideo",
+    components: {TopbarComponent},
     props: {
       isLP: Boolean
     },
@@ -166,11 +171,11 @@ export default defineComponent ({
   }, 
 })
 </script>
+
 <style>
   @media (min-width:1880px){
     .pt-xxl{
       padding-top:6.5rem;
   }
 }
-
 </style>
