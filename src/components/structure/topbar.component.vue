@@ -1,19 +1,32 @@
 <template>
   <div class="w-full  flex xl:py-8 justify-between" :class="[position === 'top' ? 'bg-transparent' : 'bg-transparent']">
     <div class="pr-8">
-      <router-link :to="'/' + ($root as IRootExtension).utms" class="lineDecoration">
-        <img v-if="position === 'top'" :src="$options.imageConfig.logoSejabest" alt="Logo SejaBest " class="w-auto h-12 " />
-      </router-link>
+
       <router-link :to="'/' + ($root as IRootExtension).utms" class="lineDecoration">
         <img
-          v-if="position !== 'top'" :src="$options.imageConfig.logoSejabestWhite" alt="Logo SejaBest "
+          v-if="position === 'top'"
+          :src="$options.imageConfig.logoSejabest"
+          alt="Logo SejaBest "
+          title="Logo SejaBest "
           class="w-auto h-12 " />
       </router-link>
+
+      <router-link :to="'/' + ($root as IRootExtension).utms" class="lineDecoration">
+        <img
+          v-if="position !== 'top'"
+          :src="$options.imageConfig.logoSejabestWhite"
+          alt="Logo SejaBest "
+          title="Logo SejaBest "
+          class="w-auto h-12 " />
+      </router-link>
+
     </div>
+
     <MenuComponent class="sm:hidden md:hidden" :link-style="linkStyle" />
     <MenuMobileComponent class="xl:hidden lg:hidden" :color="color" :link-style="linkStyle" />
   </div>
 </template>
+
 <script lang="ts">
 
 import { ComponentPublicInstance, defineComponent } from 'vue';

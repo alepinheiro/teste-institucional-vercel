@@ -27,8 +27,11 @@
         transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:px-1 lg:text-sm">
 
         <a
-          :href="$options.information.appSimulator + ($root as IRootExtension).utms" style=" text-decoration: none;"
-          target="_blank">Simule seu crédito</a>
+          :href="$options.information.appSimulator + ($root as IRootExtension).utms"
+          style=" text-decoration: none;"
+          target="_blank">
+          Simule seu crédito
+        </a>
       </div>
     </div>
   </div>
