@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full  flex xl:py-8 justify-between" :class="[position === 'top' ? 'bg-transparent' : 'bg-transparent']">
+  <nav class="w-full  flex xl:py-8 justify-between" :class="[position === 'top' ? 'bg-transparent' : 'bg-transparent']">
     <div class="pr-8">
 
       <router-link :to="'/' + ($root as IRootExtension).utms" class="lineDecoration">
@@ -24,7 +24,7 @@
 
     <MenuComponent class="sm:hidden md:hidden" :link-style="linkStyle" />
     <MenuMobileComponent class="xl:hidden lg:hidden" :color="color" :link-style="linkStyle" />
-  </div>
+  </nav>
 </template>
 
 <script lang="ts">

@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="w-full pb-4 bgFooter " >
+  <section class="w-full pb-4 bgFooter " >
     <div class="maxWidth flex justify-center sm:h-auto md:h-[200px]">
       <img
         :src="$options.imageConfig.home.photoFooter"
@@ -27,7 +27,7 @@
 
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import { defineComponent } from 'vue';

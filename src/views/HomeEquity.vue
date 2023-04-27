@@ -37,6 +37,7 @@
                 <div class="w-10/12 text-xl text-white pt-2 font-semibold text-textPrimary">
                   De quanto você precisa?
                 </div>
+
                 <div class="w-full flex  items-end justify-between">
                   <div class="w-9/12 pr-1">
                     <inputMoney id="value" v-model="value" class="w-full" label="" placeholder="" />
@@ -129,7 +130,7 @@
 
           <TopbarComponent position="relative" />
 
-          <div class="w-full flex">
+          <section class="w-full flex">
 
             <div class="w-1/2 pt-4 mt-auto mb-auto ">
               <div class="">
@@ -180,7 +181,7 @@
                 :src="$options.imageConfig.cashBest.phoneVideoMd" alt="Video Crédito com Garantia de Imóvel"
                 class="w-8/12 h-auto mr-auto ml-auto " />
             </div>
-          </div>
+          </section>
 
         </div>
 
@@ -236,7 +237,8 @@
         </div>
 
       </div>
-      <div class="maxWidth sm:hidden flex md:mt-12 mb-26">
+
+      <section class="maxWidth sm:hidden flex md:mt-12 mb-26">
         <div class="w-6/12 sm:w-4/12 mt-auto mb-auto">
           <img
             :src="$options.imageConfig.cashBest.photoMan" alt="Home Equity"
@@ -263,8 +265,9 @@
             </button>
           </div>
         </div>
-      </div>
-      <div class="maxWidth flex py-24 sm:py-12">
+      </section>
+
+      <section class="maxWidth flex py-24 sm:py-12">
         <div class="w-1/4 sm:w-1/2 text-white mt-auto mb-auto pr-4">
           <div class="text-4xl sm:text-2xl md:text-2xl title-font font-bold">
             Apenas vantagens<br /> para você
@@ -329,8 +332,9 @@
           </div>
 
         </div>
-      </div>
-      <div class="maxWidth flex pt-32 sm:pt-8 pb-56 md:pb-4 sm:pb-4">
+      </section>
+
+      <section class="maxWidth flex pt-32 sm:pt-8 pb-56 md:pb-4 sm:pb-4">
 
         <div class="w-3/4 md:w-2/3 sm:w-1/2 flex mt-auto mb-auto">
           <div class="w-full xl:hidden lg:hidden md:hidden rounded-2xl ">
@@ -346,9 +350,9 @@
                 direction: 'ttb'
               }" aria-label="Você pode obter o recurso para:">
               <SplideSlide v-for="slide in $options.imageConfig.cashBest.sliderMoney1" :key="slide.img">
-                <div class="pt-[2.5rem]">
+                <article class="pt-[2.5rem]">
                   <img :src="slide.img" class="px-4 w-[20rem]" :alt="slide.alt">
-                </div>
+                </article>
               </SplideSlide>
             </Splide>
           </div>
@@ -458,13 +462,15 @@
             Depois que os recursos forem liberados na sua conta, você pode usar do jeito que quiser.
           </div>
         </div>
-      </div>
+      </section>
 
     </div>
+
     <div class=" w-full xl:mt-[-10rem] sm:mt-[-8rem] flex justify-center sm:hidden md:hidden">
       <carouselTutorial />
     </div>
-    <div class="maxWidth xl:hidden lg:hidden">
+
+    <section class="maxWidth xl:hidden lg:hidden">
       <div class="titleFontBold text-5xl sm:text-4xl text-primary text-center py-12"> É tão simples que você só precisa de
         <span class="text-complementaryColor1 ">4 etapas</span></div>
       <div class="bg-bglight2Color shadow-xl border-1 rounded-xl p-4">
@@ -539,8 +545,9 @@
           sempre entregando a melhor experiência ao cliente!
         </div>
       </div>
-    </div>
-    <div class="w-full py-12 lg:pb-16 md:pb-30 md:pt-12 sm:pb-26">
+    </section>
+
+    <section class="w-full py-12 lg:pb-16 md:pb-30 md:pt-12 sm:pb-26">
       <div class="maxWidth md:w-full flex sm:h-full mr-auto ml-auto">
         <div
           class="mt-auto mb-auto w-full bg-bglight2Color shadow-xl border-1 rounded-2xl flex-wrap flex justify-center p-6 sm:p-2">
@@ -689,8 +696,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <Rodape />
+
     <PopUpVideo v-if="showVideo" :video-url="videoUrl" :video-style="videoStyle" @close-pop-up="showVideo = false" />
   </div>
 </template>

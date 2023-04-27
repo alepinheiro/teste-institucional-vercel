@@ -2,83 +2,115 @@
   <div class="text-textPrimary bg-bglight2Color overflow-x-hidden overflow-y-hidden">
     <div class="w-full  ">
       <div class="maxWidth p-aboutPage p-0">
+
         <TopbarComponent class="p-4" position="top" />
-        <div class="w-full flex pt-8 sm:pt-4 px-4">
+
+        <section class="w-full flex pt-8 sm:pt-4 px-4">
           <div class="w-1/2 mb-0 mt-auto">
             <img
-              :src="$options.imageConfig.aboutUs.photoCEO" alt="Foto Gaspar Motta Filho - CEO da SejaBest"
+              :src="$options.imageConfig.aboutUs.photoCEO"
+              alt="Foto Gaspar Motta Filho - CEO da SejaBest"
+              title="Gaspar Motta Filho - CEO da SejaBest"
               class="sm:w-full md:w-11/12 w-8/12  h-auto  " />
           </div>
+
           <div class="w-1/2 text-right mt-auto mb-auto ">
-            <h1>
-              <div class=" text-xl md:text-sm sm:text-xs mr-auto ml-auto font-semibold ">
+            <div>
+              <h2 class=" text-xl md:text-sm sm:text-xs mr-auto ml-auto font-semibold ">
                 Mais de 10 anos de experiência em <br /> crédito Imobiliario, temos uma missão clara:
-              </div>
-              <div class="text-primary text-6xl md:text-4xl sm:text-lg titleFontBold pt-6 pb-12 sm:pt-0 sm:pb-2">
+              </h2>
+              <h1 class="text-primary text-6xl md:text-4xl sm:text-lg titleFontBold pt-6 pb-12 sm:pt-0 sm:pb-2">
                 Transformar o acesso ao Crédito Imobiliário para
                 <span class="textDecoration">todos</span> os brasileiros.
-              </div>
-            </h1>
+              </h1>
+            </div>
             <div class="border-r-4 border-primary px-4">
-              <div class="font-semibold text-xl md:text-sm sm:text-xs">
+              <h3 class="font-semibold text-xl md:text-sm sm:text-xs">
                 Gaspar Motta Filho
-              </div>
-              <div class="font-semibold text-xl md:text-sm sm:text-xs">
+              </h3>
+              <h4 class="font-semibold text-xl md:text-sm sm:text-xs">
                 CEO & Founder
-              </div>
+              </h4>
             </div>
           </div>
-        </div>
+        </section>
 
       </div>
-      <div class="w-full bg-primary pt-8">
-        <div class="text-center maxWidth  text-4xl sm:text-2xl md:text-3xl pt-12 text-white font-bold">
-          Por isso, a <span class="text-bold ">SejaBest</span> foi construída sobre
+
+      <section class="w-full bg-primary pt-8">
+
+        <h1 class="text-center maxWidth  text-4xl sm:text-2xl md:text-3xl pt-12 text-white font-bold">
+          Por isso, a
+          <span class="text-bold ">SejaBest</span>
+          foi construída sobre
           <span class="text-bold textDecoration">3 pilares:</span>
-        </div>
+        </h1>
+
         <div class="w-full sm:hidden md:hidden">
+
           <div class="maxWidth xl:gap-15 lg:gap-10 flex justify-evenly  pt-12 sm:pt-4">
+
             <div>
               <div
                 class="py-4"
                 @click="isVisiblePillars.show1 = true, isVisiblePillars.show2 = false, isVisiblePillars.show3 = false">
                 <img
-                  v-if="isVisiblePillars.show1" :src="$options.imageConfig.aboutUs.pillars.color.education"
-                  alt="Educação " class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  " />
+                  v-if="isVisiblePillars.show1"
+                  :src="$options.imageConfig.aboutUs.pillars.color.education"
+                  alt="Educação"
+                  title="Educação"
+                  class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer" />
                 <img
-                  v-if="!isVisiblePillars.show1" :src="$options.imageConfig.aboutUs.pillars.pb.education"
-                  alt="Educação " class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  " />
+                  v-if="!isVisiblePillars.show1"
+                  :src="$options.imageConfig.aboutUs.pillars.pb.education"
+                  alt="Educação"
+                  title="Educação"
+                  class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  " />
               </div>
-
             </div>
+
             <div>
               <div
                 class="py-4"
                 @click="isVisiblePillars.show2 = true, isVisiblePillars.show1 = false, isVisiblePillars.show3 = false">
                 <img
-                  v-if="isVisiblePillars.show2" :src="$options.imageConfig.aboutUs.pillars.color.technology"
-                  alt="Tecnologia" class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer" />
+                  v-if="isVisiblePillars.show2"
+                  :src="$options.imageConfig.aboutUs.pillars.color.technology"
+                  alt="Tecnologia"
+                  title="Tecnologia"
+                  class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer" />
                 <img
-                  v-if="!isVisiblePillars.show2" :src="$options.imageConfig.aboutUs.pillars.pb.technology"
-                  alt="Tecnologia" class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer" />
+                  v-if="!isVisiblePillars.show2"
+                  :src="$options.imageConfig.aboutUs.pillars.pb.technology"
+                  alt="Tecnologia"
+                  title="Tecnologia"
+                  class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer" />
               </div>
 
             </div>
+
             <div>
               <div
                 class="py-4"
                 @click="isVisiblePillars.show3 = true, isVisiblePillars.show1 = false, isVisiblePillars.show2 = false">
                 <img
-                  v-if="isVisiblePillars.show3" :src="$options.imageConfig.aboutUs.pillars.color.humanized"
-                  alt="Experiência Humanizada" class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer " />
+                  v-if="isVisiblePillars.show3"
+                  :src="$options.imageConfig.aboutUs.pillars.color.humanized"
+                  alt="Experiência Humanizada"
+                  title="Experiência Humanizada"
+                  class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer " />
                 <img
-                  v-if="!isVisiblePillars.show3" :src="$options.imageConfig.aboutUs.pillars.pb.humanized"
-                  alt="Experiência Humanizada" class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  " />
+                  v-if="!isVisiblePillars.show3"
+                  :src="$options.imageConfig.aboutUs.pillars.pb.humanized"
+                  alt="Experiência Humanizada"
+                  title="Experiência Humanizada"
+                  class="w-64 xl:w-[22rem] lg:w-80 h-90 rounded-xl cursor-pointer  " />
               </div>
 
             </div>
 
           </div>
+
           <div class="w-full pb-84">
             <div class="relative maxWidth  ">
               <div v-if="isVisiblePillars.show1" class="z-40 absolute maxWidth rounded-xl shadow-xl p-4 bg-gray-100  ">
@@ -242,42 +274,68 @@
               </div>
             </div>
           </div>
+
         </div>
+
         <div class="maxWidth xl:hidden lg:hidden py-16 ">
+
           <div class="bg-bglight2Color cursor-pointer  shadow-xl border-1 rounded-xl" @click="showPillarsSM(1)">
+
             <div class="flex w-full justify-between">
+
               <div class="w-5/12 ">
                 <img
-                  v-if="!PillarsSM.show1" :src="$options.imageConfig.aboutUs.pillars.sm.education" alt="Educação"
+                  v-if="!PillarsSM.show1"
+                  :src="$options.imageConfig.aboutUs.pillars.sm.education"
+                  alt="Educação"
+                  title="Educação"
                   class="w-full rounded-l-xl" />
                 <img
-                  v-if="PillarsSM.show1" :src="$options.imageConfig.aboutUs.pillars.smColor.education" alt="Educação"
-                  class="w-full  rounded-xl p-1" />
+                  v-if="PillarsSM.show1"
+                  :src="$options.imageConfig.aboutUs.pillars.smColor.education"
+                  alt="Educação"
+                  title="Educação"
+                  class="w-full rounded-xl p-1" />
               </div>
-              <div class="text-primary w-5/12 text-center mt-auto mb-auto px-2 text-2xl font-semibold"> Educação</div>
+              <h2 class="text-primary w-5/12 text-center mt-auto mb-auto px-2 text-2xl font-semibold">
+                Educação
+              </h2>
               <div class="w-2/12 mt-auto mb-auto text-xl pr-4 text-primary text-right">
                 <i v-if="!PillarsSM.show1" class="ti ti-angle-right"></i>
                 <i v-if="PillarsSM.show1" class="ti ti-angle-down"></i>
               </div>
             </div>
+
             <div v-if="PillarsSM.show1" class=" p-4">
-              <div class="pb-4  text-xl sm:text-md">
-                Através de conteúdos gratuitos que produzimos para <span class="font-semibold">empoderar </span>
-                o cliente na tomada da <span class="font-semibold">melhor decisão.</span>
-              </div>
+              <p class="pb-4  text-xl sm:text-md">
+                Através de conteúdos gratuitos que produzimos para
+                <span class="font-semibold">empoderar</span>
+                o cliente na tomada da
+                <span class="font-semibold">melhor decisão.</span>
+              </p>
             </div>
+
           </div>
+
           <div class="bg-bglight2Color cursor-pointer mt-4 shadow-xl border-1 rounded-xl" @click="showPillarsSM(2)">
             <div class="flex w-full justify-between">
               <div class="w-5/12">
                 <img
-                  v-if="!PillarsSM.show2" :src="$options.imageConfig.aboutUs.pillars.sm.technology" alt="Tecnologia"
+                  v-if="!PillarsSM.show2"
+                  :src="$options.imageConfig.aboutUs.pillars.sm.technology"
+                  alt="Tecnologia"
+                  title="Tecnologia"
                   class="w-full rounded-l-xl " />
                 <img
-                  v-if="PillarsSM.show2" :src="$options.imageConfig.aboutUs.pillars.smColor.technology"
-                  alt="Tecnologia" class="w-full rounded-xl p-1 " />
+                  v-if="PillarsSM.show2"
+                  :src="$options.imageConfig.aboutUs.pillars.smColor.technology"
+                  alt="Tecnologia"
+                  title="Tecnologia"
+                  class="w-full rounded-xl p-1 " />
               </div>
-              <div class="text-primary w-5/12 text-center mt-auto mb-auto px-2 text-2xl font-semibold"> Tecnologia</div>
+              <h2 class="text-primary w-5/12 text-center mt-auto mb-auto px-2 text-2xl font-semibold">
+                Tecnologia
+              </h2>
               <div class="w-2/12 mt-auto mb-auto text-xl pr-4 text-primary text-right">
 
                 <i v-if="!PillarsSM.show2" class="ti ti-angle-right"></i>
@@ -285,162 +343,246 @@
               </div>
             </div>
             <div v-if="PillarsSM.show2" class=" p-4">
-              <div class="pb-4  text-xl sm:text-md">
-                Onde através da nossa <span class="font-semibold">plataforma multibancos</span> ,
-                de forma simples e segura, conectamos você com <span class="font-semibold">todo o mercado.</span>
-              </div>
+              <p class="pb-4  text-xl sm:text-md">
+                Onde através da nossa
+                <span class="font-semibold">plataforma multibancos</span> ,
+                de forma simples e segura, conectamos você com
+                <span class="font-semibold">todo o mercado.</span>
+              </p>
             </div>
           </div>
+
           <div class="bg-bglight2Color cursor-pointer mt-4 shadow-xl border-1 rounded-xl" @click="showPillarsSM(3)">
+
             <div class="flex w-full justify-between">
               <div class="w-5/12 ">
                 <img
-                  v-if="!PillarsSM.show3" :src="$options.imageConfig.aboutUs.pillars.sm.humanized"
-                  alt="Experiência Humanizada" class="w-full rounded-l-xl " />
+                  v-if="!PillarsSM.show3"
+                  :src="$options.imageConfig.aboutUs.pillars.sm.humanized"
+                  alt="Experiência Humanizada"
+                  title="Experiência Humanizada"
+                  class="w-full rounded-l-xl " />
                 <img
-                  v-if="PillarsSM.show3" :src="$options.imageConfig.aboutUs.pillars.smColor.humanized"
-                  alt="Experiência Humanizada" class="w-full  rounded-xl p-1 " />
+                  v-if="PillarsSM.show3"
+                  :src="$options.imageConfig.aboutUs.pillars.smColor.humanized"
+                  alt="Experiência Humanizada"
+                  title="Experiência Humanizada"
+                  class="w-full rounded-xl p-1 " />
               </div>
-              <div class="text-primary w-5/12 text-center mt-auto mb-auto px-2 text-2xl font-semibold"> Experiência
-                Humanizada</div>
-              <div class="w-2/12 mt-auto mb-auto text-xl pr-4 text-primary text-right">
 
+              <h2 class="text-primary w-5/12 text-center mt-auto mb-auto px-2 text-2xl font-semibold">
+                Experiência Humanizada
+              </h2>
+
+              <div class="w-2/12 mt-auto mb-auto text-xl pr-4 text-primary text-right">
                 <i v-if="!PillarsSM.show3" class="ti ti-angle-right"></i>
                 <i v-if="PillarsSM.show3" class="ti ti-angle-down"></i>
               </div>
             </div>
+
             <div v-if="PillarsSM.show3" class="p-4">
-              <div class="pb-4  text-xl sm:text-md">
-                Com assessores especializados que vão te acompanhar <span class="font-semibold">do inicio ao fim.</span>
-              </div>
+              <p class="pb-4  text-xl sm:text-md">
+                Com assessores especializados que vão te acompanhar
+                <span class="font-semibold">do inicio ao fim.</span>
+              </p>
             </div>
           </div>
           <div class="pb-24"></div>
+
         </div>
-      </div>
-      <div class="maxWidth">
+
+      </section>
+
+      <section class="maxWidth">
         <div
           class=" w-full  bg-bglight2Color border-1 rounded-xl shadow-lg -mt-32 lg:-mt-48 sm:mt-[-5rem] md:mt-[-5rem] flex">
           <div class="w-1/2  ">
             <img
-              :src="$options.imageConfig.aboutUs.bestVersion" alt="Homem e mulher se abraçando felizes"
+              :src="$options.imageConfig.aboutUs.bestVersion"
+              alt="Homem e mulher se abraçando felizes"
+              title="Homem e mulher se abraçando felizes"
               class="sm:w-full  h-auto rounded-l-xl " />
           </div>
+
           <div class="w-1/2 mt-auto mb-auto">
-            <div
-              class="text-4xl lg:text-right lg:leading-normal xl:text-right xl:text-5xl px-8 sm:px-2 titleFont md:text-3xl sm:text-sm text-primary defaultFontLight">
-              E fazemos isso pois acreditamos que o <span class="defaultFontBold">acesso ao crédito</span>
-              pode levar as pessoas à sua <span class="defaultFontBold textDecoration">melhor</span>
+            <h1
+              class="text-4xl lg:text-right lg:leading-normal xl:text-right xl:text-5xl px-8 sm:px-2
+              titleFont md:text-3xl sm:text-sm text-primary defaultFontLight">
+              E fazemos isso pois acreditamos que o
+              <span class="defaultFontBold">acesso ao crédito</span>
+              pode levar as pessoas à sua
+              <span class="defaultFontBold textDecoration">melhor</span>
               <span class="defaultFontBold"> versão.</span>
-            </div>
+            </h1>
           </div>
+
         </div>
-      </div>
-      <div class="maxWidth flex flex-col">
-        <div class="text-2xl lg:text-3xl w-full xl:w-2/3 lg:w-2/3 xl:text-4xl py-16 sm:py-8 text-center mr-auto ml-auto">
-          Conheça o time de <span class="font-semibold">especialistas</span> responsável por tornar esta missão uma
+      </section>
+
+      <section class="maxWidth flex flex-col">
+        <h1 class="text-2xl lg:text-3xl w-full xl:w-2/3 lg:w-2/3 xl:text-4xl py-16 sm:py-8 text-center mr-auto ml-auto">
+          Conheça o time de
+          <span class="font-semibold"> especialistas </span>
+          responsável por tornar esta missão uma
           <span class="font-semibold">realidade:</span>
-        </div>
+        </h1>
+
         <img
-          :src="$options.imageConfig.aboutUs.team" alt="Time Best"
-          class="w-full xl:max-w-[90rem] xl:w-[90rem] lg:max-w-[80rem] lg:w-[80rem] h-auto rounded-l-xl sm:hidden md:hidden self-center" />
+          :src="$options.imageConfig.aboutUs.team"
+          alt="Foto com todos os colaboradores da SejaBest"
+          title="Time Best"
+          class="w-full xl:max-w-[90rem] xl:w-[90rem] lg:max-w-[80rem] lg:w-[80rem] h-auto rounded-l-xl
+          sm:hidden md:hidden self-center" />
         <img
           :src="$options.imageConfig.aboutUs.teamSM" alt="Time Best"
-          class="w-full  h-auto rounded-l-xl xl:hidden lg:hidden" />
-      </div>
-      <div class="maxWidth">
-        <div class="text-5xl titleFontBold text-primary text-center py-8">
-          Veja <span class="textDecoration"> quem </span> está falando da gente:
-        </div>
+          class="w-full h-auto rounded-l-xl xl:hidden lg:hidden" />
+      </section>
+
+      <section class="maxWidth">
+        <h1 class="text-5xl titleFontBold text-primary text-center py-8">
+          Veja
+          <span class="textDecoration"> quem </span>
+          está falando da gente:
+        </h1>
+
         <div class="w-full pt-16 sm:pt-8 md:pt-8 flex flex-wrap justify-center">
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a
               href="https://valor.globo.com/brasil/coluna/bndes-se-une-a-fintechs-para-baratear-credito.ghtml"
-              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+              style="text-decoration: none;"
+              aria-label="Acesse a matéria em valor.globo.com"
+              target="_blank"
+              class="justify-center items-center flex">
               <img
-                :src="$options.imageConfig.logoMedia.gray.valorEconomico" alt="Valor economico"
+                :src="$options.imageConfig.logoMedia.gray.valorEconomico"
+                alt="Link para matéria no portal Valor economico"
                 class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
             </a>
           </div>
+
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a
               href="https://revistapegn.globo.com/Startups/noticia/2019/03/programa-de-capacitacao-startup-sc-divulga-lista-de-selecionados.html"
-              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+              style=" text-decoration: none;"
+              aria-label="Acesse a matéria em revistapegn.globo.com"
+              target="_blank"
+              class="justify-center items-center flex">
               <img
                 :src="$options.imageConfig.logoMedia.gray.peqEmpresasGrandesNegocios"
-                alt="pequenas empresas grandes negócios"
+                alt="Link para matéria no portal Pequenas empresas grandes negócios"
+                title="Pequenas empresas grandes negócios"
                 class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
             </a>
           </div>
+
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a
               href="https://imobireport.com.br/fintechs-de-credito-imobiliario-apostam-na-tecnologia-agilidade-e-multidisciplinaridade-para-superar-momento-de-alta-da-selic/"
-              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+              style=" text-decoration: none;"
+              target="_blank"
+              aria-label="Acesse a matéria no portal revistapegn.globo.com"
+              class="justify-center items-center flex">
               <img
-                :src="$options.imageConfig.logoMedia.gray.imobileReport" alt="imobireport"
+                :src="$options.imageConfig.logoMedia.gray.imobileReport"
+                alt="Link para matéria no portal Imobi Report"
+                title="Imobi Report"
                 class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
             </a>
           </div>
+
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a
               href="https://economiasc.com/2021/08/06/fintech-aproxima-brasileiros-de-home-equity-modalidade-de-credito-imobiliario-com-melhores-taxas-no-mercado/?utm_source=seja.best"
-              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+              style=" text-decoration: none;"
+              target="_blank"
+              aria-label="Acesse a matéria no portal economiasc.com"
+              class="justify-center items-center flex">
               <img
-                :src="$options.imageConfig.logoMedia.gray.economiaSC" alt="economia SC"
+                :src="$options.imageConfig.logoMedia.gray.economiaSC"
+                alt="Link para matéria no portal Economia SC"
+                title="Economia SC"
                 class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
             </a>
           </div>
+
           <div class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center">
             <a
               href="https://revistapegn.globo.com/Startups/noticia/2019/03/programa-de-capacitacao-startup-sc-divulga-lista-de-selecionados.html"
-              style=" text-decoration: none;" target="_blank" class=" justify-center items-center flex">
+              style=" text-decoration: none;"
+              target="_blank"
+              aria-label="Acesse a matéria no portal revistapegn.globo.com"
+              class="justify-center items-center flex">
               <img
-                :src="$options.imageConfig.logoMedia.gray.agenciaOGlobo" alt="agencia O Globo"
+                :src="$options.imageConfig.logoMedia.gray.agenciaOGlobo"
+                alt="Link para matéria no portal Agência O Globo"
+                title="Agência O Globo"
                 class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
             </a>
           </div>
         </div>
-      </div>
-      <div class="maxWidth">
+      </section>
+
+      <section class="maxWidth">
         <div class="w-full mr-auto ml-auto sm:w-full py-8">
           <Splide
             :options="{
-            type: 'loop', perPage: 1, perMove: 1, padding: '1rem', drag: 'free',
-            rewind: true, focus: 'center', pagination: true
-          }" aria-label="Vantagens para você">
+              type: 'loop',
+              perPage: 1,
+              perMove: 1,
+              padding: '1rem',
+              drag: 'free',
+              rewind: true,
+              focus: 'center',
+              pagination: true
+            }"
+            aria-label="Vantagens para você">
             <SplideSlide v-for="slide in $options.imageConfig.depositions" :key="slide.img">
-              <div>
-                <img :src="slide.img" class="px-4 w-8/12 mr-auto ml-auto sm:w-full" :alt="slide.alt">
-              </div>
+              <article>
+                <img
+                  :src="slide.img"
+                  class="px-4 w-8/12 mr-auto ml-auto sm:w-full"
+                  :alt="slide.alt">
+              </article>
             </SplideSlide>
           </Splide>
         </div>
-      </div>
-      <div class="maxWidth">
+      </section>
+
+      <section class="maxWidth">
         <div class="w-full flex pt-8 sm:pt-4">
           <div class="w-1/2 ">
             <img
-              :src="$options.imageConfig.aboutUs.photoCOO" alt="Foto Gabrielle Motta  - COO da SejaBest"
+              :src="$options.imageConfig.aboutUs.photoCOO"
+              alt="Foto Gabrielle Motta - COO da SejaBest"
+              title="Gabrielle Motta - COO da SejaBest"
               class="sm:w-full md:w-11/12 w-8/12  h-auto " />
           </div>
           <div class="w-1/2 text-right mt-auto mb-auto ">
-            <div
+            <h2
               class="xl:w-2/3 lg:w-2/3 md:w-2/3 text-4xl md:text-2xl sm:text-xl w-full font-semibold text-right mr-0 ml-auto">
               Por isso nossa marca é um convite:
-            </div>
-            <div
+            </h2>
+            <h1
               class="xl:w-2/3 lg:w-2/3 md:w-2/3 text-primary pb-8 text-6xl md:text-4xl sm:text-4xl titleFontBold text-right mr-0 ml-auto">
               Seja<span class="textDecoration">Best</span> você também.
-            </div>
+            </h1>
             <div class="sm:w-full">
               <button
-                class="bg-complementaryColor1 sm:p-2 md:p-2 text-white defaultFontBold rounded-xl px-8 p-3 sm:px-4 md:px-4"><a
-                  class="sm:text-sm text-2xl " :href="$options.information.appSimulator + ($root as IRootExtension).utms"
-                  style=" text-decoration: none;" target="_blank">Faça uma simulação</a> </button>
+                class="bg-complementaryColor1 sm:p-2 md:p-2 text-white defaultFontBold rounded-xl px-8 p-3 sm:px-4 md:px-4">
+                <a
+                  class="sm:text-sm text-2xl "
+                  :href="$options.information.appSimulator + ($root as IRootExtension).utms"
+                  style="text-decoration: none;"
+                  aria-label="Clique e faça uma simulação"
+                  target="_blank">
+                  Faça uma simulação
+                </a>
+              </button>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
     </div>
 
   </div>

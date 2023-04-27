@@ -15,15 +15,15 @@ const image = {
   depositions:[
     {
       img:"/images/depositions/Depoimento01.webp",
-      alt:"",
+      alt:"Depoimento por Edimar Fernandes Gomes",
     },
     {
       img:"/images/depositions/Depoimento02.webp",
-      alt:"",
+      alt:"Depoimento por Anderson Adão",
     },
     {
       img:"/images/depositions/Depoimento03.webp",
-      alt:"",
+      alt:"Depoimento por Jonathas Alves de Oliveira",
     },
   ],
   aboutUs:{
