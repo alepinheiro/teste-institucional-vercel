@@ -1,23 +1,24 @@
 <template>
-  <div class="mb-4 bg-bgDefaultColor rounded-2xl">
-    <div class=" header">
+  <article class="mb-4 bg-bgDefaultColor rounded-2xl">
+    <div class="header">
       <div>
-        <div 
+        <div
           :class="{
             'bg-primary text-white rounded-t-2xl': (show == true),
             'bg-bgDefaultColor text-primary rounded-2xl': (show == false)
           }"
-          style="cursor: pointer; display: flex; font-size: 16px;" class="justify-between p-6 sm:p-4"
+          style="cursor: pointer; display: flex; font-size: 16px;"
+          class="justify-between p-6 sm:p-4"
           @click="showAnswer()">
-          <div class=" text-xl font-semibold pr-2 sm:pr-1 sm:text-xs">{{ title }}</div>
+          <h1 class=" text-xl font-semibold pr-2 sm:pr-1 sm:text-xs">
+            {{ title }}
+          </h1>
           <div class="mt-auto mb-auto text-xl sm:text-xs ">
-
-            <i v-if="!show" class="ti ti-angle-right"></i>
-            <i v-if="show" class="ti ti-angle-down"></i>
+            <i class="ti" :class="[show ? 'ti-angle-down' : 'ti-angle-right']"></i>
           </div>
         </div>
       </div>
-      <div v-if="show" class=" flex flex-wrap-reverse">
+      <div v-show="show" class="flex flex-wrap-reverse">
         <div class="w-1/2 sm:w-full mb-auto mt-auto p-6">
           <p class="sm:text-sm italic text-textPrimary">
             {{ text }}
@@ -31,7 +32,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </article>
 </template>
 
 <script lang="ts">

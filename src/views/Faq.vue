@@ -1,31 +1,34 @@
 <template>
   <div class="w-full bg-bglightColor">
-    <div class="w-full gradienteSB">
-      <div class="maxWidth ">
+
+    <section class="w-full gradienteSB">
+      <div class="maxWidth">
         <TopbarComponent position="relative" />
       </div>
       <div class="maxWidth ">
-        <h1 class="text-white text-5xl titleFontBold  pt-12">
+        <h1 class="text-white text-5xl titleFontBold pt-12">
           Crédito Imobiliário pode ser complicado.
         </h1>
-        <h3 class="text-white text-2xl pt-8 pb-12">Por isto estamos aqui com você.</h3>
+        <h3 class="text-white text-2xl pt-8 pb-12">
+          Por isto estamos aqui com você.
+        </h3>
       </div>
-    </div>
-    <div class="maxWidth py-12">
+    </section>
+
+    <section class="maxWidth py-12">
 
       <div class="pb-6">
         <Questions
           v-for="i in perguntas"
-          :key="i.id"
-          :title="i.title"
+          :key="i.id" :title="i.title"
           :text="i.text"
           :text-aux="i.text2"
           :video-url="i.videoUrl"
-          :video-style="videoStyle" :with-video="true" />
+          :video-style="videoStyle"
+          :with-video="true" />
       </div>
-    </div>
-    <div class="maxWidth">
-    </div>
+    </section>
+
   </div>
 </template>
 
