@@ -204,7 +204,7 @@ const image = {
     bgSejaBestSide: "/images/BestNews/bgSide.webp",
     bestNewsLinkedin: "/images/BestNews/LogoBestNewsLinkedIn.svg",
     bestNewsTelegram: "/images/BestNews/LogoBestNewsTelegram.svg",
-    youBest: "/images/BestNews/LogoYouBest.svg",
+    youBest: "/images/BestNews/LogoBestPlay.svg",
   },
   awards:{
     newCashme:"/images/Home/awards/SeloCachMe2022.webp",
