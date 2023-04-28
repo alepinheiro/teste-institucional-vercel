@@ -1,10 +1,9 @@
 <template>
   <div class="w-full h-full">
-
     <!-- 🖥️ Desktop -->
     <div class="bgFinanCar sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen">
-        <TopbarComponent class="relative" :class="{ hidden: isLP }" />
+        <TopbarComponent class="relative" :class="{ hidden: hideMenu }" />
         <section class="maxWidth xl:h-screen lg:h-screen sm:hidden md:hidden">
           <div class="w-full flex pt-12 pt-xxl lg:pt-24 md:pt-8 sm:pt-4">
             <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
@@ -22,8 +21,11 @@
                   Faça uma simulação agora e veja como ficam as parcelas.
                 </p>
                 <div class="flex pt-2">
-                  <h2 class="w-6/12 text-lg text-white pt-2 font-semibold text-textPrimary">
-                    De quanto <br /> você precisa?
+                  <h2
+                    class="w-6/12 text-lg text-white pt-2 font-semibold text-textPrimary"
+                  >
+                    De quanto <br />
+                    você precisa?
                   </h2>
                   <div class="w-full flex items-end gap-4">
                     <div class="w-9/12 pr-1">
@@ -72,8 +74,9 @@
               <div class="text-5xl titleFontBold pt-2 text-white pb-6">
                 <h1
                   class="textDecoration pb-1 text-complementaryColor3 flex w-48"
-                  >FinanBest</h1
                 >
+                  FinanBest
+                </h1>
                 <h1 class="text-4xl titleFontBold pt-2 text-white">
                   Financiamento veicular da SejaBest
                 </h1>
@@ -145,8 +148,9 @@
               <div class="text-4xl titleFontBold text-white pb-2">
                 <h1
                   class="textDecoration pb-1 text-complementaryColor3 flex w-60 sm:w-40"
-                  >FinanBest</h1
                 >
+                  FinanBest
+                </h1>
                 <h1 class="text-4xl titleFontBold pt-2 text-white">
                   Empréstimo com Garantia de Veículo
                 </h1>
@@ -157,7 +161,8 @@
                 <span class="font-semibold">sem precisar veder o veículo</span>
                 com taxas a partir de
                 <span class="font-semibold">1,49% ao mês</span>
-                <span class="text-white font-bold"> e prazos de até 5 anos.</span
+                <span class="text-white font-bold">
+                  e prazos de até 5 anos.</span
                 >
               </p>
               <div class="bg-bglight2Color p-4 rounded-xl">
@@ -177,9 +182,7 @@
                     <span class="text-primary">complexidade</span>
                   </p>
                 </div>
-                <h2
-                  class="w-10/12 text-xl pt-2 font-semibold text-textPrimary"
-                >
+                <h2 class="w-10/12 text-xl pt-2 font-semibold text-textPrimary">
                   De quanto você precisa?
                 </h2>
                 <div class="w-full flex items-end justify-between">
@@ -228,7 +231,10 @@ export default defineComponent({
     TopbarComponent,
   },
   props: {
-    isLP: Boolean,
+    hideMenu: {
+      type: Boolean,
+      default: true,
+    },
   },
   data() {
     return {
