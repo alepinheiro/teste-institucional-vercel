@@ -540,7 +540,7 @@
             <i v-if="tutorial.show1" class="ti ti-angle-down"></i>
           </div>
           <h2 class="text-primary text-2xl titleFontBold pr-2">
-            <span class="text-complementaryColor1">#1</span> Simule e solicite.
+            <span class="text-complementaryColor1">#1</span> Simule e solicite
           </h2>
         </div>
 

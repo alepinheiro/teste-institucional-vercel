@@ -383,7 +383,7 @@
           </SplideSlide>
         </Splide>
       </div>
-    </section>''
+    </section>
 
     <section class="maxWidth xl:hidden lg:hidden">
 

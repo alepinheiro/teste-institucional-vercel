@@ -16,8 +16,7 @@
           <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
 
             <h1 class="text-3xl titleFont">
-              Finan
-              <span class="font-semibold">Best</span>
+              Finan<span class="font-semibold">Best</span>
             </h1>
 
             <h2 class="text-base xl:text-lg defaultFont">

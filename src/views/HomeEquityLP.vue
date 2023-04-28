@@ -228,8 +228,7 @@
 
           <div class=" rounded-t-xl bg-primary p-4 text-center border-b-4 border-complementaryColor1">
             <h1 class="text-4xl titleFont">
-              Cash
-              <span class="font-semibold">Best</span>
+              Cash<span class="font-semibold">Best</span>
             </h1>
             <h2 class="text-xl titleFont">
               Conheça o Crédito com <br> Garantia de Imóvel
@@ -558,7 +557,7 @@
             <i v-if="tutorial.show1" class="ti ti-angle-down"></i>
           </div>
           <h2 class="text-primary text-2xl titleFontBold pr-2">
-            <span class="text-complementaryColor1">#1</span> Simule e solicite.
+            <span class="text-complementaryColor1">#1</span> Simule e solicite
           </h2>
 
         </div>
