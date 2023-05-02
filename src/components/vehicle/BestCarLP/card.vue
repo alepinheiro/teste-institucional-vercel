@@ -1,8 +1,9 @@
 <template>
   <div class="flex flex-wrap justify-center pb-24 sm:pb-0 pt-10">
-    <div class="mb-8 sm:mb-4 w-1/2 md:pl-0  md:pr-3  pr-4 pl-0 sm:w-full sm:px-0">
+
+    <article class="mb-8 sm:mb-4 w-1/2 md:pl-0  md:pr-3  pr-4 pl-0 sm:w-full sm:px-0">
       <div
-        :class="{ 'hover': hover }" class=" lg:h-52 shadow-2xl p-6 sm:p-3 bg-primary rounded-lg flex gap-4 
+        :class="{ 'hover': hover }" class=" lg:h-52 shadow-2xl p-6 sm:p-3 bg-primary rounded-lg flex gap-4
         items-center sm:h-[130px] md:h-[170px] text-white"
         @mouseenter="hover = true" @mouseleave="hover = false" >
         <img :src="$options.imageConfig.icons.phoneFill" alt="icone celular" class="w-16 md:w-12 sm:w-14" />
@@ -16,11 +17,12 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="mb-8 sm:mb-4 w-1/2 md:pl-0  md:pr-3  pr-0 pl-4 sm:w-full sm:px-0">
-      <div 
-        id="card" :class="{ 'hover': hover2 }" class=" lg:h-52 shadow-2xl p-6 md:p-4 sm:p-3 bg-primary rounded-lg 
-        flex gap-4 items-center sm:h-[130px] 
+    </article>
+
+    <article class="mb-8 sm:mb-4 w-1/2 md:pl-0  md:pr-3  pr-0 pl-4 sm:w-full sm:px-0">
+      <div
+        id="card" :class="{ 'hover': hover2 }" class=" lg:h-52 shadow-2xl p-6 md:p-4 sm:p-3 bg-primary rounded-lg
+        flex gap-4 items-center sm:h-[130px]
         md:h-[170px] text-white " @mouseenter="hover2 = true" @mouseleave="hover2 = false">
         <img :src="$options.imageConfig.icons.notebookFill" alt="icone notebook" class="w-16 md:w-12 sm:w-12 sm:ml-3" />
         <div class="gap-y-2 sm:gap-y-1 md:gap-y-4  flex flex-col">
@@ -33,10 +35,11 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="mb-8 sm:mb-4 w-1/2 md:pl-0  md:pr-3 pr-4 pl-0 sm:w-full sm:px-0">
-      <div 
-        id="card" class=" lg:h-52 shadow-2xl p-6 sm:p-2 bg-primary rounded-lg flex gap-4 items-center 
+    </article>
+
+    <article class="mb-8 sm:mb-4 w-1/2 md:pl-0  md:pr-3 pr-4 pl-0 sm:w-full sm:px-0">
+      <div
+        id="card" class=" lg:h-52 shadow-2xl p-6 sm:p-2 bg-primary rounded-lg flex gap-4 items-center
         sm:h-[130px] md:h-[170px]  text-white md:p-4" :class="{ 'hover': hover3 }" @mouseenter="hover3 = true"
         @mouseleave="hover3 = false">
         <img :src="$options.imageConfig.icons.moneyFill" alt="icone dinheiro" class="w-16 md:w-12 sm:w-12 sm:ml-3" />
@@ -50,12 +53,13 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="mb-8 sm:mb-4 w-1/2 md:pl-0  md:pr-3  pr-0 pl-4 sm:w-full sm:px-0">
-      <div 
-        id="card" :class="{ 'hover': hover4 }" class="lg:h-52 shadow-2xl p-6 sm:p-3 bg-primary rounded-lg flex gap-4 items-center sm:h-[130px] 
+    </article>
+
+    <article class="mb-8 sm:mb-4 w-1/2 md:pl-0  md:pr-3  pr-0 pl-4 sm:w-full sm:px-0">
+      <div
+        id="card" :class="{ 'hover': hover4 }" class="lg:h-52 shadow-2xl p-6 sm:p-3 bg-primary rounded-lg flex gap-4 items-center sm:h-[130px]
         md:h-[170px] text-white md:p-4 " @mouseenter="hover4 = true" @mouseleave="hover4 = false">
-        <img 
+        <img
           :src="$options.imageConfig.icons.calendarOutline" alt="icone dinheiro"
           class="w-16 md:w-12 sm:w-12 sm:ml-3" />
         <div class="gap-y-2 sm:gap-y-1 flex flex-col">
@@ -68,11 +72,13 @@
           </p>
         </div>
       </div>
-    </div>
+    </article>
+
   </div>
 </template>
 
 <script lang="ts">
+
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'Card',
@@ -88,6 +94,7 @@ export default defineComponent({
 })
 
 </script>
+
 <style>
 @keyframes fadeHover {
   from {
