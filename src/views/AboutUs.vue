@@ -29,7 +29,7 @@
                 Gaspar Motta Filho
               </h3>
               <h4 class="font-semibold text-xl md:text-sm sm:text-xs">
-                CEO & Founder
+                CEO 
               </h4>
             </div>
           </div>
