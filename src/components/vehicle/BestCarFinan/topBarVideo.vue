@@ -233,7 +233,7 @@ export default defineComponent({
   props: {
     hideMenu: {
       type: Boolean,
-      default: true,
+      default: false,
     },
   },
   data() {
