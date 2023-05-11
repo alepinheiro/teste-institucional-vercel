@@ -2,9 +2,10 @@
     <div>
     <div class="" >
       <div class="pb-6">
-        <questions v-for="i in perguntas" :key="i.id" 
-          :title="i.title" :text="i.text" :textAux="i.text2"
-          :videoUrl="i.videoUrl" :videoStyle="videoStyle" :withVideo="false" />
+        <questions 
+          v-for="i in perguntas" :key="i.id" 
+          :title="i.title" :text="i.text" :text-aux="i.text2"
+          :video-url="i.videoUrl" :video-style="videoStyle" :with-video="false" />
       </div>
     </div>
     </div>
@@ -20,6 +21,9 @@ export default defineComponent({
       perguntas: [],
       videoStyle: "w-full h-80 mr-auto ml-auto  xl:rounded-br-2xl lg:rounded-br-2xl md:rounded-br-2xl"
     }
+  },
+  beforeMount() {
+    this.checkOrgName()
   },
   methods: {
     checkOrgName() {
@@ -82,9 +86,7 @@ export default defineComponent({
       ]
     }
   },
-  beforeMount() {
-    this.checkOrgName()
-  }
+  
   
 })
 </script>

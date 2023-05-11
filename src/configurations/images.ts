@@ -7,7 +7,7 @@ const image = {
   logoVerticalWhite:"/images/logoBest/Logotipo SejaBestVerticalWhite.svg",
   iconSejaBest:"/images/logoBest/Simbolo-degrade.webp",
   iconSejaBestWhite:"/images/logoBest/iconSejaBestWhite.svg",
-  bacen:"/images/LogoParceiros/LogoBancoCentraldoBrasil.svg", 
+  bacen:"/images/LogoParceiros/LogoBancoCentraldoBrasil.svg",
   imagePageUnavailable: "/images/VetorPersonagens.svg",
   bg:{
     manWithPhone:"/images/Home/ImagemHomeGradiente.webp",
@@ -15,18 +15,18 @@ const image = {
   depositions:[
     {
       img:"/images/depositions/Depoimento01.webp",
-      alt:"",
+      alt:"Depoimento por Edimar Fernandes Gomes",
     },
     {
       img:"/images/depositions/Depoimento02.webp",
-      alt:"",
+      alt:"Depoimento por Anderson Adão",
     },
     {
       img:"/images/depositions/Depoimento03.webp",
-      alt:"",
+      alt:"Depoimento por Jonathas Alves de Oliveira",
     },
   ],
-  aboutUs:{ 
+  aboutUs:{
     photoCEO: "/images/aboutUs/FotoGaspar.webp",
     photoCOO: "/images/aboutUs/FotoGabi.webp",
     team: "/images/aboutUs/FotosEquipeDesktop.webp",
@@ -89,7 +89,7 @@ const image = {
       {img:"/images/cashBest/Celulares/04.webp", alt:"Atendimento humanizado 7 dias por semana."},
       {img:"/images/cashBest/Celulares/05.webp", alt:"Prazos de até 420 meses."},
       {img:"/images/cashBest/Celulares/06.webp", alt:"Prazos de até 420 meses."},
-      
+
     ],
     sliderMoney1:[
       {img:"/images/cashBest/ImagensSeuDinheiro/ReformarOuConstruir.webp", alt:"Reformar ou construir."},
@@ -135,7 +135,7 @@ const image = {
     phoneFV:"/images/SejaBestIcons/iconeCelularFV.png",
     calendarFV:"/images/SejaBestIcons/iconeCalendarioFV.png",
     moneyFV:"/images/SejaBestIcons/iconeDinheiroFV.png",
-     
+
   },
   logoMedia: {
     gray:{
@@ -204,14 +204,14 @@ const image = {
     bgSejaBestSide: "/images/BestNews/bgSide.webp",
     bestNewsLinkedin: "/images/BestNews/LogoBestNewsLinkedIn.svg",
     bestNewsTelegram: "/images/BestNews/LogoBestNewsTelegram.svg",
-    youBest: "/images/BestNews/LogoYouBest.svg",
+    youBest: "/images/BestNews/LogoBestPlay.svg",
   },
   awards:{
-    newCashme:"/images/Home/awards/SeloCachMe2022.png",
-    seloC6:"/images/Home/awards/SeloConexaoC6.png",
-    seloDaycoval:"/images/Home/awards/SeloDaycoval2022.png",
-    chashmeIcon:"/images/Home/awards/CashMeIcon.png",
-    DaycovalIcon:"/images/Home/awards/DaycovalIcon.png"
+    newCashme:"/images/Home/awards/SeloCachMe2022.webp",
+    seloC6:"/images/Home/awards/SeloConexaoC6.webp",
+    seloDaycoval:"/images/Home/awards/SeloDaycoval2022.webp",
+    chashmeIcon:"/images/Home/awards/CashMeIcon.webp",
+    DaycovalIcon:"/images/Home/awards/DaycovalIcon.webp"
   },
 };
 
