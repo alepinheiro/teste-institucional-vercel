@@ -4,7 +4,7 @@
     <div class="text-textPrimary ">
 
       <section class="bgFinanBest sm:hidden md:hidden">
-        <div class="maxWidth xl:h-screen lg:h-screen">
+        <div class="maxWidth xl:h-screen lg:h-screen xl:pt-28 lg:pt-24 md:pt-4 sm:pt-4">
           <div class="w-full flex ">
             <div class="h-[500px] p-16 w-[600px] md:w-7/12 text-white md:pr-4 sm:hidden" @click="showVideo = true">
             </div>
