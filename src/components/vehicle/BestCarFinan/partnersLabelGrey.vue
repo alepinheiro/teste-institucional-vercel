@@ -27,7 +27,7 @@
 <script>
 import { defineComponent } from 'vue';
 export default defineComponent ({
-    name:'partnersLabelGrey'
+  name:'PartnersLabelGrey'
 })
 </script>
 <style lang="">
