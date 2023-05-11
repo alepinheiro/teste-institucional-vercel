@@ -22,6 +22,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/HomeEquityLP.vue'),
   },
   {
+    path: '/credito-com-garantia-de-imovel',
+    name: 'HomeEquityLP-credito',
+    component: () => import('@/views/HomeEquityLP.vue'),
+  },
+  {
     path: '/como-funciona',
     name: 'HomeEquityLP2',
     component: () => import('@/views/HomeEquityLP.vue'),
@@ -64,6 +69,11 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/emprestimo-com-garantia-de-veiculo/BestCar',
     name: 'BestCarLP',
+    component: () => import('@/views/BestCarLP.vue'),
+  },
+  {
+    path: '/credito-com-garantia-de-veiculo',
+    name: 'BestCarLP-credito',
     component: () => import('@/views/BestCarLP.vue'),
   },
   {
