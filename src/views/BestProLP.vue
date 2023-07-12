@@ -1,16 +1,18 @@
 <template>
   <main class="text-white bg-black">
+    <TelegramSection />
     <FaqSection :questions="questions" />
     <FooterSection />
   </main>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+import TelegramSection from '@/components/bestPro/telegramSection.component.vue'
 import FaqSection from '@/components/bestPro/faqSection.component.vue'
 import FooterSection from '@/components/bestPro/footerSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
-  components: { FooterSection, FaqSection },
+  components: { FooterSection, FaqSection, TelegramSection },
   data() {
     return {
       questions: [

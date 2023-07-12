@@ -1,5 +1,5 @@
 <template>
-  <section class="py-5">
+  <section class="py-10">
     <div
       class="px-5 flex sm:flex-col flex-row items-center sm:gap-2 justify-between"
     >
