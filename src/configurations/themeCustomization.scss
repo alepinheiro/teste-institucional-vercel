@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .darkGreyText {
+        @apply text-[#ABABAB];
+    }
+
+    .greeYellowFillHover {
+        @apply hover:fill-[#D0FE42]
+    }
+
+    .greeYellowFill {
+        @apply fill-[#D0FE42]
+    }
+
+    .greeYellowTextHover {
+        @apply hover:text-[#D0FE42]
+    }
+
+    .greeYellowText {
+        @apply text-[#D0FE42]
+    }
+
+    .greeYellowBorder {
+        @apply border-[#D0FE42]
+    }
+}
+

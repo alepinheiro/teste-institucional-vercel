@@ -6,14 +6,11 @@
   </div>
 </template>
 
-<script lang='ts'>
-
-import { NotificationInterface } from '@/interfaces/notification.interface';
-import notificationPopUp from '@/components/base/notificationPopUp.component.vue';
-import footerComponent from '@/components/structure/footer.component.vue';
-import { defineComponent, ComponentPublicInstance } from 'vue'
-
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
+<script lang="ts">
+import footerComponent from '@/components/structure/footer.component.vue'
+import notificationPopUp from '@/components/base/notificationPopUp.component.vue'
+import { NotificationInterface } from '@/interfaces/notification.interface'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   components: { notificationPopUp, footerComponent },
@@ -22,22 +19,22 @@ export default defineComponent({
       isLoading: true,
       notification: {
         type: 'warning',
-        title: "Aviso",
-        message: "teste",
+        title: 'Aviso',
+        message: 'teste',
         showMessage: false,
         buttonText: 'Continuar'
       } as NotificationInterface,
-      utms: "" as string
+      utms: '' as string
     }
   },
   mounted() {
-    let fullUrl = this.$route.fullPath.split("?")
-    if (this.$route.fullPath.includes("?")) {
-      (this.$root as IRootExtension).utms = "?" + (fullUrl[1])
+    let fullUrl = this.$route.fullPath.split('?')
+    if (this.$route.fullPath.includes('?')) {
+      this.$root.utms = '?' + fullUrl[1]
     }
     setTimeout(() => {
       this.isLoading = false
-    }, 600);
+    }, 600)
   }
 })
 </script>
