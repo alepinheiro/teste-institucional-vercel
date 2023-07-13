@@ -1,17 +1,17 @@
 <template>
   <section class="border-b greenYellowBorder py-10">
     <div
-      class="sm:px-5 max-w-7xl w-10/12 mx-auto flex flex-col gap-10 text-center"
+      class="sm:px-5 max-w-7xl w-10/12 sm:w-full mx-auto flex flex-col gap-10 text-center"
     >
     <div class="flex sm:flex-col md:flex-col flex-row sm:items-center md:items-center items-end gap-10 jus">
         <div class="sm:w-56 md:w-56 h-14 flex-shrink flex justify-start flex-1">
             <img
               class="w-fit h-full"
-              src="/public/images/BestNews/LogoBestNewsWhite.svg"
+              src="/images/BestNews/LogoBestNewsWhite.svg"
               alt="Logo BestNews"
             />
         </div>
-      <h2 class="text-3xl font-bold w-2/4 flex-grow md:w-full">
+      <h2 class="w-2/4 flex-grow md:w-full">
         Fique pode dentro <br class="sm:hidden"> de tudo que é
         <span class="greenYellowText">Pro</span>
       </h2>
@@ -22,7 +22,7 @@
     </div>
       <a
         class="bg-[#D0FE42] w-fit px-4 py-2 rounded text-black mx-auto flex flex-row gap-2 items-center hover:-translate-y-1 transition-all group"
-        href="#"
+        :href="$options.information.socialMedia.telegram"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
