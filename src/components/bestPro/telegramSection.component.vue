@@ -21,8 +21,8 @@
       </p>
     </div>
       <a
-        class="bg-[#D0FE42] w-fit px-4 py-2 rounded text-black mx-auto flex flex-row gap-2 items-center hover:-translate-y-1 transition-all group"
         :href="$options.information.socialMedia.telegram"
+        class="bg-[#D0FE42] w-fit px-4 py-2 rounded text-black mx-auto flex flex-row gap-2 items-center hover:-translate-y-1 transition-all group"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

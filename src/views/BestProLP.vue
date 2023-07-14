@@ -1,28 +1,33 @@
 <template>
   <main id="bestProReleaseLandingPage" class="text-white bg-black">
-    <div class="relative">
+    <TopBar class="z-20"/>
+    <HeroSection />
+    <div class="relative overflow-visible">
+      <PricesSection :options="prices" class="static z-10" />
       <img
-        class="absolute sm:hidden"
+        class="absolute sm:hidden top-0"
         src="/images/bestPro/pricesBackground.png"
         alt=""
       />
-      <PricesSection :options="prices" />
     </div>
-
-    <TelegramSection />
-    <FaqSection :questions="questions" />
-    <FooterSection />
+    <div class="relative">
+      <TelegramSection />
+      <FaqSection :questions="questions"  />
+      <FooterSection />
+    </div>
   </main>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+import TopBar from '@/components/bestPro/topBar.component.vue'
+import HeroSection from '@/components/bestPro/heroSection.component.vue'
 import PricesSection from '@/components/bestPro/pricesSection.component.vue'
 import TelegramSection from '@/components/bestPro/telegramSection.component.vue'
 import FaqSection from '@/components/bestPro/faqSection.component.vue'
 import FooterSection from '@/components/bestPro/footerSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
-  components: { FooterSection, FaqSection, TelegramSection, PricesSection },
+  components: { FooterSection, FaqSection, TelegramSection, PricesSection, TopBar, HeroSection },
   data() {
     return {
       questions: [
