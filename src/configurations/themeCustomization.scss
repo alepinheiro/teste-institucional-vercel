@@ -8,33 +8,42 @@
     }
 
     .greenYellowFillHover {
-        @apply hover:fill-[#D0FE42]
+        @apply hover:fill-[#D0FE42];
     }
 
     .greenYellowFill {
-        @apply fill-[#D0FE42]
+        @apply fill-[#D0FE42];
     }
 
     .greenYellowTextHover {
-        @apply hover:text-[#D0FE42]
+        @apply hover:text-[#D0FE42];
     }
 
     .greenYellowText {
-        @apply text-[#D0FE42]
+        @apply text-[#D0FE42];
     }
 
     .greenYellowBorder {
-        @apply border-[#D0FE42]
+        @apply border-[#D0FE42];
     }
 }
 
 @layer components {
-    #bestProReleaseLandingPage{
+    #bestProReleaseLandingPage {
         h1 {
             @apply text-5xl font-bold;
         }
         h2 {
             @apply text-3xl font-bold;
         }
+    }
+
+    .popoverArrowToLeft {
+        @apply -rotate-90;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 19px solid rgb(255, 255, 255, 0.1);
+        width: 0;
+        height: 0;
     }
 }

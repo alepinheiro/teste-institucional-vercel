@@ -1,8 +1,8 @@
 <template>
-  <main id="bestProReleaseLandingPage" class="text-white bg-black">
+  <main id="bestProReleaseLandingPage" class="text-white bg-black font-Sizmo">
     <TopBar class="z-20"/>
     <HeroSection />
-
+    <BenefitsSection />
     <CommissionSection />
     <div class="relative">
       <PricesSection :options="prices" class="static z-10" />
@@ -23,6 +23,7 @@
 import { defineComponent } from 'vue'
 import TopBar from '@/components/bestPro/topBar.component.vue'
 import HeroSection from '@/components/bestPro/heroSection.component.vue'
+import BenefitsSection from '@/components/bestPro/benefitsSection.component.vue'
 import CommissionSection from '@/components/bestPro/commissionSection.component.vue'
 import PricesSection from '@/components/bestPro/pricesSection.component.vue'
 import TelegramSection from '@/components/bestPro/telegramSection.component.vue'
@@ -30,7 +31,7 @@ import FaqSection from '@/components/bestPro/faqSection.component.vue'
 import FooterSection from '@/components/bestPro/footerSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
-  components: { FooterSection, FaqSection, TelegramSection, PricesSection, TopBar, HeroSection, CommissionSection },
+  components: { FooterSection, FaqSection, TelegramSection, PricesSection, TopBar, HeroSection, CommissionSection, BenefitsSection },
   data() {
     return {
       questions: [

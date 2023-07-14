@@ -1,5 +1,5 @@
 <template>
-  <section class="border-b greenYellowBorder flex flex-col items-center relative">
+  <section class="border-b greenYellowBorder flex flex-col items-center relative py-10">
     <picture class="sm:block">
       <source
         srcset="/images/bestPro/commissionSectionImageDesktop.png"
@@ -15,7 +15,7 @@
       />
     </picture>
     <div
-      class="sm:px-5 w-full max-w-5xl mx-auto pb-10 flex flex-col sm:items-center items-start sm:block sm:static absolute bottom-4"
+      class="sm:px-5 md:px-5 w-full max-w-5xl mx-auto pb-10 flex flex-col sm:items-center items-start sm:flex sm:static absolute bottom-4"
     >
       <h2 class="text-center !font-medium">
         E quando você
@@ -29,7 +29,7 @@
         para receber a sua comissão.
       </h3>
 
-      <ul class="flex sm:flex-col flex-row gap-6 w-1/2">
+      <ul class="flex sm:flex-col flex-row gap-6 w-1/2 sm:w-full">
         <li
           v-for="{ id, text, title } of steps"
           :key="id"
