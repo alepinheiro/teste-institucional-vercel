@@ -1,5 +1,6 @@
 <template>
   <main id="bestProReleaseLandingPage" class="text-white bg-black">
+    <CommissionSection />
     <div class="relative">
       <img
         class="absolute sm:hidden"
@@ -16,13 +17,14 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+import CommissionSection from '@/components/bestPro/commissionSection.component.vue'
 import PricesSection from '@/components/bestPro/pricesSection.component.vue'
 import TelegramSection from '@/components/bestPro/telegramSection.component.vue'
 import FaqSection from '@/components/bestPro/faqSection.component.vue'
 import FooterSection from '@/components/bestPro/footerSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
-  components: { FooterSection, FaqSection, TelegramSection, PricesSection },
+  components: { FooterSection, FaqSection, TelegramSection, PricesSection, CommissionSection },
   data() {
     return {
       questions: [
