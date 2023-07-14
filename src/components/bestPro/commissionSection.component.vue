@@ -15,7 +15,7 @@
       />
     </picture>
     <div
-      class="sm:px-5 md:px-5 w-full max-w-5xl mx-auto pb-10 flex flex-col sm:items-center items-start sm:flex sm:static absolute bottom-4"
+      class="sm:px-5 md:px-5 lg:px-5 w-full max-w-5xl mx-auto pb-10 flex flex-col sm:items-center items-start sm:flex sm:static absolute bottom-4"
     >
       <h2 class="text-center !font-medium">
         E quando você
