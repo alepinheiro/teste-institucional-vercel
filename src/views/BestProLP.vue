@@ -2,7 +2,9 @@
   <main id="bestProReleaseLandingPage" class="text-white bg-black">
     <TopBar class="z-20"/>
     <HeroSection />
-    <div class="relative overflow-visible">
+
+    <CommissionSection />
+    <div class="relative">
       <PricesSection :options="prices" class="static z-10" />
       <img
         class="absolute sm:hidden top-0"
@@ -21,13 +23,14 @@
 import { defineComponent } from 'vue'
 import TopBar from '@/components/bestPro/topBar.component.vue'
 import HeroSection from '@/components/bestPro/heroSection.component.vue'
+import CommissionSection from '@/components/bestPro/commissionSection.component.vue'
 import PricesSection from '@/components/bestPro/pricesSection.component.vue'
 import TelegramSection from '@/components/bestPro/telegramSection.component.vue'
 import FaqSection from '@/components/bestPro/faqSection.component.vue'
 import FooterSection from '@/components/bestPro/footerSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
-  components: { FooterSection, FaqSection, TelegramSection, PricesSection, TopBar, HeroSection },
+  components: { FooterSection, FaqSection, TelegramSection, PricesSection, TopBar, HeroSection, CommissionSection },
   data() {
     return {
       questions: [
