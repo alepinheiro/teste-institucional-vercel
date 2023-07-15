@@ -1,9 +1,10 @@
 <template>
   <main id="bestProReleaseLandingPage" class="text-white bg-black font-Sizmo">
-    <TopBar class="z-20"/>
+    <TopBar class="z-20" />
     <HeroSection />
     <BenefitsSection />
     <VideoSection />
+    <BanksSection />
     <CommissionSection />
     <div class="relative">
       <PricesSection :options="prices" class="static z-10" />
@@ -15,7 +16,7 @@
     </div>
     <div class="relative">
       <TelegramSection />
-      <FaqSection :questions="questions"  />
+      <FaqSection :questions="questions" />
       <FooterSection />
     </div>
   </main>
@@ -26,6 +27,7 @@ import TopBar from '@/components/bestPro/topBar.component.vue'
 import HeroSection from '@/components/bestPro/heroSection.component.vue'
 import BenefitsSection from '@/components/bestPro/benefitsSection.component.vue'
 import VideoSection from '@/components/bestPro/videoSection.component.vue'
+import BanksSection from '@/components/bestPro/banksSection.component.vue'
 import CommissionSection from '@/components/bestPro/commissionSection.component.vue'
 import PricesSection from '@/components/bestPro/pricesSection.component.vue'
 import TelegramSection from '@/components/bestPro/telegramSection.component.vue'
@@ -33,7 +35,18 @@ import FaqSection from '@/components/bestPro/faqSection.component.vue'
 import FooterSection from '@/components/bestPro/footerSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
-  components: { FooterSection, FaqSection, TelegramSection, PricesSection, TopBar, HeroSection, CommissionSection, BenefitsSection, VideoSection },
+  components: {
+    FooterSection,
+    FaqSection,
+    TelegramSection,
+    PricesSection,
+    TopBar,
+    HeroSection,
+    CommissionSection,
+    BenefitsSection,
+    VideoSection,
+    BanksSection,
+  },
   data() {
     return {
       questions: [
@@ -41,26 +54,26 @@ export default defineComponent({
           id: 1,
           title: 'Preciso ter faturamento mínimo para contratar o empréstimo?',
           text: 'Bacon ipsum dolor amet doner pancetta filet mignon, meatloaf t-bone ball tip boudin rump burgdoggen shoulder. Corned beef bresaola tongue shank. Meatloaf chuck andouille, pork ball tip kielbasa buffalo chicken jowl spare ribs jerky. Ground round turkey ribeye bresaola, tail buffalo meatball landjaeger pork chop beef ribs short ribs chislic pancetta. Sirloin bresaola tenderloin, chicken tri-tip sausage picanha cupim flank landjaeger bacon meatball.',
-          isOpen: false
+          isOpen: false,
         },
         {
           id: 2,
           title: 'Preciso ter faturamento mínimo para contratar o empréstimo?',
           text: 'Bacon ipsum dolor amet doner pancetta filet mignon, meatloaf t-bone ball tip boudin rump burgdoggen shoulder. Corned beef bresaola tongue shank. Meatloaf chuck andouille, pork ball tip kielbasa buffalo chicken jowl spare ribs jerky. Ground round turkey ribeye bresaola, tail buffalo meatball landjaeger pork chop beef ribs short ribs chislic pancetta. Sirloin bresaola tenderloin, chicken tri-tip sausage picanha cupim flank landjaeger bacon meatball.',
-          isOpen: false
+          isOpen: false,
         },
         {
           id: 3,
           title: 'Preciso ter faturamento mínimo para contratar o empréstimo?',
           text: 'Bacon ipsum dolor amet doner pancetta filet mignon, meatloaf t-bone ball tip boudin rump burgdoggen shoulder. Corned beef bresaola tongue shank. Meatloaf chuck andouille, pork ball tip kielbasa buffalo chicken jowl spare ribs jerky. Ground round turkey ribeye bresaola, tail buffalo meatball landjaeger pork chop beef ribs short ribs chislic pancetta. Sirloin bresaola tenderloin, chicken tri-tip sausage picanha cupim flank landjaeger bacon meatball.',
-          isOpen: false
+          isOpen: false,
         },
         {
           id: 4,
           title: 'Preciso ter faturamento mínimo para contratar o empréstimo?',
           text: 'Bacon ipsum dolor amet doner pancetta filet mignon, meatloaf t-bone ball tip boudin rump burgdoggen shoulder. Corned beef bresaola tongue shank. Meatloaf chuck andouille, pork ball tip kielbasa buffalo chicken jowl spare ribs jerky. Ground round turkey ribeye bresaola, tail buffalo meatball landjaeger pork chop beef ribs short ribs chislic pancetta. Sirloin bresaola tenderloin, chicken tri-tip sausage picanha cupim flank landjaeger bacon meatball.',
-          isOpen: false
-        }
+          isOpen: false,
+        },
       ],
       prices: [
         {
@@ -70,7 +83,7 @@ export default defineComponent({
           recurrence: '/mês',
           features: ['Pagamento mensal', 'R$ 1.558,80 anualmente'],
           link: '#',
-          label: ''
+          label: '',
         },
         {
           id: 2,
@@ -79,7 +92,7 @@ export default defineComponent({
           recurrence: '/mês',
           features: ['Pagamento semestral', 'R$ 599,40 à vista'],
           link: '#',
-          label: 'Economizou R$ 360,00'
+          label: 'Economizou R$ 360,00',
         },
         {
           id: 3,
@@ -88,11 +101,11 @@ export default defineComponent({
           recurrence: '/mês',
           features: ['Pagamento anual', 'R$ 958,80 anualmente'],
           link: '#',
-          label: 'Economizou R$ 600,00'
-        }
-      ]
+          label: 'Economizou R$ 600,00',
+        },
+      ],
     }
-  }
+  },
 })
 </script>
 <style lang="scss"></style>

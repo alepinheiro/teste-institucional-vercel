@@ -1,7 +1,7 @@
 <template>
   <section class="relative">
     <div class="flex flex-col xl:max-h-[40rem]">
-      <div class="relative h-full xl:ml-auto xl:w-fit">
+      <div class="relative h-full xl:ml-auto xl:w-fit ">
         <img
           class="static object-cover w-full xl:hidden"
           src="/images/bestPro/videoPlayerMobile.png"
@@ -50,7 +50,7 @@
       </div>
       <div
         :class="[showVideo ? 'mt-0 py-4 xl:py-0' : 'sm:-mt-24 md:-mt-56 lg:-mt-96 md:pb-10']"
-        class="sm:px-5 md:px-5 lg:px-5 z-0 transition-all xl:max-w-7xl xl:mx-auto xl:absolute xl:bottom-0 xl:w-1/3 xl:left-[17%]"
+        class="sm:px-5 md:px-5 lg:px-5 z-0 transition-all xl:max-w-7xl mb-24 xl:mx-auto xl:absolute xl:bottom-0 xl:w-1/3 xl:left-[17%]"
       >
         <h2
           class="flex flex-col !font-medium !text-5xl tracking-wider gap-2 xl:gap-6 mb-5 xl:mb-10"
@@ -77,7 +77,10 @@
             Quero assinar o BestPro
             </button>
         </div>
-
+      </div>
+      <div class="absolute  w-full -bottom-0 ">
+        <div class="mx-auto border-b border-white/30 h-1 max-w-7xl">
+        </div>
       </div>
     </div>
   </section>
