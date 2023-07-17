@@ -52,13 +52,13 @@
         :class="[showVideo ? 'mt-0 py-4 xl:py-0' : 'sm:-mt-24 md:-mt-56 lg:-mt-96 md:pb-10']"
         class="sm:px-5 md:px-5 lg:px-5 z-0 transition-all xl:max-w-7xl mb-14 xl:mx-auto xl:absolute xl:bottom-0 xl:w-1/3 xl:left-[17%]"
       >
-        <h2
-          class="flex flex-col !font-medium !text-5xl tracking-wider gap-2 mb-5 xl:mb-10"
+        <h1
+          class="flex flex-col !font-medium tracking-wider gap-2 mb-5 xl:mb-10"
         >
           <span>Quem não</span>
           <span class="font-bold">fintechiza,</span>
           <span>fica para trás</span>
-        </h2>
+        </h1>
         <div class="border-t-2 border-white/30 py-5 xl:py-10 leading-loose w-2/3 sm:w-full">
           <p>
             Fintechize a sua marca, e aumente os seus lucros com a ajuda do
