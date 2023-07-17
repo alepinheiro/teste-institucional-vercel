@@ -2,32 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-// @layer base {
-//     .darkGreyText {
-//         @apply text-[#ABABAB];
-//     }
-
-//     .greenYellowFillHover {
-//         @apply hover:fill-[#D0FE42];
-//     }
-
-//     .greenYellowFill {
-//         @apply fill-[#D0FE42];
-//     }
-
-//     .greenYellowTextHover {
-//         @apply hover:text-[#D0FE42];
-//     }
-
-//     .greenYellowText {
-//         @apply text-[#D0FE42];
-//     }
-
-//     .greenYellowBorder {
-//         @apply border-[#D0FE42];
-//     }
-// }
-
 @layer components {
     #bestProReleaseLandingPage {
         h1 {
