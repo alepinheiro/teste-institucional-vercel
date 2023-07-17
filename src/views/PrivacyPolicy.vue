@@ -229,7 +229,7 @@
             Os dados compartilhados são os seguintes:
           </p>
           <p class="pl-3 pb-3">
-            Alguns dados são compartilhados com os parceiros financeiros da BEST, tais como (Bancos, Fintechs,
+            Alguns dados são compartilhados com os parceiros financeiros da SEJABEST, tais como (Bancos, Fintechs,
             Financeiras, companhias hipotecárias e fundos de investimentos), que são:
           </p>
 

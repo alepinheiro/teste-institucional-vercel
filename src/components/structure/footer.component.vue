@@ -302,7 +302,7 @@
     <div class="sm:px-2 sm:py-6 py-8 ">
 
       <p class="text-xs text-textSecondary ">
-        A Best é uma plataforma digital que atua como correspondente Bancário para facilitar o processo de
+        A SejaBest é uma plataforma digital que atua como correspondente Bancário para facilitar o processo de
         contratação de empréstimos. Como Correspondente Bancário, seguimos as diretrizes da Resolução nº 3.954,
         de 24 de fevereiro de 2011. Somos correspondentes bancários das seguintes instituições: banco Daycoval S.
         A cnpj sob o no 62.232.889/0001-90. banco Santander s.a. cnpj sob o no 90.400.888/0001-42 Cashme soluções
