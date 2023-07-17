@@ -7,7 +7,9 @@
             <div class="absolute sm:static md:static top-0 right-0 h-full">
                 <div class="h-full flex flex-row items-center gap-4">
                     <a href="#" class="text-white/60 underline-offset-4 underline hover:text-white transition-all">Entrar</a>
-                    <a href="#" class="bg-white text-black px-6 py-2 rounded-xl font-hover transition-all hover:bg-[#D0FE42] sm:hidden">Quero ser Pro</a>
+                    <a href="#" class="bg-white text-black px-6 py-2 rounded-xl font-hover transition-all hover:bg-[#D0FE42] sm:hidden font-sans hover:-translate-y-1">
+                        Quero ser Pro
+                    </a>
                 </div>
             </div>
         </div>

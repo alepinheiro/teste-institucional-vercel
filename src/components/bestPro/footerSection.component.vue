@@ -11,9 +11,9 @@
           class="w-40 sm:w-11/12 h-auto"
         />
       </router-link>
-      <div class="text-center text-sm darkGreyText">
+      <div class="text-center text-sm text-[#ABABAB]">
         <span class="block">© 2023 SejaBest Fintech de Crédito</span>
-        <router-link :to="'/' + $root.utms" class="block greeYellowTextHover">
+        <router-link :to="'/' + $root.utms" class="block hover:text-[#D0FE42]">
           <span> www.seja.best </span>
         </router-link>
       </div>

@@ -1,25 +1,28 @@
 <template>
-  <section class="border-b greenYellowBorder py-10">
+  <section class="border-b border-[#D0FE42] py-10">
     <div
       class="sm:px-5 max-w-7xl w-10/12 sm:w-full mx-auto flex flex-col gap-10 text-center"
     >
-    <div class="flex sm:flex-col md:flex-col flex-row sm:items-center md:items-center items-end gap-10 jus">
+      <div
+        class="flex sm:flex-col md:flex-col flex-row sm:items-center md:items-center items-end gap-10 jus"
+      >
         <div class="sm:w-56 md:w-56 h-14 flex-shrink flex justify-start flex-1">
-            <img
-              class="w-fit h-full"
-              src="/images/BestNews/LogoBestNewsWhite.svg"
-              alt="Logo BestNews"
-            />
+          <img
+            class="w-fit h-full"
+            src="/images/BestNews/LogoBestNewsWhite.svg"
+            alt="Logo BestNews"
+          />
         </div>
-      <h2 class="w-2/4 flex-grow md:w-full">
-        Fique pode dentro <br class="sm:hidden"> de tudo que é
-        <span class="greenYellowText">Pro</span>
-      </h2>
-      <p class="w-1/4 md:w-3/4 sm:w-3/4 flex-1">
-        Entre em nosso canal no <strong>Telegram</strong> e saiba tudo sobre o
-        <strong>BestPro</strong> e mercado financeiro.
-      </p>
-    </div>
+        <h2 class="w-2/4 flex-grow md:w-full">
+          Fique pode dentro <br class="sm:hidden" />
+          de tudo que é
+          <span class="text-[#D0FE42]">Pro</span>
+        </h2>
+        <p class="w-1/4 md:w-3/4 sm:w-3/4 flex-1">
+          Entre em nosso canal no <strong>Telegram</strong> e saiba tudo sobre o
+          <strong>BestPro</strong> e mercado financeiro.
+        </p>
+      </div>
       <a
         :href="$options.information.socialMedia.telegram"
         class="bg-[#D0FE42] w-fit px-4 py-2 rounded text-black mx-auto flex flex-row gap-2 items-center hover:-translate-y-1 transition-all group"
@@ -40,7 +43,7 @@
             />
           </g>
         </svg>
-        <span class="group-hover:font-bold transition-all"> Quero conteúdo exclusivo </span>
+        <span class="font-sans"> Quero conteúdo exclusivo </span>
       </a>
     </div>
   </section>
@@ -51,6 +54,6 @@ export default defineComponent({
   name: 'TelegramSection',
   data() {
     return {}
-  }
+  },
 })
 </script>

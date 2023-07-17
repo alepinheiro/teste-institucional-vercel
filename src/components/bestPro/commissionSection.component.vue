@@ -1,5 +1,7 @@
 <template>
-  <section class="border-b greenYellowBorder flex flex-col items-center relative py-10">
+  <section
+    class="border-b border-[#D0FE42] flex flex-col items-center relative py-10"
+  >
     <picture class="sm:block">
       <source
         srcset="/images/bestPro/commissionSectionImageDesktop.png"
@@ -15,16 +17,16 @@
       />
     </picture>
     <div
-      class="sm:px-5 md:px-5 lg:px-5 w-full max-w-5xl mx-auto pb-10 flex flex-col sm:items-center items-start sm:flex sm:static absolute bottom-4"
+      class="sm:px-5 md:px-5 lg:px-5 w-full max-w-5xl mx-auto flex flex-col sm:items-center items-start sm:flex sm:static absolute bottom-4"
     >
-      <h2 class="text-center !font-medium">
+      <h2 class="text-center !font-medium lg:pt-10">
         E quando você
         <strong> ganha? </strong>
       </h2>
 
       <h3 class="text-center mb-4">
         São
-        <span class="greenYellowText font-bold"> 3 passos simples </span>
+        <span class="text-[#D0FE42] font-bold"> 3 passos simples </span>
 
         para receber a sua comissão.
       </h3>
@@ -33,11 +35,13 @@
         <li
           v-for="{ id, text, title } of steps"
           :key="id"
-          class="bg-gradient-to-b from-white/30 via-white/10 to-transparent hover:bg-[#D0FE42] transition-all rounded-xl p-0.5"
+          class="bg-gradient-to-b from-white/30 via-white/10 to-transparent hover:bg-[#D0FE42] transition-all rounded-xl p-0.5 cursor-default"
         >
-          <div class="flex bg-black flex-col gap-3 items-center p-4 rounded-xl h-full">
+          <div
+            class="flex bg-black flex-col gap-3 items-center p-4 rounded-xl h-full"
+          >
             <div class="flex flex-row text-3xl gap-2 mx-auto">
-              <span class="font-bold greenYellowText">#{{ id }}</span>
+              <span class="font-bold text-[#D0FE42]">#{{ id }}</span>
               <span>{{ title }}</span>
             </div>
             <p class="text-center">{{ text }}</p>
@@ -46,7 +50,7 @@
       </ul>
 
       <button
-        class="px-4 py-2 bg-[#D0FE42] text-black font-bold rounded w-fit mt-10"
+        class="px-4 py-2 bg-[#D0FE42] text-black font-sans rounded w-fit mt-10 hover:-translate-y-1 transition-all mb-5"
       >
         Assine e seja Pro
       </button>
@@ -63,20 +67,20 @@ export default defineComponent({
         {
           id: 1,
           title: 'Simulação',
-          text: 'Primeiro, você faz a captação do cliente e o prepara para contratar um produto.'
+          text: 'Primeiro, você faz a captação do cliente e o prepara para contratar um produto.',
         },
         {
           id: 2,
           title: 'Aprovação',
-          text: 'Agora é com a SejaBest, nosso time de assessores vai assumir o processo.'
+          text: 'Agora é com a SejaBest, nosso time de assessores vai assumir o processo.',
         },
         {
           id: 3,
           title: 'Comissão',
-          text: 'Depois que o cliente tiver com o dinheiro em mãos, você recebe sua comissão percentual.'
-        }
-      ]
+          text: 'Depois que o cliente tiver com o dinheiro em mãos, você recebe sua comissão percentual.',
+        },
+      ],
     }
-  }
+  },
 })
 </script>

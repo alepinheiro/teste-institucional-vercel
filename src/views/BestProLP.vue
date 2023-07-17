@@ -5,6 +5,7 @@
     <BenefitsSection />
     <VideoSection />
     <BanksSection />
+    <ProductsSection />
     <CommissionSection />
     <div class="relative">
       <PricesSection :options="prices" class="static z-10" />
@@ -28,6 +29,7 @@ import HeroSection from '@/components/bestPro/heroSection.component.vue'
 import BenefitsSection from '@/components/bestPro/benefitsSection.component.vue'
 import VideoSection from '@/components/bestPro/videoSection.component.vue'
 import BanksSection from '@/components/bestPro/banksSection.component.vue'
+import ProductsSection from '@/components/bestPro/productsSection.component.vue'
 import CommissionSection from '@/components/bestPro/commissionSection.component.vue'
 import PricesSection from '@/components/bestPro/pricesSection.component.vue'
 import TelegramSection from '@/components/bestPro/telegramSection.component.vue'
@@ -46,6 +48,7 @@ export default defineComponent({
     BenefitsSection,
     VideoSection,
     BanksSection,
+    ProductsSection,
   },
   data() {
     return {

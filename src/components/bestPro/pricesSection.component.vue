@@ -1,18 +1,18 @@
 <template>
-  <section class="border-b greenYellowBorder py-10 relative">
+  <section class="border-b border-[#D0FE42] py-10 relative">
     <div class="sm:px-5 max-w-5xl lg:w-5/6 md:w-5/6 mx-auto">
       <div class="sm:w-full flex flex-col gap-10 max-w-xl ml-auto">
         <h2 class="text-center">
           Escolha a
-          <span class="greenYellowText"> melhor opção </span>
+          <span class="text-[#D0FE42]"> melhor opção </span>
           para o seu bolso
         </h2>
 
         <div class="flex flex-col gap-8">
-          <div v-for="item of options" :key="item.id" class="relative group">
+          <div v-for="item of options" :key="item.id" class="relative group cursor-default">
             <span
               v-if="item.label"
-              class="z-10 absolute bg-[#D0FE42] shadow group-hover:shadow-[#D0FE42] text-black font-bold text-sm px-2 py-1 rounded-full -right-3 -top-3 transition-all"
+              class="z-10 absolute bg-[#D0FE42] shadow group-hover:shadow-[#D0FE42] text-black font-sans text-sm px-2 py-1 rounded-full -right-3 -top-3 transition-all"
             >
               {{ item.label }}
             </span>
@@ -69,11 +69,11 @@ export default defineComponent({
         link: string
         label: string
       }>,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {}
-  }
+  },
 })
 </script>

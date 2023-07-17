@@ -1,5 +1,5 @@
 <template>
-  <section class="relative">
+  <section class="relative overflow-hidden">
     <div class="flex flex-col xl:max-h-[40rem]">
       <div class="relative h-full xl:ml-auto xl:w-fit ">
         <img
@@ -50,16 +50,16 @@
       </div>
       <div
         :class="[showVideo ? 'mt-0 py-4 xl:py-0' : 'sm:-mt-24 md:-mt-56 lg:-mt-96 md:pb-10']"
-        class="sm:px-5 md:px-5 lg:px-5 z-0 transition-all xl:max-w-7xl mb-24 xl:mx-auto xl:absolute xl:bottom-0 xl:w-1/3 xl:left-[17%]"
+        class="sm:px-5 md:px-5 lg:px-5 z-0 transition-all xl:max-w-7xl mb-14 xl:mx-auto xl:absolute xl:bottom-0 xl:w-1/3 xl:left-[17%]"
       >
         <h2
-          class="flex flex-col !font-medium !text-5xl tracking-wider gap-2 xl:gap-6 mb-5 xl:mb-10"
+          class="flex flex-col !font-medium !text-5xl tracking-wider gap-2 mb-5 xl:mb-10"
         >
           <span>Quem não</span>
           <span class="font-bold">fintechiza,</span>
           <span>fica para trás</span>
         </h2>
-        <div class="border-t-2 border-white/30 py-5 xl:py-10 leading-loose">
+        <div class="border-t-2 border-white/30 py-5 xl:py-10 leading-loose w-2/3 sm:w-full">
           <p>
             Fintechize a sua marca, e aumente os seus lucros com a ajuda do
             BestPro, a melhor plataforma de produtos de crédito do mercado.
@@ -72,7 +72,7 @@
         </div>
         <div class="w-full flex">
             <button
-              class="px-4 py-2 bg-[#D0FE42] text-black font-bold rounded w-fit mx-auto xl:ml-0"
+              class="px-4 py-2 bg-[#D0FE42] text-black font-sans rounded w-fit mx-auto xl:ml-0 hover:-translate-y-1 transition-all"
             >
             Quero assinar o BestPro
             </button>

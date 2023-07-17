@@ -423,7 +423,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
-      Sizmo: ["Sizmo Pro", "sans-serif"]
+      Sizmo: ["Sizmo", "sans-serif"]
     },
     fontSize: {
       '2xs': ["0.6rem", { lineHeight: "0.60rem" }],

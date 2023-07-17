@@ -1,6 +1,6 @@
 <template>
   <section
-    class="border-b greenYellowBorder flex flex-col items-center relative py-10"
+    class="border-b border-[#D0FE42] flex flex-col items-center relative py-10"
   >
     <div class="sm:px-5 lg:px-5 max-w-5xl mx-auto w-full flex flex-col items-center">
       <p class="font-bold sm:w-3/4 mx-auto text-center">
@@ -23,17 +23,17 @@
       <div class="flex sm:flex-col flex-row items-center gap-4">
         <span class="font-bold text-2xl">A partir de</span>
         <div
-          class="border-2 border-white/30 hover:border-[#D0FE42] shadow-lg hover:shadow-[#D0FE4240] px-6 py-4 rounded-xl"
+          class="border-2 border-white/30 hover:border-[#D0FE42] shadow-lg hover:shadow-[#D0FE4240] px-6 py-4 rounded-xl transition-all"
         >
-          <div class="flex flex-row justify-center">
+          <div class="flex flex-row justify-center py-4">
             <span class="text-xl mt-auto mr-1">R$</span>
-            <span class="text-5xl font-bold">99</span>
+            <span class="text-5xl font-bold -mb-2">99</span>
             <span>,90</span>
           </div>
           <span> mensais no plano anual </span>
         </div>
         <button
-          class="px-4 py-2 bg-[#D0FE42] text-black font-bold rounded w-fit"
+          class="px-4 py-2 bg-[#D0FE42] text-black rounded w-fit hover:-translate-y-1 transition-all font-sans"
         >
           Assine e seja Pro
         </button>

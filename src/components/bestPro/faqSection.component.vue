@@ -1,24 +1,28 @@
 <template>
-  <section class="border-b greenYellowBorder py-10">
-    <div class="sm:px-5 w-10/12 max-w-7xl mx-auto">
+  <section class="border-b border-[#D0FE42] py-10">
+    <div class="sm:px-5 w-10/12 sm:w-full max-w-7xl mx-auto">
       <button
         v-for="item of questions"
         :key="item.id"
-        class="flex flex-col overflow-hidden border-b border-white/50 hover:greenYellowBorder"
+        class="flex flex-col overflow-hidden border-b border-white/50 hover:border-[#D0FE42]"
         @click="item.isOpen = !item.isOpen"
       >
         <div
           class="text-left flex flex-row gap-2 items-center darkGreyText group py-4 w-full"
         >
           <span
-            :class="[item.isOpen ? 'greenYellowText ' : 'darkGreyText']"
-            class="group-hover:greenYellowText transition-all flex-grow"
+            :class="[item.isOpen ? 'text-[#D0FE42] ' : 'text-[#ABABAB]']"
+            class="group-hover:text-[#D0FE42] transition-all flex-grow"
           >
             {{ item.title }}
           </span>
           <span
-          :class="[item.isOpen ? 'greenYellowFill greenYellowBorder' : 'fill-white border-white']"
-            class=" border rounded-full  w-5 h-5 p-1 flex-shrink-0 group-hover:greenYellowFill group-hover:greenYellowBorder transition-all"
+            :class="[
+              item.isOpen
+                ? 'fill-[#D0FE42] border-[#D0FE42]'
+                : 'fill-white border-white',
+            ]"
+            class="border rounded-full w-5 h-5 p-1 flex-shrink-0 group-hover:fill-[#D0FE42] group-hover:border-[#D0FE42] transition-all"
           >
             <svg
               v-if="item.isOpen"
@@ -44,7 +48,7 @@
         </div>
         <div
           :class="[item.isOpen ? 'h-auto py-5 border-t ' : 'h-0']"
-          class="greenYellowBorder text-left overflow-hidden transition-all"
+          class="border-[#D0FE42] text-left overflow-hidden transition-all"
         >
           {{ item.text }}
         </div>
@@ -64,11 +68,11 @@ export default defineComponent({
         title: string
         isOpen: boolean
       }>,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {}
-  }
+  },
 })
 </script>
