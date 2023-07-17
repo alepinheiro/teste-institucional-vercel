@@ -128,7 +128,7 @@
                 <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-6 h-8  " />
               </div>
               <p class="text-base pl-2 w-full">
-                Taxas a partir de 1,59% a.a. + taxas referenciais
+                Taxas a partir de 1,59% a.m. + taxas referenciais
               </p>
             </div>
 
