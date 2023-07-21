@@ -96,6 +96,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'BestCarFinanLP',
     component: () => import('@/views/BestCarFinanLP.vue'),
   },
+  {
+    path: '/dev/bestPro',
+    name: 'BestPro, a plataforma que vai fintechizar o seu negócio',
+    component: () => import('@/views/BestProLP.vue'),
+  },
 ]
 
 const router = createRouter({
