@@ -72,14 +72,12 @@
           >
             <div>
               <div class="text-5xl titleFontBold pt-2 text-white pb-6">
-                <h1
-                  class="textDecoration pb-1 text-complementaryColor3 flex w-48"
-                >
-                  FinanBest
-                </h1>
-                <h1 class="text-4xl titleFontBold pt-2 text-white">
-                  Financiamento veicular da SejaBest
-                </h1>
+                <h1 class="textDecoration pb-1 italic text-white flex w-48">
+                    FinanBest
+                  </h1>
+                  <h1 class="text-4xl titleFontBold pt-2 text-white">
+                    Financiamento veicular da SejaBest
+                  </h1>
               </div>
               <p class="text-white pb-6 text-lg">
                 Escolha o carro, novo ou usado, e financie até 100% do valor.
@@ -146,24 +144,16 @@
           >
             <div class="rounded-xl w-full">
               <div class="text-4xl titleFontBold text-white pb-2">
-                <h1
-                  class="textDecoration pb-1 text-complementaryColor3 flex w-60 sm:w-40"
-                >
-                  FinanBest
-                </h1>
-                <h1 class="text-4xl titleFontBold pt-2 text-white">
-                  Empréstimo com Garantia de Veículo
-                </h1>
+                <h1 class="textDecoration pb-1 italic text-white flex w-36">
+                    FinanBest
+                  </h1>
+                  <h1 class="text-2xl titleFontBold pt-2 text-white">
+                    Financiamento veicular da SejaBest
+                  </h1>
               </div>
-              <p class="py-4 text-white pb-6">
-                Use o seu carro como garantia em troca das melhores taxas. Você
-                consegue crédito para seus objetivos fincanceiros
-                <span class="font-semibold">sem precisar veder o veículo</span>
-                com taxas a partir de
-                <span class="font-semibold">1,49% ao mês</span>
-                <span class="text-white font-bold">
-                  e prazos de até 5 anos.</span
-                >
+              <p class="text-white pb-6 ">
+                Escolha o carro, novo ou usado, e financie até 100% do valor.
+                Faça uma simulação agora e veja como ficam as parcelas.
               </p>
               <div class="bg-bglight2Color p-4 rounded-xl">
                 <div
