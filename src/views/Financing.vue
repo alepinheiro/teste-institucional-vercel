@@ -413,7 +413,7 @@
             style=" text-decoration: none;"
             target="_blank">simulador.
           </a>
-          Em até minutos você tem o resultado, porque seu tempo é valioso.
+          Em até 20 minutos você tem o resultado, porque seu tempo é valioso.
         </p>
       </div>
 
