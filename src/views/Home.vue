@@ -1013,6 +1013,7 @@
     </section>
   </div>
   <Rodape />
+  <FooterComponent  />
 </template>
 
 <script lang="ts">

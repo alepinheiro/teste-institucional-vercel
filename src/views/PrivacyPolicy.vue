@@ -462,6 +462,7 @@
 
     </div>
   </div>
+  <FooterComponent  />
 </template>
 <script lang="ts">
 import { defineComponent, ComponentPublicInstance } from 'vue'

@@ -865,6 +865,7 @@
       :videoStyle="videoStyle"
       @closePopUp="showVideo = false" />
   </div>
+  <FooterComponent  />
 </template>
 
 <script lang="ts">

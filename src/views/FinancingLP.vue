@@ -719,6 +719,7 @@
       @closePopUp="showVideo = false" />
 
   </div>
+  <FooterComponent  />
 </template>
 
 <script lang="ts">
