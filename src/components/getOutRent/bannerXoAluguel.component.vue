@@ -30,7 +30,7 @@
           imobiliária.
         </p>
         <button 
-          class="bg-primary transition duration-500 ease-in-out 
+          class="bg-complementaryColor1 transition duration-500 ease-in-out 
           transform hover:translate-y-1 hover:scale-105 rounded-lg text-2xl p-4 font-semibold"
           @click="openLink()">
           Quero sair do aluguel
