@@ -722,9 +722,9 @@
 
     <PopUpVideo
       v-if="showVideo"
-      :video-url="videoUrl"
-      :video-style="videoStyle"
-      @close-popup="showVideo = false" />
+      :videoUrl="videoUrl"
+      :videoStyle="videoStyle"
+      @closePopUp="showVideo = false" />
 
   </div>
 </template>

@@ -23,6 +23,7 @@ module.exports = {
       borderColor:"var(--borderColor)",
       bgDefaultColor:"var(--bgDefaultColor)",
       bgDarkColor:"var(--bgDarkColor)",
+      bgDarkColor2:"var(--bgDarkColor2)",
       bglightColor:"var(--bglightColor)",
       bglight2Color:"var(--bglight2Color)",
       bgPopUpColor:"var(--bgPopUpColor)",
