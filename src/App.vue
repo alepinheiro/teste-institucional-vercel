@@ -19,7 +19,7 @@ export default defineComponent({
   components: { notificationPopUp, footerComponent },
   data() {
     return {
-      isLoading: true,
+      isLoading: false,
       notification: {
         type: 'warning',
         title: "Aviso",
@@ -36,7 +36,7 @@ export default defineComponent({
       (this.$root as IRootExtension).utms = "?" + (fullUrl[1])
     }
     setTimeout(() => {
-      this.isLoading = false
+      this.isLoading = true
     }, 600);
   }
 })
