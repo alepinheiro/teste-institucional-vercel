@@ -19,7 +19,7 @@
         </div>
         <div class="border-t-2 h-2 w-1/12 border-primary"></div>
         <div class="border-2 border-primary text-center flex-1 p-4 text-3xl rotate-2  hover:bg-primary">
-          Caracetísticas do Produto
+          Característica do Produto
         </div>
         <div class="border-t-2 h-2 w-1/12 border-primary"></div>
         <div class="border-2 border-primary text-center flex-1 p-4 text-3xl -rotate-2 hover:bg-primary">
@@ -60,7 +60,7 @@
       </div>
       <div class="border-t-2 h-2 w-1/12 border-primary"></div>
       <div class="border-2 border-primary text-center flex-1 p-4 text-base rotate-2  hover:bg-primary"> 
-        Caracetísticas do Produto
+        Característica do Produto
       </div>
     </div>
     <div class="border-r-2 mr-24 h-18 border-primary"></div>
