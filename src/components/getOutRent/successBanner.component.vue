@@ -5,12 +5,12 @@
         <div class="w-6/12 sm:w-full md:w-full">
          
           <div class="w-8/12 sm:w-full md:w-full sm:p-4 mr-0 ml-auto   text-white text-left sm:text-center md:text-center">
-            <div class="-rotate-6 sm:text-left text-center sm:pl-8" >
+            <div class="-rotate-6 text-left sm:pl-8" >
               <span 
                 class="bg-primary px-4 text-white text-4xl  sm:text-3xl
                  shadow-md font-semibold py-2">Agora você</span>
             </div>
-            <div class="-rotate-2 pt-4 pl-16 sm:pl-28 sm:text-left text-center pb-12 sm:pb-8" >
+            <div class="-rotate-2 pl-16 sm:pl-28 text-left pb-12 sm:pt-4  pt-8 sm:pb-8" >
               <span 
                 class="bg-primary px-4 text-white text-5xl  sm:text-4xl
                  shadow-md font-semibold py-2">É BEST</span>
