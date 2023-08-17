@@ -101,6 +101,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'getOutRent',
     component: () => import('@/views/getOutRent.vue'),
   },
+  {
+    path: '/xo-aluguel-adquirido',
+    name: 'getOutRent',
+    component: () => import('@/views/successGuideGetOutOfRent.vue'),
+  },
 ]
 
 const router = createRouter({
