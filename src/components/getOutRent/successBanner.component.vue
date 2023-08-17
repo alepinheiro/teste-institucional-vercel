@@ -27,7 +27,7 @@
           class="bg-complementaryColor1 text-white transition duration-500 ease-in-out 
               transform hover:translate-y-1 hover:scale-105 rounded-lg text-xl sm:text-xl sm:p-2 p-4 font-semibold"
           @click="openLink()">
-          <i class="fa-brands fa-telegram"></i> Quero conteúdos gratuítos
+          <i class="fa-brands fa-telegram"></i> Quero conteúdos gratuitos
         </button>
         </div>
         <div class="w-6/12 sm:w-full md:w-full sm:pt-8 md:pt-8">
