@@ -103,7 +103,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/xo-aluguel-adquirido',
-    name: 'getOutRent',
+    name: 'successGuideGetOutOfRent',
     component: () => import('@/views/successGuideGetOutOfRent.vue'),
   },
 ]

@@ -23,7 +23,7 @@
               financeiro e imobiliário? Entre em nosso canal no Telegram e descubra o BestNews: 
               <span class="underline ">uma comunidade ativa com tudo o que você precisa na palma da sua mão. Clique agora no botão abaixo.</span>
             </p>
-            <div class="text-center">
+            <div class="sm:text-center  md:text-center ">
               <button 
                 class="bg-complementaryColor1 text-white transition duration-500 ease-in-out  mt-12
                     transform hover:translate-y-1 hover:scale-105 rounded-lg text-xl sm:text-xl sm:p-2 p-4 font-semibold"
