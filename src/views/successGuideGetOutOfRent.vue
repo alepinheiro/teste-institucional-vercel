@@ -34,6 +34,14 @@
         videoUrl: "https://www.youtube.com/embed/XgvSqZf8PM0",
       }
     },
+    mounted() {
+      //@ts-expect-error global function gtag
+      // eslint-disable-next-line no-undef
+      gtag ('event', 'CompraFinalizada');
+      (window as any).fbq('trackCustom', 'Comprafinalizada')
+      (window as any).fbq('trackCustom', 'Comprafinalizada', {value: 0.00, currency: 'USD'})
+      (window as any).fbq('track', 'Purchase', {value: 0.00, currency: 'USD'})
+    },
   
   
   })
