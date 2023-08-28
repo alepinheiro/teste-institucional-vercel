@@ -20,7 +20,7 @@
         </h2>
         <p class="w-1/4 md:w-3/4 sm:w-3/4 flex-1">
           Entre em nosso canal no <strong>Telegram</strong> e saiba tudo sobre o
-          <strong>BestPro</strong> e mercado financeiro.
+          <strong>BestHub</strong> e mercado financeiro.
         </p>
       </div>
       <a
