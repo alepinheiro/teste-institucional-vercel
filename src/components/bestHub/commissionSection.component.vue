@@ -4,15 +4,15 @@
   >
     <picture class="sm:block">
       <source
-        srcset="/images/bestPro/commissionSectionImageDesktop.png"
+        srcset="/images/bestHub/commissionSectionImageDesktop.png"
         media="(min-width: 768px)"
       />
       <source
-        srcset="/images/bestPro/commissionSectionImageMobile.png"
+        srcset="/images/bestHub/commissionSectionImageMobile.png"
         media="(max-width: 767px)"
       />
       <img
-        src="/images/bestPro/commissionSectionImageMobile.png"
+        src="/images/bestHub/commissionSectionImageMobile.png"
         alt="São 3 passos simples para receber a sua comissão."
       />
     </picture>

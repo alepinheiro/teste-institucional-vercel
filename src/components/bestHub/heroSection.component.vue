@@ -9,7 +9,8 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
         class="sm:h-96 h-[800px]"
-      ></iframe>
+      >
+      </iframe>
       <div
         class="h-fit w-full absolute bottom-0 pb-56 sm:pb-12 bg-gradient-to-b from-transparent to-black"
       >
@@ -18,7 +19,7 @@
         >
           <h2>Para ser Best, tem que ser Pro</h2>
           <h1 class="!font-medium !text-3xl">
-            BestPro, a plataforma que vai fintechizar o seu negócio
+            BestHub, a plataforma que vai fintechizar o seu negócio
           </h1>
           <a
             href="#"
@@ -32,7 +33,7 @@
     <div class="max-w-7xl mx-auto relative sm:hidden md:hidden">
       <img
         class="static"
-        src="/images/bestPro/discoverBestPro.png"
+        src="/images/bestHub/discoverBestHub.png"
         alt=""
         srcset=""
       />
@@ -54,13 +55,13 @@
               <div
                 class="flex flex-col text-center w-full py-4 px-6 gap-2 bg-white/10 backdrop-blur rounded-xl"
               >
-                <span class="font-bold text-2xl w-full"
-                  >Simulações em tempo real</span
-                >
-                <span class="inline-flex"
-                  >As melhores opções de prazos, taxas e banco disponíveis na
-                  hora que você precisar.</span
-                >
+                <span class="font-bold text-2xl w-full">
+                  Simulações em tempo real
+                </span>
+                <span class="inline-flex">
+                  As melhores opções de prazos, taxas e banco disponíveis na
+                  hora que você precisar.
+                </span>
               </div>
             </div>
           </div>
@@ -80,13 +81,13 @@
               <div
                 class="flex flex-col text-center w-full py-4 px-6 gap-2 bg-white/10 backdrop-blur rounded-xl"
               >
-                <span class="font-bold text-2xl w-full"
-                  >Sua marca em destaque</span
-                >
-                <span class="inline-flex"
-                  >Tenha seu perfil e a identidade do seu negócio em nossa
-                  plataforma White Label.</span
-                >
+                <span class="font-bold text-2xl w-full">
+                  Sua marca em destaque
+                </span>
+                <span class="inline-flex">
+                  Tenha seu perfil e a identidade do seu negócio em nossa
+                  plataforma White Label.
+                </span>
               </div>
             </div>
           </div>
@@ -106,13 +107,13 @@
               <div
                 class="flex flex-col text-center w-full py-4 px-6 gap-2 bg-white/10 backdrop-blur rounded-xl"
               >
-                <span class="font-bold text-2xl w-full"
-                  >Resumo dos negócios</span
-                >
-                <span class="inline-flex"
-                  >Uma dashboard completa com um resumo em gráficos de todos os
-                  seus negócios.</span
-                >
+                <span class="font-bold text-2xl w-full">
+                  Resumo dos negócios
+                </span>
+                <span class="inline-flex">
+                  Uma dashboard completa com um resumo em gráficos de todos os
+                  seus negócios.
+                </span>
               </div>
             </div>
           </div>
@@ -132,13 +133,13 @@
               <div
                 class="flex flex-col text-center w-full py-4 px-6 gap-2 bg-white/10 backdrop-blur rounded-xl"
               >
-                <span class="font-bold text-2xl w-full"
-                  >Acesse onde precisar</span
-                >
-                <span class="inline-flex"
-                  >O BestPro está disponível onde você precisar. Simule em tempo
-                  real de qualquer dispositivo.</span
-                >
+                <span class="font-bold text-2xl w-full">
+                  Acesse onde precisar
+                </span>
+                <span class="inline-flex">
+                  O BestHub está disponível onde você precisar. Simule em tempo
+                  real de qualquer dispositivo.
+                </span>
               </div>
             </div>
           </div>

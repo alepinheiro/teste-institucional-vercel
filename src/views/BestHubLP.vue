@@ -24,17 +24,17 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import TopBar from '@/components/bestPro/topBar.component.vue'
-import HeroSection from '@/components/bestPro/heroSection.component.vue'
-import BenefitsSection from '@/components/bestPro/benefitsSection.component.vue'
-import VideoSection from '@/components/bestPro/videoSection.component.vue'
-import BanksSection from '@/components/bestPro/banksSection.component.vue'
-import ProductsSection from '@/components/bestPro/productsSection.component.vue'
-import CommissionSection from '@/components/bestPro/commissionSection.component.vue'
-import PricesSection from '@/components/bestPro/pricesSection.component.vue'
-import TelegramSection from '@/components/bestPro/telegramSection.component.vue'
-import FaqSection from '@/components/bestPro/faqSection.component.vue'
-import FooterSection from '@/components/bestPro/footerSection.component.vue'
+import TopBar from '@/components/bestHub/topBar.component.vue'
+import HeroSection from '@/components/bestHub/heroSection.component.vue'
+import BenefitsSection from '@/components/bestHub/benefitsSection.component.vue'
+import VideoSection from '@/components/bestHub/videoSection.component.vue'
+import BanksSection from '@/components/bestHub/banksSection.component.vue'
+import ProductsSection from '@/components/bestHub/productsSection.component.vue'
+import CommissionSection from '@/components/bestHub/commissionSection.component.vue'
+import PricesSection from '@/components/bestHub/pricesSection.component.vue'
+import TelegramSection from '@/components/bestHub/telegramSection.component.vue'
+import FaqSection from '@/components/bestHub/faqSection.component.vue'
+import FooterSection from '@/components/bestHub/footerSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
   components: {

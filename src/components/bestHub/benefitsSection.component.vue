@@ -13,7 +13,7 @@
           class="w-1/3 sm:w-fit flex-grow py-3 px-4 bg-white text-black rounded-xl"
         >
           <div class="w-fit mx-auto flex flex-row gap-2 items-center">
-            <img :src="`/images/bestPro/icons/${icon}.svg`" alt="" />
+            <img :src="`/images/bestHub/icons/${icon}.svg`" alt="" />
             <span class="text-xl">
               {{ text }}
             </span>

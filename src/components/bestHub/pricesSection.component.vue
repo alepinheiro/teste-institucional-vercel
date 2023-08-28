@@ -9,7 +9,11 @@
         </h2>
 
         <div class="flex flex-col gap-8">
-          <div v-for="item of options" :key="item.id" class="relative group cursor-default">
+          <div
+            v-for="item of options"
+            :key="item.id"
+            class="relative group cursor-default"
+          >
             <span
               v-if="item.label"
               class="z-10 absolute bg-[#D0FE42] shadow group-hover:shadow-[#D0FE42] text-black font-sans text-sm px-2 py-1 rounded-full -right-3 -top-3 transition-all"

@@ -97,9 +97,9 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/BestCarFinanLP.vue'),
   },
   {
-    path: '/dev/bestPro',
-    name: 'BestPro, a plataforma que vai fintechizar o seu negócio',
-    component: () => import('@/views/BestProLP.vue'),
+    path: '/dev/BestHub',
+    name: 'BestHub, a plataforma que vai fintechizar o seu negócio',
+    component: () => import('@/views/BestHubLP.vue'),
   },
 ]
 
