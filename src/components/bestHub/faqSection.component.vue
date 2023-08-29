@@ -4,7 +4,7 @@
       <button
         v-for="item of questions"
         :key="item.id"
-        class="flex flex-col overflow-hidden border-b border-white/50 hover:border-[#D0FE42]"
+        class="flex flex-col w-full overflow-hidden border-b border-white/50 hover:border-[#D0FE42]"
         @click="item.isOpen = !item.isOpen"
       >
         <div
@@ -50,7 +50,8 @@
           :class="[item.isOpen ? 'h-auto py-5 border-t ' : 'h-0']"
           class="border-[#D0FE42] text-left overflow-hidden transition-all"
         >
-          {{ item.text }}
+          <!-- eslint-disable-next-line vue/no-v-html -->
+          <p v-html="item.text"></p>
         </div>
       </button>
     </div>

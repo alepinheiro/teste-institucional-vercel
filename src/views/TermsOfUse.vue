@@ -140,10 +140,9 @@
 
 <script lang="ts">
 
-import { defineComponent, ComponentPublicInstance } from 'vue'
+import { defineComponent } from 'vue'
 import TopbarComponent from '@/components/structure/topbar.component.vue'
 
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
 export default defineComponent({
   name: 'TermsOfUse',
@@ -158,7 +157,7 @@ export default defineComponent({
   mounted() {
     let fullUrl = this.$route.fullPath.split("?")
     if (this.$route.fullPath.includes("?")) {
-      (this.$root as IRootExtension).utms = "?" + (fullUrl[1])
+      this.$root.utms = "?" + (fullUrl[1])
     }
   },
 })

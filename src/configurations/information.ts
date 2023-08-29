@@ -20,6 +20,8 @@ const information = {
     appSimulator: "https://simulador.seja.best/",
     appRealEstateSimulator: "https://simulador.seja.best/imovel",
     appVehicleSimulator:"https://simulador.seja.best/veiculo",
+    appBestHub: "https://BestHub.app",
+    appBestHubPreRegister: "https://BestHub.app/pre-cadastro",
 };
 
 export default information;

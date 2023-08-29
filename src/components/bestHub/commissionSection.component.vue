@@ -35,10 +35,10 @@
         <li
           v-for="{ id, text, title } of steps"
           :key="id"
-          class="bg-gradient-to-b from-white/30 via-white/10 to-transparent hover:bg-[#D0FE42] transition-all rounded-xl p-0.5 cursor-default"
+          class="bg-gradient-to-b from-white/30 via-white/10 to-transparent hover:bg-[#D0FE42] transition-all rounded-2xl p-0.5 cursor-default"
         >
           <div
-            class="flex bg-black flex-col gap-3 items-center p-4 rounded-xl h-full"
+            class="flex bg-black flex-col gap-3 items-center p-4 rounded-2xl h-full"
           >
             <div class="flex flex-row text-3xl gap-2 mx-auto">
               <span class="font-bold text-[#D0FE42]">#{{ id }}</span>
@@ -49,11 +49,12 @@
         </li>
       </ul>
 
-      <button
-        class="px-4 py-2 bg-[#D0FE42] text-black font-sans rounded w-fit mt-10 hover:-translate-y-1 transition-all mb-5"
+      <a
+        :href="$options.information.appBestHubPreRegister" target="_blank"
+        class="px-4 py-2 bg-[#D0FE42] text-black font-sans rounded-2xl w-fit mt-10 hover:-translate-y-1 transition-all mb-5"
       >
         Assine e seja Pro
-      </button>
+      </a>
     </div>
   </section>
 </template>

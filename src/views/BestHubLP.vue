@@ -7,18 +7,18 @@
     <BanksSection />
     <ProductsSection />
     <CommissionSection />
-    <div class="relative">
+    <!-- <div class="relative">
       <PricesSection :options="prices" class="static z-10" />
       <img
         class="absolute sm:hidden top-0"
-        src="/images/bestPro/pricesBackground.png"
+        src="/images/bestHub/pricesBackground.png"
         alt=""
       />
-    </div>
+    </div> -->
     <div class="relative">
       <TelegramSection />
       <FaqSection :questions="questions" />
-      <FooterSection />
+      <!-- <FooterSection /> -->
     </div>
   </main>
 </template>
@@ -31,17 +31,17 @@ import VideoSection from '@/components/bestHub/videoSection.component.vue'
 import BanksSection from '@/components/bestHub/banksSection.component.vue'
 import ProductsSection from '@/components/bestHub/productsSection.component.vue'
 import CommissionSection from '@/components/bestHub/commissionSection.component.vue'
-import PricesSection from '@/components/bestHub/pricesSection.component.vue'
+// import PricesSection from '@/components/bestHub/pricesSection.component.vue'
 import TelegramSection from '@/components/bestHub/telegramSection.component.vue'
 import FaqSection from '@/components/bestHub/faqSection.component.vue'
-import FooterSection from '@/components/bestHub/footerSection.component.vue'
+// import FooterSection from '@/components/bestHub/footerSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
   components: {
-    FooterSection,
+    // FooterSection,
     FaqSection,
     TelegramSection,
-    PricesSection,
+    // PricesSection,
     TopBar,
     HeroSection,
     CommissionSection,
@@ -55,26 +55,50 @@ export default defineComponent({
       questions: [
         {
           id: 1,
-          title: 'Preciso ter faturamento mínimo para contratar o empréstimo?',
-          text: 'Bacon ipsum dolor amet doner pancetta filet mignon, meatloaf t-bone ball tip boudin rump burgdoggen shoulder. Corned beef bresaola tongue shank. Meatloaf chuck andouille, pork ball tip kielbasa buffalo chicken jowl spare ribs jerky. Ground round turkey ribeye bresaola, tail buffalo meatball landjaeger pork chop beef ribs short ribs chislic pancetta. Sirloin bresaola tenderloin, chicken tri-tip sausage picanha cupim flank landjaeger bacon meatball.',
+          title: 'O que é o BestHub? ',
+          text: 'O BestHub é uma ferramenta B2B para a oferta de crédito. Imagine que você é uma imobiliária, corretora, construtora, correspondente ou qualquer tipo de empresa que trabalhe ofertando crédito. Dentro do BestHub você pode simular, estruturar, acompanhar as operações de crédito de seus clientes, e no fim ganhar uma comissão sobre cada produto assinado.',
           isOpen: false,
         },
         {
           id: 2,
-          title: 'Preciso ter faturamento mínimo para contratar o empréstimo?',
-          text: 'Bacon ipsum dolor amet doner pancetta filet mignon, meatloaf t-bone ball tip boudin rump burgdoggen shoulder. Corned beef bresaola tongue shank. Meatloaf chuck andouille, pork ball tip kielbasa buffalo chicken jowl spare ribs jerky. Ground round turkey ribeye bresaola, tail buffalo meatball landjaeger pork chop beef ribs short ribs chislic pancetta. Sirloin bresaola tenderloin, chicken tri-tip sausage picanha cupim flank landjaeger bacon meatball.',
+          title: 'Para onde vão as operações do BestHub?',
+          text: 'As operações simuladas dentro de um requisito específico (confira o manual de contratação), são encaminhadas para a SejaBest, que estrutura as operações com vários parceiros com o fim de trazer o melhor produto para seus clientes.',
           isOpen: false,
         },
         {
           id: 3,
-          title: 'Preciso ter faturamento mínimo para contratar o empréstimo?',
-          text: 'Bacon ipsum dolor amet doner pancetta filet mignon, meatloaf t-bone ball tip boudin rump burgdoggen shoulder. Corned beef bresaola tongue shank. Meatloaf chuck andouille, pork ball tip kielbasa buffalo chicken jowl spare ribs jerky. Ground round turkey ribeye bresaola, tail buffalo meatball landjaeger pork chop beef ribs short ribs chislic pancetta. Sirloin bresaola tenderloin, chicken tri-tip sausage picanha cupim flank landjaeger bacon meatball.',
+          title: 'O que é a SejaBest?',
+          text: 'A SejaBest é uma fintech multibancos, que trabalha com operações de crédito com garantia. Sejam elas de financiamento ou empréstimo.',
           isOpen: false,
         },
         {
           id: 4,
-          title: 'Preciso ter faturamento mínimo para contratar o empréstimo?',
-          text: 'Bacon ipsum dolor amet doner pancetta filet mignon, meatloaf t-bone ball tip boudin rump burgdoggen shoulder. Corned beef bresaola tongue shank. Meatloaf chuck andouille, pork ball tip kielbasa buffalo chicken jowl spare ribs jerky. Ground round turkey ribeye bresaola, tail buffalo meatball landjaeger pork chop beef ribs short ribs chislic pancetta. Sirloin bresaola tenderloin, chicken tri-tip sausage picanha cupim flank landjaeger bacon meatball.',
+          title: 'O que é uma simulação detalhada?',
+          text: 'Uma simulação detalhada dentro do BesHub, traz todos os detalhes da operação que você escolheu, segundo uma taxa base de mercado (Não é um taxa final, mas sim usando uma base).',
+          isOpen: false,
+        },
+        {
+          id: 5,
+          title: 'O que é uma simulação multibanco?',
+          text: 'Uma simulação multibancos traz todas as comparações entre simulações de bancos que estão na base da SejaBest. De forma resumida, você consegue acompanhar as diferentes taxas e parcelas segundo cada instituição.',
+          isOpen: false,
+        },
+        {
+          id: 6,
+          title: 'O que é uma simulação multi prazos?',
+          text: 'Uma simulação multi prazos traz diferentes prazos para o mesmo tipo de produto, o que impacta diretamente na parcela do seu cliente.',
+          isOpen: false,
+        },
+        {
+          id: 7,
+          title: 'O que é uma simulação simples?',
+          text: 'Diferente da simulação detalhada, a simulação simples traz apenas a primeira e última parcela segundo uma taxa base de mercado.',
+          isOpen: false,
+        },
+        {
+          id: 8,
+          title: 'Ainda não sei nada sobre crédito, o que devo fazer?',
+          text: 'Como falamos no primeiro tópico, o BestHub também tem um braço de educação onde você pode aprender tudo sobre produtos de crédito com garantia (principalmente sobre o que é uma simulação e parcela). Caso tenha interesse, <a href="#" class="underline">clique aqui</a>.',
           isOpen: false,
         },
       ],

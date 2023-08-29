@@ -22,7 +22,7 @@
             BestHub, a plataforma que vai fintechizar o seu negócio
           </h1>
           <a
-            href="#"
+            :href="$options.information.appBestHubPreRegister" target="_blank"
             class="text-black px-6 py-2 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1"
           >
             Quero ser Pro
@@ -39,7 +39,7 @@
       />
       <div class="absolute top-[10%] right-[18%] text-3xl text-center">
         <span>Descubra o</span>
-        <span class="font-bold block">Best Pro</span>
+        <span class="font-bold block">BestHub</span>
       </div>
       <div class="absolute top-[19%] left-[20%] cursor-pointer">
         <div class="relative group">

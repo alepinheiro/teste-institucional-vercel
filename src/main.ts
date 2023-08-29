@@ -45,6 +45,7 @@ app.mixin({
       this.$options.information = information
   }
 });
+
 app.config.globalProperties.$filters = {
   // formatos aceitos listados em https://momentjs.com/
   formatDate(date: Date, format: string){

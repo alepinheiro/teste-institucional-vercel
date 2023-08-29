@@ -45,9 +45,11 @@
                   </ul>
                   <a
                     :href="item.link"
-                    class="border border-white/30 text-white/30 w-full block py-1 rounded-xl text-center hover:bg-[#D0FE42] hover:text-black transition-all hover:border-[#D0FE42]"
+                    class="border border-white/30 h-auto text-white/30 w-full flex  rounded-2xl text-center hover:bg-[#D0FE42] hover:text-black transition-all hover:border-[#D0FE42]"
                   >
+                  <p class="pt-2 pb-1 mx-auto">
                     Selecionar
+                  </p>
                   </a>
                 </div>
               </div>

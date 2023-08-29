@@ -80,11 +80,12 @@
           </p>
         </div>
         <div class="w-full flex">
-          <button
-            class="px-4 py-2 bg-[#D0FE42] text-black font-sans rounded w-fit mx-auto xl:ml-0 hover:-translate-y-1 transition-all"
+          <a
+          :href="$options.information.appBestHubPreRegister" target="_blank"
+            class="px-4 py-2 bg-[#D0FE42] text-black font-sans rounded-2xl w-fit mx-auto xl:ml-0 hover:-translate-y-1 transition-all"
           >
             Quero assinar o BestHub
-          </button>
+          </a>
         </div>
       </div>
       <div class="absolute w-full -bottom-0">
