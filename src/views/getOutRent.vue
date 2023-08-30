@@ -54,7 +54,6 @@ export default defineComponent({
     if (this.$route.fullPath.includes("?")) {
       (this.$root as IRootExtension).utms = "?" + (fullUrl[1])
     }
-    console.log((this.$root as IRootExtension).utms)
   },
 
 
