@@ -14,14 +14,14 @@
 </template>
   
 <script lang="ts">
-import { defineComponent} from 'vue'
+import { defineComponent,  ComponentPublicInstance} from 'vue'
 import BannerXoAluguel from '@/components/getOutRent/bannerXoAluguel.component.vue'
 import BannerPackage from '@/components/getOutRent/bannerPackage.component.vue'
 import BannerSteps from '@/components/getOutRent/bannerSteps.component.vue'
 import BannerPrice from '@/components/getOutRent/bannerPrice.component.vue'
 import Footer from '@/components/getOutRent/footer.component.vue'
 import PopUpVideo from "@/components/base/popUpVideo.component.vue"
-
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
   name: 'GetOutRent',
   components: {
@@ -34,9 +34,9 @@ export default defineComponent({
   },
   metaInfo() {
     return {
-      title: "Conheça o FinanBest. O Financiamento Imobiliário da SejaBest.",
+      title: "Xô, Aluguel!",
       meta: [
-        { vmid: 'description', name: 'description', content: "Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, transparente e com o auxílio do nosso time de especialistas!" }
+        { vmid: 'description', name: 'description', content: "O metodo best para conquistar seu primeiro imóvel com financiamento imobiliário" }
       ]
     }
   },
@@ -48,6 +48,13 @@ export default defineComponent({
       videoStyle: "w-full h-[36rem] mr-auto ml-auto rounded-2xl ",
       videoUrl: "https://www.youtube.com/embed/XgvSqZf8PM0",
     }
+  },
+  mounted() {
+    let fullUrl = this.$route.fullPath.split("?")
+    if (this.$route.fullPath.includes("?")) {
+      (this.$root as IRootExtension).utms = "?" + (fullUrl[1])
+    }
+    console.log((this.$root as IRootExtension).utms)
   },
 
 
