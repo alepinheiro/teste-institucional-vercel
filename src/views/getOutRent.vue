@@ -1,36 +1,39 @@
 <template>
   <div class="w-full bg-bgDarkColor2">
     <BannerXoAluguel />
-    <BannerPackage @OpenPopUp="showVideo = $event" />
+    <BannerPackage @open-pop-up="showVideo = $event" />
     <BannerSteps />
+    <BannerCommentsCarousel />
     <BannerPrice />
-    <Footer />
+    <FooterSection />
     <PopUpVideo
       v-if="showVideo"
-      :videoUrl="videoUrl"
-      :videoStyle="videoStyle"
-      @closePopUp="showVideo = false" />
+      :video-url="videoUrl"
+      :video-style="videoStyle"
+      @close-pop-up="showVideo = false" />
   </div>
 </template>
-  
+
 <script lang="ts">
-import { defineComponent} from 'vue'
-import BannerXoAluguel from '@/components/getOutRent/bannerXoAluguel.component.vue'
+import BannerCommentsCarousel from '@/components/getOutRent/bannerCommentsCarousel.component.vue'
 import BannerPackage from '@/components/getOutRent/bannerPackage.component.vue'
-import BannerSteps from '@/components/getOutRent/bannerSteps.component.vue'
 import BannerPrice from '@/components/getOutRent/bannerPrice.component.vue'
-import Footer from '@/components/getOutRent/footer.component.vue'
+import BannerSteps from '@/components/getOutRent/bannerSteps.component.vue'
+import BannerXoAluguel from '@/components/getOutRent/bannerXoAluguel.component.vue'
+import FooterSection from '@/components/getOutRent/footerSection.component.vue'
 import PopUpVideo from "@/components/base/popUpVideo.component.vue"
+import { defineComponent} from 'vue'
 
 export default defineComponent({
   name: 'GetOutRent',
   components: {
-    BannerXoAluguel,
+    BannerCommentsCarousel,
     BannerPackage,
-    BannerSteps,
     BannerPrice,
+    BannerSteps,
+    BannerXoAluguel,
+    FooterSection,
     PopUpVideo,
-    Footer
   },
   metaInfo() {
     return {
@@ -53,7 +56,7 @@ export default defineComponent({
 
 })
 </script>
-  
+
 <style scoped>
 
 .mockup {
