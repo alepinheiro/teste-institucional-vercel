@@ -23,14 +23,18 @@
 	src: local("Darker Grotesque Bold"),
 	 url("/fonts/Darker_Grotesque/DarkerGrotesque-Bold.ttf") format("truetype");
   }
-  
+
+  * {
+	margin: 0 !important;
+  }
+
   .titleFont{
 	font-family:"Darker Grotesque";
-	
+
   }
   .titleFontBold{
 	font-family:"Darker Grotesque Bold";
-	
+
   }
   .defaultFont{
 	font-family:"Public Sans";
@@ -137,7 +141,7 @@
   .tooltip {
 	@apply invisible absolute;
   }
-  
+
   .has-tooltip:hover .tooltip {
 	@apply visible z-50;
   }
@@ -165,7 +169,7 @@
   .optionsCard {
 	@apply cursor-pointer rounded-xl focus:border-secondary p-4 border-1 border-gray-300 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 hover:shadow-lg;
   }
-  
+
   .linkStyle {
 	@apply  text-primary  px-2 py-1 rounded-xl cursor-pointer mx-4 sm:mt-4;
   }
@@ -200,7 +204,7 @@
     border-image: linear-gradient(45deg, rgba(255, 0, 0, 0) , #27E0FF);
     border-image-slice: 1;
   }
-  
+
   .decoration.router-link-active{
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(45deg, rgba(255, 0, 0, 0) , #27E0FF);
@@ -301,7 +305,7 @@
 
 
   /* move from / to  */
-  
+
   @-webkit-keyframes moveToLeft {
 	from {
 	}
@@ -317,7 +321,7 @@
 	  transform: translateX(-100%);
 	}
   }
-  
+
   @-webkit-keyframes moveFromLeft {
 	from {
 	  -webkit-transform: translateX(-100%);
@@ -329,7 +333,7 @@
 	  transform: translateX(-100%);
 	}
   }
-  
+
   @-webkit-keyframes moveToRight {
 	from {
 	}
@@ -345,7 +349,7 @@
 	  transform: translateX(100%);
 	}
   }
-  
+
   @-webkit-keyframes moveFromRight {
 	from {
 	  -webkit-transform: translateX(100%);
@@ -357,7 +361,7 @@
 	  transform: translateX(100%);
 	}
   }
-  
+
   @-webkit-keyframes moveToTop {
 	from {
 	}
@@ -373,7 +377,7 @@
 	  transform: translateY(-100%);
 	}
   }
-  
+
   @-webkit-keyframes moveFromTop {
 	from {
 	  -webkit-transform: translateY(-100%);
@@ -385,7 +389,7 @@
 	  transform: translateY(-100%);
 	}
   }
-  
+
   @-webkit-keyframes moveToBottom {
 	from {
 	}
@@ -401,7 +405,7 @@
 	  transform: translateY(100%);
 	}
   }
-  
+
   @-webkit-keyframes moveFromBottom {
 	from {
 	  -webkit-transform: translateY(100%);
@@ -413,7 +417,7 @@
 	  transform: translateY(100%);
 	}
   }
-  
+
   .nextPage {
 	-webkit-animation: moveFromRight 0.7s ease both;
 	animation: moveFromRight 0.7s ease both;
@@ -422,7 +426,7 @@
 	-webkit-animation: moveFromBottom  0.7s ease both;
 	animation: moveFromBottom  0.7s ease both;
   }
-  
+
   .border-board{
 	border-bottom: solid 1px #ffffff54;
   }
@@ -455,12 +459,12 @@
 
 /* usefull classes */
 
-  
+
 @media (min-width: 1880px) and (max-width:2000px) {
     .marginl-15R{
       margin-left: 10rem;
     }
-    
+
 }
 
 @media (min-width: 2001px) and (max-width:2549rem) {

@@ -102,6 +102,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/getOutRent.vue'),
   },
   {
+    path: '/bestBroker',
+    name: 'bestBroker',
+    component: () => import('@/views/BestBrokerLP.vue'),
+  },
+  {
     path: '/xo-aluguel-adquirido',
     name: 'successGuideGetOutOfRent',
     component: () => import('@/views/successGuideGetOutOfRent.vue'),

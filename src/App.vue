@@ -1,6 +1,6 @@
 <template>
   <div class="w-full defaultFont">
-    <RouterView />
+    <RouterView  />
     <notificationPopUp />
   </div>
 </template>
