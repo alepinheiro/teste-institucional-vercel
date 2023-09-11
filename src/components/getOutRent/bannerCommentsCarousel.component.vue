@@ -1,37 +1,74 @@
 <template>
-  <section class="flex flex-col py-10">
+  <section class="flex flex-col pt-10">
     <h2
       class="text-white text-4xl font-bold text-center sm:text-xl md:text-base"
     >
       Conquiste a sua <br class="lg:hidden xl:hidden md:hidden" />
-      <span class="bg-primary p-1"> independência imobiliária </span>
+      <span class="bg-primary p-1"> independência imobiliária</span>
       <br class="lg:hidden xl:hidden md:hidden" />
       assim como eles:
     </h2>
-    <div class="w-full bg-white h-48">
+    <div class="w-full py-5">
       <swiper-container
-        :slides-per-view="3"
+        :slides-per-view="4"
         :autoplay="{
-          delay: 2500,
+          delay: 4700,
           disableOnInteraction: false,
         }"
         :space-between="spaceBetween"
+        :initial-slide="2"
         :centered-slides="true"
-        :pagination="{
-          hideOnClick: true,
-        }"
+        :loop="true"
         :breakpoints="{
-          768: {
-            slidesPerView: 3,
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween,
+          },
+          1024: {
+            slidesPerView: 2.5,
+            spaceBetween,
           },
         }"
-        @progress="onProgress"
-        @slide-change="onSlideChange"
       >
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide v-for="index in [1, 2, 3, 4, 5, 6 ]" :key="index" class="h-auto mt-auto" loading="lazy">
+          <img loading="lazy" :src="`/images/getOutRent/testimonials/${index}.png`" alt="" srcset="" />
+        </swiper-slide>
       </swiper-container>
+      <div class="w-full py-5">
+        <swiper-container
+          :slides-per-view="3"
+          :autoplay="{
+            delay: 6200,
+            disableOnInteraction: false,
+          }"
+          :space-between="spaceBetween"
+          :initial-slide="1"
+          :centered-slides="true"
+          :loop="true"
+          :breakpoints="{
+            320: {
+              slidesPerView: 1.1,
+              spaceBetween,
+            },
+            640: {
+              slidesPerView: 1.5,
+              spaceBetween,
+            },
+            1024: {
+              slidesPerView: 2.5,
+              spaceBetween,
+            },
+          }"
+        >
+          <swiper-slide v-for="index in [4, 5, 6, 1, 2, 3]" :key="index" class="h-auto mb-auto">
+            <img :src="`/images/getOutRent/testimonials/${index}.png`" alt="" srcset="" />
+          </swiper-slide>
+        </swiper-container>
+      </div>
     </div>
   </section>
 </template>
@@ -45,13 +82,15 @@ export default defineComponent({
   name: 'BannerCommentsCarousel',
   setup() {
     const spaceBetween = 10
-    const onProgress = (e) => {
-      const [swiper, progress] = e.detail
-      console.log(progress)
+
+
+    const onProgress = (e: unknown) => {
+      // const [swiper, progress] = e.detail
+      // console.log(progress)
     }
 
-    const onSlideChange = (e) => {
-      console.log('slide changed')
+    const onSlideChange = (e: unknown) => {
+      console.log('slide changed', e)
     }
 
     return {
@@ -63,13 +102,12 @@ export default defineComponent({
   data() {
     return {}
   },
-  methods: {
-    onSwiper(event) {
-      console.log(event)
-    },
-    onSlideChange(event) {
-      console.log(event)
-    },
-  },
 })
 </script>
+
+<style lang="scss" scoped>
+.swiper-slide-prev,
+.swiper-slide-next {
+  @apply opacity-50 transition-opacity;
+}
+</style>
