@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col w-full bg-bgDarkColor2 h-fit overflow-hidden">
-    <BannerXoAluguel />
+    <BannerXoAluguel @open-pop-up="showVideo = $event" />
     <BannerPackage @open-pop-up="showVideo = $event" />
     <BannerSteps />
     <BannerCommentsCarousel />
