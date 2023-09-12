@@ -55,8 +55,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-
+import { defineComponent, ComponentPublicInstance } from 'vue'
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
   name: 'BannerXoAluguel',
   emits: ['openPopUp'],

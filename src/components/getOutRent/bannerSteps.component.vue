@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 px-5 flex flex-col gap-5 max-w-5xl mx-auto">
+  <section class="py-12 px-5 flex flex-col gap-5 max-w-5xl mx-auto linhas">
     <div>
       <h2
         class="text-white text-4xl font-bold text-center pb-3"
@@ -14,15 +14,18 @@
         conseguir seu primeiro imóvel.
       </h3>
     </div>
-    <img src="/public/images/getOutRent/Start.png" class="w-14 ml-10 mt-5" alt="" srcset="">
+    <img src="/images/getOutRent/Start.png" class="w-14 ml-10 mt-5" alt="" srcset="">
     <div
-      class="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-4  px-5 gap-10 mx-auto"
+      class="grid sm:grid-cols-2 grid-cols-4 grid-flow-row px-5 gap-10 mx-auto justify-center relative z-0"
     >
+    <img src="/images/getOutRent/2ColLines.svg" class="absolute inset-0 -z-10 h-[90%] w-full hidden sm:block m-auto" alt="" srcset="">
+    <img src="/images/getOutRent/4ColLines.svg" class="absolute inset-0 -z-10 h-[80%] w-[80%] block sm:hidden m-auto" alt="" srcset="">
       <span
         v-for="{ id, text } of steps"
         :id="`step${id}`"
         :key="id"
-        class="relative my-auto h-18 flex justify-center items-center text-white text-center z-0 after:absolute after:content-[''] after:border-2 after:border-primary after:-inset-2 after:odd:-rotate-2 after:even:rotate-2 after:-z-10"
+        :style="{ order: id }"
+        class="relative my-auto h-18 w-full flex justify-center items-center text-white text-center z-10 after:absolute after:content-[''] after:bg-bgDarkColor2 after:border-2 after:border-primary after:-inset-2 after:odd:-rotate-2 after:even:rotate-2 after:-z-10"
       >
         {{ text }}
       </span>
@@ -71,6 +74,8 @@ export default defineComponent({
           id: 8,
           text: 'Dicas de Aprovação',
         },
+
+
       ],
     }
   },

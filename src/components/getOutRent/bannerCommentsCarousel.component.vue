@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col pt-10">
+  <section class="flex flex-col py-10 h-auto max-w-7xl w-full mx-auto">
     <h2
       class="text-white text-4xl font-bold text-center sm:text-xl md:text-base"
     >

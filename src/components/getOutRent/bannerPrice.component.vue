@@ -22,8 +22,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-
+import { defineComponent, ComponentPublicInstance } from 'vue'
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
   name: 'BannerXoAluguel',
   data() {
@@ -33,7 +33,7 @@ export default defineComponent({
   },
   methods:{
     openLink(){
-      window.open( this.$options.information.hotmartXoAluguel, '_blank' );
+      window.open( this.$options.information.hotmartXoAluguel+(this.$root as IRootExtension).utms, '_blank' );
     },
   }
 })
