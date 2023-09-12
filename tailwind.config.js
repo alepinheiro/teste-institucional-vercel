@@ -424,6 +424,8 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
+      'Sizmo-Pro': ['FF Sizmo Pro', 'sans-serif'],
+      'Public-Sans': ['Public Sans', 'sans-serif'],
     },
     fontSize: {
       '2xs': ["0.6rem", { lineHeight: "0.60rem" }],
