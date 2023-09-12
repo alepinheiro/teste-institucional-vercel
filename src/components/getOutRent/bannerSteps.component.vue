@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 px-5 flex flex-col gap-5 max-w-5xl mx-auto">
+  <section class="py-12 px-5 flex flex-col gap-5 max-w-5xl mx-auto linhas">
     <div>
       <h2
         class="text-white text-4xl font-bold text-center pb-3"
@@ -24,7 +24,8 @@
         v-for="{ id, text } of steps"
         :id="`step${id}`"
         :key="id"
-        class="relative my-auto h-18 flex justify-center items-center text-white text-center z-10 after:absolute after:content-[''] after:bg-bgDarkColor2 after:border-2 after:border-primary after:-inset-2 after:odd:-rotate-2 after:even:rotate-2 after:-z-10"
+        :style="{ order: id }"
+        class="relative my-auto h-18 w-full flex justify-center items-center text-white text-center z-10 after:absolute after:content-[''] after:bg-bgDarkColor2 after:border-2 after:border-primary after:-inset-2 after:odd:-rotate-2 after:even:rotate-2 after:-z-10"
       >
         {{ text }}
       </span>
@@ -67,12 +68,13 @@ export default defineComponent({
         },
         {
           id: 7,
-          text: 'Dicas de Aprovação',
+          text: 'BÔNUS: Amortização',
         },
         {
           id: 8,
-          text: 'BÔNUS: Amortização',
+          text: 'Dicas de Aprovação',
         },
+
 
       ],
     }
