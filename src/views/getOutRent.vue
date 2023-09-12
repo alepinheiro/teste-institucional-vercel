@@ -37,15 +37,10 @@ export default defineComponent({
   },
   metaInfo() {
     return {
-      title: 'Conheça o FinanBest. O Financiamento Imobiliário da SejaBest.',
+      title: "Xô, Aluguel!",
       meta: [
-        {
-          vmid: 'description',
-          name: 'description',
-          content:
-            'Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, transparente e com o auxílio do nosso time de especialistas!',
-        },
-      ],
+        { vmid: 'description', name: 'description', content: "O método best para conquistar seu primeiro imóvel com financiamento imobiliário" }
+      ]
     }
   },
   data() {
