@@ -81,7 +81,7 @@ register()
 export default defineComponent({
   name: 'BannerCommentsCarousel',
   setup() {
-    const spaceBetween = 10
+    const spaceBetween = 30
 
 
     const onProgress = (e: unknown) => {
