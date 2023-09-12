@@ -1,101 +1,38 @@
 <template>
-  <div class="py-12 px-4">
-    <h2 class="text-white text-4xl font-bold text-center sm:text-xl md:text-base pb-3">
-      O passo a passo definitivo para o <span class="bg-primary p-1 ">Financiamento Imobiliário</span>
-    </h2>
-    <h3 class="text-white text-xl font-bold text-center sm:text-sm md:text-sm">
-      Confira o que você vai adquirir no pacote e
-      como vamos te ajudar a conseguir seu primeiro imóvel.
-    </h3>
-  </div>
-  <div class="linhas w-full py-12 sm:hidden md:hidden">
-    <div class="maxWidth text-white">
-      <div class="flex items-center">
-        <div class="text-2xl  w-2/12 font-bold text-complementaryColor3 -rotate-6">
-          Start!
-        </div>
-        <div class="border-2 w-3/12 lg:w-5/12 text-center border-primary p-4 text-3xl sm:text-xl -rotate-2 hover:bg-primary">
-          Visão geral do Mercado
-        </div>
-        <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-        <div class="border-2 border-primary text-center flex-1 p-4 text-3xl rotate-2  hover:bg-primary">
-          Característica do Produto
-        </div>
-        <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-        <div class="border-2 border-primary text-center flex-1 p-4 text-3xl -rotate-2 hover:bg-primary">
-          Tipos de Financiamento
-        </div>
-        <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-        <div class="border-2 border-primary text-center flex-1 p-4 text-3xl rotate-2 hover:bg-primary">
-          Regras gerais
-        </div>
-      </div>
-      <div class="border-r-2 mr-16 h-24 border-primary"></div>
-      <div class="flex items-center">
-        <div class="text-base  w-2/12 font-bold text-complementaryColor3 -rotate-2">
-
-        </div>
-        <div class="border-2 flex-1 text-center border-primary p-4 text-3xl rotate-2 hover:bg-primary">
-          BÔNUS: Amortização
-        </div>
-        <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-        <div class="border-2 border-primary text-center flex-1 p-4 text-3xl -rotate-2 hover:bg-primary">
-          Dicas de Aprovação
-        </div>
-        <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-        <div class="border-2 border-primary text-center flex-1 p-4 text-3xl rotate-2 hover:bg-primary">
-          Exemplos Reais
-        </div>
-        <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-        <div class="border-2 border-primary w-4/12 lg:w-5/12 text-center p-4 text-3xl -rotate-2 hover:bg-primary">
-          Passo a Passo do Financiamento
-        </div>
-      </div>
+  <section class="py-12 px-5 flex flex-col gap-5 max-w-5xl mx-auto linhas">
+    <div>
+      <h2
+        class="text-white text-4xl font-bold text-center pb-3"
+      >
+        O passo a passo definitivo para o
+        <br><span class="bg-primary p-1">Financiamento Imobiliário</span>
+      </h2>
+      <h3
+        class="text-white text-2xl font-bold text-center"
+      >
+        Confira o que você vai adquirir no pacote e como vamos te ajudar a
+        conseguir seu primeiro imóvel.
+      </h3>
     </div>
-  </div>
-  <div class="w-full xl:hidden lg:hidden text-white p-6 md:w-9/12 mr-auto ml-auto">
-    <div class="flex items-center">
-      <div class="border-2 flex-1 text-center border-primary p-4 text-base -rotate-2 hover:bg-primary">
-        Visão geral do Mercado
-      </div>
-      <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-      <div class="border-2 border-primary text-center flex-1 p-4 text-base rotate-2  hover:bg-primary"> 
-        Característica do Produto
-      </div>
+    <img src="/images/getOutRent/Start.png" class="w-14 ml-10 mt-5" alt="" srcset="">
+    <div
+      class="grid sm:grid-cols-2 grid-cols-4 grid-flow-row px-5 gap-10 mx-auto justify-center relative z-0"
+    >
+    <img src="/images/getOutRent/2ColLines.svg" class="absolute inset-0 -z-10 h-[90%] w-full hidden sm:block m-auto" alt="" srcset="">
+    <img src="/images/getOutRent/4ColLines.svg" class="absolute inset-0 -z-10 h-[80%] w-[80%] block sm:hidden m-auto" alt="" srcset="">
+      <span
+        v-for="{ id, text } of steps"
+        :id="`step${id}`"
+        :key="id"
+        :style="{ order: id }"
+        class="relative my-auto h-18 w-full flex justify-center items-center text-white text-center z-10 after:absolute after:content-[''] after:bg-bgDarkColor2 after:border-2 after:border-primary after:-inset-2 after:odd:-rotate-2 after:even:rotate-2 after:-z-10"
+      >
+        {{ text }}
+      </span>
     </div>
-    <div class="border-r-2 mr-24 h-18 border-primary"></div>
-    <div class="flex items-center">
-      <div class="border-2 flex-1 text-center border-primary p-4 text-base rotate-2 hover:bg-primary">
-        Tipos de Financiamento
-      </div>
-      <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-      <div class="border-2 border-primary text-center flex-1 py-8 px-4 sm:py-4 text-base -rotate-2  hover:bg-primary">
-        Regras gerais
-      </div>
-    </div>
-    <div class="border-l-2 ml-24 h-18 border-primary"></div>
-    <div class="flex items-center">
-      <div class="border-2 flex-1 text-center border-primary p-4 text-base -rotate-2 hover:bg-primary">
-        BÔNUS: Amortização
-      </div>
-      <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-      <div class="border-2 border-primary text-center flex-1 p-4 text-base rotate-2  hover:bg-primary">
-        Dicas de Aprovação
-      </div>
-    </div>
-    <div class="border-r-2 mr-24 h-18 border-primary"></div>
-    <div class="flex items-center">
-      <div class="border-2 border-primary text-center flex-1 py-8 px-4  text-base rotate-2  hover:bg-primary">
-        Exemplos Reais
-      </div>
-      <div class="border-t-2 h-2 w-1/12 border-primary"></div>
-      <div class="border-2 flex-1 text-center border-primary p-4 text-base -rotate-2 hover:bg-primary">
-        Passo a Passo do Financiamento
-      </div>
-    </div>
-  </div>
+  </section>
 </template>
-      
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 
@@ -104,14 +41,50 @@ export default defineComponent({
   data() {
     return {
       isVisible: false,
+      steps: [
+        {
+          id: 1,
+          text: 'Visão geral do Mercado',
+        },
+        {
+          id: 2,
+          text: 'Características do Produto',
+        },
+        {
+          id: 3,
+          text: 'Tipos de Financiamento',
+        },
+        {
+          id: 4,
+          text: 'Regras gerais',
+        },
+        {
+          id: 5,
+          text: 'Exemplos Reais',
+        },
+        {
+          id: 6,
+          text: 'Passo a Passo do Financiamento',
+        },
+        {
+          id: 7,
+          text: 'BÔNUS: Amortização',
+        },
+        {
+          id: 8,
+          text: 'Dicas de Aprovação',
+        },
+
+
+      ],
     }
   },
 })
 </script>
-      
+
 <style scoped>
 .linhas {
-  background-image: url("/images/getOutRent/linhas.png");
+  background-image: url('/images/getOutRent/linhas.png');
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
