@@ -5,7 +5,7 @@
         <img
           src="/images/getOutRent/bannerpreco.png"
           alt="Tudo isso de R$ 299,00 por apenas R$ 89,90 (70% off). Aprenda e saia do aluguel por menos de R$ 3,00 por dia"
-          class="mr-auto ml-auto " />
+          class="mr-auto ml-auto max-w-2xl sm:max-w-full" />
 
         <button
           class="bg-complementaryColor1 text-white transition duration-500 ease-in-out

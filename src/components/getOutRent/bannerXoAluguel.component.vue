@@ -44,7 +44,7 @@
           </div>
 
           <div
-            class="flex flex-col gap-5 items-start bg-gradient-to-r sm:bg-gradient-to-b md:bg-gradient-to-b from-primary to-transparent rounded-xl p-5 text-xl"
+            class="flex flex-col gap-5 items-start bg-gradient-to-r sm:bg-gradient-to-b md:bg-gradient-to-b from-[#0524DD60] to-transparent rounded-xl p-5 text-xl"
           >
             <span class="font-bold w-5/6 sm:w-full md:w-full sm:tracking-wider">
               Não espere mais! Invista em seu futuro e conquiste a tão sonhada
@@ -52,7 +52,8 @@
             </span>
             <button
               class="bg-complementaryColor1 px-8 py-5 rounded-xl sm:mx-auto md:mx-auto transition-all hover:bg-[#0063f2] hover:scale-105 hover:shadow-md sm:tracking-wider"
-            >
+              @click="openLink()"
+              >
               Quero sair do aluguel
             </button>
           </div>

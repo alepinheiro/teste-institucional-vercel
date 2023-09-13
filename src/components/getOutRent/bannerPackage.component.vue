@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full lg:w-fit xl:w-fit flex flex-col-reverse lg:flex-row xl:flex-row items-center max-w-5xl mx-auto py-10 px-5 gap-10 border-b border-primary"
+    class=" w-full lg:w-fit xl:w-fit flex flex-col-reverse lg:flex-row xl:flex-row items-center max-w-5xl mx-auto py-10 px-5 gap-20 border-b border-primary"
   >
     <div class="w-auto text-center flex flex-col gap-8">
       <div
@@ -23,6 +23,7 @@
         </li>
       </ul>
     </div>
+
     <img src="/images/getOutRent/xoAluguelBox.png" class="w-full h-auto max-w-xs mx-auto" />
   </section>
 </template>
