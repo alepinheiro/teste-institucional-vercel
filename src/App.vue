@@ -1,6 +1,6 @@
 <template>
   <div class="w-full defaultFont">
-    <RouterView />
+    <RouterView  />
     <notificationPopUp />
   </div>
 </template>
@@ -9,8 +9,6 @@
 import { NotificationInterface } from '@/interfaces/notification.interface'
 import notificationPopUp from '@/components/base/notificationPopUp.component.vue'
 import { defineComponent, ComponentPublicInstance } from 'vue'
-
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
 export default defineComponent({
   components: { notificationPopUp },
@@ -30,7 +28,7 @@ export default defineComponent({
   mounted() {
     let fullUrl = this.$route.fullPath.split('?')
     if (this.$route.fullPath.includes('?')) {
-      (this.$root as IRootExtension).utms = '?' + fullUrl[1]
+      this.$root.utms = '?' + fullUrl[1]
     }
     setTimeout(() => {
       this.isLoading = true

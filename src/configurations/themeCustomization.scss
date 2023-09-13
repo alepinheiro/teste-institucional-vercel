@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    #bestProReleaseLandingPage {
+        h1 {
+            @apply text-5xl font-bold;
+        }
+        h2 {
+            @apply text-3xl font-bold;
+        }
+    }
+
+    .popoverArrowToLeft {
+        @apply -rotate-90;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 19px solid rgb(255, 255, 255, 0.1);
+        width: 0;
+        height: 0;
+    }
+}
