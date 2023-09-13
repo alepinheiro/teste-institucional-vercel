@@ -1,20 +1,26 @@
 <template>
   <section class="flex flex-col w-full text-white relative z-0 max-w-5xl mx-auto">
+
     <div class="absolute max-h-[50rem] w-full h-full lg:-right-[22rem] xl:-right-[22rem] top-0 ">
       <img
         src="/images/getOutRent/heroBg.png"
         alt="Xô, Aluguel! o método best para conquistar seu primeiro imóvel com financiamento imobiliário "
         class="object-cover h-full w-fit mx-auto"
       />
-      <div class="absolute inset-x-0 lg:inset-[40%] xl:inset-[40%] top-[20rem] lg:top-[60%] xl:top-[60%]">
-        <button @click="$emit('openPopUp', true)" class="relative h-14 w-14 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0">
+
+      <div class="absolute flex flex-row w-fit items-center gap-4 mx-auto lg:inset-[40%] xl:inset-[40%] top-[20rem] lg:top-[60%] xl:top-[60%]">
+        <button
+        class="relative h-14 w-14 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0"
+        @click="$emit('openPopUp', true)"
+        >
           <div class="absolute bg-zinc-200 rounded-full inset-2 animate-ping z-0"></div>
           <i class="fa-solid fa-play z-10 text-black"></i>
         </button>
-        <p class="text-center text-base pt-5">
+        <p class="text-center text-base pt-5 w-fit">
           Toque aqui e assista agora uma palavra do CEO
         </p>
       </div>
+
     </div>
 
     <div

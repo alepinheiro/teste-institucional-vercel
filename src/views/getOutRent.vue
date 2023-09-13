@@ -1,5 +1,13 @@
 <template>
   <div class="flex flex-col w-full bg-bgDarkColor2 h-fit overflow-hidden">
+    <div
+      class="fixed bottom-0 inset-x-0 bg-red-300 text-red-500 font-bold w-full z-50"
+    >
+      <div class="hidden sm:block">SM</div>
+      <div class="hidden md:block">MD</div>
+      <div class="hidden lg:block">LG</div>
+      <div class="hidden xl:block">XL</div>
+    </div>
     <BannerXoAluguel @open-pop-up="showVideo = $event" />
     <BannerPackage @open-pop-up="showVideo = $event" />
     <BannerSteps />
