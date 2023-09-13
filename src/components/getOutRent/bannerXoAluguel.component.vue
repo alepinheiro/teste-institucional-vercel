@@ -1,75 +1,89 @@
 <template>
-  <section
-    class="flex flex-col w-full text-white relative z-0 max-w-5xl mx-auto"
-  >
-    <div
-      class="absolute max-h-[50rem] w-full h-full lg:-right-[22rem] xl:-right-[22rem] top-0"
-    >
-      <img
-        src="/images/getOutRent/heroBg.png"
-        alt="Xô, Aluguel! o método best para conquistar seu primeiro imóvel com financiamento imobiliário "
-        class="object-cover h-full w-fit mx-auto"
-      />
-    </div>
-
-    <div
-      class="flex flex-col gap-5 max-w-[666px] mr-auto md:mx-auto px-5 pt-80 lg:pt-20 xl:pt-20 z-10"
-    >
+  <section class="w-full text-white">
       <div
-        class="sm:flex flex-row items-center gap-4 py-4 px-6 w-fit sm:mx-auto mr-auto hidden"
+        class="flex flex-row sm:flex-col-reverse
+        md:flex-col-reverse max-w-5xl md:max-w-2xl mx-auto h-screen md:h-auto sm:h-auto lg:relative xl:relative z-0"
       >
-        <button
-          class="relative w-8 h-8 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0"
-          @click="false"
+        <div
+          class="flex-1 flex flex-col gap-5 my-auto px-5 sm:text-center md:text-center sm:pt-80 md:pt-40 z-10"
         >
           <div
-            class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"
-          ></div>
-          <div class="flex m-auto">
-            <i class="fa-solid fa-play z-10 text-black"></i>
+            class=" md:bg-transparent xl:hidden lg:hidden rounded sm:flex flex-row items-center gap-4 py-4 px-6 w-fit sm:mx-auto md:mx-auto mr-auto"
+          >
+            <button
+              class="relative w-8 h-8 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0"
+              @click="$emit('openPopUp', true)"
+            >
+              <div
+                class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"
+              ></div>
+              <div class="flex m-auto">
+                <i class="fa-solid fa-play z-10 text-black"></i>
+              </div>
+            </button>
+            <span class="font-bold font-Public-Sans text-sm md:hidden">
+              Toque aqui e assista agora uma palavra do CEO
+            </span>
           </div>
-        </button>
-        <span class="font-bold font-Public-Sans text-sm">
-          Toque aqui e assista agora uma palavra do CEO
-        </span>
+
+          <div class="flex flex-col gap-5 sm:gap-18">
+            <h1 class="text-5xl sm:leading-tight">
+              Chegou a sua hora de deixar o aluguel para trás com
+              <b class="underlineGradient"> Financiamento Imobiliário </b>
+            </h1>
+            <p class="text-xl leading-relaxed sm:leading-[2.5] sm:tracking-wider">
+              Não deixe que o aluguel continue sendo um obstáculo entre você e a
+              realização do sonho de ter sua própria casa. Com o guia
+              <b>
+                "Xô, Aluguel: O Método Best para conquistar seu primeiro imóvel
+                com Financiamento Imobiliário",
+              </b>
+              você terá o conhecimento necessário para dar o primeiro passo em
+              direção à conquista desse objetivo.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-5 items-start bg-gradient-to-r sm:bg-gradient-to-b md:bg-gradient-to-b from-primary to-transparent rounded-xl p-5 text-xl"
+          >
+            <span class="font-bold w-5/6 sm:w-full md:w-full sm:tracking-wider">
+              Não espere mais! Invista em seu futuro e conquiste a tão sonhada
+              independência imobiliária.
+            </span>
+            <button
+              class="bg-complementaryColor1 px-8 py-5 rounded-xl sm:mx-auto md:mx-auto transition-all hover:bg-[#0063f2] hover:scale-105 hover:shadow-md sm:tracking-wider"
+            >
+              Quero sair do aluguel
+            </button>
+          </div>
+        </div>
+
+        <div class="flex-1 h-full flex w-full ">
+
+          <img
+            src="/images/getOutRent/heroBg.png"
+            alt="Xô, Aluguel! o método best para conquistar seu primeiro imóvel com financiamento imobiliário "
+            class="absolute lg:-right-1/3 xl:-right-[40%] z-0 sm:h-4/5 object-cover"
+          />
+
+          <div class="absolute right-[10%] bottom-1/4 hidden lg:block xl:block">
+            <button
+              class="relative w-8 h-8 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0"
+              @click="$emit('openPopUp', true)"
+            >
+              <div
+                class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"
+              ></div>
+              <div class="flex m-auto">
+                <i class="fa-solid fa-play z-10 text-black"></i>
+              </div>
+            </button>
+          </div>
+
+        </div>
+
       </div>
-      <h1
-        class="text-5xl sm:text-4xl text-center lg:text-left xl:text-left sm:leading-snug"
-      >
-        Chegou a sua hora de deixar o aluguel para trás com
-        <br />
-        <span class="font-bold border-b-4 border-primary">
-          Financiamento Imobiliário
-        </span>
-      </h1>
-      <p
-        class="text-2xl pt-4 sm:pt-6 leading-10 text-center lg:text-left xl:text-left"
-      >
-        Não deixe que o aluguel continue sendo um obstáculo entre você e a
-        realização do sonho de ter sua própria casa. Com o guia
-        <span class="font-bold"
-          >Xô, Aluguel: O Método Best para conquistar seu primeiro imóvel com
-          Financiamento Imobiliário"</span
-        >, você terá o conhecimento necessário para dar o primeiro passo em
-        direção à conquista desse objetivo.
-      </p>
-      <div
-        class="bg-gradient-to-r sm:bg-gradient-to-b from-[#0524DD70] to-[#0524DD10] px-7 py-6 rounded-lg flex flex-col gap-6"
-      >
-        <p class="text-2xl font-bold sm:text-center">
-          Não espere mais! Invista em seu futuro e conquiste a tão sonhada
-          independência imobiliária.
-        </p>
-        <button
-          class="bg-complementaryColor1 transition duration-500 ease-in-out
-          w-fit sm:mx-auto transform hover:translate-y-1 hover:scale-105 rounded-lg text-xl p-4 font-semibold"
-          @click="openLink()"
-        >
-          Quero sair do aluguel
-        </button>
-      </div>
-    </div>
-  </section>
+    </section>
 </template>
 
 <script lang="ts">
@@ -91,7 +105,7 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .border-gradient {
   position: relative;
 }
@@ -110,6 +124,16 @@ export default defineComponent({
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
+
+.underlineGradient {
+  @apply relative;
+  /* text-decoration: underline var(--primaryColor); */
+  &:after {
+    @apply absolute top-full w-full left-0 h-1 bg-gradient-to-r from-primary to-transparent;
+    content: '';
+  }
+}
+
 /* @media (min-width: 1024px) and (max-width: 1279px) {
   .xoAluguel {
     position: absolute;

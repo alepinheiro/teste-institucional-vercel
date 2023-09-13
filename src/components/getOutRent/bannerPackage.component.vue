@@ -16,7 +16,7 @@
         <li
           v-for="{ description, icon } of itemsIncluded"
           :key="icon"
-          class="flex flex-row gap-2 w-fit items-center bg-white/5 p-2 rounded-md mx-auto"
+          class="flex flex-row gap-2 w-fit items-center bg-white/5 hover:bg-white/20 hover:border-white border border-transparent cursor-default p-2 rounded-md mx-auto"
         >
           <i :class="icon"></i>
           <p class="flex-grow lg:whitespace-nowrap xl:whitespace-nowrap">{{ description }}</p>
