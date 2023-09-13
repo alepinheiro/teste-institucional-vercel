@@ -20,6 +20,7 @@ import footerComponent from '@/components/structure/footer.component.vue';
 import('./configurations/color.css')
 import ('./assets/css/tailwind.css')
 import ('./configurations/customStyle.css')
+import('./configurations/themeCustomization.scss');
 import image from './configurations/images'
 import information from './configurations/information'
 const app = createApp(App);
