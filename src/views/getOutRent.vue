@@ -20,14 +20,57 @@
       :video-style="videoStyle"
       @close-pop-up="showVideo = false" /> -->
 
-      <section class="w-full h-screen">
-        <div class="flex flex-col max-w-5xl md:max-w-2xl">
-          dov
-          <div>
-            botao
+    <section class="w-full text-white">
+      <div
+        class="flex flex-row sm:flex-col-reverse md:flex-col-reverse max-w-5xl md:max-w-2xl mx-auto h-screen md:h-auto sm:h-auto"
+      >
+        <div class="flex-1 flex flex-col gap-10 my-auto px-5 sm:text-center md:text-center">
+          <div class="flex flex-col gap-10">
+            <h1 class="text-5xl">
+              Chegou a sua hora de deixar o aluguel para trás com
+              <b class="underlineGradient">
+                Financiamento Imobiliário
+              </b>
+            </h1>
+            <p class="text-xl leading-relaxed">
+              Não deixe que o aluguel continue sendo um obstáculo entre você e a
+              realização do sonho de ter sua própria casa. Com o guia
+              <b>
+                "Xô, Aluguel: O Método Best para conquistar seu primeiro imóvel
+                com Financiamento Imobiliário",
+              </b>
+              você terá o conhecimento necessário para dar o primeiro passo em
+              direção à conquista desse objetivo.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-5 items-start bg-gradient-to-r sm:bg-gradient-to-b md:bg-gradient-to-b from-primary to-transparent rounded-xl p-5 text-xl"
+          >
+            <span class="font-bold w-5/6 sm:w-full md:w-full">
+              Não espere mais! Invista em seu futuro e conquiste a tão sonhada
+              independência imobiliária.
+            </span>
+            <button
+              class="bg-complementaryColor1 px-8 py-5 rounded-md sm:mx-auto md:mx-auto transition-all hover:bg-[#0063f2] hover:scale-105 hover:shadow-md"
+            >
+              Quero sair do aluguel
+            </button>
           </div>
         </div>
-      </section>
+
+        <div class="flex-1 h-full flex w-full">
+          <img
+            src="/images/getOutRent/heroBg.png"
+            alt="Xô, Aluguel! o método best para conquistar seu primeiro imóvel com financiamento imobiliário "
+            class="object-cover h-full w-fit mx-auto sm:-mb-20 md:-mb-32"
+          />
+          <div
+            class="h-12 w-12 rounded-full bg-white mx-auto mt-auto mb-48"
+          ></div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -54,10 +97,15 @@ export default defineComponent({
   },
   metaInfo() {
     return {
-      title: "Xô, Aluguel!",
+      title: 'Xô, Aluguel!',
       meta: [
-        { vmid: 'description', name: 'description', content: "O método best para conquistar seu primeiro imóvel com financiamento imobiliário" }
-      ]
+        {
+          vmid: 'description',
+          name: 'description',
+          content:
+            'O método best para conquistar seu primeiro imóvel com financiamento imobiliário',
+        },
+      ],
     }
   },
   data() {
@@ -84,4 +132,7 @@ export default defineComponent({
   background-size: cover;
   background-position: right center;
 } */
+.underlineGradient {
+  text-decoration: underline var(--primaryColor);
+}
 </style>

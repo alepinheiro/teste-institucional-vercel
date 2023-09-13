@@ -30,7 +30,7 @@ export default defineComponent({
   mounted() {
     let fullUrl = this.$route.fullPath.split('?')
     if (this.$route.fullPath.includes('?')) {
-      ;(this.$root as IRootExtension).utms = '?' + fullUrl[1]
+      (this.$root as IRootExtension).utms = '?' + fullUrl[1]
     }
     setTimeout(() => {
       this.isLoading = true
