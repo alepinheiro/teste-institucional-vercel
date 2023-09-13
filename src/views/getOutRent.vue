@@ -9,7 +9,7 @@
       <div class="hidden xl:block">XL</div>
     </div>
     <!-- <BannerXoAluguel @open-pop-up="showVideo = $event" />
-    <BannerPackage @open-pop-up="showVideo = $event" />
+
     <BannerSteps />
     <BannerCommentsCarousel />
     <BannerPrice />
@@ -22,15 +22,33 @@
 
     <section class="w-full text-white">
       <div
-        class="flex flex-row sm:flex-col-reverse md:flex-col-reverse max-w-5xl md:max-w-2xl mx-auto h-screen md:h-auto sm:h-auto"
+        class="flex flex-row sm:flex-col-reverse md:flex-col-reverse max-w-5xl md:max-w-2xl mx-auto h-screen md:h-auto sm:h-auto lg:relative xl:relative"
       >
-        <div class="flex-1 flex flex-col gap-10 my-auto px-5 sm:text-center md:text-center">
+        <div
+          class="flex-1 flex flex-col gap-10 my-auto px-5 sm:text-center md:text-center"
+        >
+          <div
+            class="bg-black/50 md:bg-transparent xl:hidden lg:hidden rounded sm:flex flex-row items-center gap-4 py-4 px-6 w-fit sm:mx-auto md:mx-auto mr-auto"
+          >
+            <button
+              class="relative w-8 h-8 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0"
+              @click="false"
+            >
+              <div
+                class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"
+              ></div>
+              <div class="flex m-auto">
+                <i class="fa-solid fa-play z-10 text-black"></i>
+              </div>
+            </button>
+            <span class="font-bold font-Public-Sans text-sm md:hidden">
+              Toque aqui e assista agora uma palavra do CEO
+            </span>
+          </div>
           <div class="flex flex-col gap-10">
             <h1 class="text-5xl">
               Chegou a sua hora de deixar o aluguel para trás com
-              <b class="underlineGradient">
-                Financiamento Imobiliário
-              </b>
+              <b class="underlineGradient"> Financiamento Imobiliário </b>
             </h1>
             <p class="text-xl leading-relaxed">
               Não deixe que o aluguel continue sendo um obstáculo entre você e a
@@ -59,18 +77,31 @@
           </div>
         </div>
 
-        <div class="flex-1 h-full flex w-full">
+        <div class="flex-1 h-full flex w-full ">
           <img
             src="/images/getOutRent/heroBg.png"
             alt="Xô, Aluguel! o método best para conquistar seu primeiro imóvel com financiamento imobiliário "
-            class="object-cover h-full w-fit mx-auto sm:-mb-20 md:-mb-32"
+            class=" object-cover h-full w-fit mx-auto sm:-mb-32 md:-mb-40 xl:absolute lg:absolute lg:-right-1/3"
           />
-          <div
-            class="h-12 w-12 rounded-full bg-white mx-auto mt-auto mb-48"
-          ></div>
+          <div class="absolute right-[10%] bottom-1/4 hidden lg:block xl:block">
+            <button
+              class="relative w-8 h-8 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0"
+              @click="false"
+            >
+              <div
+                class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"
+              ></div>
+              <div class="flex m-auto">
+                <i class="fa-solid fa-play z-10 text-black"></i>
+              </div>
+            </button>
+          </div>
+
         </div>
       </div>
     </section>
+
+    <BannerPackage @open-pop-up="showVideo = $event" />
   </div>
 </template>
 
