@@ -3,14 +3,6 @@
     id="bestBrokerLP"
     class="bg-[#0d0d0d] w-full text-white overflow-x-hidden font-Sizmo-Pro subpixel-antialiased"
   >
-    <div
-      class="fixed bottom-0 inset-x-0 bg-red-300 text-red-500 font-bold w-full z-50"
-    >
-      <div class="hidden sm:block">SM</div>
-      <div class="hidden md:block">MD</div>
-      <div class="hidden lg:block">LG</div>
-      <div class="hidden xl:block">XL</div>
-    </div>
 
     <HeroSection />
     <ProductBox />
