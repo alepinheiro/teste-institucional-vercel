@@ -8,7 +8,7 @@
       <div class="hidden lg:block">LG</div>
       <div class="hidden xl:block">XL</div>
     </div>
-    <BannerXoAluguel @open-pop-up="showVideo = $event" />
+    <!-- <BannerXoAluguel @open-pop-up="showVideo = $event" />
     <BannerPackage @open-pop-up="showVideo = $event" />
     <BannerSteps />
     <BannerCommentsCarousel />
@@ -18,7 +18,16 @@
       v-if="showVideo"
       :video-url="videoUrl"
       :video-style="videoStyle"
-      @close-pop-up="showVideo = false" />
+      @close-pop-up="showVideo = false" /> -->
+
+      <section class="w-full h-screen">
+        <div class="flex flex-col max-w-5xl md:max-w-2xl">
+          dov
+          <div>
+            botao
+          </div>
+        </div>
+      </section>
   </div>
 </template>
 

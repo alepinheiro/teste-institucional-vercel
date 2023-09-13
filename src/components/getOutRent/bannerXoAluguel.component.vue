@@ -1,62 +1,74 @@
 <template>
-  <section class="flex flex-col w-full text-white relative z-0 max-w-5xl mx-auto">
-
-    <div class="absolute max-h-[50rem] w-full h-full lg:-right-[22rem] xl:-right-[22rem] top-0 ">
+  <section
+    class="flex flex-col w-full text-white relative z-0 max-w-5xl mx-auto"
+  >
+    <div
+      class="absolute max-h-[50rem] w-full h-full lg:-right-[22rem] xl:-right-[22rem] top-0"
+    >
       <img
         src="/images/getOutRent/heroBg.png"
         alt="Xô, Aluguel! o método best para conquistar seu primeiro imóvel com financiamento imobiliário "
         class="object-cover h-full w-fit mx-auto"
       />
-
-      <div class="absolute flex flex-row w-fit items-center gap-4 mx-auto lg:inset-[40%] xl:inset-[40%] top-[20rem] lg:top-[60%] xl:top-[60%]">
-        <button
-        class="relative h-14 w-14 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0"
-        @click="$emit('openPopUp', true)"
-        >
-          <div class="absolute bg-zinc-200 rounded-full inset-2 animate-ping z-0"></div>
-          <i class="fa-solid fa-play z-10 text-black"></i>
-        </button>
-        <p class="text-center text-base pt-5 w-fit">
-          Toque aqui e assista agora uma palavra do CEO
-        </p>
-      </div>
-
     </div>
 
     <div
-        class="flex flex-col gap-5 max-w-[666px] mr-auto md:mx-auto px-5 pt-[30rem] lg:pt-20 xl:pt-20 z-10"
+      class="flex flex-col gap-5 max-w-[666px] mr-auto md:mx-auto px-5 pt-80 lg:pt-20 xl:pt-20 z-10"
+    >
+      <div
+        class="sm:flex flex-row items-center gap-4 py-4 px-6 w-fit sm:mx-auto mr-auto hidden"
       >
-        <h1 class="text-5xl sm:text-4xl leading-tight text-center lg:text-left xl:text-left">
-          Chegou a sua hora de deixar o aluguel para trás com
-          <br />
-          <span class="font-bold border-b-4 border-primary">
-            Financiamento Imobiliário
-          </span>
-        </h1>
-        <p class="text-2xl pt-4 sm:pt-6 leading-10 text-center lg:text-left xl:text-left">
-          Não deixe que o aluguel continue sendo um obstáculo entre você e a
-          realização do sonho de ter sua própria casa. Com o guia
-          <span class="font-bold"
-            >Xô, Aluguel: O Método Best para conquistar seu primeiro imóvel com
-            Financiamento Imobiliário"</span
-          >, você terá o conhecimento necessário para dar o primeiro passo em
-          direção à conquista desse objetivo.
-        </p>
-        <div
-          class="border-gradient bg-gradient-to-r from-[#0524DD70] to-[#0524DD10] px-7 py-6 rounded-lg flex flex-col gap-6"
+        <button
+          class="relative w-8 h-8 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0"
+          @click="false"
         >
-          <p class="text-2xl font-bold text-center">
-            Não espere mais! Invista em seu futuro e conquiste a tão sonhada
-            independência imobiliária.
-          </p>
-          <button
-            class="bg-complementaryColor1 transition duration-500 ease-in-out w-fit mx-auto transform hover:translate-y-1 hover:scale-105 rounded-lg text-xl p-4 font-semibold"
-            @click="openLink()"
-          >
-            Quero sair do aluguel
-          </button>
-        </div>
+          <div
+            class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"
+          ></div>
+          <div class="flex m-auto">
+            <i class="fa-solid fa-play z-10 text-black"></i>
+          </div>
+        </button>
+        <span class="font-bold font-Public-Sans text-sm">
+          Toque aqui e assista agora uma palavra do CEO
+        </span>
       </div>
+      <h1
+        class="text-5xl sm:text-4xl text-center lg:text-left xl:text-left sm:leading-snug"
+      >
+        Chegou a sua hora de deixar o aluguel para trás com
+        <br />
+        <span class="font-bold border-b-4 border-primary">
+          Financiamento Imobiliário
+        </span>
+      </h1>
+      <p
+        class="text-2xl pt-4 sm:pt-6 leading-10 text-center lg:text-left xl:text-left"
+      >
+        Não deixe que o aluguel continue sendo um obstáculo entre você e a
+        realização do sonho de ter sua própria casa. Com o guia
+        <span class="font-bold"
+          >Xô, Aluguel: O Método Best para conquistar seu primeiro imóvel com
+          Financiamento Imobiliário"</span
+        >, você terá o conhecimento necessário para dar o primeiro passo em
+        direção à conquista desse objetivo.
+      </p>
+      <div
+        class="bg-gradient-to-r sm:bg-gradient-to-b from-[#0524DD70] to-[#0524DD10] px-7 py-6 rounded-lg flex flex-col gap-6"
+      >
+        <p class="text-2xl font-bold sm:text-center">
+          Não espere mais! Invista em seu futuro e conquiste a tão sonhada
+          independência imobiliária.
+        </p>
+        <button
+          class="bg-complementaryColor1 transition duration-500 ease-in-out
+          w-fit sm:mx-auto transform hover:translate-y-1 hover:scale-105 rounded-lg text-xl p-4 font-semibold"
+          @click="openLink()"
+        >
+          Quero sair do aluguel
+        </button>
+      </div>
+    </div>
   </section>
 </template>
 
