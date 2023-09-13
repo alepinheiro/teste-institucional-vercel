@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full py-10 bg-gradient-to-b from-black to-transparent">
+  <section class="w-full py-10 bg-gradient-to-b from-black to-transparent border-b border-[#D0FE42]">
     <div class="max-w-2xl mx-auto">
       <img
         src="/images/bestBroker/bestHubNotebook.png"

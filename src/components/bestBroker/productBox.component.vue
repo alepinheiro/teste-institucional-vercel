@@ -1,12 +1,15 @@
 <template>
-  <section class="w-full">
+  <section class="w-full relative z-0">
     <div
       class="flex sm:flex-col md:flex-col flex-row-reverse gap-5 items-center max-w-5xl mx-auto"
     >
-      <div>
+    <div class="border-t border-[#D0FE42] inset-x-0 absolute sm:top-40 top-0 z-0 mx-auto md:max-w-2xl max-w-5xl">
+
+    </div>
+      <div class="z-10">
         <img
           src="/images/bestBroker/productBox.png"
-          class="w-auto h-fit mx-auto md:max-w-2xl"
+          class="w-auto h-fit mx-auto md:max-w-2xl "
           alt=""
         />
       </div>
