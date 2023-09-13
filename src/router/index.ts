@@ -97,9 +97,19 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/BestCarFinanLP.vue'),
   },
   {
-    path: '/dev/bestPro',
-    name: 'BestPro, a plataforma que vai fintechizar o seu negócio',
-    component: () => import('@/views/BestProLP.vue'),
+    path: '/xo-aluguel',
+    name: 'getOutRent',
+    component: () => import('@/views/getOutRent.vue'),
+  },
+  {
+    path: '/bestBroker',
+    name: 'bestBroker',
+    component: () => import('@/views/BestBrokerLP.vue'),
+  },
+  {
+    path: '/xo-aluguel-adquirido',
+    name: 'successGuideGetOutOfRent',
+    component: () => import('@/views/successGuideGetOutOfRent.vue'),
   },
 ]
 

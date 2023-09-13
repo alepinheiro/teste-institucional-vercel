@@ -564,6 +564,7 @@
 
     </div>
   </div>
+  <FooterComponent  />
 </template>
 
 <script lang="ts">

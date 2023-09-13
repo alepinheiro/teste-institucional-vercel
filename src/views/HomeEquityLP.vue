@@ -553,7 +553,7 @@
             target="_blank">
             simulador.
           </a>
-            Em até minutos você tem o resultado, porque seu tempo é valioso.
+            Em até 20 minutos você tem o resultado, porque seu tempo é valioso.
         </p>
 
       </div>
@@ -860,10 +860,11 @@
 
     <PopUpVideo
       v-if="showVideo"
-      :video-url="videoUrl"
-      :video-style="videoStyle"
-      @close-pop-up="showVideo = false" />
+      :videoUrl="videoUrl"
+      :videoStyle="videoStyle"
+      @closePopUp="showVideo = false" />
   </div>
+  <FooterComponent  />
 </template>
 
 <script lang="ts">

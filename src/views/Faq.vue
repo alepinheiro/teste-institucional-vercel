@@ -30,6 +30,7 @@
     </section>
 
   </div>
+  <FooterComponent  />
 </template>
 
 <script lang="ts">

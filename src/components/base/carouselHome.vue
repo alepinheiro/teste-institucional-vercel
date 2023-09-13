@@ -1,5 +1,5 @@
 <template>
-  <swiper
+  <swiper-container
     :initial-slide="1"
     :slides-per-view="3"
     :centered-slides="true"
@@ -8,7 +8,7 @@
     :auto-height="false"
     :pagination="{
       clickable: true,
-    }" :modules="modules" class="MySwiper swiper">
+    }" class="MySwiper swiper">
 
     <swiper-slide id="testimonial1">
       <article class="w-full  mr-auto ml-auto max-w-sm p-4">
@@ -201,37 +201,29 @@
       </article>
     </swiper-slide>
 
-  </swiper>
+  </swiper-container>
 </template>
 
 <script lang="ts">
-import { ComponentPublicInstance } from 'vue'
 
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
+import { defineComponent } from 'vue'
+import { register } from 'swiper/element/bundle'
+register()
+
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-// import required modules
-import { Pagination, Navigation } from 'swiper';
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
-
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
+export default defineComponent({
+  name: 'CarouselHome',
+  data(){
     return {
-      modules: [Pagination, Navigation],
-    };
-  },
-};
+
+    }
+  }
+})
+
 </script>
 
 <style>

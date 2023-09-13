@@ -1,19 +1,17 @@
 <template>
-  <div id="app" class="w-full defaultFont">
-    <router-view />
-    <footerComponent v-if="!isLoading" />
+  <div class="w-full defaultFont">
+    <RouterView  />
     <notificationPopUp />
   </div>
 </template>
 
 <script lang="ts">
-import footerComponent from '@/components/structure/footer.component.vue'
-import notificationPopUp from '@/components/base/notificationPopUp.component.vue'
 import { NotificationInterface } from '@/interfaces/notification.interface'
-import { defineComponent } from 'vue'
+import notificationPopUp from '@/components/base/notificationPopUp.component.vue'
+import { defineComponent, ComponentPublicInstance } from 'vue'
 
 export default defineComponent({
-  components: { notificationPopUp, footerComponent },
+  components: { notificationPopUp },
   data() {
     return {
       isLoading: true,
@@ -22,9 +20,9 @@ export default defineComponent({
         title: 'Aviso',
         message: 'teste',
         showMessage: false,
-        buttonText: 'Continuar'
+        buttonText: 'Continuar',
       } as NotificationInterface,
-      utms: '' as string
+      utms: '' as string,
     }
   },
   mounted() {
@@ -33,8 +31,8 @@ export default defineComponent({
       this.$root.utms = '?' + fullUrl[1]
     }
     setTimeout(() => {
-      this.isLoading = false
+      this.isLoading = true
     }, 600)
-  }
+  },
 })
 </script>
