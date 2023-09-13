@@ -14,7 +14,7 @@
 
     <section class="sm:pt-40 pt-12 py-10 w-full bestBrokerHeroBg">
       <div class="max-w-5xl md:max-w-2xl mx-auto">
-        <div class="w-1/2 sm:w-full flex flex-col gap-4 sm:text-center sm:px-5">
+        <div class="w-1/2 sm:w-full flex flex-col gap-4 sm:text-center px-5">
           <img
             src="/images/bestBroker/logoBestBrokerWhite.png"
             class="sm:mx-auto ml-0 w-3/5"
@@ -32,14 +32,14 @@
           </p>
 
           <div
-            class="flex flex-col sm:justify-center justify-start gap-4 bgGradientToBottom w-full p-5"
+            class="flex flex-col sm:justify-center justify-start gap-4 bgGradientToBottom w-fit p-5 max-w-[22rem] sm:max-w-sm lg:max-w-sm text-center sm:mx-auto"
           >
-            <p class="text-base w-5/6 sm:mx-auto">
+            <p class="text-base w-fit sm:mx-auto ">
               Se você deseja se destacar e transformar a sua vida, essa é a
               chance que você esperava.
             </p>
             <button
-              class="px-6 py-4 rounded text-xl font-bold font-Public-Sans bg-[#D0FE42] text-black hover:border-white w-fit sm:mx-auto"
+              class="px-6 py-4 rounded text-xl font-bold font-Public-Sans bg-[#D0FE42] text-black hover:border-white w-fit mx-auto"
             >
               Descubra o Best Broker
             </button>
@@ -132,7 +132,7 @@
 
     <section class="w-full">
       <div
-        class="flex flex-col gap-8 contentBg text-center py-10 md:max-w-2xl max-w-5xl mx-auto sm:px-5"
+        class="flex flex-col gap-8 contentBg text-center py-10 md:max-w-2xl max-w-5xl mx-auto px-5"
       >
         <h2 class="text-3xl py-10">
           <span class="text-[#D0FE42] font-bold"> Mais de 10 horas </span>
@@ -163,7 +163,7 @@
 
     <section class="w-full bg-gradient-to-b from-black to-transparent">
       <div
-        class="flex flex-col gap-4 w-full text-center sm:px-5 max-w-5xl md:max-w-2xl mx-auto"
+        class="flex flex-col gap-4 w-full text-center px-5 max-w-5xl md:max-w-2xl mx-auto"
       >
         <h2 class="text-3xl py-10">
           Aprenda tudo sobre as
@@ -180,22 +180,27 @@
               delay: 3000,
               disableOnInteraction: false,
             }"
-            :space-between="20"
+            :space-between="30"
             :loop="true"
             :pagination="true"
             :breakpoints="{
               320: {
                 slidesPerView: 1,
               },
+              1024: {
+                slidesPerView: 1.5,
+                loop: true,
+                spaceBetween: 30,
+              },
               1279: {
                 slidesPerView: 1.5,
                 loop: true,
-                spaceBetween: 20,
+                spaceBetween: 30,
               },
             }"
             class="w-full"
           >
-            <swiper-slide class="relative z-0 mb-6">
+            <swiper-slide class="relative z-0 mb-6 ">
               <img
                 src="/images/bestBroker/financialTools1.png"
                 class="absolute inset-0 object-cover -z-10 w-full"
@@ -243,7 +248,7 @@
         </div>
 
         <button
-          class="px-6 w-full py-4 border-2 border-[#D0FE42] rounded-xl font-bold hover:bg-[#D0FE42] transition-all hover:border-white hover:text-black"
+          class="px-6 w-fit mx-auto py-4 border-2 border-[#D0FE42] rounded-xl font-bold hover:bg-[#D0FE42] transition-all hover:border-white hover:text-black"
         >
           Quero ser um Corretor 360°
         </button>
@@ -251,8 +256,8 @@
     </section>
 
     <section class="w-full">
-      <div class="pt-10">
-        <h2 class="text-3xl sm:text-center py-5">
+      <div class="pt-10 ">
+        <h2 class="text-3xl sm:text-center py-5 max-w-5xl mx-auto text-center px-5">
           Faça como eles e descubra como o
           <b
             >conhecimento da
@@ -344,7 +349,7 @@
 
     <section class="w-full py-10">
       <div
-        class="sm:px-5 flex flex-col lg:flex-row-reverse z-0 md:max-w-2xl max-w-5xl mx-auto"
+        class="px-5 flex flex-col lg:flex-row-reverse z-0 md:max-w-2xl max-w-5xl mx-auto"
       >
         <div
           class="flex flex-row sm:flex-col-reverse items-center bg-gradient-to-b from-[#D0FE4260] to-transparent rounded-xl px-5 w-full"
@@ -473,7 +478,7 @@
             target="_blank"
           >
             <svg
-              class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-zinc-600"
+              class="w-8 h-8 sm:w-6 sm:h-6 mx-2 "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 576 512"
             >
@@ -706,7 +711,8 @@ export default defineComponent({
   }
 
   @screen xl {
-    background-size: cover;
+    background-position: left top;
+    background-size: 22rem 10rem;
   }
 }
 
@@ -735,7 +741,6 @@ export default defineComponent({
     background-image: url('/images/bestBroker/heroImageDesktop.png');
     background-position: 80% top;
     background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 </style>
