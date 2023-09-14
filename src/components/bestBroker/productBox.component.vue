@@ -1,12 +1,14 @@
 <template>
-  <section class="w-full relative z-0">
+  <section class="w-full relative z-0 lg:h-[700px] xl:h-[700px] flex">
     <div
-      class="flex sm:flex-col md:flex-col flex-row-reverse gap-5 items-center max-w-5xl mx-auto"
+      class="flex sm:flex-col md:flex-col flex-row-reverse gap-5 items-center max-w-7xl m-auto h-fit "
     >
-    <div class="border-t border-[#D0FE42] inset-x-0 absolute sm:top-40 top-0 z-0 mx-auto md:max-w-2xl max-w-5xl">
+
+    <div class="border-t border-[#D0FE42] inset-x-0 absolute sm:top-40 top-0 z-0 mx-auto md:max-w-2xl max-w-7xl">
 
     </div>
-      <div class="z-10">
+
+      <div class="z-10 flex-1">
         <img
           src="/images/bestBroker/productBox.png"
           class="w-auto h-fit mx-auto md:max-w-2xl "
@@ -14,7 +16,8 @@
         />
       </div>
 
-      <div class="flex flex-col gap-5 sm:px-5 md:max-w-2xl">
+      <div class="flex flex-col gap-5 sm:px-5 md:max-w-2xl flex-1">
+
         <p class="text-3xl text-center">
           Uma preparação completa para o Corretor que quer
           <span class="text-[#D0FE42] font-bold"> aumentar seus lucros </span>
@@ -25,10 +28,10 @@
           <li
             v-for="{ icon, id, text } of includedTools"
             :key="id"
-            class="border-2 border-[#D0FE42] rounded px-8 py-3 shadow-md shadow-[#D0FE4260] flex flex-row items-center gap-4"
+            class=" border-2 border-[#D0FE42] rounded px-10 py-5 shadow-md shadow-[#D0FE4260] flex flex-row items-center gap-4 hover:bg-[#D0FE42] hover:text-black cursor-default transition-all"
           >
             <i :class="icon"></i>
-            <span>
+            <span class="text-xl font-bold">
               {{ text }}
             </span>
           </li>

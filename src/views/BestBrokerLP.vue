@@ -16,8 +16,10 @@
   </div>
 </template>
 <script lang="ts">
+
 import { defineComponent } from 'vue'
 import { register } from 'swiper/element/bundle'
+
 import HeroSection from '@/components/bestBroker/heroSection.component.vue'
 import ProductBox from '@/components/bestBroker/productBox.component.vue'
 import ProfileSection from '@/components/bestBroker/profileSection.component.vue'
@@ -27,6 +29,7 @@ import TestimonialsSection from '@/components/bestBroker/testimonialsSection.com
 import BestHub from '@/components/bestBroker/bestHub.component.vue'
 import OfferSection from '@/components/bestBroker/offerSection.component.vue'
 import FooterSection from '@/components/bestBroker/footerSection.component.vue'
+
 register()
 
 export default defineComponent({
