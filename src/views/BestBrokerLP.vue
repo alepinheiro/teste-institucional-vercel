@@ -3,16 +3,24 @@
     id="bestBrokerLP"
     class="bg-[#0d0d0d] w-full text-white overflow-x-hidden font-Sizmo-Pro subpixel-antialiased"
   >
+  <div
+      class="fixed bottom-0 inset-x-0 bg-red-300 text-red-500 font-bold w-full z-50"
+    >
+      <div class="hidden sm:block">SM</div>
+      <div class="hidden md:block">MD</div>
+      <div class="hidden lg:block">LG</div>
+      <div class="hidden xl:block">XL</div>
+    </div>
 
     <HeroSection />
     <ProductBox />
     <ProfileSection />
-    <ContentSection />
+    <!--<ContentSection />
     <ToolsSection />
     <TestimonialsSection />
     <OfferSection />
     <BestHub />
-    <FooterSection />
+    <FooterSection /> -->
   </div>
 </template>
 <script lang="ts">
@@ -83,23 +91,31 @@ export default defineComponent({
 }
 
 .bestBrokerHeroBg {
-  background-image: url('/images/bestBroker/heroImageMd.png');
-  background-size: 80%;
+  background-image: url('/images/bestBroker/heroImageDesktop.png');
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: contain;
+
 
   @screen sm {
-    background-image: url('/images/bestBroker/heroImageMobile.webp');
+    background-image: url('/images/bestBroker/heroImageMobile.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
+  @screen md {
+    background-size: contain;
+    background-position: 15rem 0;
+  }
+
+  @screen lg {
+    background-position: 28rem 0;
+    background-size: 80%;
+  }
+
   @screen xl {
-    background-image: url('/images/bestBroker/heroImageDesktop.png');
-    background-position: 80% top;
-    background-repeat: no-repeat;
+    background-image: none;
   }
 }
 </style>
