@@ -78,7 +78,7 @@
             aria-label="Receba conteúdo exclusivo no Telegram"
             class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
           >
-            Exclusividade agora
+            Exlcusividade agora
           </a>
         </div>
         <div
