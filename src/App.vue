@@ -8,7 +8,7 @@
 <script lang="ts">
 import { NotificationInterface } from '@/interfaces/notification.interface'
 import notificationPopUp from '@/components/base/notificationPopUp.component.vue'
-import { defineComponent, ComponentPublicInstance } from 'vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   components: { notificationPopUp },

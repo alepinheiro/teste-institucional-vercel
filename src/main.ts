@@ -10,6 +10,7 @@ import VueSplide from '@splidejs/vue-splide'
 import '@splidejs/vue-splide/css'
 import { createMetaManager } from 'vue-meta'
 import { register } from 'swiper/element/bundle';
+import VueScrollTo  from "vue-scrollto";
 
 // componentes globais
 import inputBase from '@/components/base/inputBase.component.vue'
@@ -31,6 +32,7 @@ app.use(VueTheMask as any)
 app.use(VueCookies)
 app.use(createHead())
 app.use( VueSplide );
+app.use(VueScrollTo)
 app.use(createMetaManager())
 // componentes globais
 import { library, dom } from '@fortawesome/fontawesome-svg-core';

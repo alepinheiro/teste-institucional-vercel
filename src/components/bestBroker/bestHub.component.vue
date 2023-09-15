@@ -1,8 +1,8 @@
 <template>
   <section class="w-full py-10 bg-black border-b border-[#D0FE42]">
     <div class="md:max-w-2xl max-w-7xl mx-auto px-5">
-      <div class="flex sm:flex-col md:flex-col flex-row">
-        <div class="flex flex-col gap-5">
+      <div class="flex flex-col xl:flex-row ">
+        <div class="flex flex-col gap-5 lg:w-4/6 lg:mx-auto">
           <img
             src="/images/bestBroker/logoBestHub.svg"
             class="mx-auto"
@@ -16,18 +16,19 @@
           />
           <h2 class="text-center text-xl py-5">
             Potencialize seus conhecimentos em um
-            <span class="text-[#D0FE42]">CRM de crédito</span>
+            <b class="text-[#D0FE42]">CRM de crédito</b>
             completo para o seu negócio.
           </h2>
           <div class="w-full text-center py-4">
             <button
-              class="py-4 px-6 bg-[#C7C7C7] text-black text-sm font-bold rounded"
+            class="py-4 px-6 bg-[#C7C7C7] text-black text-sm font-bold rounded"
+            @click="openLink()"
             >
               Conheça o BestHub
             </button>
           </div>
         </div>
-        <div class="flex flex-row flex-wrap gap-4 py-5">
+        <div class="flex flex-row flex-wrap gap-4 py-5 max-w-7xl">
           <div
             v-for="{ description, icon, id, title } of bestHubCards"
             :key="id"
@@ -84,5 +85,10 @@ export default defineComponent({
       ],
     }
   },
+  methods:{
+    openLink(){
+      window.open( this.$options.information.bestHubApp.subscribe + this.$root.utms, '_blank' );
+    },
+  }
 })
 </script>

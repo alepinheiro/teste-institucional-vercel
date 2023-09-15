@@ -41,6 +41,7 @@
     "vue-lazytube": "^1.1.1",
     "vue-meta": "^3.0.0-alpha.10",
     "vue-router": "^4.0.13",
+    "vue-scrollto": "^2.20.0",
     "vue-the-mask": "^0.11.1",
     "yarn": "^1.22.19"
   },

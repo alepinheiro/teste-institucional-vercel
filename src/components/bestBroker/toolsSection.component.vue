@@ -1,6 +1,10 @@
 <template>
-  <section class="w-full bg-gradient-to-b from-black to-transparent py-18 border-b-2 border-[#D0FE42]">
-    <div class="flex flex-col gap-12 w-full text-center lg:max-w-5xl xl:max-w-5xl lg:mx-auto xl:mx-auto">
+  <section
+    class="w-full bg-gradient-to-b from-black to-transparent py-18 border-b-2 border-[#D0FE42]"
+  >
+    <div
+      class="flex flex-col gap-12 w-full text-center lg:max-w-5xl xl:max-w-5xl lg:mx-auto xl:mx-auto"
+    >
       <h2 class="text-3xl px-5 max-w-5xl md:max-w-2xl mx-auto">
         Aprenda tudo sobre as
         <span class="text-[#D0FE42] font-bold"> Ferramentas Financeiras </span>
@@ -8,12 +12,8 @@
       </h2>
 
       <div class="w-full">
-        <swiper-container
-        id="toolsSlider"
-        :="swiperParams"
-          class="w-full"
-        >
-          <swiper-slide class="relative z-0 mb-6 ">
+        <swiper-container id="toolsSlider" :="swiperParams" class="w-full">
+          <swiper-slide class="relative z-0 mb-6">
             <img
               src="/images/bestBroker/financialTools1.png"
               class="absolute inset-0 object-cover -z-10 w-full"
@@ -60,22 +60,33 @@
         </swiper-container>
       </div>
 
-      <button
+      <a
+        v-scroll-to="{
+          el: '#comprar',
+          duration: 300,
+          lazy: false,
+          easing: 'linear',
+          offset: -100,
+          force: true,
+          cancelable: true,
+          x: false,
+          y: true
+        }"
         class="uppercase text-2xl px-10 w-fit mx-auto py-6 border-2 border-[#D0FE42] rounded-xl font-bold hover:bg-[#D0FE42] transition-all duration-300 hover:border-white hover:text-black"
+        href="#"
       >
         Quero ser um Corretor 360°
-      </button>
+      </a>
     </div>
   </section>
 </template>
 <script lang="ts">
-
 import { defineComponent } from 'vue'
-import { SwiperOptions } from 'swiper/types';
+import { SwiperOptions } from 'swiper/types'
 
 export default defineComponent({
   name: 'ToolsSection',
-  setup(){
+  setup() {
     const swiperParams: SwiperOptions = {
       slidesPerView: 2,
       spaceBetween: 30,
@@ -85,7 +96,7 @@ export default defineComponent({
         delay: 3000,
         disableOnInteraction: false,
       },
-      breakpoints:{
+      breakpoints: {
         320: {
           slidesPerView: 1.3,
         },
@@ -95,8 +106,8 @@ export default defineComponent({
         1279: {
           slidesPerView: 2,
         },
-      }
-    };
+      },
+    }
     return {
       swiperParams,
     }

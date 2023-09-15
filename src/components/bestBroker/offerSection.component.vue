@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full py-10">
+  <section id="comprar" class="w-full py-10">
     <div
       class="px-5 flex flex-col lg:flex-row-reverse z-0 md:max-w-2xl max-w-5xl mx-auto"
     >
@@ -12,7 +12,9 @@
           :content-class="'flex flex-col lg:flex-row lg:items-center gap-8 sm:justify-center justify-start w-fit p-5 text-center xl:text-left lg:text-left cursor-default relative'"
         >
           <template #content>
-            <div class="flex items-center lg:flex-row lg:w-2/3 xl:flex-row xl:w-2/3 ">
+            <div
+              class="flex items-center lg:flex-row lg:w-2/3 xl:flex-row xl:w-2/3"
+            >
               <div class="w-full sm:hidden md:hidden flex-1 lg:w-1/3">
                 <ul class="list-disc list-inside mx-auto w-fit">
                   <li>+10h de videoaulas</li>
@@ -47,16 +49,17 @@
 
                 <button
                   class="w-fit px-6 py-4 flex flex-row items-center gap-2 border-4 rounded-xl font-bold bg-[#D0FE42] hover:bg-[#0063F2] transition-all border-white text-black uppercase"
+                  @click="openLink()"
                 >
                   <i class="fa-solid fa-cart-shopping"></i>
-                  <span class=""> Compre agora </span>
+                  <span> Compre agora </span>
                 </button>
               </div>
 
               <img
                 src="/images/bestBroker/productBox2.png"
                 alt=""
-                class="sm:hidden max-h-[400px] md:max-h-[300px] object-contain mx-auto -mb-8 z-0 flex-1 md:absolute lg:absolute xl:absolute md:-top-[80%] md:inset-x-0 lg:-right-8 lg:-top-24  xl:-right-8 xl:-top-12"
+                class="sm:hidden max-h-[400px] md:max-h-[300px] object-contain mx-auto -mb-8 z-0 flex-1 md:absolute lg:absolute xl:absolute md:-top-[80%] md:inset-x-0 lg:-right-8 lg:-top-24 xl:-right-8 xl:-top-12"
               />
             </div>
           </template>
@@ -69,11 +72,18 @@
 import { defineComponent } from 'vue'
 import GradientBackground from '@/components/bestBroker/gradientBackground.component.vue'
 
+
 export default defineComponent({
   name: 'OfferSection',
   components: { GradientBackground },
   data() {
     return {}
+  },
+  methods: {
+    openLink() {
+      window.open(this.$options.information.hotmartXoAluguel + this.$root.utms, '_blank')
+    },
+
   },
 })
 </script>

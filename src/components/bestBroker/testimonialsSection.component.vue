@@ -14,21 +14,22 @@
       </h2>
       <div class="flex flex-col gap-5">
         <div class="w-full">
-          <swiper-container :="swiperParamsTop">
+          <swiper-container :="swiperParamsTop" class="h-full w-full">
             <swiper-slide
               v-for="index of [1, 2, 3, 4, 5, 6]"
               :key="index"
-              class="h-auto mt-auto"
+              class="h-full mt-auto w-full"
             >
               <img
                 :src="`/images/getOutRent/testimonials/${index}.png`"
+                class="object-contain w-full h-full"
                 alt=""
                 srcset=""
               />
             </swiper-slide>
           </swiper-container>
         </div>
-        <div class="w-full">
+        <div class="w-full ">
           <swiper-container :="swiperParamsBottom">
             <swiper-slide
               v-for="index in [4, 5, 6, 1, 2, 3]"
@@ -37,6 +38,7 @@
             >
               <img
                 :src="`/images/getOutRent/testimonials/${index}.png`"
+                class="object-contain w-full h-full"
                 alt=""
                 srcset=""
               />
@@ -60,9 +62,11 @@ export default defineComponent({
       pagination: false,
       loop: true,
       centeredSlides: true,
+      height: 200,
       autoplay: {
         delay: 4700,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       breakpoints: {
         320: {
@@ -83,9 +87,11 @@ export default defineComponent({
       pagination: false,
       loop: true,
       centeredSlides: true,
+      height: 200,
       autoplay: {
         delay: 6200,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       breakpoints: {
         320: {
@@ -114,4 +120,5 @@ export default defineComponent({
 swiper-slide:not(.swiper-slide-active) {
   @apply opacity-50 transition-opacity;
 }
+
 </style>
