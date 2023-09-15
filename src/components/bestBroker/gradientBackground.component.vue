@@ -1,106 +1,89 @@
 <template>
-  <section class="w-full">
-    <div
-
-      class="flex flex-col gap-18 contentBg text-center py-18 md:max-w-2xl max-w-5xl mx-auto px-5"
-    >
-      <h2 class="text-3xl py-10">
-        <span class="text-[#D0FE42] font-bold"> Mais de 10 horas </span>
-        de conteúdos com dicas, exemplos, casos e tudo o que você quer e precisa
-        saber
-      </h2>
-      <ul
-        class="flex flex-col lg:flex-row xl:flex-row lg:items-stretch xl:items-stretch xl:justify-center lg:flex-wrap xl:flex-wrap items-center gap-5"
-      >
-
-        <li
-          v-for="{ id, title, text } of contentCards"
-          :key="id"
-          class="flex flex-col gap-4 py-10 px-7 rounded-lg lg:w-1/3 xl:w-1/3 xl:flex-grow lg:flex-grow relative flex-grow xl:last-of-type:flex-grow-0 xl:last-of-type:w-1/2 lg:last-of-type:flex-grow-0 lg:last-of-type:w-1/2"
-        >
-          <div id="contentBorder"></div>
-          <div class="flex flex-row items-center gap-2 text-xl">
-            <span class="text-[#D0FE42] text-3xl">
-              {{ id }}
-            </span>
-            <h3 class="flex-grow" v-html="title"></h3>
-          </div>
-          <div>
-            {{ text }}
-          </div>
-        </li>
-      </ul>
+  <div
+    id="gradientBox"
+    class="relative z-0 block"
+    :style="{
+      '--gradientBox-color': color,
+      '--gradientBox-height': height,
+      '--gradientBox-width': width,
+      '--gradientBox-angle': `${angle}deg`,
+    }"
+  >
+    <div id="border"></div>
+    <div class="p-0.5 w-full">
+      <div id="content" :class="contentClass">
+        <slot name="content"></slot>
+      </div>
     </div>
-  </section>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'ContentSection',
+  name: 'GradientBackground',
+  props: {
+    iconName: {
+      type: String,
+      default: 'box',
+    },
+    contentClass: {
+      type: String,
+      default: 'w-full h-full',
+    },
+    width: {
+      type: [Number, String],
+      default: 18,
+    },
+    height: {
+      type: [Number, String],
+      default: 18,
+    },
+    angle: {
+      type: [Number, String],
+      default: 180,
+    },
+    color: {
+      type: String,
+      default: '#FFFFFF',
+    },
+  },
   data() {
-    return {
-        contentCards: [
-        {
-          id: 1,
-          title: 'Por que você deve aprender sobre <b>Crédito Imobiliário?</b>',
-          text: 'Fique situado sobre o estado atual do mercado de crédito imobiliário e como você, corretor, está deixando de ganhar dinheiro com as ferramentas financeiras.',
-        },
-        {
-          id: 2,
-          title: 'O <b>mercado financeiro</b> e suas divisões',
-          text: 'Entenda como funciona o mercado financeiro hoje no brasil. Quais órgãos e instituições existem assim como suas funções e atribuições.',
-        },
-        {
-          id: 3,
-          title:
-            'O que você precisa saber sobre o <b>Financiamento Imobiliário</b>',
-          text: 'O guia completo para o Financiamento Imobiliário. Confira os tipos de financiamentos, métodos de entrada, regras gerais, cenários específicos e casos reais para você entender tudo sobre a modalidade.',
-        },
-        {
-          id: 4,
-          title: 'O que você precisa saber sobre o <b>Home Equity</b>',
-          text: 'Home Equity de A-Z. Aprenda o passo-a-passo completo para o Empréstimo de Garantia de Imóvel: a modalidade que vêm transformando o jeito de fazer dinheiro do corretor moderno.',
-        },
-        {
-          id: 5,
-          title: '<b>FinanBest:</b> o Cliente Ideal',
-          text: 'Aprenda a guiar seu cliente para o seu primeiro financiamento Imobiliário. O guia completo para contornar objeções, dicas de venda e o que você precisa saber sobre o cliente perfeito.',
-        },
-        {
-          id: 6,
-          title: '<b>CashBest:</b> o Cliente Ideal',
-          text: 'O guia definitivo sobre identificação e aproveitamento de oportunidades. Descubra o que busca o cliente de Home Equity e confira dicas exclusivas sobre como identificar o cenário perfeito.',
-        },
-        {
-          id: 7,
-          title: '<b>Complementos</b> das Operações',
-          text: 'Entenda como funcionam os juros, tabelas de amortização, indexadores, impostos. Além disso, veja como funcionam os cartórios e como é o processo de registro de todas as operações.',
-        },
-        {
-          id: 8,
-          title: 'O guia de vendas para o <b>Corretor 360°</b>',
-          text: 'Uma preparação completa para se tornar um profissional do futuro. Entenda como as ferramentas financeiras podem transformar sua carreira e como se preparar para oportunidades.',
-        },
-        {
-          id: 9,
-          title: 'Fintequize a sua marca - <b>A SejaBest</b>',
-          text: 'Veja o CEO Gaspar Motta e o case de sucesso da SejaBest. Entenda como a fintech de crédito se tornou referência no mercado financeiro e como você pode transformar a sua marca também.',
-        },
-      ],
-    }
+    return {}
   },
 })
 </script>
+
 <style lang="scss" scoped>
-#contentBorder {
+#gradientBox {
+  &:hover {
+    #border {
+      background: linear-gradient(
+          var(--gradientBox-angle),
+          var(--gradientBox-color) 0%,
+          #ffffff00 150%
+        )
+        padding-box;
+    }
+    #content {
+      background: linear-gradient(
+        var(--gradientBox-angle),
+        var(--gradientBox-color) -110%,
+        #ffffff00 150%
+      )
+      border-box;
+    }
+  }
+}
+
+#border {
   @apply absolute inset-0 z-0 ;
-  background-color: #D0FE42;
+  background-color: var(--gradientBox-color);
   background: linear-gradient(
-    127deg,
-    #D0FE42 0%,
-    #D0FE4200 50%,
-    #D0FE42 100%,
-    );
+      var(--gradientBox-angle),
+      var(--gradientBox-color) 0%,
+      #ffffff00 80%
+    )
+    padding-box;
 
   clip-path: polygon(
     0px 13px,
@@ -202,5 +185,18 @@ export default defineComponent({
     calc(100% - 13.372px) 2px,
     13px 2px
   );
+}
+
+#content {
+  @apply z-10 rounded-xl;
+  background-color: var(--gradientBox-color);
+  width: var(--gradientBox-width);
+  height: var(--gradientBox-height);
+  background: linear-gradient(
+      var(--gradientBox-angle),
+      var(--gradientBox-color) -150%,
+      #ffffff00 70%
+    )
+    border-box;
 }
 </style>

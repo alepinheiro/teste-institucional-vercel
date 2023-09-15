@@ -9,6 +9,8 @@ import VueCookies from 'vue-cookies'
 import VueSplide from '@splidejs/vue-splide'
 import '@splidejs/vue-splide/css'
 import { createMetaManager } from 'vue-meta'
+import { register } from 'swiper/element/bundle';
+import VueScrollTo  from "vue-scrollto";
 
 // componentes globais
 import inputBase from '@/components/base/inputBase.component.vue'
@@ -16,6 +18,7 @@ import inputMoney from '@/components/base/inputMoney.component.vue'
 import selectBase from '@/components/base/selectBase.component.vue'
 import videoBase from '@/components/base/videoBase.component.vue'
 import footerComponent from '@/components/structure/footer.component.vue';
+register();
 // configurações do projeto
 import('./configurations/color.css')
 import ('./assets/css/tailwind.css')
@@ -29,6 +32,7 @@ app.use(VueTheMask as any)
 app.use(VueCookies)
 app.use(createHead())
 app.use( VueSplide );
+app.use(VueScrollTo)
 app.use(createMetaManager())
 // componentes globais
 import { library, dom } from '@fortawesome/fontawesome-svg-core';

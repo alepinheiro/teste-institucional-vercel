@@ -1,8 +1,16 @@
 <template>
   <div
     id="bestBrokerLP"
-    class="bg-[#0d0d0d] w-full text-white overflow-x-hidden font-Sizmo-Pro subpixel-antialiased"
+    class="w-full text-white overflow-x-hidden font-Sizmo-Pro subpixel-antialiased"
   >
+    <div
+      class="fixed bottom-0 inset-x-0 bg-red-300 text-red-500 font-bold w-full z-50"
+    >
+      <div class="hidden sm:block">SM</div>
+      <div class="hidden md:block">MD</div>
+      <div class="hidden lg:block">LG</div>
+      <div class="hidden xl:block">XL</div>
+    </div>
 
     <HeroSection />
     <ProductBox />
@@ -17,7 +25,7 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { register } from 'swiper/element/bundle'
+
 import HeroSection from '@/components/bestBroker/heroSection.component.vue'
 import ProductBox from '@/components/bestBroker/productBox.component.vue'
 import ProfileSection from '@/components/bestBroker/profileSection.component.vue'
@@ -27,7 +35,6 @@ import TestimonialsSection from '@/components/bestBroker/testimonialsSection.com
 import BestHub from '@/components/bestBroker/bestHub.component.vue'
 import OfferSection from '@/components/bestBroker/offerSection.component.vue'
 import FooterSection from '@/components/bestBroker/footerSection.component.vue'
-register()
 
 export default defineComponent({
   name: 'BestBrokerLP',
@@ -50,6 +57,21 @@ export default defineComponent({
 <style lang="scss">
 #bestBrokerLP > * {
   margin: 0 !important;
+}
+
+#bestBrokerLP {
+  @apply relative z-0;
+  background-color: #0d0d0d;
+  &:after {
+    @apply absolute inset-0 -z-10 opacity-30;
+    content: ' ';
+    background-image: url('/images/bestBroker/bgBestBroker.png');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    @screen sm {
+      background-size: 200%;
+    }
+  }
 }
 
 .bgGradientToBottom {
@@ -80,23 +102,30 @@ export default defineComponent({
 }
 
 .bestBrokerHeroBg {
-  background-image: url('/images/bestBroker/heroImageMd.png');
-  background-size: 80%;
+  background-image: url('/images/bestBroker/heroImageDesktop.png');
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: right top;
-  background-size: contain;
 
   @screen sm {
-    background-image: url('/images/bestBroker/heroImageMobile.webp');
+    background-image: url('/images/bestBroker/heroImageMobile.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
+  @screen md {
+    background-size: contain;
+    background-position: 15rem 0;
+  }
+
+  @screen lg {
+    background-position: 28rem 0;
+    background-size: 80%;
+  }
+
   @screen xl {
-    background-image: url('/images/bestBroker/heroImageDesktop.png');
-    background-position: 80% top;
-    background-repeat: no-repeat;
+    background-image: none;
   }
 }
 </style>

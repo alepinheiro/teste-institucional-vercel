@@ -4,12 +4,13 @@ import alias from "@rollup/plugin-alias";
 import { resolve } from "path";
 import Pages from 'vite-plugin-pages'
 import generateSitemap from 'vite-plugin-pages-sitemap'
+
 const projectRootDir = resolve(__dirname);
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    alias(), 
+    alias(),
     vue(),
     Pages({
       onRoutesGenerated: routes => (generateSitemap({ routes })),
