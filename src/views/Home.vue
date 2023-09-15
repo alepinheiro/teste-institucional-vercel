@@ -193,13 +193,13 @@
         </h2>
         <!--carousel animado -->
         <div class="md:hidden sm:hidden">
-          <CarouselHome />
+          <carouselHome />
         </div>
         <div class="xl:hidden md:hidden lg:hidden">
-          <CarouselHomeMobile />
+          <carouselHomeMobile />
         </div>
         <div class="xl:hidden sm:hidden lg:hidden">
-          <CarouselHomeTablet />
+          <carouselHomeTablet />
         </div>
       </section>
 
@@ -1017,13 +1017,13 @@
 </template>
 
 <script lang="ts">
-import CarouselHome from '@/components/base/carouselHome.vue'
-import CarouselHomeMobile from '@/components/base/carouselHomeMobile.vue'
-import CarouselHomeTablet from '@/components/base/carouselHomeTablet.vue'
-import Rodape from '@/components/base/bannerBottomPage.vue'
-import TopbarComponent from '@/components/structure/topbar.component.vue'
-import { SplideSlide } from '@splidejs/vue-splide'
 import { defineComponent, ComponentPublicInstance } from 'vue'
+import TopbarComponent from '@/components/structure/topbar.component.vue'
+import Rodape from '@/components/base/bannerBottomPage.vue'
+import carouselHome from '@/components/base/carouselHome.vue'
+import { SplideSlide } from '@splidejs/vue-splide'
+import carouselHomeTablet from '@/components/base/carouselHomeTablet.vue'
+import carouselHomeMobile from '@/components/base/carouselHomeMobile.vue'
 
 type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
@@ -1032,10 +1032,10 @@ export default defineComponent({
   components: {
     TopbarComponent,
     Rodape,
-    CarouselHome,
+    carouselHome,
     SplideSlide,
-    CarouselHomeTablet,
-    CarouselHomeMobile,
+    carouselHomeTablet,
+    carouselHomeMobile,
   },
   data() {
     return {
