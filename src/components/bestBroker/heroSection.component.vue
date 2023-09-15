@@ -1,9 +1,11 @@
 <template>
-  <section class="w-full flex md:min-h-screen lg:min-h-screen xl:min-h-screen  bestBrokerHeroBg">
-    <div class="flex sm:flex-col flex-row-reverse md:my-auto md:max-w-2xl mx-auto max-w-7xl relative">
-
-      <div class="sm:relative sm:h-80 flex px-5 w-1/2 sm:w-full z-0 ">
-
+  <section
+    class="w-full flex md:min-h-screen lg:min-h-screen xl:min-h-screen bestBrokerHeroBg"
+  >
+    <div
+      class="flex sm:flex-col flex-row-reverse md:my-auto md:max-w-2xl mx-auto max-w-7xl relative"
+    >
+      <div class="sm:relative sm:h-80 flex px-5 w-1/2 sm:w-full z-0">
         <img
           src="/images/bestBroker/heroImageDesktop.png"
           class="hidden xl:block absolute inset-y-0 -right-[15%] h-full object-cover z-0"
@@ -29,7 +31,9 @@
         </div>
       </div>
 
-      <div class="w-1/2 sm:w-full flex flex-col gap-12 sm:text-center px-5 sm:py-18 z-10 my-auto">
+      <div
+        class="w-1/2 sm:w-full flex flex-col gap-12 sm:text-center px-5 sm:py-18 z-10 my-auto"
+      >
         <img
           src="/images/bestBroker/logoBestBrokerWhite.png"
           class="sm:mx-auto ml-0 w-3/5 py-5"
@@ -49,7 +53,7 @@
         </div>
 
         <div class="h-full w-full lg:max-w-sm sm:mx-auto">
-          <GradientBackgroundComponent
+          <GradientBackground
             :height="'100%'"
             :width="'100%'"
             :color="'#D0FE42'"
@@ -67,19 +71,18 @@
                 Descubra o Best Broker
               </button>
             </template>
-          </GradientBackgroundComponent>
+          </GradientBackground>
         </div>
       </div>
     </div>
   </section>
-
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import GradientBackgroundComponent from '@/components/bestBroker/gradientBackground.component.vue'
+import GradientBackground from '@/components/bestBroker/gradientBackground.component.vue'
 export default defineComponent({
   name: 'HeroSection',
-  components: { GradientBackgroundComponent },
+  components: { GradientBackground },
   data() {
     return {
       windowInnerWidth: 360,
