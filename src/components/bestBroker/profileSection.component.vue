@@ -1,7 +1,7 @@
 <template>
   <section class="w-full">
     <div
-      class="flex flex-col lg:flex-row xl:flex-row w-full py-10 md:max-w-2xl mx-auto max-w-7xl z-0 border-b border-[#D0FE42]"
+      class="flex flex-col lg:flex-row xl:flex-row w-full py-18 md:max-w-2xl mx-auto max-w-7xl z-0 border-b border-[#D0FE42]"
     >
       <div
         class="relative flex-1 flex-grow w-full h-full sm:pt-96 md:pt-96 z-0 flex"

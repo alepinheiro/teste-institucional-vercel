@@ -53,7 +53,7 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #gradientBox {
   &:hover {
     #border {
@@ -76,7 +76,7 @@ export default defineComponent({
 }
 
 #border {
-  @apply absolute inset-0 z-0 transition-all duration-300;
+  @apply absolute inset-0 z-0 ;
   background-color: var(--gradientBox-color);
   background: linear-gradient(
       var(--gradientBox-angle),
