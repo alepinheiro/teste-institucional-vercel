@@ -89,7 +89,7 @@
                       class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
                     >
                       <a
-                        :href="$options.information.appSimulator + ($root as IRootExtension).utms"
+                        :href="$options.information.appSimulator + $root.utms"
                         aria-label="Simular"
                         style="text-decoration: none"
                         target="_blank"
@@ -504,7 +504,7 @@
               de negociação.
             </p>
 
-            <router-link :to="'/sobre' + ($root as IRootExtension).utms">
+            <router-link :to="'/sobre' + $root.utms">
               <div
                 class="p-2 w-6/12 buttonComplementaryColor1 text-center sm:mb-1 mt-14"
               >
@@ -549,7 +549,7 @@
             processos.
           </p>
 
-          <router-link :to="'/sobre' + ($root as IRootExtension).utms">
+          <router-link :to="'/sobre' + $root.utms">
             <div class="mt-4 buttonComplementaryColor1 text-center">
               <a aria-label="Conheça a SejaBest">Conheça a SejaBest</a>
             </div>
@@ -1017,7 +1017,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue'
+import { defineComponent } from 'vue'
 import TopbarComponent from '@/components/structure/topbar.component.vue'
 import Rodape from '@/components/base/bannerBottomPage.vue'
 import carouselHome from '@/components/base/carouselHome.vue'
@@ -1025,7 +1025,6 @@ import { SplideSlide } from '@splidejs/vue-splide'
 import carouselHomeTablet from '@/components/base/carouselHomeTablet.vue'
 import carouselHomeMobile from '@/components/base/carouselHomeMobile.vue'
 
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
 export default defineComponent({
   name: 'Home',
@@ -1046,7 +1045,7 @@ export default defineComponent({
   mounted() {
     let fullUrl = this.$route.fullPath.split('?')
     if (this.$route.fullPath.includes('?')) {
-      (this.$root as IRootExtension).utms = '?' + fullUrl[1]
+      this.$root.utms = '?' + fullUrl[1]
     }
     /* Função para aparecer somente se é a primeira visita, creio que pode ser reutilizado
     if (!localStorage.getItem('isVisited')) {

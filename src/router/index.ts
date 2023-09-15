@@ -102,7 +102,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/getOutRent.vue'),
   },
   {
-    path: '/bestBroker',
+    path: '/best-broker',
     name: 'bestBroker',
     component: () => import('@/views/BestBrokerLP.vue'),
   },
