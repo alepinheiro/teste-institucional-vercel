@@ -21,7 +21,7 @@
               class="h-full mt-auto w-full"
             >
               <img
-                :src="`/images/getOutRent/testimonials/${index}.png`"
+                :src="`/images/testimonials/${index}.png`"
                 class="object-contain w-full h-full"
                 alt=""
                 srcset=""
@@ -37,7 +37,7 @@
               class="h-auto mb-auto"
             >
               <img
-                :src="`/images/getOutRent/testimonials/${index}.png`"
+                :src="`/images/testimonials/${index}.png`"
                 class="object-contain w-full h-full"
                 alt=""
                 srcset=""
