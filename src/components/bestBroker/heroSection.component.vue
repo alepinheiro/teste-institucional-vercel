@@ -16,7 +16,7 @@
         >
           <button
             class="relative sm:w-8 sm:h-8 w-14 h-14 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0 aspect-square"
-            @click="false"
+            @click="$emit('openPopUp', true)"
           >
             <div
               class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"
@@ -61,7 +61,9 @@
             :content-class="'flex flex-col gap-8 sm:justify-center justify-start w-fit p-5 text-center xl:text-left lg:text-left cursor-default'"
           >
             <template #content>
-              <p class="text-2xl w-fit sm:mx-auto font-bold leading-relaxed text-left sm:text-center">
+              <p
+                class="text-2xl w-fit sm:mx-auto font-bold leading-relaxed text-left sm:text-center"
+              >
                 Se você deseja se destacar e transformar a sua vida, essa é a
                 chance que você esperava.
               </p>
@@ -78,8 +80,7 @@
                   y: true,
                 }"
                 href="#"
-                class="px-6 py-4 rounded-xl text-2xl font-bold font-Public-Sans bg-[#D0FE42] text-black
-                hover:border-white w-fit mx-auto xl:ml-0 lg:ml-0 hover:shadow-[#D0FE4260] hover:scale-105 hover:shadow-xl transition-all md:ml-0"
+                class="px-6 py-4 rounded-xl text-2xl font-bold font-Public-Sans bg-[#D0FE42] text-black hover:border-white w-fit mx-auto xl:ml-0 lg:ml-0 hover:shadow-[#D0FE4260] hover:scale-105 hover:shadow-xl transition-all md:ml-0"
               >
                 Descubra o Best Broker
               </a>
@@ -96,6 +97,7 @@ import GradientBackground from '@/components/bestBroker/gradientBackground.compo
 export default defineComponent({
   name: 'HeroSection',
   components: { GradientBackground },
+  emits: [ 'openPopUp' ],
   data() {
     return {
       windowInnerWidth: 360,
