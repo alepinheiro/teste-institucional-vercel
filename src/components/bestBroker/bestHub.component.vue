@@ -40,7 +40,7 @@
               <i :class="icon"></i>
               <h3 class="text-xl">{{ title }}</h3>
             </div>
-            <p class="sm:text-center">{{ description }}</p>
+            <p class="text-center">{{ description }}</p>
           </div>
         </div>
       </div>
