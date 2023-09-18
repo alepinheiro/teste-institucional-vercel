@@ -11,7 +11,7 @@
         que estão transformando o jeito de monetizar operações
       </h2>
 
-      <div class="w-full">
+      <div class="w-full sm:px-5 md:px-5">
         <swiper-container id="toolsSlider" :="swiperParams" class="w-full">
           <swiper-slide class="relative z-0 mb-6">
             <img
@@ -72,7 +72,7 @@
           x: false,
           y: true
         }"
-        class="uppercase text-2xl px-10 w-fit mx-auto py-6 border-2 border-[#D0FE42] rounded-xl font-bold hover:bg-[#D0FE42] transition-all duration-300 hover:border-white hover:text-black"
+        class="uppercase text-2xl px-10 w-fit mx-auto py-6 border-2 border-[#D0FE42] rounded-xl font-bold hover:bg-[#D0FE42] transition-all px-5 duration-300 hover:border-white hover:text-black"
         href="#"
       >
         Quero ser um Corretor 360°
@@ -88,7 +88,7 @@ export default defineComponent({
   name: 'ToolsSection',
   setup() {
     const swiperParams: SwiperOptions = {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 30,
       pagination: true,
       loop: true,
@@ -98,7 +98,7 @@ export default defineComponent({
       },
       breakpoints: {
         320: {
-          slidesPerView: 1.3,
+          slidesPerView: 1,
         },
         1024: {
           slidesPerView: 2,

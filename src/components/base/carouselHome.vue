@@ -141,7 +141,7 @@
             class="buttonComplementaryColor1 mt-auto mb-5 self-center w-10/12 text-center"
           >
             <a
-              :href="$options.information.appSimulator + $root.utms"
+              :href="$options.information.appSimulator + $root?.utms"
               style="text-decoration: none"
               target="_blank"
               >Faça uma simulação</a
@@ -280,7 +280,7 @@
             class="buttonComplementaryColor1 mt-auto self-center mb-5 w-10/12 text-center"
           >
             <a
-              :href="$options.information.appSimulator + $root.utms"
+              :href="$options.information.appSimulator + $root?.utms"
               style="text-decoration: none"
               target="_blank"
               >Faça uma simulação</a
@@ -293,25 +293,18 @@
 </template>
 
 <script lang="ts">
-import { ComponentPublicInstance } from 'vue'
 
-// Import Swiper Vue.js components
-
+import { defineComponent } from 'vue'
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-// import required modules
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
-
-export default {
+export default defineComponent({
   setup() {
     return {}
   },
-}
+})
 </script>
 
 <style>

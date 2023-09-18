@@ -30,7 +30,7 @@
         </div>
         </div>
     </div>
-    <div @click="openVideo()" class="w-5/12 sm:w-full relative cursor-pointer">
+    <div class="w-5/12 sm:w-full relative cursor-pointer" @click="openVideo()">
       <div class="absolute left-28 top-64 md:left-16 md:top-48 sm:left-12 sm:top-44 lg:left-16 lg:top-36 animate-pulse">
         <div class="text-4xl text-black w-28 h-28  rounded-full flex items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
