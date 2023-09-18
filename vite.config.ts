@@ -32,4 +32,5 @@ export default defineConfig({
     target:['edge90','chrome90','firefox90','safari15'],
     chunkSizeWarningLimit:1500,
   },
+  optimizeDeps: { exclude: ["swiper/vue", "swiper/types"], },
 });
