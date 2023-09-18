@@ -20,7 +20,7 @@
           target="_blank"
         >
           <svg
-            class="w-8 h-8 sm:w-6 sm:h-6 mx-2"
+            class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-zinc-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 576 512"
           >
@@ -37,7 +37,7 @@
           target="_blank"
         >
           <svg
-            class="w-8 h-8 sm:w-6 sm:h-6 mx-2"
+            class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-zinc-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
@@ -54,7 +54,7 @@
           target="_blank"
         >
           <svg
-            class="w-8 h-8 sm:w-6 sm:h-6 mx-2"
+            class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-zinc-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512"
           >
@@ -71,7 +71,7 @@
           target="_blank"
         >
           <svg
-            class="w-8 h-8 sm:w-6 sm:h-6 mx-2"
+            class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-zinc-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 512 512"
           >
@@ -88,7 +88,7 @@
           target="_blank"
         >
           <svg
-            class="w-8 h-8 sm:w-6 sm:h-6 mx-2"
+            class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-zinc-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1080 1080"
           >

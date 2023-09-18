@@ -64,7 +64,7 @@ export default defineComponent({
       centeredSlides: true,
       height: 200,
       autoplay: {
-        delay: 4700,
+        delay: 3000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       },
@@ -76,7 +76,7 @@ export default defineComponent({
           slidesPerView: 2.1,
         },
         1279: {
-          slidesPerView: 5,
+          slidesPerView: 3.3,
         },
       },
     }
@@ -89,7 +89,7 @@ export default defineComponent({
       centeredSlides: true,
       height: 200,
       autoplay: {
-        delay: 6200,
+        delay: 5300,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       },
@@ -101,7 +101,7 @@ export default defineComponent({
           slidesPerView: 2.3,
         },
         1279: {
-          slidesPerView: 4.9,
+          slidesPerView: 3.7,
         },
       },
     }

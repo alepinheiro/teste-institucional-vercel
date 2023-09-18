@@ -2,7 +2,7 @@
   <section class="w-full py-10 bg-black border-b border-[#D0FE42]">
     <div class="md:max-w-2xl max-w-7xl mx-auto px-5">
       <div class="flex flex-col xl:flex-row ">
-        <div class="flex flex-col gap-5 lg:w-4/6 lg:mx-auto">
+        <div class="flex flex-col gap-5 lg:w-4/6 lg:mx-auto xl:pr-8">
           <img
             src="/images/bestBroker/logoBestHub.svg"
             class="mx-auto"
@@ -15,13 +15,13 @@
             srcset=""
           />
           <h2 class="text-center text-xl py-5">
-            Potencialize seus conhecimentos em um
+            Seja um parceiro Best e potencialize seus conhecimentos em um
             <b class="text-[#D0FE42]">CRM de crédito</b>
             completo para o seu negócio.
           </h2>
           <div class="w-full text-center py-4">
             <button
-            class="py-4 px-6 bg-[#C7C7C7] text-black text-sm font-bold rounded"
+            class="py-4 px-6 bg-[#C7C7C7] hover:bg-[#D0FE42] text-black text-sm font-bold rounded"
             @click="openLink()"
             >
               Conheça o BestHub
