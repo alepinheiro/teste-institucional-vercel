@@ -32,7 +32,7 @@
           <div
             v-for="{ description, icon, id, title } of bestHubCards"
             :key="id"
-            class="border-1 border-[#D9D9D9] w-1/3 sm:w-1/3 flex-grow px-5 py-10 rounded-xl my-0 flex flex-col justify-around gap-4"
+            class="border-1 border-[#D9D9D9] w-1/3 sm:w-full flex-grow px-5 py-10 rounded-xl my-0 flex flex-col justify-around gap-4"
           >
             <div
               class="flex flex-row gap-2 items-center w-fit mx-auto sm:text-center"
@@ -40,7 +40,7 @@
               <i :class="icon"></i>
               <h3 class="text-xl">{{ title }}</h3>
             </div>
-            <p class="sm:text-center">{{ description }}</p>
+            <p class="text-center">{{ description }}</p>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ export default defineComponent({
   },
   methods:{
     openLink(){
-      window.open( this.$options.information.bestHubApp.subscribe + this.$root.utms, '_blank' );
+      window.open( this.$options.information.bestHubApp.subscribe + this.$root?.utms, '_blank' );
     },
   }
 })

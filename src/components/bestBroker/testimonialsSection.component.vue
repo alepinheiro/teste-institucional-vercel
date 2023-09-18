@@ -16,7 +16,7 @@
         <div class="w-full">
           <swiper-container :="swiperParamsTop" class="h-full w-full">
             <swiper-slide
-              v-for="index of [1, 2, 3, 4, 5, 6]"
+              v-for="index of [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6]"
               :key="index"
               class="h-full mt-auto w-full"
             >
@@ -32,7 +32,7 @@
         <div class="w-full ">
           <swiper-container :="swiperParamsBottom">
             <swiper-slide
-              v-for="index in [4, 5, 6, 1, 2, 3]"
+              v-for="index in [4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3]"
               :key="index"
               class="h-auto mb-auto"
             >

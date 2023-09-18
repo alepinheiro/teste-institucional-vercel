@@ -1,11 +1,12 @@
 import { NotificationInterface } from "@/interfaces/notification.interface";
 import { ComponentInternalInstance } from 'vue'
 
-declare module "*.vue" {
-  import { Component } from "vue";
-  let component: Component;
+declare module '*.vue' {
+  import { Component } from 'vue';
+  const component: Component;
   export default component;
 }
+
 
 declare module 'vue' {
   interface ComponentCustomProperties {

@@ -7,8 +7,8 @@
     <Footer />
     <PopUpVideo
       v-if="showVideo"
-      :videoUrl="videoUrl"
-      :videoStyle="videoStyle"
+      :video-url="videoUrl"
+      :video-style="videoStyle"
       @closePopUp="showVideo = false"
     />
   </div>

@@ -10,19 +10,20 @@
         saber
       </h2>
       <ul
-        class="flex flex-col lg:flex-row xl:flex-row lg:items-stretch xl:items-stretch xl:justify-center lg:flex-wrap xl:flex-wrap items-center gap-5"
+        class="flex flex-col lg:flex-row xl:flex-row lg:items-stretch xl:items-stretch xl:justify-center lg:justify-center lg:flex-wrap xl:flex-wrap items-center gap-5"
       >
 
         <li
           v-for="{ id, title, text } of contentCards"
           :key="id"
-          class="flex flex-col gap-4 py-10 px-7 rounded-lg lg:w-1/3 xl:w-1/3 xl:flex-grow lg:flex-grow relative flex-grow xl:last-of-type:flex-grow-0 xl:last-of-type:w-1/2 lg:last-of-type:flex-grow-0 lg:last-of-type:w-1/2"
+          class="flex flex-col gap-4 py-10 px-7 rounded-lg lg:w-1/3 xl:w-1/3 xl:flex-grow lg:flex-grow relative flex-grow xl:last-of-type:flex-grow-0 xl:last-of-type:w-1/2 lg:last-of-type:flex-grow-0 lg:last-of-type:w-1/2 "
         >
           <div id="contentBorder"></div>
           <div class="flex flex-row items-center gap-2 text-xl">
             <span class="text-[#D0FE42] text-3xl">
               {{ id }}
             </span>
+            <!-- eslint-disable-next-line vue/no-v-html -->
             <h3 class="flex-grow" v-html="title"></h3>
           </div>
           <div>

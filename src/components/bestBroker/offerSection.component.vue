@@ -81,7 +81,7 @@ export default defineComponent({
   },
   methods: {
     openLink() {
-      window.open(this.$options.information.hotmartXoAluguel + this.$root.utms, '_blank')
+      window.open(this.$options.information.bestBroker.hotmart + this.$root?.utms, '_blank')
     },
 
   },

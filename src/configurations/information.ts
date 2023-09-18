@@ -29,7 +29,10 @@ const information = {
   hotmartXoAluguel: 'https://pay.hotmart.com/K85603528M',
   bestHubApp: {
     login: 'https://besthub.app/',
-    subscribe: 'https://besthub.app/subscribe',
+    subscribe: 'https://besthub.app/pre-cadastro',
+  },
+  bestBroker: {
+    hotmart: 'https://pay.hotmart.com/V86683542A',
   },
 }
 

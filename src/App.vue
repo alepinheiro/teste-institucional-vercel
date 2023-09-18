@@ -28,7 +28,7 @@ export default defineComponent({
   },
   mounted() {
     let fullUrl = this.$route.fullPath.split('?')
-    if (this.$route.fullPath.includes('?')) {
+    if (this.$route.fullPath.includes('?') && this.$root) {
       this.$root.utms = '?' + fullUrl[1]
     }
     setTimeout(() => {
