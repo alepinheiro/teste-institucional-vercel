@@ -3,7 +3,7 @@
     id="bestBrokerLP"
     class="w-full text-white overflow-x-hidden font-Sizmo-Pro subpixel-antialiased"
   >
-    <HeroSection />
+    <HeroSection @open-pop-up="showVideo = $event" />
     <ProductBox />
     <ProfileSection />
     <ContentSection />
@@ -12,6 +12,12 @@
     <OfferSection />
     <BestHub />
     <FooterSection />
+    <PopUpVideo
+      v-if="showVideo"
+      :video-url="videoUrl"
+      :video-style="videoStyle"
+      @close-pop-up="showVideo = false"
+    />
   </div>
 </template>
 <script lang="ts">
@@ -26,6 +32,8 @@ import TestimonialsSection from '@/components/bestBroker/testimonialsSection.com
 import BestHub from '@/components/bestBroker/bestHub.component.vue'
 import OfferSection from '@/components/bestBroker/offerSection.component.vue'
 import FooterSection from '@/components/bestBroker/footerSection.component.vue'
+import PopUpVideo from '@/components/base/popUpVideo.component.vue'
+
 
 export default defineComponent({
   name: 'BestBrokerLP',
@@ -39,9 +47,16 @@ export default defineComponent({
     BestHub,
     OfferSection,
     FooterSection,
+    PopUpVideo
   },
   data() {
-    return {}
+    return {
+      isVisible: false,
+      value: 300000,
+      showVideo: false,
+      videoStyle: 'w-full h-[36rem] mr-auto ml-auto rounded-2xl ',
+      videoUrl: 'https://www.youtube.com/embed/YwE1mHfRxKk',
+    }
   },
 })
 </script>
