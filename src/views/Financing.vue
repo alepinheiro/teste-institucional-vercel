@@ -413,7 +413,7 @@
             style=" text-decoration: none;"
             target="_blank">simulador.
           </a>
-          Em até minutos você tem o resultado, porque seu tempo é valioso.
+          Em até 20 minutos você tem o resultado, porque seu tempo é valioso.
         </p>
       </div>
 
@@ -724,9 +724,10 @@
       v-if="showVideo"
       :video-url="videoUrl"
       :video-style="videoStyle"
-      @close-popup="showVideo = false" />
+      @closePopUp="showVideo = false" />
 
   </div>
+  <FooterComponent  />
 </template>
 
 <script lang="ts">

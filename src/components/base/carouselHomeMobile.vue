@@ -129,7 +129,7 @@
                 <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-6 h-8  " />
               </div>
               <p class="text-base pl-2 w-full">
-                Taxas a partir de 1,59% a.a. + taxas referenciais
+                Taxas a partir de 1,59% a.m. + taxas referenciais
               </p>
             </div>
 
@@ -223,7 +223,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 // import required modules
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation } from 'swiper/modules';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 type IRootExtension = ComponentPublicInstance & { [key: string]: string }

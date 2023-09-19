@@ -89,7 +89,10 @@
                       class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
                     >
                       <a
-                        :href="$options.information.appSimulator + ($root as IRootExtension).utms"
+                        :href="
+                          $options.information.appSimulator +
+                          ($root as IRootExtension).utms
+                        "
                         aria-label="Simular"
                         style="text-decoration: none"
                         target="_blank"
@@ -165,7 +168,10 @@
                     class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
                   >
                     <a
-                      :href="$options.information.appSimulator + ($root as IRootExtension).utms"
+                      :href="
+                        $options.information.appSimulator +
+                        ($root as IRootExtension).utms
+                      "
                       aria-label="Simular"
                       style="text-decoration: none"
                       target="_blank"
@@ -1013,6 +1019,7 @@
     </section>
   </div>
   <Rodape />
+  <FooterComponent />
 </template>
 
 <script lang="ts">
@@ -1045,7 +1052,7 @@ export default defineComponent({
   mounted() {
     let fullUrl = this.$route.fullPath.split('?')
     if (this.$route.fullPath.includes('?')) {
-      (this.$root as IRootExtension).utms = '?' + fullUrl[1]
+      ;(this.$root as IRootExtension).utms = '?' + fullUrl[1]
     }
     /* Função para aparecer somente se é a primeira visita, creio que pode ser reutilizado
     if (!localStorage.getItem('isVisited')) {

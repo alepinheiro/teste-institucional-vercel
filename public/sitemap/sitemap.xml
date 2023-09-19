@@ -4,20 +4,9 @@
 
    <url>
 
-      <loc>http://https://seja.best/termos-de-uso</loc>
+      <loc>https://seja.best/termos-de-uso</loc>
 
-      <lastmod>2023-01-02</lastmod>
-
-      <changefreq>daily</changefreq>
-
-      <priority>0.7</priority>
-
-   </url>
-   <url>
-
-      <loc>http://https://seja.best/politica-de-privacidade</loc>
-
-      <lastmod>2023-01-02</lastmod>
+      <lastmod>2023-05-22</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -26,9 +15,20 @@
    </url>
    <url>
 
-      <loc>http://https://seja.best/faq</loc>
+      <loc>https://seja.best/politica-de-privacidade</loc>
 
-      <lastmod>2023-01-02</lastmod>
+      <lastmod>2023-05-22</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>
+   <url>
+
+      <loc>https://seja.best/faq</loc>
+
+      <lastmod>2023-05-22</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -202,9 +202,42 @@
    </url> 
    <url>
 
+      <loc>https://seja.best/xo-aluguel</loc>
+
+      <lastmod>2023-08-11</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+   <url>
+
+      <loc>https://seja.best/best-broker</loc>
+
+      <lastmod>2023-09-19</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>  
+   <url>
+
+      <loc>https://seja.best/besthub</loc>
+
+      <lastmod>2023-09-19</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>  
+   <url>
+
       <loc>https://portal.seja.best/</loc>
 
-      <lastmod>2023-03-21</lastmod>
+      <lastmod>2023-06-07</lastmod>
 
       <changefreq>daily</changefreq>
 

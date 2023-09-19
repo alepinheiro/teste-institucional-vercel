@@ -1,22 +1,18 @@
 <template>
-  <div id="app" class="w-full defaultFont">
-    <router-view />
-    <footerComponent v-if="!isLoading" />
+  <div class="w-full defaultFont">
+    <RouterView  />
     <notificationPopUp />
   </div>
 </template>
 
-<script lang='ts'>
+<script lang="ts">
 
-import { NotificationInterface } from '@/interfaces/notification.interface';
-import notificationPopUp from '@/components/base/notificationPopUp.component.vue';
-import footerComponent from '@/components/structure/footer.component.vue';
-import { defineComponent, ComponentPublicInstance } from 'vue'
-
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
+import notificationPopUp from '@/components/base/notificationPopUp.component.vue'
+import { NotificationInterface } from '@/interfaces/notification.interface'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-  components: { notificationPopUp, footerComponent },
+  components: { notificationPopUp },
   data() {
     return {
       isLoading: true,
@@ -31,12 +27,12 @@ export default defineComponent({
     }
   },
   mounted() {
-    let fullUrl = this.$route.fullPath.split("?")
-    if (this.$route.fullPath.includes("?")) {
-      (this.$root as IRootExtension).utms = "?" + (fullUrl[1])
+    let fullUrl = this.$route.fullPath.split('?')
+    if (this.$route.fullPath.includes('?') && this.$root) {
+      this.$root.utms = '?' + fullUrl[1]
     }
     setTimeout(() => {
-      this.isLoading = false
+      this.isLoading = true
     }, 600);
   }
 })
