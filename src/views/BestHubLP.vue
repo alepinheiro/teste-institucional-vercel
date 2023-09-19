@@ -7,9 +7,9 @@
     <BenefitsSection />
     <VideoSection />
 
-    <!--
+   
     <ProductsSection />
-    <CommissionSection /> -->
+    <CommissionSection /> 
     <!-- <div class="relative">
       <PricesSection :options="prices" class="static z-10" />
       <img
