@@ -1,37 +1,42 @@
 <template>
-  <div class="w-full bg-bgDarkColor2">
-    <BannerXoAluguel />
-    <BannerPackage @OpenPopUp="showVideo = $event" />
+  <div class="flex flex-col w-full bg-bgDarkColor2 h-fit overflow-hidden">
+
+    <BannerXoAluguel @open-pop-up="showVideo = $event" />
+    <BannerPackage @open-pop-up="showVideo = $event" />
     <BannerSteps />
+    <BannerCommentsCarousel />
     <BannerPrice />
-    <Footer />
+    <FooterSection />
     <PopUpVideo
       v-if="showVideo"
       :video-url="videoUrl"
       :video-style="videoStyle"
-      @closePopUp="showVideo = false"
+      @close-pop-up="showVideo = false"
     />
+
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import BannerXoAluguel from '@/components/getOutRent/bannerXoAluguel.component.vue'
+import BannerCommentsCarousel from '@/components/getOutRent/bannerCommentsCarousel.component.vue'
 import BannerPackage from '@/components/getOutRent/bannerPackage.component.vue'
-import BannerSteps from '@/components/getOutRent/bannerSteps.component.vue'
 import BannerPrice from '@/components/getOutRent/bannerPrice.component.vue'
-import Footer from '@/components/getOutRent/footer.component.vue'
+import BannerSteps from '@/components/getOutRent/bannerSteps.component.vue'
+import BannerXoAluguel from '@/components/getOutRent/bannerXoAluguel.component.vue'
+import FooterSection from '@/components/getOutRent/footerSection.component.vue'
 import PopUpVideo from '@/components/base/popUpVideo.component.vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'GetOutRent',
   components: {
-    BannerXoAluguel,
+    BannerCommentsCarousel,
     BannerPackage,
-    BannerSteps,
     BannerPrice,
+    BannerSteps,
+    BannerXoAluguel,
+    FooterSection,
     PopUpVideo,
-    Footer,
   },
   metaInfo() {
     return {
@@ -41,7 +46,7 @@ export default defineComponent({
           vmid: 'description',
           name: 'description',
           content:
-            'O metodo best para conquistar seu primeiro imóvel com financiamento imobiliário',
+            'O método best para conquistar seu primeiro imóvel com financiamento imobiliário',
         },
       ],
     }
@@ -55,24 +60,6 @@ export default defineComponent({
       videoUrl: 'https://www.youtube.com/embed/XgvSqZf8PM0',
     }
   },
-  mounted() {
-    let fullUrl = this.$route.fullPath.split('?')
-    if (this.$route.fullPath.includes('?')) {
-      this.$root.utms = '?' + fullUrl[1]
-    }
-  },
 })
 </script>
 
-<style scoped>
-.mockup {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60%;
-  height: 100%;
-  background: url('/images/getOutRent/mockup.png');
-  background-size: cover;
-  background-position: right center;
-}
-</style>
