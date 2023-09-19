@@ -117,7 +117,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/BestBrokerSuccess.vue'),
   },
   {
-    path: '/dev/BestHub',
+    path: '/besthub',
     name: 'BestHub, a plataforma que vai fintechizar o seu negócio',
     component: () => import('@/views/BestHubLP.vue'),
   },
