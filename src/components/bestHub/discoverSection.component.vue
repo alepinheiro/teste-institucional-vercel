@@ -2,7 +2,7 @@
   <section class="w-full">
     <div class="max-w-7xl mx-auto relative sm:hidden md:hidden">
       <img
-        class="static"
+        class="static h-full"
         src="/images/bestHub/discoverBestHub.png"
         alt=""
         srcset=""

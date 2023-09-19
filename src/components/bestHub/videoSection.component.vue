@@ -1,7 +1,7 @@
 <template>
-  <section class="relative overflow-hidden">
-    <div class="flex flex-col xl:max-h-[40rem]">
-      <div class="relative h-full xl:ml-auto xl:w-fit">
+  <section class="relative w-full">
+    <div class="flex flex-col max-w-7xl mx-auto">
+      <!-- <div class="relative h-full xl:ml-auto xl:w-fit">
         <img
           class="static object-cover w-full xl:hidden"
           src="/images/bestHub/videoPlayerMobile.png"
@@ -17,21 +17,7 @@
           :class="[showVideo ? 'h-full' : 'h-1/2 xl:h-full']"
           class="absolute w-full xl:w-auto top-0 sm:inset-x-1/2 lg:inset-x-1/2 md:inset-x-1/2 xl:right-[30%] flex transition-all"
         >
-          <div class="relative h-full w-10 -ml-5 z-0">
-            <div class="absolute h-full top-0 -z-10">
-              <div
-                class="w-10 h-10 bg-white/30 rounded-full absolute my-auto top-1/2 -mt-5 animate-ping"
-              ></div>
-            </div>
-            <button class="h-full w-10" @click="showVideo = !showVideo">
-              <img
-                class="w-10"
-                src="/images/bestHub/icons/playButton.svg"
-                alt=""
-                srcset=""
-              />
-            </button>
-          </div>
+
         </div>
 
         <div
@@ -49,48 +35,57 @@
             allowfullscreen
           ></iframe>
         </div>
+      </div> -->
+
+      <div class="w-full flex">
+        <div class="relative w-10 mx-auto py-10">
+          <div class="absolute h-full top-0 -z-10">
+            <div
+              class="w-10 h-10 bg-white/30 rounded-full absolute my-auto top-1/2 -mt-5 animate-ping"
+            ></div>
+          </div>
+          <button class="h-full w-10" @click="showVideo = !showVideo">
+            <img
+              class="w-10"
+              src="/images/bestHub/icons/playButton.svg"
+              alt=""
+              srcset=""
+            />
+          </button>
+        </div>
       </div>
+
       <div
-        :class="[
-          showVideo
-            ? 'mt-0 py-4 xl:py-0'
-            : 'sm:-mt-24 md:-mt-56 lg:-mt-96 md:pb-10',
-        ]"
-        class="sm:px-5 md:px-5 lg:px-5 z-0 transition-all xl:max-w-7xl mb-14 xl:mx-auto xl:absolute xl:bottom-0 xl:w-1/3 xl:left-[17%]"
+        :class="[showVideo ? ' ' : ' ']"
+        class="sm:py-0 py-20 w-4/6 sm:w-full px-5 flex flex-col gap-10"
       >
-        <h1
-          class="flex flex-col !font-medium tracking-wider gap-2 mb-5 xl:mb-10"
-        >
-          <span>Quem não</span>
-          <span class="font-bold">fintechiza,</span>
-          <span>fica para trás</span>
+        <h1 class="!font-medium !text-4xl sm:text-center">
+          Quem não <b>fintechiza</b>, fica para trás
         </h1>
-        <div
-          class="border-t-2 border-white/30 py-5 xl:py-10 leading-loose w-2/3 sm:w-full"
+        <div class="border-t-2 border-white/30 sm:w-full"></div>
+        <p class="text-xl sm:text-center">
+          Fintechize a sua marca, e aumente os seus lucros com a ajuda do
+          BestHub, a melhor plataforma de produtos de crédito do mercado.
+          <br />
+          <br />
+          Diversifique as suas
+          <span class="font-bold underline underline-offset-4"
+            >fontes de receita</span
+          >, trazendo mais soluções para o seu cliente.
+        </p>
+
+        <a
+          :href="$options.information.appBestHubPreRegister"
+          target="_blank"
+          class="text-black sm:text-center text-2xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit sm:mx-auto md:mx-auto"
         >
-          <p>
-            Fintechize a sua marca, e aumente os seus lucros com a ajuda do
-            BestHub, a melhor plataforma de produtos de crédito do mercado.
-            <br />
-            <br />
-            Diversifique as suas
-            <span class="font-bold underline underline-offset-4"
-              >fontes de receita</span
-            >, trazendo mais soluções para o seu cliente.
-          </p>
-        </div>
-        <div class="w-full flex">
-          <a
-          :href="$options.information.appBestHubPreRegister" target="_blank"
-            class="px-4 py-2 bg-[#D0FE42] text-black font-sans rounded-2xl w-fit mx-auto xl:ml-0 hover:-translate-y-1 transition-all"
-          >
-            Quero assinar o BestHub
-          </a>
-        </div>
+          Quero fintechizar meu negócio
+        </a>
       </div>
-      <div class="absolute w-full -bottom-0">
+
+      <!-- <div class="absolute w-full -bottom-0">
         <div class="mx-auto border-b border-white/30 h-1 max-w-7xl"></div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

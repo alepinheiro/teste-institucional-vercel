@@ -1,12 +1,13 @@
 <template>
-  <main id="bestProReleaseLandingPage" class="text-white bg-black font-Sizmo">
+  <main class="text-white bg-black font-Sizmo overflow-x-hidden">
     <!-- <TopBar class="z-20" /> -->
     <HeroSection />
     <BanksSection />
     <DiscoverSection />
-    <!-- <BenefitsSection />
+    <BenefitsSection />
     <VideoSection />
 
+    <!--
     <ProductsSection />
     <CommissionSection /> -->
     <!-- <div class="relative">
@@ -31,9 +32,9 @@ import TopBar from '@/components/bestHub/topBar.component.vue'
 import BanksSection from '@/components/bestHub/banksSection.component.vue'
 import HeroSection from '@/components/bestHub/heroSection.component.vue'
 import DiscoverSection from '@/components/bestHub/discoverSection.component.vue'
-
 import BenefitsSection from '@/components/bestHub/benefitsSection.component.vue'
 import VideoSection from '@/components/bestHub/videoSection.component.vue'
+
 import ProductsSection from '@/components/bestHub/productsSection.component.vue'
 import CommissionSection from '@/components/bestHub/commissionSection.component.vue'
 // import PricesSection from '@/components/bestHub/pricesSection.component.vue'

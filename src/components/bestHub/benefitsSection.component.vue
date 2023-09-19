@@ -1,26 +1,29 @@
 <template>
   <section
-    class="border-b border-[#D0FE42] flex flex-col items-center relative py-10"
+    class="border-b border-[#D0FE42] flex flex-col items-center relative py-10 w-full"
   >
     <div class="sm:px-5 lg:px-5 max-w-5xl mx-auto w-full flex flex-col items-center">
-      <p class="font-bold sm:w-3/4 mx-auto text-center">
-        Uma plataforma completa para seu negócio.
-      </p>
-      <ul class="flex flex-row flex-wrap gap-4 my-8">
+      <h2 class="font-bold sm:w-3/4 mx-auto text-center text-3xl">
+        Um <b class="text-[#D0FE42]">CRM</b> de crédito completo para o seu negócio.
+      </h2>
+      <ul class="flex flex-row flex-wrap gap-4 my-8 md:px-5">
         <li
-          v-for="{ id, icon, text } of benefits"
+          v-for="{ id, icon, title, description } of benefits"
           :key="id"
-          class="w-1/3 sm:w-fit flex-grow py-3 px-4 bg-white text-black rounded-xl"
+          class="p-5 w-1/3 md:w-full sm:w-fit flex flex-col items-center justify-center flex-grow border border-white text-white rounded-xl"
         >
-          <div class="w-fit mx-auto flex flex-row gap-2 items-center">
-            <img :src="`/images/bestHub/icons/${icon}.svg`" alt="" />
-            <span class="text-xl">
-              {{ text }}
-            </span>
+          <div class=" mx-auto flex flex-row gap-2 items-center h-fit w-auto pb-5">
+            <img :src="`/images/bestHub/icons/${icon}.svg`" class="w-8 h-8 object-cover" alt="" />
+            <h3 class="text-3xl my-auto flex-grow leading-none mt-3 sm:text-center">
+              {{ title }}
+            </h3>
           </div>
+          <p class="text-xl text-center">
+            {{ description }}
+          </p>
         </li>
       </ul>
-      <div class="flex sm:flex-col flex-row items-center gap-4">
+      <!-- <div class="flex sm:flex-col flex-row items-center gap-4">
         <span class="font-bold text-2xl">A partir de</span>
         <div
           class="border-2 border-white/30 hover:border-[#D0FE42] shadow-lg hover:shadow-[#D0FE4240] px-6 py-4 rounded-2xl transition-all"
@@ -38,7 +41,7 @@
         >
           Assine e seja Pro
         </a>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -52,22 +55,26 @@ export default defineComponent({
         {
           id: 1,
           icon: 'whiteLabel',
-          text: 'Plataforma white label',
+          title: 'Plataforma white label',
+          description: 'Tanto a plataforma como os materiais saem com a cara e a cor da sua marca.',
         },
         {
           id: 2,
           icon: 'subscribe',
-          text: 'Acompanhe os negócios',
+          title: 'Acompanhe os negócios',
+          description: 'Uma área no estilo kanban para facilitar seu dia a dia.',
         },
         {
           id: 1,
           icon: 'percent',
-          text: 'Simulações em tempo real',
+          title: 'Simulações em tempo real',
+          description: 'Mais agilidade para a sua rotina.',
         },
         {
           id: 1,
           icon: 'banks',
-          text: '+ de 15 bancos parceiros',
+          title: '+ de 15 bancos parceiros',
+          description: 'Uma plataforma multibancos com as maiores e melhores instituições ao seu dispor.',
         },
       ],
     }
