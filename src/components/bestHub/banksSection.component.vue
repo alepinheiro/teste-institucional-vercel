@@ -1,22 +1,40 @@
 <template>
-  <section class="py-10">
-    <div class="flex flex-col gap-8 w-full items-center ">
-      <h2 class="text-center">As melhores instituições financeiras na <span class="text-[#D0FE42]">
-        palma da sua mão
-      </span>
-    </h2>
-      <div class="flex sm:flex-col-reverse sm:gap-4 flex-row justify-between w-full max-w-7xl">
-        <div class="sm:w-full w-2/5 md:w-1/2 lg:w-1/2 lg:px-5 md:px-5 flex flex-col gap-4">
-          <p class="leading-10 sm:px-5 text-justify ">
-            Com mais de 10 anos de experiência em crédito Imobiliário, a SejaBest reuniu um time de ponta para desenvolver uma ferramenta poderosa e capaz de fintechizar o seu negócio. Mais de XX parceiros já confiaram na capacidade do BestPro, utilizando nossos recursos para potencializar seus negócios.
+  <section class="w-full">
+    <div
+      class="flex flex-col w-full items-center py-10 px-5 md:max-w-3xl max-w-7xl mx-auto"
+    >
+      <h2 class="text-center text-3xl">
+        As melhores instituições financeiras na
+        <b class="text-[#D0FE42]"> palma da sua mão </b>
+      </h2>
+
+      <div
+        class="flex sm:flex-col-reverse md:flex-col-reverse sm:gap-4 flex-row justify-between w-full lg:py-20 xl:py-20"
+      >
+        <div
+          class="sm:w-full w-2/5 md:w-full lg:w-1/2 xl:w-1/2 lg:px-5 md:px-5 flex flex-col gap-4"
+        >
+          <p
+            class="leading-8 sm:px-5 text-center text-xl lg:text-left xl:text-left"
+          >
+            Com mais de 10 anos de experiência em crédito Imobiliário, a
+            SejaBest reuniu um time de ponta para desenvolver uma ferramenta
+            poderosa e capaz de fintechizar o seu negócio. Mais de 200 parceiros
+            já confiaram na capacidade do BestHub, utilizando nossos recursos
+            para potencializar seus negócios.
           </p>
-          <button
-              class="px-4 py-2 bg-[#D0FE42] text-black font-sans rounded w-fit mx-auto xl:ml-0 hover:-translate-y-1 transition-all"
-            >
-            Quero assinar o BestPro
-            </button>
+          <a
+            :href="$options.information.bestHubApp.subscribe"
+            target="_blank"
+            class="text-black sm:text-center text-2xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit sm:mx-auto md:mx-auto"
+          >
+            Quero ser um parceiro Best
+          </a>
         </div>
-        <div class="flex flex-col gap-5 sm:w-full w-2/5 md:w-1/2">
+
+        <div
+          class="flex flex-col gap-5 sm:mx-auto md:w-4/6 m-auto lg:w-1/2 xl:w-1/2 lg:px-12 xl:px-16 sm:py-10 md:py-10"
+        >
           <div
             v-for="line in banks"
             :key="line.toString()"
@@ -33,7 +51,7 @@
               class="rounded-xl px-3 min-h-[3rem] flex"
             >
               <img
-                :src="`/images/bestPro/icons/banks/${logo}.svg`"
+                :src="`/images/bestHub/icons/banks/${logo}.svg`"
                 :alt="text"
                 class="my-auto mx-auto h-10 py-2"
               />
