@@ -1,7 +1,8 @@
 <template>
   <section class="w-full">
-    <div class="flex flex-col w-full items-center py-10 px-5 md:max-w-3xl max-w-7xl mx-auto">
-
+    <div
+      class="flex flex-col w-full items-center py-10 px-5 md:max-w-3xl max-w-7xl mx-auto"
+    >
       <h2 class="text-center text-3xl">
         As melhores instituições financeiras na
         <b class="text-[#D0FE42]"> palma da sua mão </b>
@@ -13,7 +14,9 @@
         <div
           class="sm:w-full w-2/5 md:w-full lg:w-1/2 xl:w-1/2 lg:px-5 md:px-5 flex flex-col gap-4"
         >
-          <p class="leading-8 sm:px-5 text-center text-xl lg:text-left xl:text-left">
+          <p
+            class="leading-8 sm:px-5 text-center text-xl lg:text-left xl:text-left"
+          >
             Com mais de 10 anos de experiência em crédito Imobiliário, a
             SejaBest reuniu um time de ponta para desenvolver uma ferramenta
             poderosa e capaz de fintechizar o seu negócio. Mais de 200 parceiros
@@ -21,7 +24,7 @@
             para potencializar seus negócios.
           </p>
           <a
-            :href="$options.information.appBestHubPreRegister"
+            :href="$options.information.bestHubApp.subscribe"
             target="_blank"
             class="text-black sm:text-center text-2xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit sm:mx-auto md:mx-auto"
           >

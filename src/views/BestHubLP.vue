@@ -1,13 +1,11 @@
 <template>
   <main class="text-white bg-black font-Sizmo overflow-x-hidden">
-    <!-- <TopBar class="z-20" /> -->
+    <TopBar class="z-20" />
     <HeroSection />
     <BanksSection />
     <DiscoverSection />
     <BenefitsSection />
     <VideoSection />
-
-
     <ProductsSection />
     <CommissionSection />
     <PricesSection :options="prices" class="static z-10" />

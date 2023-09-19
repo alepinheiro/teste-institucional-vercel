@@ -79,7 +79,7 @@
         </p>
 
         <a
-          :href="$options.information.appBestHubPreRegister"
+          :href="$options.information.bestHubApp.subscribe"
           target="_blank"
           class="text-black sm:text-center md:text-center text-2xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit sm:mx-auto md:mx-auto"
         >
