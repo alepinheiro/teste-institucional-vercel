@@ -8,8 +8,8 @@
         <ul class="flex flex-col py-4 divide-y-1 divide-white/30">
           <li class="flex flex-row items-stretch h-16 text-center">
             <div class="w-4/6 my-auto"></div>
-            <div class="w-1/6 my-auto ">SejaBest</div>
-            <div class="w-1/6 my-auto ">Bancos Tradicionais</div>
+            <div class="w-1/6 my-auto">SejaBest</div>
+            <div class="w-1/6 my-auto">Bancos Tradicionais</div>
           </li>
 
           <li
@@ -20,8 +20,13 @@
             <div class="w-4/6 my-auto">
               {{ title }}
             </div>
-            <div class="w-1/6 text-center my-auto"> {{ bestFeature ? '✅' : '❌' }} </div>
-            <div class="w-1/6 text-center my-auto"> {{ banksFeature ? '✅' : '❌' }} </div>
+            <div class="w-1/6 text-center my-auto">
+              <i :class="`fa-solid ${ bestFeature ? 'fa-check text-green-500' : 'fa-xmark text-zinc-600' }`"></i>
+
+            </div>
+            <div class="w-1/6 text-center my-auto">
+              <i :class="`fa-solid ${ banksFeature ? 'fa-check text-red-500' : 'fa-xmark text-zinc-600' }`"></i>
+            </div>
           </li>
         </ul>
       </div>

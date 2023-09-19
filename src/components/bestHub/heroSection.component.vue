@@ -1,7 +1,7 @@
 <template>
   <section class="w-full">
     <div class="w-full min-h-screen relative z-0 flex">
-      <img src="/public/images/bestHub/heroBackground.png" class="absolute object-cover h-full w-full -z-10" alt="" srcset="">
+      <img src="/images/bestHub/heroBackground.png" class="absolute object-cover h-full w-full -z-10" alt="" srcset="">
       <!-- <iframe
         width="100%"
         height="100%"
