@@ -1,12 +1,14 @@
 <template>
   <main id="bestProReleaseLandingPage" class="text-white bg-black font-Sizmo">
-    <TopBar class="z-20" />
+    <!-- <TopBar class="z-20" /> -->
     <HeroSection />
-    <BenefitsSection />
-    <VideoSection />
     <BanksSection />
+    <DiscoverSection />
+    <!-- <BenefitsSection />
+    <VideoSection />
+
     <ProductsSection />
-    <CommissionSection />
+    <CommissionSection /> -->
     <!-- <div class="relative">
       <PricesSection :options="prices" class="static z-10" />
       <img
@@ -15,20 +17,23 @@
         alt=""
       />
     </div> -->
-    <div class="relative">
+    <!-- <div class="relative">
       <TelegramSection />
       <FaqSection :questions="questions" />
-      <!-- <FooterSection /> -->
-    </div>
+       <FooterSection />
+    </div> -->
   </main>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+
 import TopBar from '@/components/bestHub/topBar.component.vue'
+import BanksSection from '@/components/bestHub/banksSection.component.vue'
 import HeroSection from '@/components/bestHub/heroSection.component.vue'
+import DiscoverSection from '@/components/bestHub/discoverSection.component.vue'
+
 import BenefitsSection from '@/components/bestHub/benefitsSection.component.vue'
 import VideoSection from '@/components/bestHub/videoSection.component.vue'
-import BanksSection from '@/components/bestHub/banksSection.component.vue'
 import ProductsSection from '@/components/bestHub/productsSection.component.vue'
 import CommissionSection from '@/components/bestHub/commissionSection.component.vue'
 // import PricesSection from '@/components/bestHub/pricesSection.component.vue'
@@ -38,16 +43,17 @@ import FaqSection from '@/components/bestHub/faqSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
   components: {
+    HeroSection,
+    BanksSection,
+    DiscoverSection,
     // FooterSection,
     FaqSection,
     TelegramSection,
     // PricesSection,
     TopBar,
-    HeroSection,
     CommissionSection,
     BenefitsSection,
     VideoSection,
-    BanksSection,
     ProductsSection,
   },
   data() {
