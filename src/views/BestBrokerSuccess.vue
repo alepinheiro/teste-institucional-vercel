@@ -1,16 +1,16 @@
 <template>
   <div class="bg-[#0D0D0D] overflow-x-hidden z-0 relative w-full">
-    <section class="absolute w-full top-0 z-0 h-[800px]">
-      <img src="/images/bestBroker/successHeroImageMD.png" alt="" srcset="" class="hidden w-fit md:block object-contain ml-auto" />
-      <img src="/images/bestBroker/successHeroImageLG.png" alt="" srcset="" class="hidden w-fit lg:block object-contain ml-auto" />
-      <img src="/images/bestBroker/successHeroImageXL.png" alt="" srcset="" class="hidden w-fit xl:block object-contain ml-auto" />
+    <section class="absolute w-full top-0 z-0 h-screen">
+      <img src="/images/bestBroker/successHeroImageMD.png" alt="" srcset="" class="hidden w-fit md:block object-cover ml-auto h-full" />
+      <img src="/images/bestBroker/successHeroImageLG.png" alt="" srcset="" class="hidden w-fit lg:block object-cover ml-auto h-full" />
+      <img src="/images/bestBroker/successHeroImageXL.png" alt="" srcset="" class="hidden w-fit xl:block object-cover ml-auto h-full" />
 
     </section>
-    <section class="w-full font-Sizmo-Pro z-10 h-[800px] sm:h-fit">
+    <section class="w-full font-Sizmo-Pro z-10 h-screen sm:h-fit">
 
-      <div class="flex flex-col gap-5 md:gap-0 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto">
+      <div class="flex flex-col items-center gap-5 md:gap-0 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto h-full">
         <img src="/images/bestBroker/successHeroImageSM.png" alt="" srcset="" class="sm:block hidden" />
-        <div class="flex flex-col gap-12 py-18 px-5 items-center md:items-start lg:items-start xl:items-start z-10 md:my-auto ">
+        <div class="flex flex-col items-center gap-8 sm:py-18 px-5 md:items-start lg:items-start xl:items-start z-10 my-auto ">
           <img
             src="/images/bestBroker/logoBestBrokerWhite.png"
             class="sm:mx-auto ml-0 w-fit py-5"
