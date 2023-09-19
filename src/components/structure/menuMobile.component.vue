@@ -31,7 +31,7 @@
         <button
           class=" cursor-pointer flex items-center px-4 py-2 justify-between"
           :class="{ 'text-complementaryColor1': dropdownOpen }" @click="toggleDropdown(), removeClass()">
-          Para você
+          Produtos
           <svg
             :class="['w-6 h-6 ml-2', dropdownOpen ? 'transform rotate-180' : '']" viewBox="0 0 20 20"
             fill="currentColor">
@@ -115,7 +115,7 @@
         <button
           class=" cursor-pointer flex items-center px-4 py-2 mb-2 justify-between"
           @click="toggleDropdown2(), removeClassDropdown2()" >
-          Para o seu negócio
+          Produtos digitais
           <svg
             :class="['w-6', 'h-6', 'ml-2', { 'transform': dropdown2, 'rotate-180': dropdown2, 'rotate-0': dropdownOpen }]"
             viewBox="0 0 20 20" fill="currentColor">
@@ -132,8 +132,8 @@
               class="w-full flex flex-row justify-between items-center" @mouseover="hover4 = true"
               @mouseout="hover4 = false">
               <router-link
-                :to="'/home-equity' + $root.utms"
-                class="hover:text-primary hover:font-semibold text-textPrimary  py-1 "> Home Equity </router-link>
+                :to="'/xo-aluguel' + $root.utms" target="_blank"
+                class="hover:text-primary hover:font-semibold text-textPrimary  py-1 "> Xô, aluguel </router-link>
               <svg
                 v-show="hover4" xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
@@ -148,42 +148,10 @@
               class="w-full flex flex-row justify-between items-center" @mouseover="hover5 = true"
               @mouseout="hover5 = false">
               <router-link
-                :to="'/financiamento-imobiliario' + $root.utms"
-                class="block text-textPrimary  py-1 hover:text-primary hover:font-semibold"> Financiamento </router-link>
+                :to="'/best-broker' + $root.utms" target="_blank"
+                class="block text-textPrimary  py-1 hover:text-primary hover:font-semibold"> Best Broker </router-link>
               <svg
                 v-show="hover5" xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path
-                  fill-rule="evenodd"
-                  d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z"
-                  clip-rule="evenodd" />
-              </svg>
-            </li>
-            <li
-              class="w-full flex flex-row justify-between items-center" @mouseover="hover6 = true"
-              @mouseout="hover6 = false">
-              <router-link
-                :to="'/financiamento-veicular' + $root.utms"
-                class="text-textPrimary block  py-1 hover:text-primary hover:font-semibold">Financiamento de
-                Veículo</router-link>
-              <svg
-                v-show="hover6" xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
-                <path
-                  fill-rule="evenodd"
-                  d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z"
-                  clip-rule="evenodd" />
-              </svg>
-            </li>
-            <li
-              class="w-full flex flex-row justify-between items-center" @mouseover="hover7 = true"
-              @mouseout="hover7 = false">
-              <router-link
-                :to="'/emprestimo-com-garantia-de-veiculo' + $root.utms"
-                class="text-textPrimary block  py-1 hover:text-primary hover:font-semibold">Empréstimo com Garantia de
-                Veículo</router-link>
-              <svg
-                v-show="hover7" xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary" viewBox="0 0 20 20" fill="currentColor">
                 <path
                   fill-rule="evenodd"

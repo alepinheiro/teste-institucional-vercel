@@ -2,7 +2,7 @@
   <div class="relative" @mouseenter="showPopOver = true" @mouseleave="showPopOver = false">
     <div
       id="div-1" class="decoration" :color="color" :linkStyle="linkStyle"
-      :class="{ 'textDecoration': activeDiv === 'div1' }">Para você</div>
+      :class="{ 'textDecoration': activeDiv === 'div1' }">Produtos</div>
     <div v-if="showPopOver" class="absolute z-10 w-[18rem] p-2 bgPopUpHover rounded-lg shadowDark">
       <div
         class="px-1 py-3 optionsHover hover:shadow-md  text-textPrimary flex flex-row items-center  w-full justify-between "
