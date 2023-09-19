@@ -1,5 +1,5 @@
 <template>
-  <section class="border-b border-[#D0FE42] py-10">
+  <section class="border-y border-[#D0FE42] py-10">
     <div
       class="sm:px-5 max-w-7xl w-10/12 sm:w-full mx-auto flex flex-col gap-10 text-center"
     >

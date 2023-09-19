@@ -1,7 +1,8 @@
 <template>
   <section class="w-full">
     <div class="w-full min-h-screen relative z-0 flex">
-      <iframe
+      <img src="/public/images/bestHub/heroBackground.png" class="absolute object-cover h-full w-full -z-10" alt="" srcset="">
+      <!-- <iframe
         width="100%"
         height="100%"
         src="https://www.youtube.com/embed/A6cmeg6s0Hg?autoplay=1&mute=1"
@@ -11,15 +12,15 @@
         allowfullscreen
         class="absolute sm:-top-[15%] inset-0 -z-10"
       >
-      </iframe>
+      </iframe> -->
       <div
         class="w-full h-auto flex-grow bg-gradient-to-b from-transparent to-black flex items-center"
       >
         <div
           class="flex flex-col max-w-3xl sm:px-5 items-center mx-auto text-center mt-auto pb-20"
         >
-          <h1 class="!text-3xl">BestHub, o nome já diz tudo</h1>
-          <h2 class="!font-normal !text-2xl">
+          <h1 class="text-5xl font-bold">BestHub, o nome já diz tudo</h1>
+          <h2 class="font-normal text-2xl">
             O melhor hub de crédito do mercado
           </h2>
           <a

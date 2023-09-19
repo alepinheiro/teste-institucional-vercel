@@ -2,7 +2,7 @@
   <section class="w-full">
     <div class="flex flex-col w-full items-center py-10 px-5 md:max-w-3xl max-w-7xl mx-auto">
 
-      <h2 class="text-center !font-normal">
+      <h2 class="text-center text-3xl">
         As melhores instituições financeiras na
         <b class="text-[#D0FE42]"> palma da sua mão </b>
       </h2>
@@ -30,7 +30,7 @@
         </div>
 
         <div
-          class="flex flex-col gap-5 sm:w-4/5 sm:mx-auto md:w-4/6 m-auto lg:w-1/2 xl:w-1/2 lg:px-12 xl:px-16"
+          class="flex flex-col gap-5 sm:mx-auto md:w-4/6 m-auto lg:w-1/2 xl:w-1/2 lg:px-12 xl:px-16 sm:py-10 md:py-10"
         >
           <div
             v-for="line in banks"

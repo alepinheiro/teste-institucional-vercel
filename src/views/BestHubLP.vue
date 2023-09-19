@@ -10,19 +10,15 @@
     <!--
     <ProductsSection />
     <CommissionSection /> -->
-    <!-- <div class="relative">
+    <div class="relative">
       <PricesSection :options="prices" class="static z-10" />
-      <img
-        class="absolute sm:hidden top-0"
-        src="/images/bestHub/pricesBackground.png"
-        alt=""
-      />
-    </div> -->
-    <!-- <div class="relative">
+    </div>
+    <BestTable />
+    <div class="relative">
       <TelegramSection />
       <FaqSection :questions="questions" />
-       <FooterSection />
-    </div> -->
+      <FooterSection />
+    </div>
   </main>
 </template>
 <script lang="ts">
@@ -37,20 +33,22 @@ import VideoSection from '@/components/bestHub/videoSection.component.vue'
 
 import ProductsSection from '@/components/bestHub/productsSection.component.vue'
 import CommissionSection from '@/components/bestHub/commissionSection.component.vue'
-// import PricesSection from '@/components/bestHub/pricesSection.component.vue'
+import PricesSection from '@/components/bestHub/pricesSection.component.vue'
+import BestTable from '@/components/bestHub/bestTable.component.vue'
 import TelegramSection from '@/components/bestHub/telegramSection.component.vue'
 import FaqSection from '@/components/bestHub/faqSection.component.vue'
-// import FooterSection from '@/components/bestHub/footerSection.component.vue'
+import FooterSection from '@/components/bestHub/footerSection.component.vue'
 export default defineComponent({
   name: 'BestProLP',
   components: {
     HeroSection,
     BanksSection,
     DiscoverSection,
-    // FooterSection,
+    FooterSection,
     FaqSection,
     TelegramSection,
-    // PricesSection,
+    BestTable,
+    PricesSection,
     TopBar,
     CommissionSection,
     BenefitsSection,
