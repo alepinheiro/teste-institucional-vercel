@@ -14,7 +14,7 @@
       >
       </iframe> -->
       <div
-        class="w-full h-auto flex-grow bg-gradient-to-b from-transparent to-black flex items-center"
+        class="w-full h-auto flex-grow bg-gradient-to-b from-transparent to-black flex items-center pb-10"
       >
         <div
           class="flex flex-col max-w-3xl sm:px-5 items-center mx-auto text-center mt-auto pb-20"

@@ -21,8 +21,8 @@
 import { defineComponent } from 'vue'
 
 import TopBar from '@/components/bestHub/topBar.component.vue'
-import BanksSection from '@/components/bestHub/banksSection.component.vue'
 import HeroSection from '@/components/bestHub/heroSection.component.vue'
+import BanksSection from '@/components/bestHub/banksSection.component.vue'
 import DiscoverSection from '@/components/bestHub/discoverSection.component.vue'
 import BenefitsSection from '@/components/bestHub/benefitsSection.component.vue'
 import VideoSection from '@/components/bestHub/videoSection.component.vue'

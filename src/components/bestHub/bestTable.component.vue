@@ -6,25 +6,25 @@
         <div class="border-b-2 border-[#D0FE42] w-2/5"></div>
 
         <ul class="flex flex-col py-4 divide-y-1 divide-white/30">
-          <li class="flex flex-row items-stretch h-16 text-center">
-            <div class="w-4/6 my-auto"></div>
-            <div class="w-1/6 my-auto">SejaBest</div>
-            <div class="w-1/6 my-auto">Bancos Tradicionais</div>
+          <li class="flex flex-row items-stretch h-16 sm:h-24 text-center">
+            <div class="w-4/6 sm:w-1/2 my-auto"></div>
+            <div class="w-1/6 sm:w-1/4 my-auto">SejaBest</div>
+            <div class="w-1/6 sm:w-1/4 my-auto">Bancos Tradicionais</div>
           </li>
 
           <li
             v-for="{ banksFeature, bestFeature, id, title } of tableItems"
             :key="id"
-            class="flex flex-row h-14 text-xl"
+            class="flex flex-row h-14 sm:h-24 text-xl"
           >
-            <div class="w-4/6 my-auto">
+            <div class="w-4/6 sm:w-1/2 my-auto">
               {{ title }}
             </div>
-            <div class="w-1/6 text-center my-auto">
+            <div class="w-1/6 sm:w-1/4 text-center my-auto">
               <i :class="`fa-solid ${ bestFeature ? 'fa-check text-green-500' : 'fa-xmark text-zinc-600' }`"></i>
 
             </div>
-            <div class="w-1/6 text-center my-auto">
+            <div class="w-1/6 sm:w-1/4 text-center my-auto">
               <i :class="`fa-solid ${ banksFeature ? 'fa-check text-red-500' : 'fa-xmark text-zinc-600' }`"></i>
             </div>
           </li>

@@ -17,7 +17,7 @@
     >
       <!-- <div class="w-7/12 lg:10/12 sm:w-full md:w-full xl:pl-36 lg:pl-8 md:pl-4"> -->
       <div class="max-w-7xl px-5">
-        <div class="w-7/12 lg:w-3/5 md:w-full sm:w-3/4 sm:mx-auto flex flex-col md:items-center">
+        <div class="w-7/12 sm:w-full lg:w-3/5 md:w-full sm:mx-auto flex flex-col md:items-center">
           <div class="w-full text-left sm:text-center md:text-center">
             <h2 class="font-medium lg:pt-10 text-3xl sm:text-3xl">
               E quando você

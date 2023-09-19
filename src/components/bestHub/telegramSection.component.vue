@@ -1,10 +1,10 @@
 <template>
-  <section class="border-y border-[#D0FE42] py-10">
+  <section class="py-10">
     <div
       class="sm:px-5 max-w-7xl w-10/12 sm:w-full mx-auto flex flex-col gap-10 text-center"
     >
       <div
-        class="flex sm:flex-col md:flex-col flex-row items-center gap-10 "
+        class="flex sm:flex-col md:flex-row flex-row items-center gap-10 "
       >
         <div class="sm:w-56 md:w-56 h-14 flex-shrink flex justify-start flex-1">
           <img
@@ -14,10 +14,9 @@
           />
         </div>
 
-        <div class="flex flex-col gap-4 w-2/4">
-          <h2 class=" flex-grow md:w-full">
-            Fique pode dentro <br class="sm:hidden" />
-            de tudo que é
+        <div class="flex flex-col gap-4 w-1/2  sm:w-full">
+          <h2 class=" flex-grow md:w-full text-3xl font-bold lg:w-2/3 lg:mx-auto xl:w-2/3 xl:mx-auto">
+            Fique pode dentro de tudo que é
             <span class="text-[#D0FE42]">Pro</span>
           </h2>
           <a
@@ -44,7 +43,7 @@
           </a>
         </div>
 
-        <p class="w-1/4 md:w-3/4 sm:w-3/4 flex-1">
+        <p class="w-1/4 md:w-3/4 sm:w-full flex-1">
           Entre em nosso canal no <strong>Telegram</strong> e saiba tudo sobre o
           <strong>BestHub</strong> e mercado financeiro.
         </p>
