@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="flex flex-wrap justify-around items-center py-24">
+    <div class="flex flex-wrap justify-around items-center py-24 max-w-6xl mx-auto">
       <div
         class="flex flex-row gap-5 sm:w-full items-center justify-center sm:pb-6"
       >

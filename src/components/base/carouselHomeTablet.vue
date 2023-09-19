@@ -1,5 +1,5 @@
 <template>
-  <swiper-container
+  <swiper
     :initial-slide="1"
     :slides-per-view="1.8"
     :centered-slides="true"
@@ -10,6 +10,7 @@
     :pagination="{
       clickable: true,
     }"
+    :modules="modules"
     class="MySwiper swiper swiperTablet"
   >
     <swiper-slide id="testimonial1">
@@ -70,7 +71,10 @@
             class="buttonComplementaryColor1 w-11/12 text-center mt-auto self-center mb-5"
           >
             <a
-              :href="$options.information.appSimulator + $root.utms"
+              :href="
+                $options.information.appSimulator +
+                ($root as IRootExtension).utms
+              "
               style="text-decoration: none"
               target="_blank"
             >
@@ -139,7 +143,10 @@
             class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
           >
             <a
-              :href="$options.information.appSimulator + $root.utms"
+              :href="
+                $options.information.appSimulator +
+                ($root as IRootExtension).utms
+              "
               style="text-decoration: none"
               target="_blank"
             >
@@ -207,7 +214,10 @@
             class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
           >
             <a
-              :href="$options.information.appSimulator + $root.utms"
+              :href="
+                $options.information.appSimulator +
+                ($root as IRootExtension).utms
+              "
               style="text-decoration: none"
               target="_blank"
               >Faça uma simulação</a
@@ -277,7 +287,10 @@
             class="buttonComplementaryColor1 w-11/12 flex self-center mt-auto mb-5 justify-center text-center"
           >
             <a
-              :href="$options.information.appSimulator + $root.utms"
+              :href="
+                $options.information.appSimulator +
+                ($root as IRootExtension).utms
+              "
               style="text-decoration: none"
               target="_blank"
               >Faça uma simulação</a
@@ -286,21 +299,35 @@
         </div>
       </article>
     </swiper-slide>
-  </swiper-container>
+  </swiper>
 </template>
 
 <script lang="ts">
+import { ComponentPublicInstance } from 'vue'
+
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
+// import required modules
+import { Pagination, Navigation } from 'swiper/modules'
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
 export default {
-  components: {},
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
   setup() {
-    return {}
+    return {
+      modules: [Pagination, Navigation],
+    }
   },
 }
 </script>
