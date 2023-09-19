@@ -7,12 +7,10 @@
     <BenefitsSection />
     <VideoSection />
 
-    <!--
+
     <ProductsSection />
-    <CommissionSection /> -->
-    <div class="relative">
-      <PricesSection :options="prices" class="static z-10" />
-    </div>
+    <CommissionSection />
+    <PricesSection :options="prices" class="static z-10" />
     <BestTable />
     <div class="relative">
       <TelegramSection />
