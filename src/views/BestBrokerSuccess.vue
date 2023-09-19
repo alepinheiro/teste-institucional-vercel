@@ -10,7 +10,7 @@
 
       <div class="flex flex-col items-center gap-5 md:gap-0 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto h-full">
         <img src="/images/bestBroker/successHeroImageSM.png" alt="" srcset="" class="sm:block hidden" />
-        <div class="flex flex-col items-center gap-8 sm:py-18 px-5 md:items-start lg:items-start xl:items-start z-10 my-auto ">
+        <div class="flex flex-col items-center gap-8 sm:pb-18 px-5 md:items-start lg:items-start xl:items-start z-10 my-auto ">
           <img
             src="/images/bestBroker/logoBestBrokerWhite.png"
             class="sm:mx-auto ml-0 w-fit py-5"
@@ -38,11 +38,11 @@
             target="_blank"
             class="px-10 py-6 bg-[#D0FE42] rounded-2xl hover:shadow-[#D0FE4260] hover:scale-105 hover:shadow-xl transition-all"
           >
-            <div class="flex flex-row justify-center gap-4">
+            <div class="flex flex-row items-center justify-center gap-4">
               <span class="flex-grow w-8 h-8">
                 <i class="fa-brands fa-telegram w-8 h-8"></i>
               </span>
-              <span class="font-bold text-2xl flex-grow w-full h-fit"
+              <span class="font-bold text-2xl sm:text-xl flex-grow w-full h-fit sm:text-center"
                 >Quero conteúdos gratuitos</span
               >
             </div>
