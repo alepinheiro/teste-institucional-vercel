@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full relative sm:static md:static pt-10">
-    <div class="absolute sm:static md:static z-20 w-full sm:w-10/12 md:w-10/12 text-center ml-auto mr-auto">
+  <div class="w-full relative sm:static md:static pt-10 ">
+    <div class="absolute sm:static md:static z-20 w-full sm:w-10/12 md:w-8/12 text-center ml-auto mr-auto">
 
         <img
           src="/images/getOutRent/bannerpreco.png"

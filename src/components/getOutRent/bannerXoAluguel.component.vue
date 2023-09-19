@@ -26,12 +26,12 @@
             </span>
           </div>
 
-          <div class="flex flex-col gap-5 sm:gap-18">
-            <h1 class="text-5xl leading-tight">
+          <div class="flex flex-col gap-5 sm:gap-8">
+            <h1 class="text-5xl sm:text-3xl leading-tight">
               Chegou a sua hora de deixar o aluguel para trás com
               <b class="underlineGradient"> Financiamento Imobiliário </b>
             </h1>
-            <p class="text-xl leading-relaxed sm:leading-[2.5] sm:tracking-wider md:py-15 lg:py-10 xl:py-10">
+            <p class="text-xl leading-relaxed sm:leading-[1.5] sm:tracking-wider md:py-15 lg:py-8 xl:py-6">
               Não deixe que o aluguel continue sendo um obstáculo entre você e a
               realização do sonho de ter sua própria casa. Com o guia
               <b>
@@ -48,7 +48,7 @@
             :width="'100%'"
             :color="'#0524DD'"
             :angle="getBackgroundAngle"
-            :content-class="'flex flex-col gap-8 sm:justify-center justify-start w-fit p-5 text-center xl:text-left lg:text-left cursor-default'"
+            :content-class="'flex flex-col gap-8 sm:justify-center justify-start w-fit p-4 text-center xl:text-left lg:text-left cursor-default'"
           >
             <template #content>
               <div

@@ -4,7 +4,7 @@
       <div>
         <h2 class="text-white text-4xl font-bold text-center pb-3">
           O passo a passo definitivo para o
-          <br /><span class="bg-primary p-1">Financiamento Imobiliário</span>
+          <div class="pt-3"><span class="bg-primary mt-2 p-1">Financiamento Imobiliário</span></div>
         </h2>
         <h3 class="text-white text-2xl font-bold text-center">
           Confira o que você vai adquirir no pacote e como vamos te ajudar a
