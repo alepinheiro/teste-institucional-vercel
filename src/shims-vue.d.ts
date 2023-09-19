@@ -1,5 +1,6 @@
-import { NotificationInterface } from "@/interfaces/notification.interface";
+import { NotificationInterface } from '@/interfaces/notification.interface'
 import { ComponentInternalInstance } from 'vue'
+import type information from '@/configurations/information'
 
 declare module '*.vue' {
   import { Component } from 'vue';
@@ -11,8 +12,12 @@ declare module '*.vue' {
 declare module 'vue' {
   interface ComponentCustomProperties {
     $root: ComponentInternalInstance & {
-      notificationData: NotificationInterface | undefined
+      notificationData?: NotificationInterface
       utms: string
     }
+    $options: {
+      information?: information
+    }
+
   }
 }

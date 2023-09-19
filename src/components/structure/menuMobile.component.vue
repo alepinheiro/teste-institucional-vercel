@@ -167,7 +167,7 @@
         class=" cursor-pointer rounded-lg px-4 py-2 mb-2 optionsHover flex flex-row justify-between"
         @mouseover="hoverSVG1 = true" @mouseout="hoverSVG1 = false"
         @click="openProfileMenu = !openProfileMenu">
-        <router-link :to="'/parceiro' + $root.utms" class=" hover:font-semibold "> Seja um Parceiro </router-link>
+        <router-link :to="'/besthub' + $root.utms" class=" hover:font-semibold "> Seja um Parceiro </router-link>
         <svg
           v-show="hoverSVG1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-o group-hover:opacity-100 "
           viewBox="0 0 20 20" fill="currentColor ">

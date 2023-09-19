@@ -11,7 +11,7 @@
         <dropdownForB />
       </div>
       <div :class="linkStyle">
-        <router-link :to="'/parceiro' + $root.utms" class="decoration"> Seja um Parceiro </router-link>
+        <router-link :to="'/bestHub' + $root.utms" class="decoration"> Seja um Parceiro </router-link>
       </div>
       <div :class="linkStyle">
         <a :href="'https://portal.seja.best/' + $root.utms" class="decoration" target="_blank"> Portal</a>
