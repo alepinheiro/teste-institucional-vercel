@@ -216,7 +216,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation } from 'swiper/modules';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 type IRootExtension = ComponentPublicInstance & { [key: string]: string }

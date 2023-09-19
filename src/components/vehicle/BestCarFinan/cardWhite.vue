@@ -93,7 +93,7 @@
           <p
             class="lg:text-xs xl:text-base font-semibold md:text-xs sm:text-sm text-textPrimary"
           >
-            Crédito aprovado em 15 dias
+            Crédito aprovado em<br/> uma hora 
           </p>
         </div>
       </div>

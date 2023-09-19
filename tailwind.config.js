@@ -1,4 +1,5 @@
-const colors = require("tailwindcss/colors");
+import colors from "tailwindcss/colors";
+
 module.exports = {
   mode: "jit",
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -14,19 +15,20 @@ module.exports = {
     colors: {
       primary: "var(--primaryColor)",
       secondary: "var(--secondaryColor)",
-      complementaryColor1:"var(--complementaryColor1)",
-      complementaryColor2:"var(--complementaryColor2)",
-      complementaryColor3:"var(--complementaryColor3)",
-      textPrimary:"var(--textPrimaryColor)",
-      textSecondary:"var(--textSecondaryColor)",
-      textLight:"var(--textLightColor)",
-      borderColor:"var(--borderColor)",
-      bgDefaultColor:"var(--bgDefaultColor)",
-      bgDarkColor:"var(--bgDarkColor)",
-      bglightColor:"var(--bglightColor)",
-      bglight2Color:"var(--bglight2Color)",
-      bgPopUpColor:"var(--bgPopUpColor)",
-      WhiteTransparency:"var(--WhiteTransparency)",
+      complementaryColor1: "var(--complementaryColor1)",
+      complementaryColor2: "var(--complementaryColor2)",
+      complementaryColor3: "var(--complementaryColor3)",
+      textPrimary: "var(--textPrimaryColor)",
+      textSecondary: "var(--textSecondaryColor)",
+      textLight: "var(--textLightColor)",
+      borderColor: "var(--borderColor)",
+      bgDefaultColor: "var(--bgDefaultColor)",
+      bgDarkColor: "var(--bgDarkColor)",
+      bgDarkColor2: "var(--bgDarkColor2)",
+      bglightColor: "var(--bglightColor)",
+      bglight2Color: "var(--bglight2Color)",
+      bgPopUpColor: "var(--bgPopUpColor)",
+      WhiteTransparency: "var(--WhiteTransparency)",
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
@@ -423,7 +425,9 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
-      Sizmo: ["Sizmo", "sans-serif"]
+      'Sizmo-Pro': ['FF Sizmo Pro', 'sans-serif'],
+      'Public-Sans': ['Public Sans', 'sans-serif'],
+      'Sizmo': ["Sizmo", "sans-serif"]
     },
     fontSize: {
       '2xs': ["0.6rem", { lineHeight: "0.60rem" }],

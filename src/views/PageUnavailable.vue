@@ -28,28 +28,8 @@ export default defineComponent({
   name: 'PageUnavailable',
   data() {
     return {
-
+      isVisible:  false
     };
   },
-  mounted() {
-    let fullUrl = this.$route.fullPath.split("?")
-    if (this.$route.fullPath.includes("?")) {
-      (this.$root as IRootExtension).utms = "?" + (fullUrl[1])
-    }
-  },
-  methods: {
-    state() {
-      if ((this.isVisible) === false) {
-        this.isVisible = true;
-        this.type = "text";
-      } else {
-        this.type = "password";
-        this.isVisible = false;
-      }
-    },
-
-  },
-
-
 })
 </script>
