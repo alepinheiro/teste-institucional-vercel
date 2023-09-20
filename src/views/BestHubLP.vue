@@ -18,7 +18,6 @@
   </main>
 </template>
 <script lang="ts">
-
 import { defineComponent } from 'vue'
 
 import TopBar from '@/components/bestHub/topBar.component.vue'
