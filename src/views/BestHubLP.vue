@@ -31,7 +31,6 @@ import ProductsSection from '@/components/bestHub/productsSection.component.vue'
 import CommissionSection from '@/components/bestHub/commissionSection.component.vue'
 import PricesSection from '@/components/bestHub/pricesSection.component.vue'
 import BestTable from '@/components/bestHub/bestTable.component.vue'
-import TelegramSection from '@/components/bestHub/telegramSection.component.vue'
 import ProductBoxSection from '@/components/bestHub/productBox.component.vue'
 import FaqSection from '@/components/bestHub/faqSection.component.vue'
 import FooterSection from '@/components/bestHub/footerSection.component.vue'
@@ -44,7 +43,6 @@ export default defineComponent({
     DiscoverSection,
     FooterSection,
     FaqSection,
-    TelegramSection,
     BestTable,
     PricesSection,
     TopBar,

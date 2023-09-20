@@ -85,6 +85,7 @@ export default defineComponent({
             text: 'santander',
             logo: 'logoSantanderWhite',
           },
+
           {
             id: 3,
             text: 'hiddenText',
@@ -97,11 +98,14 @@ export default defineComponent({
             text: 'hiddenText',
             logo: 'blank',
           },
+
           {
-            id: 5,
-            text: 'creditas',
-            logo: 'logoCreditasWhite',
+            id: 8,
+            text: 'bancoBrb',
+            logo: 'logoBRBWhite',
           },
+
+
           {
             id: 6,
             text: 'cashme',
@@ -119,20 +123,22 @@ export default defineComponent({
             text: 'hiddenText',
             logo: 'blank',
           },
+
           {
-            id: 7,
-            text: 'inter',
-            logo: 'logoInterWhite',
-          },
-          {
-            id: 8,
-            text: 'caixa',
-            logo: 'logoCaixaWhite',
+            id: 13,
+            text: 'c6Bank',
+            logo: 'logoC6BankWhite',
           },
           {
             id: 9,
             text: 'itau',
             logo: 'logoItauWhite',
+          },
+
+          {
+            id: 12,
+            text: 'bancoBV',
+            logo: 'logoBvWhite',
           },
           {
             id: 10,
@@ -146,16 +152,19 @@ export default defineComponent({
             text: 'hiddenText',
             logo: 'blank',
           },
+
           {
-            id: 12,
-            text: 'bradesco',
-            logo: 'logoBradescoWhite',
+            id: 5,
+            text: 'creditas',
+            logo: 'logoCreditasWhite',
           },
+
           {
-            id: 13,
-            text: 'c6Bank',
-            logo: 'logoC6BankWhite',
+            id: 7,
+            text: 'inter',
+            logo: 'logoInterWhite',
           },
+
           {
             id: 17,
             text: 'hiddenText',
