@@ -8,7 +8,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import SuccessBanner from '@/components/getOutRent/successBanner.component.vue'
-import FooterSection from '@/components/getOutRent/footer.component.vue'
+import FooterSection from '@/components/getOutRent/footerSection.component.vue'
 
 export default defineComponent({
   name: 'GetOutRent',
