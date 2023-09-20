@@ -81,9 +81,9 @@ export default defineComponent({
             logo: 'logoDaycovalWhite',
           },
           {
-            id: 2,
-            text: 'santander',
-            logo: 'logoSantanderWhite',
+            id: 12,
+            text: 'bancoBV',
+            logo: 'logoBvWhite',
           },
 
           {
@@ -98,13 +98,11 @@ export default defineComponent({
             text: 'hiddenText',
             logo: 'blank',
           },
-
           {
-            id: 8,
-            text: 'bancoBrb',
-            logo: 'logoBRBWhite',
+            id: 17,
+            text: 'bradesco',
+            logo: 'logoBradescoWhite',
           },
-
 
           {
             id: 6,
@@ -123,23 +121,23 @@ export default defineComponent({
             text: 'hiddenText',
             logo: 'blank',
           },
-
+          // {
+          //   id: 8,
+          //   text: 'bancoBrb',
+          //   logo: 'logoBRBWhite',
+          // },
           {
             id: 13,
             text: 'c6Bank',
             logo: 'logoC6BankWhite',
           },
-          {
-            id: 9,
-            text: 'itau',
-            logo: 'logoItauWhite',
-          },
 
           {
-            id: 12,
-            text: 'bancoBV',
-            logo: 'logoBvWhite',
+            id: 2,
+            text: 'santander',
+            logo: 'logoSantanderWhite',
           },
+
           {
             id: 10,
             text: 'hiddenText',
@@ -164,7 +162,11 @@ export default defineComponent({
             text: 'inter',
             logo: 'logoInterWhite',
           },
-
+          {
+            id: 9,
+            text: 'itau',
+            logo: 'logoItauWhite',
+          },
           {
             id: 17,
             text: 'hiddenText',
