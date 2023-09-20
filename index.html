@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -17,10 +17,7 @@
     <meta name="robots" content="index, follow" />
     <meta name="revisit-after" content="7 day" />
     <meta name="language" content="Portuguese" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@icon/themify-icons/themify-icons.css"
-    />
+
     <script
       defer
       src="https://www.googleoptimize.com/optimize.js?id=GTM-T2VQFHZ"
@@ -62,7 +59,7 @@
         window,
         document,
         'script',
-        'https://connect.facebook.net/en_US/fbevents.js'
+        'https://connect.facebook.net/en_US/fbevents.js',
       )
       fbq('init', '402533950351316')
       fbq('track', 'PageView')
@@ -89,7 +86,7 @@
         document.createElement('script'),
         document.getElementsByTagName('script')[0],
         '//cdn.taboola.com/libtrc/unip/1562591/tfa.js',
-        'tb_tfa_script'
+        'tb_tfa_script',
       )
     </script>
     <!-- End of Taboola Pixel Code-->
@@ -116,7 +113,7 @@
         window,
         document,
         'script',
-        'https://connect.facebook.net/en_US/fbevents.js'
+        'https://connect.facebook.net/en_US/fbevents.js',
       )
 
       fbq('init', '3652147531717979')
@@ -142,14 +139,25 @@
         document,
         'script',
         '//launcher.hotmart.com/launcher.js',
-        'hot'
+        'hot',
       )
 
       hot('account', '9d41e9fa-f005-3723-8ac1-b3f97375dada')
     </script>
     <!-- End of Taboola Pixel Code-->
+    <link
+      rel="preload"
+      as="style"
+      href="https://unpkg.com/@icon/themify-icons/themify-icons.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
 
-    <link rel="stylesheet" href="https://use.typekit.net/udl6iyo.css">
+    <link
+      rel="preload"
+      as="style"
+      href="https://use.typekit.net/udl6iyo.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
   </head>
   <body>
     <div id="app"></div>
