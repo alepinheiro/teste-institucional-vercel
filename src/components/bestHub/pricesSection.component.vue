@@ -29,57 +29,11 @@
         <a
           :href="$options.information.bestHubApp.subscribe"
           target="_blank"
-          class="text-black sm:text-center md:text-center text-2xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit mx-auto"
+          class="text-black sm:text-center md:text-center text-xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit mx-auto"
         >
           SAIBA MAIS
         </a>
 
-        <!-- <div class="flex flex-col gap-8">
-          <div
-            v-for="item of options"
-            :key="item.id"
-            class="relative group cursor-default"
-          >
-            <span
-              v-if="item.label"
-              class="z-10 absolute bg-[#D0FE42] shadow group-hover:shadow-[#D0FE42] text-black font-sans text-sm px-2 py-1 rounded-full -right-3 -top-3 transition-all"
-            >
-              {{ item.label }}
-            </span>
-            <div
-              class="z-0 border border-white/30 group-hover:border-[#D0FE42] rounded-xl py-8 px-4 transition-all group-hover:backdrop-blur group-hover:bg-white/10"
-            >
-              <div class="flex flex-row items-center">
-                <div class="flex-1">
-                  <div class="w-fit mx-auto text-left">
-                    <span>{{ item.title }}</span>
-                    <div>
-                      <span class="sm:text-2xl text-4xl font-bold">
-                        {{ item.price }}
-                      </span>
-                      <span>
-                        {{ item.recurrence }}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-1">
-                  <ul class="flex flex-col items-start gap-2 mb-4">
-                    <li v-for="text in item.features" :key="text">
-                      {{ text }}
-                    </li>
-                  </ul>
-                  <a
-                    :href="item.link"
-                    class="border border-white/30 h-auto text-white/30 w-full flex rounded-2xl text-center hover:bg-[#D0FE42] hover:text-black transition-all hover:border-[#D0FE42]"
-                  >
-                    <p class="pt-2 pb-1 mx-auto">Selecionar</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>

@@ -11,13 +11,14 @@
     <PricesSection :options="prices" class="static z-10" />
     <BestTable />
     <div class="relative">
-      <TelegramSection />
+      <ProductBoxSection />
       <FaqSection :questions="questions" />
       <FooterSection />
     </div>
   </main>
 </template>
 <script lang="ts">
+
 import { defineComponent } from 'vue'
 
 import TopBar from '@/components/bestHub/topBar.component.vue'
@@ -26,14 +27,15 @@ import BanksSection from '@/components/bestHub/banksSection.component.vue'
 import DiscoverSection from '@/components/bestHub/discoverSection.component.vue'
 import BenefitsSection from '@/components/bestHub/benefitsSection.component.vue'
 import VideoSection from '@/components/bestHub/videoSection.component.vue'
-
 import ProductsSection from '@/components/bestHub/productsSection.component.vue'
 import CommissionSection from '@/components/bestHub/commissionSection.component.vue'
 import PricesSection from '@/components/bestHub/pricesSection.component.vue'
 import BestTable from '@/components/bestHub/bestTable.component.vue'
 import TelegramSection from '@/components/bestHub/telegramSection.component.vue'
+import ProductBoxSection from '@/components/bestHub/productBox.component.vue'
 import FaqSection from '@/components/bestHub/faqSection.component.vue'
 import FooterSection from '@/components/bestHub/footerSection.component.vue'
+
 export default defineComponent({
   name: 'BestProLP',
   components: {
@@ -50,6 +52,7 @@ export default defineComponent({
     BenefitsSection,
     VideoSection,
     ProductsSection,
+    ProductBoxSection,
   },
   data() {
     return {

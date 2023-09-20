@@ -13,39 +13,12 @@
     <div
       class="flex flex-col lg:flex-row-reverse xl:flex-row-reverse max-w-7xl mx-auto z-10 lg:py-20 xl:py-20 px-5"
     >
-      <!-- <div class="relative h-full xl:ml-auto xl:w-fit">
-
-
-
-        <div
-          :class="[showVideo ? 'h-full' : 'h-1/2 xl:h-full']"
-          class="absolute w-full xl:w-auto top-0 sm:inset-x-1/2 lg:inset-x-1/2 md:inset-x-1/2 xl:right-[30%] flex transition-all"
-        >
-
-        </div>
-
-        <div
-          :class="[
-            showVideo ? 'opacity-100 backdrop-blur-sm z-10' : 'opacity-0 -z-30',
-          ]"
-          class="bg-black/20 backdrop-blur w-full h-full absolute top-0 transition-all delay-150"
-          @click="showVideo = false"
-        >
-          <iframe
-            class="w-full h-full"
-            src="https://www.youtube.com/embed/ejFpLa_tzDQ"
-            title="Financiamento imobiliário: Vale a pena fazer agora?"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div> -->
 
       <div :class="[showVideo ? 'sm:h-96 md:h-128' : 'sm:h-48 md:h-56']" class="relative w-full flex lg:w-1/2 xl:w-1/2 transition-all z-0">
         <div :class="[showVideo ? 'opacity-100 z-10' : 'opacity-0 -z-10']" class="absolute inset-0 ">
           <iframe
             class="w-full h-full"
-            src="https://www.youtube.com/embed/ejFpLa_tzDQ"
+            src="https://www.youtube.com/embed/mWVJV3BnJCU"
             title="Financiamento imobiliário: Vale a pena fazer agora?"
             frameborder="0"
             allowfullscreen
@@ -97,9 +70,6 @@
         </a>
       </div>
 
-      <!-- <div class="absolute w-full -bottom-0">
-        <div class="mx-auto border-b border-white/30 h-1 max-w-7xl"></div>
-      </div> -->
     </div>
   </section>
 </template>
