@@ -34,7 +34,7 @@
           <div class="w-5 h-5">
             <i :class="icon" class=" w-full h-full"></i>
           </div>
-            <span class="text-2xl font-bold mb-1">
+            <span class="text-2xl font-bold">
               {{ text }}
             </span>
           </li>
