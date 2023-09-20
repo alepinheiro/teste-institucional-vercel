@@ -7,11 +7,11 @@
         <img
           src="/images/bestHub/productsDesktop.png"
           alt="Oferecendo os produtos que o seu cliente procura."
-          class="mx-auto sm:mx-0 pt-10 w-8/12 sm:w-full mr-auto ml-auto"
+          class="mx-auto sm:mx-0 py-10 w-8/12 sm:w-full mr-auto ml-auto"
         />
       </picture>
       <div class="pb-4 w-full">
-        <h2 class="text-5xl sm:text-3xl text-center">
+        <h2 class="text-2xl sm:text-3xl text-center">
           Oferecendo <br class="md:hidden lg:hidden xl:hidden" />
           os <b class="text-[#D0FE42]"> produtos </b> que o seu cliente
           <b class="text-[#D0FE42]">procura</b>

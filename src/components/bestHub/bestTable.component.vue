@@ -1,6 +1,6 @@
 <template>
   <section class="w-full">
-    <div class="max-w-4xl mx-auto px-5 py-20">
+    <div class="max-w-4xl mx-auto px-5 py-20 sm:py-5">
       <div class="flex flex-col w-full">
         <h2 class="text-5xl mb-1">Por que ser <b>Best?</b></h2>
         <div class="border-b-2 border-[#D0FE42] w-2/5"></div>

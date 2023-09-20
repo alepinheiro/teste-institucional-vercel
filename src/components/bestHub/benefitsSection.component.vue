@@ -3,7 +3,7 @@
     class="border-b border-[#D0FE42] flex flex-col items-center relative py-10 w-full"
   >
     <div class="max-w-5xl mx-auto w-full flex flex-col items-center px-5">
-      <h2 class="font-bold sm:w-3/4 mx-auto text-center text-3xl">
+      <h2 class="font-bold sm:w-3/4 mx-auto text-center text-2xl">
         Um <b class="text-[#D0FE42]">CRM</b> de crédito completo para o seu negócio.
       </h2>
       <ul class="flex flex-row flex-wrap gap-4 my-8 md:px-5">
@@ -13,12 +13,12 @@
           class="p-5 w-1/3 md:w-1/3 sm:w-fit flex flex-col items-center justify-center flex-grow border border-white text-white rounded-xl"
         >
           <div class=" mx-auto flex flex-row gap-2 items-center h-fit w-auto pb-5">
-            <img :src="`/images/bestHub/icons/${icon}.svg`" class="w-8 h-8 object-cover" alt="" />
-            <h3 class="text-3xl my-auto flex-grow leading-none mt-3 md:mt-0 sm:text-2xl sm:text-center md:text-2xl md:text-center ">
+            <img :src="`/images/bestHub/icons/${icon}.svg`" class="w-6 h-6 object-cover" alt="" />
+            <h3 class="text-xl my-auto flex-grow leading-none mt-2 md:mt-0 sm:text-2xl sm:text-center md:text-2xl md:text-center ">
               {{ title }}
             </h3>
           </div>
-          <p class="text-xl text-center">
+          <p class="text-base text-center">
             {{ description }}
           </p>
         </li>

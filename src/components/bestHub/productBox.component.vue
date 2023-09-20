@@ -1,6 +1,6 @@
 <template>
   <section
-    class="w-full relative z-0 flex border-t border-[#D0FE42] pt-32 pb-18"
+    class="w-full relative z-0 flex border-t border-[#D0FE42] pt-32 sm:pt-10 pb-18 sm:pb-4"
   >
     <div
       class="flex sm:flex-col md:flex-col flex-row-reverse gap-5 items-center max-w-7xl m-auto"
@@ -16,7 +16,7 @@
       </div>
 
       <div
-        class="flex flex-col gap-14 sm:px-5 md:max-w-2xl lg:w-4/6 flex-1 lg:flex-auto"
+        class="flex flex-col gap-14 sm:gap-6 sm:px-5 md:max-w-2xl lg:w-4/6 flex-1 lg:flex-auto"
       >
         <img
           src="/images/bestBroker/logoBestBrokerWhite.png"
@@ -24,12 +24,12 @@
           alt=""
         />
 
-        <h2 class="text-3xl font-bold text-center">
+        <h2 class="text-2xl font-bold text-center">
           O curso definitivo para se tornar expert em
           <b class="text-[#D0FE42]">Crédito Imobiliário</b>
         </h2>
 
-        <p class="text-2xl text-center">
+        <p class="text-xl text-center">
           Uma preparação completa para o Corretor que quer
           <span class="text-[#D0FE42] font-bold"> aumentar seus lucros </span>
           através das Ferramentas Financeiras
@@ -41,12 +41,12 @@
           <li
             v-for="{ icon, id, text } of includedTools"
             :key="id"
-            class="border-2 border-[#D0FE42] rounded px-10 py-5 shadow-md shadow-[#D0FE4260] flex flex-row items-center justify-center gap-4 hover:bg-[#D0FE42] hover:text-black cursor-default transition-all"
+            class="border-2 border-[#D0FE42] rounded px-5 py-3 shadow-md shadow-[#D0FE4260] flex flex-row items-center justify-center gap-4 hover:bg-[#D0FE42] hover:text-black cursor-default transition-all"
           >
             <div class="w-5 h-5">
               <i :class="icon" class="w-full h-full"></i>
             </div>
-            <p class="text-2xl font-bold w-fit sm:text-xl">
+            <p class="text-xl font-bold w-fit mt-1">
               {{ text }}
             </p>
           </li>
@@ -55,7 +55,7 @@
         <a
           :href="$options.information.bestHubApp.subscribe"
           target="_blank"
-          class="text-black sm:text-center md:text-center text-xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit mx-auto"
+          class="text-black sm:text-center md:text-center text-xl font-bold px-5 py-3 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit mx-auto"
         >
           SAIBA MAIS
         </a>

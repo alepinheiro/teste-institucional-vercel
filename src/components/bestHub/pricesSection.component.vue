@@ -1,5 +1,5 @@
 <template>
-  <section class="py-48 relative">
+  <section class="py-48 sm:pb-20 relative">
     <img
       class="absolute top-0 -z-10 object-cover w-full h-auto sm:h-2/3 sm:left-0"
       src="/images/bestHub/pricesBackground.png"
@@ -10,7 +10,7 @@
       <div
         class="sm:w-full flex flex-col gap-10 max-w-xl ml-auto sm:mx-auto md:mx-auto"
       >
-        <h2 class="text-center text-4xl">
+        <h2 class="text-center text-2xl">
           Escolha a
           <b class="text-[#D0FE42]"> melhor opção </b>
           para o seu bolso
@@ -20,7 +20,7 @@
           <div
             v-for="{ id, text } of paymentRecurrence"
             :key="id"
-            class="border border-white w-full rounded-2xl py-6 text-center font-Public-Sans text-3xl font-bold px-5"
+            class="border border-white w-full rounded-xl py-6 text-center font-Public-Sans text-xl font-bold px-5"
           >
             {{ text }}
           </div>
@@ -29,7 +29,7 @@
         <a
           :href="$options.information.bestHubApp.subscribe"
           target="_blank"
-          class="text-black sm:text-center md:text-center text-xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit mx-auto"
+          class="text-black sm:text-center md:text-center text-xl font-bold px-5 py-3 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit mx-auto"
         >
           SAIBA MAIS
         </a>

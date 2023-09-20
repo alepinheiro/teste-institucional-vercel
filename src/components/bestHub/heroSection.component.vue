@@ -28,7 +28,7 @@
         class="w-full h-auto flex-grow bg-gradient-to-b from-transparent via-black/70 to-90% to-black flex items-center pb-10"
       >
         <div
-          class="flex flex-col max-w-3xl sm:px-5 items-center mx-auto text-center mt-auto pb-20"
+          class="flex flex-col max-w-3xl sm:px-5 items-center mx-auto text-center mt-auto pb-20 sm:pb-10"
         >
           <h1 class="text-5xl font-bold">BestHub, o nome já diz tudo</h1>
           <h2 class="font-normal text-2xl">
@@ -37,7 +37,7 @@
           <a
             :href="$options.information.bestHubApp.subscribe"
             target="_blank"
-            class="text-black text-2xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1"
+            class="text-black text-xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1"
           >
             Quero ser um parceiro Best
           </a>
