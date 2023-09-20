@@ -1,6 +1,5 @@
 <template>
   <main class="text-white bg-black font-Sizmo overflow-x-hidden">
-    <TopBar class="z-20" />
     <HeroSection />
     <BanksSection />
     <DiscoverSection />
@@ -20,7 +19,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import TopBar from '@/components/bestHub/topBar.component.vue'
 import HeroSection from '@/components/bestHub/heroSection.component.vue'
 import BanksSection from '@/components/bestHub/banksSection.component.vue'
 import DiscoverSection from '@/components/bestHub/discoverSection.component.vue'
@@ -44,7 +42,6 @@ export default defineComponent({
     FaqSection,
     BestTable,
     PricesSection,
-    TopBar,
     CommissionSection,
     BenefitsSection,
     VideoSection,
