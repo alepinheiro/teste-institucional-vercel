@@ -27,10 +27,12 @@
           <li
             v-for="{ icon, id, text } of includedTools"
             :key="id"
-            class=" border-2 border-[#D0FE42] rounded px-10 py-5 shadow-md shadow-[#D0FE4260] flex flex-row items-center gap-4 hover:bg-[#D0FE42] hover:text-black cursor-default transition-all"
+            class=" border-2 border-[#D0FE42] rounded px-10 py-5 shadow-md shadow-[#D0FE4260] flex flex-row items-center justify-center gap-4 hover:bg-[#D0FE42] hover:text-black cursor-default transition-all"
           >
-            <i :class="icon"></i>
-            <span class="text-2xl font-bold">
+          <div class="w-5 h-5">
+            <i :class="icon" class=" w-full h-full"></i>
+          </div>
+            <span class="text-2xl font-bold mb-1">
               {{ text }}
             </span>
           </li>

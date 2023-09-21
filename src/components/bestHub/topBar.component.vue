@@ -1,7 +1,7 @@
 <template>
-  <section class="bg-black fixed top-0 w-full">
+  <section class="bg-black w-full sticky top-0">
     <div
-      class="max-w-7xl lg:max-w-5xl mx-auto w-full relative h-20 sm:flex md:flex sm:flex-row md:flex-row sm:justify-between md:justify-between sm:px-5 md:px-5"
+      class="max-w-7xl lg:max-w-5xl mx-auto w-full relative h-20 sm:flex md:flex sm:flex-row md:flex-row sm:justify-between md:justify-between px-5"
     >
       <div class="h-full flex items-center">
         <a
