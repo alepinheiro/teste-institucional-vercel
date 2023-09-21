@@ -1,10 +1,10 @@
 <template>
   <section class="w-full">
-    <div class="w-full min-h-screen relative z-0 flex">
+    <div class="w-full h-screen relative z-0 flex overflow-hidden">
       <!-- <img src="/images/bestHub/heroBackground.png" class="absolute object-cover h-full w-full -z-10" alt="" srcset=""> -->
       <iframe
         width="100%"
-        height="100%"
+        height="120%"
         src="https://www.youtube.com/embed/NmVcwxwQ2mk?autoplay=1&mute=1&loop=1&playlist=NmVcwxwQ2mk"
         title="Quais são as diferenças entre financiamento imobiliário do banco e da construtora?"
         frameborder="0"
@@ -15,7 +15,7 @@
       </iframe>
       <iframe
         width="100%"
-        height="100%"
+        height="120%"
         src="https://www.youtube.com/embed/SdZZsOFr4zw?autoplay=1&mute=1&loop=1&playlist=SdZZsOFr4zw"
         title="Quais são as diferenças entre financiamento imobiliário do banco e da construtora?"
         frameborder="0"
