@@ -1,10 +1,10 @@
 <template>
-  <main class="text-white bg-black font-Sizmo overflow-x-hidden">
+  <main class="text-white bg-black font-Sizmo overflow-x-hidden z-0">
     <HeroSection />
     <BanksSection />
     <DiscoverSection />
     <BenefitsSection />
-    <VideoSection />
+    <VideoSection class="z-10" />
     <ProductsSection />
     <CommissionSection />
     <PricesSection :options="prices" class="static z-10" />

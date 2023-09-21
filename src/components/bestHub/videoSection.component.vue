@@ -13,37 +13,10 @@
     <div
       class="flex flex-col lg:flex-row-reverse xl:flex-row-reverse max-w-7xl mx-auto z-10 lg:py-20 xl:py-20 px-5"
     >
-
-      <div :class="[showVideo ? 'sm:h-96 md:h-128' : 'sm:h-48 md:h-56']" class="relative w-full flex lg:w-1/2 xl:w-1/2 transition-all z-0">
-        <div :class="[showVideo ? 'opacity-100 z-10' : 'opacity-0 -z-10']" class="absolute inset-0 ">
-          <iframe
-            class="w-full h-full"
-            src="https://www.youtube.com/embed/mWVJV3BnJCU"
-            title="Financiamento imobiliário: Vale a pena fazer agora?"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div :class="[showVideo ? 'opacity-0 ' : 'opacity-100 ']" class="relative w-16 mx-auto py-10 transition-all z-0" >
-          <div class="absolute h-full top-0 -z-10">
-            <div
-              class="w-16 h-16 bg-white/30 rounded-full absolute my-auto inset-0 animate-ping"
-            ></div>
-          </div>
-          <button class="h-full w-16" @click="showVideo = !showVideo">
-            <img
-              class="w-16"
-              src="/images/bestHub/icons/playButton.svg"
-              alt=""
-              srcset=""
-            />
-          </button>
-        </div>
-      </div>
+      <VideoButton :video-id="'mWVJV3BnJCU'" class="z-10" />
 
       <div
-        :class="[showVideo ? ' ' : ' ']"
-        class=" md:w-4/6 md:mx-auto lg:w-1/2 xl:w-1/2 flex flex-col md:items-center gap-10 sm:gap-5 md:gap-5 h-fit my-auto md:pt-10 md:pb-20 sm:pt-10 sm:pb-20"
+        class="md:w-4/6 md:mx-auto lg:w-1/2 xl:w-1/2 flex flex-col md:items-center gap-10 sm:gap-5 md:gap-5 h-fit my-auto md:pt-10 md:pb-20 sm:pt-10 sm:pb-20"
       >
         <h1 class="font-medium text-2xl sm:text-center md:text-center">
           Quem não <b>fintechiza</b>,<br />
@@ -69,18 +42,20 @@
           Quero fintechizar meu negócio
         </a>
       </div>
-
     </div>
   </section>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+import VideoButton from "@/components/bestHub/videoButton.component.vue";
+
 export default defineComponent({
   name: 'VideoSection',
+  components: {
+    VideoButton
+  },
   data() {
-    return {
-      showVideo: false,
-    }
+    return {}
   },
 })
 </script>

@@ -56,7 +56,7 @@
             <a
               :href="$options.information.bestHubApp.subscribe"
               target="_blank"
-              class="text-black text-xl font-bold px-5 py-5 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1"
+              class="text-black text-xl font-bold px-5 py-3 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1"
             >
               Quero ganhar
             </a>
