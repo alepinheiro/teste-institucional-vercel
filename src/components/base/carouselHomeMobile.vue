@@ -10,49 +10,74 @@
     :pagination="{
       clickable: true,
     }"
-    :modules="modules" class="MySwiper swiper swiperMobile">
+    :modules="modules"
+    class="MySwiper swiper swiperMobile"
+  >
     <swiper-slide id="testimonial1">
       <article class="w-full mr-auto ml-auto max-w-sm h-full p-4">
-        <div class="border-1 rounded-xl bg-secondary w-full text-white h-[440px] flex flex-col">
-
-          <div class=" rounded-t-xl bg-primary p-4  text-center border-b-4 border-complementaryColor1">
-            <h1 class="text-3xl titleFont">Cash<span class="font-semibold">Best</span></h1>
-            <h2 class="text-base pl-2 defaultFont">Conheça o Crédito com </h2>
+        <div
+          class="border-1 rounded-xl bg-secondary w-full text-white h-[440px] flex flex-col"
+        >
+          <div
+            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-complementaryColor1"
+          >
+            <h1 class="text-3xl titleFont">
+              Cash<span class="font-semibold">Best</span>
+            </h1>
+            <h2 class="text-base pl-2 defaultFont">Conheça o Crédito com</h2>
             <h2 class="text-base pl-2 defaultFont">Garantia de Imóvel</h2>
           </div>
 
           <div class="w-full p-3 bg-secondary rounded-b-xl mt-auto">
-
-            <div class="w-full flex  items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-6 h-8  " />
+            <div class="w-full flex items-center">
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.percentageFill"
+                  alt="Taxa"
+                  class="w-6 h-8"
+                />
               </div>
               <p class="text-base pl-2 w-full">
-                As menores taxas do mercado, a partir de 0,88% a.m. + IPCA ou 1,49% a.m. Fixa
+                Escolha inteligente: 0.79% a.m. + CDI, 1.09% a.m. + IPCA,  1.49% a.m. Fixa.
               </p>
             </div>
 
             <div class="w-full flex pt-8 items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-6 h-8  " />
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.calendarFill"
+                  alt="Prazo"
+                  class="w-6 h-8"
+                />
               </div>
-              <p class="text-base pl-2  w-full">
-                Prazos de até 20 anos
-              </p>
+              <p class="text-base pl-2 w-full">Prazos de até 20 anos</p>
             </div>
 
             <div class="w-full flex pt-8 items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.moneyFill" alt="Valor" class="w-6 h-8  " />
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.moneyFill"
+                  alt="Valor"
+                  class="w-6 h-8"
+                />
               </div>
-              <p class="text-base pl-2  w-full">
+              <p class="text-base pl-2 w-full">
                 Até 60% do valor do imóvel como capital
               </p>
             </div>
           </div>
 
-          <div class="buttonComplementaryColor1 w-11/12 text-center mt-auto self-center mb-5">
-            <a :href="$options.information.appSimulator + ($root as IRootExtension).utms" style=" text-decoration: none;" target="_blank">
+          <div
+            class="buttonComplementaryColor1 w-11/12 text-center mt-auto self-center mb-5"
+          >
+            <a
+              :href="
+                $options.information.appSimulator +
+                ($root as IRootExtension).utms
+              "
+              style="text-decoration: none"
+              target="_blank"
+            >
               Faça uma simulação
             </a>
           </div>
@@ -62,50 +87,68 @@
 
     <swiper-slide id="testimonial2">
       <article class="w-full mr-auto ml-auto max-w-sm h-full p-4">
-        <div class="border-1 w-full gradienteSBDark  rounded-xl text-white h-[440px] flex flex-col">
-
-          <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-            <h1 class="text-3xl titleFont">Finan<span class="font-semibold">Best</span></h1>
-            <h2 class="text-base pl-2 defaultFont">
-              As melhores soluções em
-            </h2>
+        <div
+          class="border-1 w-full gradienteSBDark rounded-xl text-white h-[440px] flex flex-col"
+        >
+          <div
+            class="rounded-t-xl bg-secondary p-4 text-center border-b-4 border-complementaryColor3"
+          >
+            <h1 class="text-3xl titleFont">
+              Finan<span class="font-semibold">Best</span>
+            </h1>
+            <h2 class="text-base pl-2 defaultFont">As melhores soluções em</h2>
             <h2 class="text-base pl-2 defaultFont">
               Financiamento Imobiliário
             </h2>
           </div>
 
           <div class="w-full p-3 rounded-b-xl mt-auto">
-
-            <div class="w-full flex  items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-6 h-8  " />
+            <div class="w-full flex items-center">
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.percentageFill"
+                  alt="Taxa"
+                  class="w-6 h-8"
+                />
               </div>
-              <p class="text-base pl-2  w-full">
+              <p class="text-base pl-2 w-full">
                 Taxas a partir de 9,70% a.a. + taxas referencial
               </p>
             </div>
 
             <div class="w-full flex pt-8 items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-6 h-8  " />
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.calendarFill"
+                  alt="Prazo"
+                  class="w-6 h-8"
+                />
               </div>
-              <p class="text-base pl-2  w-full">
-                Pague em até 420 meses
-              </p>
+              <p class="text-base pl-2 w-full">Pague em até 420 meses</p>
             </div>
 
             <div class="w-full flex pt-8 items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-6 h-8  " />
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.moneyFill"
+                  alt="Banco"
+                  class="w-6 h-8"
+                />
               </div>
-              <p class="text-base pl-2  w-full">
-                Os melhores bancos do mercado
-              </p>
+              <p class="text-base pl-2 w-full">Os melhores bancos do mercado</p>
             </div>
-
           </div>
-          <div class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center">
-            <a :href="$options.information.appSimulator + ($root as IRootExtension).utms" style=" text-decoration: none;" target="_blank">
+          <div
+            class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
+          >
+            <a
+              :href="
+                $options.information.appSimulator +
+                ($root as IRootExtension).utms
+              "
+              style="text-decoration: none"
+              target="_blank"
+            >
               Faça uma simulação
             </a>
           </div>
@@ -114,19 +157,28 @@
     </swiper-slide>
 
     <swiper-slide id="testimonial3">
-      <article class="w-full  mr-auto ml-auto max-w-sm h-full p-4">
-        <div class="border-1 w-full gradienteSBDark  rounded-xl text-white h-[440px] flex flex-col">
-          <div class=" rounded-t-xl bg-secondary p-4  text-center border-b-4 border-complementaryColor3">
-            <h1 class="text-3xl titleFont">Car<span class="font-semibold">Best</span></h1>
+      <article class="w-full mr-auto ml-auto max-w-sm h-full p-4">
+        <div
+          class="border-1 w-full gradienteSBDark rounded-xl text-white h-[440px] flex flex-col"
+        >
+          <div
+            class="rounded-t-xl bg-secondary p-4 text-center border-b-4 border-complementaryColor3"
+          >
+            <h1 class="text-3xl titleFont">
+              Car<span class="font-semibold">Best</span>
+            </h1>
             <h2 class="text-base pl-2 defaultFont">Empréstimo com</h2>
             <h2 class="text-base pl-2 defaultFont">Garantia de Veículo</h2>
           </div>
 
           <div class="w-full p-3 rounded-b-x mt-auto">
-
-            <div class="w-full flex  items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-6 h-8  " />
+            <div class="w-full flex items-center">
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.percentageFill"
+                  alt="Taxa"
+                  class="w-6 h-8"
+                />
               </div>
               <p class="text-base pl-2 w-full">
                 Taxas a partir de 1,59% a.m. + taxas referenciais
@@ -134,26 +186,40 @@
             </div>
 
             <div class="w-full flex pt-8 items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-6 h-8  " />
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.calendarFill"
+                  alt="Prazo"
+                  class="w-6 h-8"
+                />
               </div>
-              <p class="text-base pl-2 w-full">
-                Pague em até 60 meses
-              </p>
+              <p class="text-base pl-2 w-full">Pague em até 60 meses</p>
             </div>
 
             <div class="w-full flex pt-8 items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.moneyFill" alt="Banco" class="w-6 h-8  " />
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.moneyFill"
+                  alt="Banco"
+                  class="w-6 h-8"
+                />
               </div>
               <p class="text-base pl-2 w-full">
                 Use seu carro, utilitário ou caminhão
               </p>
             </div>
-
           </div>
-          <div class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center">
-            <a :href="$options.information.appSimulator + ($root as IRootExtension).utms" style=" text-decoration: none;" target="_blank">
+          <div
+            class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
+          >
+            <a
+              :href="
+                $options.information.appSimulator +
+                ($root as IRootExtension).utms
+              "
+              style="text-decoration: none"
+              target="_blank"
+            >
               Faça uma simulação
             </a>
           </div>
@@ -163,45 +229,71 @@
 
     <swiper-slide>
       <article class="w-full mr-auto ml-auto max-w-sm h-full p-4">
-        <div class="border-1 rounded-xl bg-secondary  w-full text-white h-[440px] flex flex-col">
-
-          <div class=" rounded-t-xl bg-primary p-2  text-center border-b-4 border-complementaryColor1">
-            <h1 class="text-3xl titleFont">Finan<span class="font-semibold">Best</span> Veicular</h1>
+        <div
+          class="border-1 rounded-xl bg-secondary w-full text-white h-[440px] flex flex-col"
+        >
+          <div
+            class="rounded-t-xl bg-primary p-2 text-center border-b-4 border-complementaryColor1"
+          >
+            <h1 class="text-3xl titleFont">
+              Finan<span class="font-semibold">Best</span> Veicular
+            </h1>
             <h2 class="text-base pl-2 defaultFont">Seu sonho de ter um</h2>
-            <h2 class="text-base pl-2 defaultFont">veículo está a uma simulação!</h2>
+            <h2 class="text-base pl-2 defaultFont">
+              veículo está a uma simulação!
+            </h2>
           </div>
 
           <div class="w-full p-3 bg-secondary rounded-b-x mt-auto">
-
-            <div class="w-full flex  items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.percentageFill" alt="Taxa" class="w-6 h-8  " />
+            <div class="w-full flex items-center">
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.percentageFill"
+                  alt="Taxa"
+                  class="w-6 h-8"
+                />
               </div>
               <p class="text-base pl-2 w-full">
-                As menores taxas do mercado, a partir de 1,49% + taxa referencial
+                As menores taxas do mercado, a partir de 1,49% + taxa
+                referencial
               </p>
             </div>
 
             <div class="w-full flex pt-8 items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.calendarFill" alt="Prazo" class="w-6 h-8  " />
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.calendarFill"
+                  alt="Prazo"
+                  class="w-6 h-8"
+                />
               </div>
-              <p class="text-base pl-2 w-full">
-                Pague em até 60 meses
-              </p>
+              <p class="text-base pl-2 w-full">Pague em até 60 meses</p>
             </div>
 
             <div class="w-full flex pt-8 items-center">
-              <div class="pr-w-6 ">
-                <img :src="$options.imageConfig.icons.moneyFill" alt="Valor" class="w-6 h-8  " />
+              <div class="pr-w-6">
+                <img
+                  :src="$options.imageConfig.icons.moneyFill"
+                  alt="Valor"
+                  class="w-6 h-8"
+                />
               </div>
               <p class="text-base pl-2 w-full">
                 Financiamento de carros novos e seminovos
               </p>
             </div>
           </div>
-          <div class="buttonComplementaryColor1 w-11/12 flex self-center mt-auto mb-5 justify-center text-center">
-            <a :href="$options.information.appSimulator + ($root as IRootExtension).utms" style=" text-decoration: none;" target="_blank">
+          <div
+            class="buttonComplementaryColor1 w-11/12 flex self-center mt-auto mb-5 justify-center text-center"
+          >
+            <a
+              :href="
+                $options.information.appSimulator +
+                ($root as IRootExtension).utms
+              "
+              style="text-decoration: none"
+              target="_blank"
+            >
               Faça uma simulação
             </a>
           </div>
@@ -223,7 +315,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 type IRootExtension = ComponentPublicInstance & { [key: string]: string }
@@ -236,9 +328,9 @@ export default {
   setup() {
     return {
       modules: [Pagination, Navigation],
-    };
+    }
   },
-};
+}
 </script>
 
 <style>
@@ -251,7 +343,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: ".";
+  grid-template-areas: '.';
   width: 100%;
   justify-items: center;
   align-items: center;
