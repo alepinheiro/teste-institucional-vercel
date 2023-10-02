@@ -55,7 +55,7 @@ export default defineComponent({
       value: 300000,
       showVideo: false,
       videoStyle: 'w-full h-[36rem] mr-auto ml-auto rounded-2xl ',
-      videoUrl: 'https://www.youtube.com/embed/YwE1mHfRxKk',
+      videoUrl: 'https://www.youtube.com/embed/BlVZJTj7jZk',
     }
   },
 })
