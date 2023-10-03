@@ -37,6 +37,7 @@ export default defineComponent({
   component: {
     PopUpVideo,
   },
+  emits: ['OpenPopUp'],
   data() {
     return {
       showVideo: false,
@@ -48,10 +49,6 @@ export default defineComponent({
         {
           icon: 'fa-solid fa-square-check',
           description: 'Checklist de Documentos',
-        },
-        {
-          icon: 'fa-solid fa-paper-plane',
-          description: 'Acesso vitalício a conteúdos exclusivos',
         },
         {
           icon: 'fa-solid fa-book-bookmark',
@@ -66,7 +63,6 @@ export default defineComponent({
   },
   methods: {
     openVideo() {
-      console.log('open')
       this.$emit('OpenPopUp', true)
     },
   },

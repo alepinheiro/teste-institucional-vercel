@@ -484,6 +484,7 @@
         </div>
       </section>
     </div>
+
     <section class="w-full bgMeioAzul p-4 sm:hidden md:hidden pt-24 sm:pt-8">
       <div
         class="maxWidth p-0 shadow-lg bg-bglightColor rounded-2xl flex flex-wrap"
@@ -1023,13 +1024,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue'
-import TopbarComponent from '@/components/structure/topbar.component.vue'
 import Rodape from '@/components/base/bannerBottomPage.vue'
+import TopbarComponent from '@/components/structure/topbar.component.vue'
 import carouselHome from '@/components/base/carouselHome.vue'
-import { SplideSlide } from '@splidejs/vue-splide'
-import carouselHomeTablet from '@/components/base/carouselHomeTablet.vue'
 import carouselHomeMobile from '@/components/base/carouselHomeMobile.vue'
+import carouselHomeTablet from '@/components/base/carouselHomeTablet.vue'
+import { SplideSlide } from '@splidejs/vue-splide'
+import { defineComponent, ComponentPublicInstance } from 'vue'
 
 type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 

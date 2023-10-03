@@ -5,9 +5,9 @@
     <div>
       <picture class="sm:block">
         <img
-          src="/images/bestHub/productsDesktop.png"
+          src="/images/bestHub/productsDesktop.webp"
           alt="Oferecendo os produtos que o seu cliente procura."
-          class="mx-auto sm:mx-0 py-10 w-8/12 sm:w-full mr-auto ml-auto"
+          class="mx-auto sm:mx-0 pt-10 w-8/12 sm:w-full mr-auto ml-auto"
         />
       </picture>
       <div class="pb-4 w-full">

@@ -41,12 +41,12 @@
           <li
             v-for="{ icon, id, text } of includedTools"
             :key="id"
-            class="border-2 border-[#D0FE42] rounded px-5 py-3 shadow-md shadow-[#D0FE4260] flex flex-row items-center justify-center gap-4 hover:bg-[#D0FE42] hover:text-black cursor-default transition-all"
+            class="sm:w-full border-2 border-[#D0FE42] rounded px-5 py-3 shadow-md shadow-[#D0FE4260] flex flex-row items-center justify-center gap-4 hover:bg-[#D0FE42] hover:text-black cursor-default transition-all"
           >
             <div class="w-5 h-5">
               <i :class="icon" class="w-full h-full"></i>
             </div>
-            <p class="text-xl font-bold w-fit mt-1">
+            <p class="text-xl font-bold w-fit mt-1  sm:text-center">
               {{ text }}
             </p>
           </li>

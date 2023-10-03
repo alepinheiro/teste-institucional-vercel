@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto relative sm:hidden md:hidden">
       <img
         class="static h-full"
-        src="/images/bestHub/discoverBestHub.png"
+        src="/images/bestHub/discoverBestHub.webp"
         alt=""
         srcset=""
       />
