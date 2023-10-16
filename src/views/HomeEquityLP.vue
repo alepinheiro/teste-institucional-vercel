@@ -20,7 +20,7 @@
                 <p class="pt-0 text-white pb-6">
                   As menores taxas do mercado, a partir de
                   <span class="font-semibold"
-                    >Escolha inteligente: 0.79% a.m. + CDI, 1.09% a.m. + IPCA,  1.49% a.m. Fixa.</span
+                    >Escolha inteligente: 1.09% a.m. + IPCA,  1.49% a.m. Fixa.</span
                   >
                   Pegando até <span class="font-semibold">60% do valor</span> do
                   seu imóvel como capital para usar como quiser, você tem até 20
@@ -117,7 +117,7 @@
                 <p class="py-4 text-white pb-6">
                   As menores taxas do mercado, a partir de
                   <span class="font-semibold"
-                    >Escolha inteligente: 0.79% a.m. + CDI, 1.09% a.m. + IPCA,  1.49% a.m. Fixa.</span
+                    >Escolha inteligente: 1.09% a.m. + IPCA,  1.49% a.m. Fixa.</span
                   >
                   Pegando até <span class="font-semibold">60% do valor</span> do
                   seu imóvel como capital para usar como quiser, você tem até
@@ -205,7 +205,7 @@
                 <p class="py-4 text-white pb-6">
                   As menores taxas do mercado, a partir de
                   <span class="font-semibold"
-                    >Escolha inteligente: 0.79% a.m. + CDI, 1.09% a.m. + IPCA,  1.49% a.m. Fixa.</span
+                    >Escolha inteligente: 1.09% a.m. + IPCA,  1.49% a.m. Fixa.</span
                   >
                   Pegando até <span class="font-semibold">60% do valor</span> do
                   seu imóvel como capital para usar como quiser, você tem até
@@ -319,7 +319,7 @@
                 />
               </div>
               <h3 class="text-xl w-full">
-                Escolha inteligente: 0.79% a.m. + CDI, 1.09% a.m. + IPCA,  1.49% a.m. Fixa.
+                Escolha inteligente: 1.09% a.m. + IPCA,  1.49% a.m. Fixa.
               </h3>
             </div>
 

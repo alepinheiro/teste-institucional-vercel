@@ -38,7 +38,7 @@
                 />
               </div>
               <p class="text-base pl-2 w-full">
-                Escolha inteligente: 0.79% a.m. + CDI, 1.09% a.m. + IPCA,  1.49% a.m. Fixa.
+                Escolha inteligente: 1.09% a.m. + IPCA,  1.49% a.m. Fixa.
               </p>
             </div>
 
