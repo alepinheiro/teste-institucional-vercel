@@ -114,7 +114,7 @@
                 />
               </div>
               <p class="text-base xl:text-lg w-full">
-                Escolha inteligente: 0.79% a.m. + CDI, 1.09% a.m. + IPCA,  1.49% a.m. Fixa.
+                Escolha inteligente: 1.09% a.m. + IPCA,  1.49% a.m. Fixa.
               </p>
             </div>
             <div class="w-full flex pt-6 items-center">
