@@ -30,7 +30,7 @@
 
           <div class="sm:text-sm text-textSecondary pb-6">
             <router-link
-              :to="'/parceiro' + $root.utms"
+              :to="'/bestHub' + $root.utms"
               class="hover:text-textSecondary"
               aria-label="Seja um Parceiro"
             >
