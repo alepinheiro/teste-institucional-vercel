@@ -10,7 +10,10 @@
     "build-test": "vite build --mode test",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src/",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test-storybook": "test-storybook"
   },
   "dependencies": {
     "@chenfengyuan/vue-carousel": "2",
@@ -45,6 +48,15 @@
     "vue-the-mask": "^0.11.1"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.5.3",
+    "@storybook/addon-essentials": "7.5.3",
+    "@storybook/addon-interactions": "7.5.3",
+    "@storybook/addon-links": "7.5.3",
+    "@storybook/blocks": "7.5.3",
+    "@storybook/test-runner": "^0.14.1",
+    "@storybook/testing-library": "0.2.2",
+    "@storybook/vue3": "7.5.3",
+    "@storybook/vue3-vite": "7.5.3",
     "@types/node": "^20.6.2",
     "@types/vue-the-mask": "^0.11.1",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
@@ -52,8 +64,12 @@
     "@vitejs/plugin-vue": "^4.3.4",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-storybook": "^0.6.15",
     "eslint-plugin-vue": "^9.17.0",
     "prettier": "^3.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "storybook": "7.5.3",
     "stylelint": "^15.10.3",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^34.0.0",
