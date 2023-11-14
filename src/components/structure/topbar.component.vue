@@ -40,7 +40,7 @@ import MenuComponent from '@/components/structure/menu.component.vue'
 import MenuMobileComponent from '@/components/structure/menuMobile.component.vue'
 
 export default defineComponent({
-  name: 'TopbarComponent',
+  name: 'TopBar',
   components: {
     MenuComponent,
     MenuMobileComponent

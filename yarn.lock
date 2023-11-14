@@ -3924,9 +3924,9 @@ axios@^0.21.1:
     follow-redirects "^1.14.0"
 
 axios@^1.5.0:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.1.tgz#76550d644bf0a2d469a01f9244db6753208397d7"
-  integrity sha512-vfBmhDpKafglh0EldBEbVuoe7DyAavGSLWhuSm5ZSEKQnHhBf0xAAwybbNH1IkrJNGnS/VG4I5yxig1pCEXE4g==
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.2.tgz#de67d42c755b571d3e698df1b6504cde9b0ee9f2"
+  integrity sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==
   dependencies:
     follow-redirects "^1.15.0"
     form-data "^4.0.0"
@@ -9092,6 +9092,13 @@ store2@^2.14.2:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.14.2.tgz#56138d200f9fe5f582ad63bc2704dbc0e4a45068"
   integrity sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==
 
+storybook-vue3-router@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/storybook-vue3-router/-/storybook-vue3-router-4.0.1.tgz#21b2c45f1609965f7efe66564b335a9e4f6f319f"
+  integrity sha512-lnmMH92Kjh3EgS8H1AwlAodgOeZ+IL7hHh7avpFuLQ93RCt8JxfQmudia8UGb5ahWYLCAiXJrHSueuZeNJxrOw==
+  dependencies:
+    vue-router "^4.2.2"
+
 storybook@7.5.3:
   version "7.5.3"
   resolved "https://registry.yarnpkg.com/storybook/-/storybook-7.5.3.tgz#0003b072736b8b15c3b7205e9775d0c5ec898b4d"
@@ -9991,7 +9998,7 @@ vue-meta@^3.0.0-alpha.10:
   resolved "https://registry.yarnpkg.com/vue-meta/-/vue-meta-3.0.0-alpha.10.tgz#8aa7dee8ef43edda2633d52d2d4ca0ae03352222"
   integrity sha512-rYeIGkhm1gKBcReEkPHiV6LV2Y6BZTMGTkGw1mQIZTxfFcVJL0srLZsL1zAmLeTGxMrlDYylMQEVSYRkDnwz3A==
 
-vue-router@^4.0.0, vue-router@^4.2.4:
+vue-router@^4.0.0, vue-router@^4.2.2, vue-router@^4.2.4:
   version "4.2.5"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.2.5.tgz#b9e3e08f1bd9ea363fdd173032620bc50cf0e98a"
   integrity sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==
