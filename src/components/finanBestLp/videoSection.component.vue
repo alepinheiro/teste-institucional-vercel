@@ -1,7 +1,7 @@
 <template>
   <section class="py-10 w-full bg-[#EFEFEF]">
-    <div class="max-w-7xl w-full flex flex-row items-center gap-3 mx-auto">
-      <div class="w-5/12 flex flex-col gap-8 text-textPrimary text-center">
+    <div class="max-w-7xl lg:max-w-5xl md:max-w-2xl w-full flex flex-row items-center gap-3 mx-auto">
+      <div class="w-5/12 lg:w-7/12 md:w-full flex flex-col gap-8 text-textPrimary text-center">
         <h2 class="text-3xl text-primary font-bold">
           O FinanBest é o produto de financiamento imobiliário da SejaBest.
         </h2>
@@ -19,9 +19,8 @@
           </p>
         </div>
       </div>
-      <div v-show="showVideo" class="w-7/12 h-96 rounded-2xl overflow-hidden">
+      <div v-show="showVideo" class="w-7/12 lg:w-5/12 h-96 rounded-2xl overflow-hidden md:hidden">
         <iframe
-          height="200"
           src="https://www.youtube.com/embed/IXZj925aJDY"
           title="Como financiar meu primeiro imóvel?"
           frameborder="0"
@@ -30,7 +29,7 @@
           class="h-full w-full"
         ></iframe>
       </div>
-      <div v-show="!showVideo" class="w-7/12 relative bg-black rounded-2xl z-0">
+      <div v-show="!showVideo" class="w-7/12 lg:w-5/12 relative bg-black rounded-2xl z-0 md:hidden">
         <img
           src="/images/finanBest/bgVideoPlayer.png"
           alt=""
@@ -53,6 +52,5 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-
 const showVideo = ref(false)
 </script>

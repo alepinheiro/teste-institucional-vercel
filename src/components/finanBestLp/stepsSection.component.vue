@@ -1,0 +1,82 @@
+<template>
+  <section class="py-10 w-full bg-[#EFEFEF]">
+    <div class="max-w-7xl w-full mx-auto">
+      <component
+        :is="'swiper-container'"
+        v-bind="sliderOptions"
+        class="w-full px-5"
+      >
+        <component
+          :is="'swiper-slide'"
+          v-for="{ id, icon, title, text, link } of steps"
+          :key="id"
+          class="bg-white rounded-lg p-12 h-auto w-80"
+        >
+          <div class="flex flex-col gap-12 items-start font-Public-Sans">
+            <i :class="icon" class="text-primary w-5 h-5"></i>
+            <h3 class="text-2xl font-bold">{{ title }}</h3>
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <p v-html="text"></p>
+            <a v-if="link" :href="link[0]" class="underline">
+              {{ link[1] }}
+            </a>
+          </div>
+        </component>
+      </component>
+    </div>
+  </section>
+</template>
+<script lang="ts" setup>
+import { SwiperOptions } from 'swiper/types'
+
+const sliderOptions: SwiperOptions = {
+  spaceBetween:20,
+  slidesPerView: 'auto',
+  pagination: false,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      pagination: true,
+    },
+    1024: {
+      slidesPerView: 3,
+      pagination: true,
+    },
+    1280: {
+      slidesPerView: 4,
+      pagination: false,
+    },
+  },
+}
+
+const steps = [
+  {
+    id: 1,
+    icon: 'fa-solid fa-layer-group',
+    title: '1. Simule',
+    text: 'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
+    link: ['#', 'Simule agora'],
+  },
+  {
+    id: 2,
+    icon: 'fa-solid fa-file',
+    title: '2. Documentação',
+    text: 'Para uma análise de crédito detalhada, envie os documentos solicitados.<b> Então seus dados serão analisados e, em seguida, uma proposta será enviada </b>',
+    link: ['#', 'Baixe o checklist'],
+  },
+  {
+    id: 3,
+    icon: 'fa-solid fa-search',
+    title: '3. Documentação',
+    text: 'Nesta etapa, um engenheiro avalia quanto o imóvel vale. Além disso, é feita uma análise para conferir a <b>situação jurídica da propriedade e validar o bem como uma garantia.</b>',
+    link: null,
+  },
+  {
+    id: 4,
+    icon: 'fa-solid fa-circle-dollar-to-slot',
+    title: '4. Liberação',
+    text: 'Agora a documentação é encaminhada para o cartório e você assina os documentos digitalmente. <b>O seu bem é então alienado e seu recurso liberado na sua conta!</b>',
+    link: null,
+  },
+]
+</script>
