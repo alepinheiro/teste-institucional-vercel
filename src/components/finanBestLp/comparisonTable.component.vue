@@ -1,7 +1,7 @@
 <template>
   <section class="w-full py-10 relative">
     <div class="absolute z-0 inset-0 flex">
-      <img src="/public/images/finanBest/bgComparisonTable.png" alt="" class=" self-end">
+      <img src="/images/finanBest/bgComparisonTable.png" alt="" class=" self-end">
     </div>
     <div class="max-w-7xl flex mx-auto font-Public-Sans z-10 relative">
       <div
@@ -14,7 +14,7 @@
           <div class="flex flex-row w-full items-center">
             <div class="w-1/2"></div>
             <div class="w-1/4 text-center">
-              <img src="/public/images/logoBest/logoGray.svg" alt="Logomarca SejaBest" class="h-10 mx-auto">
+              <img src="/images/logoBest/logoGray.svg" alt="Logomarca SejaBest" class="h-10 mx-auto">
             </div>
             <div class="w-1/4 text-center">Bancos <br> Tradicionais</div>
           </div>
