@@ -1,6 +1,9 @@
 <template>
-  <section class="w-full py-10">
-    <div class="max-w-7xl flex mx-auto font-Public-Sans">
+  <section class="w-full py-10 relative">
+    <div class="absolute z-0 inset-0 flex">
+      <img src="/public/images/finanBest/bgComparisonTable.png" alt="" class=" self-end">
+    </div>
+    <div class="max-w-7xl flex mx-auto font-Public-Sans z-10 relative">
       <div
         class="mx-auto w-8/12 flex flex-col bg-[#EFEFEF] items-center rounded-xl px-5 py-10"
       >
