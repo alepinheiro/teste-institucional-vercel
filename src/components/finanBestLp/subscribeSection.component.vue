@@ -1,6 +1,6 @@
 <template>
   <section class="w-full py-10 bg-bgDarkColor">
-    <div class="max-w-7xl mx-auto w-full flex flex-col gap-4">
+    <div class="max-w-7xl md:max-w-2xl mx-auto w-full flex flex-col gap-4">
       <div class="text-white text-center flex flex-col gap-4 w-10/12 mx-auto">
         <h2 class="text-3xl font-bold">Simule agora completamente de graça.</h2>
         <p class="text-lg leading-loose">
@@ -13,10 +13,10 @@
       </div>
 
       <div class="flex flex-row items-center">
-        <div class="w-5/12 flex justify-end">
+        <div  class="w-5/12 flex justify-end lg:hidden md:hidden">
           <img src="/images/finanBest/gasparOnPhone.png" alt="">
         </div>
-        <div class="w-full px-5">
+        <div class="w-full lg:w-8/12 lg:mx-auto px-5">
           <SimulationForm :show-home-equity="false" />
         </div>
       </div>

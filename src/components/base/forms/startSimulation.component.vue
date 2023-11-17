@@ -21,7 +21,7 @@
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md focus-within:outline-primary transition-all"
         />
       </div>
-      <div class="flex flex-col">
+      <div v-if="showHomeEquity" class="flex flex-col">
         <label for="realtyValue">Quanto vale seu imóvel?</label>
         <input
           id="realtyValue"
@@ -43,7 +43,7 @@
           class="bg-zinc-200 rounded p-2 flex-grow focus-within:shadow-md focus-within:outline-primary transition-all"
         />
       </div>
-      <button class="bg-complementaryColor1 w-fit mx-auto px-3 py-2 rounded-md text-white font-bold">
+      <button class="bg-complementaryColor1 w-fit mx-auto px-3 py-2 rounded-md text-white font-bold md:mt-4">
         Iniciar simulação agora
       </button>
     </form>
