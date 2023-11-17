@@ -30,26 +30,24 @@
 import { SwiperOptions } from 'swiper/types'
 
 import useWindowSize from '@/composable/useWindowSize'
+import { onMounted, computed } from 'vue';
 
-const { windowWidth, windowHeight, windowSize } = useWindowSize()
-console.log(windowWidth, windowHeight, windowSize)
+const { width } = useWindowSize()
+const pagination = computed(() => width.value < 1024)
 
 const sliderOptions: SwiperOptions = {
   spaceBetween: 20,
   slidesPerView: 'auto',
-  pagination: false,
+  pagination: true,
   breakpoints: {
     320: {
       slidesPerView: 2,
-      pagination: true,
     },
     1024: {
       slidesPerView: 3,
-      pagination: true,
     },
     1280: {
       slidesPerView: 4,
-      pagination: false,
     },
   },
 }
@@ -84,4 +82,9 @@ const steps = [
     link: null,
   },
 ]
+
+onMounted(() => {
+  sliderOptions.pagination = pagination.value;
+})
 </script>
+
