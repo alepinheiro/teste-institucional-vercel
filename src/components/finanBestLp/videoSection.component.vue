@@ -1,6 +1,6 @@
 <template>
   <section class="py-10 w-full bg-[#EFEFEF]">
-    <div class="max-w-7xl lg:max-w-5xl md:max-w-2xl w-full flex flex-row items-center gap-3 mx-auto">
+    <div class="max-w-7xl lg:max-w-5xl md:max-w-2xl w-full flex flex-row items-center gap-3 mx-auto px-5">
       <div class="w-5/12 lg:w-7/12 md:w-full flex flex-col gap-8 text-textPrimary text-center">
         <h2 class="text-3xl text-primary font-bold">
           O FinanBest é o produto de financiamento imobiliário da SejaBest.
@@ -29,7 +29,7 @@
           class="h-full w-full"
         ></iframe>
       </div>
-      <div v-show="!showVideo" class="w-7/12 lg:w-5/12 relative bg-black rounded-2xl z-0 md:hidden">
+      <div v-show="!showVideo" class="w-7/12 lg:w-5/12 relative bg-black rounded-2xl z-0 md:hidden overflow-hidden">
         <img
           src="/images/finanBest/bgVideoPlayer.png"
           alt=""
