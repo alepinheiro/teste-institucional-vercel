@@ -27,7 +27,7 @@
         </div>
 
         <a
-          :href="$options.information.bestHubApp.subscribe"
+          :href="$options.information.bestHubApp.subscribe+ $root.utms"
           target="_blank"
           class="text-black sm:text-center md:text-center text-xl font-bold px-5 py-3 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit mx-auto"
         >

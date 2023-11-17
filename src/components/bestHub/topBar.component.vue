@@ -26,7 +26,7 @@
             Entrar
           </a>
           <a
-            :href="$options.information.bestHubApp.subscribe"
+            :href="$options.information.bestHubApp.subscribe+ $root.utms"
             target="_blank"
             class="text-black px-6 py-2 rounded-xl font-hover transition-all bg-[#D0FE42] sm:hidden font-sans hover:-translate-y-1 font-bold"
           >
