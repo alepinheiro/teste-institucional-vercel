@@ -13,7 +13,7 @@ const useWindowSize = () => {
   const updateWindowSize = () => {
     width.value = window.innerWidth
     height.value = window.innerHeight
-    console.log(window.matchMedia('(min-width: 640px)'))
+
     if (window.matchMedia('(min-width: 640px)').matches) {
       size.value = 'sm'
     } else if (window.matchMedia('(min-width: 768px)').matches) {
@@ -25,11 +25,13 @@ const useWindowSize = () => {
     } else {
       size.value = 'xs'
     }
+
   }
-  console.log(size.value)
+
   onMounted(() => {
     window.addEventListener('resize', updateWindowSize)
     updateWindowSize()
+
   })
 
   onUnmounted(() => {

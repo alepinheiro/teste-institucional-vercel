@@ -1,16 +1,16 @@
 <template>
   <section class="py-10 w-full bg-[#EFEFEF]">
-    <div class="max-w-7xl w-full mx-auto">
+    <div class="w-full mx-auto xl:max-w-7xl">
       <component
         :is="'swiper-container'"
         v-bind="sliderOptions"
-        class="w-full px-5"
+        class="w-full px-5 lg:pl-40"
       >
         <component
           :is="'swiper-slide'"
           v-for="{ id, icon, title, text, link } of steps"
           :key="id"
-          class="bg-white rounded-lg p-12 h-auto w-80"
+          class="bg-white rounded-lg p-12 h-auto w-96 lg:w-80 md:w-72 mb-10"
         >
           <div class="flex flex-col gap-12 items-start font-Public-Sans">
             <i :class="icon" class="text-primary w-5 h-5"></i>
@@ -30,7 +30,7 @@
 import { SwiperOptions } from 'swiper/types'
 
 import useWindowSize from '@/composable/useWindowSize'
-import { onMounted, computed } from 'vue';
+import { onMounted, computed } from 'vue'
 
 const { width } = useWindowSize()
 const pagination = computed(() => width.value < 1024)
@@ -40,13 +40,7 @@ const sliderOptions: SwiperOptions = {
   slidesPerView: 'auto',
   pagination: true,
   breakpoints: {
-    320: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-    1280: {
+    1920: {
       slidesPerView: 4,
     },
   },
@@ -84,7 +78,6 @@ const steps = [
 ]
 
 onMounted(() => {
-  sliderOptions.pagination = pagination.value;
+  sliderOptions.pagination = pagination.value
 })
 </script>
-
