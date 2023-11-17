@@ -5,6 +5,7 @@
         <ComparisonTable />
         <VideoSection />
         <StepsSection />
+        <AboutUs />
     </main>
 </template>
 <script setup lang='ts'>
@@ -13,4 +14,5 @@
     import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.vue'
     import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
     import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
+    import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
 </script>
