@@ -3,17 +3,29 @@
     <div
       class="flex flex-col gap-6 max-w-7xl md:max-w-2xl mx-auto font-Public-Sans text-center px-5"
     >
-      <h2 class="text-3xl font-bold text-primary">
+      <h2 class="text-3xl sm:text-xl font-bold text-primary">
         Na SejaBest, suas chances de aprovação são maiores
       </h2>
-      <p class="text-xl text-textPrimary md:text-justify">
+      <div class="hidden sm:block">
+        <img
+          src="/images/finanBest/businessPartnersXL161123.png"
+          alt=""
+          srcset=""
+          class="object-contain"
+        />
+      </div>
+      <p class="text-xl sm:text-sm text-textPrimary md:text-justify">
         Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
-        financeiras, o que pode lhe garantir as melhores taxas e as maiores
-        chances de aprovação, além de um time de especialistas preparado para te
-        atender e te guiar durante todo o processo.
+        financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as
+        <b> maiores chances de aprovação</b>, além de um
+        <b> time de especialistas </b>preparado para te atender e te guiar
+        <b>durante todo o processo.</b>
       </p>
-      <div class="flex flex-row md:flex-col md:items-center md:gap-4 items-end">
-        <div class="flex-1">
+
+      <div
+        class="flex flex-row md:flex-col sm:flex-col md:items-center md:gap-4 items-end"
+      >
+        <div class="flex-1 sm:hidden">
           <img
             src="/images/finanBest/businessPartnersXL161123.png"
             alt=""
@@ -21,9 +33,15 @@
             class="object-contain"
           />
         </div>
-        <div class="flex-wrap flex flex-row gap-5 lg:gap-2 justify-center flex-1">
-          <div v-for="{ id, alt, source } of banks" :key="id" class="bg-black/5 py-3 px-4 rounded-md">
-            <img :src="source" :alt="alt" class="h-8 lg:h-6 md:h-6" />
+        <div
+          class="flex-wrap flex flex-row gap-5 lg:gap-2 justify-center flex-1"
+        >
+          <div
+            v-for="{ id, alt, source } of banks"
+            :key="id"
+            class="bg-black/5 py-3 px-4 rounded-md"
+          >
+            <img :src="source" :alt="alt" class="h-8 lg:h-6 md:h-6 sm:h-6" />
           </div>
         </div>
       </div>
