@@ -10,7 +10,7 @@
           :is="'swiper-slide'"
           v-for="{ id, icon, title, text, link } of steps"
           :key="id"
-          class="bg-white rounded-lg p-12 h-auto w-96 lg:w-80 md:w-72 mb-10"
+          class="bg-white rounded-lg p-12 h-auto w-80 lg:w-80 md:w-72 mb-10"
         >
           <div class="flex flex-col gap-12 items-start font-Public-Sans">
             <i :class="icon" class="text-primary w-5 h-5"></i>
