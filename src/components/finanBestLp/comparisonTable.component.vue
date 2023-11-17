@@ -3,20 +3,20 @@
     <div class="absolute z-0 inset-0 flex">
       <img src="/images/finanBest/bgComparisonTable.png" alt="" class=" self-end">
     </div>
-    <div class="max-w-7xl flex mx-auto font-Public-Sans z-10 relative">
+    <div class="max-w-7xl flex mx-auto font-Public-Sans z-10 relative px-5">
       <div
-        class="mx-auto w-8/12 flex flex-col bg-[#EFEFEF] items-center rounded-xl px-5 py-10"
+        class="mx-auto w-8/12 sm:w-full flex flex-col bg-[#EFEFEF] items-center rounded-xl px-5 py-10"
       >
-        <h2 class="text-5xl md:text-3xl text-textPrimary">
+        <h2 class="text-5xl sm:text-xl sm:text-center sm:text-primary md:text-3xl text-textPrimary sm:w-8/12 sm:mx-auto">
           Por que financiar com a <b> SejaBest?</b>
         </h2>
-        <div class="flex flex-col w-full px-10 pt-10 text-textPrimary">
+        <div class="flex flex-col w-full px-10 sm:px-0 pt-10 text-textPrimary">
           <div class="flex flex-row w-full items-center">
             <div class="w-1/2"></div>
             <div class="w-1/4 text-center">
               <img src="/images/logoBest/logoGray.svg" alt="Logomarca SejaBest" class="h-10 mx-auto">
             </div>
-            <div class="w-1/4 text-center">Bancos <br> Tradicionais</div>
+            <div class="w-1/4 text-center sm:text-xs">Bancos <br> Tradicionais</div>
           </div>
           <div
             v-for="{ id, text, ourProduct, otherProducts } in lines"
