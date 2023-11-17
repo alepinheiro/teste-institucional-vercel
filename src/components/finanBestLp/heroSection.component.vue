@@ -1,10 +1,13 @@
 <template>
   <section class="bg-primary w-full flex py-10 relative md:min-h-screen">
+    <div class="absolute inset-0 flex justify-center z-20">
+      <Topbar class=" w-full max-w-7xl lg:max-w-6xl px-5 mb-auto pt-4" />
+    </div>
     <div class="absolute inset-0 overflow-hidden z-0 flex items-end">
       <img src="/images/finanBest/heroSectionXL161123.png" alt="" class="hidden xl:block lg:block object-cover h-full ml-auto">
       <img src="/images/finanBest/heroSectionMD161123.png" alt="" class="hidden md:block object-cover h-full w-full">
     </div>
-    <div class="max-w-7xl md:max-w-2xl mx-auto flex flex-row w-full z-10 pt-24 px-5">
+    <div class="max-w-7xl md:max-w-2xl mx-auto flex flex-row w-full z-10 pt-24 px-5 relative">
       <!--  -->
       <div class="flex-1 md:mt-auto">
         <div
@@ -37,6 +40,7 @@
 </template>
 <script lang="ts" setup>
 import InputWithSlider from '@/components/finanBestLp/inputWithSlider.component.vue'
+import Topbar from '@/components/structure/topbar.component.vue'
 
 const sliderProps = {
   minimumValue: 100000,
