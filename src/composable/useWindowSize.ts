@@ -37,9 +37,9 @@ const useWindowSize = () => {
   })
 
   return {
-    width,
-    height,
-    size,
+    windowWidth: width.value,
+    windowHeight: height.value,
+    windowSize: size.value,
   }
 }
 

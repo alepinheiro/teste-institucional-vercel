@@ -29,8 +29,13 @@
 <script lang="ts" setup>
 import { SwiperOptions } from 'swiper/types'
 
+import useWindowSize from '@/composable/useWindowSize'
+
+const { windowWidth, windowHeight, windowSize } = useWindowSize()
+console.log(windowWidth, windowHeight, windowSize)
+
 const sliderOptions: SwiperOptions = {
-  spaceBetween:20,
+  spaceBetween: 20,
   slidesPerView: 'auto',
   pagination: false,
   breakpoints: {
