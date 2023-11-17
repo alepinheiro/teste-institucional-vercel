@@ -1,18 +1,20 @@
 <template>
-    <main>
-        <HeroSection />
-        <BusinessPartners />
-        <ComparisonTable />
-        <VideoSection />
-        <StepsSection />
-        <AboutUs />
-    </main>
+  <main>
+    <HeroSection />
+    <BusinessPartners />
+    <ComparisonTable />
+    <VideoSection />
+    <StepsSection />
+    <AboutUs />
+    <SubscribeSection />
+  </main>
 </template>
-<script setup lang='ts'>
-    import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
-    import BusinessPartners from '@/components/finanBestLp/businessPartners.component.vue'
-    import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.vue'
-    import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
-    import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
-    import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
+<script setup lang="ts">
+import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
+import BusinessPartners from '@/components/finanBestLp/businessPartners.component.vue'
+import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.vue'
+import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
+import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
+import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
+import SubscribeSection from '@/components/finanBestLp/subscribeSection.component.vue'
 </script>
