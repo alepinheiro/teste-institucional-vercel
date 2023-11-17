@@ -1,8 +1,8 @@
 <template>
   <div class="w-full">
-    <form  class="w-full bg-white rounded-xl p-5 flex flex-col gap-2" @submit.prevent="onSubmit">
+    <form  class="w-full bg-white sm:bg-transparent  rounded-xl p-5 flex flex-col gap-2" @submit.prevent="onSubmit">
       <div class="flex flex-col">
-        <label for="name">Nome Completo</label>
+        <label for="name" class="sm:text-white">Nome Completo</label>
         <input
           id="name"
           name="name"
@@ -12,7 +12,7 @@
         />
       </div>
       <div class="flex flex-col">
-        <label for="email">E-mail</label>
+        <label for="email" class="sm:text-white">E-mail</label>
         <input
           id="email"
           name="email"
@@ -22,7 +22,7 @@
         />
       </div>
       <div v-if="showHomeEquity" class="flex flex-col">
-        <label for="realtyValue">Quanto vale seu imóvel?</label>
+        <label for="realtyValue" class="sm:text-white">Quanto vale seu imóvel?</label>
         <input
           id="realtyValue"
           ref="realtyValue"
@@ -32,15 +32,15 @@
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md focus-within:outline-primary transition-all"
         />
       </div>
-      <div class="flex flex-row items-center gap-4">
-        <label for="creditAmount">De quanto você precisa?</label>
+      <div class="flex flex-row sm:flex-col items-center sm:items-start gap-4 sm:gap-0 sm:w-full">
+        <label for="creditAmount" class="sm:text-white">De quanto você precisa?</label>
         <input
           id="creditAmount"
           ref="creditAmount"
           name="creditAmount"
           type="text"
           placeholder="R$ 2500.000,00"
-          class="bg-zinc-200 rounded p-2 flex-grow focus-within:shadow-md focus-within:outline-primary transition-all"
+          class="bg-zinc-200 rounded p-2 flex-grow focus-within:shadow-md focus-within:outline-primary transition-all sm:w-full"
         />
       </div>
       <button class="bg-complementaryColor1 w-fit mx-auto px-3 py-2 rounded-md text-white font-bold md:mt-4">
