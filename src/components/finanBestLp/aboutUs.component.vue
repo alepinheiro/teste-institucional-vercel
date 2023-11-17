@@ -1,6 +1,6 @@
 <template>
   <section class="bg-secondary py-24 w-full">
-    <div class="max-w-7xl flex flex-col gap-24 w-full mx-auto px-5">
+    <div class="max-w-7xl flex flex-col gap-24 sm:gap-8 w-full mx-auto px-5">
       <div class="flex flex-row sm:flex-col sm:gap-5 w-10/12 mx-auto items-center">
         <div class="w-1/3 sm:w-full">
           <img
@@ -14,6 +14,11 @@
             Há mais de 10 anos transformamos o acesso ao crédito para quem busca
             sua melhor versão.
           </h2>
+        </div>
+      </div>
+      <div class=" flex-row gap-6 mx-auto hidden sm:flex">
+        <div v-for="{ alt, id, source } of seals" :key="id">
+          <img :src="source" :alt="alt" class="h-24 sm:h-auto" />
         </div>
       </div>
       <div class="flex flex-row sm:flex-col gap-4 text-white">
@@ -35,7 +40,7 @@
       </div>
       <div class="flex flex-row gap-6 mx-auto">
         <div v-for="{ alt, id, source } of seals" :key="id">
-          <img :src="source" :alt="alt" class="h-24" />
+          <img :src="source" :alt="alt" class="h-24 sm:hidden" />
         </div>
       </div>
     </div>
