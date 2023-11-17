@@ -1,22 +1,22 @@
 <template>
   <section class="bg-secondary py-24 w-full">
     <div class="max-w-7xl flex flex-col gap-24 w-full mx-auto px-5">
-      <div class="flex flex-row w-10/12 mx-auto items-center">
-        <div class="w-1/3">
+      <div class="flex flex-row sm:flex-col sm:gap-5 w-10/12 mx-auto items-center">
+        <div class="w-1/3 sm:w-full">
           <img
             src="/images/logoBest/logoSejaBestWhite.png"
             alt=""
-            class="object-contain h-14"
+            class="object-contain h-14 mx-auto "
           />
         </div>
         <div class="w-full">
-          <h2 class="text-3xl font-bold text-white text-center">
+          <h2 class="text-3xl sm:text-2xl font-bold text-white text-center">
             Há mais de 10 anos transformamos o acesso ao crédito para quem busca
             sua melhor versão.
           </h2>
         </div>
       </div>
-      <div class="flex flex-row gap-4 text-white">
+      <div class="flex flex-row sm:flex-col gap-4 text-white">
         <div
           v-for="{ id, icon, title, description } in cards"
           :key="id"
