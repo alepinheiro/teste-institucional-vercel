@@ -26,9 +26,9 @@
             >
           </p>
           <InputWithSlider :slider-props="sliderProps" />
-          <div class="flex flex-row gap-2 text-textPrimary items-center md:mx-auto">
+          <div class="flex flex-row gap-2 text-textPrimary items-center md:mx-auto sm:text-white">
             <i class="fa-solid fa-chevron-down"></i>
-            <p class="text-xs sm:text-2xs">Ou saiba mais sobre o Financiamento Imobiliário da SejaBest rolando para baixo</p>
+            <p class="text-xs sm:text-2xs ">Ou saiba mais sobre o Financiamento Imobiliário da SejaBest rolando para baixo</p>
           </div>
         </div>
       </div>
