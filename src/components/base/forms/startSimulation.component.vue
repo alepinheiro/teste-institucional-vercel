@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
     <form
-      class="w-full bg-white sm:bg-transparent rounded-xl p-5 flex flex-col gap-2"
+      class="w-full bg-white sm:bg-transparent rounded-xl p-5 flex flex-col gap-5"
       @submit.prevent="onSubmit"
     >
       <div class="flex flex-col">
@@ -27,9 +27,9 @@
         />
       </div>
       <div v-if="showHomeEquity" class="flex flex-col">
-        <label for="realtyValue" class="sm:text-white"
-          >Quanto vale seu imóvel?</label
-        >
+        <label for="realtyValue" class="sm:text-white">
+          Quanto vale seu imóvel?
+        </label>
         <input
           id="realtyValue"
           ref="realtyValue"
@@ -40,12 +40,10 @@
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md focus-within:outline-primary transition-all"
         />
       </div>
-      <div
-        class="flex flex-row sm:flex-col items-center sm:items-start gap-4 sm:gap-0 sm:w-full"
-      >
-        <label for="creditAmount" class="sm:text-white"
-          >De quanto você precisa?</label
-        >
+      <div class="flex flex-col">
+        <label for="creditAmount" class="sm:text-white">
+          De quanto você precisa?
+        </label>
         <input
           id="creditAmount"
           ref="creditAmount"
@@ -59,7 +57,7 @@
       <button
         title="Iniciar simulação agora"
         aria-label="Iniciar simulação agora"
-        class="bg-complementaryColor1 w-fit mx-auto px-3 py-2 rounded-md text-black font-bold md:mt-4"
+        class="bg-complementaryColor1 w-fit mx-auto px-3 py-2 rounded-md text-black font-bold mt-4"
       >
         Iniciar simulação agora
       </button>
@@ -112,15 +110,20 @@ const onSubmit = (event: Event) => {
     rangeSlider: '',
   }
 
-  if(data.creditAmount){
-    const cleanedValue = data.creditAmount.toString().replace('R$', '').trim();
-    const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.');
-    const floatNumber = parseFloat(formattedValue);
+  if (data.creditAmount) {
+    const cleanedValue = data.creditAmount.toString().replace('R$', '').trim()
+    const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.')
+    const floatNumber = parseFloat(formattedValue)
     data.creditAmount = `${floatNumber}`
   }
 
   localStorage.setItem('simulationData', JSON.stringify(data))
   window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
-  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${data.creditAmount}`, '_blank')
+  window.open(
+    `${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${
+      data.creditAmount
+    }`,
+    '_blank',
+  )
 }
 </script>

@@ -6,11 +6,11 @@
     >
       <label
         for="creditAmountWithSlider"
-        class="text-xl text-white font-bold sm:text-center sm:text-md"
+        class="text-xl text-white font-bold text-center sm:text-md"
       >
         Quanto custa o seu sonho?
       </label>
-      <div class="flex flex-row gap-4">
+      <div class="flex flex-row gap-2">
         <input
           id="creditAmountWithSlider"
           ref="inputRef"
@@ -27,7 +27,7 @@
           title="simular"
           class="bg-complementaryColor1 text-black px-4 py-2 rounded-md sm:hidden"
         >
-          Simular
+        Simular
         </button>
       </div>
       <input

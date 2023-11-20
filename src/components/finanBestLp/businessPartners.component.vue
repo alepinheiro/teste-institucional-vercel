@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full flex py-10">
+  <section class="w-full flex py-20">
     <div
       class="flex flex-col gap-6 max-w-7xl md:max-w-2xl mx-auto font-Public-Sans text-center px-5"
     >
@@ -23,7 +23,7 @@
       </p>
 
       <div
-        class="flex flex-row md:flex-col sm:flex-col md:items-center md:gap-4 items-end"
+        class="flex flex-row md:flex-col sm:flex-col md:items-center md:gap-4 items-end xl:py-20"
       >
         <div class="flex-1 sm:hidden">
           <img
