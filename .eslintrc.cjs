@@ -1,6 +1,13 @@
 module.exports = {
   env: { node: true },
-  extends: ['eslint:recommended', 'plugin:vue/vue3-recommended', 'prettier', 'plugin:@typescript-eslint/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:vue/vue3-recommended',
+    'prettier',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:storybook/recommended',
+    'plugin:lit-a11y/recommended'
+  ],
   globals: {
     defineEmits: 'readonly',
     defineProps: 'readonly',
@@ -10,8 +17,11 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     // sourceType: 'module',
   },
-  plugins: ['@typescript-eslint'],
+  plugins: [
+    '@typescript-eslint',
+    'lit-a11y'
+  ],
   rules: {
-    'vue/multi-word-component-names': 0 
+    'vue/multi-word-component-names': 0
   },
 }
