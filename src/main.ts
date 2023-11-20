@@ -16,7 +16,7 @@ import inputBase from '@/components/base/inputBase.component.vue'
 import inputMoney from '@/components/base/inputMoney.component.vue'
 import selectBase from '@/components/base/selectBase.component.vue'
 import videoBase from '@/components/base/videoBase.component.vue'
-import footerComponent from '@/components/structure/footer.component.vue'
+import footerComponent from '@/components/structure/theFooter.component.vue'
 register()
 // configurações do projeto
 import('./configurations/color.css')
