@@ -123,13 +123,13 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/dev/finanbest',
-    name: 'finanbest',
-    component: () => import('@/views/finanBestLP.vue'),
+    name: 'FinanBest',
+    component: () => import('@/views/FinanBestLP.vue'),
   },
   {
     path: '/dev/homeEquity',
-    name: 'finanbest',
-    component: () => import('@/views/newHomeEquityLP.vue'),
+    name: 'CashBest',
+    component: () => import('@/views/CashBestLP.vue'),
   },
 ]
 

@@ -11,6 +11,7 @@
   </main>
 </template>
 <script setup lang="ts">
+import { useHead } from '@vueuse/head'
 import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
 import BusinessPartners from '@/components/finanBestLp/businessPartners.component.vue'
 import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.vue'
@@ -19,7 +20,6 @@ import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
 import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
 import SubscribeSection from '@/components/finanBestLp/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
-import { useHead } from '@vueuse/head'
 
 useHead({
   title: 'FinanBest: Financie seu imóvel com a assessoria SejaBest',

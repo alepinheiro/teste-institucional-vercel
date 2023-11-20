@@ -43,8 +43,8 @@ import InputWithSlider from '@/components/finanBestLp/inputWithSlider.component.
 import Topbar from '@/components/structure/topbar.component.vue'
 
 const sliderProps = {
-  minimumValue: 100000,
-  maximumValue: 9999999,
-  defaultValue: 250000,
+  minimumValue: 50000,
+  maximumValue: 30000000,
+  defaultValue: 350000,
 }
 </script>

@@ -18,7 +18,10 @@
           name="creditAmountWithSlider"
           type="text"
           class="rounded-md w-full px-4 sm:py-2"
-          placeholder="R$ 250.000,00"
+          :placeholder="props.sliderProps.defaultValue.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+          })"
           required
           @input="onInput"
         />
@@ -38,7 +41,7 @@
         type="range"
         aria-label="Deslize para alterar o valor"
         title="Faixa de valor"
-        min="sliderProps.minimumValue"
+        :min="sliderProps.minimumValue"
         :max="sliderProps.maximumValue"
         class="slider"
         @input="setValue(numberValue)"
