@@ -4,7 +4,7 @@
       class="flex flex-col gap-6 max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto font-Public-Sans text-center px-5"
     >
       <h2 class="text-3xl sm:text-xl font-bold text-primary">
-        Na SejaBest, suas chances de aprovação são maiores
+        {{ title }}
       </h2>
       <div class="hidden sm:block">
         <img
@@ -14,13 +14,10 @@
           class="object-contain"
         />
       </div>
-      <p class="text-xl sm:text-sm text-textPrimary md:text-justify">
-        Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
-        financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as
-        <b> maiores chances de aprovação</b>, além de um
-        <b> time de especialistas </b>preparado para te atender e te guiar
-        <b>durante todo o processo.</b>
-      </p>
+      <p
+      class="text-xl sm:text-sm text-textPrimary md:text-justify"
+      v-html="description"
+      ></p>
 
       <div
         class="flex flex-row md:flex-col sm:flex-col items-center md:gap-4 xl:py-20"
@@ -131,4 +128,15 @@ const banks = [
     source: '/images/finanBest/banks/bancoC6.png',
   },
 ]
+
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+})
 </script>

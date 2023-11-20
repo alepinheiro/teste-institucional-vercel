@@ -1,12 +1,21 @@
 <template>
   <main>
     <HeroSection />
+    <BusinessPartners
+      :title="'Maximizamos suas chances de aprovação'"
+      :description="'Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b>maiores chances</b> de aprovação.'" />
+      <ComparisonTable />
+      <AboutUs />
+      <TheFooter />
   </main>
 </template>
 <script lang="ts" setup>
-import HeroSection from '@/components/cashBest/heroSection.component.vue'
 import { useHead } from '@vueuse/head'
-
+import HeroSection from '@/components/cashBest/heroSection.component.vue'
+import BusinessPartners from '@/components/base/businessPartners.component.vue'
+import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.vue'
+import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
+import TheFooter from '@/components/structure/theFooter.component.vue'
 useHead({
   title: 'CashBest: o Crédito com Garantia de Imóvel da SejaBest',
   meta: [
