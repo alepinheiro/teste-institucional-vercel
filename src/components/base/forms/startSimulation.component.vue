@@ -108,6 +108,13 @@ const onSubmit = (event: Event) => {
     rangeSlider: '',
   }
 
+  if(data.creditAmount){
+    const cleanedValue = data.creditAmount.toString().replace('R$', '').trim();
+    const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.');
+    const floatNumber = parseFloat(formattedValue);
+    data.creditAmount = `${floatNumber}`
+  }
+
   localStorage.setItem('simulationData', JSON.stringify(data))
   window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
   window.open(`${information.appSimulator}?${fullPath.split('?')[1]}`, '_blank')
