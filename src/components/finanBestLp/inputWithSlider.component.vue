@@ -5,17 +5,17 @@
       @submit.prevent="onSubmit"
     >
       <label
-        for="creditAmount"
+        for="creditAmountWithSlider"
         class="text-xl text-white font-bold sm:text-center sm:text-md"
       >
         Quanto custa o seu sonho?
       </label>
       <div class="flex flex-row gap-4">
         <input
-          id="creditAmount"
+          id="creditAmountWithSlider"
           ref="inputRef"
           v-model="inputValue"
-          name="creditAmount"
+          name="creditAmountWithSlider"
           type="text"
           class="rounded-md w-full px-4 sm:py-2"
           placeholder="R$ 250.000,00"
@@ -108,7 +108,7 @@ const onSubmit = (event: Event) => {
     name: '',
     email: '',
     realtyValue: formData.get('realtyValue'),
-    creditAmount: formData.get('creditAmount'),
+    creditAmount: formData.get('creditAmountWithSlider'),
     rangeSlider: formData.get('rangeSlider'),
   }
 
