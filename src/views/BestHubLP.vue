@@ -17,7 +17,7 @@
   </main>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ComponentPublicInstance } from 'vue'
 
 import HeroSection from '@/components/bestHub/heroSection.component.vue'
 import BanksSection from '@/components/bestHub/banksSection.component.vue'
@@ -31,7 +31,7 @@ import BestTable from '@/components/bestHub/bestTable.component.vue'
 import ProductBoxSection from '@/components/bestHub/productBox.component.vue'
 import FaqSection from '@/components/bestHub/faqSection.component.vue'
 import FooterSection from '@/components/bestHub/footerSection.component.vue'
-
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
   name: 'BestProLP',
   components: {
@@ -129,6 +129,12 @@ export default defineComponent({
           label: 'Economizou R$ 600,00',
         },
       ],
+    }
+  },
+  mounted() {
+    let fullUrl = this.$route.fullPath.split('?')
+    if (this.$route.fullPath.includes('?')) {
+      ;(this.$root as IRootExtension).utms = '?' + fullUrl[1]
     }
   },
 })
