@@ -120,6 +120,6 @@ const onSubmit = (event: Event) => {
 
   localStorage.setItem('simulationData', JSON.stringify(data))
   window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
-  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}&`, '_blank')
+  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${data.creditAmount}`, '_blank')
 }
 </script>
