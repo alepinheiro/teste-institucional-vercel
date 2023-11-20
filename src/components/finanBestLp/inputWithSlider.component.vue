@@ -19,6 +19,7 @@
           type="text"
           class="rounded-md w-full px-4 sm:py-2"
           placeholder="R$ 250.000,00"
+          required
           @input="onInput"
         />
         <button

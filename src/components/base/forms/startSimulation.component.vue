@@ -11,6 +11,7 @@
           name="name"
           type="text"
           placeholder="Digite seu nome completo"
+          required
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md focus-within:outline-primary transition-all"
         />
       </div>
@@ -19,8 +20,9 @@
         <input
           id="email"
           name="email"
-          type="text"
+          type="email"
           placeholder="Seu melhor e-mail"
+          required
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md focus-within:outline-primary transition-all"
         />
       </div>
@@ -34,6 +36,7 @@
           name="realtyValue"
           type="text"
           placeholder="R$ 2500.000,00"
+          :required="showHomeEquity"
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md focus-within:outline-primary transition-all"
         />
       </div>
@@ -49,6 +52,7 @@
           name="creditAmount"
           type="text"
           placeholder="R$ 2500.000,00"
+          required
           class="bg-zinc-200 rounded p-2 flex-grow focus-within:shadow-md focus-within:outline-primary transition-all sm:w-full"
         />
       </div>
