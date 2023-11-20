@@ -1,11 +1,6 @@
 module.exports = {
   env: { node: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:vue/vue3-recommended',
-    'prettier',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: ['eslint:recommended', 'plugin:vue/vue3-recommended', 'prettier', 'plugin:@typescript-eslint/recommended', 'plugin:storybook/recommended'],
   globals: {
     defineEmits: 'readonly',
     defineProps: 'readonly',
