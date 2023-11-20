@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-primary w-full flex pt-10 relative md:min-h-screen sm:min-h-screen">
+  <section class="bg-primary w-full flex pt-10 relative min-h-screen sm:pt-0">
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
       <Topbar class=" w-full max-w-7xl lg:max-w-6xl px-5 mb-auto pt-4" />
     </div>
@@ -7,9 +7,9 @@
       <img src="/images/finanBest/heroSectionXL161123.png" alt="" class="hidden xl:block lg:block object-cover h-full ml-auto">
       <img src="/images/finanBest/heroSectionMD161123.png" alt="" class="hidden md:block sm:block object-cover h-full w-full">
     </div>
-    <div class="max-w-7xl md:max-w-2xl mx-auto flex flex-row w-full z-10 pt-24 px-5 sm:px-0 relative">
+    <div class="max-w-7xl md:max-w-2xl mx-auto flex flex-row w-full z-10 py-12 sm:py-0 px-5 sm:px-0 relative sm:max-h-screen">
       <!--  -->
-      <div class="flex-1 md:mt-auto sm:bg-gradient-to-b sm:from-transparent sm:to-bgDarkColor">
+      <div class="flex-1 mt-auto sm:bg-gradient-to-b sm:from-transparent sm:to-bgDarkColor">
         <div
           class="bg-white sm:bg-transparent flex flex-col gap-6 sm:gap-2 md:gap-3 font-Public-Sans p-8 md:px-8 py-4 rounded-xl shadow-lg sm:h-full sm:justify-end"
         >
@@ -26,7 +26,7 @@
             >
           </p>
           <InputWithSlider :slider-props="sliderProps" />
-          <div class="flex flex-row gap-2 text-textPrimary items-center md:mx-auto sm:text-white">
+          <div class="flex flex-row gap-2 text-textPrimary items-center md:mx-auto sm:text-white sm:w-5/6 sm:mx-auto">
             <i class="fa-solid fa-chevron-down"></i>
             <p class="text-xs sm:text-2xs ">Ou saiba mais sobre o Financiamento Imobiliário da SejaBest rolando para baixo</p>
           </div>
