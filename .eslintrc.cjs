@@ -6,7 +6,7 @@ module.exports = {
     'prettier',
     'plugin:@typescript-eslint/recommended',
     'plugin:storybook/recommended',
-    'plugin:lit-a11y/recommended'
+    'plugin:vuejs-accessibility/recommended'
   ],
   globals: {
     defineEmits: 'readonly',
@@ -19,9 +19,20 @@ module.exports = {
   },
   plugins: [
     '@typescript-eslint',
-    'lit-a11y'
+    'vuejs-accessibility'
   ],
   rules: {
-    'vue/multi-word-component-names': 0
+    'vue/multi-word-component-names': 0,
+    'vuejs-accessibility/label-has-for': [
+      "error",
+      {
+        "components": [],
+        "controlComponents": [],
+        "required": {
+          "every": [ "id"]
+        },
+        "allowChildren": false
+      }
+    ]
   },
 }
