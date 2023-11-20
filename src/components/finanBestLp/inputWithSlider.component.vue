@@ -108,8 +108,10 @@ const onSubmit = (event: Event) => {
     amountInput: formData.get('amountInput'),
     rangeSlider: formData.get('rangeSlider'),
   }
-  console.log(new Date().toISOString())
+  console.log(data);
+
   window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() });
-  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}&${data.amountInput}&${data.rangeSlider}`, '_blank')
+  //&${data.amountInput}&${data.rangeSlider}
+  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}`, '_blank')
 }
 </script>
