@@ -15,20 +15,40 @@
       allowfullscreen
       class="absolute sm:-top-[0%] inset-0 -z-10 -top-14 sm:hidden opacity-40"
     ></iframe>
-    <div class="max-w-7xl mx-auto text-white mt-16 border w-full flex">
-      <div class="flex flex-row mt-auto items-center justify-between w-full">
-        <div class="w-7/12 flex-grow">
-          <h1>CashBest: o Crédito com Garantia de Imóvel da SejaBest</h1>
-          <p>
+    <div class="max-w-7xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4">
+      <div class="flex flex-row mt-auto items-end justify-between w-full gap-3">
+        <div class="w-7/12 flex-grow flex flex-col gap-3 text-white">
+          <h1 class="text-5xl font-bold leading-snug">
+            <span
+              class="relative z-0 after:absolute after:bg-primary after:-inset-0.5 after:content-[''] after:-z-10"
+            >
+              CashBest:
+            </span>
+            o Crédito com Garantia de Imóvel da SejaBest
+          </h1>
+          <p class="text-lg">
             Descubra as melhores taxas do mercado: a partir de 1.09% a.m. + IPCA
-            ou 1.49% a.m. fixa. Com a possibilidade de liberar até 60% do valor
-            do seu imóvel como capital para usar como desejar, e ainda contar
-            com um prazo de até 20 anos para pagamento.
+            ou 1.49% a.m. fixa.
+            <b>
+              Com a possibilidade de liberar até 60% do valor do seu imóvel como
+              capital
+            </b>
+            para usar como desejar, e ainda contar com um prazo de até 20 anos
+            para pagamento.
           </p>
         </div>
         <div class="w-5/12 flex-grow">
           <InputWithSlider :slider-props="sliderProps" />
         </div>
+      </div>
+      <div
+        class="flex flex-row gap-2 text-textPrimary items-center md:mx-auto sm:text-white sm:w-5/6 sm:mx-auto"
+      >
+        <i class="fa-solid fa-chevron-down"></i>
+        <p class="text-xs sm:text-2xs">
+          Ou saiba mais sobre o Home Equity rolando
+          para baixo
+        </p>
       </div>
     </div>
   </section>
@@ -39,7 +59,8 @@ import Topbar from '@/components/structure/topbar.component.vue'
 import InputWithSlider from '@/components/finanBestLp/inputWithSlider.component.vue'
 const sliderProps = {
   minimumValue: 50000,
-  maximumValue: 30000000,
-  defaultValue: 50000,
+  maximumValue: 15000000,
+  defaultValue: 350000,
+  backgroundColor: '#FFFFFF20',
 }
 </script>

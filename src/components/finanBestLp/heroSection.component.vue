@@ -46,5 +46,6 @@ const sliderProps = {
   minimumValue: 50000,
   maximumValue: 30000000,
   defaultValue: 350000,
+  backgroundColor: '',
 }
 </script>

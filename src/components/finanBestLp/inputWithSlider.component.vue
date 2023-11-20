@@ -1,7 +1,8 @@
 <template>
   <div>
     <form
-      class="bg-primary sm:bg-white/20 flex flex-col gap-6 sm:gap-3 md:gap-3 rounded-xl p-4"
+      class=" flex flex-col gap-6 sm:gap-3 md:gap-3 rounded-xl p-4"
+      :class="[sliderProps.backgroundColor ? 'bgPropsColor' : 'bg-primary sm:bg-white/20'  ]"
       @submit.prevent="onSubmit"
     >
       <label
@@ -37,7 +38,7 @@
         id="rangeSlider"
         v-model="numberValue"
         name="rangeSlider"
-        step="100"
+        step="10000"
         type="range"
         aria-label="Deslize para alterar o valor"
         title="Faixa de valor"
@@ -73,9 +74,11 @@ const props = defineProps({
       minimumValue: number
       maximumValue: number
       defaultValue: number
+      backgroundColor: string
     },
     required: true,
   },
+
 })
 
 const options: CurrencyInputOptions = {
@@ -93,6 +96,7 @@ const options: CurrencyInputOptions = {
 const { inputRef, numberValue, setValue } = useCurrencyInput(options)
 const inputValue = ref(props.sliderProps.defaultValue)
 const sliderValue = ref(props.sliderProps.defaultValue)
+const bgColor = props.sliderProps.backgroundColor;
 
 const onInput = (event: Event) => {
   const { value } = event.target as HTMLInputElement
@@ -127,3 +131,10 @@ const onSubmit = (event: Event) => {
   window.open(`${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${data.creditAmount}`, '_blank')
 }
 </script>
+<style lang="scss">
+
+.bgPropsColor {
+  background-color: v-bind(bgColor);
+}
+
+</style>
