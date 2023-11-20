@@ -126,6 +126,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'finanbest',
     component: () => import('@/views/finanBestLP.vue'),
   },
+  {
+    path: '/dev/homeEquity',
+    name: 'finanbest',
+    component: () => import('@/views/newHomeEquityLP.vue'),
+  },
 ]
 
 const router = createRouter({
