@@ -105,6 +105,7 @@ const onSubmit = (event: Event) => {
     email: formData.get('email'),
     realtyValue: formData.get('realtyValue'),
     creditAmount: formData.get('creditAmount'),
+    rangeSlider: '',
   }
 
   localStorage.setItem('simulationData', JSON.stringify(data))

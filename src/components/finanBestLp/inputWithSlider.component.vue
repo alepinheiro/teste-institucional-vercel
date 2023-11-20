@@ -5,17 +5,17 @@
       @submit.prevent="onSubmit"
     >
       <label
-        for="amountInput"
+        for="creditAmount"
         class="text-xl text-white font-bold sm:text-center sm:text-md"
       >
         Quanto custa o seu sonho?
       </label>
       <div class="flex flex-row gap-4">
         <input
-          id="amountInput"
+          id="creditAmount"
           ref="inputRef"
           v-model="inputValue"
-          name="amountInput"
+          name="creditAmount"
           type="text"
           class="rounded-md w-full px-4 sm:py-2"
           placeholder="R$ 250.000,00"
@@ -104,12 +104,15 @@ const onSubmit = (event: Event) => {
   const formData = new FormData(event.target as HTMLFormElement)
 
   const data = {
-    amountInput: formData.get('amountInput'),
+    name: '',
+    email: '',
+    realtyValue: formData.get('realtyValue'),
+    creditAmount: formData.get('creditAmount'),
     rangeSlider: formData.get('rangeSlider'),
   }
 
   localStorage.setItem('simulationData', JSON.stringify(data))
   window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
-  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}`, '_blank')
+  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}&`, '_blank')
 }
 </script>
