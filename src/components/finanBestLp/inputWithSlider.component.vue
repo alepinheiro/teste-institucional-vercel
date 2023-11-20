@@ -53,15 +53,14 @@
   </div>
 </template>
 <script setup lang="ts">
-import information from '@/configurations/information';
+import information from '@/configurations/information'
 import { ref } from 'vue'
-
+import { useRoute } from 'vue-router'
 import {
   CurrencyInputOptions,
   useCurrencyInput,
   //@ts-expect-error no types
 } from 'vue-currency-input'
-import { useRoute } from 'vue-router';
 
 const { fullPath } = useRoute()
 const props = defineProps({
@@ -108,10 +107,9 @@ const onSubmit = (event: Event) => {
     amountInput: formData.get('amountInput'),
     rangeSlider: formData.get('rangeSlider'),
   }
-  console.log(data);
 
-  window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() });
-  //&${data.amountInput}&${data.rangeSlider}
+  localStorage.setItem('simulationData', JSON.stringify(data))
+  window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
   window.open(`${information.appSimulator}?${fullPath.split('?')[1]}`, '_blank')
 }
 </script>

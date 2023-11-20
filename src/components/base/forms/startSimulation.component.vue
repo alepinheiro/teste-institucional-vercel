@@ -63,6 +63,8 @@
   </div>
 </template>
 <script lang="ts" setup>
+import information from '@/configurations/information'
+import { useRoute } from 'vue-router'
 import {
   CurrencyInputOptions,
   useCurrencyInput,
@@ -84,6 +86,8 @@ const options: CurrencyInputOptions = {
 const { inputRef: realtyValue } = useCurrencyInput(options)
 const { inputRef: creditAmount } = useCurrencyInput(options)
 
+const { fullPath } = useRoute()
+
 defineProps({
   showHomeEquity: {
     type: Boolean,
@@ -103,6 +107,8 @@ const onSubmit = (event: Event) => {
     creditAmount: formData.get('creditAmount'),
   }
 
-  console.log(data)
+  localStorage.setItem('simulationData', JSON.stringify(data))
+  window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
+  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}`, '_blank')
 }
 </script>
