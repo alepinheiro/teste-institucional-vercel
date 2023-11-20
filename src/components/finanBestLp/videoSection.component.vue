@@ -25,7 +25,7 @@
       </div>
       <div
         v-show="showVideo"
-        class="w-7/12 lg:w-5/12 sm:w-full h-96 sm:h-48 rounded-2xl overflow-hidden md:hidden"
+        class="w-7/12 lg:w-5/12 sm:w-full h-96 sm:aspect-video sm:h-auto rounded-2xl overflow-hidden md:hidden"
       >
         <iframe
           src="https://www.youtube.com/embed/IXZj925aJDY"
@@ -33,17 +33,17 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-          class="h-full w-full"
+          class="h-auto w-full aspect-video"
         ></iframe>
       </div>
       <div
         v-show="!showVideo"
-        class="w-7/12 lg:w-5/12 sm:w-full relative bg-black rounded-2xl z-0 md:hidden overflow-hidden"
+        class="w-7/12 lg:w-5/12 sm:w-full aspect-video relative bg-black rounded-2xl z-0 md:hidden overflow-hidden"
       >
         <img
           src="/images/finanBest/bgVideoPlayer.png"
           alt=""
-          class="opacity-50 object-cover h-96 sm:h-48 w-full"
+          class="opacity-50 object-cover h-96 sm:h-auto sm:aspect-video w-full"
         />
         <div
           class="w-8 h-8 rounded-full absolute inset-0 m-auto animate-ping z-0 bg-zinc-300"

@@ -1,7 +1,7 @@
 <template>
   <section class="w-full flex py-20">
     <div
-      class="flex flex-col gap-6 max-w-7xl md:max-w-2xl mx-auto font-Public-Sans text-center px-5"
+      class="flex flex-col gap-6 max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto font-Public-Sans text-center px-5"
     >
       <h2 class="text-3xl sm:text-xl font-bold text-primary">
         Na SejaBest, suas chances de aprovação são maiores
@@ -23,9 +23,9 @@
       </p>
 
       <div
-        class="flex flex-row md:flex-col sm:flex-col md:items-center md:gap-4 items-end xl:py-20"
+        class="flex flex-row md:flex-col sm:flex-col items-center md:gap-4 xl:py-20"
       >
-        <div class="flex-1 sm:hidden">
+        <div class="flex-1 lg:w-7/12 lg:flex-initial sm:hidden">
           <img
             src="/images/finanBest/businessPartnersXL161123.png"
             alt=""

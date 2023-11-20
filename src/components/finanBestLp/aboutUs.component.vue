@@ -1,6 +1,6 @@
 <template>
   <section class="bg-secondary py-24 w-full">
-    <div class="max-w-7xl flex flex-col gap-24 sm:gap-8 w-full mx-auto px-5">
+    <div class="max-w-7xl lg:max-w-5xl flex flex-col gap-24 sm:gap-8 w-full mx-auto px-5">
       <div class="flex flex-row gap-2 sm:flex-col sm:gap-5 w-10/12 mx-auto items-center">
         <div class="w-1/3 sm:w-full">
           <img
