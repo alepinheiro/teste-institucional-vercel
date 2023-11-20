@@ -6,9 +6,9 @@
     },
     "allowJs": true,
     "target": "esnext",
-    "module": "commonjs",
+    "module": "nodenext",
     "useDefineForClassFields": true,
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
@@ -23,5 +23,9 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
-  "include": ["src/**/*.ts", "src/**/*.vue"]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/translations/i18n.ts"],
+  "exclude": [
+    "node_modules"
+  ]
+
 }

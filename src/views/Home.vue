@@ -89,7 +89,10 @@
                       class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
                     >
                       <a
-                        :href="$options.information.appSimulator + ($root as IRootExtension).utms"
+                        :href="
+                          $options.information.appSimulator +
+                          ($root as IRootExtension).utms
+                        "
                         aria-label="Simular"
                         style="text-decoration: none"
                         target="_blank"
@@ -165,7 +168,10 @@
                     class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
                   >
                     <a
-                      :href="$options.information.appSimulator + ($root as IRootExtension).utms"
+                      :href="
+                        $options.information.appSimulator +
+                        ($root as IRootExtension).utms
+                      "
                       aria-label="Simular"
                       style="text-decoration: none"
                       target="_blank"
@@ -478,6 +484,7 @@
         </div>
       </section>
     </div>
+
     <section class="w-full bgMeioAzul p-4 sm:hidden md:hidden pt-24 sm:pt-8">
       <div
         class="maxWidth p-0 shadow-lg bg-bglightColor rounded-2xl flex flex-wrap"
@@ -1013,17 +1020,17 @@
     </section>
   </div>
   <Rodape />
-  <FooterComponent  />
+  <FooterComponent />
 </template>
 
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue'
-import TopbarComponent from '@/components/structure/topbar.component.vue'
 import Rodape from '@/components/base/bannerBottomPage.vue'
+import TopbarComponent from '@/components/structure/topbar.component.vue'
 import carouselHome from '@/components/base/carouselHome.vue'
-import { SplideSlide } from '@splidejs/vue-splide'
-import carouselHomeTablet from '@/components/base/carouselHomeTablet.vue'
 import carouselHomeMobile from '@/components/base/carouselHomeMobile.vue'
+import carouselHomeTablet from '@/components/base/carouselHomeTablet.vue'
+import { SplideSlide } from '@splidejs/vue-splide'
+import { defineComponent, ComponentPublicInstance } from 'vue'
 
 type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
@@ -1046,7 +1053,7 @@ export default defineComponent({
   mounted() {
     let fullUrl = this.$route.fullPath.split('?')
     if (this.$route.fullPath.includes('?')) {
-      (this.$root as IRootExtension).utms = '?' + fullUrl[1]
+      ;(this.$root as IRootExtension).utms = '?' + fullUrl[1]
     }
     /* Função para aparecer somente se é a primeira visita, creio que pode ser reutilizado
     if (!localStorage.getItem('isVisited')) {
