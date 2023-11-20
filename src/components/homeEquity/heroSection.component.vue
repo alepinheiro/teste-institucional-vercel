@@ -5,6 +5,16 @@
     </div>
   </section>
 </template>
+
 <script lang="ts" setup>
 import Topbar from '@/components/structure/topbar.component.vue'
+import { defineComponent } from 'vue';
+</script>
+
+<script lang="ts">
+export default defineComponent({
+    metaInfo() {
+
+    },
+})
 </script>
