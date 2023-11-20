@@ -2,7 +2,7 @@
   <div>
     <form
       class="bg-primary sm:bg-white/20 flex flex-col gap-6 sm:gap-3 md:gap-3 rounded-xl p-4"
-      @submit.prevent="false"
+      @submit.prevent="onSubmit"
     >
       <label
         for="amountInput"
@@ -32,6 +32,7 @@
       <input
         id="rangeSlider"
         v-model="numberValue"
+        name="rangeSlider"
         step="100"
         type="range"
         aria-label="Deslize para alterar o valor"
@@ -52,13 +53,17 @@
   </div>
 </template>
 <script setup lang="ts">
+import information from '@/configurations/information';
 import { ref } from 'vue'
+
 import {
   CurrencyInputOptions,
   useCurrencyInput,
   //@ts-expect-error no types
 } from 'vue-currency-input'
+import { useRoute } from 'vue-router';
 
+const { fullPath } = useRoute()
 const props = defineProps({
   sliderProps: {
     type: Object as () => {
@@ -83,7 +88,6 @@ const options: CurrencyInputOptions = {
   accountingSign: false,
 }
 const { inputRef, numberValue, setValue } = useCurrencyInput(options)
-
 const inputValue = ref(props.sliderProps.defaultValue)
 const sliderValue = ref(props.sliderProps.defaultValue)
 
@@ -93,5 +97,19 @@ const onInput = (event: Event) => {
   if (value) {
     sliderValue.value = numberValue.value
   }
+}
+
+const onSubmit = (event: Event) => {
+  if (!event) return
+  if (!event.target) return
+  const formData = new FormData(event.target as HTMLFormElement)
+
+  const data = {
+    amountInput: formData.get('amountInput'),
+    rangeSlider: formData.get('rangeSlider'),
+  }
+  console.log(new Date().toISOString())
+  window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() });
+  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}&${data.amountInput}&${data.rangeSlider}`, '_blank')
 }
 </script>

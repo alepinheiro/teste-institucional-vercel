@@ -27,9 +27,8 @@
   </section>
 </template>
 <script lang="ts" setup>
+import useWindowSize from '@/composables/useWindowSize'
 import { SwiperOptions } from 'swiper/types'
-
-import useWindowSize from '@/composable/useWindowSize'
 import { onMounted, computed } from 'vue'
 
 const { width } = useWindowSize()
