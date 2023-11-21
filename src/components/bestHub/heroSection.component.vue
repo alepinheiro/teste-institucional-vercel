@@ -34,24 +34,30 @@
           <h2 class="font-normal text-2xl">
             O melhor hub de crédito do mercado
           </h2>
-          <a
-            :href="$options.information.bestHubApp.subscribe+ $root.utms"
+          <button
             target="_blank"
             class="text-black text-xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1"
+            @click="openLink()"
           >
             Quero ser um parceiro Best
-          </a>
+          </button>
         </div>
       </div>
     </div>
   </section>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ComponentPublicInstance } from 'vue'
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
   name: 'HeroSection',
   data() {
     return {}
   },
+  methods:{
+    openLink() {
+      window.open(this.$options.information.bestHubApp.subscribe + (this.$root as IRootExtension).utms, '_blank')
+    },
+  }
 })
 </script>

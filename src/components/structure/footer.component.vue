@@ -153,18 +153,6 @@
           </div>
 
           <div class="sm:text-sm text-textSecondary pb-6">
-            <a
-              :href="$options.information.appClient"
-              class="hover:text-textSecondary"
-              style="text-decoration: none"
-              aria-label="Acesse sua conta"
-              target="_blank"
-            >
-              Acesse sua conta
-            </a>
-          </div>
-
-          <div class="sm:text-sm text-textSecondary pb-6">
             <router-link
               :to="'/termos-de-uso' + $root.utms"
               aria-label="Termos de uso"

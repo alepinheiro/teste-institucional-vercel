@@ -23,13 +23,12 @@
             já confiaram na capacidade do BestHub, utilizando nossos recursos
             para potencializar seus negócios.
           </p>
-          <a
-            :href="$options.information.bestHubApp.subscribe+ $root.utms"
-            target="_blank"
+          <button
             class="text-black sm:text-center text-lg font-bold px-5 py-3 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit sm:mx-auto md:mx-auto"
-          >
+            @click="openLink()"
+            >
             Quero ser um parceiro Best
-          </a>
+          </button>
         </div>
 
         <div
@@ -63,7 +62,8 @@
   </section>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ComponentPublicInstance } from 'vue'
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
   name: 'BanksSection',
   data() {
@@ -171,5 +171,10 @@ export default defineComponent({
       ],
     }
   },
+  methods:{
+    openLink() {
+      window.open(this.$options.information.bestHubApp.subscribe + (this.$root as IRootExtension).utms, '_blank')
+    },
+  }
 })
 </script>
