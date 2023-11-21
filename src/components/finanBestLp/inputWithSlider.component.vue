@@ -3,7 +3,7 @@
     <form
       class="flex flex-col gap-6 sm:gap-3 md:gap-3 rounded-xl p-4"
       :class="[
-        props.backgroundColor ? 'bgPropsColor' : 'bg-primary sm:bg-white/20',
+        !props.backgroundColor ? 'bg-primary sm:bg-white/20' :  props.backgroundColor,
       ]"
       @submit.prevent="onSubmit"
     >
@@ -97,7 +97,6 @@ const options: CurrencyInputOptions = {
 const { inputRef, numberValue, setValue } = useCurrencyInput(options)
 const inputValue = ref(sliderProps.defaultValue)
 const sliderValue = ref(sliderProps.defaultValue)
-const bgColor = sliderProps.backgroundColor
 
 const onInput = (event: Event) => {
   const { value } = event.target as HTMLInputElement
@@ -137,8 +136,3 @@ const onSubmit = (event: Event) => {
   )
 }
 </script>
-<style lang="scss">
-.bgPropsColor {
-  background-color: v-bind(bgColor);
-}
-</style>
