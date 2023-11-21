@@ -8,7 +8,10 @@
     <ComparisonTable />
     <VideoSection />
     <StepsSection />
-    <AboutUs />
+    <AboutUs
+      :cards="{ bgColor: 'PRIMARY' }"
+      :container="{ bgColor: 'SECONDARY' }"
+    />
     <SubscribeSection />
     <TheFooter />
   </main>

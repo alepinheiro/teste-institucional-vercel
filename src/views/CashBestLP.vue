@@ -3,10 +3,14 @@
     <HeroSection />
     <BusinessPartners
       :title="'Maximizamos suas chances de aprovação'"
-      :description="'Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b>maiores chances</b> de aprovação.'" />
-      <ComparisonTable />
-      <AboutUs />
-      <TheFooter />
+      :description="'Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b>maiores chances</b> de aprovação.'"
+    />
+    <ComparisonTable />
+    <AboutUs
+      :cards="{ bgColor: 'SECONDARY' }"
+      :container="{ bgColor: 'BGDARKCOLOR' }"
+    />
+    <TheFooter />
   </main>
 </template>
 <script lang="ts" setup>

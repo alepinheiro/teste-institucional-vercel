@@ -1,12 +1,23 @@
 <template>
-  <section class="bg-secondary py-24 w-full">
-    <div class="max-w-7xl lg:max-w-5xl flex flex-col gap-24 sm:gap-8 w-full mx-auto px-5">
-      <div class="flex flex-row gap-2 sm:flex-col sm:gap-5 w-10/12 mx-auto items-center">
+  <section
+    :class="{
+      'bg-secondary': container.bgColor === 'SECONDARY',
+      'bg-primary': container.bgColor === 'PRIMARY',
+      'bg-bgDarkColor': container.bgColor === 'BGDARKCOLOR',
+    }"
+    class="py-24 w-full"
+  >
+    <div
+      class="max-w-7xl lg:max-w-5xl flex flex-col gap-24 sm:gap-8 w-full mx-auto px-5"
+    >
+      <div
+        class="flex flex-row gap-2 sm:flex-col sm:gap-5 w-10/12 mx-auto items-center"
+      >
         <div class="w-1/3 sm:w-full">
           <img
             src="/images/logoBest/logoSejaBestWhite.png"
             alt=""
-            class="object-contain h-14 mx-auto "
+            class="object-contain h-14 mx-auto"
           />
         </div>
         <div class="w-full">
@@ -16,16 +27,21 @@
           </h2>
         </div>
       </div>
-      <div class=" flex-row gap-6 mx-auto hidden sm:flex">
+      <div class="flex-row gap-6 mx-auto hidden sm:flex">
         <div v-for="{ alt, id, source } of seals" :key="id">
           <img :src="source" :alt="alt" class="h-24 sm:h-auto" />
         </div>
       </div>
       <div class="flex flex-row sm:flex-col gap-4 text-white">
         <div
-          v-for="{ id, icon, title, description } in cards"
+          v-for="{ id, icon, title, description } in cardContent"
           :key="id"
-          class="bg-primary rounded-xl p-8 flex flex-col gap-4 flex-1"
+          :class="{
+            'bg-secondary': cards.bgColor === 'SECONDARY',
+            'bg-primary': cards.bgColor === 'PRIMARY',
+            'bg-bgDarkColor': cards.bgColor === 'BGDARKCOLOR',
+          }"
+          class="rounded-xl p-8 flex flex-col gap-4 flex-1"
         >
           <div>
             <i :class="icon" class="w-6 h-6"></i>
@@ -47,7 +63,16 @@
   </section>
 </template>
 <script setup lang="ts">
-const cards = [
+defineProps<{
+  container: {
+    bgColor: 'PRIMARY' | 'SECONDARY' | 'BGDARKCOLOR'
+  }
+  cards: {
+    bgColor: 'PRIMARY' | 'SECONDARY' | 'BGDARKCOLOR'
+  }
+}>()
+
+const cardContent = [
   {
     id: 1,
     icon: 'fa-solid fa-coins',
