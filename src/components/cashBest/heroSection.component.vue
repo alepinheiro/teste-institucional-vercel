@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-bgDarkColor w-full flex pt-10 relative min-h-screen sm:pt-0 overflow-hidden z-0"
+    class="bg-bgDarkColor w-full flex pt-10 relative min-h-screen sm:pt-0 overflow-hidden z-0 sm:h-screen"
   >
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
       <Topbar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
@@ -12,21 +12,21 @@
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
-      class="absolute sm:-top-[0%] inset-0 -z-10 -top-14 sm:hidden opacity-40 w-full h-full object-cover xl:scale-125 lg:scale-150 md:scale-[185%]"
+      class="absolute sm:-top-0 inset-0 -z-10 -top-14 opacity-40 w-full h-full sm:min-h-screen object-cover xl:scale-125 lg:scale-150 md:scale-[185%]"
     ></iframe>
 
     <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4 px-5">
-      <div class="flex flex-row md:flex-col mt-auto items-end justify-between w-full gap-3">
-        <div class="w-7/12 md:w-full flex-grow flex flex-col gap-3 text-white">
-          <h1 class="text-5xl md:text-4xl font-bold leading-snug">
+      <div class="flex flex-row md:flex-col sm:flex-col mt-auto items-end justify-between w-full gap-3">
+        <div class="w-7/12 md:w-full sm:w-full flex-grow flex flex-col gap-3 text-white">
+          <h1 class="text-5xl md:text-4xl sm:text-xl font-bold leading-snug">
             <span
-              class="relative z-0 after:absolute after:bg-primary after:-inset-0.5 after:content-[''] after:-z-10 mr-2"
+              class="relative z-0 after:absolute after:bg-secondary after:-inset-0.5 after:content-[''] after:-z-10 mr-2"
             >
               CashBest:
             </span>
             o Crédito com Garantia de Imóvel da SejaBest
           </h1>
-          <p class="text-lg">
+          <p class="text-lg sm:text-xs">
             Descubra as melhores taxas do mercado: a partir de 1.09% a.m. + IPCA
             ou 1.49% a.m. fixa.
             <b>
@@ -37,7 +37,7 @@
             para pagamento.
           </p>
         </div>
-        <div class="w-5/12 md:w-full flex-grow">
+        <div class="w-5/12 md:w-full sm:w-full flex-grow">
           <InputWithSlider :props="sliderProps" />
         </div>
       </div>

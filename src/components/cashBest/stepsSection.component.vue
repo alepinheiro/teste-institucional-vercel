@@ -1,16 +1,16 @@
 <template>
-  <section class="py-10 bg-[#EFEFEF]">
+  <section class="py-10 sm:pt-0 bg-[#EFEFEF]">
     <div class="xl:max-w-7xl lg:max-w-5xl  px-5 mx-auto flex flex-col gap-10 ">
       <div class="flex flex-row w-full justify-between items-center md:max-w-2xl md:mx-auto">
         <div class="flex flex-col gap-1">
-          <h2 class="text-3xl text-primary font-bold">
+          <h2 class="text-3xl sm:text-xl text-primary font-bold">
             Crédito sem filas, nem gerentes, nem complexidade
           </h2>
           <p class="text-sm text-textPrimary">
             São apenas 4 passos para você receber o seu crédito.
           </p>
         </div>
-        <div>
+        <div class="sm:hidden">
           <img src="/images/logoBest/logoCashBestHomeEquity.svg" alt="" />
         </div>
       </div>
@@ -23,14 +23,14 @@
           :is="'swiper-slide'"
           v-for="{ id, icon, title, description, callToAction } of stepCards"
           :key="id"
-          class="bg-white rounded-lg p-12 lg:p-10 h-auto w-80 lg:w-80 md:w-72 mb-10"
+          class="bg-white rounded-lg p-12 lg:p-10 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10"
         >
           <div class="flex flex-col gap-12 lg:gap-10 items-start font-Public-Sans">
             <i :class="icon" class="text-primary w-5 h-5"></i>
-            <h3 class="text-2xl lg:text-lg font-bold">{{ id }}. {{ title }}</h3>
+            <h3 class="text-2xl lg:text-lg sm:text-xl font-bold">{{ id }}. {{ title }}</h3>
             <!-- eslint-disable-next-line vue/no-v-html -->
-            <p class="lg:text-sm" v-html="description"></p>
-            <a v-if="callToAction" :href="callToAction[1]" class="underline">
+            <p class="lg:text-sm sm:text-sm" v-html="description"></p>
+            <a v-if="callToAction" :href="callToAction[1]" class="underline sm:text-sm">
               {{ callToAction[0] }}
             </a>
           </div>
