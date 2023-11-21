@@ -1,10 +1,10 @@
 <template>
   <section class="py-10">
-    <div class="max-w-7xl mx-auto flex flex-col gap-14">
+    <div class="max-w-7xl lg:max-w-5xl mx-auto flex flex-col gap-14 px-5">
       <div class="text-center flex flex-col gap-5">
         <h2 class="text-3xl font-bold text-primary">
           <span
-            class="relative after:content-[''] after:absolute after:-inset-0.5 after:bg-secondary after:-z-10 text-white mr-2"
+            class="relative after:content-[''] after:absolute after:-inset-1 after:bg-secondary after:-z-10 text-white mr-2"
           >
             Feito para você:
           </span>
@@ -22,7 +22,7 @@
         <div
           v-for="{ id, title, image } in solutionsCards"
           :key="id"
-          class="relative w-1/4 flex-grow overflow-hidden xl:h-52 rounded-lg"
+          class="relative w-1/4 flex-grow overflow-hidden xl:h-52 lg:h-52 rounded-lg"
         >
           <img
             :src="image"
