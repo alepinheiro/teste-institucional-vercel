@@ -10,7 +10,8 @@
       :cards="{ bgColor: 'SECONDARY' }"
       :container="{ bgColor: 'BGDARKCOLOR' }"
     />
-    <SolutionsSection />
+    <Solutions />
+    <Steps />
     <TheFooter />
   </main>
 </template>
@@ -20,7 +21,8 @@ import HeroSection from '@/components/cashBest/heroSection.component.vue'
 import BusinessPartners from '@/components/base/businessPartners.component.vue'
 import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.vue'
 import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
-import SolutionsSection from '@/components/cashBest/solutionsSection.component.vue'
+import Solutions from '@/components/cashBest/solutionsSection.component.vue'
+import Steps from '@/components/cashBest/stepsSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 useHead({
   title: 'CashBest: o Crédito com Garantia de Imóvel da SejaBest',
