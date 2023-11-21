@@ -12,7 +12,7 @@
       :cards="{ bgColor: 'PRIMARY' }"
       :container="{ bgColor: 'SECONDARY' }"
     />
-    <SubscribeSection />
+    <Subscribe :component="{ bgColor: 'BGDARKCOLOR' }" :form="{ showRealtyValue: false }" />
     <TheFooter />
   </main>
 </template>
@@ -24,7 +24,7 @@ import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.
 import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
 import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
 import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
-import SubscribeSection from '@/components/finanBestLp/subscribeSection.component.vue'
+import Subscribe from '@/components/finanBestLp/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 
 useHead({
