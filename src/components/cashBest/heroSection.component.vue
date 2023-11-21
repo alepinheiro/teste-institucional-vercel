@@ -42,7 +42,7 @@
         </div>
       </div>
       <div
-        class="flex flex-row gap-2 text-textPrimary items-center md:mx-auto sm:text-white sm:w-5/6 sm:mx-auto"
+        class="flex flex-row gap-2 text-white items-center md:mx-auto sm:text-white sm:w-5/6 sm:mx-auto"
       >
         <i class="fa-solid fa-chevron-down"></i>
         <p class="text-xs sm:text-2xs underline underline-offset-4">

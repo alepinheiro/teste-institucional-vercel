@@ -5,43 +5,44 @@
         class="maxWidth flex sm:flex-wrap justify-between pt-12 sm:pt-8 md:pt-8"
       >
         <div class="sm:w-1/2">
-          <h1 class="text-xl font-semibold text-textSecondary py-4">Sobre</h1>
+          <h2 class="text-xl font-semibold text-black py-4">Sobre</h2>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <router-link
               :to="'/sobre' + $root.utms"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               aria-label="Sobre a SejaBest"
             >
               Sobre a SejaBest
             </router-link>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <a
               :href="'https://portal.seja.best/' + $root.utms"
               aria-label="Acesse nosso Portal"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               style="text-decoration: none"
               target="_blank"
-              >Portal
+              >
+              Portal
             </a>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <router-link
               :to="'/bestHub' + $root.utms"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               aria-label="Seja um Parceiro"
             >
               Seja um Parceiro
             </router-link>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <a
               :href="$options.information.appPartner"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               style="text-decoration: none"
               aria-label="Acesse a área do Parceiro"
               target="_blank"
@@ -50,10 +51,10 @@
             </a>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <a
               :href="$options.information.jobs"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               style="text-decoration: none"
               aria-label="Trabalhe Conosco"
               target="_blank"
@@ -62,10 +63,10 @@
             </a>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <router-link
               to="/faq"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               aria-label="Dúvidas Frequentes"
             >
               Dúvidas Frequentes
@@ -73,15 +74,15 @@
           </div>
 
           <div class="md:hidden xl:hidden lg:hidden">
-            <h1 class="text-xl font-semibold text-textSecondary pt-4">
+            <h2 class="text-xl font-semibold text-black pt-4">
               Fale Conosco
-            </h1>
+            </h2>
 
-            <div class="text-textSecondary pb-2">
+            <div class="text-black pb-2">
               <a
                 :href="$options.information.socialMedia.whatsapp"
                 aria-label="Fale conosco pelo WhatsApp"
-                class="hover:text-textSecondary"
+                class="hover:text-black"
                 style="text-decoration: none"
                 target="_blank"
               >
@@ -101,14 +102,14 @@
               </a>
             </div>
 
-            <h1 class="text-xl font-semibold text-textSecondary pt-6">
+            <h2 class="text-xl font-semibold text-black pt-6">
               Dúvidas?
-            </h1>
+            </h2>
 
-            <div class="text-sm text-textSecondary pb-2">
+            <div class="text-sm text-black pb-2">
               <router-link
                 to="/faq"
-                class="hover:text-textSecondary"
+                class="hover:text-black"
                 aria-label="Acesse nosso FAQ"
               >
                 Acesse nosso FAQ
@@ -118,32 +119,32 @@
         </div>
 
         <div class="  ">
-          <h1 class="text-xl font-semibold text-textSecondary py-4">Podutos</h1>
+          <h2 class="text-xl font-semibold text-black py-4">Podutos</h2>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <router-link
               :to="'/financiamento-imobiliario' + $root.utms"
               aria-label="Financiamento"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
             >
               Financiamento
             </router-link>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <router-link
               :to="'/home-equity' + $root.utms"
               aria-label="Home Equity"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
             >
               Home Equity
             </router-link>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <a
               :href="$options.information.appSimulator + $root.utms"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               style="text-decoration: none"
               aria-label="Simule seu crédito"
               target="_blank"
@@ -152,10 +153,10 @@
             </a>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <a
               :href="$options.information.appClient"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               style="text-decoration: none"
               aria-label="Acesse sua conta"
               target="_blank"
@@ -164,7 +165,7 @@
             </a>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <router-link
               :to="'/termos-de-uso' + $root.utms"
               aria-label="Termos de uso"
@@ -174,24 +175,24 @@
             </router-link>
           </div>
 
-          <div class="sm:text-sm text-textSecondary pb-6">
+          <div class="sm:text-sm text-black pb-6">
             <router-link
               :to="'/politica-de-privacidade' + $root.utms"
               aria-label="Política de Privacidade"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
             >
               Política de Privacidade
             </router-link>
           </div>
 
           <div class="md:hidden xl:hidden lg:hidden">
-            <h1 class="text-xl font-semibold text-textSecondary pt-4">
+            <h2 class="text-xl font-semibold text-black pt-4">
               Precisa de ajuda?
-            </h1>
+            </h2>
 
-            <h2 class="text-sm text-textSecondary pb-2">contato@seja.best</h2>
+            <h2 class="text-sm text-black pb-2">contato@seja.best</h2>
 
-            <div class="text-xl font-semibold text-textSecondary py-4">
+            <div class="text-xl font-semibold text-black py-4">
               <a
                 :href="$options.information.location"
                 class="hover:text-textPrimary"
@@ -224,14 +225,14 @@
         </div>
 
         <div class="sm:hidden">
-          <h1 class="text-xl font-semibold text-textSecondary pt-4">
+          <h2 class="text-xl font-semibold text-black pt-4">
             Fale Conosco
-          </h1>
+          </h2>
 
-          <div class="text-textSecondary pb-2">
+          <div class="text-black pb-2">
             <a
               :href="$options.information.socialMedia.whatsapp"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               style="text-decoration: none"
               aria-label="Fale conosco pelo WhatsApp"
               target="_blank"
@@ -252,24 +253,24 @@
             </a>
           </div>
 
-          <h1 class="text-xl font-semibold text-textSecondary pt-4">
+          <h2 class="text-xl font-semibold text-black pt-4">
             Precisa de ajuda?
-          </h1>
-          <p class="text-textSecondary pb-2">contato@seja.best</p>
+          </h2>
+          <p class="text-black pb-2">contato@seja.best</p>
 
-          <h1 class="text-xl font-semibold text-textSecondary pt-4">
+          <h2 class="text-xl font-semibold text-black pt-4">
             Dúvidas?
-          </h1>
-          <div class="text-textSecondary pb-2">
+          </h2>
+          <div class="text-black pb-2">
             <router-link
               to="/faq"
-              class="hover:text-textSecondary"
+              class="hover:text-black"
               aria-label="Acesse nosso FAQ"
             >
               Acesse nosso FAQ
             </router-link>
           </div>
-          <div class="text-xl font-semibold text-textSecondary py-4">
+          <div class="text-xl font-semibold text-black py-4">
             <a
               :href="$options.information.location"
               class="hover:text-textPrimary"
@@ -400,7 +401,7 @@
           </div>
         </div>
         <div class="sm:px-2 sm:py-6 py-8">
-          <p class="text-xs text-textSecondary">
+          <p class="text-xs text-black">
             A SejaBest é uma plataforma digital que atua como correspondente
             Bancário para facilitar o processo de contratação de empréstimos.
             Como Correspondente Bancário, seguimos as diretrizes da Resolução nº
@@ -417,7 +418,7 @@
             S.A cnpj sob o no 01.149.953/0001-89.
           </p>
 
-          <p class="text-xs text-textSecondary py-4">
+          <p class="text-xs text-black py-4">
             Exemplo de empréstimo com Garantia de Imóvel: mínimo 60 meses e
             máximo 240 meses. Exemplo com Garantia de Imóvel – Empréstimo de R$
             100.000,00 para pagar em 15 anos (180 meses) – Prestação inicial de
@@ -425,7 +426,7 @@
             de Amortização Price. CET de 16,38% ao ano.
           </p>
 
-          <p class="text-xs text-textSecondary">
+          <p class="text-xs text-black">
             Seja.best pertence à Sejabest Fintech de Credito Imobiliario LTDA,
             CNPJ 26.915.796/0001-04, com sede na Rua Miguel Matte, 687, sala
             801, Ed. Evolution – CEP 88331-030, Pioneiros, Balneário Camboriú –

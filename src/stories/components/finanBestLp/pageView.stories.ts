@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 
 import Page from '@/views/CashBestLP.vue'
+import { vueRouter } from 'storybook-vue3-router';
 
 const meta = {
   title: 'View/CashBestLP',
