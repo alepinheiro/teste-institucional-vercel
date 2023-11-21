@@ -10,14 +10,14 @@
           :is="'swiper-slide'"
           v-for="{ id, icon, title, text, link } of steps"
           :key="id"
-          class="bg-white rounded-lg p-12 h-auto w-80 lg:w-80 md:w-72 mb-10"
+          class="bg-white rounded-lg p-12 sm:p-6 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10"
         >
           <div class="flex flex-col gap-12 items-start font-Public-Sans">
             <i :class="icon" class="text-primary w-5 h-5"></i>
-            <h3 class="text-2xl font-bold">{{ title }}</h3>
+            <h3 class="text-2xl font-bold sm:text-lg">{{ title }}</h3>
             <!-- eslint-disable-next-line vue/no-v-html -->
-            <p v-html="text"></p>
-            <a v-if="link" :href="link[0]" class="underline">
+            <p class="sm:text-sm" v-html="text"></p>
+            <a v-if="link" :href="link[0]" class="underline sm:text-sm">
               {{ link[1] }}
             </a>
           </div>

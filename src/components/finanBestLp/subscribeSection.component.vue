@@ -5,7 +5,7 @@
     'bg-secondary': component.bgColor === 'SECONDARY',
     'bg-bgDarkColor': component.bgColor === 'BGDARKCOLOR',
   }"
-  class="w-full pt-10 md:py-10 lg:py-20 bg-bgDarkColor">
+  class="w-full pt-10 md:py-10 lg:py-20 sm:py-20 bg-bgDarkColor">
     <div
       class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full flex flex-col gap-12"
     >
@@ -31,7 +31,7 @@
         >
           <img src="/images/finanBest/gasparOnPhone.png" alt="" />
         </div>
-        <div class="w-7/12 lg:w-8/12 md:w-full lg:mx-auto px-5">
+        <div class="w-7/12 lg:w-8/12 md:w-full sm:w-full lg:mx-auto px-5">
           <SimulationForm :show-home-equity="form.showRealtyValue" />
         </div>
       </div>
