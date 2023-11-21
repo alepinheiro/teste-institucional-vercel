@@ -14,7 +14,7 @@
     <Steps />
     <TheProduct />
     <Subscribe
-      :component="{ bgColor: 'BGDARKCOLOR' }"
+      :component="{ bgColor: 'SECONDARY' }"
       :form="{ showRealtyValue: true }"
     />
     <TheFooter />
