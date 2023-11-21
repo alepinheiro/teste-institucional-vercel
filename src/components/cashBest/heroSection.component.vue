@@ -3,19 +3,18 @@
     class="bg-bgDarkColor w-full flex pt-10 relative min-h-screen sm:pt-0 overflow-hidden z-0"
   >
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
-      <Topbar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
+      <Topbar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
     <iframe
-      width="100%"
-      height="120%"
+
       src="https://www.youtube.com/embed/tpJ20737xJ4?autoplay=1&mute=1&loop=1&playlist=tpJ20737xJ4"
       title="Quais são as diferenças entre financiamento imobiliário do banco e da construtora?"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
-      class="absolute sm:-top-[0%] inset-0 -z-10 -top-14 sm:hidden opacity-40"
+      class="absolute sm:-top-[0%] inset-0 -z-10 -top-14 sm:hidden opacity-40 w-full h-full object-cover xl:scale-125 lg:scale-150 md:scale-[185%]"
     ></iframe>
-    <div class="max-w-7xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4">
+    <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-5xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4 px-5">
       <div class="flex flex-row mt-auto items-end justify-between w-full gap-3">
         <div class="w-7/12 flex-grow flex flex-col gap-3 text-white">
           <h1 class="text-5xl font-bold leading-snug">
