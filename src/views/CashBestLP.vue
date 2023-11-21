@@ -12,6 +12,7 @@
     />
     <Solutions />
     <Steps />
+    <TheProduct />
     <TheFooter />
   </main>
 </template>
@@ -23,6 +24,7 @@ import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.
 import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
 import Solutions from '@/components/cashBest/solutionsSection.component.vue'
 import Steps from '@/components/cashBest/stepsSection.component.vue'
+import TheProduct from '@/components/cashBest/theProduct.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 useHead({
   title: 'CashBest: o Crédito com Garantia de Imóvel da SejaBest',
