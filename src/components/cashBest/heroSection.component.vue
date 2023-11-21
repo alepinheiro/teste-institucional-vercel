@@ -14,12 +14,13 @@
       allowfullscreen
       class="absolute sm:-top-[0%] inset-0 -z-10 -top-14 sm:hidden opacity-40 w-full h-full object-cover xl:scale-125 lg:scale-150 md:scale-[185%]"
     ></iframe>
-    <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-5xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4 px-5">
-      <div class="flex flex-row mt-auto items-end justify-between w-full gap-3">
-        <div class="w-7/12 flex-grow flex flex-col gap-3 text-white">
-          <h1 class="text-5xl font-bold leading-snug">
+
+    <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4 px-5">
+      <div class="flex flex-row md:flex-col mt-auto items-end justify-between w-full gap-3">
+        <div class="w-7/12 md:w-full flex-grow flex flex-col gap-3 text-white">
+          <h1 class="text-5xl md:text-4xl font-bold leading-snug">
             <span
-              class="relative z-0 after:absolute after:bg-primary after:-inset-0.5 after:content-[''] after:-z-10"
+              class="relative z-0 after:absolute after:bg-primary after:-inset-0.5 after:content-[''] after:-z-10 mr-2"
             >
               CashBest:
             </span>
@@ -36,15 +37,15 @@
             para pagamento.
           </p>
         </div>
-        <div class="w-5/12 flex-grow">
-          <InputWithSlider :slider-props="sliderProps" />
+        <div class="w-5/12 md:w-full flex-grow">
+          <InputWithSlider :props="sliderProps" />
         </div>
       </div>
       <div
         class="flex flex-row gap-2 text-textPrimary items-center md:mx-auto sm:text-white sm:w-5/6 sm:mx-auto"
       >
         <i class="fa-solid fa-chevron-down"></i>
-        <p class="text-xs sm:text-2xs">
+        <p class="text-xs sm:text-2xs underline underline-offset-4">
           Ou saiba mais sobre o Home Equity rolando
           para baixo
         </p>
@@ -61,5 +62,6 @@ const sliderProps = {
   maximumValue: 15000000,
   defaultValue: 350000,
   backgroundColor: '#FFFFFF20',
+  title: 'De quanto você está precisando?'
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
-  <section class="py-10 bg-[#EFEFEF]">
-    <div class="max-w-7xl lg:max-w-5xl mx-auto flex flex-col gap-14 px-5">
+  <section class="py-20 bg-[#EFEFEF]">
+    <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-col gap-14 px-5">
       <div class="text-center flex flex-col gap-5">
         <h2 class="text-3xl font-bold text-primary">
           <span
@@ -18,11 +18,11 @@
           <u>poder nas suas mãos</u> para realizar seus projetos financeiros.
         </p>
       </div>
-      <div class="flex flex-row flex-wrap gap-5 w-full">
+      <div class="flex flex-row flex-wrap gap-5 md:gap-0 w-full">
         <div
           v-for="{ id, title, image } in solutionsCards"
           :key="id"
-          class="relative w-1/4 flex-grow overflow-hidden xl:h-52 lg:h-52 rounded-lg z-0"
+          class="relative w-1/4 md:w-1/3 flex-grow overflow-hidden h-52 rounded-lg z-0 md:rounded-none"
         >
           <img
             :src="image"
@@ -30,9 +30,9 @@
             class="absolute w-full -z-10 object-cover h-full"
           />
           <div
-            class="w-full flex h-full bg-gradient-to-t from-black via-transparent to-transparent p-6"
+            class="w-full flex h-full bg-gradient-to-t from-black via-transparent to-transparent p-6 md:p-3"
           >
-            <h3 class="text-white text-xl font-bold w-1/2 mt-auto line-clamp-[2]">
+            <h3 class="text-white text-xl font-bold w-1/2 md:w-full mt-auto ">
               {{ title }}
             </h3>
           </div>

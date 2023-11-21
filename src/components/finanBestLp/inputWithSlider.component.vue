@@ -1,15 +1,17 @@
 <template>
   <div>
     <form
-      class=" flex flex-col gap-6 sm:gap-3 md:gap-3 rounded-xl p-4"
-      :class="[sliderProps.backgroundColor ? 'bgPropsColor' : 'bg-primary sm:bg-white/20'  ]"
+      class="flex flex-col gap-6 sm:gap-3 md:gap-3 rounded-xl p-4"
+      :class="[
+        props.backgroundColor ? 'bgPropsColor' : 'bg-primary sm:bg-white/20',
+      ]"
       @submit.prevent="onSubmit"
     >
       <label
         for="creditAmountWithSlider"
         class="text-xl text-white font-bold text-center sm:text-md"
       >
-        Quanto custa o seu sonho?
+        {{ props.title }}
       </label>
       <div class="flex flex-row gap-2">
         <input
@@ -19,10 +21,12 @@
           name="creditAmountWithSlider"
           type="text"
           class="rounded-md w-full px-4 sm:py-2"
-          :placeholder="props.sliderProps.defaultValue.toLocaleString('pt-BR', {
-            style: 'currency',
-            currency: 'BRL'
-          })"
+          :placeholder="
+            props.defaultValue.toLocaleString('pt-BR', {
+              style: 'currency',
+              currency: 'BRL',
+            })
+          "
           required
           @input="onInput"
         />
@@ -31,7 +35,7 @@
           title="simular"
           class="bg-complementaryColor1 text-black px-4 py-2 rounded-md sm:hidden"
         >
-        Simular
+          Simular
         </button>
       </div>
       <input
@@ -42,8 +46,8 @@
         type="range"
         aria-label="Deslize para alterar o valor"
         title="Faixa de valor"
-        :min="sliderProps.minimumValue"
-        :max="sliderProps.maximumValue"
+        :min="props.minimumValue"
+        :max="props.maximumValue"
         class="slider"
         @input="setValue(numberValue)"
       />
@@ -68,18 +72,15 @@ import {
 } from 'vue-currency-input'
 
 const { fullPath } = useRoute()
-const props = defineProps({
-  sliderProps: {
-    type: Object as () => {
-      minimumValue: number
-      maximumValue: number
-      defaultValue: number
-      backgroundColor: string
-    },
-    required: true,
-  },
-
-})
+const { props: sliderProps } = defineProps<{
+  props: {
+    minimumValue: number
+    maximumValue: number
+    defaultValue: number
+    backgroundColor: string
+    title: string
+  }
+}>()
 
 const options: CurrencyInputOptions = {
   currency: 'BRL',
@@ -94,9 +95,9 @@ const options: CurrencyInputOptions = {
   accountingSign: false,
 }
 const { inputRef, numberValue, setValue } = useCurrencyInput(options)
-const inputValue = ref(props.sliderProps.defaultValue)
-const sliderValue = ref(props.sliderProps.defaultValue)
-const bgColor = props.sliderProps.backgroundColor;
+const inputValue = ref(sliderProps.defaultValue)
+const sliderValue = ref(sliderProps.defaultValue)
+const bgColor = sliderProps.backgroundColor
 
 const onInput = (event: Event) => {
   const { value } = event.target as HTMLInputElement
@@ -119,22 +120,25 @@ const onSubmit = (event: Event) => {
     rangeSlider: formData.get('rangeSlider'),
   }
 
-  if(data.creditAmount){
-    const cleanedValue = data.creditAmount.toString().replace('R$', '').trim();
-    const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.');
-    const floatNumber = parseFloat(formattedValue);
+  if (data.creditAmount) {
+    const cleanedValue = data.creditAmount.toString().replace('R$', '').trim()
+    const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.')
+    const floatNumber = parseFloat(formattedValue)
     data.creditAmount = `${floatNumber}`
   }
 
   localStorage.setItem('simulationData', JSON.stringify(data))
   window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
-  window.open(`${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${data.creditAmount}`, '_blank')
+  window.open(
+    `${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${
+      data.creditAmount
+    }`,
+    '_blank',
+  )
 }
 </script>
 <style lang="scss">
-
 .bgPropsColor {
   background-color: v-bind(bgColor);
 }
-
 </style>

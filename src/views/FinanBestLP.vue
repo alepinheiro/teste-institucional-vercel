@@ -2,17 +2,35 @@
   <main>
     <HeroSection />
     <BusinessPartners
-      :title="'Na SejaBest, suas chances de aprovação são maiores'"
-      :description="'Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>'"
+      :props="{
+        backgroundColor: '#FFF',
+        title: 'Na SejaBest, suas chances de aprovação são maiores',
+        description:
+          'Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>',
+      }"
     />
-    <ComparisonTable />
+    <ComparisonTable
+      :props="{
+        component: {
+          backgroundColor: '#FFF',
+          showBackGroundImage: true,
+        },
+        table: {
+          backgroundColor: '#EFEFEF',
+          titleColor: 'TEXTPRIMARY',
+        },
+      }"
+    />
     <VideoSection />
     <StepsSection />
     <AboutUs
       :cards="{ bgColor: 'PRIMARY' }"
       :container="{ bgColor: 'SECONDARY' }"
     />
-    <Subscribe :component="{ bgColor: 'BGDARKCOLOR' }" :form="{ showRealtyValue: false }" />
+    <Subscribe
+      :component="{ bgColor: 'BGDARKCOLOR' }"
+      :form="{ showRealtyValue: false }"
+    />
     <TheFooter />
   </main>
 </template>

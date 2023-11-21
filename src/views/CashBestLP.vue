@@ -2,10 +2,25 @@
   <main>
     <HeroSection />
     <BusinessPartners
-      :title="'Maximizamos suas chances de aprovação'"
-      :description="'Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b>maiores chances</b> de aprovação.'"
+      :props="{
+        backgroundColor: '#F1F1F1',
+        title: 'Maximizamos suas chances de aprovação',
+        description:
+          'Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>',
+      }"
     />
-    <ComparisonTable />
+    <ComparisonTable
+      :props="{
+        component: {
+          backgroundColor: '#F1F1F1',
+          showBackGroundImage: false,
+        },
+        table: {
+          backgroundColor: '#FFF',
+          titleColor: 'PRIMARY'
+        }
+      }"
+    />
     <AboutUs
       :cards="{ bgColor: 'SECONDARY' }"
       :container="{ bgColor: 'BGDARKCOLOR' }"

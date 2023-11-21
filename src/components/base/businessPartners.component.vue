@@ -1,10 +1,14 @@
 <template>
-  <section class="w-full flex py-20">
+  <section
+  :style="{
+      'background-color': props.backgroundColor,
+    }"
+  class="w-full flex py-20">
     <div
       class="flex flex-col gap-6 max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto font-Public-Sans text-center px-5"
     >
       <h2 class="text-3xl sm:text-xl font-bold text-primary">
-        {{ title }}
+        {{ props.title }}
       </h2>
       <div class="hidden sm:block">
         <img
@@ -15,8 +19,8 @@
         />
       </div>
       <p
-      class="text-xl sm:text-sm text-textPrimary md:text-justify"
-      v-html="description"
+        class="text-xl sm:text-sm text-textPrimary md:text-justify"
+        v-html="props.description"
       ></p>
 
       <div
@@ -129,14 +133,11 @@ const banks = [
   },
 ]
 
-defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-})
+defineProps<{
+  props: {
+    backgroundColor: string
+    title: string
+    description: string
+  }
+}>()
 </script>

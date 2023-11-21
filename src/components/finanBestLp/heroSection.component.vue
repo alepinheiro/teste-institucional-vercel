@@ -25,7 +25,7 @@
               especialistas totalmente pronto pra lhe ajudar.</b
             >
           </p>
-          <InputWithSlider :slider-props="sliderProps" />
+          <InputWithSlider :props="sliderProps" />
           <div class="flex flex-row gap-2 text-textPrimary items-center md:mx-auto sm:text-white sm:w-5/6 sm:mx-auto">
             <i class="fa-solid fa-chevron-down"></i>
             <p class="text-xs sm:text-2xs ">Ou saiba mais sobre o Financiamento Imobiliário da SejaBest rolando para baixo</p>
@@ -47,5 +47,6 @@ const sliderProps = {
   maximumValue: 30000000,
   defaultValue: 350000,
   backgroundColor: '',
+  title: 'Quanto custa o seu sonho?',
 }
 </script>

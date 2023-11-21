@@ -1,7 +1,7 @@
 <template>
   <section class="py-10 bg-[#EFEFEF]">
-    <div class="xl:max-w-7xl mx-auto flex flex-col gap-10 px-5">
-      <div class="flex flex-row w-full justify-between items-center">
+    <div class="xl:max-w-7xl lg:max-w-5xl  px-5 mx-auto flex flex-col gap-10 ">
+      <div class="flex flex-row w-full justify-between items-center md:max-w-2xl md:mx-auto">
         <div class="flex flex-col gap-1">
           <h2 class="text-3xl text-primary font-bold">
             Crédito sem filas, nem gerentes, nem complexidade
@@ -17,19 +17,19 @@
       <component
         :is="'swiper-container'"
         v-bind="sliderOptions"
-        class="w-full lg:pl-40"
+        class="w-full md:pl-24"
       >
         <component
           :is="'swiper-slide'"
           v-for="{ id, icon, title, description, callToAction } of stepCards"
           :key="id"
-          class="bg-white rounded-lg p-12 h-auto w-80 lg:w-80 md:w-72 mb-10"
+          class="bg-white rounded-lg p-12 lg:p-10 h-auto w-80 lg:w-80 md:w-72 mb-10"
         >
-          <div class="flex flex-col gap-12 items-start font-Public-Sans">
+          <div class="flex flex-col gap-12 lg:gap-10 items-start font-Public-Sans">
             <i :class="icon" class="text-primary w-5 h-5"></i>
-            <h3 class="text-2xl font-bold">{{ id }}. {{ title }}</h3>
+            <h3 class="text-2xl lg:text-lg font-bold">{{ id }}. {{ title }}</h3>
             <!-- eslint-disable-next-line vue/no-v-html -->
-            <p v-html="description"></p>
+            <p class="lg:text-sm" v-html="description"></p>
             <a v-if="callToAction" :href="callToAction[1]" class="underline">
               {{ callToAction[0] }}
             </a>
@@ -47,7 +47,7 @@ const sliderOptions: SwiperOptions = {
   slidesPerView: 'auto',
   pagination: true,
   breakpoints: {
-    1920: {
+    1279: {
       slidesPerView: 4,
     },
   },
