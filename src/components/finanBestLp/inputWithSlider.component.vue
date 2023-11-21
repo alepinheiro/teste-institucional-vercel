@@ -73,8 +73,17 @@ import {
 
 const { fullPath } = useRoute()
 const { props: sliderProps } = defineProps<{
+  /**
+   * Propriedades do componente
+   */
   props: {
+    /**
+     * Valor mínimo do slider
+     */
     minimumValue: number
+    /**
+     * Valor máximo do slider
+     */
     maximumValue: number
     defaultValue: number
     backgroundColor: string

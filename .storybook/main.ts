@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/vue3-vite'
+import type { StorybookViteConfig } from '@storybook/builder-vite';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
