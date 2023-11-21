@@ -4,7 +4,7 @@ import Page from '@/views/CashBestLP.vue'
 import { vueRouter } from 'storybook-vue3-router';
 
 const meta = {
-  title: 'View/CashBestLP',
+  title: 'Views/CashBestLP',
   component: Page,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],

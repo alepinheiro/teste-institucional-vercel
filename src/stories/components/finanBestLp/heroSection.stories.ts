@@ -1,5 +1,5 @@
+import { vueRouter } from 'storybook-vue3-router';
 import type { Meta, StoryObj } from '@storybook/vue3'
-
 import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
 
 const meta = {
@@ -36,4 +36,9 @@ const meta = {
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
+  /**
+   * adding storybook-vue3-router decorator
+   * this is the basic setup with no params passed to the decorator
+   */
+  decorators: [vueRouter()],
 }

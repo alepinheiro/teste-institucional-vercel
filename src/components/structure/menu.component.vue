@@ -23,7 +23,7 @@
     <div class="flex">
 
       <div
-        class="bg-complementaryColor1 rounded-lg px-4 py-1 font-semibold  text-white
+        class="bg-complementaryColor1 rounded-lg px-4 py-1 font-semibold  text-black
         transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:px-1 lg:text-sm">
 
         <a
