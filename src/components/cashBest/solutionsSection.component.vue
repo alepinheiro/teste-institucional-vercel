@@ -27,10 +27,10 @@
           <img
             :src="image"
             alt=""
-            class="absolute inset-x-0 -z-10 object-cover h-full"
+            class="absolute w-full -z-10 object-cover h-full"
           />
           <div
-            class="w-full flex h-full bg-gradient-to-t from-black via-transparent to-transparent p-5"
+            class="w-full flex h-full bg-gradient-to-t from-black via-transparent to-transparent p-6"
           >
             <h3 class="text-white text-xl font-bold w-1/2 mt-auto line-clamp-[2]">
               {{ title }}
@@ -39,7 +39,6 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
   </section>
 </template>
 <script setup lang="ts">
@@ -47,32 +46,32 @@ const solutionsCards = [
   {
     id: 1,
     title: 'Capital de Giro',
-    image: 'http://unsplash.it/600/220?random=0&gravity=center',
+    image: '/images/cashBest/solutions/capitalDeGiro.png',
   },
   {
     id: 2,
     title: 'Viagem dos sonhos',
-    image: 'http://unsplash.it/600/220?random=2&gravity=center',
+    image: '/images/cashBest/solutions/viagemDosSonhos.png',
   },
   {
     id: 3,
     title: 'Estudar ou se Especializar',
-    image: 'http://unsplash.it/600/220?random=1&gravity=center',
+    image: '/images/cashBest/solutions/estudarOuSeEspecializar.png',
   },
   {
     id: 4,
     title: 'Adquirir bens',
-    image: 'http://unsplash.it/600/220?random=3&gravity=center',
+    image: '/images/cashBest/solutions/adquirirBens.png',
   },
   {
     id: 5,
     title: 'Reformar ou Construir',
-    image: 'http://unsplash.it/600/220?random=4&gravity=center',
+    image: '/images/cashBest/solutions/reformarOuConstruir.png',
   },
   {
     id: 6,
     title: 'Quitar todas as dívidas',
-    image: 'http://unsplash.it/600/220?random=5&gravity=center',
+    image: '/images/cashBest/solutions/quitarDividas.png',
   },
 ]
 </script>
