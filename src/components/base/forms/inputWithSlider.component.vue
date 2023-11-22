@@ -62,16 +62,15 @@
   </div>
 </template>
 <script setup lang="ts">
-import information from '@/configurations/information'
-import { ref, computed } from 'vue';
-import { useRoute } from 'vue-router'
+import { ref, computed } from 'vue'
+
 import {
   CurrencyInputOptions,
   useCurrencyInput,
   //@ts-expect-error no types
 } from 'vue-currency-input'
 
-const { fullPath } = useRoute()
+
 const { props: sliderProps } = defineProps<{
   props: {
     minimumValue: number
@@ -80,6 +79,12 @@ const { props: sliderProps } = defineProps<{
     backgroundColor: string
     title: string
   }
+}>()
+
+const emit = defineEmits<{
+  (e: 'submit', value: number): void
+  (e: 'change', value: number): void
+  (e: 'update:modelValue', value: number): void
 }>()
 
 const options: CurrencyInputOptions = {
@@ -124,17 +129,9 @@ const onSubmit = (event: Event) => {
     const cleanedValue = data.creditAmount.toString().replace('R$', '').trim()
     const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.')
     const floatNumber = parseFloat(formattedValue)
-    data.creditAmount = `${floatNumber}`
+    // data.creditAmount = `${floatNumber}`
+    emit('submit', floatNumber)
   }
-
-  localStorage.setItem('simulationData', JSON.stringify(data))
-  window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
-  window.open(
-    `${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${
-      data.creditAmount
-    }`,
-    '_blank',
-  )
 }
 </script>
 <style lang="scss">

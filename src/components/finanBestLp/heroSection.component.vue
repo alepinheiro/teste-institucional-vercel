@@ -25,7 +25,7 @@
               especialistas totalmente pronto pra lhe ajudar.</b
             >
           </p>
-          <InputWithSlider :props="sliderProps" />
+          <InputWithSlider v-model="formValue" :props="sliderProps" @submit="onSubmit"  />
           <div class="flex flex-row gap-2 text-textPrimary items-center md:mx-auto sm:text-white sm:w-5/6 sm:mx-auto">
             <i class="fa-solid fa-chevron-down"></i>
             <p class="text-xs sm:text-2xs ">Ou saiba mais sobre o Financiamento Imobiliário da SejaBest rolando para baixo</p>
@@ -41,6 +41,11 @@
 <script lang="ts" setup>
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
 import Topbar from '@/components/structure/topbar.component.vue'
+import information from '@/configurations/information';
+import { ref } from 'vue';
+import { useRoute } from 'vue-router'
+
+const { fullPath } = useRoute()
 
 const sliderProps = {
   minimumValue: 50000,
@@ -49,4 +54,17 @@ const sliderProps = {
   backgroundColor: '#0524DD',
   title: 'Quanto custa o seu sonho?',
 }
+
+const formValue = ref(0)
+
+const onSubmit = () => {
+  console.log('onSubmit', formValue.value)
+    window.open(
+    `${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${
+      formValue.value
+    }`,
+    '_blank',
+  )
+}
+
 </script>
