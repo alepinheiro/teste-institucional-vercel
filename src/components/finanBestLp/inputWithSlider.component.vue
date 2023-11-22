@@ -63,7 +63,7 @@
 </template>
 <script setup lang="ts">
 import information from '@/configurations/information'
-import { ref } from 'vue'
+import { ref, computed } from 'vue';
 import { useRoute } from 'vue-router'
 import {
   CurrencyInputOptions,
@@ -73,17 +73,8 @@ import {
 
 const { fullPath } = useRoute()
 const { props: sliderProps } = defineProps<{
-  /**
-   * Propriedades do componente
-   */
   props: {
-    /**
-     * Valor mínimo do slider
-     */
     minimumValue: number
-    /**
-     * Valor máximo do slider
-     */
     maximumValue: number
     defaultValue: number
     backgroundColor: string
@@ -106,7 +97,7 @@ const options: CurrencyInputOptions = {
 const { inputRef, numberValue, setValue } = useCurrencyInput(options)
 const inputValue = ref(sliderProps.defaultValue)
 const sliderValue = ref(sliderProps.defaultValue)
-const bgColor = sliderProps.backgroundColor
+const bgColor = computed(() => sliderProps.backgroundColor)
 
 const onInput = (event: Event) => {
   const { value } = event.target as HTMLInputElement

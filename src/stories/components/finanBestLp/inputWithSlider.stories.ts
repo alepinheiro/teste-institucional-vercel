@@ -9,17 +9,14 @@ const meta = {
   argTypes: {
     minimumValue: {
       control: 'number',
-      type: 'number',
       description: 'Valor mínimo do range slider',
     },
     maximumValue: {
       control: 'number',
-      type: 'number',
       description: 'Valor máximo do range slider',
     },
     defaultValue: {
       control: 'number',
-      type: 'number',
       description: 'Valor inicial do range slider',
     },
     backgroundColor: {
@@ -31,36 +28,32 @@ const meta = {
       description: 'Texto da label do componente',
     },
   },
-
-  parameters: {
+  args: {
     minimumValue: 1000,
     maximumValue: 100000,
     defaultValue: 5000,
     backgroundColor: '#0400DD',
-    title: 'Título',
+    title: 'Quanto custa seu sonho?',
   },
+  render: (args) => ({
+    components: { inputWithSlider },
+    setup() {
+      return { args }
+    },
+    template: '<div><inputWithSlider :props="args" /></div>',
+  }),
 } satisfies Meta<typeof inputWithSlider>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  render: (args) => ({
-    components: { inputWithSlider },
-    setup() {
-      return { args }
-    },
-    template: '<inputWithSlider v-bind="args" />',
-  }),
   args: {
     props: {
-      minimumValue: 1000,
-      maximumValue: 100000,
-      defaultValue: 5000,
-      backgroundColor: '#0400DD',
-      title: 'Título',
+      ...meta.args,
     },
   }, // default value
+
   /**
    * adding storybook-vue3-router decorator
    * this is the basic setup with no params passed to the decorator
