@@ -41,6 +41,11 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    parameters: {
+      viewport: { viewports: {
+        mobile: {}
+      } },
+    },
   },
 }
 
