@@ -1,9 +1,9 @@
 import { vueRouter } from 'storybook-vue3-router'
 import type { Meta, StoryObj } from '@storybook/vue3'
-import inputWithSlider from '@/components/finanBestLp/inputWithSlider.component.vue'
+import inputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
 
 const meta = {
-  title: 'Components/FinanBestLp/InputWithSlider',
+  title: 'Components/Structure/InputWithSlider',
   component: inputWithSlider,
   tags: ['autodocs'],
   argTypes: {

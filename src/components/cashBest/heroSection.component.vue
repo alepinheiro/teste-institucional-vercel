@@ -56,7 +56,7 @@
 
 <script lang="ts" setup>
 import Topbar from '@/components/structure/topbar.component.vue'
-import InputWithSlider from '@/components/finanBestLp/inputWithSlider.component.vue'
+import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
 const sliderProps = {
   minimumValue: 50000,
   maximumValue: 15000000,

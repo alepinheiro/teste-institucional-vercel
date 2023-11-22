@@ -39,7 +39,7 @@
   </section>
 </template>
 <script lang="ts" setup>
-import InputWithSlider from '@/components/finanBestLp/inputWithSlider.component.vue'
+import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
 import Topbar from '@/components/structure/topbar.component.vue'
 
 const sliderProps = {
