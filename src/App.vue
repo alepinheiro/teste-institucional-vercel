@@ -1,6 +1,6 @@
 <template>
   <div class="w-full defaultFont">
-    <RouterView @submit="sendToSimulator" />
+    <RouterView />
     <notificationPopUp />
   </div>
 </template>
@@ -34,10 +34,5 @@ export default defineComponent({
       this.isLoading = true
     }, 600)
   },
-  methods: {
-    sendToSimulator(){
-      console.log('app.vue')
-    }
-  }
 })
 </script>

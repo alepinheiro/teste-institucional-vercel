@@ -58,7 +58,6 @@ const sliderProps = {
 const formValue = ref(0)
 
 const onSubmit = () => {
-  console.log('onSubmit', formValue.value)
     window.open(
     `${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${
       formValue.value
