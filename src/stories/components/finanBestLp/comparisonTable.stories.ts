@@ -1,43 +1,49 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import type { ComponentProps } from 'vue-component-type-helpers'
-import BusinessPartners from '@/components/base/businessPartners.component.vue'
+import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.vue'
 
-type CustomProps = ComponentProps<typeof BusinessPartners> & {
-  backgroundColor: string
-  title: string
-  description: string
+type CustomProps = ComponentProps<typeof ComparisonTable> & {
+  componentBackgroundColor: string
+  showBackGroundImage: boolean
+  tableBackgroundColor: string
+  titleColor: 'PRIMARY' | 'TEXTPRIMARY'
 }
 
 const meta = {
-  title: 'Components/FinanBestLp/BusinessPartners',
-  component: BusinessPartners,
+  title: 'Components/FinanBestLp/ComparisonTable',
+  component: ComparisonTable,
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: {
+    componentBackgroundColor: {
       control: 'color',
       description: 'Cor do fundo do componente',
     },
-    title: {
-      control: 'text',
-      description: 'Título do componente',
+    tableBackgroundColor: {
+      control: 'color',
+      description: 'Cor do fundo do título',
     },
-    description: {
-      control: 'text',
+    titleColor: {
+      control: 'select',
+      description: 'Título do componente',
+      options: ['PRIMARY', 'TEXTPRIMARY'],
+    },
+    showBackGroundImage: {
+      control: 'boolean',
       description: 'Descrição do componente',
     },
   },
   args: {
-    backgroundColor: '#FFF',
-    title: 'Quanto custa seu sonho?',
-    description:
-      'Bacon ipsum dolor amet venison meatball cupim, doner andouille corned beef chislic. Meatloaf rump beef ribs bresaola andouille biltong brisket strip steak sirloin frankfurter. Shankle rump spare ribs tongue ribeye meatloaf bresaola flank pork pig. Alcatra turducken boudin, ham tongue rump ham hock bresaola chislic frankfurter cupim salami venison.',
+    componentBackgroundColor: '#FFF',
+    tableBackgroundColor: '#FFF',
+    titleColor: 'PRIMARY',
+    showBackGroundImage: false,
   },
   render: (args) => ({
-    components: { BusinessPartners },
+    components: { ComparisonTable },
     setup() {
       return { args }
     },
-    template: '<BusinessPartners :props="args" />',
+    template: '<ComparisonTable :props="args.props" />',
   }),
 } satisfies Meta<CustomProps>
 
@@ -47,7 +53,14 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     props: {
-      ...meta.args,
+      component: {
+        backgroundColor: meta.args.componentBackgroundColor,
+        showBackGroundImage: meta.args.showBackGroundImage,
+      },
+      table: {
+        backgroundColor: meta.args.tableBackgroundColor,
+        titleColor: meta.args.titleColor,
+      },
     },
   },
 }
