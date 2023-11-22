@@ -19,6 +19,7 @@
           ref="inputRef"
           v-model="inputValue"
           name="creditAmountWithSlider"
+          data-testid="creditAmountWithSlider"
           type="text"
           class="rounded-md w-full px-4 sm:py-2"
           :placeholder="

@@ -1,6 +1,15 @@
-import { vueRouter } from 'storybook-vue3-router'
 import type { Meta, StoryObj } from '@storybook/vue3'
+import type { ComponentProps } from 'vue-component-type-helpers'
 import inputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
+import { within, userEvent } from '@storybook/testing-library'
+
+type CustomProps = ComponentProps<typeof inputWithSlider> & {
+  minimumValue: number
+  maximumValue: number
+  defaultValue: number
+  backgroundColor: string
+  title: string
+}
 
 const meta = {
   title: 'Components/Structure/InputWithSlider',
@@ -27,6 +36,7 @@ const meta = {
       control: 'text',
       description: 'Texto da label do componente',
     },
+    onSubmit: { action: 'onSubmit' }
   },
   args: {
     minimumValue: 1000,
@@ -40,9 +50,9 @@ const meta = {
     setup() {
       return { args }
     },
-    template: '<div><inputWithSlider :props="args" /></div>',
+    template: '<inputWithSlider :props="args" />',
   }),
-} satisfies Meta<typeof inputWithSlider>
+} satisfies Meta<CustomProps>
 
 export default meta
 type Story = StoryObj<typeof meta>
@@ -52,11 +62,11 @@ export const Default: Story = {
     props: {
       ...meta.args,
     },
-  }, // default value
-
-  /**
-   * adding storybook-vue3-router decorator
-   * this is the basic setup with no params passed to the decorator
-   */
-  decorators: [vueRouter()],
+  },
+  play: async ({ canvasElement }) => {
+    const { getByTestId, getByRole } = within(canvasElement)
+    await userEvent.type(getByTestId('creditAmountWithSlider'), '250000.50')
+    await userEvent.click(getByRole('button'))
+    //verificar como testar o emit do evento
+  },
 }
