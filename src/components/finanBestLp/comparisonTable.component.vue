@@ -75,30 +75,12 @@
 <script lang="ts" setup>
 defineProps<{
   props: {
-    /**
-     * Controla as propriedades gerais do componente
-     */
     component: {
-      /**
-       * Define a cor do fundo da seção (ex.: #F2F3F4)
-       */
       backgroundColor: string
-      /**
-       * Exibe ou oculta a imagem de fundo da seção
-       */
       showBackGroundImage: boolean
     }
-    /**
-     * Controla as propriedades gerais da tabela
-     */
     table: {
-      /**
-       * Define a cor do fundo da seção (ex.: #F2F3F4)
-       */
       backgroundColor: string
-      /**
-       * Define a cor do título da tabela
-       */
       titleColor: 'PRIMARY' | 'TEXTPRIMARY'
     }
   }
