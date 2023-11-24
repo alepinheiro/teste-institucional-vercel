@@ -39,7 +39,7 @@
 import { useHead } from '@vueuse/head'
 import HeroSection from '@/components/cashBest/heroSection.component.vue'
 import BusinessPartners from '@/components/base/businessPartners.component.vue'
-import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.vue'
+import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
 import Solutions from '@/components/cashBest/solutionsSection.component.vue'
 import Steps from '@/components/cashBest/stepsSection.component.vue'

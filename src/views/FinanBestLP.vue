@@ -38,7 +38,7 @@
 import { useHead } from '@vueuse/head'
 import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
 import BusinessPartners from '@/components/base/businessPartners.component.vue'
-import ComparisonTable from '@/components/finanBestLp/comparisonTable.component.vue'
+import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
 import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
 import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
