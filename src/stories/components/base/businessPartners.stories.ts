@@ -9,7 +9,7 @@ type CustomProps = ComponentProps<typeof BusinessPartners> & {
 }
 
 const meta = {
-  title: 'Components/FinanBestLp/BusinessPartners',
+  title: 'Components/Base/BusinessPartners',
   component: BusinessPartners,
   tags: ['autodocs'],
   argTypes: {
