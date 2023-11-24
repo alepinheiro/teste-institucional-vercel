@@ -5,12 +5,11 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import('@/configurations/color.css')
 import('@/assets/css/tailwind.css')
 import('@/configurations/customStyle.css')
-import router from '@/router/index'
+import('@/configurations/themeCustomization.scss')
 import image from '@/configurations/images'
 import information from '@/configurations/information'
 
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'

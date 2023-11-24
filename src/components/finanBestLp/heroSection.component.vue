@@ -5,7 +5,7 @@
     </div>
     <div class="absolute inset-0 overflow-hidden z-0 flex items-end">
       <img src="/images/finanBest/heroSectionXL161123.png" alt="" class="hidden xl:block lg:block object-cover h-full ml-auto">
-      <img src="/images/finanBest/heroSectionMD161123.png" alt="" class="hidden md:block sm:block object-cover h-full w-full">
+      <img src="/images/finanBest/heroSectionMD161123.png" alt="" class=" xl:hidden lg:hidden object-cover h-full w-full">
     </div>
     <div class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-row w-full z-10 py-12 sm:py-0 px-5 sm:px-0 relative sm:max-h-screen">
       <!--  -->
@@ -33,7 +33,7 @@
         </div>
       </div>
       <!--  -->
-      <div class="flex-1 md:hidden sm:hidden"></div>
+      <div class="flex-1 xl:block lg:block hidden"></div>
       <!--  -->
     </div>
   </section>
