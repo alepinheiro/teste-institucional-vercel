@@ -42,7 +42,7 @@ import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
 import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
 import AboutUs from '@/components/base/aboutUs.component.vue'
-import Subscribe from '@/components/finanBestLp/subscribeSection.component.vue'
+import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 
 useHead({

@@ -1,4 +1,4 @@
-import Subscribe from '@/components/finanBestLp/subscribeSection.component.vue'
+import Subscribe from '@/components/base/subscribeSection.component.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
 import type { ComponentProps } from 'vue-component-type-helpers'
