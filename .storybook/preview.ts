@@ -95,7 +95,7 @@ const preview: Preview = {
       },
     },
     viewport: {
-      viewports: { ...INITIAL_VIEWPORTS, ...customViewports },
+      viewports: { ...customViewports, ...INITIAL_VIEWPORTS, },
     },
   },
 }
