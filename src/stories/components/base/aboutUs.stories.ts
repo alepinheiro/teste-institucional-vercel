@@ -1,4 +1,4 @@
-import AboutUs from '@/components/finanBestLp/aboutUs.component.vue'
+import AboutUs from '@/components/base/aboutUs.component.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
 import type { ComponentProps } from 'vue-component-type-helpers'
@@ -9,7 +9,7 @@ type CustomProps = ComponentProps<typeof AboutUs> & {
 }
 
 const meta = {
-  title: 'Components/FinanBestLp/AboutUs',
+  title: 'Components/Base/AboutUs',
   component: AboutUs,
   tags: ['autodocs'],
   argTypes: {
