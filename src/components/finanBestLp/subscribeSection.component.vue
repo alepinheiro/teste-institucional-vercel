@@ -39,6 +39,8 @@
   </section>
 </template>
 <script setup lang="ts">
+import SimulationForm from '@/components/base/forms/startSimulation.component.vue'
+
 defineProps<{
   component: {
     bgColor: 'PRIMARY' | 'SECONDARY' | 'BGDARKCOLOR'
@@ -47,6 +49,4 @@ defineProps<{
     showRealtyValue: boolean
   }
 }>()
-
-import SimulationForm from '@/components/base/forms/startSimulation.component.vue'
 </script>
