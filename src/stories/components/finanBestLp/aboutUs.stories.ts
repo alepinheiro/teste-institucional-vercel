@@ -17,11 +17,13 @@ const meta = {
       description: 'Define a cor de fundo da seção',
       control: 'select',
       options: ['PRIMARY', 'SECONDARY', 'BGDARKCOLOR'],
+      defaultValue: 'BGDARKCOLOR',
     },
     bgCard: {
       description: 'Define a cor de fundo dos cards',
       control: 'select',
       options: ['PRIMARY', 'SECONDARY', 'BGDARKCOLOR'],
+      defaultValue: 'PRIMARY',
     },
   },
   args: {
