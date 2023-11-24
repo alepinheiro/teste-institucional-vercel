@@ -14,10 +14,12 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     bgContainer: {
+      description: 'Define a cor de fundo da seção',
       control: 'select',
       options: ['PRIMARY', 'SECONDARY', 'BGDARKCOLOR'],
     },
     bgCard: {
+      description: 'Define a cor de fundo dos cards',
       control: 'select',
       options: ['PRIMARY', 'SECONDARY', 'BGDARKCOLOR'],
     },
