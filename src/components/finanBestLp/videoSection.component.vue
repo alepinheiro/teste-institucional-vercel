@@ -28,7 +28,7 @@
         class="w-7/12 lg:w-5/12 sm:w-full h-96 sm:aspect-video sm:h-auto rounded-2xl overflow-hidden md:hidden"
       >
         <iframe
-          src="https://www.youtube.com/embed/IXZj925aJDY"
+          :src="`https://www.youtube.com/embed/${youtubeVideoId}`"
           title="Como financiar meu primeiro imóvel?"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -77,5 +77,10 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
+
+defineProps<{
+  youtubeVideoId: string
+}>()
+
 const showVideo = ref(false)
 </script>

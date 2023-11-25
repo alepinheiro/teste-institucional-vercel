@@ -5,19 +5,24 @@
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
       <Topbar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
-    <iframe
 
-      src="https://www.youtube.com/embed/tpJ20737xJ4?autoplay=1&mute=1&loop=1&playlist=tpJ20737xJ4"
-      title="Quais são as diferenças entre financiamento imobiliário do banco e da construtora?"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-      class="absolute sm:-top-0 inset-0 -z-10 -top-14 opacity-40 w-full h-full sm:min-h-screen object-cover xl:scale-125 lg:scale-150 md:scale-[185%]"
-    ></iframe>
+    <div class="absolute inset-0 z-0 overflow-hidden flex">
+      <img
+        src="/public/images/cashBest/heroBackgroundXl.png"
+        alt=""
+        class=" object-cover"
+      />
+    </div>
 
-    <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4 px-5">
-      <div class="flex flex-row md:flex-col sm:flex-col mt-auto items-end justify-between w-full gap-3">
-        <div class="w-7/12 md:w-full sm:w-full flex-grow flex flex-col gap-3 text-white">
+    <div
+      class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4 px-5 z-10"
+    >
+      <div
+        class="flex flex-row md:flex-col sm:flex-col mt-auto items-end justify-between w-full gap-3"
+      >
+        <div
+          class="w-7/12 md:w-full sm:w-full flex-grow flex flex-col gap-3 text-white"
+        >
           <h1 class="text-5xl md:text-4xl sm:text-xl font-bold leading-snug">
             <span
               class="relative z-0 after:absolute after:bg-secondary after:-inset-0.5 after:content-[''] after:-z-10 mr-2"
@@ -46,8 +51,7 @@
       >
         <i class="fa-solid fa-chevron-down"></i>
         <p class="text-xs sm:text-2xs underline underline-offset-4">
-          Ou saiba mais sobre o Home Equity rolando
-          para baixo
+          Ou saiba mais sobre o Home Equity rolando para baixo
         </p>
       </div>
     </div>
@@ -62,6 +66,6 @@ const sliderProps = {
   maximumValue: 15000000,
   defaultValue: 350000,
   backgroundColor: '#FFFFFF20',
-  title: 'De quanto você está precisando?'
+  title: 'De quanto você está precisando?',
 }
 </script>

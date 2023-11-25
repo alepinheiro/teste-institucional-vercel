@@ -39,12 +39,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/financiamento-imobiliario',
     name: 'Financing',
-    component: () => import('@/views/Financing.vue'),
+    component: () => import('@/views/FinanBestLP.vue'),
   },
   {
     path: '/financiamento-imobiliario/finanBest',
     name: 'FinancingLP',
-    component: () => import('@/views/FinancingLP.vue'),
+    component: () => import('@/views/FinanBestLP.vue'),
   },
   {
     path: '/parceiro',
@@ -122,12 +122,7 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/BestHubLP.vue'),
   },
   {
-    path: '/dev/finanbest',
-    name: 'FinanBest',
-    component: () => import('@/views/FinanBestLP.vue'),
-  },
-  {
-    path: '/dev/homeEquity',
+    path: '/dev/cashBest',
     name: 'CashBest',
     component: () => import('@/views/CashBestLP.vue'),
   },

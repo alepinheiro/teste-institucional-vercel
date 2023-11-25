@@ -21,7 +21,7 @@
         },
       }"
     />
-    <VideoSection />
+    <VideoSection :youtube-video-id="'Mlg8eDX61uE'" />
     <StepsSection />
     <AboutUs
       :cards="{ bgColor: 'PRIMARY' }"
