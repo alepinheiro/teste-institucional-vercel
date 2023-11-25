@@ -2,9 +2,9 @@
   <div>
     <div
       class="sm:h-full z-50 fixed sm:bottom-0 sm:inset-x-0 px-4 pb-4 flex items-center justify-center lg:inset-0 xl:inset-0 md:inset-0">
-      <div class="fixed inset-0 transition-opacity" @click="close()">
+      <button class="fixed inset-0 transition-opacity" @click="close()">
         <div class="absolute inset-0 bg-black opacity-75"></div>
-      </div>
+      </button>
 
       <div
         class="w-full max-w-[56rem] sm:max-w-sm  rounded-xl shadow-xl transform transition-all ml-auto mr-auto sm:w-full overflow-y-scroll h-full sm:h-full">

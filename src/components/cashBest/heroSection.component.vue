@@ -2,7 +2,7 @@
   <section
     class="bg-bgDarkColor w-full flex pt-10 relative min-h-screen sm:pt-0 overflow-hidden z-0 sm:h-screen"
   >
-    <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
+    <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-10">
       <Topbar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
 
@@ -10,13 +10,16 @@
       <img
         src="/public/images/cashBest/heroBackgroundXl.png"
         alt=""
-        class=" object-cover"
+        class="object-cover"
       />
     </div>
 
     <div
       class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4 px-5 z-10"
     >
+      <div class="absolute inset-0 flex">
+        <VideoButton :video-id="'eDWFe4Wrb2A'" class="m-auto z-50" />
+      </div>
       <div
         class="flex flex-row md:flex-col sm:flex-col mt-auto items-end justify-between w-full gap-3"
       >
@@ -60,6 +63,7 @@
 
 <script lang="ts" setup>
 import Topbar from '@/components/structure/topbar.component.vue'
+import VideoButton from '@/components/bestHub/videoButton.component.vue'
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
 const sliderProps = {
   minimumValue: 50000,
