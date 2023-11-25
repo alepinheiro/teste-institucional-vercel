@@ -14,27 +14,27 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home-equity',
     name: 'HomeEquity',
-    component: () => import('@/views/HomeEquity.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/emprestimo-com-garantia-de-imovel/cashbest',
     name: 'HomeEquityLP',
-    component: () => import('@/views/HomeEquityLP.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/credito-com-garantia-de-imovel',
     name: 'HomeEquityLP-credito',
-    component: () => import('@/views/HomeEquityLP.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/como-funciona',
     name: 'HomeEquityLP2',
-    component: () => import('@/views/HomeEquityLP.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/emprestimo-com-garantia-de-imovel',
     name: 'HomeEquityLP1',
-    component: () => import('@/views/HomeEquityLP.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/financiamento-imobiliario',
@@ -120,11 +120,6 @@ const routes: Array<RouteRecordRaw> = [
     path: '/besthub',
     name: 'BestHub, a plataforma que vai fintechizar o seu negócio',
     component: () => import('@/views/BestHubLP.vue'),
-  },
-  {
-    path: '/dev/cashBest',
-    name: 'CashBest',
-    component: () => import('@/views/CashBestLP.vue'),
   },
 ]
 
