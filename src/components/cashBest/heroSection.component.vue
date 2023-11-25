@@ -8,7 +8,7 @@
 
     <div class="absolute inset-0 z-0 overflow-hidden flex">
       <img
-        src="/public/images/cashBest/heroBackgroundXl.png"
+        src="/images/cashBest/heroBackgroundXl.png"
         alt=""
         class="object-cover"
       />
