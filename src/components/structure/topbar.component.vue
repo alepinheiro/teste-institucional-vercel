@@ -4,7 +4,7 @@
     :class="[position === 'top' ? 'bg-transparent' : 'bg-transparent']"
   >
     <div class="pr-8">
-      <router-link :to="'/' + $root.utms" class="lineDecoration">
+      <router-link :to="'/' + $root.utms" aria-label="Página inicial SejaBest" class="lineDecoration">
         <img
           v-if="position === 'top'"
           :src="$options.imageConfig.logoSejabest"
@@ -40,7 +40,7 @@ import MenuComponent from '@/components/structure/menu.component.vue'
 import MenuMobileComponent from '@/components/structure/menuMobile.component.vue'
 
 export default defineComponent({
-  name: 'TopbarComponent',
+  name: 'TopBar',
   components: {
     MenuComponent,
     MenuMobileComponent

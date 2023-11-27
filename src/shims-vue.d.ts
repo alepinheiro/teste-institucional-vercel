@@ -8,6 +8,9 @@ declare module '*.vue' {
   export default component;
 }
 
+declare global {
+  interface Window { fbq: function; }
+}
 
 declare module 'vue' {
   interface ComponentCustomProperties {

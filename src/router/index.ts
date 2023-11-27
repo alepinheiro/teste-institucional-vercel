@@ -14,37 +14,37 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home-equity',
     name: 'HomeEquity',
-    component: () => import('@/views/HomeEquity.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/emprestimo-com-garantia-de-imovel/cashbest',
     name: 'HomeEquityLP',
-    component: () => import('@/views/HomeEquityLP.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/credito-com-garantia-de-imovel',
     name: 'HomeEquityLP-credito',
-    component: () => import('@/views/HomeEquityLP.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/como-funciona',
     name: 'HomeEquityLP2',
-    component: () => import('@/views/HomeEquityLP.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/emprestimo-com-garantia-de-imovel',
     name: 'HomeEquityLP1',
-    component: () => import('@/views/HomeEquityLP.vue'),
+    component: () => import('@/views/CashBestLP.vue'),
   },
   {
     path: '/financiamento-imobiliario',
     name: 'Financing',
-    component: () => import('@/views/Financing.vue'),
+    component: () => import('@/views/FinanBestLP.vue'),
   },
   {
     path: '/financiamento-imobiliario/finanBest',
     name: 'FinancingLP',
-    component: () => import('@/views/FinancingLP.vue'),
+    component: () => import('@/views/FinanBestLP.vue'),
   },
   {
     path: '/parceiro',
