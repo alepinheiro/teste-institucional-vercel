@@ -1,6 +1,9 @@
 <template>
   <main>
     <HeroSection />
+    <Solutions />
+    <Steps />
+    <TheProduct />
     <BusinessPartners
       :props="{
         backgroundColor: '#F1F1F1',
@@ -25,9 +28,7 @@
       :cards="{ bgColor: 'SECONDARY' }"
       :container="{ bgColor: 'BGDARKCOLOR' }"
     />
-    <Solutions />
-    <Steps />
-    <TheProduct />
+
     <Subscribe
       :component="{ bgColor: 'SECONDARY' }"
       :form="{ showRealtyValue: true }"
