@@ -17,7 +17,7 @@
     <div
       class="relative xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto mt-16 w-full flex pb-8 flex-col gap-4 px-5 z-10"
     >
-      <div class="absolute inset-0 flex sm:-top-20 md:-top-44 lg:-top-24">
+      <div class="absolute h-40 flex sm:top-1/3 md:top-1/4 lg:top-1/3 top-1/3 inset-x-0">
         <VideoButton :video-id="'eDWFe4Wrb2A'" class="m-auto" />
       </div>
       <div
