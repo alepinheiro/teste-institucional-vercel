@@ -3,10 +3,10 @@
     <div class="xl:max-w-7xl lg:max-w-5xl  px-5 mx-auto flex flex-col gap-10 ">
       <div class="flex flex-row w-full justify-between items-center md:max-w-2xl md:mx-auto">
         <div class="flex flex-col gap-1">
-          <h2 class="text-3xl sm:text-xl text-primary font-bold">
+          <h2 class="text-5xl text-primary font-bold">
             Crédito sem filas, nem gerentes, nem complexidade
           </h2>
-          <p class="text-sm text-textPrimary">
+          <p class="text-base text-textPrimary">
             São apenas 4 passos para você receber o seu crédito.
           </p>
         </div>
@@ -53,6 +53,12 @@ const sliderOptions: SwiperOptions = {
   },
 }
 
+const utm = new URLSearchParams({
+  utm_source: 'institucional-seja-best',
+  utm_medium: 'cards-section-cashbest',
+  utm_campaign: 'landing-pages-dez-23',
+})
+
 const stepCards = [
   {
     id: 1,
@@ -60,7 +66,7 @@ const stepCards = [
     title: 'Simule',
     description:
       'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
-    callToAction: ['Simule agora', '#'],
+    callToAction: ['Simule agora', `https://simulador.seja.best/?${utm.toString()}`],
   },
   {
     id: 2,
