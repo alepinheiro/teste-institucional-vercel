@@ -7,7 +7,7 @@
     <div
       class="flex flex-col gap-6 max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto font-Public-Sans text-center px-5"
     >
-      <h2 class="text-3xl sm:text-xl font-bold text-primary">
+      <h2 class="text-4xl font-bold text-primary">
         {{ props.title }}
       </h2>
       <div class="hidden sm:block">
@@ -19,7 +19,7 @@
         />
       </div>
       <p
-        class="text-xl sm:text-sm text-textPrimary md:text-justify"
+        class="text-base text-textPrimary md:text-justify"
         v-html="props.description"
       ></p>
 
