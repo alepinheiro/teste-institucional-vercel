@@ -63,7 +63,7 @@ const steps = [
   {
     id: 3,
     icon: 'fa-solid fa-search',
-    title: '3. Documentação',
+    title: '3. Avaliação e Jurídico',
     text: 'Nesta etapa, um engenheiro avalia quanto o imóvel vale. Além disso, é feita uma análise para conferir a <b>situação jurídica da propriedade e validar o bem como uma garantia.</b>',
     link: null,
   },

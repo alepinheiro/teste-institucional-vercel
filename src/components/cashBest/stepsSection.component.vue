@@ -23,7 +23,7 @@
           :is="'swiper-slide'"
           v-for="{ id, icon, title, description, callToAction } of stepCards"
           :key="id"
-          class="bg-white rounded-lg p-12 lg:p-10 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10"
+          class="bg-white rounded-lg p-6 lg:p-10 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10"
         >
           <div class="flex flex-col gap-12 lg:gap-10 items-start font-Public-Sans">
             <i :class="icon" class="text-primary w-5 h-5"></i>
@@ -47,7 +47,7 @@ const sliderOptions: SwiperOptions = {
   slidesPerView: 'auto',
   pagination: true,
   breakpoints: {
-    1279: {
+    1280: {
       slidesPerView: 4,
     },
   },
