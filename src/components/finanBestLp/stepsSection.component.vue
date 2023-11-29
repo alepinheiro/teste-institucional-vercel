@@ -39,7 +39,7 @@ const sliderOptions: SwiperOptions = {
   slidesPerView: 'auto',
   pagination: true,
   breakpoints: {
-    1920: {
+    1280: {
       slidesPerView: 4,
     },
   },
