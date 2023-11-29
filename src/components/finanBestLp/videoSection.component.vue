@@ -6,10 +6,10 @@
       <div
         class="w-5/12 lg:w-7/12 md:w-full sm:w-full flex flex-col gap-8 text-textPrimary text-center"
       >
-        <h2 class="text-3xl sm:text-xl text-primary font-bold">
+        <h2 class="text-4xl text-primary font-bold">
           O FinanBest é o produto de financiamento imobiliário da SejaBest.
         </h2>
-        <div class="text-xl leading-relaxed sm:hidden">
+        <div class="text-base leading-relaxed sm:hidden">
           <p>
             Imagine financiar seu novo imóvel sem sair de casa, contando com um
             time de especialistas prontos para lhe atender a qualquer momento.
@@ -59,7 +59,7 @@
           </button>
         </div>
       </div>
-      <div class="text-sm text-center leading-relaxed sm:block hidden">
+      <div class="text-base text-center leading-relaxed sm:block hidden">
         <p>
           Imagine financiar seu novo imóvel sem sair de casa, contando com um
           time de especialistas prontos para lhe atender a qualquer momento.
