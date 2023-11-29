@@ -2,7 +2,7 @@
   <section
     class="bg-bgDarkColor w-full flex pt-10 relative min-h-screen sm:pt-0 overflow-hidden z-0 sm:h-screen"
   >
-    <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-10">
+    <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
       <Topbar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
 

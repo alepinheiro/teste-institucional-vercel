@@ -1,20 +1,27 @@
 <template>
   <div class="relative w-16 mx-auto py-10 transition-all">
-    <div v-if="showVideo" class="fixed text-white inset-0 bg-black/80" @click="handleOverlay">
-    </div>
+    <button
+      v-if="showVideo"
+      title="Overlay"
+      aria-label="Fechar vídeo"
+      class="fixed text-white inset-0 bg-black/80"
+      @click="handleOverlay"
+    ></button>
     <dialog
       :open="showVideo"
       class="fixed inset-0 z-[100] bg-black bestHubDialogBox"
     >
-
       <div class="relative shadow-lg flex justify-center items-center">
         <button
+          title="Fechar vídeo"
+          aria-label="Fechar vídeo"
           class="absolute -top-4 -right-4 text-white/30 hover:text-white transition-all"
           @click="handleOverlay"
         >
           <i class="fa-regular fa-circle-xmark"></i>
         </button>
         <iframe
+          :key="`${showVideo}`"
           class="bh-videoPlayer rounded-2xl overflow-hidden bg-transparent"
           :src="`https://www.youtube.com/embed/${videoId}`"
           title="Financiamento imobiliário: Vale a pena fazer agora?"
@@ -28,7 +35,10 @@
         class="w-16 h-16 bg-white/30 rounded-full absolute my-auto inset-0 animate-ping"
       ></div>
     </div>
-    <button class="h-full w-16" @click="handleOverlay">
+    <button
+    title="Reproduzir vídeo"
+    aria-label="Reproduzir vídeo"
+    class="h-full w-16" @click="handleOverlay">
       <img
         class="w-16"
         src="/images/bestHub/icons/playButton.svg"
@@ -46,7 +56,7 @@ export default defineComponent({
     videoId: {
       type: String,
       required: true,
-    }
+    },
   },
   data() {
     return {
