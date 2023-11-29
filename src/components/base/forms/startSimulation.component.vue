@@ -4,7 +4,7 @@
       class="w-full bg-white sm:bg-transparent rounded-xl p-5 flex flex-col gap-5"
       @submit.prevent="onSubmit"
     >
-      <div class="flex flex-col">
+      <div class="flex flex-col gap-2">
         <label for="name" class="sm:text-white">Nome Completo</label>
         <input
           id="name"
@@ -12,10 +12,10 @@
           type="text"
           placeholder="Digite seu nome completo"
           required
-          class="bg-zinc-200 rounded p-2 focus-within:shadow-md focus-within:outline-primary transition-all"
+          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col gap-2">
         <label for="email" class="sm:text-white">E-mail</label>
         <input
           id="email"
@@ -23,10 +23,10 @@
           type="email"
           placeholder="Seu melhor e-mail"
           required
-          class="bg-zinc-200 rounded p-2 focus-within:shadow-md focus-within:outline-primary transition-all"
+          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
-      <div v-if="showHomeEquity" class="flex flex-col">
+      <div v-if="showHomeEquity" class="flex flex-col gap-2">
         <label for="realtyValue" class="sm:text-white">
           Quanto vale seu imóvel?
         </label>
@@ -37,10 +37,10 @@
           type="text"
           placeholder="R$ 2500.000,00"
           :required="showHomeEquity"
-          class="bg-zinc-200 rounded p-2 focus-within:shadow-md focus-within:outline-primary transition-all"
+          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
-      <div class="flex flex-col">
+      <div class="flex flex-col gap-2">
         <label for="creditAmount" class="sm:text-white">
           De quanto você precisa?
         </label>
@@ -51,13 +51,13 @@
           type="text"
           placeholder="R$ 2500.000,00"
           required
-          class="bg-zinc-200 rounded p-2 flex-grow focus-within:shadow-md focus-within:outline-primary transition-all sm:w-full"
+          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
       <button
         title="Iniciar simulação agora"
         aria-label="Iniciar simulação agora"
-        class="bg-complementaryColor1 w-fit mx-auto px-3 py-2 rounded-md text-black font-bold mt-4"
+        class="bg-complementaryColor1 w-fit mx-auto px-3 py-2 rounded-md text-black font-bold mt-4 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
       >
         Iniciar simulação agora
       </button>

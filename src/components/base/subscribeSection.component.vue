@@ -10,10 +10,10 @@
       class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full flex flex-col gap-12"
     >
       <div class="text-white text-center flex flex-col gap-4 w-10/12 mx-auto">
-        <h2 class="text-3xl font-bold sm:text-xl">
+        <h2 class="text-4xl font-bold">
           Simule agora completamente de graça.
         </h2>
-        <p class="text-lg leading-loose">
+        <p class="text-base leading-loose">
           <b>
             Simule gratuitamente em mais de 20 bancos e encontre a melhor opção
             de crédito para suas necessidades.</b
