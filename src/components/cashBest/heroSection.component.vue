@@ -35,7 +35,7 @@
             </span>
             o Crédito com Garantia de Imóvel da SejaBest
           </h1>
-          <p class="sm:text-justify">
+          <p class="sm:text-justify text-base">
             Descubra as melhores taxas do mercado: a partir de 1.09% a.m. + IPCA
             ou 1.49% a.m. fixa.
             <b>
