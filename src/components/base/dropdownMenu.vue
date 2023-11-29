@@ -15,7 +15,7 @@
     </div>
     <div
       v-if="showPopOver"
-      class="absolute z-10 w-[18rem] p-2 bgPopUpHover rounded-lg shadowDark"
+      class="absolute z-10 w-[19rem] p-2 bgPopUpHover rounded-lg shadowDark"
     >
       <div
         class="px-2 py-3 optionsHover hover:shadow-md text-textPrimary flex flex-row items-center w-full justify-between"
@@ -69,7 +69,7 @@
       </div>
 
       <div
-        class="px-1 py-3 optionsHover hover:shadow-md text-textPrimary flex flex-row items-center w-full justify-between"
+        class="px-2 py-3 optionsHover hover:shadow-md text-textPrimary flex flex-row items-center w-full justify-between"
         @mouseover="hover2 = true"
         @mouseout="hover2 = false"
       >
@@ -94,7 +94,7 @@
       </div>
 
       <div
-        class="px-1 py-3 optionsHover hover:shadow-lg text-textPrimary flex flex-row items-center w-full justify-between"
+        class="px-2 py-3 optionsHover hover:shadow-lg text-textPrimary flex flex-row items-center w-full justify-between"
         @mouseover="hover3 = true"
         @mouseout="hover3 = false"
       >
