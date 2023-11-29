@@ -74,17 +74,17 @@ const banks = [
   {
     id: 5,
     alt: 'Banco Rodobens',
-    source: '/images/finanBest/banks/bancoRodobens.png',
+    source: '/images/finanBest/banks/bancoRodobens.svg',
   },
   {
     id: 6,
     alt: 'Banco Daycoval',
-    source: '/images/finanBest/banks/bancoDaycoval.png',
+    source: '/images/finanBest/banks/bancoDaycoval.svg',
   },
   {
     id: 7,
     alt: 'Banco Santander',
-    source: '/images/finanBest/banks/bancoSantander.png',
+    source: '/images/finanBest/banks/bancoSantander.svg',
   },
   {
     id: 8,
@@ -99,12 +99,12 @@ const banks = [
   {
     id: 10,
     alt: 'Banco CashMe',
-    source: '/images/finanBest/banks/bancoCashMe.png',
+    source: '/images/finanBest/banks/bancoCashMe.svg',
   },
   {
     id: 11,
     alt: 'Banco Inter',
-    source: '/images/finanBest/banks/bancoInter.png',
+    source: '/images/finanBest/banks/bancoInter.svg',
   },
   {
     id: 12,
