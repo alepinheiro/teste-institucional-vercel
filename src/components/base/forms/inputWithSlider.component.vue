@@ -71,7 +71,6 @@ import {
   //@ts-expect-error no types
 } from 'vue-currency-input'
 
-
 const { props: sliderProps } = defineProps<{
   props: {
     minimumValue: number

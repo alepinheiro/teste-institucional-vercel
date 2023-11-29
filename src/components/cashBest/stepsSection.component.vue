@@ -3,10 +3,10 @@
     <div class="xl:max-w-7xl lg:max-w-5xl  px-5 mx-auto flex flex-col gap-10 ">
       <div class="flex flex-row w-full justify-between items-center md:max-w-2xl md:mx-auto">
         <div class="flex flex-col gap-1">
-          <h2 class="text-3xl sm:text-xl text-primary font-bold">
+          <h2 class="text-4xl text-primary font-bold">
             Crédito sem filas, nem gerentes, nem complexidade
           </h2>
-          <p class="text-sm text-textPrimary">
+          <p class="text-base text-textPrimary">
             São apenas 4 passos para você receber o seu crédito.
           </p>
         </div>
@@ -23,7 +23,7 @@
           :is="'swiper-slide'"
           v-for="{ id, icon, title, description, callToAction } of stepCards"
           :key="id"
-          class="bg-white rounded-lg p-12 lg:p-10 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10"
+          class="bg-white rounded-lg p-6 lg:p-10 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10"
         >
           <div class="flex flex-col gap-12 lg:gap-10 items-start font-Public-Sans">
             <i :class="icon" class="text-primary w-5 h-5"></i>
@@ -47,11 +47,17 @@ const sliderOptions: SwiperOptions = {
   slidesPerView: 'auto',
   pagination: true,
   breakpoints: {
-    1279: {
+    1280: {
       slidesPerView: 4,
     },
   },
 }
+
+const utm = new URLSearchParams({
+  utm_source: 'institucional-seja-best',
+  utm_medium: 'cards-section-cashbest',
+  utm_campaign: 'landing-pages-dez-23',
+})
 
 const stepCards = [
   {
@@ -60,7 +66,7 @@ const stepCards = [
     title: 'Simule',
     description:
       'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
-    callToAction: ['Simule agora', '#'],
+    callToAction: ['Simule agora', `https://simulador.seja.best/?${utm.toString()}`],
   },
   {
     id: 2,

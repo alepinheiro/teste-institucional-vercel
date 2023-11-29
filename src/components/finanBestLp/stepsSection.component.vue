@@ -39,11 +39,17 @@ const sliderOptions: SwiperOptions = {
   slidesPerView: 'auto',
   pagination: true,
   breakpoints: {
-    1920: {
+    1280: {
       slidesPerView: 4,
     },
   },
 }
+
+const utm = new URLSearchParams({
+  utm_source: 'institucional-seja-best',
+  utm_medium: 'cards-section-cashbest',
+  utm_campaign: 'landing-pages-dez-23',
+})
 
 const steps = [
   {
@@ -51,7 +57,7 @@ const steps = [
     icon: 'fa-solid fa-layer-group',
     title: '1. Simule',
     text: 'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
-    link: ['#', 'Simule agora'],
+    link: [`https://simulador.seja.best/?${utm.toString()}`, 'Simule agora'],
   },
   {
     id: 2,
@@ -63,7 +69,7 @@ const steps = [
   {
     id: 3,
     icon: 'fa-solid fa-search',
-    title: '3. Documentação',
+    title: '3. Avaliação e Jurídico',
     text: 'Nesta etapa, um engenheiro avalia quanto o imóvel vale. Além disso, é feita uma análise para conferir a <b>situação jurídica da propriedade e validar o bem como uma garantia.</b>',
     link: null,
   },

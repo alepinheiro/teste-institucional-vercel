@@ -27,7 +27,7 @@
             'text-textPrimary': props.table.titleColor === 'TEXTPRIMARY',
             'text-primary': props.table.titleColor === 'PRIMARY',
           }"
-          class="text-5xl sm:text-xl sm:text-center sm:text-primary md:text-3xl sm:w-8/12 sm:mx-auto"
+          class="text-4xl sm:text-center sm:text-primary md:text-3xl sm:w-8/12 sm:mx-auto"
         >
           Por que financiar com a <b> SejaBest?</b>
         </h2>
@@ -38,7 +38,7 @@
               <img
                 src="/images/logoBest/logoGray.svg"
                 alt="Logomarca SejaBest"
-                class="h-10 mx-auto"
+                class="h-10 mx-auto sm:pr-2"
               />
             </div>
             <div class="w-1/4 text-center sm:text-xs">
