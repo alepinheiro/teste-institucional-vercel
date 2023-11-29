@@ -45,13 +45,19 @@ const sliderOptions: SwiperOptions = {
   },
 }
 
+const utm = new URLSearchParams({
+  utm_source: 'institucional-seja-best',
+  utm_medium: 'cards-section-cashbest',
+  utm_campaign: 'landing-pages-dez-23',
+})
+
 const steps = [
   {
     id: 1,
     icon: 'fa-solid fa-layer-group',
     title: '1. Simule',
     text: 'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
-    link: ['#', 'Simule agora'],
+    link: [`https://simulador.seja.best/?${utm.toString()}`, 'Simule agora'],
   },
   {
     id: 2,

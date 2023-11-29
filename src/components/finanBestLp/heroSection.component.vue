@@ -25,7 +25,7 @@
               especialistas totalmente pronto pra lhe ajudar.</b
             >
           </p>
-          <InputWithSlider v-model="formValue" :props="sliderProps" @submit="onSubmit"  />
+          <InputWithSlider v-model="formValue" :props="sliderProps" @submit="openSimulation"  />
         </div>
       </div>
       <!--  -->
@@ -39,9 +39,6 @@ import InputWithSlider from '@/components/base/forms/inputWithSlider.component.v
 import Topbar from '@/components/structure/topbar.component.vue'
 import information from '@/configurations/information';
 import { ref } from 'vue';
-import { useRoute } from 'vue-router'
-
-const { fullPath } = useRoute()
 
 const sliderProps = {
   minimumValue: 50000,
@@ -53,13 +50,14 @@ const sliderProps = {
 
 const formValue = ref(0)
 
-const onSubmit = () => {
-    window.open(
-    `${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${
-      formValue.value
-    }`,
-    '_blank',
-  )
+const utm = new URLSearchParams({
+  utm_source: 'institucional-seja-best',
+  utm_medium: 'hero-section-finanbest',
+  utm_campaign: 'landing-pages-dez-23',
+})
+
+const openSimulation = () => {
+  window.open(`${information.appSimulator}?${utm.toString()}`, '_blank')
 }
 
 </script>

@@ -58,6 +58,7 @@
 import Topbar from '@/components/structure/topbar.component.vue'
 import VideoButton from '@/components/bestHub/videoButton.component.vue'
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
+import information from '@/configurations/information';
 
 const sliderProps = {
   minimumValue: 50000,
@@ -69,11 +70,11 @@ const sliderProps = {
 
 const utm = new URLSearchParams({
   utm_source: 'institucional-seja-best',
-  utm_medium: 'hero-section-home-equity',
+  utm_medium: 'hero-section-cashbest',
   utm_campaign: 'landing-pages-dez-23',
 })
 
 const openSimulation = () => {
-  window.open(`https://simulador.seja.best/?${utm.toString()}`, '_blank')
+  window.open(`${information.appSimulator}?${utm.toString()}`, '_blank')
 }
 </script>

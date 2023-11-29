@@ -56,7 +56,6 @@
         aria-label="Simular"
         title="simular"
         class="bg-complementaryColor1 text-black px-4 py-2 rounded-md hidden sm:block w-fit mx-auto"
-        @click="onSubmit"
       >
         Simular
       </button>
@@ -71,7 +70,6 @@ import {
   useCurrencyInput,
   //@ts-expect-error no types
 } from 'vue-currency-input'
-
 
 const { props: sliderProps } = defineProps<{
   props: {
