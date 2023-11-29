@@ -38,7 +38,7 @@
               <img
                 src="/images/logoBest/logoGray.svg"
                 alt="Logomarca SejaBest"
-                class="h-10 mx-auto"
+                class="h-10 mx-auto sm:pr-2"
               />
             </div>
             <div class="w-1/4 text-center sm:text-xs">
