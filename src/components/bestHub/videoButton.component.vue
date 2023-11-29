@@ -1,15 +1,15 @@
 <template>
-  <div class="relative w-16 mx-auto py-10 transition-all">
+  <div class="relative w-16 mx-auto my-10 transition-all z-50">
     <button
       v-if="showVideo"
       title="Overlay"
       aria-label="Fechar vídeo"
-      class="fixed text-white inset-0 bg-black/80"
+      class="fixed text-white inset-0 bg-black/80 content-[''] w-full"
       @click="handleOverlay"
     ></button>
     <dialog
       :open="showVideo"
-      class="fixed inset-0 z-[100] bg-black bestHubDialogBox"
+      class="fixed inset-0 z-[200] bg-black bestHubDialogBox rounded-2xl"
     >
       <div class="relative shadow-lg flex justify-center items-center">
         <button
