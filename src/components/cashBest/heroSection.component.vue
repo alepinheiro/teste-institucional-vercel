@@ -27,7 +27,7 @@
         <div
           class="w-7/12 md:w-full sm:w-full flex-grow flex flex-col gap-3 text-white"
         >
-          <h1 class="text-5xl font-bold leading-snug">
+          <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold leading-snug">
             <span
               class="relative z-0 after:absolute after:bg-secondary after:-inset-0.5 after:content-[''] after:-z-10 mr-2"
             >
