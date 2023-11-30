@@ -10,7 +10,7 @@
       class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full flex flex-col gap-12"
     >
       <div class="text-white text-center flex flex-col gap-4 w-10/12 mx-auto">
-        <h2 class="text-4xl sm:text-3xl font-bold">
+        <h2 class="text-4xl sm:text-2xl font-bold">
           Simule agora completamente de graça.
         </h2>
         <p class="text-base leading-loose">

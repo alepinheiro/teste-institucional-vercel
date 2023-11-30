@@ -2,7 +2,7 @@
   <section class="py-20 bg-[#EFEFEF]">
     <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-col gap-14 px-5 sm:px-0">
       <div class="text-center flex flex-col gap-5 sm:px-5">
-        <h2 class="text-3xl leading-snug font-bold text-primary">
+        <h2 class="text-4xl sm:text-2xl leading-snug font-bold text-primary">
           <span
             class="relative after:content-[''] after:absolute after:-inset-1 after:bg-secondary after:-z-10 text-white mr-2 z-0"
           >

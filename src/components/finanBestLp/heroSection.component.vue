@@ -13,7 +13,7 @@
         <div
           class="bg-white sm:bg-transparent flex flex-col gap-6 sm:gap-2 md:gap-3 font-Public-Sans p-8 md:px-8 py-4 rounded-xl shadow-lg sm:h-full sm:justify-end sm:pt-40"
         >
-          <h1 class="text-5xl sm:text-white text-primary leading-tight sm:drop-shadow ">
+          <h1 class="text-5xl sm:text-3xl sm:text-white text-primary leading-tight sm:drop-shadow ">
             <strong>FinanBest:</strong>
             Financie seu imóvel com a assessoria
             <strong>SejaBest</strong>
