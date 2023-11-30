@@ -1,8 +1,10 @@
 <template>
   <div class="flex mt-auto mb-auto justify-between">
-    <div class="flex ">
+    <div class="flex">
       <div :class="linkStyle">
-        <router-link :to="'/' + $root.utms" class="decoration"> Início </router-link>
+        <router-link :to="'/' + $root.utms" class="decoration">
+          Início
+        </router-link>
       </div>
       <div :class="linkStyle">
         <dropdownMenu />
@@ -11,25 +13,38 @@
         <dropdownForB />
       </div>
       <div :class="linkStyle">
-        <router-link :to="'/bestHub' + $root.utms" class="decoration"> Seja um Parceiro </router-link>
+        <router-link :to="'/bestHub' + $root.utms" class="decoration">
+          Seja um Parceiro
+        </router-link>
       </div>
       <div :class="linkStyle">
-        <a :href="'https://portal.seja.best/' + $root.utms" class="decoration" target="_blank"> Portal</a>
+        <a
+          :href="'https://portal.seja.best/' + $root.utms"
+          class="decoration"
+          target="_blank"
+        >
+          Portal</a
+        >
       </div>
       <div :class="linkStyle">
-        <router-link :to="'/sobre' + $root.utms" class="decoration" active-class:> Sobre </router-link>
+        <router-link
+          :to="'/sobre' + $root.utms"
+          class="decoration"
+          active-class:
+        >
+          Sobre
+        </router-link>
       </div>
     </div>
     <div class="flex">
-
       <div
-        class="bg-complementaryColor1 rounded-lg px-4 py-1 font-semibold  text-black
-        transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:px-1 lg:text-sm">
-
+        class="bg-complementaryColor1 rounded-lg px-4 py-1 font-semibold text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:px-1 lg:text-sm"
+      >
         <a
           :href="$options.information.appSimulator + $root.utms"
-          style=" text-decoration: none;"
-          target="_blank">
+          style="text-decoration: none"
+          target="_blank"
+        >
           Simule seu crédito
         </a>
       </div>
@@ -37,11 +52,9 @@
   </div>
 </template>
 <script lang="ts">
-
-import { defineComponent } from 'vue';
-import dropdownMenu from '../base/dropdownMenu.vue';
-import dropdownForB from '../base/PopUpForBusiness.vue';
-
+import { defineComponent } from 'vue'
+import dropdownMenu from '../base/dropdownMenu.vue'
+import dropdownForB from '../base/PopUpForBusiness.vue'
 
 export default defineComponent({
   name: 'MenuComponent',
@@ -52,8 +65,8 @@ export default defineComponent({
   props: {
     linkStyle: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   data() {
     return {
@@ -64,7 +77,7 @@ export default defineComponent({
 </script>
 
 <style>
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .linkStyleDark {
     padding-left: 0rem;
     padding-right: 0rem;

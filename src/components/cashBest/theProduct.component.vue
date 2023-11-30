@@ -21,7 +21,7 @@
         <hr class="hidden sm:block border-zinc-400" />
         <a
           :href="`https://simulador.seja.best/?${utm.toString()}`"
-          class="font-bold text-black bg-complementaryColor1 rounded px-4 py-2 w-fit sm:hidden"
+          class="font-bold text-white bg-complementaryColor1 rounded px-4 py-2 w-fit sm:hidden"
           >Simule on-line de graça</a
         >
       </div>
@@ -35,7 +35,7 @@
       </div>
       <a
         :href="`https://simulador.seja.best/?${utm.toString()}`"
-        class="font-bold text-black bg-complementaryColor1 rounded px-4 py-2 w-fit hidden sm:block sm:mt-8"
+        class="font-bold text-white bg-complementaryColor1 rounded px-4 py-2 w-fit hidden sm:block sm:mt-8"
         >Simule on-line de graça</a
       >
     </div>

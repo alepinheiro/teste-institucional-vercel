@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-bgDarkColor w-full flex pt-10 relative min-h-screen sm:pt-0 overflow-hidden z-0"
+    class="bg-bgDarkColor w-full flex pt-10 relative min-h-screen sm:min-h-fit sm:pt-0 overflow-hidden z-0"
   >
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-10">
       <Topbar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
@@ -19,7 +19,7 @@
     >
       <VideoButton
         :video-id="'eDWFe4Wrb2A'"
-        class="absolute flex sm:top-36 md:top-24 lg:top-1/3 top-1/3 inset-x-0"
+        class="absolute flex sm:top-36 md:top-48 lg:top-1/3 top-1/3 inset-x-0"
       />
       <div
         class="flex flex-row md:flex-col sm:flex-col mt-auto items-end justify-between w-full gap-3 sm:mt-40"
