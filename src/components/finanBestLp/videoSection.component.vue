@@ -6,7 +6,7 @@
       <div
         class="w-5/12 lg:w-7/12 md:w-full sm:w-full flex flex-col gap-8 text-textPrimary text-center"
       >
-        <h2 class="text-4xl text-primary font-bold">
+        <h2 class="text-4xl sm:text-2xl text-primary font-bold">
           O FinanBest é o produto de financiamento imobiliário da SejaBest.
         </h2>
         <div class="text-base leading-relaxed sm:hidden">

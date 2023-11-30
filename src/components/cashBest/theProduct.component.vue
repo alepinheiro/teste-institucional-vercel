@@ -4,7 +4,7 @@
       class="flex flex-row md:flex-col sm:flex-col items-center xl:max-w-7xl lg:max-w-5xl md:max-w-2xl md:gap-6 mx-auto px-5"
     >
       <div class="flex flex-col gap-6 sm:gap-8 flex-1">
-        <h2 class="text-4xl text-primary font-bold">
+        <h2 class="text-4xl sm:text-2xl text-primary font-bold">
           O crédito mais barato do mercado.
         </h2>
         <p

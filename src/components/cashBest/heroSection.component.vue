@@ -6,7 +6,7 @@
       <Topbar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
 
-    <div class="absolute inset-0 z-0 overflow-hidden flex sm:h-2/3 md:h-2/3">
+    <div class="absolute inset-0 z-0 overflow-hidden flex sm:h-1/2 md:h-2/3">
       <img
         src="/images/cashBest/heroBackgroundXl.png"
         alt=""
@@ -22,7 +22,7 @@
         class="absolute flex sm:top-36 md:top-24 lg:top-1/3 top-1/3 inset-x-0"
       />
       <div
-        class="flex flex-row md:flex-col sm:flex-col mt-auto items-end justify-between w-full gap-3 sm:pt-40"
+        class="flex flex-row md:flex-col sm:flex-col mt-auto items-end justify-between w-full gap-3 sm:mt-40"
       >
         <div
           class="w-7/12 md:w-full sm:w-full flex-grow flex flex-col gap-3 text-white"

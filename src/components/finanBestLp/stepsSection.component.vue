@@ -14,9 +14,9 @@
         >
           <div class="flex flex-col gap-12 items-start font-Public-Sans">
             <i :class="icon" class="text-primary w-5 h-5"></i>
-            <h3 class="text-2xl font-bold sm:text-lg">{{ title }}</h3>
+            <h3 class="text-2xl lg:text-lg sm:text-xl font-bold">{{ title }}</h3>
             <!-- eslint-disable-next-line vue/no-v-html -->
-            <p class="sm:text-sm" v-html="text"></p>
+            <p class="text-base" v-html="text"></p>
             <a v-if="link" :href="link[0]" class="underline sm:text-sm">
               {{ link[1] }}
             </a>
