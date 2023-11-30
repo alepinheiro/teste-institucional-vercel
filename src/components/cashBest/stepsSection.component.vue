@@ -3,7 +3,7 @@
     <div class="xl:max-w-7xl lg:max-w-5xl  px-5 mx-auto flex flex-col gap-10 ">
       <div class="flex flex-row w-full justify-between items-center md:max-w-2xl md:mx-auto">
         <div class="flex flex-col gap-1">
-          <h2 class="text-4xl text-primary font-bold">
+          <h2 class="text-3xl text-primary font-bold">
             Crédito sem filas, nem gerentes, nem complexidade
           </h2>
           <p class="text-base text-textPrimary">
@@ -29,7 +29,7 @@
             <i :class="icon" class="text-primary w-5 h-5"></i>
             <h3 class="text-2xl lg:text-lg sm:text-xl font-bold">{{ id }}. {{ title }}</h3>
             <!-- eslint-disable-next-line vue/no-v-html -->
-            <p class="lg:text-sm sm:text-sm" v-html="description"></p>
+            <p class="text-base" v-html="description"></p>
             <a v-if="callToAction" :href="callToAction[1]" class="underline sm:text-sm">
               {{ callToAction[0] }}
             </a>
