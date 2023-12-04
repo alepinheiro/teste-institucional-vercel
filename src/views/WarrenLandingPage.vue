@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col overflow-hidden">
+  <main class="flex flex-col font-Mulish">
     <HeroSection />
   </main>
 </template>

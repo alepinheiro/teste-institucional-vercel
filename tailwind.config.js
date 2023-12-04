@@ -428,7 +428,8 @@ module.exports = {
       ],
       'Sizmo-Pro': ['FF Sizmo Pro', 'sans-serif'],
       'Public-Sans': ['Public Sans', 'sans-serif'],
-      'Sizmo': ["Sizmo", "sans-serif"]
+      'Sizmo': ["Sizmo", "sans-serif"],
+      'Mulish': ["Mulish", "sans-serif"]
     },
     fontSize: {
       '2xs': ["0.6rem", { lineHeight: "0.60rem" }],
