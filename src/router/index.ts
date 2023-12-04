@@ -121,6 +121,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'BestHub, a plataforma que vai fintechizar o seu negócio',
     component: () => import('@/views/BestHubLP.vue'),
   },
+  {
+    path: '/warren',
+    name: 'Fazer crédito toma tempo, mas não precisa ser o seu',
+    component: () => import('@/views/WarrenLandingPage.vue'),
+  },
 ]
 
 const router = createRouter({
