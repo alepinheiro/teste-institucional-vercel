@@ -57,7 +57,7 @@
       <div
         class="absolute bottom-3 h-fit flex flex-row justify-between w-full z-10 px-5"
       >
-        <button class="wNavigationPrev w-5 h-5">
+        <button class="wNavigationPrev w-5 h-5" aria-label="Anterior" aria-controls="previous">
           <svg
             width="20"
             height="20"
@@ -73,7 +73,7 @@
             />
           </svg>
         </button>
-        <button class="wNavigationNext">
+        <button class="wNavigationNext" aria-label="Próximo" aria-controls="next">
           <svg
             width="20"
             height="20"
