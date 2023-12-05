@@ -17,10 +17,10 @@
           :is="'swiper-slide'"
           v-for="{ id, description, options, title } of slides"
           :key="id"
-          class="bg-white p-5 rounded-2xl border block mb-12"
+          class="bg-white p-5 rounded-2xl block mb-14 pb-4"
         >
           <div class="flex flex-col gap-5 items-start text-start">
-            <h3 class="text-3xl font-bold text-[#333131]">
+            <h3 class="text-2xl font-bold text-[#333131]">
               {{ title }}
             </h3>
             <p class="text-[#807C7B] text-xs">
@@ -31,27 +31,34 @@
               <div
                 v-for="option of options"
                 :key="option.id"
-                class="flex flex-row gap-2"
+                class="flex flex-row gap-2 items-center"
               >
-                <i :class="option.icon"></i>
+                <img
+                  :src="`/images/warren/icons/${option.icon}.svg`"
+                  :alt="option.description"
+                  srcset=""
+                  class="w-7 h-7 object-contain"
+                />
                 <span class="text-[#807C7B] text-xs">{{
                   option.description
                 }}</span>
               </div>
             </div>
+            <a href="#" class="flex flex-row items-center gap-2 text-[#C7452D]">
+              <span> Simule grátis </span>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
           </div>
         </component>
       </component>
       <div
-        class="absolute bottom-2 h-fit flex flex-row justify-between w-full z-[1]"
+        class="absolute bottom-3 h-fit flex flex-row justify-between w-full z-10"
       >
-        <button
-          class="wNavigationPrev w-5 h-5 relative text-red-500 fill-blue-600"
-        >
+        <button class="wNavigationPrev w-5 h-5">
           <svg
             width="20"
             height="20"
-            class="fill-[#757680] hover:fill-red-500 transition-all"
+            class="fill-[#757680] hover:fill-[#C7452D] transition-all"
           >
             <path
               d="m9.12 7.259-1.837 1.99H15v1.5H7.282l1.839 1.992-1.103 1.018-2.687-2.911a1.25 1.25 0 0 1 0-1.696l2.687-2.91 1.103 1.017Z"
@@ -67,7 +74,7 @@
           <svg
             width="20"
             height="20"
-            class="fill-[#757680] hover:fill-red-500 transition-all rotate-180"
+            class="fill-[#757680] hover:fill-[#C7452D] transition-all rotate-180"
           >
             <path
               d="m9.12 7.259-1.837 1.99H15v1.5H7.282l1.839 1.992-1.103 1.018-2.687-2.911a1.25 1.25 0 0 1 0-1.696l2.687-2.91 1.103 1.017Z"
@@ -93,6 +100,9 @@ export default defineComponent({
     const sliderOptions: SwiperOptions = {
       spaceBetween: 20,
       slidesPerView: 'auto',
+      autoplay: {
+        delay: 3000,
+      },
       pagination: {
         clickable: true,
         renderBullet: (index, className) => {
@@ -104,7 +114,6 @@ export default defineComponent({
         prevEl: '.wNavigationPrev',
         nextEl: '.wNavigationNext',
       },
-      // autoHeight: true,
       breakpoints: {
         1280: {
           slidesPerView: 4,
@@ -126,17 +135,17 @@ export default defineComponent({
         options: [
           {
             id: 1,
-            icon: 'fa-solid fa-foldwifi',
+            icon: 'percent',
             description: 'Taxas a partir de 9,70% a.a. + indexadores.',
           },
           {
             id: 2,
-            icon: 'fa-solid fa-safari',
+            icon: 'calendar',
             description: 'Pagamento flexível em até 420 meses.',
           },
           {
             id: 3,
-            icon: 'fa-solid fa-safari',
+            icon: 'buildingColumns',
             description: 'Financie em mais de 20 bancos parceiros.',
           },
         ],
@@ -149,17 +158,17 @@ export default defineComponent({
         options: [
           {
             id: 1,
-            icon: 'fa-solid fa-safari',
+            icon: 'percent',
             description: 'Taxas a partir de 1,09% a.m. + indexadores.',
           },
           {
             id: 2,
-            icon: 'fa-solid fa-safari',
+            icon: 'calendar',
             description: 'Escolha o prazo: pague em até 240 meses.',
           },
           {
             id: 3,
-            icon: 'fa-solid fa-safari',
+            icon: 'dollarSign',
             description: 'Até 60% do valor do imóvel como capital.',
           },
         ],
@@ -171,17 +180,17 @@ export default defineComponent({
         options: [
           {
             id: 1,
-            icon: 'fa-solid fa-safari',
+            icon: 'percent',
             description: 'Crédito a partir de 1,59% a.m. + taxas.',
           },
           {
             id: 2,
-            icon: 'fa-solid fa-safari',
+            icon: 'calendar',
             description: 'Pague em até 60 meses. Você escolhe.',
           },
           {
             id: 3,
-            icon: 'fa-solid fa-safari',
+            icon: 'dollarBag',
             description: 'Use seu crédito como você quiser.',
           },
         ],
@@ -194,17 +203,17 @@ export default defineComponent({
         options: [
           {
             id: 1,
-            icon: 'fa-solid fa-safari',
+            icon: 'percent',
             description: 'Taxas a partir de 1,49% a.m. + indexadores.',
           },
           {
             id: 2,
-            icon: 'fa-solid fa-safari',
+            icon: 'calendar',
             description: 'Pagamento em até 60 meses ou 5 anos.',
           },
           {
             id: 3,
-            icon: 'fa-solid fa-safari',
+            icon: 'car',
             description: 'Financie carros novos ou até seminovos.',
           },
         ],
@@ -220,7 +229,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 swiper-container {
   &::part(pagination) {
-    @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center;
+    @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center z-10 bottom-3;
   }
 
   &::part(bullet) {
@@ -229,7 +238,8 @@ swiper-container {
   }
 
   &::part(bullet-active) {
-    @apply inline-block bg-red-500 w-5 h-5 rounded-full transition-all;
+    @apply inline-block w-5 h-5 rounded-full transition-all;
+    background: #c7452d;
   }
 }
 </style>
