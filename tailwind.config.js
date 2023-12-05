@@ -65,6 +65,7 @@ module.exports = {
         terracota: "#C7452D",
         gold: "#C7935A",
         darkCharcoal: "#313131",
+        mortar: "#525252",
         stormGray: "#757680",
         grey: "#807C7B",
         metropole: "#EBE7E6",

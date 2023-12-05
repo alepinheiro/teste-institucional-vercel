@@ -8,7 +8,8 @@
       alt="background"
       role="presentation"
     />
-    <img src="/images/warren/logoWarrenWhite.svg" alt="" srcset="" />
+    <!-- <img src="/images/warren/logoWarrenWhite.svg" alt="" srcset="" /> -->
+    <LogoWarrenSVGComponent  fill="#FFF" class=" flex mx-auto h-auto w-44" />
     <h1 class="text-3xl font-bold text-center text-white">
       Fazer crédito toma tempo, mas não precisa ser o seu
     </h1>
@@ -25,11 +26,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import CustomButton from '@/components/warren/customButton.component.vue'
+import LogoWarrenSVGComponent from './logoWarrenSVG.component.vue'
 export default defineComponent({
   name: 'HeroSection',
   components: {
     CustomButton,
-  },
+    LogoWarrenSVGComponent
+},
   data() {
     return {}
   },
