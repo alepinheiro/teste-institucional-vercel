@@ -1,5 +1,5 @@
 <template>
-  <section class="px-5 text-center flex flex-col gap-5">
+  <section class="px-5 py-10 text-center flex flex-col gap-5">
     <h2 class="font-bold text-3xl text-[#333131]">
       Os melhores produtos de crédito da SejaBest agora na Warren
     </h2>
