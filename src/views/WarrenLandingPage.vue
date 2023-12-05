@@ -6,6 +6,7 @@
     <ComparisonTable />
     <CreditSteps />
     <Contact />
+    <TheFooter />
   </main>
 </template>
 <script lang="ts">
@@ -16,6 +17,7 @@ import BusinessPartners from '@/components/warren/businessPartners.component.vue
 import ComparisonTable from '@/components/warren/comparisonTable.component.vue'
 import CreditSteps from '@/components/warren/creditSteps.component.vue'
 import Contact from '@/components/warren/contactSection.component.vue'
+import TheFooter from '@/components/warren/theFooter.component.vue'
 
 export default defineComponent({
   name: 'WarrenLandingPage',
@@ -26,6 +28,7 @@ export default defineComponent({
     ComparisonTable,
     CreditSteps,
     Contact,
+    TheFooter,
   },
   data() {
     return {}
