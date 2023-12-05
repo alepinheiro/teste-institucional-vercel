@@ -4,6 +4,7 @@
     <Products />
     <BusinessPartners />
     <ComparisonTable />
+    <CreditSteps />
   </main>
 </template>
 <script lang="ts">
@@ -12,10 +13,11 @@ import Hero from '@/components/warren/heroSection.component.vue'
 import Products from '@/components/warren/productsSection.component.vue'
 import BusinessPartners from '@/components/warren/businessPartners.component.vue'
 import ComparisonTable from '@/components/warren/comparisonTable.component.vue'
+import CreditSteps from '@/components/warren/creditSteps.component.vue'
 
 export default defineComponent({
   name: 'WarrenLandingPage',
-  components: { Hero, Products, BusinessPartners, ComparisonTable },
+  components: { Hero, Products, BusinessPartners, ComparisonTable, CreditSteps },
   data() {
     return {}
   },
