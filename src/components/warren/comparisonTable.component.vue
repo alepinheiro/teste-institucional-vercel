@@ -7,7 +7,7 @@
         Por que escolher a
         <b> Warren + SejaBest </b>
       </h2>
-      <div class="flex flex-col w-full px-10 sm:px-0 pt-10 text-textPrimary">
+      <div class="flex flex-col w-full px-10 pt-10 text-textPrimary">
         <div class="flex flex-row w-full items-center">
           <div class="w-3/5"></div>
           <div class="w-1/5 text-center">
@@ -23,7 +23,7 @@
           :key="id"
           class="flex flex-row w-full py-4 items-center border-b border-warren-solitude last-of-type:border-0"
         >
-          <div class="w-3/5 text-xs">{{ text }}</div>
+          <div class="w-3/5">{{ text }}</div>
           <div class="w-1/5 text-center">
             <CheckSVG
               v-if="ourProduct"
@@ -40,7 +40,7 @@
           </div>
         </div>
       </div>
-      <CustomButton :text="'Entre em contato'" class="mt-8" />
+      <CustomButton :text="'Quero simular meu crédito'" class="mt-8" />
     </div>
   </section>
 </template>
