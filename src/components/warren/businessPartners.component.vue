@@ -1,8 +1,8 @@
 <template>
   <section class="px-5 py-18 bg-white">
-    <div class="flex flex-col overflow-hidden rounded-2xl">
+    <div class="flex flex-col overflow-hidden rounded-2xl bg-warren-hintOfRed">
       <div
-        class="flex flex-col bg-warren-whisper gap-2 text-center pt-8 pb-4 px-2"
+        class="flex flex-col bg-warren-whisper gap-2 text-center pt-8 p-6"
       >
         <h2 class="text-3xl text-warren-darkCharcoal">
           Uma plataforma <b>multibancos</b>
@@ -14,18 +14,23 @@
       </div>
 
       <ul
-        class="bg-warren-hintOfRed flex flex-row flex-wrap gap-x-2 gap-y-5 items-center px-4 py-8"
+        class=" flex flex-row flex-wrap gap-x-4 gap-y-8 items-center px-4 py-8 w-3/4 mx-auto"
       >
         <li
           v-for="{ id, image } of partners"
           :key="id"
-          class="mx-auto opacity-80"
+          class="mx-auto"
         >
           <img
-            :src="`/images/finanBest/banks/${image}`"
+            :src="`/images/warren/partners/${image}@2x.png`"
             alt=""
-            srcset=""
-            class="h-6"
+            :srcset="
+              `/images/warren/partners/${image}@1x.png 1x, ` +
+              `/images/warren/partners/${image}@2x.png 2x, ` +
+              `/images/warren/partners/${image}@4x.png 4x, `
+            "
+            sizes="(max-width: 600px) 200px, 400px"
+            class="h-8 object-contain w-auto"
           />
         </li>
       </ul>
@@ -40,63 +45,63 @@ export default defineComponent({
     const partners = [
       {
         id: 'paulista',
-        image: 'bancoPaulista.png',
+        image: 'bancoPaulista',
       },
       {
         id: 'bv',
-        image: 'bancoBV.png',
+        image: 'bancoBV',
       },
       {
         id: 'BRB',
-        image: 'bancoBRB.png',
+        image: 'bancoBRB',
       },
       {
         id: 'bari',
-        image: 'bancoBari.png',
+        image: 'bancoBari',
       },
       {
         id: 'rodobens',
-        image: 'bancoRodobens.png',
+        image: 'bancoRodobens',
       },
       {
         id: 'inter',
-        image: 'bancoInter.png',
+        image: 'bancoInter',
       },
       {
         id: 'cashMe',
-        image: 'bancoCashMe.png',
+        image: 'bancoCashMe',
       },
       {
         id: 'santander',
-        image: 'bancoSantander.png',
+        image: 'bancoSantander',
       },
       {
         id: 'libra',
-        image: 'bancoLibra.png',
+        image: 'bancoLibra',
       },
       {
         id: 'itau',
-        image: 'bancoItau.png',
+        image: 'bancoItau',
       },
       {
         id: 'daycoval',
-        image: 'bancoDaycoval.png',
+        image: 'bancoDaycoval',
       },
       {
         id: 'TCash',
-        image: 'bancoTCash.png',
+        image: 'bancoTCash',
       },
       {
         id: 'creditas',
-        image: 'bancoCreditas.png',
+        image: 'bancoCreditas',
       },
       {
         id: 'pontte',
-        image: 'bancoPontte.png',
+        image: 'bancoPontte',
       },
       {
         id: 'c6ank',
-        image: 'bancoC6.png',
+        image: 'bancoC6',
       },
     ]
     return {
