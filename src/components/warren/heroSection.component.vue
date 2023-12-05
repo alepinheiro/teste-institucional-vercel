@@ -4,7 +4,7 @@
   >
     <img
       src="/images/warren/mobile/amanhecer@5x.png"
-      class="absolute -z-10 top-0 h-full object-fill"
+      class="absolute -z-10 top-0 w-full h-full object-fill"
       alt="background"
       role="presentation"
     />
