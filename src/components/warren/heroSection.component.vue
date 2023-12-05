@@ -6,7 +6,6 @@
       src="/images/warren/mobile/amanhecer.png"
       class="absolute -z-10 top-0 w-full h-full object-fill"
       alt="background"
-      role="presentation"
     />
     <LogoWarrenSVG class="flex mx-auto h-auto w-44 text-white" />
     <h1 class="text-2xl font-bold text-center text-white">

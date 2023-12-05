@@ -24,6 +24,7 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
+    "src/**/*.stories.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     ".storybook/**/*.ts",
