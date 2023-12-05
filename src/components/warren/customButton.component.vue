@@ -23,8 +23,7 @@ export default defineComponent({
 </script>
 <style scoped lang="scss">
 .warrenButton {
-  @apply px-10 py-5 rounded-lg font-bold transition-all;
-  background-color: #333131;
+  @apply px-10 py-5 rounded-lg font-bold transition-all bg-warren-darkCharcoal;
 
   &:hover {
     @apply opacity-90;
