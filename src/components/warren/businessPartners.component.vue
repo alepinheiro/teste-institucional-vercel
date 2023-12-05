@@ -1,17 +1,34 @@
 <template>
   <section class="px-5 py-18 bg-white">
-    <div class="flex flex-col overflow-hidden rounded-t-2xl">
-      <div class="flex flex-col bg-[#F7F3F2] gap-2 text-center pt-8 pb-4 px-2">
-        <h2 class="text-3xl text-[#333131]">
+    <div class="flex flex-col overflow-hidden rounded-2xl">
+      <div
+        class="flex flex-col bg-warren-whisper gap-2 text-center pt-8 pb-4 px-2"
+      >
+        <h2 class="text-3xl text-warren-darkCharcoal">
           Uma plataforma <b>multibancos</b>
         </h2>
-        <p class="text-[#757680]">
+        <p class="text-warren-stormGray">
           <b>São mais de 20 bancos parceiros</b> oferecendo os melhores produtos
           de crédito com as melhores taxas e os prazos mais flexíveis.
         </p>
       </div>
 
-      <div class="bg-[#FAF8F8]"></div>
+      <ul
+        class="bg-warren-hintOfRed flex flex-row flex-wrap gap-x-2 gap-y-5 items-center px-4 py-8"
+      >
+        <li
+          v-for="{ id, image } of partners"
+          :key="id"
+          class="mx-auto opacity-80"
+        >
+          <img
+            :src="`/images/finanBest/banks/${image}`"
+            alt=""
+            srcset=""
+            class="h-6"
+          />
+        </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -27,7 +44,7 @@ export default defineComponent({
       },
       {
         id: 'bv',
-        image: 'bancoBv.png',
+        image: 'bancoBV.png',
       },
       {
         id: 'BRB',
@@ -53,9 +70,37 @@ export default defineComponent({
         id: 'santander',
         image: 'bancoSantander.png',
       },
+      {
+        id: 'libra',
+        image: 'bancoLibra.png',
+      },
+      {
+        id: 'itau',
+        image: 'bancoItau.png',
+      },
+      {
+        id: 'daycoval',
+        image: 'bancoDaycoval.png',
+      },
+      {
+        id: 'TCash',
+        image: 'bancoTCash.png',
+      },
+      {
+        id: 'creditas',
+        image: 'bancoCreditas.png',
+      },
+      {
+        id: 'pontte',
+        image: 'bancoPontte.png',
+      },
+      {
+        id: 'c6ank',
+        image: 'bancoC6.png',
+      },
     ]
     return {
-        partners
+      partners,
     }
   },
 })

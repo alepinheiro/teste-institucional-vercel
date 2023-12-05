@@ -62,11 +62,15 @@ module.exports = {
       pink: colors.pink,
       rose: colors.rose,
       warren: {
-        darkCharcoal: "#313131",
         terracota: "#C7452D",
         gold: "#C7935A",
-        gray: "#807C7B",
+        darkCharcoal: "#313131",
+        stormGray: "#757680",
+        grey: "#807C7B",
         metropole: "#EBE7E6",
+        solitude: "#E5E7EB",
+        hintOfRed: "#FAF8F7",
+        whisper: "#F7F3F2",
       }
     },
     columns: {

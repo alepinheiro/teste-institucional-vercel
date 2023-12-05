@@ -1,9 +1,9 @@
 <template>
   <section class="px-5 py-10 text-center flex flex-col gap-5">
-    <h2 class="font-bold text-3xl text-[#333131]">
+    <h2 class="font-bold text-3xl text-warren-darkCharcoal">
       Os melhores produtos de crédito da SejaBest agora na Warren
     </h2>
-    <p class="text-[#757680]">
+    <p class="text-warren-stormGray">
       <b>Escolha a opção</b> que melhor se encaixa nas suas <b>necessidades:</b>
     </p>
     <div class="relative z-0">
@@ -20,13 +20,13 @@
           class="bg-white p-5 rounded-2xl block mb-14 pb-4"
         >
           <div class="flex flex-col gap-5 items-start text-start">
-            <h3 class="text-2xl font-bold text-[#333131]">
+            <h3 class="text-2xl font-bold text-warren-darkCharcoal">
               {{ title }}
             </h3>
-            <p class="text-[#807C7B] text-xs">
+            <p class="text-warren-grey text-xs">
               {{ description }}
             </p>
-            <hr class="border border-[#E5E7EB] w-full" />
+            <hr class="border border-warren-solitude w-full" />
             <div class="flex flex-col gap-2">
               <div
                 v-for="option of options"
@@ -39,12 +39,15 @@
                   srcset=""
                   class="w-7 h-7 object-contain"
                 />
-                <span class="text-[#807C7B] text-xs">{{
+                <span class="text-warren-grey text-xs">{{
                   option.description
                 }}</span>
               </div>
             </div>
-            <a href="#" class="flex flex-row items-center gap-2 text-[#C7452D]">
+            <a
+              href="#"
+              class="flex flex-row items-center gap-2 text-warren-terracota"
+            >
               <span> Simule grátis </span>
               <i class="fa-solid fa-arrow-right-long"></i>
             </a>
@@ -58,7 +61,7 @@
           <svg
             width="20"
             height="20"
-            class="fill-[#757680] hover:fill-[#C7452D] transition-all"
+            class="fill-warren-stormGray hover:fill-warren-terracota transition-all"
           >
             <path
               d="m9.12 7.259-1.837 1.99H15v1.5H7.282l1.839 1.992-1.103 1.018-2.687-2.911a1.25 1.25 0 0 1 0-1.696l2.687-2.91 1.103 1.017Z"
@@ -74,7 +77,7 @@
           <svg
             width="20"
             height="20"
-            class="fill-[#757680] hover:fill-[#C7452D] transition-all rotate-180"
+            class="fill-warren-stormGray hover:fill-warren-terracota transition-all rotate-180"
           >
             <path
               d="m9.12 7.259-1.837 1.99H15v1.5H7.282l1.839 1.992-1.103 1.018-2.687-2.911a1.25 1.25 0 0 1 0-1.696l2.687-2.91 1.103 1.017Z"
@@ -233,13 +236,11 @@ swiper-container {
   }
 
   &::part(bullet) {
-    @apply inline-block rounded-full w-3 h-3 transition-all;
-    background: #d9d9d9;
+    @apply inline-block rounded-full w-3 h-3 transition-all bg-zinc-300;
   }
 
   &::part(bullet-active) {
-    @apply inline-block w-5 h-5 rounded-full transition-all;
-    background: #c7452d;
+    @apply inline-block w-5 h-5 rounded-full transition-all bg-warren-terracota;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col font-Mulish bg-[#FAF8F8]">
+  <main class="flex flex-col font-Mulish bg-warren-hintOfRed">
     <Hero />
     <Products />
     <BusinessPartners />
