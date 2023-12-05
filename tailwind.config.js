@@ -68,6 +68,7 @@ module.exports = {
         mortar: "#525252",
         stormGray: "#757680",
         grey: "#807C7B",
+        gainsboro: "#DBDBDB",
         metropole: "#EBE7E6",
         solitude: "#E5E7EB",
         hintOfRed: "#FAF8F7",

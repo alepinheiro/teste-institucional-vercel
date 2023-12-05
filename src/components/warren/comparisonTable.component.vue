@@ -9,15 +9,11 @@
         </h2>
         <div class="flex flex-col w-full px-10 sm:px-0 pt-10 text-textPrimary">
           <div class="flex flex-row w-full items-center">
-            <div class="w-1/2"></div>
-            <div class="w-1/4 text-center">
-              <img
-                src="/images/logoBest/logoGray.svg"
-                alt="Logomarca SejaBest"
-                class="h-10 mx-auto sm:pr-2"
-              />
+            <div class="w-3/5"></div>
+            <div class="w-1/5 text-center">
+              <LogoWarrenSVG class="h-auto w-full pr-2 text-warren-gold" />
             </div>
-            <div class="w-1/4 text-center sm:text-xs">
+            <div class="w-1/5 text-center sm:text-xs">
               Bancos <br />
               Tradicionais
             </div>
@@ -25,41 +21,28 @@
           <div
             v-for="{ id, text, ourProduct, otherProducts } in lines"
             :key="id"
-            class="flex flex-row w-full py-4 items-center border-b border-zinc-300 last-of-type:border-0"
+            class="flex flex-row w-full py-4 items-center border-b border-warren-solitude last-of-type:border-0"
           >
-            <div class="w-1/2">{{ text }}</div>
-            <div class="w-1/4 text-center">
-              <i
-                v-if="ourProduct"
-                class="fa-solid fa-check text-primary w-6 h-6"
-              ></i>
-              <i v-else class="fa-solid fa-xmark w-6 h-6"></i>
+            <div class="w-3/5 text-xs">{{ text }}</div>
+            <div class="w-1/5 text-center">
+              <CheckSVG v-if="ourProduct" class="w-fit mx-auto text-warren-gold" />
+              <XMarkSVG v-else class=" w-6 h-6 mx-auto"/>
             </div>
-            <div class="w-1/4 text-center">
-              <i
-                v-if="otherProducts"
-                class="fa-solid fa-check text-red-500 w-6 h-6"
-              ></i>
-              <i v-else class="fa-solid fa-xmark w-6 h-6"></i>
+            <div class="w-1/5 text-center">
+              <CheckSVG v-if="otherProducts" class="w-fit mx-auto text-warren-terracota" />
+              <XMarkSVG v-else class=" w-4 h-4 mx-auto text-warren-gainsboro"/>
             </div>
           </div>
         </div>
+        <CustomButton :text="'Entre em contato'" class="mt-8" />
       </div>
   </section>
 </template>
 <script lang="ts" setup>
-// defineProps<{
-//   props: {
-//     component: {
-//       backgroundColor: string
-//       showBackGroundImage: boolean
-//     }
-//     table: {
-//       backgroundColor: string
-//       titleColor: 'PRIMARY' | 'TEXTPRIMARY'
-//     }
-//   }
-// }>()
+import LogoWarrenSVG from '@/components/warren/icons/logoWarrenSVG.component.vue';
+import CheckSVG from '@/components/warren/icons/checkSVG.component.vue';
+import XMarkSVG from '@/components/warren/icons/xMark.component.vue';
+import CustomButton from '@/components/warren/customButton.component.vue'
 
 const lines = [
   {
