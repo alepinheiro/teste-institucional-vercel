@@ -8,7 +8,7 @@
       alt="background"
       role="presentation"
     />
-    <LogoWarrenSVG fill="#FFF" class="flex mx-auto h-auto w-44" />
+    <LogoWarrenSVG class="flex mx-auto h-auto w-44 text-white" />
     <h1 class="text-3xl font-bold text-center text-white">
       Fazer crédito toma tempo, mas não precisa ser o seu
     </h1>
