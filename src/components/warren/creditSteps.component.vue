@@ -10,7 +10,7 @@
       <li
         v-for="{ description, id, title } of steps"
         :key="id"
-        class="bg-white rounded-3xl py-8 px-3 flex flex-col gap-4"
+        class="bg-white rounded-3xl p-8 flex flex-col gap-4"
       >
         <h3 class="text-2xl text-warren-darkCharcoal">
           {{ id }}
