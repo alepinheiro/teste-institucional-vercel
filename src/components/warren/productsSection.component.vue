@@ -1,5 +1,5 @@
 <template>
-  <section class="px-5 py-10 text-center flex flex-col gap-5">
+  <section class="px-10 py-10 text-center flex flex-col gap-5">
     <h2 class="font-bold text-3xl text-warren-darkCharcoal">
       Os melhores produtos de crédito da SejaBest agora na Warren
     </h2>
@@ -17,17 +17,17 @@
           :is="'swiper-slide'"
           v-for="{ id, description, options, title } of slides"
           :key="id"
-          class="bg-white p-5 rounded-2xl block mb-14 pb-4"
+          class="bg-white px-5 py-10 rounded-2xl block mb-14"
         >
           <div class="flex flex-col gap-5 items-start text-start">
             <h3 class="text-2xl font-bold text-warren-darkCharcoal">
               {{ title }}
             </h3>
-            <p class="text-warren-grey text-xs">
+            <p class="text-warren-grey">
               {{ description }}
             </p>
             <hr class="border border-warren-solitude w-full" />
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-8">
               <div
                 v-for="option of options"
                 :key="option.id"
@@ -39,9 +39,9 @@
                   srcset=""
                   class="w-7 h-7 object-contain"
                 />
-                <span class="text-warren-grey text-xs">{{
-                  option.description
-                }}</span>
+                <span class="text-warren-grey">
+                  {{ option.description }}
+                </span>
               </div>
             </div>
             <a
@@ -55,7 +55,7 @@
         </component>
       </component>
       <div
-        class="absolute bottom-3 h-fit flex flex-row justify-between w-full z-10"
+        class="absolute bottom-3 h-fit flex flex-row justify-between w-full z-10 px-5"
       >
         <button class="wNavigationPrev w-5 h-5">
           <svg
@@ -104,7 +104,7 @@ export default defineComponent({
       spaceBetween: 20,
       slidesPerView: 'auto',
       autoplay: {
-        delay: 3000,
+        delay: 6000,
       },
       pagination: {
         clickable: true,
