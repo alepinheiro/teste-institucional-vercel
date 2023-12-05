@@ -14,8 +14,8 @@
         Warren, proporcionando aos clientes soluções abrangentes para suas
         necessidades imobiliárias.
         <b>
-          Juntas, essas empresas líderes estão
-          transformando a experiência financeira no setor imobiliário.
+          Juntas, essas empresas líderes estão transformando a experiência
+          financeira no setor imobiliário.
         </b>
       </p>
       <CustomButton :text="'Entre em contato'" class="mt-8 w-fit mx-auto" />

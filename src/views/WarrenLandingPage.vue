@@ -19,7 +19,14 @@ import Contact from '@/components/warren/contactSection.component.vue'
 
 export default defineComponent({
   name: 'WarrenLandingPage',
-  components: { Hero, Products, BusinessPartners, ComparisonTable, CreditSteps, Contact },
+  components: {
+    Hero,
+    Products,
+    BusinessPartners,
+    ComparisonTable,
+    CreditSteps,
+    Contact,
+  },
   data() {
     return {}
   },
