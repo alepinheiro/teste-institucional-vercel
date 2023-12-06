@@ -22,12 +22,12 @@
         <div
           v-for="{ id, title, image } in solutionsCards"
           :key="id"
-          class="relative w-1/4 md:w-1/3 sm:w-1/2 flex-grow overflow-hidden h-52 rounded-lg z-0 md:rounded-none sm:rounded-none"
+          class="relative w-1/4 md:w-1/3 sm:w-1/2 flex-grow overflow-hidden h-52 rounded-lg z-0 md:rounded-none sm:rounded-none group"
         >
           <img
             :src="image"
             :alt="title"
-            class="absolute w-full -z-10 object-cover h-full"
+            class="absolute w-full -z-10 object-cover h-full group-hover:scale-110 transition-all ease-out duration-700"
           />
           <div
             class="w-full flex h-full bg-gradient-to-t from-black via-transparent to-transparent p-6 md:p-3 sm:p-3"
