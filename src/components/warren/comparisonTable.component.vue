@@ -7,7 +7,7 @@
         Por que escolher a
         <b> Warren + SejaBest </b>
       </h2>
-      <div class="flex flex-col w-full px-10 pt-10 text-textPrimary">
+      <div class="flex flex-col w-full pt-10 text-textPrimary">
         <div class="flex flex-row w-full items-center">
           <div class="w-3/5"></div>
           <div class="w-1/5 text-center">

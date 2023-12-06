@@ -18,7 +18,7 @@
           financeira no setor imobiliário.
         </b>
       </p>
-      <CustomButton :text="'Entre em contato'" class="mt-8 w-fit mx-auto" />
+      <CustomButton :text="'Quero simular meu crédito'" class="mt-8 w-fit mx-auto" />
     </div>
   </section>
 </template>
