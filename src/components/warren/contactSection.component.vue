@@ -1,6 +1,6 @@
 <template>
   <section class="relative bg-warren-terracota z-0">
-    <div class="absolute bg-[url('/images/warren/mobile/contactBackground.png')] top-0 inset-x-0 lg:inset-x-auto xl:inset-x-auto lg:bottom-0 xl:bottom-0 h-1/2 lg:h-auto xl:h-auto lg:left-[51%] xl:left-[51%] lg:right-0 xl:right-0 bg-cover bg-center md:h-2/5 -z-10">
+    <div class="absolute bg-[url('/images/warren/mobile/contactBackground.png')] top-0 inset-x-0 lg:inset-x-auto xl:inset-x-auto lg:bottom-0 xl:bottom-0 h-[48%] lg:h-auto xl:h-auto lg:left-[51%] xl:left-[51%] lg:right-0 xl:right-0 bg-cover bg-center md:h-2/5 -z-10">
 
     </div>
     <div
@@ -14,7 +14,7 @@
         <LogoWarrenSVG class="h-14" />
       </div>
       <div
-        class="flex flex-col gap-5 justify-center items-center py-12 px-5 text-center lg:text-start xl:text-start lg:flex-1 xl:flex-1 text-white"
+        class="bg-warren-terracota flex flex-col gap-5 justify-center items-center py-12 px-5 text-center lg:text-start xl:text-start lg:flex-1 xl:flex-1 text-white"
       >
         <h2 class="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold">
           Uma parceria de sucesso
