@@ -1,9 +1,6 @@
 <template>
   <main>
     <HeroSection />
-    <Solutions />
-    <Steps />
-    <TheProduct />
     <BusinessPartners
       :props="{
         backgroundColor: '#F1F1F1',
@@ -20,14 +17,17 @@
         },
         table: {
           backgroundColor: '#FFF',
-          titleColor: 'PRIMARY'
-        }
+          titleColor: 'PRIMARY',
+        },
       }"
     />
     <AboutUs
       :cards="{ bgColor: 'SECONDARY' }"
       :container="{ bgColor: 'BGDARKCOLOR' }"
     />
+    <Solutions />
+    <Steps />
+    <TheProduct />
 
     <Subscribe
       :component="{ bgColor: 'SECONDARY' }"
