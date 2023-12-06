@@ -10,7 +10,7 @@
         <div class="flex flex-row w-full items-center">
           <div class="w-3/5"></div>
           <div class="w-1/5 text-center">
-            <LogoWarrenSVG class="h-auto w-full pr-2 text-warren-gold" />
+            <LogoWarrenSVG class="h-auto w-full pr-2 text-warren-gold max-h-10" />
           </div>
           <div class="w-1/5 text-center text-xs md:text-base lg:text-base xl:text-base">
             Bancos <br />

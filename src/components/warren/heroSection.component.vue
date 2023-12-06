@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative z-0 min-h-screen h-screen flex flex-col items-stretch overflow-hidden"
+    class="relative z-0 min-h-screen h-[90vh] flex flex-col items-stretch overflow-hidden"
   >
     <div
       class="h-4/5 flex flex-grow bg-[url(/images/warren/desktop/amanhecer.png)] bg-cover px-5"
@@ -30,7 +30,7 @@
           /images/warren/proDisplay@4x.png 4x
         "
         sizes="(max-width: 600px) 200px, 400px"
-        class="h-64 md:h-96 mx-auto inset-x-0 absolute md:left-auto lg:left-auto bottom-0 lg:h-4/5 lg:-inset-x-1/4 xl:top-1/4 xl:left-auto xl:right-12 xl:h-2/3"
+        class="h-80 md:h-96 mx-auto inset-x-0 absolute md:left-auto lg:left-auto bottom-0 lg:h-4/5 lg:-inset-x-1/4 xl:top-1/4 xl:left-auto xl:right-12 xl:h-2/3"
         alt=""
       />
     </div>

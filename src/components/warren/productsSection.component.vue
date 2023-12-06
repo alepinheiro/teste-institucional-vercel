@@ -60,8 +60,9 @@
         </component>
       </component>
       <div
-        class="absolute bottom-3 h-fit flex flex-row justify-between w-full z-10 px-5"
+        class="absolute bottom-3 h-fit flex inset-x-0 z-[1] px-5 w-full"
       >
+      <div class="w-5/6 flex flex-row justify-between mx-auto">
         <button
           class="wNavigationPrev w-5 h-5"
           aria-label="Anterior"
@@ -103,6 +104,8 @@
           </svg>
         </button>
       </div>
+
+      </div>
     </div>
   </section>
 </template>
@@ -115,7 +118,9 @@ export default defineComponent({
   setup() {
     const sliderOptions: SwiperOptions = {
       spaceBetween: 20,
-      slidesPerView: 'auto',
+      slidesPerView: 1,
+      loop: true,
+      loopAddBlankSlides: true,
       autoplay: {
         delay: 6000,
       },
@@ -131,10 +136,6 @@ export default defineComponent({
         nextEl: '.wNavigationNext',
       },
       breakpoints: {
-        400: {
-          slidesPerView: 2,
-          centeredSlides: true,
-        },
         668: {
           slidesPerView: 2,
           centeredSlides: true,
