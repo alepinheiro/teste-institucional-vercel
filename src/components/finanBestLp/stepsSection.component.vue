@@ -10,14 +10,25 @@
           :is="'swiper-slide'"
           v-for="{ id, icon, title, text, link } of steps"
           :key="id"
-          class="bg-white rounded-lg p-12 sm:p-6 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10"
+          class="bg-white rounded-lg p-12 sm:p-6 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10 hover:shadow-lg hover:shadow-[#0524dd30] transition-all ease-linear cursor-default group hover:bg-primary"
         >
           <div class="flex flex-col gap-12 items-start font-Public-Sans">
-            <i :class="icon" class="text-primary w-5 h-5"></i>
-            <h3 class="text-2xl lg:text-lg sm:text-xl font-bold">{{ title }}</h3>
+            <i
+              :class="icon"
+              class="text-primary w-5 h-5 group-hover:text-white"
+            ></i>
+            <h3
+              class="text-2xl lg:text-lg sm:text-xl font-bold group-hover:text-white"
+            >
+              {{ title }}
+            </h3>
             <!-- eslint-disable-next-line vue/no-v-html -->
-            <p class="text-base" v-html="text"></p>
-            <a v-if="link" :href="link[0]" class="underline sm:text-sm">
+            <p class="text-base group-hover:text-white" v-html="text"></p>
+            <a
+              v-if="link"
+              :href="link[0]"
+              class="underline sm:text-sm group-hover:text-white"
+            >
               {{ link[1] }}
             </a>
           </div>
@@ -38,6 +49,9 @@ const sliderOptions: SwiperOptions = {
   spaceBetween: 20,
   slidesPerView: 'auto',
   pagination: true,
+  autoplay: {
+    delay: 8000,
+  },
   breakpoints: {
     1280: {
       slidesPerView: 4,
@@ -86,3 +100,14 @@ onMounted(() => {
   sliderOptions.pagination = pagination.value
 })
 </script>
+
+<style lang="scss" scoped>
+@screen sm {
+  .swiper-slide-active {
+    @apply shadow-lg shadow-[#0524dd30] bg-primary text-white;
+    svg {
+      @apply text-white;
+    }
+  }
+}
+</style>

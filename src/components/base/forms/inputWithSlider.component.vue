@@ -34,7 +34,7 @@
         <button
           aria-label="Simular"
           title="simular"
-          class="bg-complementaryColor1 text-white px-4 py-2 rounded-md sm:hidden"
+          class="bg-complementaryColor1 text-white px-4 py-2 rounded-md sm:hidden hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
         >
           Simular
         </button>
