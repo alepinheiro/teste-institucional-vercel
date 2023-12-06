@@ -1,11 +1,11 @@
 <template>
   <section class="px-5 py-18 bg-white">
     <div
-      class="flex flex-col lg:flex-row overflow-hidden rounded-2xl bg-warren-hintOfRed w-full max-w-3xl lg:max-w-5xl mx-auto"
+      class="flex flex-col lg:flex-row xl:flex-row overflow-hidden rounded-2xl bg-warren-hintOfRed w-full max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto xl:w-10/12"
     >
-      <div class="bg-warren-whisper pt-8 p-6 md:px-0 md:py-20 lg:w-1/2">
-        <div class="flex flex-col gap-2 text-center lg:text-start md:w-4/6 mx-auto lg:justify-center lg:h-full">
-          <h2 class="text-3xl md:text-5xl lg:text-5xl text-warren-darkCharcoal">
+      <div class="bg-warren-whisper pt-8 p-6 md:px-0 md:py-20 lg:w-1/2 xl:w-1/2">
+        <div class="flex flex-col gap-2 text-center lg:text-start xl:text-start md:w-4/6 mx-auto lg:justify-center xl:justify-center lg:h-full xl:h-full">
+          <h2 class="text-3xl md:text-5xl lg:text-5xl xl:text-5xl text-warren-darkCharcoal">
             Uma plataforma <b>multibancos</b>
           </h2>
           <p class="text-warren-stormGray">
@@ -17,7 +17,7 @@
       </div>
 
       <ul
-        class="flex flex-row flex-wrap gap-x-4 gap-y-8 items-center px-4 py-8 w-3/4 md:w-4/6 mx-auto lg:w-1/2"
+        class="flex flex-row flex-wrap gap-x-4 gap-y-8 items-center px-4 py-8 w-3/4 md:w-4/6 mx-auto lg:w-1/2 xl:w-1/2"
       >
         <li v-for="{ id, image } of partners" :key="id" class="mx-auto">
           <img
