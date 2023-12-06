@@ -1,16 +1,16 @@
 <template>
   <section class="bg-warren-whisper py-10 flex flex-col gap-10 px-5">
-    <h2 class="text-3xl text-warren-gold text-center">
+    <h2 class="text-3xl md:text-4xl lg:text-4xl text-warren-gold text-center">
       São apenas
       <b> 4 passos simples </b>
       até a
       <b> liberação do crédito </b>
     </h2>
-    <ul class="flex flex-col gap-5">
+    <ul class="flex flex-col md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap gap-5 lg:max-w-5xl lg:w-10/12 lg:mx-auto xl:max-w-6xl xl:mx-auto">
       <li
         v-for="{ description, id, title } of steps"
         :key="id"
-        class="bg-white rounded-3xl p-8 flex flex-col gap-4"
+        class="bg-white rounded-3xl p-8 flex flex-col gap-4 md:w-1/3 lg:w-1/3 md:flex-grow lg:flex-grow"
       >
         <h3 class="text-2xl text-warren-darkCharcoal">
           {{ id }}
