@@ -1,7 +1,9 @@
 <template>
   <section class="py-10 sm:pt-0 bg-[#EFEFEF]">
-    <div class="xl:max-w-7xl lg:max-w-5xl  px-5 mx-auto flex flex-col gap-10 ">
-      <div class="flex flex-row w-full justify-between items-center md:max-w-2xl md:mx-auto">
+    <div class="xl:max-w-7xl lg:max-w-5xl px-5 mx-auto flex flex-col gap-10">
+      <div
+        class="flex flex-row w-full justify-between items-center md:max-w-2xl md:mx-auto"
+      >
         <div class="flex flex-col gap-1">
           <h2 class="text-4xl sm:text-2xl text-primary font-bold">
             Crédito sem filas, nem gerentes, nem complexidade
@@ -23,14 +25,22 @@
           :is="'swiper-slide'"
           v-for="{ id, icon, title, description, callToAction } of stepCards"
           :key="id"
-          class="bg-white rounded-lg p-6 lg:p-10 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10"
+          class="bg-white rounded-lg p-6 lg:p-10 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10 hover:shadow-lg hover:shadow-[#0524dd30] transition-all ease-linear cursor-default group hover:bg-primary"
         >
-          <div class="flex flex-col gap-12 lg:gap-10 items-start font-Public-Sans">
-            <i :class="icon" class="text-primary w-5 h-5"></i>
-            <h3 class="text-2xl lg:text-lg sm:text-xl font-bold">{{ id }}. {{ title }}</h3>
+          <div
+            class="flex flex-col gap-12 lg:gap-10 items-start font-Public-Sans"
+          >
+            <i :class="icon" class="text-primary group-hover:text-white w-5 h-5"></i>
+            <h3 class="text-2xl lg:text-lg sm:text-xl font-bold group-hover:text-white">
+              {{ id }}. {{ title }}
+            </h3>
             <!-- eslint-disable-next-line vue/no-v-html -->
-            <p class="text-base" v-html="description"></p>
-            <a v-if="callToAction" :href="callToAction[1]" class="underline sm:text-sm">
+            <p class="text-base group-hover:text-white" v-html="description"></p>
+            <a
+              v-if="callToAction"
+              :href="callToAction[1]"
+              class="underline sm:text-sm group-hover:text-white"
+            >
               {{ callToAction[0] }}
             </a>
           </div>
@@ -46,6 +56,9 @@ const sliderOptions: SwiperOptions = {
   spaceBetween: 20,
   slidesPerView: 'auto',
   pagination: true,
+  autoplay: {
+    delay: 8000,
+  },
   breakpoints: {
     1280: {
       slidesPerView: 4,
@@ -66,7 +79,10 @@ const stepCards = [
     title: 'Simule',
     description:
       'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
-    callToAction: ['Simule agora', `https://simulador.seja.best/?${utm.toString()}`],
+    callToAction: [
+      'Simule agora',
+      `https://simulador.seja.best/?${utm.toString()}`,
+    ],
   },
   {
     id: 2,
@@ -94,3 +110,13 @@ const stepCards = [
   },
 ]
 </script>
+<style lang="scss" scoped>
+@screen sm {
+  .swiper-slide-active {
+    @apply shadow-lg shadow-[#0524dd30] bg-primary text-white;
+    svg {
+      @apply text-white;
+    }
+  }
+}
+</style>
