@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-warren-darkCharcoal px-5 py-12">
-    <div class="flex flex-col gap-12 md:max-w-3xl lg:max-w-5xl md:mx-auto lg:mx-auto">
+    <div class="flex flex-col gap-12 md:max-w-3xl lg:max-w-5xl xl:max-w-6xl md:mx-auto lg:mx-auto xl:mx-auto">
       <div class="flex flex-col gap-6 items-center">
         <p class="text-warren-stormGray text-xs text-justify font-bold">
           A Warren Corretora de Títulos e Valores Mobiliários e Câmbio
