@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col py-10 px-5">
+  <section class="flex flex-col gap-10 py-10 px-5">
     <div class="flex flex-col text-center gap-2">
       <h2 class="text-primary text-2xl font-bold">
         A melhor plataforma multibancos.
@@ -15,15 +15,15 @@
       <div
         v-for="row of partners"
         :key="row.toString()"
-        class="flex flex-row gap-2"
+        class="flex flex-row items-center gap-2"
       >
         <li
           v-for="({ alt, image }, i) of row"
           :key="alt ?? '' + i"
-          :class="[alt ? 'bg-primary' : 'bg-white']"
-          class="border text-ellipsis rounded h-12"
+          :class="[alt ? 'w-auto bg-[#CACACA]' : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#CACACA] to-transparent w-24']"
+          class="text-ellipsis rounded px-2 "
         >
-          {{ alt + '' + image }}
+          <img :src="`/images/Home/icons/${image}.svg`" class="h-8" :alt="alt ?? ''" loading="lazy">
         </li>
       </div>
     </ul>
@@ -86,14 +86,14 @@ export default defineComponent({
         alt: 'Banco Santander',
       },
       {
-        image: 'bancoLira',
-        alt: 'Banco Lira',
+        image: 'bancoLibra',
+        alt: 'Banco Libra',
       },
     ]
 
     const fourthRow = [
       {
-        image: 'bancoItaú',
+        image: 'bancoItau',
         alt: 'Banco Itaú',
       },
       {
@@ -120,8 +120,8 @@ export default defineComponent({
         alt: 'Banco Creditas',
       },
       {
-        image: 'bancoPonte',
-        alt: 'Banco Ponte',
+        image: 'bancoPontte',
+        alt: 'Banco Pontte',
       },
       {
         image: 'bancoC6',
