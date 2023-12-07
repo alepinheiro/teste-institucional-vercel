@@ -9,9 +9,15 @@
       </h2>
     </div>
 
-    <ul class="flex flex-row gap-5 py-4">
-      <li v-for="{ icon, title } in cards" :key="icon" class="p-10 bg-white drop-shadow-lg rounded">
-        {{ title }}
+    <ul class="flex flex-row gap-5 py-10">
+      <li v-for="{ icon, title, description } in cards" :key="icon" class="px-2 py-4 bg-white drop-shadow-lg rounded w-full">
+        <i :class="icon" class="text-textSecondary block"></i>
+        <span class="font-bold text-2xl text-primary block">
+          {{ title }}
+        </span>
+        <span class="text-textSecondary block">
+          {{ description }}
+        </span>
       </li>
     </ul>
 
@@ -34,12 +40,12 @@ export default defineComponent({
     return {
       cards: [
         {
-          icon: 'dollar',
+          icon: 'fa-solid fa-money-bill-wave',
           title: '+ 1 bilhão',
           description: 'Emprestados em crédito',
         },
         {
-          icon: 'cube',
+          icon: 'fa-solid fa-dice-d6',
           title: '+ de 20',
           description: 'Parceiros financeiros',
         },
@@ -47,17 +53,17 @@ export default defineComponent({
       seals: [
         {
           id: 1,
-          source: '/images/finanBest/seals/sealTopOfSalesCashMe.png',
+          source: '/images/Home/seals/seal02.png',
           alt: 'Campeão de vendas CashMe 2022 - 2023',
         },
         {
           id: 2,
-          source: '/images/finanBest/seals/sealTopOfSalesDaycoval.png',
+          source: '/images/Home/seals/seal03.png',
           alt: 'Campeão de vendas Daycoval 2022',
         },
         {
           id: 3,
-          source: '/images/finanBest/seals/sealTopHomeEquityFiveInter.png',
+          source: '/images/Home/seals/seal01.png',
           alt: 'Top 5 Home Equity Banco Inter',
         },
       ],
