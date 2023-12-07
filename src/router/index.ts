@@ -121,6 +121,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'BestHub, a plataforma que vai fintechizar o seu negócio',
     component: () => import('@/views/BestHubLP.vue'),
   },
+  {
+    path: '/theindex',
+    name: 'Home - SejaBest',
+    component: () => import('@/views/TheIndex.vue'),
+  },
 ]
 
 const router = createRouter({

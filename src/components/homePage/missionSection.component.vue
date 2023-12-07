@@ -1,0 +1,68 @@
+<template>
+  <section class="py-10 px-5 flex flex-col gap-8">
+    <div class="text-center flex flex-col gap-4">
+      <div class="flex flex-col gap-2">
+        <h2 class="text-primary text-2xl font-bold">Por que existimos?</h2>
+        <p>
+          Acreditamos que o acesso ao crédito pode levar as pessoas a sua melhor
+          versão.
+        </p>
+      </div>
+
+      <p>
+        <b>E como fazemos isso?</b> <br />
+        <i>Através dos nossos três pilares:</i>
+      </p>
+    </div>
+
+    <div class="flex flex-col rounded-xl overflow-hidden border">
+      <div class="flex flex-col font-bold">
+        <button
+          v-for="{ id, title, isActive } of options"
+          :key="id"
+          :class="{ 'bg-primary text-white': isActive }"
+          class="border-b p-4 text-textPrimary w-full text-start"
+        >
+          {{ id }}. {{ title }}
+        </button>
+      </div>
+      <div class="h-48 bg-primary p-4">imagem</div>
+    </div>
+  </section>
+</template>
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: 'MissionSection',
+  data() {
+    return {
+      options: [
+        {
+          id: 1,
+          title: 'Educação',
+          description:
+            'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
+          image: '',
+          isActive: true,
+        },
+        {
+          id: 2,
+          title: 'Tecnologia',
+          description:
+            'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
+          image: '',
+          isActive: false,
+        },
+        {
+          id: 3,
+          title: 'Experiência Humanizada',
+          description:
+            'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
+          image: '',
+          isActive: false,
+        },
+      ],
+    }
+  },
+})
+</script>
