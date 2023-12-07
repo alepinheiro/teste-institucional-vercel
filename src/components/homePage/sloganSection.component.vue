@@ -1,6 +1,16 @@
 <template>
-  <section class="overflow-hidden text-center">
-    <span class="text-[80px] whitespace-nowrap text-textPrimary">
+  <section class="overflow-hidden text-center relative h-48 flex">
+    <span
+      id="slogan"
+      ref="slogan"
+      class="text-[80px] whitespace-nowrap text-textPrimary absolute inset-0 h-fit my-auto px-5"
+    >
+      Sem
+      <b> filas. </b>
+      Sem
+      <b> gerentes. </b>
+      Sem
+      <b> complexidade. </b>
       Sem
       <b> filas. </b>
       Sem
@@ -10,12 +20,27 @@
     </span>
   </section>
 </template>
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-  name: 'SloganSection',
-  data() {
-    return {}
-  },
+<script lang="ts" setup>
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { gsap } from 'gsap'
+import { onMounted, ref } from 'vue'
+
+gsap.registerPlugin(ScrollTrigger)
+const slogan = ref<HTMLDivElement | null>(null)
+
+const animateSlogan = (element: HTMLDivElement | null) => {
+  if (!element) return
+  gsap.to(element, {
+    scrollTrigger: {
+      trigger: element,
+    },
+    x: -element.offsetWidth,
+    repeat: -1,
+    duration: 10,
+  })
+}
+
+onMounted(() => {
+  animateSlogan(slogan.value)
 })
 </script>

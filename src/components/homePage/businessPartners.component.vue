@@ -20,10 +20,21 @@
         <li
           v-for="({ alt, image }, i) of row"
           :key="alt ?? '' + i"
-          :class="[alt ? 'w-auto bg-[#CACACA]' : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#CACACA] to-transparent w-24']"
-          class="text-ellipsis rounded px-2 "
+          :class="[
+            alt
+              ? 'w-auto bg-[#CACACA]'
+              : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#CACACA] to-transparent w-24',
+          ]"
+          class="text-ellipsis rounded px-2"
         >
-          <img :src="`/images/Home/icons/${image}.svg`" class="h-8" :alt="alt ?? ''" loading="lazy">
+          <img
+            v-if="image"
+            :src="`/images/Home/icons/${image}.svg`"
+            class="h-8"
+            :alt="alt ?? ''"
+            loading="lazy"
+          />
+          <div v-else class="block w-8 h-8"></div>
         </li>
       </div>
     </ul>
