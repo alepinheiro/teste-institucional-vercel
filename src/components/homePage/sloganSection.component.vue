@@ -37,6 +37,7 @@ const animateSlogan = (element: HTMLDivElement | null) => {
     x: -element.offsetWidth,
     repeat: -1,
     duration: 10,
+    ease: 'none',
   })
 }
 
