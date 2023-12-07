@@ -6,7 +6,11 @@
       </h2>
       <p>São diversos produtos pensados para a sua necessidade:</p>
     </div>
-    <component :is="'swiper-container'" v-bind="sliderOptions" class="pb-12 pt-8">
+    <component
+      :is="'swiper-container'"
+      v-bind="sliderOptions"
+      class="pb-12 pt-8"
+    >
       <component
         :is="'swiper-slide'"
         v-for="{ title, description, features } of steps"
@@ -14,7 +18,6 @@
         class="bg-secondary text-white py-8 px-4 rounded-lg mb-16 h-auto"
       >
         <div class="flex flex-col gap-4 justify-between h-full">
-
           <h3 class="text-2xl font-bold">
             {{ title }}
           </h3>
@@ -28,17 +31,19 @@
           <ul class="flex flex-col gap-4">
             <li
               v-for="item of features"
-              :key="item.icon"
+              :key="item.text"
               class="flex flex-row gap-2 items-center"
             >
-              <div class="h-8 w-8 bg-primary rounded shrink-0"></div>
+              <div class="h-8 w-8 bg-primary rounded shrink-0">
+                <component :is="item.icon" class="w-full h-full p-1" />
+              </div>
               <!-- eslint-disable-next-line vue/no-v-html -->
               <p v-html="item.text"></p>
             </li>
           </ul>
 
           <div class="flex flex-row items-center gap-2 text-sm">
-            <a href="#" class="bg-complementaryColor1 px-3 py-2 rounded ">
+            <a href="#" class="bg-complementaryColor1 px-3 py-2 rounded">
               Simule grátis
             </a>
             <a href="#" class="underline">Saiba mais</a>
@@ -50,6 +55,14 @@
 </template>
 <script lang="ts" setup>
 import { SwiperOptions } from 'swiper/types'
+import { markRaw } from 'vue'
+import PercentIcon from '@/components/homePage/icons/percentIcon.component.vue'
+import CalendarIcon from '@/components/homePage/icons/calendarIcon.component.vue'
+import BuildingIcon from '@/components/homePage/icons/buildingIcon.component.vue'
+import DollarSignIcon from '@/components/homePage/icons/dollarSign.component.vue'
+import DollarBagIcon from '@/components/homePage/icons/dollarBag.component.vue'
+import CarIcon from '@/components/homePage/icons/carIcon.component.vue'
+
 const sliderOptions: SwiperOptions = {
   spaceBetween: 20,
   slidesPerView: 1.2,
@@ -76,15 +89,15 @@ const steps = [
       'Financie seu imóvel com as melhores taxas e os melhores prazos.',
     features: [
       {
-        icon: 'percent',
+        icon: markRaw(PercentIcon),
         text: 'Taxas a partir de <b> 9,70% a.a. </b> + indexadores.',
       },
       {
-        icon: 'calendar',
+        icon: markRaw(CalendarIcon),
         text: 'Pagamento flexível em até <b>420 meses.</b>',
       },
       {
-        icon: 'building',
+        icon: markRaw(BuildingIcon),
         text: 'Financie em mais de <b>20 bancos parceiros.</b>',
       },
     ],
@@ -96,15 +109,15 @@ const steps = [
     description: 'Use seu imóvel quitado como garantia para conseguir crédito.',
     features: [
       {
-        icon: 'percent',
+        icon: markRaw(PercentIcon),
         text: 'Taxas a partir de <b>1,09% a.m.</b> + indexadores.',
       },
       {
-        icon: 'calendar',
+        icon: markRaw(CalendarIcon),
         text: 'Escolha o prazo: pague em até <b>240 meses.</b>',
       },
       {
-        icon: 'dollarSign',
+        icon: markRaw(DollarSignIcon),
         text: 'Até <b>60% do valor</b> do imóvel como capital.',
       },
     ],
@@ -116,15 +129,15 @@ const steps = [
     description: 'Use seu carro, caminhão ou utilitário como garantia.',
     features: [
       {
-        icon: 'percent',
+        icon: markRaw(PercentIcon),
         text: 'Crédito a partir de <b>1,59% a.m.</b> + taxas.',
       },
       {
-        icon: 'calendar',
+        icon: markRaw(CalendarIcon),
         text: 'Pague em até 60 meses. <b>Você escolhe.</b>',
       },
       {
-        icon: 'dollarSign',
+        icon: markRaw(DollarBagIcon),
         text: 'Use seu crédito como <b>você quiser.</b>',
       },
     ],
@@ -136,15 +149,15 @@ const steps = [
     description: 'Simule on-line e grátis e financie o carro dos seus sonhos.',
     features: [
       {
-        icon: 'percent',
+        icon: markRaw(PercentIcon),
         text: 'Taxas a partir de <b>1,49% a.m.</b> + indexadores.',
       },
       {
-        icon: 'calendar',
+        icon: markRaw(CalendarIcon),
         text: 'Pagamento em até <b>60 meses ou 5 anos.</b>',
       },
       {
-        icon: 'dollarSign',
+        icon: markRaw(CarIcon),
         text: 'Financie carros novos ou até seminovos.',
       },
     ],
