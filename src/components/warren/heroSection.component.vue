@@ -9,7 +9,7 @@
         class="md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto w-full xl:flex xl:flex-row gap-5"
       >
         <div
-          class="xl:h-134 flex flex-col gap-5 md:gap-8 lg:gap-8 xl:gap-8  items-center md:items-start lg:items-start xl:items-start xl:justify-between md:w-5/6 lg:w-4/6 xl:w-1/2 xl:flex-1"
+          class="xl:h-134 flex flex-col gap-5 md:gap-8 lg:gap-8 xl:gap-8 items-center md:items-start lg:items-start xl:items-start xl:justify-between md:w-5/6 lg:w-4/6 xl:w-1/2 xl:flex-1"
         >
           <LogoWarrenSVG class="flex h-auto w-44 text-white" />
           <h1
@@ -50,6 +50,7 @@
 import { defineComponent } from 'vue'
 import CustomButton from '@/components/warren/customButton.component.vue'
 import LogoWarrenSVG from '@/components/warren/icons/logoWarrenSVG.component.vue'
+import information from '@/configurations/information'
 
 export default defineComponent({
   name: 'HeroSection',
@@ -58,11 +59,19 @@ export default defineComponent({
     LogoWarrenSVG,
   },
   data() {
-    return {}
+    const utm = new URLSearchParams({
+      utm_source: 'warren-landing-page',
+      utm_medium: 'hero-section',
+      utm_campaign: 'landing-pages-dez-23',
+    })
+
+    return {
+      utm,
+    }
   },
   methods: {
     onButtonClick() {
-      console.log('Hero Button clicked')
+      window.open(`${information.appSimulator}?${this.utm.toString()}`, '_blank')
     },
   },
 })
