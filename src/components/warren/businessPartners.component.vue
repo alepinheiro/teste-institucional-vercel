@@ -180,26 +180,7 @@ export default defineComponent({
       fifthRow: [bancoItau, bancoTCash, bancoPontte],
       sixthRow: [bancoInter, bankC6, bancoLibra],
     }
-
-    const partners = [
-      bancoPaulista,
-      bancoBv,
-      bancoBRB,
-      bancoBari,
-      bancoRodobens,
-      bancoInter,
-      bancoCashMe,
-      bancoSantander,
-      bancoLibra,
-      bancoItau,
-      bancoDaycoval,
-      bancoTCash,
-      bancoCreditas,
-      bancoPontte,
-      bankC6,
-    ]
     return {
-      partners,
       smLayout,
       mdLayout,
     }
