@@ -5,11 +5,15 @@
     <div
       class="h-4/5 flex flex-grow bg-[url(/images/warren/desktop/amanhecer.png)] bg-cover px-5"
     >
-      <div class="md:max-w-3xl lg:max-w-5xl xl:max-w-6xl m-auto w-full">
-        <div class="flex flex-col gap-6 items-center md:items-start lg:items-start xl:items-start md:w-5/6 lg:w-4/6 xl:w-1/2">
+      <div
+        class="md:max-w-3xl lg:max-w-5xl xl:max-w-6xl m-auto w-full xl:flex xl:flex-row gap-5"
+      >
+        <div
+          class="xl:h-134 flex flex-col gap-6 items-center md:items-start lg:items-start xl:items-start xl:justify-between md:w-5/6 lg:w-4/6 xl:w-1/2 xl:flex-1"
+        >
           <LogoWarrenSVG class="flex h-auto w-44 text-white" />
           <h1
-            class="text-2xl md:text-5xl lg:text-5xl font-bold text-center md:text-start lg:text-start xl:text-start text-white"
+            class="text-2xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-center md:text-start lg:text-start xl:text-start text-white"
           >
             Fazer crédito toma tempo, mas não precisa ser o seu
           </h1>
@@ -19,9 +23,16 @@
             @click="onButtonClick"
           />
         </div>
+        <div class="hidden xl:block xl:flex-1 relative h-auto">
+          <img
+            src="/images/warren/proDisplay@2x.png"
+            class="absolute left-[20%] -top-[0%] scale-[130%]"
+            alt=""
+          />
+        </div>
       </div>
     </div>
-    <div class="h-1/5 flex w-full xl:h-0">
+    <div class="h-1/5 flex w-full xl:h-0 xl:hidden">
       <img
         src="/images/warren/proDisplay@1x.png"
         srcset="
