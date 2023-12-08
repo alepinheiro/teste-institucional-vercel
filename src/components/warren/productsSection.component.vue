@@ -22,7 +22,7 @@
           :is="'swiper-slide'"
           v-for="{ id, description, options, title } of slides"
           :key="id"
-          class="bg-white py-10 px-5 rounded-2xl block mb-14 h-auto"
+          class="bg-white py-10 px-5 rounded-2xl block mb-14 h-auto md:w-96 lg:w-96 xl:w-96"
         >
           <div class="flex flex-col gap-5 items-start text-start h-full justify-between">
             <h3 class="text-2xl font-bold text-warren-darkCharcoal">
@@ -136,16 +136,19 @@ export default defineComponent({
       },
       breakpoints: {
         668: {
-          slidesPerView: 2,
+          slidesPerView: 2.5,
           centeredSlides: true,
+          loop: false,
         },
         1024: {
           slidesPerView: 3.5,
           centeredSlides: true,
+          loop: false,
         },
         1280: {
           slidesPerView: 4,
           centeredSlides: true,
+          loop: false,
         },
       },
     }
@@ -226,97 +229,6 @@ export default defineComponent({
       },
       {
         id: 4,
-        title: 'Financiamento Veicular',
-        description:
-          'Simule on-line e grátis e financie o carro dos seus sonhos.',
-        options: [
-          {
-            id: 1,
-            icon: 'percent',
-            description: 'Taxas a partir de <b>1,49% a.m.</b> + indexadores.',
-          },
-          {
-            id: 2,
-            icon: 'calendar',
-            description: 'Pagamento em até <b>60 meses ou 5 anos.</b>',
-          },
-          {
-            id: 3,
-            icon: 'car',
-            description: 'Financie carros novos ou até seminovos.',
-          },
-        ],
-      },
-      {
-        id: 5,
-        title: 'Financiamento Imobiliário',
-        description:
-          'Financie seu imóvel com as melhores taxas e os melhores prazos.',
-        options: [
-          {
-            id: 1,
-            icon: 'percent',
-            description: 'Taxas a partir de <b>9,70% a.a.</b> + indexadores.',
-          },
-          {
-            id: 2,
-            icon: 'calendar',
-            description: 'Pagamento flexível em até <b>420 meses.</b>',
-          },
-          {
-            id: 3,
-            icon: 'buildingColumns',
-            description: 'Financie em mais de <b>20 bancos parceiros.</b>',
-          },
-        ],
-      },
-      {
-        id: 6,
-        title: 'Crédito com Garantia de Imóvel',
-        description:
-          'Use seu imóvel quitado como garantia para conseguir crédito.',
-        options: [
-          {
-            id: 1,
-            icon: 'percent',
-            description: 'Taxas a partir de <b>1,09% a.m.</b> + indexadores.',
-          },
-          {
-            id: 2,
-            icon: 'calendar',
-            description: 'Escolha o prazo: pague em até <b>240 meses.</b>',
-          },
-          {
-            id: 3,
-            icon: 'dollarSign',
-            description: 'Até <b>60% do valor</b> do imóvel como capital.',
-          },
-        ],
-      },
-      {
-        id: 7,
-        title: 'Crédito com Veículo de garantia',
-        description: 'Use seu carro, caminhão ou utilitário como garantia.',
-        options: [
-          {
-            id: 1,
-            icon: 'percent',
-            description: 'Crédito a partir de <b>1,59% a.m.</b> + taxas.',
-          },
-          {
-            id: 2,
-            icon: 'calendar',
-            description: 'Pague em até 60 meses.<b> Você escolhe.</b>',
-          },
-          {
-            id: 3,
-            icon: 'dollarBag',
-            description: 'Use seu crédito como <b>você quiser.</b>',
-          },
-        ],
-      },
-      {
-        id: 8,
         title: 'Financiamento Veicular',
         description:
           'Simule on-line e grátis e financie o carro dos seus sonhos.',
