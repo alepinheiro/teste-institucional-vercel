@@ -18,15 +18,18 @@
     <div class="flex flex-col rounded-xl overflow-hidden border">
       <div class="flex flex-col font-bold">
         <button
-          v-for="{ id, title, isActive } of options"
+          v-for="{ id, title, isActive, image } of options"
           :key="id"
           :class="{ 'bg-primary text-white': isActive }"
           class="border-b p-4 text-textPrimary w-full text-start"
+          @click="changeActiveImage(image)"
         >
           {{ id }}. {{ title }}
         </button>
       </div>
-      <div class="h-48 bg-primary p-4">imagem</div>
+      <div class="h-48 bg-primary">
+        <img :src="activeImage" alt="" />
+      </div>
     </div>
   </section>
 </template>
@@ -36,13 +39,14 @@ export default defineComponent({
   name: 'MissionSection',
   data() {
     return {
+      activeImage: 'https://dummyimage.com/600x600.png?text=default',
       options: [
         {
           id: 1,
           title: 'Educação',
           description:
             'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
-          image: '',
+          image: 'https://dummyimage.com/600x600.png?text=01',
           isActive: true,
         },
         {
@@ -50,7 +54,7 @@ export default defineComponent({
           title: 'Tecnologia',
           description:
             'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
-          image: '',
+          image: 'https://dummyimage.com/600x600.png?text=02',
           isActive: false,
         },
         {
@@ -58,11 +62,16 @@ export default defineComponent({
           title: 'Experiência Humanizada',
           description:
             'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
-          image: '',
+          image: 'https://dummyimage.com/600x600.png?text=03',
           isActive: false,
         },
       ],
     }
+  },
+  methods: {
+    changeActiveImage(url: string) {
+      this.activeImage = url
+    },
   },
 })
 </script>
