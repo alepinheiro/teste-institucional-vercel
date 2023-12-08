@@ -59,19 +59,12 @@ export default defineComponent({
     LogoWarrenSVG,
   },
   data() {
-    const utm = new URLSearchParams({
-      utm_source: 'warren-landing-page',
-      utm_medium: 'hero-section',
-      utm_campaign: 'landing-pages-dez-23',
-    })
-
     return {
-      utm,
     }
   },
   methods: {
     onButtonClick() {
-      window.open(`${information.appSimulator}?${this.utm.toString()}`, '_blank')
+      window.open(`${information.appSimulator}${this.$root.utms}`, '_blank')
     },
   },
 })

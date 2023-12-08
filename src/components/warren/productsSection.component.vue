@@ -55,7 +55,7 @@
               </div>
             </div>
             <a
-              :href="`${information.appSimulator}?${getUrlUtms(id)}`"
+              :href="`${information.appSimulator}${$root.utms}`"
               target="_blank"
               class="flex flex-row items-center gap-2 text-warren-terracota font-bold"
             >
@@ -259,15 +259,6 @@ export default defineComponent({
     return {
       slides,
     }
-  },
-  methods: {
-    getUrlUtms(medium: string) {
-      return new URLSearchParams({
-        utm_source: 'warren-landing-page',
-        utm_medium: medium,
-        utm_campaign: 'landing-pages-dez-23',
-      })
-    },
   },
 })
 </script>

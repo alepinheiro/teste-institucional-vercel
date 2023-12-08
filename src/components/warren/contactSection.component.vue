@@ -31,6 +31,7 @@
         <CustomButton
           :text="'Quero simular meu crédito'"
           class="mt-8 w-fit mx-auto lg:ml-0 xl:ml-0"
+          @click="onButtonClick"
         />
       </div>
     </div>
@@ -41,12 +42,26 @@ import { defineComponent } from 'vue'
 import LogoSejaBestSVG from '@/components/base/logos/logoSejaBestSVG.component.vue'
 import LogoWarrenSVG from '@/components/warren/icons/logoWarrenSVG.component.vue'
 import CustomButton from '@/components/warren/customButton.component.vue'
+import information from '@/configurations/information'
 
 export default defineComponent({
   name: 'ContactSection',
   components: { LogoSejaBestSVG, LogoWarrenSVG, CustomButton },
   data() {
-    return {}
+    const utm = new URLSearchParams({
+      utm_source: 'warren-landing-page',
+      utm_medium: 'contact-section',
+      utm_campaign: 'landing-pages-dez-23',
+    })
+
+    return {
+      utm,
+    }
+  },
+  methods: {
+    onButtonClick() {
+      window.open(`${information.appSimulator}${this.$root.utms}`, '_blank')
+    },
   },
 })
 </script>

@@ -125,6 +125,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/warren',
     name: 'Fazer crédito toma tempo, mas não precisa ser o seu',
     component: () => import('@/views/WarrenLandingPage.vue'),
+
   },
 ]
 

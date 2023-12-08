@@ -54,89 +54,99 @@
     </div>
   </section>
 </template>
-<script lang="ts" setup>
+<script lang="ts">
 import LogoWarrenSVG from '@/components/warren/icons/logoWarrenSVG.component.vue'
 import CheckSVG from '@/components/warren/icons/checkSVG.component.vue'
 import XMarkSVG from '@/components/warren/icons/xMark.component.vue'
 import CustomButton from '@/components/warren/customButton.component.vue'
 import information from '@/configurations/information'
+import { defineComponent } from 'vue'
 
-const lines = [
-  {
-    id: 1,
-    text: 'As menores taxas do mercado',
-    ourProduct: true,
-    otherProducts: true,
+export default defineComponent({
+  name: 'ComparisonTable',
+  components: {
+    LogoWarrenSVG,
+    CheckSVG,
+    XMarkSVG,
+    CustomButton,
   },
-  {
-    id: 2,
-    text: 'Múltiplas opções de banco',
-    ourProduct: true,
-    otherProducts: false,
+  data() {
+    const lines = [
+      {
+        id: 1,
+        text: 'As menores taxas do mercado',
+        ourProduct: true,
+        otherProducts: true,
+      },
+      {
+        id: 2,
+        text: 'Múltiplas opções de banco',
+        ourProduct: true,
+        otherProducts: false,
+      },
+      {
+        id: 3,
+        text: 'Plataforma multiprodutos',
+        ourProduct: true,
+        otherProducts: true,
+      },
+      {
+        id: 4,
+        text: 'Transparência',
+        ourProduct: true,
+        otherProducts: false,
+      },
+      {
+        id: 5,
+        text: 'Processo agilizado',
+        ourProduct: true,
+        otherProducts: false,
+      },
+      {
+        id: 6,
+        text: 'Atendimento 7 dias por semana',
+        ourProduct: true,
+        otherProducts: false,
+      },
+      {
+        id: 7,
+        text: 'Assessoria personalizada',
+        ourProduct: true,
+        otherProducts: false,
+      },
+      {
+        id: 8,
+        text: 'Totalmente Digital',
+        ourProduct: true,
+        otherProducts: false,
+      },
+      {
+        id: 9,
+        text: 'Sem burocracias',
+        ourProduct: true,
+        otherProducts: false,
+      },
+      {
+        id: 10,
+        text: 'Sem filas',
+        ourProduct: true,
+        otherProducts: false,
+      },
+      {
+        id: 11,
+        text: 'Foco no cliente',
+        ourProduct: true,
+        otherProducts: false,
+      },
+    ]
+    return {
+      lines,
+    }
   },
-  {
-    id: 3,
-    text: 'Plataforma multiprodutos',
-    ourProduct: true,
-    otherProducts: true,
+  methods: {
+    onButtonClick() {
+      window.open(`${information.appSimulator}${this.$root.utms}`, '_blank')
+    },
   },
-  {
-    id: 4,
-    text: 'Transparência',
-    ourProduct: true,
-    otherProducts: false,
-  },
-  {
-    id: 5,
-    text: 'Processo agilizado',
-    ourProduct: true,
-    otherProducts: false,
-  },
-  {
-    id: 6,
-    text: 'Atendimento 7 dias por semana',
-    ourProduct: true,
-    otherProducts: false,
-  },
-  {
-    id: 7,
-    text: 'Assessoria personalizada',
-    ourProduct: true,
-    otherProducts: false,
-  },
-  {
-    id: 8,
-    text: 'Totalmente Digital',
-    ourProduct: true,
-    otherProducts: false,
-  },
-  {
-    id: 9,
-    text: 'Sem burocracias',
-    ourProduct: true,
-    otherProducts: false,
-  },
-  {
-    id: 10,
-    text: 'Sem filas',
-    ourProduct: true,
-    otherProducts: false,
-  },
-  {
-    id: 11,
-    text: 'Foco no cliente',
-    ourProduct: true,
-    otherProducts: false,
-  },
-]
-
-const utm = new URLSearchParams({
-  utm_source: 'warren-landing-page',
-  utm_medium: 'comparison-table',
-  utm_campaign: 'landing-pages-dez-23',
 })
-
-function onButtonClick() {
-  window.open(`${information.appSimulator}?${utm.toString()}`, '_blank')
-}
 </script>
