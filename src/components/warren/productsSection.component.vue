@@ -1,5 +1,5 @@
 <template>
-  <section class="py-10 text-center flex flex-col gap-5 bg-warren-hintOfRed">
+  <section class="py-10 text-center flex flex-col gap-16 bg-warren-hintOfRed">
 
     <div class="text-center flex flex-col gap-5 px-5 lg:w-4/6 xl:w-4/6 mx-auto lg:max-w-5xl">
       <h2 class="font-bold text-3xl text-warren-darkCharcoal md:text-5xl lg:text-5xl xl:text-5xl">
@@ -22,9 +22,9 @@
           :is="'swiper-slide'"
           v-for="{ id, description, options, title } of slides"
           :key="id"
-          class="bg-white py-10 px-5 rounded-2xl block mb-14"
+          class="bg-white py-10 px-5 rounded-2xl block mb-14 h-auto"
         >
-          <div class="flex flex-col gap-5 items-start text-start">
+          <div class="flex flex-col gap-5 items-start text-start h-full justify-between">
             <h3 class="text-2xl font-bold text-warren-darkCharcoal">
               {{ title }}
             </h3>
@@ -120,7 +120,6 @@ export default defineComponent({
       spaceBetween: 20,
       slidesPerView: 1,
       loop: true,
-      loopAddBlankSlides: true,
       autoplay: {
         delay: 6000,
       },
@@ -248,6 +247,97 @@ export default defineComponent({
           },
         ],
       },
+      {
+        id: 5,
+        title: 'Financiamento Imobiliário',
+        description:
+          'Financie seu imóvel com as melhores taxas e os melhores prazos.',
+        options: [
+          {
+            id: 1,
+            icon: 'percent',
+            description: 'Taxas a partir de <b>9,70% a.a.</b> + indexadores.',
+          },
+          {
+            id: 2,
+            icon: 'calendar',
+            description: 'Pagamento flexível em até <b>420 meses.</b>',
+          },
+          {
+            id: 3,
+            icon: 'buildingColumns',
+            description: 'Financie em mais de <b>20 bancos parceiros.</b>',
+          },
+        ],
+      },
+      {
+        id: 6,
+        title: 'Crédito com Garantia de Imóvel',
+        description:
+          'Use seu imóvel quitado como garantia para conseguir crédito.',
+        options: [
+          {
+            id: 1,
+            icon: 'percent',
+            description: 'Taxas a partir de <b>1,09% a.m.</b> + indexadores.',
+          },
+          {
+            id: 2,
+            icon: 'calendar',
+            description: 'Escolha o prazo: pague em até <b>240 meses.</b>',
+          },
+          {
+            id: 3,
+            icon: 'dollarSign',
+            description: 'Até <b>60% do valor</b> do imóvel como capital.',
+          },
+        ],
+      },
+      {
+        id: 7,
+        title: 'Crédito com Veículo de garantia',
+        description: 'Use seu carro, caminhão ou utilitário como garantia.',
+        options: [
+          {
+            id: 1,
+            icon: 'percent',
+            description: 'Crédito a partir de <b>1,59% a.m.</b> + taxas.',
+          },
+          {
+            id: 2,
+            icon: 'calendar',
+            description: 'Pague em até 60 meses.<b> Você escolhe.</b>',
+          },
+          {
+            id: 3,
+            icon: 'dollarBag',
+            description: 'Use seu crédito como <b>você quiser.</b>',
+          },
+        ],
+      },
+      {
+        id: 8,
+        title: 'Financiamento Veicular',
+        description:
+          'Simule on-line e grátis e financie o carro dos seus sonhos.',
+        options: [
+          {
+            id: 1,
+            icon: 'percent',
+            description: 'Taxas a partir de <b>1,49% a.m.</b> + indexadores.',
+          },
+          {
+            id: 2,
+            icon: 'calendar',
+            description: 'Pagamento em até <b>60 meses ou 5 anos.</b>',
+          },
+          {
+            id: 3,
+            icon: 'car',
+            description: 'Financie carros novos ou até seminovos.',
+          },
+        ],
+      },
     ]
     return {
       slides,
@@ -267,7 +357,7 @@ swiper-container {
   }
 
   &::part(bullet-active) {
-    @apply inline-block w-5 h-5 rounded-full transition-all bg-warren-terracota;
+    @apply inline-block w-4 h-4 rounded-full transition-all bg-warren-terracota;
   }
 }
 </style>
