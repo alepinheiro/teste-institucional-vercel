@@ -3,7 +3,7 @@
     <span
       id="slogan"
       ref="slogan"
-      class="text-[80px] whitespace-nowrap text-textPrimary absolute inset-0 h-fit my-auto px-5"
+      class="text-[80px] whitespace-nowrap text-textPrimary absolute inset-0 h-fit my-auto px-5 "
     >
       Sem
       <b> filas. </b>
@@ -36,7 +36,7 @@ const animateSlogan = (element: HTMLDivElement | null) => {
     },
     x: -element.offsetWidth,
     repeat: -1,
-    duration: 10,
+    duration: 5,
     ease: 'none',
   })
 }
