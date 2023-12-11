@@ -166,3 +166,11 @@ const steps = [
   },
 ]
 </script>
+
+
+<style lang="scss" scoped>
+::part(bullet){
+    background: #D9D9D9;
+    opacity: 100;
+  }
+</style>
