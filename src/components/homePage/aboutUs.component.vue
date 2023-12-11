@@ -1,12 +1,16 @@
 <template>
-  <section class="bg-[#DEDEDE]">
+  <section class="bg-[#DEDEDE] md:bg-white relative z-0 md:mt-10">
+    <div class="bg-gradient-to-b from-[#DEDEDE] to-white absolute top-0 bottom-1/3 inset-x-20 -z-10 rounded-xl"></div>
     <div class="px-5 py-10 md:max-w-2xl mx-auto">
-      <div class="flex flex-col gap-2 text-center">
-        <p class="text-textSecondary md:text-textPrimary">
+      <div class="flex flex-col gap-2 text-center md:text-left">
+        <p class="text-textSecondary md:text-textPrimary ">
           A <b> SejaBest </b> já tem história no mercado.
         </p>
-        <h2 class="text-xl">
-          <strong>Há 10 anos</strong> transformamos o acesso ao crédito
+        <h2 class="text-xl md:text-4xl md:text-textPrimary">
+          <strong>
+            Há 10 anos
+          </strong>
+          transformamos o acesso ao crédito
         </h2>
       </div>
 
@@ -14,7 +18,7 @@
         <li
           v-for="{ icon, title, description } in cards"
           :key="icon"
-          class="p-5 md:py-10 bg-white drop-shadow-lg rounded w-full flex flex-col md:gap-6"
+          class="p-5 md:py-10 bg-white drop-shadow-lg md:shadow-2xl rounded md:rounded-xl w-full flex flex-col md:gap-6"
         >
         <div class="md:h-7 md:w-7">
           <i :class="icon" class="text-textSecondary block w-full h-full"></i>
