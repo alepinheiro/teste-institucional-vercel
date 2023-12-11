@@ -1,33 +1,33 @@
 <template>
-  <section class="py-10 px-5 flex flex-col gap-8 md:max-w-2xl mx-auto">
+  <section class="py-10 px-5 flex flex-col gap-8 md:max-w-2xl lg:max-w-5xl mx-auto">
     <div class="text-center flex flex-col gap-4">
       <div class="flex flex-col gap-2 md:gap-4">
-        <h2 class="text-primary text-2xl md:text-3xl font-bold">Por que existimos?</h2>
-        <p class="md:text-xl">
+        <h2 class="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold">Por que existimos?</h2>
+        <p class="md:text-xl lg:text-3xl">
           Acreditamos que o acesso ao crédito pode levar as pessoas a sua melhor
           versão.
         </p>
       </div>
 
-      <p>
+      <p class="lg:text-3xl">
         <b>E como fazemos isso?</b> <br />
         <i>Através dos nossos três pilares:</i>
       </p>
     </div>
 
-    <div class="flex flex-col md:flex-row rounded-xl overflow-hidden border">
-      <div class="flex flex-col font-bold md:flex-1">
+    <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row rounded-xl overflow-hidden border">
+      <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button
           v-for="{ id, title, isActive, image } of options"
           :key="id"
           :class="{ 'bg-primary text-white': isActive }"
-          class="border-b p-4 md:py-11 text-textPrimary w-full text-start "
+          class="border-b p-4 md:py-11 lg:h-full xl:h-full text-textPrimary lg:text-3xl w-full text-start "
           @click="changeActiveImage(image)"
         >
           {{ id }}. {{ title }}
         </button>
       </div>
-      <div class="h-48 bg-primary md:flex-1 md:h-auto">
+      <div class="h-48 bg-primary md:flex-1 lg:flex-1 xl:flex-1 md:h-auto lg:h-auto xl:h-auto">
         <img :src="activeImage" alt="" class="object-cover h-full" />
       </div>
     </div>
