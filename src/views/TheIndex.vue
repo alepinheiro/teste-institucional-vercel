@@ -15,7 +15,7 @@
         table: {
           backgroundColor: '#FFF',
           titleColor: 'TEXTPRIMARY',
-          title: 'Por que escolher a <b>SejaBest?</b>'
+          title: 'Por que escolher a <b>SejaBest?</b>',
         },
       }"
     />
@@ -34,6 +34,7 @@ import Mission from '@/components/homePage/missionSection.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import BestPlay from '@/components/homePage/bestPlay.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
+import { useHead } from '@vueuse/head'
 
 export default defineComponent({
   name: 'TheIndex',
@@ -46,10 +47,23 @@ export default defineComponent({
     Mission,
     ComparisonTable,
     BestPlay,
-    TheFooter
+    TheFooter,
   },
   data() {
     return {}
+  },
+  created() {
+    useHead({
+      title:
+        'SejaBest - Financie seu imóvel com as melhores condições do mercado',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
+        },
+      ],
+    })
   },
 })
 </script>

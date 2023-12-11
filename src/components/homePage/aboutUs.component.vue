@@ -27,7 +27,7 @@
         :key="id"
         class="w-1/3 last-of-type:w-1/2 last-of-type:mx-auto last-of-type:flex-grow-0 flex-grow"
       >
-        <img :src="source" :alt="alt" class="h-24 sm:h-auto" />
+        <img :src="`/images/Home/seals/dark/${source}`" :alt="alt" class="h-24 sm:h-auto" />
       </div>
     </div>
   </section>
@@ -53,17 +53,17 @@ export default defineComponent({
       seals: [
         {
           id: 1,
-          source: '/images/Home/seals/seal02.png',
+          source: 'seal02.png',
           alt: 'Campeão de vendas CashMe 2022 - 2023',
         },
         {
           id: 2,
-          source: '/images/Home/seals/seal03.png',
+          source: 'seal03.png',
           alt: 'Campeão de vendas Daycoval 2022',
         },
         {
           id: 3,
-          source: '/images/Home/seals/seal01.png',
+          source: 'seal01.png',
           alt: 'Top 5 Home Equity Banco Inter',
         },
       ],

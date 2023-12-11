@@ -1,10 +1,19 @@
 <template>
   <section class="bg-bgDarkColor">
-    <div class="flex flex-col gap-5 text-white px-5 text-center">
-      <h2 class="text-2xl font-bold">
+    <div class="flex flex-col gap-5 text-white px-5 text-center max-w-2xl mx-auto">
+      <div class="hidden md:flex lg:flex xl:flex flex-row w-3/5 mx-auto items-center gap-3">
+        <img
+          v-for="{ alt, id, source } of seals"
+          :key="id"
+            :src="`/images/Home/seals/light/${source}`"
+            :alt="alt"
+            class="h-13 sm:h-auto"
+          />
+      </div>
+      <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold">
         Como podemos ajudar você ou seu negócio?
       </h2>
-      <p>São diversos produtos pensados para a sua necessidade:</p>
+      <p class="md:text-xl">São diversos produtos pensados para a sua necessidade:</p>
     </div>
     <component
       :is="'swiper-container'"
@@ -71,6 +80,14 @@ const sliderOptions: SwiperOptions = {
   pagination: true,
   autoplay: {
     delay: 8000,
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 2.5,
+    },
+    1021: {
+      slidesPerView: 3.5,
+    },
   },
 }
 
@@ -165,12 +182,29 @@ const steps = [
     moreInformation: '#',
   },
 ]
+
+const seals = [
+  {
+    id: 1,
+    source: 'seal02.png',
+    alt: 'Campeão de vendas CashMe 2022 - 2023',
+  },
+  {
+    id: 2,
+    source: 'seal03.png',
+    alt: 'Campeão de vendas Daycoval 2022',
+  },
+  {
+    id: 3,
+    source: 'seal01.png',
+    alt: 'Top 5 Home Equity Banco Inter',
+  },
+]
 </script>
 
-
 <style lang="scss" scoped>
-::part(bullet){
-    background: #D9D9D9;
-    opacity: 100;
-  }
+::part(bullet) {
+  background: #d9d9d9;
+  opacity: 100;
+}
 </style>
