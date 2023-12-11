@@ -1,10 +1,12 @@
 <template>
-  <section class="flex flex-col gap-10 md:gap-32 py-10 md:py-24 px-5 md:max-w-2xl mx-auto">
+  <section
+    class="flex flex-col gap-10 md:gap-32 py-10 md:py-24 px-5 md:max-w-2xl lg:max-w-5xl mx-auto"
+  >
     <div class="flex flex-col text-center gap-2">
-      <h2 class="text-primary text-2xl md:text-3xl font-bold">
+      <h2 class="text-primary text-2xl md:text-3xl lg:text-5xl font-bold">
         A melhor plataforma multibancos.
       </h2>
-      <p class="text-textPrimary md:text-xl">
+      <p class="text-textPrimary md:text-xl lg:text-xl xl:text-xl">
         <strong>
           Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
           financeiras,
@@ -14,33 +16,36 @@
         te guiar durante todo o processo.
       </p>
     </div>
-    <ul class="flex flex-col gap-4 ">
-      <div
-        v-for="row of partners"
-        :key="row.toString()"
-        class="flex flex-row items-center gap-2 md:w-fit md:mx-auto"
-      >
-        <li
-          v-for="({ alt, image }, i) of row"
-          :key="alt ?? '' + i"
-          :class="[
-            alt
-              ? 'w-auto bg-[#CACACA]'
-              : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#CACACA] to-transparent w-24',
-          ]"
-          class="text-ellipsis rounded px-2 md:py-3"
+    <div class="flex lg:flex-row gap-5 items-center">
+      <img src="/images/Home/simulatorOnPhoneMockup.png" alt="" class="w-5/12">
+      <ul class="flex flex-col gap-4 lg:w-7/12">
+        <div
+          v-for="row of partners"
+          :key="row.toString()"
+          class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto"
         >
-          <img
-            v-if="image"
-            :src="`/images/Home/icons/${image}.svg`"
-            class="h-8 md:py-1 md:px-2"
-            :alt="alt ?? ''"
-            loading="lazy"
-          />
-          <div v-else class="block w-8 h-8"></div>
-        </li>
-      </div>
-    </ul>
+          <li
+            v-for="({ alt, image }, i) of row"
+            :key="alt ?? '' + i"
+            :class="[
+              alt
+                ? 'w-auto bg-[#CACACA]'
+                : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#CACACA] to-transparent w-24',
+            ]"
+            class="text-ellipsis rounded px-2 md:py-3 lg:py-3 xl:py-3"
+          >
+            <img
+              v-if="image"
+              :src="`/images/Home/icons/${image}.svg`"
+              class="h-8 md:py-1 md:px-2 lg:px-2 xl:px-2"
+              :alt="alt ?? ''"
+              loading="lazy"
+            />
+            <div v-else class="block w-8 h-8"></div>
+          </li>
+        </div>
+      </ul>
+    </div>
   </section>
 </template>
 <script lang="ts">
