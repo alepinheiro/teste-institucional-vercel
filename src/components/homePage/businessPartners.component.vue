@@ -1,9 +1,9 @@
 <template>
   <section
-    class="flex flex-col gap-10 md:gap-32 lg:gap-32 xl:gap-32 py-10 md:py-24 lg:py-24 xl:py-24 px-5 md:max-w-2xl lg:max-w-5xl mx-auto"
+    class="flex flex-col gap-10 md:gap-32 lg:gap-32 xl:gap-32 py-10 md:py-24 lg:py-24 xl:py-24 px-5 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
   >
-    <div class="flex flex-col text-center gap-2 lg:gap-5">
-      <h2 class="text-primary text-2xl md:text-3xl lg:text-5xl font-bold">
+    <div class="flex flex-col text-center gap-2 lg:gap-5 xl:gap-5 xl:w-8/12 xl:mx-auto">
+      <h2 class="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold">
         A melhor plataforma multibancos.
       </h2>
       <p class="text-textPrimary md:text-xl lg:text-xl xl:text-xl">
@@ -18,11 +18,11 @@
     </div>
     <div class="flex lg:flex-row gap-5 items-center">
       <img src="/images/Home/simulatorOnPhoneMockup.png" alt="" class="w-5/12">
-      <ul class="flex flex-col gap-4 lg:w-7/12">
+      <ul class="flex flex-col gap-4 lg:w-7/12 xl:w-7/12">
         <div
           v-for="row of partners"
           :key="row.toString()"
-          class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto"
+          class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto xl:mx-auto"
         >
           <li
             v-for="({ alt, image }, i) of row"

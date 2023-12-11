@@ -1,7 +1,7 @@
 <template>
   <section class="bg-bgDarkColor">
-    <div class="flex flex-col lg:flex-row-reverse gap-5 text-white px-5 text-center md:max-w-2xl lg:max-w-5xl md:mx-auto lg:mx-auto">
-      <div class="hidden md:flex lg:flex xl:flex flex-row w-3/5 lg:w-5/12 mx-auto items-center gap-3">
+    <div class="flex flex-col lg:flex-row-reverse xl:flex-row-reverse gap-5 text-white px-5 xl:px-0 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto xl:justify-between">
+      <div class="hidden md:flex lg:flex xl:flex flex-row w-3/5 lg:w-5/12 xl:w-1/2 mx-auto items-center gap-3 xl:justify-end">
         <img
           v-for="{ alt, id, source } of seals"
           :key="id"
@@ -10,7 +10,7 @@
             class="h-13"
           />
       </div>
-      <div class="flex flex-col gap-5 lg:gap-3 text-white px-5 text-center lg:text-left lg:w-7/12">
+      <div class="flex flex-col gap-5 lg:gap-3 xl:gap-3 text-white px-5 xl:px-0 text-center lg:text-left xl:text-left lg:w-7/12 xl:w-1/2">
         <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold">
           Como podemos ajudar você ou seu negócio?
         </h2>
@@ -20,7 +20,7 @@
     <component
       :is="'swiper-container'"
       v-bind="sliderOptions"
-      class="pb-12 pt-8"
+      class="pb-12 pt-8 xl:pt-20 xl:max-w-7xl"
     >
       <component
         :is="'swiper-slide'"
@@ -90,6 +90,13 @@ const sliderOptions: SwiperOptions = {
     1021: {
       slidesPerView: 3.5,
     },
+    1277: {
+      slidesPerView: 4.5,
+    },
+    1919: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    }
   },
 }
 
