@@ -21,6 +21,7 @@
     />
     <BestPlay />
   </main>
+  <TheFooter />
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
@@ -32,6 +33,7 @@ import AboutUs from '@/components/homePage/aboutUs.component.vue'
 import Mission from '@/components/homePage/missionSection.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import BestPlay from '@/components/homePage/bestPlay.component.vue'
+import TheFooter from '@/components/structure/theFooter.component.vue'
 
 export default defineComponent({
   name: 'TheIndex',
@@ -44,6 +46,7 @@ export default defineComponent({
     Mission,
     ComparisonTable,
     BestPlay,
+    TheFooter
   },
   data() {
     return {}
