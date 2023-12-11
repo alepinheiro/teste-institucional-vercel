@@ -16,14 +16,14 @@
       class="flex flex-col gap-4 items-center mt-auto mx-auto h-full px-5 pb-12"
     >
       <div class="flex flex-col gap-4 text-center text-white font-bold">
-        <h1 class="text-3xl md:text-5xl font-darkerGrotesque tracking-wider">
+        <h1 class="text-3xl md:text-5xl font-darkerGrotesque tracking-wide font-[700]">
           A melhor fintech de Crédito do Brasil
         </h1>
         <h2 class="text-xl md:text-2xl">Sem filas, Sem gerentes, Sem complexidade.</h2>
       </div>
       <a
         :href="information.appSimulator + $root.utms"
-        class="bg-complementaryColor1 text-white font-bold w-fit px-5 py-3 rounded-md"
+        class="bg-complementaryColor1 text-white font-bold w-fit px-5 py-3 rounded-md md:text-xl"
       >
         Simule seu crédito
       </a>
