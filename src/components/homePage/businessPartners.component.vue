@@ -1,21 +1,24 @@
 <template>
-  <section class="flex flex-col gap-10 py-10 px-5">
+  <section class="flex flex-col gap-10 py-10 px-5 max-w-2xl mx-auto">
     <div class="flex flex-col text-center gap-2">
       <h2 class="text-primary text-2xl font-bold">
         A melhor plataforma multibancos.
       </h2>
       <p class="text-textPrimary">
-        Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
-        financeiras, o que pode lhe garantir as melhores taxas e as maiores
-        chances de aprovação, além de um time de especialistas preparado para te
-        atender e te guiar durante todo o processo.
+        <strong>
+          Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
+          financeiras,
+        </strong>
+        o que pode lhe garantir as melhores taxas e as maiores chances de
+        aprovação, além de um time de especialistas preparado para te atender e
+        te guiar durante todo o processo.
       </p>
     </div>
-    <ul class="flex flex-col gap-4">
+    <ul class="flex flex-col gap-4 ">
       <div
         v-for="row of partners"
         :key="row.toString()"
-        class="flex flex-row items-center gap-2"
+        class="flex flex-row items-center gap-2 md:w-fit md:mx-auto"
       >
         <li
           v-for="({ alt, image }, i) of row"
@@ -25,12 +28,12 @@
               ? 'w-auto bg-[#CACACA]'
               : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#CACACA] to-transparent w-24',
           ]"
-          class="text-ellipsis rounded px-2"
+          class="text-ellipsis rounded px-2 md:py-2"
         >
           <img
             v-if="image"
             :src="`/images/Home/icons/${image}.svg`"
-            class="h-8"
+            class="h-8 "
             :alt="alt ?? ''"
             loading="lazy"
           />
