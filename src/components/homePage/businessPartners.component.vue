@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-10 py-10 px-5 max-w-2xl mx-auto">
+  <section class="flex flex-col gap-10 py-10 px-5 md:max-w-2xl mx-auto">
     <div class="flex flex-col text-center gap-2">
       <h2 class="text-primary text-2xl font-bold">
         A melhor plataforma multibancos.

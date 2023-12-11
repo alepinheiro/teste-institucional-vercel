@@ -1,6 +1,6 @@
 <template>
   <section class="bg-bgDarkColor">
-    <div class="flex flex-col gap-5 text-white px-5 text-center max-w-2xl mx-auto">
+    <div class="flex flex-col gap-5 text-white px-5 text-center md:max-w-2xl md:mx-auto">
       <div class="hidden md:flex lg:flex xl:flex flex-row w-3/5 mx-auto items-center gap-3">
         <img
           v-for="{ alt, id, source } of seals"
