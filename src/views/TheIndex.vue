@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="bg-[#DDDDDD80]">
     <HeroSection />
     <Products />
     <BusinessPartners />

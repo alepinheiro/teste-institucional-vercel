@@ -10,11 +10,13 @@
             class="h-13"
           />
       </div>
-      <div class="flex flex-col gap-5 lg:gap-3 xl:gap-3 text-white px-5 xl:px-0 text-center lg:text-left xl:text-left lg:w-7/12 xl:w-1/2">
+      <div class="flex flex-col gap-5 lg:gap-3 xl:gap-3 text-white xl:px-0 text-center lg:text-left xl:text-left lg:w-7/12 xl:w-1/2">
         <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold">
           Como podemos ajudar você ou seu negócio?
         </h2>
-        <p class="md:text-xl">São diversos produtos pensados para a sua necessidade:</p>
+        <p class="md:text-xl text-textSecondary">
+          São diversos produtos pensados para a sua necessidade:
+        </p>
       </div>
     </div>
     <component
@@ -215,5 +217,8 @@ const seals = [
 ::part(bullet) {
   background: #d9d9d9;
   opacity: 100;
+}
+::part(bullet-active) {
+  @apply scale-150 transition-all bg-primary;
 }
 </style>

@@ -12,14 +12,14 @@
     </div>
     <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto z-0">
       <div
-        class="bg-[#181818] flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 items-center px-5 py-10 text-white text-center md:text-left lg:text-left xl:text-left md:w-4/6 "
+        class="bg-[#181818] flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 items-center px-5 py-10 text-white md:w-4/6 "
       >
         <div class="flex flex-col gap-5 lg:w-5/12 xl:w-5/12">
-          <BestPlayLogo class="md:hidden lg:hidden xl:hidden" />
-          <h2 class="text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold">
+          <BestPlayLogo class="w-3/4 mx-auto md:hidden lg:hidden xl:hidden" />
+          <h2 class="text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left">
             Conheça o maior canal de crédito do Brasil
           </h2>
-          <p class="text-justify md:leading-9 lg:leading-9 xl:leading-9 xl:text-xl">
+          <p class="leading-9 xl:text-xl">
             BestPlay é o canal de comunicação da SejaBest no YouTube. Com mais
             de 500 vídeos, nosso canal reúne uma comunidade de mais de 50 mil
             pessoas. Abordamos temas como crédito, financiamento,
