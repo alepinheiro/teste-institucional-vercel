@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-bgDarkColor min-h-screen relative z-0 flex">
+  <section class="bg-bgDarkColor min-h-screen relative z-0 flex border-b border-bgDarkColor">
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
       <Topbar class=" w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
