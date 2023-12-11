@@ -15,6 +15,7 @@
         table: {
           backgroundColor: '#FFF',
           titleColor: 'TEXTPRIMARY',
+          title: 'Por que escolher a <b>SejaBest?</b>'
         },
       }"
     />

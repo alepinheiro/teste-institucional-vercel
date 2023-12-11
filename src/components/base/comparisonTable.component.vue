@@ -20,14 +20,24 @@
         :style="{
           'background-color': props.table.backgroundColor,
         }"
-        class="mx-auto w-8/12 sm:w-full flex flex-col items-center rounded-xl px-5 py-10"
+        class="mx-auto w-8/12 sm:w-full flex flex-col items-center rounded-xl px-5 sm:px-0 py-10"
       >
         <h2
+          v-if="props.table.title"
           :class="{
             'text-textPrimary': props.table.titleColor === 'TEXTPRIMARY',
             'text-primary': props.table.titleColor === 'PRIMARY',
           }"
-          class="text-4xl sm:text-2xl sm:text-center sm:text-primary sm:w-8/12 sm:mx-auto"
+          class="text-4xl sm:text-2xl sm:text-center sm:mx-auto"
+          v-html="props.table.title"
+        ></h2>
+        <h2
+          v-else
+          :class="{
+            'text-textPrimary': props.table.titleColor === 'TEXTPRIMARY',
+            'text-primary': props.table.titleColor === 'PRIMARY',
+          }"
+          class="text-4xl sm:text-2xl sm:text-center sm:w-8/12 sm:mx-auto"
         >
           Por que financiar com a <b> SejaBest?</b>
         </h2>
@@ -51,7 +61,8 @@
             :key="id"
             class="flex flex-row w-full py-4 items-center border-b border-zinc-300 last-of-type:border-0"
           >
-            <div class="w-1/2">{{ text }}</div>
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <div class="w-1/2" v-html="text"></div>
             <div class="w-1/4 text-center">
               <i
                 v-if="ourProduct"
@@ -82,6 +93,7 @@ defineProps<{
     table: {
       backgroundColor: string
       titleColor: 'PRIMARY' | 'TEXTPRIMARY'
+      title?: string
     }
   }
 }>()
@@ -89,19 +101,19 @@ defineProps<{
 const lines = [
   {
     id: 1,
-    text: 'As menores taxas do mercado',
+    text: 'As <b>menores taxas</b> do mercado',
     ourProduct: true,
     otherProducts: true,
   },
   {
     id: 2,
-    text: 'Múltiplas opções de banco',
+    text: '<b>Múltiplas opções</b> de banco',
     ourProduct: true,
     otherProducts: false,
   },
   {
     id: 3,
-    text: 'Plataforma multiprodutos',
+    text: 'Plataforma <b>multiprodutos</b>',
     ourProduct: true,
     otherProducts: true,
   },
@@ -113,25 +125,25 @@ const lines = [
   },
   {
     id: 5,
-    text: 'Processo agilizado',
+    text: 'Processo <b>agilizado</b>',
     ourProduct: true,
     otherProducts: false,
   },
   {
     id: 6,
-    text: 'Atendimento 7 dias por semana',
+    text: 'Atendimento <b>7 dias por semana</b>',
     ourProduct: true,
     otherProducts: false,
   },
   {
     id: 7,
-    text: 'Assessoria personalizada',
+    text: 'Assessoria <b>personalizada</b>',
     ourProduct: true,
     otherProducts: false,
   },
   {
     id: 8,
-    text: 'Totalmente Digital',
+    text: 'Totalmente <b>Digital</b>',
     ourProduct: true,
     otherProducts: false,
   },
