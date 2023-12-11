@@ -1,8 +1,8 @@
 <template>
   <section
-    class="flex flex-col gap-10 md:gap-32 py-10 md:py-24 px-5 md:max-w-2xl lg:max-w-5xl mx-auto"
+    class="flex flex-col gap-10 md:gap-32 lg:gap-32 xl:gap-32 py-10 md:py-24 lg:py-24 xl:py-24 px-5 md:max-w-2xl lg:max-w-5xl mx-auto"
   >
-    <div class="flex flex-col text-center gap-2">
+    <div class="flex flex-col text-center gap-2 lg:gap-5">
       <h2 class="text-primary text-2xl md:text-3xl lg:text-5xl font-bold">
         A melhor plataforma multibancos.
       </h2>
@@ -29,8 +29,8 @@
             :key="alt ?? '' + i"
             :class="[
               alt
-                ? 'w-auto bg-[#CACACA]'
-                : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#CACACA] to-transparent w-24',
+                ? 'w-auto bg-[#DADADA]'
+                : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#DADADA] to-transparent w-24',
             ]"
             class="text-ellipsis rounded px-2 md:py-3 lg:py-3 xl:py-3"
           >

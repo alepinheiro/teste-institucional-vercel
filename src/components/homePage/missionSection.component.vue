@@ -1,7 +1,7 @@
 <template>
   <section class="py-10 px-5 flex flex-col gap-8 md:max-w-2xl lg:max-w-5xl mx-auto">
-    <div class="text-center flex flex-col gap-4">
-      <div class="flex flex-col gap-2 md:gap-4">
+    <div class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5">
+      <div class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-4">
         <h2 class="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold">Por que existimos?</h2>
         <p class="md:text-xl lg:text-3xl">
           Acreditamos que o acesso ao crédito pode levar as pessoas a sua melhor
@@ -10,7 +10,7 @@
       </div>
 
       <p class="lg:text-3xl">
-        <b>E como fazemos isso?</b> <br />
+        <b>E como fazemos isso?</b> <br class=" md:hidden lg:hidden xl:hidden" />
         <i>Através dos nossos três pilares:</i>
       </p>
     </div>
