@@ -1,10 +1,10 @@
 <template>
-  <section class="flex flex-col gap-10 py-10 px-5 md:max-w-2xl mx-auto">
+  <section class="flex flex-col gap-10 md:gap-32 py-10 md:py-24 px-5 md:max-w-2xl mx-auto">
     <div class="flex flex-col text-center gap-2">
-      <h2 class="text-primary text-2xl font-bold">
+      <h2 class="text-primary text-2xl md:text-3xl font-bold">
         A melhor plataforma multibancos.
       </h2>
-      <p class="text-textPrimary">
+      <p class="text-textPrimary md:text-xl">
         <strong>
           Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
           financeiras,
