@@ -1,19 +1,21 @@
 <template>
   <section class="bg-bgDarkColor">
-    <div class="flex flex-col gap-5 text-white px-5 text-center md:max-w-2xl md:mx-auto">
-      <div class="hidden md:flex lg:flex xl:flex flex-row w-3/5 mx-auto items-center gap-3">
+    <div class="flex flex-col lg:flex-row-reverse gap-5 text-white px-5 text-center md:max-w-2xl lg:max-w-5xl md:mx-auto lg:mx-auto">
+      <div class="hidden md:flex lg:flex xl:flex flex-row w-3/5 lg:w-5/12 mx-auto items-center gap-3">
         <img
           v-for="{ alt, id, source } of seals"
           :key="id"
             :src="`/images/Home/seals/light/${source}`"
             :alt="alt"
-            class="h-13 sm:h-auto"
+            class="h-13"
           />
       </div>
-      <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold">
-        Como podemos ajudar você ou seu negócio?
-      </h2>
-      <p class="md:text-xl">São diversos produtos pensados para a sua necessidade:</p>
+      <div class="flex flex-col gap-5 lg:gap-3 text-white px-5 text-center lg:text-left lg:w-7/12">
+        <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold">
+          Como podemos ajudar você ou seu negócio?
+        </h2>
+        <p class="md:text-xl">São diversos produtos pensados para a sua necessidade:</p>
+      </div>
     </div>
     <component
       :is="'swiper-container'"
