@@ -28,12 +28,12 @@
               ? 'w-auto bg-[#CACACA]'
               : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#CACACA] to-transparent w-24',
           ]"
-          class="text-ellipsis rounded px-2 md:py-2"
+          class="text-ellipsis rounded px-2 md:py-3"
         >
           <img
             v-if="image"
             :src="`/images/Home/icons/${image}.svg`"
-            class="h-8 "
+            class="h-8 md:py-1 md:px-2"
             :alt="alt ?? ''"
             loading="lazy"
           />
