@@ -3,7 +3,7 @@
     <span
       id="slogan"
       ref="slogan"
-      class="text-[80px] md:text-[140px] whitespace-nowrap text-textPrimary absolute inset-0 h-fit my-auto px-5 "
+      class="text-[80px] md:text-[140px] lg:text-[140px] xl:text-[140px] whitespace-nowrap text-textPrimary absolute inset-0 h-fit my-auto px-5 "
     >
       Sem
       <b> filas. </b>
