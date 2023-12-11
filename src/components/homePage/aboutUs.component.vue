@@ -4,15 +4,15 @@
       <p class="text-textSecondary">
         A <b> SejaBest </b> já tem história no mercado.
       </p>
-      <h2 class="text-2xl">
+      <h2 class="text-xl">
         <strong>Há 10 anos</strong> transformamos o acesso ao crédito
       </h2>
     </div>
 
     <ul class="flex flex-row gap-5 py-10">
-      <li v-for="{ icon, title, description } in cards" :key="icon" class="px-2 py-4 bg-white drop-shadow-lg rounded w-full">
+      <li v-for="{ icon, title, description } in cards" :key="icon" class="p-5 bg-white drop-shadow-lg rounded w-full">
         <i :class="icon" class="text-textSecondary block"></i>
-        <span class="font-bold text-2xl text-primary block">
+        <span class="font-bold text-xl text-primary block">
           {{ title }}
         </span>
         <span class="text-textSecondary block">
