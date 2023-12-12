@@ -18,11 +18,11 @@
     </div>
     <div class="flex lg:flex-row gap-5 items-center">
       <img src="/images/Home/simulatorOnPhoneMockup.png" alt="A melhor plataforma multibancos." class="w-5/12 hidden lg:block xl:block">
-      <ul class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12">
+      <ul class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto">
         <div
           v-for="row of partners"
           :key="row.toString()"
-          class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto xl:mx-auto"
+          class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto xl:"
         >
           <li
             v-for="({ alt, image }, i) of row"

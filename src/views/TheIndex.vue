@@ -18,7 +18,7 @@
           title: 'Por que escolher a <b>SejaBest?</b>',
         },
       }"
-      class="py-0"
+      class="py-0 md:py-14 lg:py-14"
     />
     <BestPlay class="pt-10 md:pt-0 lg:pt-0 md:bg-[#181818] lg:bg-[#181818] xl:bg-[#181818]" />
   </main>
