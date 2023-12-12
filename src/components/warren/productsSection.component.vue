@@ -148,6 +148,7 @@ export default defineComponent({
           slidesPerView: 3.5,
           centeredSlides: true,
           loop: false,
+          pagination: true,
         },
         1278: {
           slidesPerView: 4,
