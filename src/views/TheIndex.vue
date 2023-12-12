@@ -1,7 +1,7 @@
 <template>
   <main class="bg-[#EFEFEF]">
     <HeroSection class="min-h-screen bg-bgDarkColor pb-12" />
-    <Products class="bg-bgDarkColor" />
+    <Products class="bg-bgDarkColor md:py-10" />
     <BusinessPartners class="py-10 md:py-24 lg:py-24 xl:py-24 px-5" />
     <SloganSection />
     <AboutUs class="bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none" />
