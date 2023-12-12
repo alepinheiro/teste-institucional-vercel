@@ -1,16 +1,22 @@
 <template>
-  <section >
-    <div class="flex flex-col lg:flex-row-reverse xl:flex-row-reverse gap-5 text-white px-5 xl:px-0 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto xl:justify-between">
-      <div class="hidden md:flex lg:flex xl:flex flex-row w-3/5 lg:w-5/12 xl:w-1/2 mx-auto items-center gap-3 xl:justify-end">
+  <section>
+    <div
+      class="flex flex-col lg:flex-row-reverse xl:flex-row-reverse gap-5 text-white px-5 xl:px-0 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto xl:justify-between"
+    >
+      <div
+        class="hidden md:flex lg:flex xl:flex flex-row w-3/5 lg:w-5/12 xl:w-1/2 mx-auto items-center gap-3 xl:justify-end"
+      >
         <img
           v-for="{ alt, id, source } of seals"
           :key="id"
-            :src="`/images/Home/seals/light/${source}`"
-            :alt="alt"
-            class="h-13"
-          />
+          :src="`/images/Home/seals/light/${source}`"
+          :alt="alt"
+          class="h-13"
+        />
       </div>
-      <div class="flex flex-col gap-5 md:gap-3 lg:gap-3 xl:gap-3 text-white xl:px-0 text-center lg:text-left xl:text-left lg:w-7/12 xl:w-1/2">
+      <div
+        class="flex flex-col gap-5 md:gap-3 lg:gap-3 xl:gap-3 text-white xl:px-0 text-center lg:text-left xl:text-left lg:w-7/12 xl:w-1/2"
+      >
         <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold">
           Como podemos ajudar você ou seu negócio?
         </h2>
@@ -26,9 +32,9 @@
     >
       <component
         :is="'swiper-slide'"
-        v-for="{ title, description, features } of steps"
+        v-for="{ title, description, features, moreInformation } of steps"
         :key="title"
-        class="bg-white text-textPrimary hover:text-white py-8 px-4 rounded-lg mb-16 h-auto group hover:bg-secondary transition-all "
+        class="bg-white text-textPrimary hover:text-white py-8 px-4 rounded-lg mb-16 h-auto group hover:bg-secondary transition-all"
       >
         <div class="flex flex-col gap-4 justify-between h-full">
           <h3 class="text-2xl font-bold">
@@ -39,7 +45,9 @@
             {{ description }}
           </p>
 
-          <hr class="border-textPrimary group-hover:border-white transition-colors" />
+          <hr
+            class="border-textPrimary group-hover:border-white transition-colors"
+          />
 
           <ul class="flex flex-col gap-4">
             <li
@@ -47,7 +55,9 @@
               :key="item.text"
               class="flex flex-row gap-2 items-center"
             >
-              <div class="h-8 w-8 bg-primary rounded shrink-0 text-white transition-colors">
+              <div
+                class="h-8 w-8 bg-primary rounded shrink-0 text-white transition-colors"
+              >
                 <component :is="item.icon" class="w-full h-full p-1" />
               </div>
               <!-- eslint-disable-next-line vue/no-v-html -->
@@ -56,10 +66,16 @@
           </ul>
 
           <div class="flex flex-col justify-between items-center gap-2 text-sm">
-            <a href="#" class="bg-complementaryColor1 px-3 py-2 rounded text-white">
+            <a
+              :href="information.appSimulator + $root.utms"
+              target="_blank"
+              class="bg-complementaryColor1 px-3 py-2 rounded text-white"
+            >
               Simule grátis
             </a>
-            <a href="#" class="underline text-xs">Saiba mais</a>
+            <RouterLink :to="moreInformation" class="underline text-xs">
+              Saiba mais
+            </RouterLink>
           </div>
         </div>
       </component>
@@ -75,6 +91,7 @@ import BuildingIcon from '@/components/homePage/icons/buildingIcon.component.vue
 import DollarSignIcon from '@/components/homePage/icons/dollarSign.component.vue'
 import DollarBagIcon from '@/components/homePage/icons/dollarBag.component.vue'
 import CarIcon from '@/components/homePage/icons/carIcon.component.vue'
+import information from '@/configurations/information'
 
 const sliderOptions: SwiperOptions = {
   spaceBetween: 20,
@@ -99,7 +116,7 @@ const sliderOptions: SwiperOptions = {
     1919: {
       slidesPerView: 4,
       centeredSlides: false,
-    }
+    },
   },
 }
 
@@ -122,7 +139,7 @@ const steps = [
         text: 'Financie em mais de <b>20 bancos parceiros.</b>',
       },
     ],
-    moreInformation: '#',
+    moreInformation: '/financiamento-imobiliario',
   },
   {
     title: 'Crédito com Garantia de Imóvel',
@@ -141,7 +158,7 @@ const steps = [
         text: 'Até <b>60% do valor</b> do imóvel como capital.',
       },
     ],
-    moreInformation: '#',
+    moreInformation: '/home-equity',
   },
   {
     title: 'Crédito com Veículo de garantia',
@@ -160,7 +177,7 @@ const steps = [
         text: 'Use seu crédito como <b>você quiser.</b>',
       },
     ],
-    moreInformation: '#',
+    moreInformation: '/emprestimo-com-garantia-de-veiculo',
   },
   {
     title: 'Financiamento Veicular',
@@ -179,7 +196,7 @@ const steps = [
         text: 'Financie carros novos ou até seminovos.',
       },
     ],
-    moreInformation: '#',
+    moreInformation: '/financiamento-veicular',
   },
 ]
 
