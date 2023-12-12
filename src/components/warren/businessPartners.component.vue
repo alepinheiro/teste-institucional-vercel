@@ -1,5 +1,5 @@
 <template>
-  <section class="px-5 py-18 bg-white">
+  <section >
     <div
       class="flex flex-col lg:flex-row xl:flex-row overflow-hidden rounded-2xl bg-warren-hintOfRed w-full max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto xl:w-10/12"
     >
@@ -23,7 +23,7 @@
       </div>
 
       <!-- SM + XL -->
-      <ul class="flex flex-col gap-6 xl:gap-8 md:hidden lg:hidden xl:w-1/2 p-6 xl:py-21 xl:px-14">
+      <ul class="flex flex-col gap-5 xl:gap-8 md:hidden lg:hidden xl:w-1/2 p-6 xl:py-21 xl:px-14">
         <div
           v-for="(row, index) of smLayout"
           :key="index"

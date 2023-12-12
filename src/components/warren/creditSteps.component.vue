@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-warren-whisper py-24 flex flex-col gap-10 px-5">
+  <section class="flex flex-col gap-10 ">
     <h2 class="text-3xl md:text-4xl lg:text-4xl text-warren-gold text-center">
       São apenas
       <b> 4 passos simples </b>

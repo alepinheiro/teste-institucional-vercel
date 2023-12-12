@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full py-10 bg-white">
+  <section class="w-full">
     <div
       class="mx-auto w-full flex flex-col items-center rounded-xl px-5 py-10 md:border lg:border xl:border md:border-warren-solitude lg:border-warren-solitude xl:border-warren-solitude md:max-w-3xl lg:max-w-5xl xl:max-w-6xl xl:w-10/12"
     >

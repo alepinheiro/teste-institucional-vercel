@@ -1,7 +1,7 @@
 <template>
-  <section class="py-10 text-center flex flex-col gap-16 bg-warren-hintOfRed">
+  <section class="text-center flex flex-col gap-5">
     <div
-      class="text-center flex flex-col gap-5 px-5 lg:w-4/6 xl:w-4/6 mx-auto lg:max-w-5xl"
+      class="text-center flex flex-col gap-5 px-5 lg:w-4/6 xl:w-4/6 mx-auto md:max-w-[707px] lg:max-w-5xl"
     >
       <h2
         class="font-bold text-3xl text-warren-darkCharcoal md:text-5xl lg:text-5xl xl:text-5xl"
@@ -14,7 +14,7 @@
       </p>
     </div>
 
-    <div class="relative z-0 px-5 md:px-0 lg:px-0 xl:px-0 xl:max-w-7xl mx-auto">
+    <div class="relative z-0 px-5 md:px-0 lg:px-0 xl:px-0 xl:max-w-7xl mx-auto w-full">
       <component
         :is="'swiper-container'"
         id="productSliderWarren"
@@ -25,7 +25,7 @@
           :is="'swiper-slide'"
           v-for="{ id, description, options, title } of slides"
           :key="id"
-          class="bg-white py-10 px-5 rounded-2xl block mb-14 h-auto md:w-96 lg:w-96"
+          class="bg-white py-10 px-5 rounded-2xl mb-14 h-auto md:w-96 lg:w-96 w-full"
         >
           <div
             class="flex flex-col gap-5 items-start text-start h-full justify-between"
@@ -271,15 +271,16 @@ export default defineComponent({
 <style lang="scss" scoped>
 swiper-container {
   &::part(pagination) {
-    @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center z-10 bottom-3;
+    @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center z-10 bottom-3 h-5 items-center;
   }
 
   &::part(bullet) {
-    @apply inline-block rounded-full w-3 h-3 transition-all bg-zinc-300;
+    @apply rounded-full scale-125 transition-all ;
+    color: #D9D9D9;
   }
 
   &::part(bullet-active) {
-    @apply inline-block w-4 h-4 rounded-full transition-all bg-warren-terracota;
+    @apply w-4 h-4 rounded-full transition-all bg-warren-terracota ;
   }
 }
 </style>
