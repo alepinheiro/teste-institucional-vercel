@@ -1,10 +1,10 @@
 <template>
-  <section class="relative z-0">
+  <section class="relative z-0 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
     <div
-      class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] to-[#EFEFEF] absolute top-0 bottom-1/3 inset-x-20 xl:inset-x-56 -z-10 rounded-xl"
+      class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] to-[#EFEFEF] absolute top-0 bottom-1/3 w-full scale-x-105 inset-x-0 -z-10 rounded-xl"
     ></div>
     <div
-      class="px-5 lg:px-0 py-10 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto flex flex-col lg:flex-row xl:flex-row items-center"
+      class="px-5 lg:px-0 py-10  mx-auto flex flex-col lg:flex-row xl:flex-row items-center"
     >
       <div
         class="flex flex-col gap-2 lg:gap-7 xl:gap-7 text-center md:text-left lg:text-left xl:text-left lg:w-5/12 xl:w-5/12"

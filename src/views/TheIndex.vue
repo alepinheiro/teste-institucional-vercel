@@ -1,10 +1,10 @@
 <template>
-  <main class="bg-[#EFEFEF]">
+  <main class="bg-[#EFEFEF] overflow-hidden">
     <HeroSection class="min-h-screen bg-bgDarkColor pb-12" />
     <Products class="bg-bgDarkColor md:py-10" />
     <BusinessPartners class="py-10 md:py-24 lg:py-24 xl:py-24 px-5" />
     <SloganSection />
-    <AboutUs class="bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none" />
+    <AboutUs class="md:px-5 lg:px-5 bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none" />
     <Mission class="py-10 px-5" />
     <ComparisonTable
       :props="{
