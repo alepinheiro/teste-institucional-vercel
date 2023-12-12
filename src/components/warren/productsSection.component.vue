@@ -1,5 +1,5 @@
 <template>
-  <section class="text-center flex flex-col gap-11">
+  <section class="text-center flex flex-col gap-11 lg:gap-16">
     <div
       class="text-center flex flex-col gap-5 px-5 lg:w-4/6 xl:w-4/6 mx-auto md:max-w-[707px] lg:max-w-5xl"
     >

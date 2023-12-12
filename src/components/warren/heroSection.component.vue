@@ -6,7 +6,7 @@
       class=" flex bg-[url(/images/warren/desktop/amanhecer.png)] bg-cover px-5 pb-24 mb-48"
     >
       <div
-        class="md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto pt-18 md:pt-28 pb-5 w-full xl:flex xl:flex-row gap-5 "
+        class="md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto pt-18 md:pt-28 lg:pt-36 pb-5 w-full xl:flex xl:flex-row gap-5 "
       >
         <div
           class="xl:h-134 flex flex-col gap-6 md:gap-8 lg:gap-8 xl:gap-8 items-center md:items-start lg:items-start xl:items-start xl:justify-between md:w-5/6 lg:w-4/6 xl:w-1/2 xl:flex-1"

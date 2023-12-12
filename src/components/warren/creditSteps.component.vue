@@ -1,16 +1,16 @@
 <template>
   <section class="flex flex-col gap-10 ">
-    <h2 class="text-3xl md:text-4xl lg:text-4xl text-warren-gold text-center md:max-w-[707px] mx-auto">
+    <h2 class="text-3xl md:text-4xl lg:text-4xl text-warren-gold text-center md:max-w-[707px] lg:max-w-5xl lg:w-5/6 mx-auto">
       São apenas
       <b> 4 passos simples </b>
       até a
       <b> liberação do crédito </b>
     </h2>
-    <ul class="flex flex-col mx-auto md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap gap-5 md:max-w-[707px] lg:max-w-5xl lg:w-10/12 lg:mx-auto xl:max-w-6xl xl:mx-auto">
+    <ul class="flex flex-col md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap gap-5 md:max-w-[707px] lg:max-w-5xl lg:w-5/6 lg:mx-auto xl:max-w-6xl xl:mx-auto">
       <li
         v-for="{ description, id, title } of steps"
         :key="id"
-        class="bg-white rounded-3xl p-8 flex flex-col gap-4 md:w-1/3 lg:w-1/3 md:flex-grow lg:flex-grow"
+        class="bg-white rounded-3xl p-8 lg:p-16 flex flex-col gap-4 md:w-1/3 lg:w-1/3 md:flex-grow lg:flex-grow"
       >
         <h3 class="text-2xl text-warren-darkCharcoal">
           {{ id }}
