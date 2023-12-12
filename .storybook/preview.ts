@@ -18,8 +18,8 @@ import { createMetaManager } from 'vue-meta'
 import { createHead } from '@vueuse/head'
 
 setup((app) => {
-  app.use(createMetaManager())
   app.use(createHead())
+  app.use(createMetaManager())
   app.mixin({
     created() {
       this.$options.imageConfig = image

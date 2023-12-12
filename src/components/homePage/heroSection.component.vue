@@ -4,7 +4,7 @@
       <Topbar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
     <picture class="absolute top-0 inset-x-0 bottom-0 -z-10">
-      <source type="image/webp" />
+      <source type="image/png" />
       <img
         src="/images/Home/heroBackground.png"
         alt="A melhor fintech de Crédito do Brasil"
