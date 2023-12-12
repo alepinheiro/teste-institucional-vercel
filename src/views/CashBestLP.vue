@@ -20,9 +20,11 @@
         },
         table: {
           backgroundColor: '#FFF',
-          titleColor: 'PRIMARY'
+          titleColor: 'PRIMARY',
+          padding: '2.5rem'
         }
       }"
+      class="pb-20"
     />
     <AboutUs
       :cards="{ bgColor: 'SECONDARY' }"
