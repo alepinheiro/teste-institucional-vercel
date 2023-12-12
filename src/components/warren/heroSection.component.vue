@@ -40,7 +40,7 @@
           /images/warren/proDisplay@2x.png 2x,
           /images/warren/proDisplay@4x.png 4x
         "
-        class="h-80 md:h-96 md:scale-110 mx-auto inset-x-0 absolute md:left-auto lg:left-[63%] bottom-0 lg:h-5/6 xl:top-1/4 xl:left-auto xl:right-12 xl:h-2/3 scale-95"
+        class="h-64 md:h-96 md:scale-110 mx-auto inset-x-0 absolute md:left-auto lg:left-[63%] -bottom-4 lg:h-5/6 xl:top-1/4 xl:left-auto xl:right-12 xl:h-2/3 scale-95"
         alt=""
       />
     </div>
