@@ -14,7 +14,7 @@
       </p>
     </div>
 
-    <div class="relative z-0 px-5 md:px-0 lg:px-0 xl:px-0 xl:max-w-7xl mx-auto w-full">
+    <div class="relative z-0 px-5 md:px-0 lg:px-0 xl:px-0 lg:max-w-6xl xl:max-w-6xl mx-auto w-full">
       <component
         :is="'swiper-container'"
         id="productSliderWarren"
@@ -25,7 +25,7 @@
           :is="'swiper-slide'"
           v-for="{ id, description, options, title } of slides"
           :key="id"
-          class="bg-white py-10 px-5 md:px-10 rounded-2xl mb-14 h-auto md:w-96 lg:w-96 w-full"
+          class="bg-white py-10 px-5 md:px-10 rounded-2xl mb-14 h-auto md:w-96 w-full"
         >
           <div
             class="flex flex-col gap-5 items-start text-start h-full justify-between"
@@ -65,7 +65,7 @@
           </div>
         </component>
       </component>
-      <div class="absolute bottom-3 h-fit flex inset-x-0 z-[1] px-5 w-full xl:hidden">
+      <div class="absolute bottom-3 h-fit flex inset-x-0 z-[1] px-5 w-full lg:hidden xl:hidden">
         <div class="w-5/6 flex flex-row justify-between mx-auto">
           <button
             class="wNavigationPrev w-5 h-5"
@@ -149,9 +149,10 @@ export default defineComponent({
           centeredSlides: true,
           loop: false,
         },
-        1280: {
+        1278: {
           slidesPerView: 4,
-          centeredSlides: true,
+          centeredSlides: false,
+          pagination: false,
           loop: false,
         },
         1919: {
@@ -271,7 +272,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 swiper-container {
   &::part(pagination) {
-    @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center z-10 bottom-3 h-5 xl:hidden;
+    @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center z-10 bottom-3 h-5 lg:hidden xl:hidden;
   }
 
   &::part(bullet) {
