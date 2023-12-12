@@ -271,7 +271,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 swiper-container {
   &::part(pagination) {
-    @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center z-10 bottom-3 h-5 items-center;
+    @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center z-10 bottom-3 h-5 xl:hidden;
   }
 
   &::part(bullet) {
