@@ -1,6 +1,6 @@
 <template>
-  <main class="flex flex-col font-Mulish bg-warren-hintOfRed">
-    <Hero class="overflow-hidden" />
+  <main class="flex flex-col font-Mulish bg-warren-hintOfRed ">
+    <Hero class="overflow-hidden w-full" />
     <Products class="pb-10 bg-warren-hintOfRed" />
     <BusinessPartners class="px-5 pt-18 bg-white" />
     <ComparisonTable class="pt-10 md:py-20 pb-0 bg-white" />

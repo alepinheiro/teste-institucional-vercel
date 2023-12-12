@@ -1,7 +1,7 @@
 <template>
   <section class="relative z-0">
     <div
-      class="absolute bg-[url('/images/warren/mobile/contactBackground.png')] top-0 inset-x-0 lg:inset-x-auto xl:inset-x-auto lg:bottom-0 xl:bottom-0 h-[48%] md:h-[44%] lg:h-auto xl:h-auto lg:left-[41%] xl:left-[41%] lg:right-0 xl:right-0 bg-cover bg-center  -z-10"
+      class="absolute bg-[url('/images/warren/mobile/contactBackground.png')] top-0 inset-x-0 lg:inset-x-auto xl:inset-x-auto lg:bottom-0 xl:bottom-0 h-[42%] md:h-[44%] lg:h-auto xl:h-auto lg:left-[41%] xl:left-[41%] lg:right-0 xl:right-0 bg-cover bg-center  -z-10"
     ></div>
     <div
       class="flex flex-col lg:flex-row-reverse xl:flex-row-reverse md:max-w-3xl lg:max-w-5xl xl:max-w-6xl md:mx-auto lg:mx-auto xl:mx-auto"

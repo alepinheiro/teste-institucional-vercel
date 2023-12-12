@@ -4,7 +4,7 @@
       class="flex flex-col lg:flex-row xl:flex-row overflow-hidden rounded-2xl bg-warren-hintOfRed w-full md:max-w-[707px] lg:max-w-5xl xl:max-w-6xl mx-auto xl:w-10/12"
     >
       <div
-        class="bg-warren-whisper pt-8 p-6 md:px-0 md:py-20 lg:w-1/2 xl:w-1/2"
+        class="bg-warren-whisper pt-8 pb-6 px-3 md:px-0 md:py-20 lg:w-1/2 xl:w-1/2"
       >
         <div
           class="flex flex-col gap-2 md:gap-10 xl:gap-10 text-center lg:text-start xl:text-start md:w-4/6 mx-auto lg:justify-center xl:justify-center lg:h-full xl:h-full lg:px-9 xl:px-20"
