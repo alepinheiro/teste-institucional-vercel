@@ -22,7 +22,7 @@
         <div
           v-for="row of partners"
           :key="row.toString()"
-          class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto xl:"
+          class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto xl:mx-auto"
         >
           <li
             v-for="({ alt, image }, i) of row"

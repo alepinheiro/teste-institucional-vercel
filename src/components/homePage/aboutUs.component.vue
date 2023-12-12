@@ -7,7 +7,7 @@
       class="px-5 lg:px-0 py-10 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto flex flex-col lg:flex-row xl:flex-row items-center"
     >
       <div
-        class="flex flex-col gap-2 md:gap-7 text-center md:text-left lg:text-left xl:text-left lg:w-5/12 xl:w-5/12"
+        class="flex flex-col gap-2 lg:gap-7 xl:gap-7 text-center md:text-left lg:text-left xl:text-left lg:w-5/12 xl:w-5/12"
       >
         <p class="text-textSecondary md:text-textPrimary">
           A <b> SejaBest </b> já tem história no mercado.

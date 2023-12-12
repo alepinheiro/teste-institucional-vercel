@@ -1,6 +1,6 @@
 <template>
   <section
-    class=" flex flex-col gap-8 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
+    class=" flex flex-col gap-8 xl:gap-20 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
   >
     <div class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5">
       <div class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5">
