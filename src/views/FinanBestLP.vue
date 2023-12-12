@@ -1,8 +1,6 @@
 <template>
   <main>
     <HeroSection />
-    <VideoSection :youtube-video-id="'Mlg8eDX61uE'" />
-    <StepsSection />
     <BusinessPartners
       :props="{
         backgroundColor: '#FFF',
@@ -25,6 +23,9 @@
       }"
       class="py-10"
     />
+    <VideoSection :youtube-video-id="'Mlg8eDX61uE'" />
+    <StepsSection />
+
 
     <AboutUs
       :cards="{ bgColor: 'PRIMARY' }"
