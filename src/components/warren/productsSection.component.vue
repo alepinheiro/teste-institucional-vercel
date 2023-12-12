@@ -14,7 +14,7 @@
       </p>
     </div>
 
-    <div class="relative z-0 px-5 md:px-0 lg:px-0 xl:px-0">
+    <div class="relative z-0 px-5 md:px-0 lg:px-0 xl:px-0 xl:max-w-7xl mx-auto">
       <component
         :is="'swiper-container'"
         id="productSliderWarren"
@@ -25,7 +25,7 @@
           :is="'swiper-slide'"
           v-for="{ id, description, options, title } of slides"
           :key="id"
-          class="bg-white py-10 px-5 rounded-2xl block mb-14 h-auto md:w-96 lg:w-96 xl:w-96"
+          class="bg-white py-10 px-5 rounded-2xl block mb-14 h-auto md:w-96 lg:w-96"
         >
           <div
             class="flex flex-col gap-5 items-start text-start h-full justify-between"
@@ -65,7 +65,7 @@
           </div>
         </component>
       </component>
-      <div class="absolute bottom-3 h-fit flex inset-x-0 z-[1] px-5 w-full">
+      <div class="absolute bottom-3 h-fit flex inset-x-0 z-[1] px-5 w-full xl:hidden">
         <div class="w-5/6 flex flex-row justify-between mx-auto">
           <button
             class="wNavigationPrev w-5 h-5"
@@ -153,6 +153,11 @@ export default defineComponent({
           slidesPerView: 4,
           centeredSlides: true,
           loop: false,
+        },
+        1919: {
+          slidesPerView: 4,
+          centeredSlides: false,
+          pagination: false,
         },
       },
     }
