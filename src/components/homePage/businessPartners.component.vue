@@ -1,9 +1,13 @@
 <template>
   <section
-    class="flex flex-col gap-10 md:gap-32 lg:gap-32 xl:gap-32 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
+    class="flex flex-col gap-10 md:gap-8 lg:gap-8 xl:gap-8 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
   >
-    <div class="flex flex-col text-center gap-2 lg:gap-5 xl:gap-5 xl:w-8/12 xl:mx-auto">
-      <h2 class="text-primary text-xl md:text-3xl lg:text-5xl xl:text-5xl font-bold">
+    <div
+      class="flex flex-col text-center gap-2 lg:gap-5 xl:gap-5 xl:w-8/12 xl:mx-auto"
+    >
+      <h2
+        class="text-primary text-xl md:text-3xl lg:text-5xl xl:text-5xl font-bold"
+      >
         A melhor plataforma multibancos.
       </h2>
       <p class="text-textPrimary md:text-xl lg:text-xl xl:text-xl">
@@ -17,8 +21,15 @@
       </p>
     </div>
     <div class="flex lg:flex-row gap-5 items-center">
-      <img src="/images/Home/simulatorOnPhoneMockup.png" alt="A melhor plataforma multibancos." class="w-5/12 hidden lg:block xl:block">
-      <ul class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto">
+      <img
+        ref="phone"
+        src="/images/Home/simulatorOnPhoneMockup.png"
+        alt="A melhor plataforma multibancos."
+        class="w-5/12 hidden lg:block xl:block opacity-0"
+      />
+      <ul
+        class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto"
+      >
         <div
           v-for="row of partners"
           :key="row.toString()"
@@ -48,10 +59,23 @@
     </div>
   </section>
 </template>
+
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { gsap } from 'gsap'
+
 export default defineComponent({
   name: 'BusinessPartners',
+  setup() {
+    gsap.registerPlugin(ScrollTrigger)
+    const phone = ref<HTMLDivElement | null>(null)
+
+    return {
+      gsap,
+      phone,
+    }
+  },
   data() {
     const firstRow = [
       {
@@ -151,6 +175,25 @@ export default defineComponent({
     return {
       partners: [firstRow, secondRow, thirdRow, fourthRow, fifthRow],
     }
+  },
+  mounted() {
+    this.animateElement(this.phone)
+  },
+  methods: {
+    animateElement(element: HTMLDivElement | null) {
+      if(!element) return;
+      gsap.to(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: 'top bottom',
+          toggleActions: 'restart pause resume none',
+        },
+        opacity: 100,
+        duration: 3,
+        delay: 0.5,
+        ease: 'circ.in',
+      })
+    },
   },
 })
 </script>

@@ -2,12 +2,12 @@
   <section
     class="flex flex-col relative"
   >
-    <div class="px-5 md:hidden lg:hidden xl:hidden">
+    <div class="px-5  md:hidden lg:hidden xl:hidden">
       <img
         src="/images/Home/bestPlayMockupMobile.png"
         alt="Conheça o maior canal de crédito do Brasil"
         loading="lazy"
-        class="mx-auto"
+        class="mx-auto object-cover"
       />
     </div>
     <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto z-0">
