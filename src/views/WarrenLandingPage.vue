@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col font-Mulish bg-warren-hintOfRed ">
+  <main class="flex flex-col font-Mulish bg-warren-hintOfRed">
     <Hero class="overflow-hidden w-full" />
     <Products class="pb-10 bg-warren-hintOfRed" />
     <BusinessPartners class="px-5 pt-18 bg-white" />
