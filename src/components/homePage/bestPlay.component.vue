@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col pt-10 md:pt-0 lg:pt-0 md:bg-[#181818] lg:bg-[#181818] xl:bg-[#181818] relative"
+    class="flex flex-col relative"
   >
     <div class="px-5 md:hidden lg:hidden xl:hidden">
       <img

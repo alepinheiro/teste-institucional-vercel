@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] relative z-0 md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
+    class=" relative z-0 "
   >
     <div
       class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] to-[#EFEFEF] absolute top-0 bottom-1/3 inset-x-20 xl:inset-x-56 -z-10 rounded-xl"

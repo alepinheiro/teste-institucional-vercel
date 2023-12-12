@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-bgDarkColor">
+  <section >
     <div class="flex flex-col lg:flex-row-reverse xl:flex-row-reverse gap-5 text-white px-5 xl:px-0 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto xl:justify-between">
       <div class="hidden md:flex lg:flex xl:flex flex-row w-3/5 lg:w-5/12 xl:w-1/2 mx-auto items-center gap-3 xl:justify-end">
         <img

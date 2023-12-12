@@ -1,11 +1,11 @@
 <template>
   <main class="bg-[#EFEFEF]">
-    <HeroSection />
-    <Products />
-    <BusinessPartners />
+    <HeroSection class="min-h-screen bg-bgDarkColor pb-12" />
+    <Products class="bg-bgDarkColor" />
+    <BusinessPartners class="py-10 md:py-24 lg:py-24 xl:py-24 px-5" />
     <SloganSection />
-    <AboutUs />
-    <Mission />
+    <AboutUs class="bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none" />
+    <Mission class="py-10 px-5" />
     <ComparisonTable
       :props="{
         component: {
@@ -20,7 +20,7 @@
       }"
       class="py-0"
     />
-    <BestPlay />
+    <BestPlay class="pt-10 md:pt-0 lg:pt-0 md:bg-[#181818] lg:bg-[#181818] xl:bg-[#181818]" />
   </main>
   <TheFooter />
 </template>

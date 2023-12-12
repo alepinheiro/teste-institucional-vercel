@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-bgDarkColor min-h-screen relative z-0 flex">
+  <section class="relative z-0 flex">
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
       <Topbar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
@@ -13,11 +13,11 @@
     </picture>
 
     <div
-      class="flex flex-col gap-4 items-center mt-auto mx-auto h-full px-5 pb-12"
+      class="flex flex-col gap-4 items-center mt-auto mx-auto h-full px-5 "
     >
       <div class="flex flex-col gap-4 text-center text-white ">
         <h1
-          class="font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-darkerGrotesque leading-7 tracking-normal md:tracking-wide lg:tracking-wide xl:tracking-wide font-[700]"
+          class="font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-darkerGrotesque leading-7 tracking-normal md:tracking-wide lg:tracking-wide xl:tracking-wide"
         >
           A melhor fintech de Crédito do Brasil
         </h1>
