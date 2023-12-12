@@ -103,14 +103,6 @@ const sliderOptions: SwiperOptions = {
   },
 }
 
-const getUtm = (medium: string) => {
-  return new URLSearchParams({
-    utm_source: 'institucional-seja-best',
-    utm_medium: medium,
-    utm_campaign: 'home-page-dez-23',
-  })
-}
-
 const steps = [
   {
     title: 'Financiamento Imobiliário',
@@ -130,7 +122,6 @@ const steps = [
         text: 'Financie em mais de <b>20 bancos parceiros.</b>',
       },
     ],
-    utm: getUtm('product-card-finanBest'),
     moreInformation: '#',
   },
   {
@@ -150,7 +141,6 @@ const steps = [
         text: 'Até <b>60% do valor</b> do imóvel como capital.',
       },
     ],
-    utm: getUtm('product-card-cashBest'),
     moreInformation: '#',
   },
   {
@@ -170,7 +160,6 @@ const steps = [
         text: 'Use seu crédito como <b>você quiser.</b>',
       },
     ],
-    utm: getUtm('product-card-bestCar'),
     moreInformation: '#',
   },
   {
@@ -190,7 +179,6 @@ const steps = [
         text: 'Financie carros novos ou até seminovos.',
       },
     ],
-    utm: getUtm('product-card-bestCarFinan'),
     moreInformation: '#',
   },
 ]
