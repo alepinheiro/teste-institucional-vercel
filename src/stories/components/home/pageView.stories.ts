@@ -1,6 +1,6 @@
 import { vueRouter } from 'storybook-vue3-router';
 import type { Meta, StoryObj } from '@storybook/vue3'
-import Page from '@/views/TheIndex.vue'
+import Page from '../../../views/TheIndex.vue'
 
 const meta = {
     title: 'Views/Home',
