@@ -3,7 +3,7 @@
     :style="{
       'background-color': props.component.backgroundColor,
     }"
-    class="w-full py-10 relative"
+    class="w-full relative"
   >
     <div
       v-if="props.component.showBackGroundImage"
@@ -20,7 +20,7 @@
         :style="{
           'background-color': props.table.backgroundColor,
         }"
-        class="mx-auto w-8/12 sm:w-full flex flex-col items-center rounded-xl px-5 sm:px-0 py-10"
+        class="mx-auto w-8/12 sm:w-full flex flex-col items-center rounded-xl px-5 sm:px-0 "
       >
         <h2
           v-if="props.table.title"

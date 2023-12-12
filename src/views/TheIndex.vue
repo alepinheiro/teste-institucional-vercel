@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-[#DDDDDD80]">
+  <main class="bg-[#EFEFEF]">
     <HeroSection />
     <Products />
     <BusinessPartners />
@@ -9,15 +9,16 @@
     <ComparisonTable
       :props="{
         component: {
-          backgroundColor: '#FFF',
+          backgroundColor: '#EFEFEF',
           showBackGroundImage: false,
         },
         table: {
-          backgroundColor: '#FFF',
+          backgroundColor: '#EFEFEF',
           titleColor: 'TEXTPRIMARY',
           title: 'Por que escolher a <b>SejaBest?</b>',
         },
       }"
+      class="py-0"
     />
     <BestPlay />
   </main>

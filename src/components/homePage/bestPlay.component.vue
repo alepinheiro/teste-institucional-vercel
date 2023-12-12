@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col pt-10 md:pt-0 lg:pt-0 md:mt-10 md:bg-[#181818] lg:bg-[#181818] xl:bg-[#181818] relative"
+    class="flex flex-col pt-10 md:pt-0 lg:pt-0 md:bg-[#181818] lg:bg-[#181818] xl:bg-[#181818] relative"
   >
     <div class="px-5 md:hidden lg:hidden xl:hidden">
       <img
@@ -35,7 +35,7 @@
           >
             Inscreva-se agora
           </a>
-          <BestPlayLogo class="hidden md:block lg:block xl:block lg:w-full" />
+          <BestPlayLogo class="hidden md:block md:w-44 lg:block xl:block lg:w-full" />
         </div>
         <div class="hidden md:flex lg:flex xl:flex md:absolute lg:absolute xl:absolute right-0 lg:right-[30%] xl:right-[27%] bottom-0 h-[110%] lg:h-[105%] z-0">
           <img
@@ -48,7 +48,7 @@
             src="/images/Home/bestPlayMockupXL.png"
             alt="Conheça o maior canal de crédito do Brasil"
             loading="lazy"
-            class="mx-auto"
+            class="mx-auto hidden xl:block"
           />
         </div>
       </div>

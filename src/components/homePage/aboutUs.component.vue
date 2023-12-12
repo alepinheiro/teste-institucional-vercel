@@ -1,9 +1,9 @@
 <template>
   <section
-    class="bg-[#DEDEDE] md:bg-white lg:bg-white xl:bg-white relative z-0 md:mt-10 lg:mt-12 xl:mt-12"
+    class="bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] relative z-0 md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
   >
     <div
-      class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] to-white absolute top-0 bottom-1/3 inset-x-20 xl:inset-x-56 -z-10 rounded-xl"
+      class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] to-[#EFEFEF] absolute top-0 bottom-1/3 inset-x-20 xl:inset-x-56 -z-10 rounded-xl"
     ></div>
     <div
       class="px-5 lg:px-0 py-10 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto flex flex-col lg:flex-row xl:flex-row items-center"
@@ -22,11 +22,11 @@
         </h2>
       </div>
 
-      <ul class="flex flex-row gap-2 md:gap-5 lg:gap-5 xl:gap-5 py-10 lg:w-7/12 xl:w-7/12">
+      <ul class="flex flex-row gap-2 md:gap-5 lg:gap-5 xl:gap-5 py-10 md:w-full lg:w-7/12 xl:w-7/12">
         <li
           v-for="{ icon, title, description } in cards"
           :key="icon"
-          class="p-3 w-1/3 flex-grow md:py-10 lg:py-10 xl:px-10 xl:py-16 bg-white drop-shadow-lg md:shadow-2xl lg:shadow-2xl xl:shadow-2xl rounded md:rounded-xl lg:rounded-xl xl:rounded-xl flex flex-col md:gap-6 lg:gap-3 lg:h-full"
+          class="p-3 w-1/3  flex-grow md:py-10 lg:py-10 xl:px-10 xl:py-16 bg-white drop-shadow-lg md:shadow-2xl lg:shadow-2xl xl:shadow-2xl rounded md:rounded-xl lg:rounded-xl xl:rounded-xl flex flex-col md:gap-6 lg:gap-3 lg:h-full"
         >
           <div class="w-4 h-4 md:h-7 md:w-7 lg:w-7 lg:h-7 xl:w-7 xl:h-7">
             <i :class="icon" class="text-textSecondary block w-full h-full"></i>
