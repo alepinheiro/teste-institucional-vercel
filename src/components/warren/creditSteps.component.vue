@@ -6,7 +6,7 @@
       até a
       <b> liberação do crédito </b>
     </h2>
-    <ul class="flex flex-col md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap gap-5 md:max-w-[707px] lg:max-w-5xl lg:w-5/6  xl:max-w-6xl md:mx-auto lg:mx-auto xl:mx-auto">
+    <ul class="flex flex-col md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap gap-5 md:max-w-[707px] lg:max-w-5xl lg:w-5/6 xl:max-w-[1068px] md:mx-auto lg:mx-auto xl:mx-auto">
       <li
         v-for="{ description, id, title } of steps"
         :key="id"

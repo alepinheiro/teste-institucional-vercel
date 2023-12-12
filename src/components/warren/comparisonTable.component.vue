@@ -1,7 +1,7 @@
 <template>
   <section class="w-full">
     <div
-      class="mx-auto w-full flex flex-col items-center rounded-xl px-5 py-10 md:pt-20 lg:pt-20 md:border lg:border xl:border md:border-warren-solitude lg:border-warren-solitude xl:border-warren-solitude md:max-w-3xl lg:max-w-5xl xl:max-w-6xl xl:w-10/12"
+      class="mx-auto w-full flex flex-col items-center rounded-xl px-5 py-10 md:pt-20 lg:pt-20 md:border lg:border xl:border md:border-warren-solitude lg:border-warren-solitude xl:border-warren-solitude md:max-w-[707px] lg:max-w-5xl  xl:max-w-6xl xl:w-10/12"
     >
       <h2
         class="text-3xl text-center text-warren-mortar md:text-5xl lg:text-5xl xl:text-5xl"
