@@ -5,7 +5,7 @@
     <BusinessPartners class="px-5 md:px-0 lg:px-0 xl:px-0 pt-18 lg:pt-26 xl:pt-26 bg-white" />
     <ComparisonTable class="bg-white pt-10 md:py-20 lg:pt-24 xl:pt-24 pb-0 lg:pb-9 xl:pb-20" />
     <CreditSteps
-      class="bg-warren-whisper py-11 md:pt-18 md:pb-26 lg:pt-14 xl:pt-28 lg:pb-28 xl:pb-28 px-5"
+      class="bg-warren-whisper py-11 md:pt-18 md:pb-26 lg:pt-14 xl:pt-28 lg:pb-28 xl:pb-28 px-5 md:px-0 lg:px-0 xl:px-0"
     />
     <Contact class="bg-warren-terracota" />
     <TheFooter />
