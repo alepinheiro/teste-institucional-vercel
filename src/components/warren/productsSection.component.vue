@@ -1,7 +1,7 @@
 <template>
-  <section class="text-center flex flex-col gap-11 lg:gap-16">
+  <section class="text-center flex flex-col gap-11 lg:gap-16 xl:gap-16">
     <div
-      class="text-center flex flex-col gap-5 px-5 lg:w-4/6 xl:w-4/6 mx-auto md:max-w-[707px] lg:max-w-5xl"
+      class="text-center flex flex-col gap-5 px-5 lg:w-4/6 xl:w-3/6 mx-auto md:max-w-[707px] lg:max-w-5xl"
     >
       <h2
         class="font-bold text-3xl text-warren-darkCharcoal md:text-5xl lg:text-5xl xl:text-5xl"
