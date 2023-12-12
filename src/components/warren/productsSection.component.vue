@@ -1,5 +1,5 @@
 <template>
-  <section class="text-center flex flex-col gap-5">
+  <section class="text-center flex flex-col gap-11">
     <div
       class="text-center flex flex-col gap-5 px-5 lg:w-4/6 xl:w-4/6 mx-auto md:max-w-[707px] lg:max-w-5xl"
     >
@@ -25,12 +25,12 @@
           :is="'swiper-slide'"
           v-for="{ id, description, options, title } of slides"
           :key="id"
-          class="bg-white py-10 px-5 rounded-2xl mb-14 h-auto md:w-96 lg:w-96 w-full"
+          class="bg-white py-10 px-5 md:px-10 rounded-2xl mb-14 h-auto md:w-96 lg:w-96 w-full"
         >
           <div
             class="flex flex-col gap-5 items-start text-start h-full justify-between"
           >
-            <h3 class="text-2xl font-bold text-warren-darkCharcoal">
+            <h3 class="text-2xl md:text-3xl font-bold text-warren-darkCharcoal md:w-3/4">
               {{ title }}
             </h3>
             <p class="text-warren-grey">

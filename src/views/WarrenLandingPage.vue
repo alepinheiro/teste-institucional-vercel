@@ -3,8 +3,8 @@
     <Hero class="overflow-hidden" />
     <Products class="pb-10 bg-warren-hintOfRed" />
     <BusinessPartners class="px-5 pt-18 bg-white" />
-    <ComparisonTable class="pt-10 pb-0 bg-white" />
-    <CreditSteps class="bg-warren-whisper py-11 px-5" />
+    <ComparisonTable class="pt-10 md:py-20 pb-0 bg-white" />
+    <CreditSteps class="bg-warren-whisper py-11 md:pt-18 md:pb-26 px-5" />
     <Contact class="bg-warren-terracota" />
     <TheFooter />
   </main>

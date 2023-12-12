@@ -1,7 +1,7 @@
 <template>
-  <section >
+  <section>
     <div
-      class="flex flex-col lg:flex-row xl:flex-row overflow-hidden rounded-2xl bg-warren-hintOfRed w-full max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto xl:w-10/12"
+      class="flex flex-col lg:flex-row xl:flex-row overflow-hidden rounded-2xl bg-warren-hintOfRed w-full md:max-w-[707px] lg:max-w-5xl xl:max-w-6xl mx-auto xl:w-10/12"
     >
       <div
         class="bg-warren-whisper pt-8 p-6 md:px-0 md:py-20 lg:w-1/2 xl:w-1/2"
@@ -22,12 +22,13 @@
         </div>
       </div>
 
-      <!-- SM + XL -->
-      <ul class="flex flex-col gap-5 xl:gap-8 md:hidden lg:hidden xl:w-1/2 p-6 xl:py-21 xl:px-14">
+      <ul
+        class="flex flex-col gap-5 md:flex md:gap-11 xl:gap-8 lg:hidden xl:w-1/2 p-6 md:py-16 xl:py-21 xl:px-14"
+      >
         <div
           v-for="(row, index) of smLayout"
           :key="index"
-          class="flex flex-row gap-4 w-full justify-between items-center"
+          class="flex flex-row gap-4 w-full justify-between items-center md:w-4/6 mx-auto"
         >
           <li v-for="{ alt, id, image } of row" :key="id">
             <img
@@ -40,29 +41,6 @@
               sizes="(max-width: 600px) 200px, 400px"
               :alt="alt"
               class="h-6 md:h-8 lg:h-8 xl:h-8 object-contain w-auto"
-            />
-          </li>
-        </div>
-      </ul>
-
-       <!-- MD + LG -->
-      <ul class="flex-col gap-6 hidden md:flex lg:flex py-10 lg:px-12 lg:py-18">
-        <div
-          v-for="(row, index) of mdLayout"
-          :key="index"
-          class="flex flex-row gap-8 justify-between w-4/6 lg:w-full mx-auto items-center"
-        >
-          <li v-for="{ alt, id, image } of row" :key="id">
-            <img
-              :src="`/images/warren/partners/${image}@2x.png`"
-              :srcset="
-                `/images/warren/partners/${image}@1x.png 1x, ` +
-                `/images/warren/partners/${image}@2x.png 2x, ` +
-                `/images/warren/partners/${image}@4x.png 4x, `
-              "
-              sizes="(max-width: 600px) 200px, 400px"
-              :alt="alt"
-              class="h-10 lg:h-9 object-contain w-auto"
             />
           </li>
         </div>
