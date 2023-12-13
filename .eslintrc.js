@@ -19,7 +19,8 @@ module.exports = {
   },
   plugins: [
     '@typescript-eslint',
-    'vuejs-accessibility'
+    'vuejs-accessibility',
+    'plugin:vue/vue3-recommended',
   ],
   rules: {
     'vue/multi-word-component-names': 0,

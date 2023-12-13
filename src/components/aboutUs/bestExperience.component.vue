@@ -14,7 +14,7 @@
         <div class="relative w-full h-48 overflow-hidden">
           <img :src="image" alt="" class="object-cover" loading="lazy" />
           <div class="absolute inset-0 bottom-1/3 flex items-center justify-center ">
-            <!-- <PlayVideoPopUp video-id="gRxBZZAy94I" class="" /> -->
+            <PlayVideoPopUp video-id="gRxBZZAy94I" class="" />
           </div>
         </div>
         <div class="flex flex-col gap-4 p-4 text-textPrimary">
