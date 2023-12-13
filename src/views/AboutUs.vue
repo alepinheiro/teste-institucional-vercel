@@ -1,6 +1,6 @@
 <template>
   <main class="">
-    <div class="h-[200vh] relative z-0 flex">
+    <div class=" relative z-0 flex flex-col">
       <div
         class="absolute inset-x-0 top-0 bottom-0 bg-gradient-to-b from-[#070E37] to-[#10069F] via-[70%] via-[#0C0A70] -z-10 overflow-hidden"
       >
@@ -16,7 +16,10 @@
         />
       </div>
       <HeroSection class="min-h-screen" />
+      <OurMotivation class="border-b-8 border-primary" />
     </div>
+    <MissionSection class="py-10 px-5 border-b-8 border-primary" />
+    <AboutNumbers />
   </main>
 </template>
 
@@ -24,10 +27,13 @@
 import { defineComponent } from 'vue'
 import { useHead } from '@vueuse/head'
 import HeroSection from '@/components/aboutUs/heroSection.component.vue'
+import OurMotivation from '@/components/aboutUs/ourMission.component.vue'
+import MissionSection from '@/components/homePage/missionSection.component.vue'
+import AboutNumbers from '@/components/homePage/aboutUs.component.vue'
 
 export default defineComponent({
   name: 'AboutUs',
-  components: { HeroSection },
+  components: { HeroSection, OurMotivation, MissionSection, AboutNumbers },
   data() {
     return {}
   },

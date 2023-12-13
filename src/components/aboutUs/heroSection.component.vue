@@ -3,7 +3,7 @@
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
       <Topbar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
-    <picture class="absolute top-0 inset-x-0 bottom-[55%] -z-10">
+    <picture class="absolute top-0 inset-x-0 bottom-[75%] -z-10">
       <source type="image/png" />
       <img
         src="/images/Home/heroBackground.png"
