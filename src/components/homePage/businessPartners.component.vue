@@ -28,7 +28,8 @@
         class="w-5/12 hidden lg:block xl:block opacity-0"
       />
       <ul
-        class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto"
+      ref="banks"
+        class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto opacity-0"
       >
         <div
           v-for="row of partners"
@@ -70,10 +71,12 @@ export default defineComponent({
   setup() {
     gsap.registerPlugin(ScrollTrigger)
     const phone = ref<HTMLDivElement | null>(null)
+    const banks = ref<HTMLDivElement | null>(null)
 
     return {
       gsap,
       phone,
+      banks,
     }
   },
   data() {
@@ -178,11 +181,12 @@ export default defineComponent({
   },
   mounted() {
     this.animateElement(this.phone)
+    this.animateElement(this.banks)?.delay(0.6)
   },
   methods: {
     animateElement(element: HTMLDivElement | null) {
       if(!element) return;
-      gsap.to(element, {
+      return gsap.to(element, {
         scrollTrigger: {
           trigger: element,
           start: 'top bottom',
