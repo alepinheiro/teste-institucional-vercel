@@ -20,6 +20,7 @@
     </div>
     <MissionSection class="py-10 px-5 border-b-8 border-primary" />
     <AboutNumbers />
+    <Team />
   </main>
 </template>
 
@@ -29,11 +30,12 @@ import { useHead } from '@vueuse/head'
 import HeroSection from '@/components/aboutUs/heroSection.component.vue'
 import OurMotivation from '@/components/aboutUs/ourMission.component.vue'
 import MissionSection from '@/components/homePage/missionSection.component.vue'
-import AboutNumbers from '@/components/homePage/aboutUs.component.vue'
+import AboutNumbers from '@/components/aboutUs/aboutNumbers.component.vue'
+import Team from '@/components/aboutUs/ourTeam.component.vue'
 
 export default defineComponent({
   name: 'AboutUs',
-  components: { HeroSection, OurMotivation, MissionSection, AboutNumbers },
+  components: { HeroSection, OurMotivation, MissionSection, AboutNumbers, Team },
   data() {
     return {}
   },
