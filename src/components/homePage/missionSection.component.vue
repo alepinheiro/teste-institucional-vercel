@@ -5,17 +5,17 @@
     <div class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5">
       <div class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5">
         <h2
-          class="text-primary text-xl md:text-3xl lg:text-5xl xl:text-5xl font-bold"
+          class="text-primary text-xl md:text-3xl lg:text-4xl xl:text-4xl font-bold"
         >
           Por que existimos?
         </h2>
-        <p class="md:text-xl lg:text-3xl xl:text-3xl text-textPrimary">
+        <p class="md:text-xl lg:text-2xl xl:text-2xl text-textPrimary">
           Acreditamos que o acesso ao crédito pode levar as pessoas a sua melhor
           versão.
         </p>
       </div>
 
-      <p class="md:text-xl lg:text-3xl xl:text-3xl">
+      <p class="md:text-xl lg:text-2xl xl:text-2xl">
         <b>E como fazemos isso?</b> <br class="md:hidden lg:hidden xl:hidden" />
         <i>Através dos nossos três pilares:</i>
       </p>
@@ -33,14 +33,14 @@
               ? 'bg-primary text-white border-primary'
               : 'border-textSecondary text-textSecondary hover:bg-white hover:text-primary',
           ]"
-          class="border-b p-4 xl:px-10 md:h-full lg:h-full xl:h-full md:text-xl lg:text-3xl xl:text-3xl w-full text-start transition-all"
+          class="border-b md:last-of-type:border-0 lg:last-of-type:border-0 xl:last-of-type:border-0 p-4 xl:px-10 md:h-full lg:h-full xl:h-full md:text-xl lg:text-2xl xl:text-2xl w-full text-start transition-all"
           @click="changeActiveImage(index)"
         >
           {{ title }}
         </button>
       </div>
       <div
-        class="h-48 bg-primary md:flex-1 lg:flex-1 xl:flex-1 md:h-128 lg:h-128 xl:h-128 relative overflow-hidden"
+        class="h-48 md:flex-1 lg:flex-1 xl:flex-1 md:h-96 lg:h-96 xl:h-96 relative overflow-hidden"
       >
         <img
           ref="activeImage"
