@@ -33,7 +33,7 @@
               ? 'bg-primary text-white border-primary'
               : 'border-textSecondary text-textSecondary hover:bg-white hover:text-primary',
           ]"
-          class="border-b p-4 xl:px-10 md:py-11 lg:h-full xl:h-full md:text-xl lg:text-3xl xl:text-3xl w-full text-start transition-all"
+          class="border-b p-4 xl:px-10 md:h-full lg:h-full xl:h-full md:text-xl lg:text-3xl xl:text-3xl w-full text-start transition-all"
           @click="changeActiveImage(index)"
         >
           {{ title }}
@@ -55,12 +55,10 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import { gsap } from 'gsap'
-// import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 
 export default defineComponent({
   name: 'MissionSection',
   setup() {
-    // gsap.registerPlugin(ScrollTrigger)
     const activeImage = ref<HTMLDivElement | null>(null)
 
     return {
@@ -111,6 +109,12 @@ export default defineComponent({
           xPercent: -100,
           duration: 0.5,
           ease: 'sine',
+          onComplete: () => {
+            this.activeCard = {
+              id: id,
+              image: this.options[id].image,
+            }
+          },
         })
         timeline.to(this.activeImage, {
           xPercent: 0,
@@ -119,15 +123,6 @@ export default defineComponent({
         })
       }
 
-      timeline.eventCallback('onUpdate', () => {
-        const progress = timeline.progress()
-        if (progress > 0.5 && this.activeCard.id !== id) {
-          this.activeCard = {
-            id: id,
-            image: this.options[id].image,
-          }
-        }
-      })
       timeline.play()
     },
   },
