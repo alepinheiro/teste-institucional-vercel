@@ -1,0 +1,32 @@
+<template>
+  <section class="flex flex h-screen">
+    <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
+      <Topbar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
+    </div>
+    <picture class="absolute top-0 inset-x-0 bottom-[55%] -z-10">
+      <source type="image/png" />
+      <img
+        src="/images/Home/heroBackground.png"
+        alt="A melhor fintech de Crédito do Brasil"
+        class="object-cover h-full w-full"
+      />
+    </picture>
+    <div class="text-white text-2xl mt-auto pb-12 font-bold px-5 text-center">
+      <h2> Temos uma missão grandiosa: </h2>
+      <h1 class="font-darkerGrotesque text-4xl"> “Transformar o acesso ao crédito para quem busca sua melhor versão” </h1>
+    </div>
+  </section>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import Topbar from '@/components/structure/topbar.component.vue'
+
+export default defineComponent({
+  name: 'HeroSection',
+  components: { Topbar },
+  data() {
+    return {}
+  },
+})
+</script>
