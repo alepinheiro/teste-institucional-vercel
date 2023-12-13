@@ -1,6 +1,6 @@
 <template>
   <section
-    class=" flex flex-col gap-8 xl:gap-20 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
+    class="flex flex-col gap-8 xl:gap-20 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
   >
     <div class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5">
       <div class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5">
@@ -26,65 +26,109 @@
     >
       <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button
-          v-for="{ id, title, isActive, image } of options"
+          v-for="({ id, title }, index) in options"
           :key="id"
           :class="[
-            isActive
+            activeCard.id === id
               ? 'bg-primary text-white border-primary'
-              : 'border-textSecondary text-textSecondary',
+              : 'border-textSecondary text-textSecondary hover:bg-white hover:text-primary',
           ]"
-          class="border-b p-4 xl:px-10 md:py-11 lg:h-full xl:h-full md:text-xl lg:text-3xl xl:text-3xl w-full text-start"
-          @click="changeActiveImage(image)"
+          class="border-b p-4 xl:px-10 md:py-11 lg:h-full xl:h-full md:text-xl lg:text-3xl xl:text-3xl w-full text-start transition-all"
+          @click="changeActiveImage(index)"
         >
-          {{ id }}. {{ title }}
+          {{ title }}
         </button>
       </div>
       <div
-        class="h-48 bg-primary md:flex-1 lg:flex-1 xl:flex-1 md:h-auto lg:h-auto xl:h-auto"
+        class="h-48 bg-primary md:flex-1 lg:flex-1 xl:flex-1 md:h-128 lg:h-128 xl:h-128 relative overflow-hidden"
       >
-        <img :src="activeImage" alt="" class="object-cover h-full w-full" />
+        <img
+          ref="activeImage"
+          :src="activeCard.image"
+          alt=""
+          class="object-cover h-full w-full absolute inset-0"
+        />
       </div>
     </div>
   </section>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
+import { gsap } from 'gsap'
+// import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+
 export default defineComponent({
   name: 'MissionSection',
+  setup() {
+    // gsap.registerPlugin(ScrollTrigger)
+    const activeImage = ref<HTMLDivElement | null>(null)
+
+    return {
+      gsap,
+      activeImage,
+    }
+  },
   data() {
     return {
-      activeImage: 'https://dummyimage.com/1000x1000.png?text=default',
-      options: [
-        {
-          id: 1,
-          title: 'Educação',
+      activeCard: {
+        image: 'https://dummyimage.com/1000x1000.png?text=default',
+        id: 'education',
+      },
+      options: {
+        education: {
+          id: 'education',
+          title: '1. Educação',
           description:
             'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
           image: 'https://dummyimage.com/1000x1000.png?text=01',
-          isActive: true,
         },
-        {
-          id: 2,
-          title: 'Tecnologia',
+        technology: {
+          id: 'technology',
+          title: '2. Tecnologia',
           description:
             'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
           image: 'https://dummyimage.com/1000x1000.png?text=02',
-          isActive: false,
         },
-        {
-          id: 3,
-          title: 'Experiência Humanizada',
+        humanizedExperience: {
+          id: 'humanizedExperience',
+          title: '3. Experiência Humanizada',
           description:
             'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
           image: 'https://dummyimage.com/1000x1000.png?text=03',
-          isActive: false,
         },
-      ],
+      },
     }
   },
+  mounted() {
+    this.changeActiveImage('education')
+  },
   methods: {
-    changeActiveImage(url: string) {
-      this.activeImage = url
+    changeActiveImage(id: keyof typeof this.options) {
+      const timeline = gsap.timeline()
+
+      if (this.activeImage) {
+        timeline.to(this.activeImage, {
+          xPercent: -100,
+          duration: 0.5,
+          ease: 'sine',
+        })
+        timeline.to(this.activeImage, {
+          xPercent: 0,
+          duration: 0.5,
+          ease: 'sine',
+        })
+      }
+
+      timeline.eventCallback('onUpdate', () => {
+        const progress = timeline.progress()
+        if (progress > 0.5 && this.activeCard.id !== id) {
+          this.activeCard = {
+            id: id,
+            image: this.options[id].image,
+          }
+        }
+      })
+      timeline.play()
     },
   },
 })
