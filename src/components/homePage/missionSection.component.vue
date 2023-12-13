@@ -55,6 +55,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import { gsap } from 'gsap'
+import useWindowSize from '@/composables/useWindowSize'
 
 export default defineComponent({
   name: 'MissionSection',
@@ -104,9 +105,14 @@ export default defineComponent({
     changeActiveImage(id: keyof typeof this.options) {
       const timeline = gsap.timeline()
 
+      const { size } = useWindowSize()
+
+      const direction = size.value === ('xs' || 'sm') ? [0, -100] : [-100, 0]
+
       if (this.activeImage) {
         timeline.to(this.activeImage, {
-          xPercent: -100,
+          xPercent: direction[0],
+          yPercent: direction[1],
           duration: 0.5,
           ease: 'sine',
           onComplete: () => {
@@ -118,6 +124,7 @@ export default defineComponent({
         })
         timeline.to(this.activeImage, {
           xPercent: 0,
+          yPercent: 0,
           duration: 0.5,
           ease: 'sine',
         })

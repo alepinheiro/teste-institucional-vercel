@@ -28,6 +28,8 @@ const useWindowSize = () => {
 
   }
 
+  updateWindowSize()
+
   onMounted(() => {
     window.addEventListener('resize', updateWindowSize)
     updateWindowSize()
