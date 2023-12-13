@@ -12,8 +12,7 @@
       <img
         class="w-16"
         src="/images/bestHub/icons/playButton.svg"
-        alt=""
-        srcset=""
+        alt="Um triângulo preto indicando a reprodução de vídeo"
       />
     </button>
   </div>
