@@ -20,7 +20,7 @@
             <img
               :src="`/images/aboutUs/cards/${index}.png`"
               alt=""
-              class="absolute inset-0 h-full object-cover -z-10 transition-all"
+              class="absolute inset-0 h-full w-full object-cover -z-10 transition-all"
             />
 
             <div
@@ -30,7 +30,7 @@
               <i class="fa-solid fa-chevron-up"></i>
             </div>
           </div>
-          <div class="back flex items-center h-38 bg-primary p-2">
+          <div class="back flex items-center h-38 bg-primary p-5">
             <!--  eslint-disable-next-line vue/no-v-html -->
             <span v-html="item.text"></span>
           </div>
