@@ -61,6 +61,19 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      warren: {
+        terracota: "var(--warrenTerracota)",
+        gold: "var(--warrenGold)",
+        darkCharcoal: "var(--warrenDarkCharcoal)",
+        mortar: "var(--warrenMortar)",
+        stormGray: "var(--warrenStormGray)",
+        grey: "var(--warrenGrey)",
+        gainsboro: "var(--warrenGainsboro)",
+        metropole: "var(--warrenMetropole)",
+        solitude:  "var(--warrenSolitude)",
+        hintOfRed: "var(--warrenHintOfRed)",
+        whisper: "var(--warrenWhisper)",
+      }
     },
     columns: {
       auto: "auto",
@@ -429,7 +442,8 @@ module.exports = {
       'Sizmo-Pro': ['FF Sizmo Pro', 'sans-serif'],
       'Public-Sans': ['Public Sans', 'sans-serif'],
       'Sizmo': ["Sizmo", "sans-serif"],
-      'darkerGrotesque': ["Darker Grotesque", "sans-serif"]
+      'darkerGrotesque': ["Darker Grotesque", "sans-serif"],
+      'Mulish': ["Mulish", "sans-serif"]
     },
     fontSize: {
       '2xs': ["0.6rem", { lineHeight: "0.60rem" }],
