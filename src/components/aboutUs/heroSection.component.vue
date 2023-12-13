@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex h-screen">
+  <section class="flex h-screen">
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
       <TopBar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
