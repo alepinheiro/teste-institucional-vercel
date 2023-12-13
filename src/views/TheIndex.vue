@@ -4,7 +4,9 @@
     <Products class="bg-bgDarkColor md:py-10" />
     <BusinessPartners class="py-10 md:py-24 lg:py-12 xl:py-12 px-5" />
     <SloganSection />
-    <AboutUs class="md:px-5 lg:px-5 bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none" />
+    <AboutUs
+      class="md:px-5 lg:px-5 bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
+    />
     <Mission class="py-10 px-5" />
     <ComparisonTable
       :props="{
@@ -20,7 +22,9 @@
       }"
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
-    <BestPlay class="pt-10 md:pt-0 lg:pt-0 md:bg-[#181818] lg:bg-[#181818] xl:bg-[#181818]" />
+    <BestPlay
+      class="pt-10 mb-10 md:pt-0 lg:pt-14 md:bg-[#181818] lg:bg-[#181818]"
+    />
   </main>
   <TheFooter />
 </template>
