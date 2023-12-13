@@ -30,30 +30,17 @@
         ></iframe>
       </div>
     </dialog>
-    <div class="absolute h-16 top-0 -z-10 inset-x-0 flex">
-      <div
-        class="w-16 h-16 sm:w-10 sm:h-10 bg-white/30 rounded-full absolute m-auto inset-0 animate-ping"
-      ></div>
-      <button
-        title="Reproduzir vídeo"
-        aria-label="Reproduzir vídeo"
-        class="h-16 w-16 sm:w-10 sm:h-10 absolute inset-0 m-auto"
-        @click="handleOverlay"
-      >
-        <img
-          class="w-16"
-          src="/images/bestHub/icons/playButton.svg"
-          alt=""
-          srcset=""
-        />
-      </button>
-    </div>
+    <PlayVideo class="absolute h-16 top-0 -z-10 inset-x-0 " @click="handleOverlay" />
+
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+import PlayVideo from '@/components/base/buttons/playVideo.component.vue'
+
 export default defineComponent({
   name: 'VideoButton',
+  components: { PlayVideo },
   props: {
     videoId: {
       type: String,
