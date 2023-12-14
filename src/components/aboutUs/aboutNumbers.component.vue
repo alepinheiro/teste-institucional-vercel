@@ -32,7 +32,7 @@
           >
             <i
               :class="icon"
-              class="group-hover:text-complementaryColor3 block w-full h-full"
+              class="group-hover:text-complementaryColor3 block w-full h-full transition-colors"
             ></i>
           </div>
           <span
