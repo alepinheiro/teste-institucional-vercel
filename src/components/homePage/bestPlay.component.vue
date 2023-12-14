@@ -49,7 +49,7 @@
             src="/images/Home/bestPlayMockupLG.png"
             alt="Conheça o maior canal de crédito do Brasil"
             loading="lazy"
-            class="mr-auto object-contain"
+            class="mr-auto md:ml-auto md:mr-12 object-contain"
           />
         </div>
       </div>

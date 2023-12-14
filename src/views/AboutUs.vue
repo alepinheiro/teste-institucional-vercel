@@ -27,7 +27,7 @@
     <Team class="" />
     <BestExperience class="py-10" />
     <Testimonials class="py-10" />
-    <BestPlay />
+    <BestPlay class="pt-10 mb-10 md:pt-0 lg:pt-14 md:bg-[#181818] lg:bg-[#181818]" />
     <TheFooter />
   </main>
 </template>
