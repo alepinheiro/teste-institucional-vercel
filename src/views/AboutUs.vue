@@ -19,9 +19,9 @@
       <OurMotivation class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl" />
     </div>
     <MissionSection class="bg-[#EFEFEF] py-10 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl" />
-    <AboutNumbers />
-    <Team />
-    <BestExperience class="py-10" />
+    <AboutNumbers class="bg-[#EFEFEF]" />
+    <Team class="bg-[#EFEFEF]" />
+    <BestExperience class="bg-[#EFEFEF] py-10" />
     <Testimonials class="py-10" />
     <BestPlay />
     <TheFooter />

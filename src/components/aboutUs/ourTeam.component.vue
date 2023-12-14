@@ -20,12 +20,12 @@
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="h-38 w-32 bg-primary flex flex-shrink-0 rounded-md mr-5 first-of-type:ml-5"
+          class="h-36  w-32 bg-primary flex flex-shrink-0 rounded-md mr-5 first-of-type:ml-5"
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
             :alt="alt"
-            class="h-32 w-32 object-cover my-auto"
+            class="h-36 w-32 object-cover my-auto py-2"
             loading="lazy"
           />
         </div>
@@ -38,12 +38,12 @@
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="h-38 w-32 bg-primary flex flex-shrink-0 rounded-md"
+          class="h-36 w-32 bg-primary flex flex-shrink-0 rounded-md"
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
             :alt="alt"
-            class="h-32 w-32 object-cover my-auto"
+            class="h-36 w-32 object-cover my-auto py-2"
             loading="lazy"
           />
         </div>
