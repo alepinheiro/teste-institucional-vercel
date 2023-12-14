@@ -24,7 +24,7 @@
       class="py-10 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
     />
     <AboutNumbers class="" />
-    <Team class="" />
+    <!-- <Team class="" /> -->
     <BestExperience class="py-10" />
     <Testimonials class="py-10" />
     <BestPlay />

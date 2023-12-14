@@ -1,8 +1,10 @@
 <template>
   <section
-    class="flex flex-col gap-8 xl:gap-20 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
+    class="flex flex-col gap-8 xl:gap-20 lg:max-w-5xl xl:max-w-7xl mx-auto"
   >
-    <div class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5">
+    <div
+      class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5 md:max-w-2xl md:mx-auto"
+    >
       <div class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5">
         <h2
           class="text-primary text-xl md:text-3xl lg:text-4xl xl:text-4xl font-bold"
@@ -22,7 +24,7 @@
     </div>
 
     <div
-      class="flex flex-col md:flex-row lg:flex-row xl:flex-row rounded-xl overflow-hidden border border-textSecondary"
+      class="flex flex-col md:flex-row lg:flex-row xl:flex-row rounded-xl overflow-hidden border border-textSecondary md:max-w-2xl md:mx-auto"
     >
       <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button
@@ -167,26 +169,26 @@ export default defineComponent({
   data() {
     return {
       activeCard: {
-        image: 'https://dummyimage.com/1000x1000.png?text=default',
+        image: '/images/aboutUs/3Pilares/PilaresEducacaoCorMobile.webp',
         id: 'education' as 'education' | 'technology' | 'humanizedExperience',
       },
       options: {
         education: {
-          id: 'education',
+          id: 'education' as 'education',
           title: '1. Educação',
           description:
             'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
           image: '/images/aboutUs/3Pilares/PilaresEducacaoCorMobile.webp',
         },
         technology: {
-          id: 'technology',
+          id: 'technology' as 'technology',
           title: '2. Tecnologia',
           description:
             'Onde através da nossa plataforma multibancos , de forma simples e segura, conectamos você com todo o mercado.',
           image: '/images/aboutUs/3Pilares/PilaresTecnologiaCorMobile.webp',
         },
         humanizedExperience: {
-          id: 'humanizedExperience',
+          id: 'humanizedExperience' as 'humanizedExperience',
           title: '3. Experiência Humanizada',
           description:
             'Com assessores especializados que vão te acompanhar do inicio ao fim.',
