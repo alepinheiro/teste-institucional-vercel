@@ -1,29 +1,29 @@
 <template>
   <section class="text-white flex flex-col gap-8 lg:gap-12">
     <div
-      class="px-5 flex flex-col gap-4 text-center md:max-w-[663px] md:mx-auto lg:max-w-5xl lg:mx-auto"
+      class="px-5 flex flex-col gap-4 text-center md:max-w-[663px] md:mx-auto lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto"
     >
-      <h3 class="md:text-2xl lg:text-2xl lg:w-10/12 lg:mx-auto">
+      <h3 class="md:text-2xl lg:text-2xl xl:text-2xl lg:w-10/12 lg:mx-auto">
         O que nos motiva a levantar todos os dias e lutar por nossa missão?
       </h3>
-      <h2 class="font-bold text-xl md:text-3xl lg:text-3xl lg:w-10/12 lg:mx-auto">
+      <h2 class="font-bold text-xl md:text-3xl lg:text-3xl xl:text-4xl lg:w-10/12 xl:w-8/12 lg:mx-auto xl:mx-auto">
         Acreditar que o acesso ao crédito pode levar as pessoas à sua melhor
         versão quando elas:
       </h2>
     </div>
 
-    <div class="lg:max-w-5xl lg:mx-auto">
+    <div class="lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto">
       <ul
-        class="md:flex lg:flex md:flex-row lg:flex-row md:flex-wrap lg:flex-wrap md:gap-10 lg:gap-10 md:mx-auto lg:mx-auto md:w-10/12 lg:w-10/12 md:pb-26 lg:pb-26"
+        class="md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap xl:flex-wrap md:gap-10 lg:gap-10 xl:gap-10 md:mx-auto lg:mx-auto xl:mx-auto md:w-10/12 lg:w-10/12 "
       >
         <li
           v-for="(item, index) in cards"
           :key="index"
-          class="relative z-0 flex md:w-96 lg:w-96 hover:drop-shadow-md transition-all"
+          class="relative z-0 flex md:w-96 lg:w-96 xl:w-96 hover:drop-shadow-md transition-all"
         >
-          <div class="flip w-full h-38 md:h-56 lg:h-56">
+          <div class="flip w-full h-38 md:h-56 lg:h-56 xl:h-56">
             <div
-              class="front w-full h-full flex itens-end overflow-hidden md:rounded-xl lg:rounded-xl"
+              class="front w-full h-full flex itens-end overflow-hidden md:rounded-xl lg:rounded-xl xl:rounded-xl"
             >
               <img
                 :src="`/images/aboutUs/cards/${index}.png`"
@@ -32,14 +32,14 @@
               />
 
               <div
-                class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 md:p-4 lg:p-4 text-complementaryColor3"
+                class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 md:p-4 lg:p-4 xl:p-4 text-complementaryColor3"
               >
                 <p class="font-bold text-white md:w-3/4">{{ item.title }}</p>
                 <i class="fa-solid fa-chevron-up"></i>
               </div>
             </div>
             <div
-              class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl lg:rounded-xl"
+              class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl lg:rounded-xl xl:rounded-xl"
             >
               <!--  eslint-disable-next-line vue/no-v-html -->
               <span v-html="item.text"></span>

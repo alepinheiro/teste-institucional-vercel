@@ -17,13 +17,13 @@
       </div>
       <HeroSection class="min-h-screen" />
       <OurMotivation
-        class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
+        class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl md:pb-26 lg:pb-26 xl:pb-26"
       />
     </div>
     <MissionSection
-      class="py-10 md:pt-20 md:pb-28 lg:pt-32 lg:pb-36 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
+      class="py-10 md:pt-20 md:pb-28 lg:pt-32 xl:pt-28 lg:pb-36 xl:pb-36 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
     />
-    <AboutNumbers class="py-16" />
+    <AboutNumbers class="py-16 xl:py-28" />
     <Team class="lg:py-28" />
     <BestExperience class="py-10" />
     <Testimonials class="py-10" />

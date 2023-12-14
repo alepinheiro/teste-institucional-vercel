@@ -1,7 +1,7 @@
 <template>
-  <section class="flex flex-col gap-8 lg:gap-10 xl:gap-20 xl:max-w-7xl mx-auto">
+  <section class="flex flex-col gap-8 lg:gap-10 xl:gap-20 mx-auto">
     <div
-      class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5 md:max-w-[663px] lg:max-w-5xl lg:mx-auto md:mx-auto"
+      class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
       <div
         class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5 lg:w-10/12 lg:mx-auto"
@@ -24,7 +24,7 @@
     </div>
 
     <div
-      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto"
+      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
       <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button
@@ -42,17 +42,17 @@
         </button>
       </div>
       <div
-        class="h-64 lg:flex-1 xl:flex-1 md:h-auto lg:h-128 xl:h-96 relative z-0 overflow-hidden"
+        class="h-64 lg:flex-1 xl:flex-1 md:h-auto lg:h-128 xl:h-160 relative z-0 overflow-hidden"
       >
         <div
           ref="activeImage"
-          class="h-full p-5 md:p-10 flex flex-col gap-2 md:h-160"
+          class="h-full p-5 md:p-10 xl:p-10 flex flex-col gap-2 xl:gap-8 md:h-160"
         >
-          <p class="text-white mt-auto text-sm md:text-2xl">
+          <p class="text-white mt-auto text-sm md:text-2xl xl:text-xl">
             {{ options[activeCard.id].description }}
           </p>
 
-          <div class="flex flex-row justify-between">
+          <div class="flex flex-row justify-between xl:justify-start">
             <a
               :href="$options.information.socialMedia.youtube"
               aria-label="Acesse nosso Youtube"
@@ -163,10 +163,12 @@ export default defineComponent({
   name: 'MissionSection',
   setup() {
     const activeImage = ref<HTMLDivElement | null>(null)
+    const { size, width } = useWindowSize()
 
     return {
       gsap,
       activeImage,
+      width,
     }
   },
   data() {
@@ -207,11 +209,7 @@ export default defineComponent({
     changeActiveImage(id: keyof typeof this.options) {
       const timeline = gsap.timeline()
 
-      const { size, width } = useWindowSize()
-
-      console.log(width.value)
-
-      const direction = width.value <= 1024 ? [0, -100] : [-100, 0]
+      const direction = this.width <= 1024 ? [0, -100] : [-100, 0]
 
       if (this.activeImage) {
         timeline.to(this.activeImage, {

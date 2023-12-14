@@ -1,30 +1,30 @@
 <template>
   <section class="flex flex-col gap-7 md:gap-15">
     <div
-      class="flex flex-col items-center text-center gap-4 px-5 md:px-0 md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto"
+      class="flex flex-col items-center text-center gap-4 px-5 md:px-0 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
-      <span class="font-bold text-complementaryColor1 md:text-2xl lg:text-2xl">
+      <span class="font-bold text-complementaryColor1 md:text-2xl lg:text-2xl xl:text-2xl">
         Time SejaBest
       </span>
-      <h2 class="text-xl md:text-4xl lg:text-4xl text-primary font-bold">
+      <h2 class="text-xl md:text-4xl lg:text-4xl xl:text-4xl text-primary font-bold">
         Um time de profissionais qualificados
       </h2>
-      <p class="lg:w-10/12">
+      <p class="lg:w-10/12 xl:w-8/12 xl:text-xl">
         A SejaBest conta com um forte time de assessores que estão preparados
         para te ajudar a encontrar uma solução de crédito que se encaixa nas
         suas necessidades.
       </p>
     </div>
 
-    <div class="relative flex flex-col gap-5 h-84 md:h-[700px] lg:h-[700px] overflow-hidden">
+    <div class="relative flex flex-col gap-5 h-84 md:h-[700px] lg:h-[700px] xl:h-[700px] overflow-hidden">
       <div
         ref="firstRow"
-        class="flex flex-row absolute -left-32 md:-left-76 lg:-left-76 top-0 overflow-hidden"
+        class="flex flex-row absolute -left-32 md:-left-76 lg:-left-76 xl:-left-76 top-0 overflow-hidden"
       >
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="card h-36 md:h-80 lg:h-80 w-32 md:w-76 lg:w-76 bg-primary flex flex-shrink-0 rounded-md mr-5 "
+          class="card h-36 md:h-80 lg:h-80 xl:h-80 w-32 md:w-76 lg:w-76 xl:w-76 bg-primary flex flex-shrink-0 rounded-md mr-5 "
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
@@ -37,12 +37,12 @@
 
       <div
         ref="secondRow"
-        class="flex flex-row gap-5 absolute h-84 -right-32 md:-right-76 lg:-right-76 bottom-0 overflow-hidden"
+        class="flex flex-row gap-5 absolute h-84 -right-32 md:-right-76 lg:-right-76 xl:-right-76 bottom-0 overflow-hidden"
       >
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="card h-36 md:h-80 lg:h-80 w-32 md:w-76 lg:w-76 bg-primary flex flex-shrink-0 rounded-md"
+          class="card h-36 md:h-80 lg:h-80 xl:h-80 w-32 md:w-76 lg:w-76 xl:w-76 bg-primary flex flex-shrink-0 rounded-md"
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
