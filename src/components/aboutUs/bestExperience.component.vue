@@ -1,10 +1,20 @@
 <template>
   <section class="flex flex-col gap-8">
+    <Overlay
+      v-if="showVideo"
+      video-id="MVo7IfT01PU"
+      @closeOverlay="showVideo = false"
+    />
     <h2 class="text-xl text-primary font-bold px-5 text-center">
       Entregando uma experiência Best
     </h2>
 
-    <component :is="'swiper-container'" v-bind="sliderOptions" class="w-full">
+    <component
+      :is="'swiper-container'"
+      v-bind="sliderOptions"
+      :class="{ 'relative -z-50': showVideo }"
+      class="w-full"
+    >
       <component
         :is="'swiper-slide'"
         v-for="{ title, description, image } of cards"
@@ -13,9 +23,7 @@
       >
         <div class="relative w-full h-48 overflow-hidden">
           <img :src="image" alt="" class="object-cover" loading="lazy" />
-          <div class="absolute inset-0 bottom-1/3 flex items-center justify-center ">
-            <PlayVideoPopUp video-id="gRxBZZAy94I" class="" />
-          </div>
+          <PlayButton class="absolute inset-0 z-10" @click="showVideo = true" />
         </div>
         <div class="flex flex-col gap-4 p-4 text-textPrimary">
           <h3 class="text-xl font-bold">
@@ -32,7 +40,9 @@
 
 <script lang="ts" setup>
 import { SwiperOptions } from 'swiper/types'
-import PlayVideo from '@/components/base/buttons/playVideo.component.vue'
+import PlayButton from '@/components/base/buttons/playVideo.component.vue'
+import Overlay from '@/components/base/overlays/youtubeVideo.component.vue'
+import { ref } from 'vue'
 
 const sliderOptions: SwiperOptions = {
   spaceBetween: 20,
@@ -61,6 +71,8 @@ const sliderOptions: SwiperOptions = {
     },
   },
 }
+
+const showVideo = ref<boolean>(false)
 
 const cards = [
   {
