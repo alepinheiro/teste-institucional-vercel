@@ -51,9 +51,9 @@ const sliderOptions: SwiperOptions = {
   autoHeight: false,
   pagination: true,
   loop: true,
-  // autoplay: {
-  //   delay: 8000,
-  // },
+  autoplay: {
+    delay: 8000,
+  },
   breakpoints: {
     767: {
       slidesPerView: 2.5,
@@ -101,3 +101,12 @@ const cards = [
   },
 ]
 </script>
+<style lang="scss" scoped>
+::part(bullet) {
+  background: #d9d9d9;
+  opacity: 100;
+}
+::part(bullet-active) {
+  @apply scale-150 transition-all bg-primary;
+}
+</style>

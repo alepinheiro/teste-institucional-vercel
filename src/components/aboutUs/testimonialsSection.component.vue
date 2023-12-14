@@ -1,13 +1,17 @@
 <template>
   <section>
     <div class="flex flex-col gap-8">
-      <h2 class="text-xl text-primary font-bold px-5 text-center">Não queremos apenas clientes, trabalhamos duro para termos fãs</h2>
+
+      <h2 class="text-xl text-primary font-bold px-5 text-center">
+        Não queremos apenas clientes, trabalhamos duro para termos fãs
+      </h2>
+
       <component :is="'swiper-container'" v-bind="sliderOptions" class="w-full">
         <component
           :is="'swiper-slide'"
           v-for="{ image, location, name, profissional, testimonial } of cards"
           :key="image"
-          class="flex flex-col justify-between gap-12 rounded-xl overflow-hidden w-full mb-12 h-auto text-center"
+          class="flex flex-col justify-between gap-12 rounded-xl overflow-hidden w-full mb-12 h-auto text-center px-5"
         >
           <div class="h-24">
             <img
@@ -18,7 +22,7 @@
           </div>
           <div class="relative">
                 <img src="/images/aboutUs/icons/quotes.svg" alt="" class="absolute inset-0 -z-10 object-cover m-auto h-32 scale-110" />
-              <p class=" px-2 text-textPrimary">
+              <p class="text-textPrimary">
                 "{{ testimonial }}""
               </p>
           </div>
@@ -47,9 +51,9 @@ export default defineComponent({
       autoHeight: false,
       pagination: true,
       loop: true,
-      // autoplay: {
-      //   delay: 8000,
-      // },
+      autoplay: {
+        delay: 8000,
+      },
       breakpoints: {
         767: {
           slidesPerView: 2.5,
@@ -124,3 +128,13 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="scss" scoped>
+::part(bullet) {
+  background: #d9d9d9;
+  opacity: 100;
+}
+::part(bullet-active) {
+  @apply scale-150 transition-all bg-primary;
+}
+</style>
