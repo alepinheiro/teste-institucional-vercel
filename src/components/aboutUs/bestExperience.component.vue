@@ -5,49 +5,75 @@
       video-id="MVo7IfT01PU"
       @closeOverlay="showVideo = false"
     />
-    <h2 class="text-xl text-primary font-bold px-5 text-center">
+    <h2 class="text-xl md:text-4xl text-primary font-bold px-5 text-center">
       Entregando uma experiência Best
     </h2>
 
-    <component
-      :is="'swiper-container'"
-      v-bind="sliderOptions"
-      :class="{ 'relative -z-50': showVideo }"
-      class="w-full"
-    >
+    <div class="md:flex md:flex-row md:gap-2 md:items-center md:max-w-[663px] md:mx-auto">
+      <div class="bestExperiencePrev pb-10">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+
       <component
-        :is="'swiper-slide'"
-        v-for="{ title, description, image } of cards"
-        :key="title"
-        class="flex flex-col rounded-xl overflow-hidden w-full border border-[#D9D9D9] mb-12 h-auto"
+        :is="'swiper-container'"
+        ref="bestExperienceSwiper"
+        v-bind="sliderOptions"
+        :class="{ 'relative -z-50': showVideo }"
+        class="w-full  z-0"
       >
-        <div class="relative w-full h-48 overflow-hidden">
-          <img :src="image" alt="" class="object-cover" loading="lazy" />
-          <PlayButton class="absolute inset-0 z-10" @click="showVideo = true" />
-        </div>
-        <div class="flex flex-col gap-4 p-4 text-textPrimary">
-          <h3 class="text-xl font-bold">
-            {{ title }}
-          </h3>
-          <p>
-            {{ description }}
-          </p>
-        </div>
+        <component
+          :is="'swiper-slide'"
+          v-for="{ title, description, image } of cards"
+          :key="title"
+          class="flex flex-col md:flex-row rounded-xl w-full border border-[#D9D9D9] mb-12 h-auto"
+        >
+          <div
+            class="relative w-full h-48 md:h-68 overflow-hidden rounded-t-xl md:rounded-l-xl md:rounded-r-none -z-10"
+          >
+            <img
+              :src="image"
+              alt=""
+              class="object-cover w-full h-full"
+              loading="lazy"
+            />
+            <PlayButton
+              class="absolute inset-0 z-10"
+              @click="showVideo = true"
+            />
+          </div>
+          <div
+            class="flex flex-col gap-4 p-4 md:p-10 md:my-auto text-textPrimary cursor-default"
+          >
+            <h3 class="text-xl font-bold">
+              {{ title }}
+            </h3>
+            <p>
+              {{ description }}
+            </p>
+          </div>
+        </component>
       </component>
-    </component>
+      <div class="bestExperienceNext pb-10">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-import { SwiperOptions } from 'swiper/types'
-import PlayButton from '@/components/base/buttons/playVideo.component.vue'
+import 'swiper/css/navigation'
 import Overlay from '@/components/base/overlays/youtubeVideo.component.vue'
-import { ref } from 'vue'
+import PlayButton from '@/components/base/buttons/playVideo.component.vue'
+import { Navigation } from 'swiper/modules'
+import { SwiperContainer, register } from 'swiper/element/bundle'
+import { SwiperOptions } from 'swiper/types'
+import { ref, onMounted } from 'vue'
 
 const sliderOptions: SwiperOptions = {
+  modules: [Navigation],
   spaceBetween: 20,
   slidesPerView: 1.2,
-  centeredSlides: true,
+  centeredSlides: false,
   autoHeight: false,
   pagination: true,
   loop: true,
@@ -59,7 +85,11 @@ const sliderOptions: SwiperOptions = {
       slidesPerView: 2.5,
     },
     1021: {
-      slidesPerView: 3.5,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.bestExperienceNext',
+        prevEl: '.bestExperiencePrev',
+      },
     },
     1277: {
       slidesPerView: 4,
@@ -73,6 +103,14 @@ const sliderOptions: SwiperOptions = {
 }
 
 const showVideo = ref<boolean>(false)
+const bestExperienceSwiper = ref<SwiperContainer | null>(null)
+
+// onMounted(() => {
+//   if (bestExperienceSwiper.value) {
+//     register()
+//   }
+//   // console.log()
+// })
 
 const cards = [
   {
