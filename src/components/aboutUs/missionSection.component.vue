@@ -3,7 +3,9 @@
     <div
       class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5 md:max-w-[663px] lg:max-w-5xl lg:mx-auto md:mx-auto"
     >
-      <div class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5 lg:w-10/12 lg:mx-auto">
+      <div
+        class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5 lg:w-10/12 lg:mx-auto"
+      >
         <h2
           class="text-primary text-xl md:text-4xl lg:text-4xl xl:text-4xl font-bold"
         >
@@ -40,7 +42,7 @@
         </button>
       </div>
       <div
-        class="h-64 lg:flex-1 xl:flex-1 md:h-auto lg:h-96 xl:h-96 relative z-0 overflow-hidden"
+        class="h-64 lg:flex-1 xl:flex-1 md:h-auto lg:h-128 xl:h-96 relative z-0 overflow-hidden"
       >
         <div
           ref="activeImage"

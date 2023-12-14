@@ -24,7 +24,7 @@
       class="py-10 md:pt-20 md:pb-28 lg:pt-32 lg:pb-36 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
     />
     <AboutNumbers class="py-16" />
-    <Team class="" />
+    <Team class="lg:py-28" />
     <BestExperience class="py-10" />
     <Testimonials class="py-10" />
     <BestPlay class="pt-10 mb-10 md:pt-0 lg:pt-14 md:bg-[#181818] lg:bg-[#181818]" />
