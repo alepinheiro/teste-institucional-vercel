@@ -1,12 +1,12 @@
 <template>
   <section>
-    <div class="flex flex-col gap-8  md:mx-auto md:max-w-[663px]">
-      <h2 class="text-xl md:text-4xl text-primary font-bold px-5 text-center ">
+    <div class="flex flex-col gap-8 md:mx-auto md:max-w-[663px] lg:max-w-5xl lg:mx-auto">
+      <h2 class="text-xl md:text-4xl lg:text-4xl text-primary font-bold px-5 text-center lg:w-2/3 lg:mx-auto lg:px-0">
         Não queremos apenas clientes, trabalhamos duro para termos fãs
       </h2>
 
       <div
-        class="md:flex md:flex-row md:gap-2 md:items-center w-full md:max-w-[633px] md:mx-auto"
+        class="md:flex lg:flex md:flex-row lg:flex-row md:gap-2 lg:gap-2 md:items-center lg:items-center w-full lg:w-fit md:max-w-[633px] lg:max-w-5xl md:mx-auto lg:mx-auto"
       >
         <div class="bestExperiencePrev pb-10">
           <i class="fa-solid fa-chevron-left"></i>
@@ -15,7 +15,7 @@
         <component
           :is="'swiper-container'"
           v-bind="sliderOptions"
-          class="w-full md:max-w-[575px]"
+          class="w-full md:max-w-xl lg:max-w-xl"
         >
           <component
             :is="'swiper-slide'"
@@ -27,7 +27,7 @@
               testimonial,
             } of cards"
             :key="image"
-            class="flex flex-col justify-between gap-12 rounded-xl overflow-hidden w-full mb-12 h-auto text-center px-5 md:px-10"
+            class="flex flex-col justify-between gap-12 rounded-xl overflow-hidden w-full mb-12 h-auto text-center px-5 md:px-10 lg:px-10"
           >
             <div class="h-24 md:h-40">
               <img
@@ -42,13 +42,13 @@
                 alt=""
                 class="absolute inset-0 -z-10 object-cover m-auto h-32 scale-110"
               />
-              <p class="text-textPrimary md:text-3xl">"{{ testimonial }}""</p>
+              <p class="text-textPrimary md:text-3xl lg:text-3xl">"{{ testimonial }}"</p>
             </div>
             <div class="flex flex-col">
-              <span class="text-primary font-bold md:text-xl">
+              <span class="text-primary font-bold md:text-xl lg:text-xl">
                 {{ name }}
               </span>
-              <span class="text-textSecondary text-sm">
+              <span class="text-textSecondary text-sm lg:text-base">
                 {{ profissional }} - {{ location }}
               </span>
             </div>
@@ -84,16 +84,19 @@ export default defineComponent({
           slidesPerView: 2.5,
         },
         1021: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      navigation: {
-        nextEl: '.bestExperienceNext',
-        prevEl: '.bestExperiencePrev',
-      },
-    },
+          slidesPerView: 1,
+          spaceBetween: 0,
+          navigation: {
+            nextEl: '.bestExperienceNext',
+            prevEl: '.bestExperiencePrev',
+          },
+        },
         1277: {
-          slidesPerView: 4,
-          centeredSlides: false,
+          slidesPerView: 1,
+          navigation: {
+            nextEl: '.bestExperienceNext',
+            prevEl: '.bestExperiencePrev',
+          },
         },
         1919: {
           slidesPerView: 4,

@@ -5,11 +5,11 @@
       video-id="MVo7IfT01PU"
       @closeOverlay="showVideo = false"
     />
-    <h2 class="text-xl md:text-4xl text-primary font-bold px-5 text-center">
+    <h2 class="text-xl md:text-4xl lg:text-4xl text-primary font-bold px-5 text-center">
       Entregando uma experiência Best
     </h2>
 
-    <div class="md:flex md:flex-row md:gap-2 md:items-center md:max-w-[663px] md:mx-auto">
+    <div class="md:flex lg:flex md:flex-row lg:flex-row md:gap-2 lg:gap-2 md:items-center lg:items-center md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto">
       <div class="bestExperiencePrev pb-10">
         <i class="fa-solid fa-chevron-left"></i>
       </div>
@@ -19,16 +19,16 @@
         ref="bestExperienceSwiper"
         v-bind="sliderOptions"
         :class="{ 'relative -z-50': showVideo }"
-        class="w-full md:max-w-[575px]"
+        class="w-full md:max-w-xl lg:max-w-xl"
       >
         <component
           :is="'swiper-slide'"
           v-for="{ title, description, image } of cards"
           :key="title"
-          class="flex flex-col md:flex-row rounded-xl w-full border border-[#D9D9D9] mb-12 h-auto"
+          class="flex flex-col md:flex-row lg:flex-row rounded-xl w-full border border-[#D9D9D9] mb-12 h-auto"
         >
           <div
-            class="relative w-full h-48 md:h-68 overflow-hidden rounded-t-xl md:rounded-l-xl md:rounded-r-none -z-10"
+            class="relative w-full h-48 md:h-68 overflow-hidden rounded-t-xl md:rounded-l-xl lg:rounded-l-xl md:rounded-r-none lg:rounded-r-none -z-10"
           >
             <img
               :src="image"
@@ -36,10 +36,10 @@
               class="object-cover w-full h-full"
               loading="lazy"
             />
-            <PlayButton
+            <!-- <PlayButton
               class="absolute inset-0 z-10"
               @click="showVideo = true"
-            />
+            /> -->
           </div>
           <div
             class="flex flex-col gap-4 p-4 md:p-10 md:my-auto text-textPrimary cursor-default"
@@ -62,7 +62,7 @@
 
 <script lang="ts" setup>
 import Overlay from '@/components/base/overlays/youtubeVideo.component.vue'
-import PlayButton from '@/components/base/buttons/playVideo.component.vue'
+// import PlayButton from '@/components/base/buttons/playVideo.component.vue'
 import { SwiperOptions } from 'swiper/types'
 import { ref } from 'vue'
 
@@ -88,8 +88,11 @@ const sliderOptions: SwiperOptions = {
       },
     },
     1277: {
-      slidesPerView: 4,
-      centeredSlides: false,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.bestExperienceNext',
+        prevEl: '.bestExperiencePrev',
+      },
     },
     1919: {
       slidesPerView: 4,

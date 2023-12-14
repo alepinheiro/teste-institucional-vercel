@@ -1,46 +1,53 @@
 <template>
-  <section class="text-white flex flex-col gap-8">
+  <section class="text-white flex flex-col gap-8 lg:gap-12">
     <div
-      class="px-5 flex flex-col gap-4 text-center md:max-w-[663px] md:mx-auto"
+      class="px-5 flex flex-col gap-4 text-center md:max-w-[663px] md:mx-auto lg:max-w-5xl lg:mx-auto"
     >
-      <h3 class="md:text-2xl">
+      <h3 class="md:text-2xl lg:text-2xl lg:w-10/12 lg:mx-auto">
         O que nos motiva a levantar todos os dias e lutar por nossa missão?
       </h3>
-      <h2 class="font-bold text-xl md:text-3xl">
+      <h2 class="font-bold text-xl md:text-3xl lg:text-3xl lg:w-10/12 lg:mx-auto">
         Acreditar que o acesso ao crédito pode levar as pessoas à sua melhor
         versão quando elas:
       </h2>
     </div>
-    <ul
-      class="md:flex md:flex-row md:flex-wrap md:gap-10 md:mx-auto md:w-10/12 md:pb-26"
-    >
-      <li
-        v-for="(item, index) in cards"
-        :key="index"
-        class="relative z-0 flex md:w-96 hover:drop-shadow-md transition-all"
-      >
-        <div class="flip w-full h-38 md:h-56 ">
-          <div class="front w-full h-full flex itens-end overflow-hidden md:rounded-xl">
-            <img
-              :src="`/images/aboutUs/cards/${index}.png`"
-              alt=""
-              class="absolute inset-0 h-full w-full object-cover -z-10 transition-all"
-            />
 
+    <div class="lg:max-w-5xl lg:mx-auto">
+      <ul
+        class="md:flex lg:flex md:flex-row lg:flex-row md:flex-wrap lg:flex-wrap md:gap-10 lg:gap-10 md:mx-auto lg:mx-auto md:w-10/12 lg:w-10/12 md:pb-26 lg:pb-26"
+      >
+        <li
+          v-for="(item, index) in cards"
+          :key="index"
+          class="relative z-0 flex md:w-96 lg:w-96 hover:drop-shadow-md transition-all"
+        >
+          <div class="flip w-full h-38 md:h-56 lg:h-56">
             <div
-              class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 md:p-4 text-complementaryColor3"
+              class="front w-full h-full flex itens-end overflow-hidden md:rounded-xl lg:rounded-xl"
             >
-              <p class="font-bold text-white md:w-3/4">{{ item.title }}</p>
-              <i class="fa-solid fa-chevron-up"></i>
+              <img
+                :src="`/images/aboutUs/cards/${index}.png`"
+                alt=""
+                class="absolute inset-0 h-full w-full object-cover -z-10 transition-all"
+              />
+
+              <div
+                class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 md:p-4 text-complementaryColor3"
+              >
+                <p class="font-bold text-white md:w-3/4">{{ item.title }}</p>
+                <i class="fa-solid fa-chevron-up"></i>
+              </div>
+            </div>
+            <div
+              class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl lg:rounded-xl"
+            >
+              <!--  eslint-disable-next-line vue/no-v-html -->
+              <span v-html="item.text"></span>
             </div>
           </div>
-          <div class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl">
-            <!--  eslint-disable-next-line vue/no-v-html -->
-            <span v-html="item.text"></span>
-          </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 <script lang="ts">

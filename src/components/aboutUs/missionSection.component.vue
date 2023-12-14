@@ -1,11 +1,9 @@
 <template>
-  <section
-    class="flex flex-col gap-8 xl:gap-20 lg:max-w-5xl xl:max-w-7xl mx-auto"
-  >
+  <section class="flex flex-col gap-8 lg:gap-10 xl:gap-20 xl:max-w-7xl mx-auto">
     <div
-      class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5 md:max-w-[663px] md:mx-auto"
+      class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5 md:max-w-[663px] lg:max-w-5xl lg:mx-auto md:mx-auto"
     >
-      <div class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5">
+      <div class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5 lg:w-10/12 lg:mx-auto">
         <h2
           class="text-primary text-xl md:text-4xl lg:text-4xl xl:text-4xl font-bold"
         >
@@ -17,14 +15,14 @@
         </p>
       </div>
 
-      <p class="md:text-xl lg:text-2xl xl:text-2xl">
+      <p class="md:text-xl lg:text-2xl xl:text-2xl lg:w-10/12 lg:mx-auto">
         <b>E como fazemos isso?</b> <br class="md:hidden lg:hidden xl:hidden" />
         <i>Através dos nossos três pilares:</i>
       </p>
     </div>
 
     <div
-      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-xl overflow-hidden border border-textSecondary md:max-w-[663px] md:mx-auto"
+      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto"
     >
       <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button
@@ -44,7 +42,10 @@
       <div
         class="h-64 lg:flex-1 xl:flex-1 md:h-auto lg:h-96 xl:h-96 relative z-0 overflow-hidden"
       >
-        <div ref="activeImage" class="h-full p-5 md:p-10 flex flex-col gap-2 md:h-160">
+        <div
+          ref="activeImage"
+          class="h-full p-5 md:p-10 flex flex-col gap-2 md:h-160"
+        >
           <p class="text-white mt-auto text-sm md:text-2xl">
             {{ options[activeCard.id].description }}
           </p>
