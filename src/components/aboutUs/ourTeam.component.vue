@@ -1,8 +1,12 @@
 <template>
-  <section class="flex flex-col gap-7">
-    <div class="flex flex-col items-center text-center gap-4 px-5">
-      <span class="font-bold text-complementaryColor1"> Time SejaBest </span>
-      <h2 class="text-xl text-primary font-bold">
+  <section class="flex flex-col gap-7 md:gap-15">
+    <div
+      class="flex flex-col items-center text-center gap-4 px-5 md:max-w-[663px] md:mx-auto"
+    >
+      <span class="font-bold text-complementaryColor1 md:text-2xl">
+        Time SejaBest
+      </span>
+      <h2 class="text-xl md:text-4xl text-primary font-bold">
         Um time de profissionais qualificados
       </h2>
       <p>
@@ -12,20 +16,20 @@
       </p>
     </div>
 
-    <div class="relative flex flex-col gap-5 h-84 overflow-hidden">
+    <div class="relative flex flex-col gap-5 h-84 md:h-[700px] overflow-hidden">
       <div
         ref="firstRow"
-        class="flex flex-row absolute -left-32 top-0 overflow-hidden"
+        class="flex flex-row absolute -left-32 md:-left-76 top-0 overflow-hidden"
       >
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="h-36  w-32 bg-primary flex flex-shrink-0 rounded-md mr-5 first-of-type:ml-5"
+          class="card h-36 md:h-80 w-32 md:w-76 bg-primary flex flex-shrink-0 rounded-md mr-5 "
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
             :alt="alt"
-            class="h-36 w-32 object-cover my-auto py-2"
+            class="w-full h-full object-cover my-auto py-2"
             loading="lazy"
           />
         </div>
@@ -33,17 +37,17 @@
 
       <div
         ref="secondRow"
-        class="flex flex-row gap-5 absolute h-42 -right-32 bottom-0 overflow-hidden"
+        class="flex flex-row gap-5 absolute h-84 -right-32 md:-right-76 bottom-0 overflow-hidden"
       >
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="h-36 w-32 bg-primary flex flex-shrink-0 rounded-md"
+          class="card h-36 md:h-80 w-32 md:w-76 bg-primary flex flex-shrink-0 rounded-md"
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
             :alt="alt"
-            class="h-36 w-32 object-cover my-auto py-2"
+            class="w-full h-full object-cover my-auto py-2"
             loading="lazy"
           />
         </div>
@@ -123,7 +127,7 @@ export default defineComponent({
   methods: {
     slideToLeft(element: HTMLDivElement | null) {
       if (!element) return
-      const cards = this.gsap.utils.toArray(element.querySelectorAll('.h-38'))
+      const cards = this.gsap.utils.toArray(element.querySelectorAll('.card'))
       const loop = this.horizontalLoop(cards, { repeat: -1 })
 
       this.gsap.to(loop, {
@@ -138,7 +142,7 @@ export default defineComponent({
     },
     slideToRight(element: HTMLDivElement | null) {
       if (!element) return
-      const cards = this.gsap.utils.toArray(element.querySelectorAll('.h-38'))
+      const cards = this.gsap.utils.toArray(element.querySelectorAll('.card'))
       const loop = this.horizontalLoop(cards, { repeat: -1, reversed: true })
       this.gsap.to(loop, {
         scrollTrigger: {
@@ -150,15 +154,16 @@ export default defineComponent({
         ease: 'none',
       })
     },
-    horizontalLoop(items, config) {
+    horizontalLoop(items: unknown[], config: gsap.TweenVars) {
       items = this.gsap.utils.toArray(items)
       config = config || {}
       let tl = this.gsap.timeline({
           repeat: config.repeat,
           paused: config.paused,
           defaults: { ease: 'none' },
-          onReverseComplete: () =>
-            tl.totalTime(tl.rawTime() + tl.duration() * 100),
+          onReverseComplete: () => {
+            tl.totalTime(tl.rawTime() + tl.duration() * 100)
+          },
         }),
         length = items.length,
         startX = items[0].offsetLeft,
@@ -178,7 +183,9 @@ export default defineComponent({
       this.gsap.set(items, {
         // convert "x" to "xPercent" to make things responsive, and populate the widths/xPercents Arrays to make lookups faster.
         xPercent: (i, el) => {
-          let w = (widths[i] = parseFloat(gsap.getProperty(el, 'width', 'px')))
+          let w = (widths[i] = parseFloat(
+            this.gsap.getProperty(el, 'width', 'px'),
+          ))
           xPercents[i] = snap(
             (parseFloat(gsap.getProperty(el, 'x', 'px')) / w) * 100 +
               gsap.getProperty(el, 'xPercent'),
