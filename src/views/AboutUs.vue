@@ -1,6 +1,6 @@
 <template>
   <main class="">
-    <div class=" relative z-0 flex flex-col">
+    <div class="relative z-0 flex flex-col">
       <div
         class="absolute inset-x-0 top-0 bottom-0 bg-gradient-to-b from-[#070E37] to-[#10069F] via-[70%] via-[#0C0A70] -z-10 overflow-hidden"
       >
@@ -22,22 +22,32 @@
     <AboutNumbers />
     <Team />
     <BestExperience class="py-10" />
+    <Testimonials class="py-10" />
   </main>
 </template>
 
 <script lang="ts">
+import AboutNumbers from '@/components/aboutUs/aboutNumbers.component.vue'
+import BestExperience from '@/components/aboutUs/bestExperience.component.vue'
+import HeroSection from '@/components/aboutUs/heroSection.component.vue'
+import MissionSection from '@/components/homePage/missionSection.component.vue'
+import OurMotivation from '@/components/aboutUs/ourMission.component.vue'
+import Team from '@/components/aboutUs/ourTeam.component.vue'
+import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue'
 import { defineComponent } from 'vue'
 import { useHead } from '@vueuse/head'
-import HeroSection from '@/components/aboutUs/heroSection.component.vue'
-import OurMotivation from '@/components/aboutUs/ourMission.component.vue'
-import MissionSection from '@/components/homePage/missionSection.component.vue'
-import AboutNumbers from '@/components/aboutUs/aboutNumbers.component.vue'
-import Team from '@/components/aboutUs/ourTeam.component.vue'
-import BestExperience from '@/components/aboutUs/bestExperience.component.vue'
 
 export default defineComponent({
   name: 'AboutUs',
-  components: { HeroSection, OurMotivation, MissionSection, AboutNumbers, Team, BestExperience },
+  components: {
+    HeroSection,
+    OurMotivation,
+    MissionSection,
+    AboutNumbers,
+    Team,
+    BestExperience,
+    Testimonials,
+  },
   data() {
     return {}
   },
