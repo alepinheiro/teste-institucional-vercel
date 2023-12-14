@@ -61,13 +61,11 @@
 </template>
 
 <script lang="ts" setup>
-import 'swiper/css/navigation'
 import Overlay from '@/components/base/overlays/youtubeVideo.component.vue'
 import PlayButton from '@/components/base/buttons/playVideo.component.vue'
 import { Navigation } from 'swiper/modules'
-import { SwiperContainer, register } from 'swiper/element/bundle'
 import { SwiperOptions } from 'swiper/types'
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
 const sliderOptions: SwiperOptions = {
   modules: [Navigation],
@@ -103,14 +101,6 @@ const sliderOptions: SwiperOptions = {
 }
 
 const showVideo = ref<boolean>(false)
-const bestExperienceSwiper = ref<SwiperContainer | null>(null)
-
-// onMounted(() => {
-//   if (bestExperienceSwiper.value) {
-//     register()
-//   }
-//   // console.log()
-// })
 
 const cards = [
   {
@@ -139,6 +129,7 @@ const cards = [
   },
 ]
 </script>
+
 <style lang="scss" scoped>
 ::part(bullet) {
   background: #d9d9d9;

@@ -1,44 +1,70 @@
 <template>
   <section>
-    <div class="flex flex-col gap-8">
-
-      <h2 class="text-xl text-primary font-bold px-5 text-center">
+    <div class="flex flex-col gap-8  md:mx-auto md:max-w-[663px]">
+      <h2 class="text-xl md:text-4xl text-primary font-bold px-5 text-center ">
         Não queremos apenas clientes, trabalhamos duro para termos fãs
       </h2>
 
-      <component :is="'swiper-container'" v-bind="sliderOptions" class="w-full">
+      <div
+        class="md:flex md:flex-row md:gap-2 md:items-center w-full md:max-w-[633px] md:mx-auto"
+      >
+        <div class="bestExperiencePrev pb-10">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+
         <component
-          :is="'swiper-slide'"
-          v-for="{ image, location, name, profissional, testimonial } of cards"
-          :key="image"
-          class="flex flex-col justify-between gap-12 rounded-xl overflow-hidden w-full mb-12 h-auto text-center px-5"
+          :is="'swiper-container'"
+          v-bind="sliderOptions"
+          class="w-full md:max-w-[575px]"
         >
-          <div class="h-24">
-            <img
-              :src="`/images/aboutUs/testimonials/${image}.png`"
-              :alt="name"
-              class="object-contain h-full mx-auto"
-            />
-          </div>
-          <div class="relative">
-                <img src="/images/aboutUs/icons/quotes.svg" alt="" class="absolute inset-0 -z-10 object-cover m-auto h-32 scale-110" />
-              <p class="text-textPrimary">
-                "{{ testimonial }}""
-              </p>
-          </div>
-          <div class="flex flex-col">
-              <span class="text-primary font-bold">
+          <component
+            :is="'swiper-slide'"
+            v-for="{
+              image,
+              location,
+              name,
+              profissional,
+              testimonial,
+            } of cards"
+            :key="image"
+            class="flex flex-col justify-between gap-12 rounded-xl overflow-hidden w-full mb-12 h-auto text-center px-5 md:px-10"
+          >
+            <div class="h-24 md:h-40">
+              <img
+                :src="`/images/aboutUs/testimonials/${image}.png`"
+                :alt="name"
+                class="object-contain h-full mx-auto"
+              />
+            </div>
+            <div class="relative">
+              <img
+                src="/images/aboutUs/icons/quotes.svg"
+                alt=""
+                class="absolute inset-0 -z-10 object-cover m-auto h-32 scale-110"
+              />
+              <p class="text-textPrimary md:text-3xl">"{{ testimonial }}""</p>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-primary font-bold md:text-xl">
                 {{ name }}
               </span>
-              <span class="text-textSecondary text-sm"> {{ profissional }} - {{ location }} </span>
+              <span class="text-textSecondary text-sm">
+                {{ profissional }} - {{ location }}
+              </span>
             </div>
+          </component>
         </component>
-      </component>
+
+        <div class="bestExperiencePrev pb-10">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
     </div>
   </section>
 </template>
 <script lang="ts">
 import { SwiperOptions } from 'swiper/types'
+import { Navigation } from 'swiper/modules'
 
 import { defineComponent } from 'vue'
 export default defineComponent({
@@ -59,8 +85,13 @@ export default defineComponent({
           slidesPerView: 2.5,
         },
         1021: {
-          slidesPerView: 3.5,
-        },
+      slidesPerView: 1,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: '.bestExperienceNext',
+        prevEl: '.bestExperiencePrev',
+      },
+    },
         1277: {
           slidesPerView: 4,
           centeredSlides: false,
