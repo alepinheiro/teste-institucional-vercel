@@ -1,18 +1,18 @@
 <template>
-  <section class="relative z-0 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
-    <div
+  <section class="relative z-0 lg:max-w-5xl xl:max-w-7xl mx-auto md:max-w-2xl">
+    <!-- <div
       class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] to-[#EFEFEF] absolute top-0 bottom-1/3 w-full scale-x-105 inset-x-0 -z-10 rounded-xl"
-    ></div>
+    ></div> -->
     <div
-      class="px-5 lg:px-0 py-10 mx-auto flex flex-col lg:flex-row xl:flex-row items-center"
+      class="px-5 lg:px-0 mx-auto flex flex-col md:gap-15 lg:flex-row xl:flex-row items-center"
     >
       <div
-        class="text-textPrimary flex flex-col gap-2 lg:gap-7 xl:gap-7 text-center md:text-left lg:text-left xl:text-left lg:w-5/12 xl:w-5/12"
+        class="text-textPrimary flex flex-col gap-2 md:gap-5 lg:gap-7 xl:gap-7 text-center lg:text-left xl:text-left lg:w-5/12 xl:w-5/12 "
       >
-        <h2 class="text-xl font-bold">
+        <h2 class="text-xl md:text-4xl font-bold">
           Há mais de 10 anos transformamos o acesso ao crédito
         </h2>
-        <p class="text-sm">
+        <p class="text-sm md:text-xl">
           Em nossa história ja foram mais de 1 bilhão de reais emprestados em
           crédito através de nossos mais de 20 parceiros, que nos renderam
           também premiações em vendas.
@@ -20,12 +20,12 @@
       </div>
 
       <ul
-        class="flex flex-row gap-2 md:gap-5 lg:gap-5 xl:gap-5 py-10 md:w-full lg:w-7/12 xl:w-7/12"
+        class="flex flex-row gap-2 md:gap-5 lg:gap-5 xl:gap-5 py-10 md:py-0 md:w-full lg:w-7/12 xl:w-7/12"
       >
         <li
           v-for="{ icon, title, description } in cards"
           :key="icon"
-          class="p-3 w-1/3 flex-grow md:py-10 lg:py-10 xl:px-10 xl:py-16 bg-white group hover:bg-primary drop-shadow-lg md:shadow-2xl lg:shadow-2xl xl:shadow-2xl rounded md:rounded-xl lg:rounded-xl xl:rounded-xl flex flex-col md:gap-6 lg:gap-3 lg:h-full transition-all"
+          class="p-3 md:py-14 md:px-8 w-1/3 flex-grow lg:py-10 xl:px-10 xl:py-16 bg-white group hover:bg-primary drop-shadow-lg md:shadow-2xl lg:shadow-2xl xl:shadow-2xl rounded md:rounded-xl lg:rounded-xl xl:rounded-xl flex flex-col md:gap-6 lg:gap-3 lg:h-full transition-all"
         >
           <div
             class="w-4 h-4 md:h-7 md:w-7 lg:w-7 lg:h-7 xl:w-7 xl:h-7 text-textSecondary"
@@ -41,7 +41,7 @@
             {{ title }}
           </span>
           <span
-            class="text-sm text-textSecondary block md:text-xl leading-4 group-hover:text-white transition-all"
+            class="text-sm text-textPrimary md:font-bold block md:text-2xl leading-4 group-hover:text-white transition-all"
           >
             {{ description }}
           </span>
@@ -49,17 +49,17 @@
       </ul>
 
       <div
-        class="flex md:hidden lg:hidden xl:hidden flex-row flex-wrap items-center gap-6 mx-auto"
+        class="flex lg:hidden xl:hidden flex-row flex-wrap items-center gap-6 mx-auto"
       >
         <div
           v-for="{ alt, id, source } of seals"
           :key="id"
-          class="w-1/3 last-of-type:w-1/2 last-of-type:mx-auto last-of-type:flex-grow-0 flex-grow"
+          class="w-1/3 md:w-fit last-of-type:w-1/2 md:last-of-type:w-fit last-of-type:mx-auto last-of-type:flex-grow-0 flex-grow"
         >
           <img
             :src="`/images/Home/seals/dark/${source}`"
             :alt="alt"
-            class="h-24 sm:h-auto"
+            class="h-24 md:h-18 sm:h-auto"
           />
         </div>
       </div>
