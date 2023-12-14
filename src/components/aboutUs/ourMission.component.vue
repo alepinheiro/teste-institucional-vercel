@@ -1,6 +1,8 @@
 <template>
   <section class="text-white flex flex-col gap-8">
-    <div class="px-5 flex flex-col gap-4 text-center">
+    <div
+      class="px-5 flex flex-col gap-4 text-center md:max-w-[663px] md:mx-auto"
+    >
       <h3>
         O que nos motiva a levantar todos os dias e lutar por nossa missão?
       </h3>
@@ -9,14 +11,16 @@
         versão quando elas:
       </h2>
     </div>
-    <ul>
+    <ul
+      class="md:flex md:flex-row md:flex-wrap md:gap-10 md:mx-auto md:w-10/12 md:pb-26"
+    >
       <li
         v-for="(item, index) in cards"
         :key="index"
-        class="missionCard relative z-0 flex"
+        class="relative z-0 flex md:w-96 hover:drop-shadow-md transition-all"
       >
-        <div class="flip w-full h-38">
-          <div class="front w-full h-38 flex itens-end">
+        <div class="flip w-full h-38 md:h-56 ">
+          <div class="front w-full h-full flex itens-end overflow-hidden md:rounded-xl">
             <img
               :src="`/images/aboutUs/cards/${index}.png`"
               alt=""
@@ -24,13 +28,13 @@
             />
 
             <div
-              class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 text-complementaryColor3"
+              class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 md:p-4 text-complementaryColor3"
             >
-              <p class="font-bold text-white">{{ item.title }}</p>
+              <p class="font-bold text-white md:w-3/4">{{ item.title }}</p>
               <i class="fa-solid fa-chevron-up"></i>
             </div>
           </div>
-          <div class="back flex items-center h-38 bg-primary p-5">
+          <div class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl">
             <!--  eslint-disable-next-line vue/no-v-html -->
             <span v-html="item.text"></span>
           </div>
