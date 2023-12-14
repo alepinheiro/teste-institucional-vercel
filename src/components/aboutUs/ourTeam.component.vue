@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col gap-7 md:gap-15">
     <div
-      class="flex flex-col items-center text-center gap-4 px-5 md:max-w-[663px] md:mx-auto"
+      class="flex flex-col items-center text-center gap-4 px-5 md:px-0 md:max-w-[663px] md:mx-auto"
     >
       <span class="font-bold text-complementaryColor1 md:text-2xl">
         Time SejaBest
