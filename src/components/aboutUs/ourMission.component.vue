@@ -3,10 +3,10 @@
     <div
       class="px-5 flex flex-col gap-4 text-center md:max-w-[663px] md:mx-auto"
     >
-      <h3>
+      <h3 class="md:text-2xl">
         O que nos motiva a levantar todos os dias e lutar por nossa missão?
       </h3>
-      <h2 class="font-bold text-xl">
+      <h2 class="font-bold text-xl md:text-3xl">
         Acreditar que o acesso ao crédito pode levar as pessoas à sua melhor
         versão quando elas:
       </h2>
