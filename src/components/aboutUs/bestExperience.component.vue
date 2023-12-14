@@ -19,7 +19,7 @@
         ref="bestExperienceSwiper"
         v-bind="sliderOptions"
         :class="{ 'relative -z-50': showVideo }"
-        class="w-full  z-0"
+        class="w-full md:max-w-[575px]"
       >
         <component
           :is="'swiper-slide'"
@@ -63,12 +63,10 @@
 <script lang="ts" setup>
 import Overlay from '@/components/base/overlays/youtubeVideo.component.vue'
 import PlayButton from '@/components/base/buttons/playVideo.component.vue'
-import { Navigation } from 'swiper/modules'
 import { SwiperOptions } from 'swiper/types'
 import { ref } from 'vue'
 
 const sliderOptions: SwiperOptions = {
-  modules: [Navigation],
   spaceBetween: 20,
   slidesPerView: 1.2,
   centeredSlides: false,

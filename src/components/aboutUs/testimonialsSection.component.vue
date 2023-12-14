@@ -64,7 +64,6 @@
 </template>
 <script lang="ts">
 import { SwiperOptions } from 'swiper/types'
-import { Navigation } from 'swiper/modules'
 
 import { defineComponent } from 'vue'
 export default defineComponent({
