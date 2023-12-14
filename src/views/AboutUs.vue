@@ -16,9 +16,9 @@
         />
       </div>
       <HeroSection class="min-h-screen" />
-      <OurMotivation class="border-b-8 border-primary" />
+      <OurMotivation class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl" />
     </div>
-    <MissionSection class="py-10 px-5 border-b-8 border-primary" />
+    <MissionSection class="bg-[#EFEFEF] py-10 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl" />
     <AboutNumbers />
     <Team />
     <BestExperience class="py-10" />
