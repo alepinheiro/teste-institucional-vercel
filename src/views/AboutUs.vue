@@ -1,5 +1,5 @@
 <template>
-  <main class="">
+  <main class="bg-[#EFEFEF]">
     <div class="relative z-0 flex flex-col">
       <div
         class="absolute inset-x-0 top-0 bottom-0 bg-gradient-to-b from-[#070E37] to-[#10069F] via-[70%] via-[#0C0A70] -z-10 overflow-hidden"
@@ -16,12 +16,16 @@
         />
       </div>
       <HeroSection class="min-h-screen" />
-      <OurMotivation class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl" />
+      <OurMotivation
+        class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
+      />
     </div>
-    <MissionSection class="bg-[#EFEFEF] py-10 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl" />
-    <AboutNumbers class="bg-[#EFEFEF]" />
-    <Team class="bg-[#EFEFEF]" />
-    <BestExperience class="bg-[#EFEFEF] py-10" />
+    <MissionSection
+      class="py-10 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
+    />
+    <AboutNumbers class="" />
+    <Team class="" />
+    <BestExperience class="py-10" />
     <Testimonials class="py-10" />
     <BestPlay />
     <TheFooter />
