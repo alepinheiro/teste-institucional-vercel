@@ -35,15 +35,15 @@
 <script lang="ts">
 import AboutNumbers from '@/components/aboutUs/aboutNumbers.component.vue'
 import BestExperience from '@/components/aboutUs/bestExperience.component.vue'
+import BestPlay from '@/components/homePage/bestPlay.component.vue'
 import HeroSection from '@/components/aboutUs/heroSection.component.vue'
 import MissionSection from '@/components/homePage/missionSection.component.vue'
 import OurMotivation from '@/components/aboutUs/ourMission.component.vue'
 import Team from '@/components/aboutUs/ourTeam.component.vue'
 import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue'
-import BestPlay from '@/components/homePage/bestPlay.component.vue'
+import TheFooter from '@/components/structure/theFooter.component.vue'
 import { defineComponent } from 'vue'
 import { useHead } from '@vueuse/head'
-import TheFooter from '@/components/structure/theFooter.component.vue'
 
 export default defineComponent({
   name: 'AboutUs',
