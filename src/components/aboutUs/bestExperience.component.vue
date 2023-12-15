@@ -5,21 +5,62 @@
       video-id="MVo7IfT01PU"
       @closeOverlay="showVideo = false"
     />
-    <h2 class="text-xl md:text-4xl lg:text-4xl text-primary font-bold px-5 text-center">
+    <h2
+      class="text-xl md:text-4xl lg:text-4xl xl:text-4xl text-primary font-bold px-5 text-center"
+    >
       Entregando uma experiência Best
     </h2>
 
-    <div class="md:flex lg:flex md:flex-row lg:flex-row md:gap-2 lg:gap-2 md:items-center lg:items-center md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto">
+    <div class="hidden xl:flex xl:max-w-7xl xl:mx-auto">
+        <ul class="flex flex-row flex-wrap gap-5">
+          <li
+            v-for="{ title, description, image } of cards"
+            :key="title"
+            class="flex flex-row rounded-xl border border-[#D9D9D9] h-68 w-1/3 flex-grow"
+          >
+            <div
+              class="md:h-68 overflow-hidden rounded-l-xl rounded-r-none w-1/3"
+            >
+              <img
+                :src="image"
+                alt=""
+                class="object-cover w-full h-full"
+                loading="eager"
+              />
+              <!-- <PlayButton
+              class="absolute inset-0 z-10"
+              @click="showVideo = true"
+            /> -->
+            </div>
+            <div
+              class="flex flex-col gap-4 w-2/3 p-10 my-auto text-textPrimary cursor-default"
+            >
+              <h3 class="text-xl xl:text-2xl font-bold">
+                {{ title }}
+              </h3>
+              <p>
+                {{ description }}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    <div
+      class="md:flex lg:flex md:flex-row lg:flex-row md:gap-2 lg:gap-2 md:items-center lg:items-center md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto xl:hidden"
+    >
       <div class="bestExperiencePrev pb-10">
         <i class="fa-solid fa-chevron-left"></i>
       </div>
+
+
 
       <component
         :is="'swiper-container'"
         ref="bestExperienceSwiper"
         v-bind="sliderOptions"
         :class="{ 'relative -z-50': showVideo }"
-        class="w-full md:max-w-xl lg:max-w-xl"
+        class="w-full md:max-w-xl lg:max-w-xl "
       >
         <component
           :is="'swiper-slide'"
