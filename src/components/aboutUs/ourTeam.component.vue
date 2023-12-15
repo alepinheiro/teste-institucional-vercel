@@ -3,11 +3,11 @@
     <div
       class="flex flex-col items-center text-center gap-4 px-5 md:px-0 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
-      <span
+      <!-- <span
         class="font-bold text-complementaryColor1 md:text-2xl lg:text-2xl xl:text-2xl"
       >
         Time SejaBest
-      </span>
+      </span> -->
       <h2
         class="text-xl md:text-4xl lg:text-4xl xl:text-4xl text-primary font-bold"
       >

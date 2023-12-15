@@ -67,12 +67,12 @@
           class="flex flex-col md:flex-row lg:flex-row rounded-xl w-full border border-[#D9D9D9] mb-12 h-auto"
         >
           <div
-            class="relative w-full h-48 md:h-68 overflow-hidden rounded-t-xl md:rounded-l-xl lg:rounded-l-xl md:rounded-r-none lg:rounded-r-none -z-10"
+            class="relative w-full h-80 md:h-68 overflow-hidden rounded-t-xl md:rounded-l-xl lg:rounded-l-xl md:rounded-r-none lg:rounded-r-none -z-10"
           >
             <img
               :src="image"
               alt=""
-              class="object-cover w-full h-full"
+              class="object-cover object-left-center w-full h-full"
               loading="lazy"
             />
             <!-- <PlayButton

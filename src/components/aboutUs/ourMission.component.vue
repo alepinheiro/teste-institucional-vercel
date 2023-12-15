@@ -14,7 +14,7 @@
 
     <div class="lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto">
       <ul
-        class="md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap xl:flex-wrap md:gap-10 lg:gap-10 xl:gap-10 md:mx-auto lg:mx-auto xl:mx-auto md:w-10/12 lg:w-10/12 "
+        class="md:justify-center md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap xl:flex-wrap md:gap-10 lg:gap-10 xl:gap-10 md:mx-auto lg:mx-auto xl:mx-auto md:w-10/12 lg:w-10/12 "
       >
         <li
           v-for="(item, index) in cards"
@@ -28,7 +28,7 @@
               <img
                 :src="`/images/aboutUs/cards/${index}.png`"
                 alt=""
-                class="absolute inset-0 h-full w-full object-cover -z-10 transition-all"
+                class="absolute inset-0 h-full w-full object-cover object-left-top -z-10 transition-all"
               />
 
               <div
@@ -95,7 +95,7 @@ export default defineComponent({
   > .back {
     display: flex;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-duration: 0.5s;
+    transition-duration: 1.5s;
     transition-property: transform, opacity;
   }
   > .front {
