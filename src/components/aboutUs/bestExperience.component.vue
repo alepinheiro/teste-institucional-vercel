@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-8">
+  <section class="flex flex-col gap-8 lg:gap-15">
     <Overlay
       v-if="showVideo"
       video-id="MVo7IfT01PU"
@@ -49,11 +49,9 @@
     <div
       class="md:flex lg:flex md:flex-row lg:flex-row md:gap-2 lg:gap-2 md:items-center lg:items-center md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto xl:hidden"
     >
-      <div class="bestExperiencePrev pb-10">
-        <i class="fa-solid fa-chevron-left"></i>
+      <div class="bestExperiencePrev hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8">
+        <i class="fa-solid fa-chevron-left w-full h-full"></i>
       </div>
-
-
 
       <component
         :is="'swiper-container'"
@@ -94,8 +92,9 @@
           </div>
         </component>
       </component>
-      <div class="bestExperienceNext pb-10">
-        <i class="fa-solid fa-chevron-right"></i>
+
+      <div class="bestExperienceNext hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8">
+        <i class="fa-solid fa-chevron-right w-full h-full"></i>
       </div>
     </div>
   </section>
@@ -110,7 +109,7 @@ import { ref } from 'vue'
 const sliderOptions: SwiperOptions = {
   spaceBetween: 20,
   slidesPerView: 1.2,
-  centeredSlides: false,
+  centeredSlides: true,
   autoHeight: false,
   pagination: true,
   loop: true,

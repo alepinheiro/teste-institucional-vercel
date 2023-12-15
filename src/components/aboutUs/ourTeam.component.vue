@@ -13,7 +13,7 @@
       >
         Um time de profissionais qualificados
       </h2>
-      <p class="lg:w-10/12 xl:w-8/12 xl:text-xl">
+      <p class="lg:w-10/12 xl:w-8/12 xl:text-xl text-textPrimary">
         A SejaBest conta com um forte time de assessores que estão preparados
         para te ajudar a encontrar uma solução de crédito que se encaixa nas
         suas necessidades.
@@ -43,7 +43,7 @@
 
       <div
         ref="secondRow"
-        class="flex flex-row gap-5 absolute h-84 -right-32 md:-right-76 lg:-right-76 xl:-right-76 bottom-0 overflow-hidden"
+        class="flex flex-row gap-5 absolute h-84 -right-64 md:-right-76 lg:-right-76 xl:-right-76 top-1/2 bottom-0 overflow-hidden"
       >
         <div
           v-for="({ alt }, index) in teamMembers"
@@ -66,24 +66,11 @@ import { ref, onMounted } from 'vue'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 
-// export default defineComponent({
-//   name: 'OurTeam',
-//   setup() {
 gsap.registerPlugin(ScrollTrigger)
-// gsap.registerPlugin(CSSPlugin)
 
 const firstRow = ref<HTMLDivElement | null>(null)
 const secondRow = ref<HTMLDivElement | null>(null)
 
-// const boxes = gsap.utils.toArray(firstRow.value?.childNodes)
-
-//   return {
-//     // gsap,
-//     firstRow,
-//     secondRow,
-//   }
-// },
-// data() {
 const teamMembers = {
   daniel: {
     alt: 'Daniel',
@@ -123,20 +110,15 @@ const teamMembers = {
   },
 }
 
-//   return {
-//     teamMembers,
-//   }
-// },
-// mounted() {
 onMounted(() => {
   slideToLeft(firstRow.value)
   slideToRight(secondRow.value)
 })
-// },
-// methods: {
 function slideToLeft(element: HTMLDivElement | null) {
   if (!element) return
-  const cards = gsap.utils.toArray(element.querySelectorAll('.card'))
+  const cards = gsap.utils.toArray<HTMLDivElement>(
+    element.querySelectorAll('.card'),
+  )
   const loop = horizontalLoop(cards, { repeat: -1 })
 
   gsap.to(loop, {
@@ -149,7 +131,9 @@ function slideToLeft(element: HTMLDivElement | null) {
 }
 function slideToRight(element: HTMLDivElement | null) {
   if (!element) return
-  const cards = gsap.utils.toArray(element.querySelectorAll('.card'))
+  const cards = gsap.utils.toArray<HTMLDivElement>(
+    element.querySelectorAll('.card'),
+  )
   const loop = horizontalLoop(cards, { repeat: -1, reversed: true })
   gsap.to(loop, {
     scrollTrigger: element,
@@ -159,38 +143,42 @@ function slideToRight(element: HTMLDivElement | null) {
     ease: 'none',
   })
 }
-function horizontalLoop(items: unknown[], config: gsap.TweenVars) {
+function horizontalLoop(items: HTMLDivElement[], config: gsap.TweenVars = {}) {
   items = gsap.utils.toArray(items)
-  config = config || {}
-  let tl = gsap.timeline({
-      repeat: config.repeat,
-      paused: config.paused,
-      defaults: { ease: 'none' },
-      onReverseComplete: () => {
-        tl.totalTime(tl.rawTime() + tl.duration() * 100)
-      },
-    }),
-    length = items.length,
-    startX = items[0].offsetLeft,
-    times = [],
-    widths = [],
-    xPercents = [],
-    curIndex = 0,
-    pixelsPerSecond = (config.speed || 1) * 100,
-    snap = config.snap === false ? (v) => v : gsap.utils.snap(config.snap || 1), // some browsers shift by a pixel to accommodate flex layouts, so for example if width is 20% the first element's width might be 242px, and the next 243px, alternating back and forth. So we snap to 5 percentage points to make things look more natural
-    totalWidth,
-    curX,
-    distanceToStart,
-    distanceToLoop,
-    item,
-    i
+  let tl: gsap.core.Timeline = gsap.timeline({
+    repeat: config.repeat,
+    paused: config.paused,
+    defaults: { ease: 'none' },
+    onReverseComplete: () => {
+      tl.totalTime(tl.rawTime() + tl.duration() * 100)
+    },
+  })
+
+  const length: number = items.length
+  const startX: number = items[0].offsetLeft
+  const times: number[] = []
+  const widths: number[] = []
+  const xPercents: number[] = []
+  let curIndex: number = 0
+  const pixelsPerSecond: number = (config.speed || 1) * 100
+  const snap: (v: number) => number =
+    //@ts-expect-error
+    config.snap === undefined ? (v) => v : gsap.utils.snap(config.snap || 1)
+  let totalWidth: number
+  let curX: number
+  let distanceToStart: number
+  let distanceToLoop: number
+  let item: HTMLDivElement
+  let i: number
+
   gsap.set(items, {
-    // convert "x" to "xPercent" to make things responsive, and populate the widths/xPercents Arrays to make lookups faster.
     xPercent: (i, el) => {
-      let w = (widths[i] = parseFloat(gsap.getProperty(el, 'width', 'px')))
+      let w: number = (widths[i] = parseFloat(
+        gsap.getProperty(el, 'width', 'px') as string,
+      ))
       xPercents[i] = snap(
-        (parseFloat(gsap.getProperty(el, 'x', 'px')) / w) * 100 +
-          gsap.getProperty(el, 'xPercent'),
+        (parseFloat(gsap.getProperty(el, 'x', 'px') as string) / w) * 100 +
+          (gsap.getProperty(el, 'xPercent') as number),
       )
       return xPercents[i]
     },
@@ -201,14 +189,15 @@ function horizontalLoop(items: unknown[], config: gsap.TweenVars) {
     (xPercents[length - 1] / 100) * widths[length - 1] -
     startX +
     items[length - 1].offsetWidth *
-      gsap.getProperty(items[length - 1], 'scaleX') +
+      (gsap.getProperty(items[length - 1], 'scaleX') as number) +
+    //@ts-expect-error
     (parseFloat(config.paddingRight) || 0)
   for (i = 0; i < length; i++) {
     item = items[i]
     curX = (xPercents[i] / 100) * widths[i]
     distanceToStart = item.offsetLeft + curX - startX
     distanceToLoop =
-      distanceToStart + widths[i] * gsap.getProperty(item, 'scaleX')
+      distanceToStart + widths[i] * (gsap.getProperty(item, 'scaleX') as number)
     tl.to(
       item,
       {
@@ -235,14 +224,13 @@ function horizontalLoop(items: unknown[], config: gsap.TweenVars) {
       .add('label' + i, distanceToStart / pixelsPerSecond)
     times[i] = distanceToStart / pixelsPerSecond
   }
-  function toIndex(index, vars) {
-    vars = vars || {}
+
+  function toIndex(index: number, vars: any = {}) {
     Math.abs(index - curIndex) > length / 2 &&
-      (index += index > curIndex ? -length : length) // always go in the shortest direction
-    let newIndex = gsap.utils.wrap(0, length, index),
-      time = times[newIndex]
+      (index += index > curIndex ? -length : length)
+    let newIndex: number = gsap.utils.wrap(0, length, index)
+    let time: number = times[newIndex]
     if (time > tl.time() !== index > curIndex) {
-      // if we're wrapping the timeline's playhead, make the proper adjustments
       vars.modifiers = { time: gsap.utils.wrap(0, tl.duration()) }
       time += tl.duration() * (index > curIndex ? 1 : -1)
     }
@@ -250,18 +238,18 @@ function horizontalLoop(items: unknown[], config: gsap.TweenVars) {
     vars.overwrite = true
     return tl.tweenTo(time, vars)
   }
-  tl.next = (vars) => toIndex(curIndex + 1, vars)
-  tl.previous = (vars) => toIndex(curIndex - 1, vars)
+
+  tl.next = (vars: any) => toIndex(curIndex + 1, vars)
+  tl.previous = (vars: any) => toIndex(curIndex - 1, vars)
   tl.current = () => curIndex
-  tl.toIndex = (index, vars) => toIndex(index, vars)
+  tl.toIndex = (index: number, vars: any) => toIndex(index, vars)
   tl.times = times
-  tl.progress(1, true).progress(0, true) // pre-render for performance
+  tl.progress(1, true).progress(0, true)
   if (config.reversed) {
+    //@ts-expect-error
     tl.vars.onReverseComplete()
     tl.reverse()
   }
   return tl
 }
-//   },
-// })
 </script>

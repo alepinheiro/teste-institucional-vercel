@@ -21,13 +21,14 @@
       />
     </div>
     <MissionSection
-      class="py-10 md:pt-20 md:pb-28 lg:pt-32 xl:pt-28 lg:pb-36 xl:pb-36 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
+      class="py-10 pb-20 md:pt-20 md:pb-28 lg:pt-32 xl:pt-28 lg:pb-36 xl:pb-36 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
     />
-    <AboutNumbers class="py-16 xl:py-28" />
-    <Team class="lg:py-28" />
-    <BestExperience class="py-10" />
+    <AboutNumbers class="py-12 md:pt-16 xl:py-28" />
+    <Team class=" md:pt-10 lg:py-28 xl:pb-28" />
+    <BestExperience class="py-10 xl:pb-28" />
     <Testimonials class="py-10" />
-    <BestPlay class="pt-10 mb-10 md:pt-0 lg:pt-14 md:bg-[#181818] lg:bg-[#181818]" />
+    <Editorial class="max-w-xl mx-auto hidden xl:block" />
+    <BestPlay class="bg-[#181818]" />
     <TheFooter />
   </main>
 </template>
@@ -41,6 +42,7 @@ import MissionSection from '@/components/aboutUs/missionSection.component.vue'
 import OurMotivation from '@/components/aboutUs/ourMission.component.vue'
 import Team from '@/components/aboutUs/ourTeam.component.vue'
 import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue'
+import Editorial from '@/components/aboutUs/bestEditorial.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 import { defineComponent } from 'vue'
 import { useHead } from '@vueuse/head'
@@ -57,6 +59,7 @@ export default defineComponent({
     Testimonials,
     BestPlay,
     TheFooter,
+    Editorial,
   },
   data() {
     return {}

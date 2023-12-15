@@ -24,7 +24,7 @@
     </div>
 
     <div
-      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto transition "
+      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-2xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto transition "
     >
       <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button
@@ -35,7 +35,7 @@
               ? 'bg-primary text-white border-primary'
               : 'border-textSecondary text-textSecondary hover:bg-white hover:text-primary',
           ]"
-          class="border-b md:last-of-type:border-0 lg:last-of-type:border-0 xl:last-of-type:border-0 p-4 md:py-8 xl:px-10 md:h-full lg:h-full xl:h-full md:text-xl lg:text-2xl xl:text-2xl w-full text-start transition-all"
+          class="border-b md:last-of-type:border-0 lg:last-of-type:border-0 xl:last-of-type:border-0 p-4 md:py-8 xl:px-10 md:h-full lg:h-full xl:h-full md:text-4xl lg:text-2xl xl:text-2xl w-full text-start transition-all"
           @click="changeActiveImage(index)"
         >
           {{ title }}

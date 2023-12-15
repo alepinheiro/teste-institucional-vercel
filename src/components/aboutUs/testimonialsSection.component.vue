@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="flex flex-col gap-8 md:mx-auto md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto"
+      class="flex flex-col gap-8 lg:gap-16 md:mx-auto md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto"
     >
       <h2
         class="text-xl md:text-4xl lg:text-4xl xl:text-4xl text-primary font-bold px-5 text-center lg:w-2/3 xl:w-2/3 lg:mx-auto xl:mx-auto lg:px-0"
@@ -12,8 +12,8 @@
       <div
         class="md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:gap-2 lg:gap-2 xl:gap-2 md:items-center lg:items-center xl:items-center w-full lg:w-fit md:max-w-[633px] lg:max-w-5xl xl:max-w-5xl md:mx-auto lg:mx-auto xl:mx-auto"
       >
-        <div class="bestExperiencePrev pb-10">
-          <i class="fa-solid fa-chevron-left"></i>
+        <div class="testimonialsPrev hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8">
+          <i class="fa-solid fa-chevron-left w-full h-full"></i>
         </div>
 
         <component
@@ -46,7 +46,7 @@
                 alt=""
                 class="absolute inset-0 -z-10 object-cover m-auto h-32 scale-110"
               />
-              <p class="text-textPrimary md:text-3xl lg:text-3xl xl:text-3xl">
+              <p class="text-textPrimary md:text-3xl lg:text-3xl xl:text-3xl leading-loose">
                 "{{ testimonial }}"
               </p>
             </div>
@@ -61,8 +61,8 @@
           </component>
         </component>
 
-        <div class="bestExperiencePrev pb-10">
-          <i class="fa-solid fa-chevron-right"></i>
+        <div class="testimonialsNext hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8">
+          <i class="fa-solid fa-chevron-right w-full h-full"></i>
         </div>
       </div>
     </div>
@@ -93,22 +93,22 @@ export default defineComponent({
           slidesPerView: 1,
           spaceBetween: 0,
           navigation: {
-            nextEl: '.bestExperienceNext',
-            prevEl: '.bestExperiencePrev',
+            nextEl: '.testimonialsNext',
+            prevEl: '.testimonialsPrev',
           },
         },
         1277: {
           slidesPerView: 1,
           navigation: {
-            nextEl: '.bestExperienceNext',
-            prevEl: '.bestExperiencePrev',
+            nextEl: '.testimonialsNext',
+            prevEl: '.testimonialsPrev',
           },
         },
         1919: {
           slidesPerView: 1,
           navigation: {
-            nextEl: '.bestExperienceNext',
-            prevEl: '.bestExperiencePrev',
+            nextEl: '.testimonialsNext',
+            prevEl: '.testimonialsPrev',
           },
         },
       },

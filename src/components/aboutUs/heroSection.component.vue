@@ -20,7 +20,7 @@
     <div
       class="text-white text-2xl mt-auto pb-12 font-bold px-5 text-center h-3/5 md:h-2/5 flex flex-col justify-center md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
-      <h2 class="text-2xl lg:font-medium xl:font-medium">Temos uma missão grandiosa:</h2>
+      <h2 class="text-2xl md:font-medium lg:font-medium xl:font-medium">Temos uma missão grandiosa:</h2>
       <h1 class="font-darkerGrotesque text-4xl md:text-6xl lg:text-6xl xl:text-6xl xl:w-3/4 xl:mx-auto">
         “Transformar o acesso ao crédito para quem busca sua melhor versão”
       </h1>
