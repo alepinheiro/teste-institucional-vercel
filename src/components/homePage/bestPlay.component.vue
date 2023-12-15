@@ -42,7 +42,7 @@
           />
         </div>
         <div
-          class="hidden h-full md:flex lg:flex xl:flex justify-start md:absolute lg:absolute xl:absolute md:right-0 md:left-[60%] lg:right-[30%] md:top-1/4 md:bottom-0 lg:-bottom-1/2 lg:top-1/3 xl:right-0 lg:left-[44%] xl:left-[47%] -bottom-48 z-0"
+          class="hidden h-full md:flex lg:flex xl:flex justify-start md:absolute lg:absolute xl:absolute md:right-0 md:left-[60%] lg:right-[30%] md:top-1/4 md:bottom-0 lg:-bottom-1/2 lg:top-1/3 xl:right-[25%] lg:left-[44%] xl:left-[47%] -bottom-48 z-0"
         >
           <img
             ref="bestPlayMockupLG"
