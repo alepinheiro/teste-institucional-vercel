@@ -27,7 +27,7 @@
     <Team class=" md:pt-10 lg:py-28 xl:pb-28" />
     <BestExperience class="py-10 xl:pb-28" />
     <Testimonials class="py-10" />
-    <Editorial class="max-w-xl mx-auto hidden xl:block" />
+    <Editorial class="max-w-7xl mx-auto hidden xl:block" />
     <BestPlay class="bg-[#181818]" />
     <TheFooter />
   </main>
