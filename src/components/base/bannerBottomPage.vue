@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <section class="w-full pb-4 bgFooter " >
     <div class="maxWidth flex justify-center sm:h-auto md:h-[200px]">
       <img
@@ -29,7 +29,7 @@
     </div>
   </section>
 </template>
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: "Rodape",
