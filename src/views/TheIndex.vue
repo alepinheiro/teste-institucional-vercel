@@ -23,7 +23,7 @@
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
     <BestPlay
-      class="pt-10 mb-10 md:pt-0 lg:pt-14 md:bg-[#181818] lg:bg-[#181818]"
+      class="bg-[#181818]"
     />
   </main>
   <TheFooter />
