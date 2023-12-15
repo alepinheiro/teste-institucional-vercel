@@ -10,7 +10,7 @@
       </h2>
 
       <div
-        class="md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:gap-2 lg:gap-2 xl:gap-2 md:items-center lg:items-center w-full lg:w-fit md:max-w-[633px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
+        class="md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:gap-2 lg:gap-2 xl:gap-2 md:items-center lg:items-center xl:items-center w-full lg:w-fit md:max-w-[633px] lg:max-w-5xl xl:max-w-5xl md:mx-auto lg:mx-auto xl:mx-auto"
       >
         <div class="bestExperiencePrev pb-10">
           <i class="fa-solid fa-chevron-left"></i>
@@ -19,7 +19,7 @@
         <component
           :is="'swiper-container'"
           v-bind="sliderOptions"
-          class="w-full md:max-w-xl lg:max-w-xl xl:max-w-6xl"
+          class="w-full md:max-w-xl lg:max-w-xl xl:max-w-2xl"
         >
           <component
             :is="'swiper-slide'"
