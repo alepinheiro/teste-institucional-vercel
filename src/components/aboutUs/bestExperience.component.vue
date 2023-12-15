@@ -149,25 +149,25 @@ const cards = [
     title: 'Assessoria personalizada',
     description:
       'Um assessor(a) pronto para entender todas as suas necessidades e adaptar-se a elas. ',
-    image: 'http://unsplash.it/1000/1000?random=0&blur&gravity=center',
+    image: '/images/aboutUs/bestExperience/allan.webp',
   },
   {
     title: 'Um time de especialistas',
     description:
       'Um time de especialistas altamente qualificado e certificado em relação a operação e produto. ',
-    image: 'http://unsplash.it/1000/1000?random=1&blur&gravity=center',
+    image: '/images/aboutUs/bestExperience/bruna.webp',
   },
   {
     title: 'Plataforma multibancos e multiprodutos',
     description:
       'Aqui, você simula apenas uma vez, e tem acesso a mais de 5 produtos, em mais de 20 instituições. ',
-    image: 'http://unsplash.it/1000/1000?random=2&blur&gravity=center',
+    image: '/images/aboutUs/bestExperience/gaspar.webp',
   },
   {
     title: 'Foco no cliente',
     description:
       'Por ter o foco exclusivamente em você, conseguimos entregar as melhores taxas do mercado dentro dos melhores produtos. ',
-    image: 'http://unsplash.it/1000/1000?random=3&blur&gravity=center',
+    image: '/images/aboutUs/bestExperience/gabrielle.webp',
   },
 ]
 </script>

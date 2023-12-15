@@ -24,7 +24,7 @@
     </div>
 
     <div
-      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
+      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto transition "
     >
       <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button

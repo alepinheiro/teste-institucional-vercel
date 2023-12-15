@@ -39,7 +39,7 @@
               </div>
             </div>
             <div
-              class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl lg:rounded-xl xl:rounded-xl"
+              class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl lg:rounded-xl xl:rounded-xl cursor-default"
             >
               <!--  eslint-disable-next-line vue/no-v-html -->
               <span v-html="item.text"></span>

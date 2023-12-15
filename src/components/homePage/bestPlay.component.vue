@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col relative overflow-hidden xl:pt-48">
+  <section class="flex flex-col relative z-0 overflow-hidden xl:pt-48">
     <div class="px-5 md:hidden lg:hidden xl:hidden">
       <img
         src="/images/Home/bestPlayMockupMobile.png"
@@ -8,7 +8,7 @@
         class="mx-auto object-cover"
       />
     </div>
-    <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto z-0">
+    <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
       <div
         class="bg-[#181818] flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 items-center px-5 py-10 text-white md:w-4/6 xl:rounded-xl"
       >
@@ -42,7 +42,7 @@
           />
         </div>
         <div
-          class="hidden h-full md:flex lg:flex xl:flex justify-start md:absolute lg:absolute xl:absolute md:right-0 md:left-[60%] lg:right-[30%] md:top-1/4 md:bottom-0 lg:-bottom-1/2 lg:top-1/3 xl:right-[25%] lg:left-[44%] xl:left-[47%] -bottom-48 z-0"
+          class="hidden h-full md:flex lg:flex xl:flex justify-start md:absolute lg:absolute xl:absolute md:right-0 md:left-[60%] lg:right-[30%] md:top-1/4 md:bottom-0 lg:-bottom-1/2 lg:top-1/3 xl:right-[25%] lg:left-[44%] xl:left-[47%] -bottom-48 z-10"
         >
           <img
             ref="bestPlayMockupLG"
