@@ -81,7 +81,7 @@
             /> -->
           </div>
           <div
-            class="flex flex-col gap-4 p-4 md:p-10 md:my-auto text-textPrimary cursor-default"
+            class="flex flex-col gap-4 p-4 md:p-10 md:my-auto lg:my-auto text-textPrimary cursor-default"
           >
             <h3 class="text-xl font-bold">
               {{ title }}
