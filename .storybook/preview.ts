@@ -76,9 +76,9 @@ const customViewports = {
     },
   },
   xlMin: {
-    name: 'XL - min (1280 x 850px)',
+    name: 'XL - min (1920 x 850px)',
     styles: {
-      width: '1280px',
+      width: '1920px',
       height: '850px',
     },
   },

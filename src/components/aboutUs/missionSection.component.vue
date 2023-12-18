@@ -1,7 +1,7 @@
 <template>
-  <section class="flex flex-col gap-8 lg:gap-10 xl:gap-20 mx-auto">
+  <section class="flex flex-col gap-8 lg:gap-10 xl:gap-20 mx-auto max-h-screen">
     <div
-      class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
+      class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto h-auto"
     >
       <div
         class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5 lg:w-10/12 lg:mx-auto"
@@ -35,24 +35,24 @@
               ? 'bg-primary text-white border-primary'
               : 'border-textSecondary text-textSecondary hover:bg-white hover:text-primary',
           ]"
-          class="border-b md:last-of-type:border-0 lg:last-of-type:border-0 xl:last-of-type:border-0 p-4 md:py-8 xl:px-10 md:h-full lg:h-full xl:h-full md:text-4xl lg:text-2xl xl:text-2xl w-full text-start transition-all"
+          class="border-b md:last-of-type:border-0 lg:last-of-type:border-0 xl:last-of-type:border-0 p-4 md:py-4 xl:px-10 md:h-full lg:h-full xl:h-full md:text-2xl lg:text-2xl xl:text-2xl w-full text-start transition-all"
           @click="changeActiveImage(index)"
         >
           {{ title }}
         </button>
       </div>
       <div
-        class="h-64 lg:flex-1 xl:flex-1 md:h-auto lg:h-128 xl:h-160 relative z-0 overflow-hidden"
+        class="h-64  lg:flex-1 xl:flex-1 relative z-0 overflow-hidden"
       >
         <div
           ref="activeImage"
-          class="h-full p-5 md:p-10 xl:p-10 flex flex-col gap-2 xl:gap-8 md:h-160"
+          class="h-full p-5 md:p-10 xl:p-10 flex flex-col gap-2 xl:gap-8"
         >
           <p class="text-white mt-auto text-sm md:text-2xl xl:text-xl">
             {{ options[activeCard.id].description }}
           </p>
 
-          <div class="flex flex-row justify-between xl:justify-start">
+          <div class="flex flex-row justify-start">
             <a
               :href="$options.information.socialMedia.youtube"
               aria-label="Acesse nosso Youtube"
@@ -60,7 +60,7 @@
               target="_blank"
             >
               <svg
-                class="w-8 md:w-20 h-8 md:h-20 sm:w-6 sm:h-6 mx-2 fill-white"
+                class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
               >
@@ -77,7 +77,7 @@
               target="_blank"
             >
               <svg
-                class="w-8 md:w-20 h-8 md:h-20 sm:w-6 sm:h-6 mx-2 fill-white"
+                class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -94,7 +94,7 @@
               target="_blank"
             >
               <svg
-                class="w-8 md:w-20 h-8 md:h-20 sm:w-6 sm:h-6 mx-2 fill-white"
+                class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
               >
@@ -111,7 +111,7 @@
               target="_blank"
             >
               <svg
-                class="w-8 md:w-20 h-8 md:h-20 sm:w-6 sm:h-6 mx-2 fill-white"
+                class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -128,7 +128,7 @@
               target="_blank"
             >
               <svg
-                class="w-8 md:w-20 h-8 md:h-20 sm:w-6 sm:h-6 mx-2 fill-white"
+                class="w-8 h-8 sm:w-6 sm:h-6 mx-2 fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1080 1080"
               >
