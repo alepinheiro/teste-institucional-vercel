@@ -17,7 +17,7 @@
       </div>
       <HeroSection class="min-h-screen" />
       <OurMotivation
-        class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl md:pb-26 lg:pb-26 xl:pb-26"
+        class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl lg:pb-14"
       />
     </div>
     <MissionSection

@@ -1,5 +1,5 @@
 <template>
-  <section class="text-white flex flex-col gap-8 lg:gap-12">
+  <section class="text-white flex flex-col gap-8 lg:gap-12 xl:h-screen min-h-screen">
     <div
       class="px-5 flex flex-col gap-4 text-center md:max-w-[663px] md:mx-auto lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto"
     >
@@ -12,7 +12,7 @@
       </h2>
     </div>
 
-    <div class="lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto">
+    <div class="lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto m-auto">
       <ul
         class="md:justify-center md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap xl:flex-wrap md:gap-10 lg:gap-10 xl:gap-10 md:mx-auto lg:mx-auto xl:mx-auto md:w-10/12 lg:w-10/12 xl:justify-center"
       >
