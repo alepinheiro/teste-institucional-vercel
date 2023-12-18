@@ -1,9 +1,7 @@
 <template>
-  <section
-    class="flex flex-col gap-7 md:gap-15 max-h-screen h-screen "
-  >
+  <section class="flex flex-col gap-7 max-h-screen h-screen">
     <div
-      class=" h-1/4 flex flex-col items-center justify-center text-center gap-4 px-5 md:px-0 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
+      class="h-1/4 flex flex-col items-center justify-center text-center gap-4 px-5 md:px-0 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
       <!-- <span
         class="font-bold text-complementaryColor1 md:text-2xl lg:text-2xl xl:text-2xl"
@@ -15,7 +13,7 @@
       >
         Um time de profissionais qualificados
       </h2>
-      <p class="lg:w-10/12 xl:w-8/12 xl:text-xl text-textPrimary pb-12 sm:pb-4">
+      <p class="lg:w-10/12 xl:w-8/12 xl:text-xl text-textPrimary">
         A SejaBest conta com um forte time de assessores que estão preparados
         para te ajudar a encontrar uma solução de crédito que se encaixa nas
         suas necessidades.
@@ -23,16 +21,19 @@
     </div>
 
     <div
-      class="relative flex flex-col justify-around gap-5 overflow-hidden  h-3/4"
+      class="relative flex flex-col justify-around gap-5 overflow-hidden h-3/4"
     >
-      <div ref="firstRow" class="flex flex-row gap-5 -ml-24 pr-5 overflow-hidden h-2/5">
+      <div
+        ref="firstRow"
+        class="flex flex-row gap-5 -ml-24 pr-5 overflow-hidden h-2/5"
+      >
         <div
-          v-for="({ alt }, index) in teamMembers"
+          v-for="({ alt }, index) in firstRowMembers"
           :key="alt"
           class="card h-full aspect-square bg-primary flex rounded-md"
         >
           <img
-            :src="`/images/aboutUs/teamMembers/${index}.png`"
+            :src="`/images/aboutUs/teamMembers/${index}.webp`"
             :alt="alt"
             class="w-full h-full object-cover my-auto py-2"
             loading="lazy"
@@ -40,14 +41,17 @@
         </div>
       </div>
 
-      <div ref="secondRow" class="flex flex-row gap-5 -ml-24 pr-5 overflow-hidden h-2/5">
+      <div
+        ref="secondRow"
+        class="flex flex-row gap-5 -ml-24 pr-5 overflow-hidden h-2/5"
+      >
         <div
-          v-for="({ alt }, index) in teamMembers"
+          v-for="({ alt }, index) in secondRowMembers"
           :key="alt"
           class="card h-full aspect-square bg-primary flex rounded-md"
         >
           <img
-            :src="`/images/aboutUs/teamMembers/${index}.png`"
+            :src="`/images/aboutUs/teamMembers/${index}.webp`"
             :alt="alt"
             class="w-full h-full object-cover my-auto py-2"
             loading="lazy"
@@ -67,43 +71,70 @@ gsap.registerPlugin(ScrollTrigger)
 const firstRow = ref<HTMLDivElement | null>(null)
 const secondRow = ref<HTMLDivElement | null>(null)
 
-const teamMembers = {
-  daniel: {
-    alt: 'Daniel',
+const firstRowMembers = {
+  alessandro: {
+    alt: 'Alessandro'
   },
-  bianca: {
-    alt: 'Bianca',
+  alexandre: {
+    alt: 'Alexandre'
   },
-  julia: {
-    alt: 'Julia',
-  },
-  natalia: {
-    alt: 'Natália',
-  },
-  gaspar: {
-    alt: 'Gaspar',
-  },
-  bruna: {
-    alt: 'Bruna',
-  },
-  jaqueline: {
-    alt: 'Jaqueline',
-  },
-  paola: {
-    alt: 'Paola',
-  },
-  estevao: {
-    alt: 'Estevão',
-  },
-  felipe: {
-    alt: 'Felipe',
-  },
-  gabi: {
-    alt: 'Gabrielle',
+  allan: {
+    alt: 'Allan'
   },
   amanda: {
-    alt: 'Amanda',
+    alt: 'Amanda'
   },
+  bianca: {
+    alt: 'Bianca'
+  },
+  bruna: {
+    alt: 'Bruna'
+  },
+  daniel: {
+    alt: 'Daniel'
+  },
+  estevao: {
+    alt: 'Estevão'
+  },
+  felipe: {
+    alt: 'Felipe'
+  },
+  gabrielle: {
+    alt: 'Gabrielle'
+  }
+}
+
+const secondRowMembers = {
+  gaspar: {
+    alt: 'Gaspar'
+  },
+  gesiel: {
+    alt: 'Gesiel'
+  },
+  gustavo: {
+    alt: 'Gustavo'
+  },
+  jaqueline: {
+    alt: 'Jaqueline'
+  },
+  julia: {
+    alt: 'Julia'
+  },
+  mateus: {
+    alt: 'Mateus'
+  },
+  natalia: {
+    alt: 'Natália'
+  },
+  paola: {
+    alt: 'Paola'
+  },
+  savio: {
+    alt: 'Sávio'
+  },
+  vinicius: {
+    alt: 'Vinícius'
+  }
 }
 
 onMounted(() => {
@@ -188,7 +219,8 @@ function horizontalLoop(items: HTMLDivElement[], config: gsap.TweenVars = {}) {
     items[length - 1].offsetWidth *
       (gsap.getProperty(items[length - 1], 'scaleX') as number) +
     //@ts-expect-error
-    (parseFloat(config.paddingRight) || 0) + 20 // 👈 padding
+    (parseFloat(config.paddingRight) || 0) +
+    20 // 👈 padding
   for (i = 0; i < length; i++) {
     item = items[i]
     curX = (xPercents[i] / 100) * widths[i]
