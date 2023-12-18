@@ -87,7 +87,11 @@ export default defineComponent({
       },
       breakpoints: {
         767: {
-          slidesPerView: 2.5,
+          slidesPerView: 1,
+          navigation: {
+            nextEl: '.testimonialsNext',
+            prevEl: '.testimonialsPrev',
+          },
         },
         1021: {
           slidesPerView: 1,

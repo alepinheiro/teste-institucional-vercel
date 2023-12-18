@@ -67,7 +67,7 @@
           class="flex flex-col md:flex-row lg:flex-row rounded-xl w-full border border-[#D9D9D9] mb-12 h-auto"
         >
           <div
-            class="relative w-full h-80 md:h-68 overflow-hidden rounded-t-xl md:rounded-l-xl lg:rounded-l-xl md:rounded-r-none lg:rounded-r-none -z-10"
+            class="relative w-full h-80 md:h-full overflow-hidden rounded-t-xl md:rounded-l-xl lg:rounded-l-xl md:rounded-r-none lg:rounded-r-none -z-10"
           >
             <img
               :src="image"
@@ -118,7 +118,11 @@ const sliderOptions: SwiperOptions = {
   },
   breakpoints: {
     767: {
-      slidesPerView: 2.5,
+      slidesPerView: 1.5,
+      navigation: {
+        nextEl: '.bestExperienceNext',
+        prevEl: '.bestExperiencePrev',
+      },
     },
     1021: {
       slidesPerView: 1,
