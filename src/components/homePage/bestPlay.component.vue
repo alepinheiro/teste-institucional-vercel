@@ -3,7 +3,7 @@
     <div class="h-64 overflow-hidden flex bg-[#EFEFEF]">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
-          class="absolute -left-7 -right-8 top-24 flex md:top-80 md:left-2/3 lg:left-[45%] xl:left-1/2 lg:top-80"
+          class="absolute -left-7 -right-8 top-24 flex md:top-80 md:left-2/3 lg:left-[45%] xl:left-1/2 lg:top-80 xl:top-80"
         >
           <img
             ref="bestPlayMockup"
