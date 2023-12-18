@@ -22,7 +22,7 @@
           'background-color': props.table.backgroundColor,
           padding: props.table.padding,
         }"
-        class="mx-auto w-8/12 sm:w-full flex flex-col items-center rounded-xl px-5 sm:px-0 "
+        class="mx-auto w-8/12 sm:w-full flex flex-col items-center rounded-xl p-5 sm:px-0 "
       >
         <h2
           v-if="props.table.title"
@@ -44,7 +44,7 @@
           Por que financiar com a <b> SejaBest?</b>
         </h2>
 
-        <div class="flex flex-col w-full px-10 sm:px-0 pt-10 text-textPrimary">
+        <div class="flex flex-col w-full px-10 sm:px-5 pt-10 text-textPrimary">
           <div class="flex flex-row w-full items-center">
             <div class="w-1/2"></div>
             <div class="w-1/4 text-center">

@@ -1,9 +1,9 @@
 <template>
-  <section class="flex flex-col xl:h-128 relative z-0 overflow-hidden">
+  <section class="flex flex-col xl:h-[50%] relative z-0 overflow-hidden">
     <div class="h-64 overflow-hidden flex bg-[#EFEFEF]">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
-          class="absolute -left-7 -right-8 top-24 flex md:top-80 md:left-2/3 lg:left-[45%] xl:left-1/2 lg:top-80"
+          class="absolute -left-7 -right-8 top-24 flex md:top-80 md:left-2/3 lg:left-[45%] xl:left-1/2 lg:top-80 xl:top-80"
         >
           <img
             ref="bestPlayMockup"
@@ -15,13 +15,15 @@
         </div>
       </div>
     </div>
+
     <div
       class="md:max-w-2xl md:mx-auto lg:max-w-5xl lg:mx-auto xl:max-w-7xl xl:mx-auto"
     >
       <div class="flex flex-col gap-5 md:w-4/6 py-10 px-5">
         <BestPlayLogo class="h-14 mx-auto md:hidden lg:hidden xl:hidden" />
+
         <div
-          class="flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 text-white"
+          class="flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 text-white py-12"
         >
           <div class="flex flex-col gap-5 lg:w-5/12 xl:w-5/12">
             <h2
@@ -29,6 +31,7 @@
             >
               Conheça o maior canal de crédito do Brasil
             </h2>
+
             <p class="leading-9 xl:text-xl">
               BestPlay é o canal de comunicação da SejaBest no YouTube. Com mais
               de 500 vídeos, nosso canal reúne uma comunidade de mais de 50 mil
@@ -53,6 +56,7 @@
     </div>
   </section>
 </template>
+
 <script lang="ts">
 import BestPlayLogo from '@/components/imagesSVG/logos/bestPlay.component.vue'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
@@ -80,6 +84,7 @@ export default defineComponent({
   methods: {
     translateToTop(element: HTMLDivElement | null) {
       if (!element) return
+
       this.gsap.to(element, {
         scrollTrigger: {
           trigger: element,

@@ -12,7 +12,7 @@
         />
       </router-link>
       <div class="text-center text-sm text-[#ABABAB]">
-        <span class="block">© 2023 SejaBest Fintech de Crédito</span>
+        <span class="block">© {{ new Date().getFullYear() }} SejaBest Fintech de Crédito</span>
         <router-link :to="'/' + $root.utms" class="block hover:text-[#D0FE42]">
           <span> www.seja.best </span>
         </router-link>
