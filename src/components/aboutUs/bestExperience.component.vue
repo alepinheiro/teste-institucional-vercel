@@ -6,7 +6,7 @@
       @closeOverlay="showVideo = false"
     />
     <h2
-      class="text-xl md:text-4xl lg:text-4xl xl:text-4xl text-primary font-bold px-5 text-center"
+      class="text-xl md:text-4xl lg:text-4xl xl:text-4xl text-primary font-bold px-5 text-center pb-12 sm:pb-4"
     >
       Entregando uma experiência Best
     </h2>

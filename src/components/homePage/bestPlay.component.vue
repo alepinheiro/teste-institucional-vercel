@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col xl:h-128 relative z-0 overflow-hidden">
+  <section class="flex flex-col xl:h-[50%] relative z-0 overflow-hidden">
     <div class="h-64 overflow-hidden flex bg-[#EFEFEF]">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
@@ -23,7 +23,7 @@
         <BestPlayLogo class="h-14 mx-auto md:hidden lg:hidden xl:hidden" />
 
         <div
-          class="flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 text-white"
+          class="flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 text-white py-12"
         >
           <div class="flex flex-col gap-5 lg:w-5/12 xl:w-5/12">
             <h2

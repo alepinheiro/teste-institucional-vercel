@@ -13,7 +13,7 @@
       >
         Um time de profissionais qualificados
       </h2>
-      <p class="lg:w-10/12 xl:w-8/12 xl:text-xl text-textPrimary">
+      <p class="lg:w-10/12 xl:w-8/12 xl:text-xl text-textPrimary pb-12 sm:pb-4">
         A SejaBest conta com um forte time de assessores que estão preparados
         para te ajudar a encontrar uma solução de crédito que se encaixa nas
         suas necessidades.
