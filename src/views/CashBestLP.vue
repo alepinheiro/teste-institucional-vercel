@@ -1,13 +1,10 @@
 <template>
-  <main>
+  <main class="bg-[#F1F1F1]">
     <HeroSection />
     <BusinessPartners
-      :props="{
-        backgroundColor: '#F1F1F1',
-        title: 'Maximizamos suas chances de aprovação',
-        description:
-          'Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>',
-      }"
+      title="Maximizamos suas chances de aprovação"
+      inner-text="Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>"
+      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 bg-[#F1F1F1]"
     />
     <ComparisonTable
       :props="{
@@ -40,7 +37,7 @@
 <script lang="ts" setup>
 import { useHead } from '@vueuse/head'
 import HeroSection from '@/components/cashBest/heroSection.component.vue'
-import BusinessPartners from '@/components/base/businessPartners.component.vue'
+import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import AboutUs from '@/components/base/aboutUs.component.vue'
 import Solutions from '@/components/cashBest/solutionsSection.component.vue'

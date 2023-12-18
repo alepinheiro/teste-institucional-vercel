@@ -8,16 +8,9 @@
       <h2
         class="text-primary text-xl md:text-3xl lg:text-5xl xl:text-5xl font-bold"
       >
-        A melhor plataforma multibancos.
+        {{ $props.title }}
       </h2>
-      <p class="text-textPrimary md:text-xl lg:text-xl xl:text-xl">
-        <strong>
-          Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
-          financeiras,
-        </strong>
-        o que pode lhe garantir as melhores taxas e as maiores chances de
-        aprovação, além de um time de especialistas preparado para te atender e
-        te guiar durante todo o processo.
+      <p v-html="$props.innerText" class="text-textPrimary md:text-xl lg:text-xl xl:text-xl">
       </p>
     </div>
     <div class="flex lg:flex-row gap-5 items-center">
@@ -28,7 +21,7 @@
         class="w-5/12 hidden lg:block xl:block opacity-0"
       />
       <ul
-      ref="banks"
+        ref="banks"
         class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto opacity-0"
       >
         <div
@@ -68,6 +61,16 @@ import { gsap } from 'gsap'
 
 export default defineComponent({
   name: 'BusinessPartners',
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    innerText: {
+      type: String,
+      required: true,
+    },
+  },
   setup() {
     gsap.registerPlugin(ScrollTrigger)
     const phone = ref<HTMLDivElement | null>(null)
@@ -185,7 +188,7 @@ export default defineComponent({
   },
   methods: {
     animateElement(element: HTMLDivElement | null) {
-      if(!element) return;
+      if (!element) return
       return gsap.to(element, {
         scrollTrigger: {
           trigger: element,
