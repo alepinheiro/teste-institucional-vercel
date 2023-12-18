@@ -5,10 +5,10 @@
     </div>
 
     <div
-      class="bg-primary rounded-full w-full md:w-5/6 lg:w-4/6 xl:w-4/6 h-44 md:h-64 lg:h-116 absolute top-0 inset-x-0  bottom-1/4 md:bottom-24 -z-20 blur-2xl mt-auto md:mx-auto lg:mx-auto xl:mx-auto"
+      class="bg-primary rounded-full w-full md:w-5/6 lg:w-4/6 xl:w-4/6 h-44 md:h-64 lg:h-116 absolute top-0 inset-x-0  bottom-[10%] md:bottom-24 -z-20 blur-2xl mt-auto md:mx-auto lg:mx-auto xl:mx-auto"
     ></div>
 
-    <picture class="absolute top-0 inset-x-0 bottom-1/4 md:bottom-24 -z-10">
+    <picture class="absolute top-0 inset-x-0 bottom-[10%] md:bottom-24 -z-10">
       <source type="image/png" />
       <img
         src="/images/Home/heroBackground.png"
@@ -18,7 +18,7 @@
     </picture>
 
     <div
-      class="text-white text-2xl mt-auto pb-12 font-bold px-5 text-center h-3/5 md:h-2/5 flex flex-col justify-center md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
+      class="text-white text-2xl mt-auto pb-12 font-bold px-5 text-center h-2/6 md:h-2/5 flex flex-col justify-center md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
       <h2 class="text-2xl md:font-medium lg:font-medium xl:font-medium">Temos uma missão grandiosa:</h2>
       <h1 class="font-darkerGrotesque text-4xl md:text-6xl lg:text-6xl xl:text-6xl xl:w-3/4 xl:mx-auto">
