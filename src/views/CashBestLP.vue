@@ -20,6 +20,7 @@
           titleColor: 'PRIMARY',
         },
       }"
+      class="pb-20"
     />
     <AboutUs
       :cards="{ bgColor: 'SECONDARY' }"

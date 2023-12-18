@@ -18,8 +18,8 @@ import { createMetaManager } from 'vue-meta'
 import { createHead } from '@vueuse/head'
 
 setup((app) => {
-  app.use(createMetaManager())
   app.use(createHead())
+  app.use(createMetaManager())
   app.mixin({
     created() {
       this.$options.imageConfig = image
@@ -76,9 +76,9 @@ const customViewports = {
     },
   },
   xlMin: {
-    name: 'XL - min (1280 x 850px)',
+    name: 'XL - min (1920 x 850px)',
     styles: {
-      width: '1280px',
+      width: '1920px',
       height: '850px',
     },
   },

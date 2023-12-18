@@ -142,9 +142,12 @@ module.exports = {
       56: "14rem",
       60: "15rem",
       64: "16rem",
+      68: "17rem",
+      72: "18rem",
+      76: "19rem",
       80: "20rem",
       84: "21rem",
-      90: "22,2rem",
+      90: "22.2rem",
       96: "24rem",
       97: "24.25rem",
       98: "25rem",
@@ -442,6 +445,7 @@ module.exports = {
       'Sizmo-Pro': ['FF Sizmo Pro', 'sans-serif'],
       'Public-Sans': ['Public Sans', 'sans-serif'],
       'Sizmo': ["Sizmo", "sans-serif"],
+      'darkerGrotesque': ["Darker Grotesque", "sans-serif"],
       'Mulish': ["Mulish", "sans-serif"]
     },
     fontSize: {

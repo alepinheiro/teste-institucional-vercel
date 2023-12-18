@@ -125,7 +125,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/warren',
     name: 'warren',
     component: () => import('@/views/WarrenLandingPage.vue'),
-
+  },
+  {
+    path: '/theindex',
+    name: 'Home - SejaBest',
+    component: () => import('@/views/TheIndex.vue'),
   },
 ]
 

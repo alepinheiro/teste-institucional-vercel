@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import type { ComponentProps } from 'vue-component-type-helpers'
-import ComparisonTable from '@/components/base/comparisonTable.component.vue'
+import ComparisonTable from '../../../components/base/comparisonTable.component.vue'
 
 type CustomProps = ComponentProps<typeof ComparisonTable> & {
   componentBackgroundColor: string
@@ -43,7 +43,7 @@ const meta = {
     setup() {
       return { args }
     },
-    template: '<ComparisonTable :props="args.props" />',
+    template: '<ComparisonTable :props="args.props" class="py-0 md:py-14 lg:py-14 xl:py-14" />',
   }),
 } satisfies Meta<CustomProps>
 
