@@ -15,7 +15,7 @@
           class="absolute right-[85%] bottom-48 opacity-30 -scale-x-100"
         />
       </div>
-      <HeroSection class="min-h-screen" />
+      <HeroSection class="h-[70vh]" />
       <OurMotivation
         class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl lg:pb-14"
       />

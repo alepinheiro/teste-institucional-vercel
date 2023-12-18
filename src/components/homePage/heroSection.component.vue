@@ -13,7 +13,7 @@
     </picture>
 
     <div
-      class="flex flex-col gap-4 items-center mt-auto mx-auto h-full px-5 "
+      class="flex flex-col gap-4 items-center mt-auto mx-auto h-fit px-5 "
     >
       <div class="flex flex-col gap-4 text-center text-white ">
         <h1
