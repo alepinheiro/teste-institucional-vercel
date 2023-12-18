@@ -12,7 +12,9 @@
       <div
         class="md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:gap-2 lg:gap-2 xl:gap-2 md:items-center lg:items-center xl:items-center w-full lg:w-fit md:max-w-[633px] lg:max-w-5xl xl:max-w-5xl md:mx-auto lg:mx-auto xl:mx-auto"
       >
-        <div class="testimonialsPrev hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8">
+        <div
+          class="testimonialsPrev hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8"
+        >
           <i class="fa-solid fa-chevron-left w-full h-full"></i>
         </div>
 
@@ -46,22 +48,30 @@
                 alt=""
                 class="absolute inset-0 -z-10 object-cover m-auto h-32 scale-110"
               />
-              <p class="text-textPrimary md:text-3xl lg:text-3xl xl:text-3xl leading-loose">
+              <p
+                class="text-textPrimary md:text-3xl lg:text-3xl xl:text-3xl leading-loose"
+              >
                 "{{ testimonial }}"
               </p>
             </div>
             <div class="flex flex-col">
-              <span class="text-primary font-bold md:text-xl lg:text-xl xl:text-xl">
+              <span
+                class="text-primary font-bold md:text-xl lg:text-xl xl:text-xl"
+              >
                 {{ name }}
               </span>
-              <span class="text-textSecondary text-sm lg:text-base xl:text-base">
+              <span
+                class="text-textSecondary text-sm lg:text-base xl:text-base"
+              >
                 {{ profissional }} - {{ location }}
               </span>
             </div>
           </component>
         </component>
 
-        <div class="testimonialsNext hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8">
+        <div
+          class="testimonialsNext hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8"
+        >
           <i class="fa-solid fa-chevron-right w-full h-full"></i>
         </div>
       </div>
@@ -85,35 +95,23 @@ export default defineComponent({
       autoplay: {
         delay: 8000,
       },
+      navigation: {
+        nextEl: '.testimonialsNext',
+        prevEl: '.testimonialsPrev',
+      },
       breakpoints: {
         767: {
           slidesPerView: 1,
-          navigation: {
-            nextEl: '.testimonialsNext',
-            prevEl: '.testimonialsPrev',
-          },
         },
         1021: {
           slidesPerView: 1,
           spaceBetween: 0,
-          navigation: {
-            nextEl: '.testimonialsNext',
-            prevEl: '.testimonialsPrev',
-          },
         },
         1277: {
           slidesPerView: 1,
-          navigation: {
-            nextEl: '.testimonialsNext',
-            prevEl: '.testimonialsPrev',
-          },
         },
         1919: {
           slidesPerView: 1,
-          navigation: {
-            nextEl: '.testimonialsNext',
-            prevEl: '.testimonialsPrev',
-          },
         },
       },
     }

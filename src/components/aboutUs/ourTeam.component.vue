@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col gap-7 md:gap-15">
+  <section class="flex flex-col gap-7 md:gap-15 max-h-screen">
     <div
       class="flex flex-col items-center text-center gap-4 px-5 md:px-0 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
@@ -21,16 +21,16 @@
     </div>
 
     <div
-      class="relative flex flex-col gap-5 h-84 md:h-[700px] lg:h-[700px] xl:h-[700px] overflow-hidden"
+      class="relative flex flex-col gap-5 h-84 md:h-116 lg:h-116 xl:h-116 overflow-hidden"
     >
       <div
         ref="firstRow"
-        class="flex flex-row absolute -left-32 md:-left-76 lg:-left-76 xl:-left-76 top-0 overflow-hidden"
+        class="flex flex-row absolute -left-32 md:-left-52 lg:-left-52 xl:-left-52 top-0 overflow-hidden"
       >
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="card h-36 md:h-80 lg:h-80 xl:h-80 w-32 md:w-76 lg:w-76 xl:w-76 bg-primary flex flex-shrink-0 rounded-md mr-5"
+          class="card h-36 md:h-48 lg:h-48 xl:h-48 w-32 md:w-48 lg:w-48 xl:w-48 bg-primary flex flex-shrink-0 rounded-md mr-5"
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
@@ -43,12 +43,12 @@
 
       <div
         ref="secondRow"
-        class="flex flex-row gap-5 absolute h-84 -right-64 md:-right-76 lg:-right-76 xl:-right-76 top-1/2 bottom-0 overflow-hidden"
+        class="flex flex-row gap-5 absolute h-84 -right-64 md:-right-52 lg:-right-52 xl:-right-52 top-1/2 bottom-0 overflow-hidden"
       >
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="card h-36 md:h-80 lg:h-80 xl:h-80 w-32 md:w-76 lg:w-76 xl:w-76 bg-primary flex flex-shrink-0 rounded-md"
+          class="card h-36 md:h-48 lg:h-48 xl:h-48 w-32 md:w-48 lg:w-48 xl:w-48 bg-primary flex flex-shrink-0 rounded-md"
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
