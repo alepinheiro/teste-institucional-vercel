@@ -24,7 +24,7 @@
     </div>
 
     <div
-      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-2xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto transition "
+      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-2xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto transition lg:h-128 xl:h-128"
     >
       <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button
@@ -42,7 +42,7 @@
         </button>
       </div>
       <div
-        class="h-64  lg:flex-1 xl:flex-1 relative z-0 overflow-hidden"
+        class="h-full lg:flex-1 xl:flex-1 relative z-0 overflow-hidden md:w-128 lg:w-128 xl:w-128 aspect-square"
       >
         <div
           ref="activeImage"

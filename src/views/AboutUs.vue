@@ -21,7 +21,7 @@
       />
     </div>
     <MissionSection
-      class="py-10 pb-20 md:pt-20 md:pb-28 lg:pt-32 xl:pt-28 lg:pb-36 xl:pb-36 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
+      class="py-10 pb-20 md:py-14 lg:pt-32 xl:pt-28 lg:pb-36 xl:pb-36 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
     />
     <AboutNumbers class="py-12 md:pt-16 xl:py-28" />
     <Team class=" md:pt-10 lg:py-28 xl:pb-28" />
