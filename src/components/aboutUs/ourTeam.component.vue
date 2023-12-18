@@ -1,7 +1,9 @@
 <template>
-  <section class="flex flex-col gap-7 md:gap-15 max-h-screen">
+  <section
+    class="flex flex-col gap-7 md:gap-15 max-h-screen h-screen "
+  >
     <div
-      class="flex flex-col items-center text-center gap-4 px-5 md:px-0 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
+      class=" h-1/4 flex flex-col items-center justify-center text-center gap-4 px-5 md:px-0 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
       <!-- <span
         class="font-bold text-complementaryColor1 md:text-2xl lg:text-2xl xl:text-2xl"
@@ -21,16 +23,13 @@
     </div>
 
     <div
-      class="relative flex flex-col gap-5 h-84 md:h-116 lg:h-116 xl:h-116 overflow-hidden"
+      class="relative flex flex-col justify-around gap-5 overflow-hidden  h-3/4"
     >
-      <div
-        ref="firstRow"
-        class="flex flex-row absolute -left-32 md:-left-52 lg:-left-52 xl:-left-52 top-0 overflow-hidden"
-      >
+      <div ref="firstRow" class="flex flex-row gap-5 -ml-24 pr-5 overflow-hidden h-2/5">
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="card h-36 md:h-48 lg:h-48 xl:h-48 w-32 md:w-48 lg:w-48 xl:w-48 bg-primary flex flex-shrink-0 rounded-md mr-5"
+          class="card h-full aspect-square bg-primary flex rounded-md"
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
@@ -41,14 +40,11 @@
         </div>
       </div>
 
-      <div
-        ref="secondRow"
-        class="flex flex-row gap-5 absolute h-84 -right-64 md:-right-52 lg:-right-52 xl:-right-52 top-1/2 bottom-0 overflow-hidden"
-      >
+      <div ref="secondRow" class="flex flex-row gap-5 -ml-24 pr-5 overflow-hidden h-2/5">
         <div
           v-for="({ alt }, index) in teamMembers"
           :key="alt"
-          class="card h-36 md:h-48 lg:h-48 xl:h-48 w-32 md:w-48 lg:w-48 xl:w-48 bg-primary flex flex-shrink-0 rounded-md"
+          class="card h-full aspect-square bg-primary flex rounded-md"
         >
           <img
             :src="`/images/aboutUs/teamMembers/${index}.png`"
@@ -124,6 +120,7 @@ function slideToLeft(element: HTMLDivElement | null) {
   gsap.to(loop, {
     scrollTrigger: element,
     x: -element.offsetWidth,
+    paddingRight: 2,
     repeat: -1,
     duration: 20,
     ease: 'none',
@@ -191,7 +188,7 @@ function horizontalLoop(items: HTMLDivElement[], config: gsap.TweenVars = {}) {
     items[length - 1].offsetWidth *
       (gsap.getProperty(items[length - 1], 'scaleX') as number) +
     //@ts-expect-error
-    (parseFloat(config.paddingRight) || 0)
+    (parseFloat(config.paddingRight) || 0) + 20 // 👈 padding
   for (i = 0; i < length; i++) {
     item = items[i]
     curX = (xPercents[i] / 100) * widths[i]
