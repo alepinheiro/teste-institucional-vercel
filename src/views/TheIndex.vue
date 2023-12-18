@@ -33,7 +33,7 @@
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
     <BestPlay
-      class="pt-10 mb-10 md:pt-0 lg:pt-14 md:bg-[#181818] lg:bg-[#181818]"
+      class="bg-[#181818]"
     />
   </main>
   <TheFooter />
@@ -44,7 +44,7 @@ import BestPlay from '@/components/homePage/bestPlay.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import HeroSection from '@/components/homePage/heroSection.component.vue'
-import Mission from '@/components/homePage/missionSection.component.vue'
+import Mission from '@/components/aboutUs/missionSection.component.vue'
 import Products from '@/components/homePage/productsSection.component.vue'
 import SloganSection from '@/components/homePage/sloganSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
