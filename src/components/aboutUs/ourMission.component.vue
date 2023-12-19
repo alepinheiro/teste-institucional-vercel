@@ -34,12 +34,12 @@
               <div
                 class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 md:p-4 lg:p-4 xl:p-4 text-complementaryColor3"
               >
-                <p class="font-bold text-white md:w-3/4">{{ item.title }}</p>
+                <p class="font-bold text-white md:w-3/4 select-none">{{ item.title }}</p>
                 <i class="fa-solid fa-chevron-up"></i>
               </div>
             </div>
             <div
-              class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl lg:rounded-xl xl:rounded-xl cursor-default"
+              class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl lg:rounded-xl xl:rounded-xl cursor-default select-none"
             >
               <!--  eslint-disable-next-line vue/no-v-html -->
               <span v-html="item.text"></span>
@@ -111,6 +111,15 @@ export default defineComponent({
     transform: rotateY(-180deg);
   }
   &:hover {
+    > .front {
+      transform: rotateY(180deg);
+    }
+    > .back {
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+  &:focus {
     > .front {
       transform: rotateY(180deg);
     }

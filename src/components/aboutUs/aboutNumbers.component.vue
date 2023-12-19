@@ -4,7 +4,7 @@
       class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] to-[#EFEFEF] absolute top-0 bottom-1/3 w-full scale-x-105 inset-x-0 -z-10 rounded-xl"
     ></div> -->
     <div
-      class="px-5 lg:px-0 mx-auto flex flex-col md:gap-15 lg:gap-15 xl:flex-row xl:gap-5 items-center"
+      class="px-5 lg:px-0 mx-auto flex flex-col gap-10 md:gap-15 lg:gap-15 xl:flex-row xl:gap-5 items-center"
     >
       <div
         class="text-textPrimary flex flex-col gap-2 md:gap-5 lg:gap-7 xl:gap-7 text-center xl:text-left lg:w-2/3 xl:w-5/12"

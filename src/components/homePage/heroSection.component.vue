@@ -1,7 +1,7 @@
 <template>
   <section class="relative z-0 flex">
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20">
-      <Topbar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
+      <TopBar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
     <picture class="absolute top-0 inset-x-0 bottom-0 -z-10">
       <source type="image/png" />
@@ -13,7 +13,7 @@
     </picture>
 
     <div
-      class="flex flex-col gap-4 items-center mt-auto mx-auto h-full px-5 "
+      class="flex flex-col gap-4 items-center mt-auto mx-auto h-fit px-5 "
     >
       <div class="flex flex-col gap-4 text-center text-white ">
         <h1
@@ -41,12 +41,12 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Topbar from '@/components/structure/topbar.component.vue'
+import TopBar from '@/components/structure/topbar.component.vue'
 import information from '@/configurations/information'
 
 export default defineComponent({
   name: 'HeroSection',
-  components: { Topbar },
+  components: { TopBar },
   data() {
     return {
       information,

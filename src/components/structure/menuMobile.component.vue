@@ -33,7 +33,7 @@
         @click="openProfileMenu = !openProfileMenu"
       >
         <router-link :to="'/' + $root.utms" class="hover:font-semibold">
-          Inicio
+          Início
         </router-link>
         <svg
           v-show="hoverSVG4"
