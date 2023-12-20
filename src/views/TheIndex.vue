@@ -1,6 +1,6 @@
 <template>
   <main class="bg-[#EFEFEF] overflow-hidden">
-    <HeroSection class="bg-bgDarkColor pb-12 h-[70vh]" />
+    <HeroSection class="bg-bgDarkColor pb-12 sm:h-[70vh] h-screen" />
     <Products class="bg-bgDarkColor md:py-10" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
