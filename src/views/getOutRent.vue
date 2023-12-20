@@ -29,6 +29,13 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'GetOutRent',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     BannerCommentsCarousel,
     BannerPackage,

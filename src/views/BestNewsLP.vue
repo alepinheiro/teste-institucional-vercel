@@ -110,10 +110,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({})
-</script>
 
 <style>
 @media (min-width: 1880px) {

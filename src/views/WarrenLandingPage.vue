@@ -23,6 +23,13 @@ import TheFooter from '@/components/warren/theFooter.component.vue'
 
 export default defineComponent({
   name: 'WarrenLandingPage',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     Hero,
     Products,

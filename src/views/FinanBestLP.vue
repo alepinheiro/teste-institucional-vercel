@@ -1,6 +1,6 @@
 <template>
   <main>
-    <HeroSection />
+    <HeroSection :show-menu="showMenu" />
     <BusinessPartners
       :props="{
         backgroundColor: '#FFF',
@@ -48,6 +48,10 @@ import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
 import AboutUs from '@/components/base/aboutUs.component.vue'
 import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
+
+defineProps<{
+  showMenu: boolean
+}>()
 
 useHead({
   title: 'FinanBest: Financie seu imóvel com a assessoria SejaBest',

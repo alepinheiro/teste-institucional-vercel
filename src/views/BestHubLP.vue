@@ -33,7 +33,14 @@ import FaqSection from '@/components/bestHub/faqSection.component.vue'
 import FooterSection from '@/components/bestHub/footerSection.component.vue'
 
 export default defineComponent({
-  name: 'BestProLP',
+  name: 'BestHubLP',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     HeroSection,
     BanksSection,

@@ -1,7 +1,6 @@
 <template>
   <div>
-
-    <TopBarVideo :is-lp="false" />
+    <TopBarVideo :show-menu="showMenu" />
 
     <section class="flex pt-6 maxWidth">
       <div
@@ -10,17 +9,14 @@
         <img
           :src="$options.imageConfig.bestCar.carroNotas"
           alt="Uma mercedez benz branca com cédulas de cem reais ao fundo"
-          class="absolute left-[-4rem] lg:left-[-3rem] md:left-[-4rem] lg:w-[30rem] xl:w-[45rem]
-          md:w-[24rem] sm:hidden max-w-3xl"
+          class="absolute left-[-4rem] lg:left-[-3rem] md:left-[-4rem] lg:w-[30rem] xl:w-[45rem] md:w-[24rem] sm:hidden max-w-3xl"
         />
       </div>
       <div
-        class="sm:w-full sm:text-left mb-auto text-primary xl:ml-24 xl:mt-24 lg:mt-16 md:mt-10 lg:ml-12
-        lg:w-7/12 w-full md:justify-center md:flex md:flex-col"
+        class="sm:w-full sm:text-left mb-auto text-primary xl:ml-24 xl:mt-24 lg:mt-16 md:mt-10 lg:ml-12 lg:w-7/12 w-full md:justify-center md:flex md:flex-col"
       >
         <h1
-          class="sm:pt-20 md:w-full sm:text-center text-5xl md:text-2xl lg:text-4xl sm:text-3xl text-center
-          font-semibold mr-0 flex justify-end md:justify-center lg:justify-center sm:justify-center"
+          class="sm:pt-20 md:w-full sm:text-center text-5xl md:text-2xl lg:text-4xl sm:text-3xl text-center font-semibold mr-0 flex justify-end md:justify-center lg:justify-center sm:justify-center"
         >
           Com o FinanBest você tem:
         </h1>
@@ -28,10 +24,11 @@
       </div>
     </section>
 
-    <section class="bgLigthGrey xl:pt-16 lg:pt-14 md:pt-14 sm:pt-12 pb-18 md:pb-12">
+    <section
+      class="bgLigthGrey xl:pt-16 lg:pt-14 md:pt-14 sm:pt-12 pb-18 md:pb-12"
+    >
       <h1
-        class="xl:text-5xl lg:text-4xl md:text-3xl sm:text-xl text-secondary font-bold text-center xl:mb-16
-        lg:mb-12 md:mb-12 sm:mb-10"
+        class="xl:text-5xl lg:text-4xl md:text-3xl sm:text-xl text-secondary font-bold text-center xl:mb-16 lg:mb-12 md:mb-12 sm:mb-10"
       >
         Passo a passo <span class="text-primary">para financiar seu carro</span>
       </h1>
@@ -54,8 +51,7 @@
       >
         <div class="w-1/2 sm:w-full mb-auto lg:p-4 text-white">
           <h1
-            class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-4xl md:text-3xl sm:text-3xl font-bold mr-0
-            xl:leading-normal"
+            class="xl:w-2/3 lg:w-2/3 md:w-full sm:text-center text-4xl md:text-3xl sm:text-3xl font-bold mr-0 xl:leading-normal"
           >
             Por que fazer um Financiamento de Veículo?
           </h1>
@@ -67,11 +63,10 @@
             linhas de crédito tradicionais.
           </p>
           <div
-            class="p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-complementaryColor1 text-white
-            text-center font-bold uppercase rounded-lg"
+            class="p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-lg"
           >
             <a
-              :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"
+              :href="$options.information.appVehicleSimulator + $root.utms"
               aria-label="Clique aqui para contratar seu financiamento"
               target="_blank"
               >Quero contratar</a
@@ -101,14 +96,12 @@
     </div>
 
     <Rodape />
-
   </div>
-  <FooterComponent  />
+  <FooterComponent />
 </template>
 
 <script lang="ts">
-
-import { defineComponent, ComponentPublicInstance } from 'vue'
+import { defineComponent } from 'vue'
 import TopBarVideo from '@/components/vehicle/BestCarFinan/topBarVideo.vue'
 import CardWhite from '@/components/vehicle/BestCarFinan/cardWhite.vue'
 import StepByStep from '@/components/vehicle/BestCarFinan/stepByStep.vue'
@@ -116,11 +109,15 @@ import CarouselFinan from '@/components/vehicle/BestCarFinan/carouselFinan.vue'
 import ComparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue'
 import Rodape from '@/components/base/bannerBottomPage.vue'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
-
 export default defineComponent({
   name: 'BestCarFinanLP',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     TopBarVideo,
     CardWhite,

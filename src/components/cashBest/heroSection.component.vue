@@ -2,7 +2,10 @@
   <section
     class="bg-bgDarkColor w-full flex py-10 relative min-h-screen sm:pt-0 overflow-hidden z-0"
   >
-    <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-10">
+    <div
+      v-if="showMenu"
+      class="absolute inset-x-0 h-fit top-0 flex justify-center z-10"
+    >
       <Topbar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
 
@@ -58,7 +61,11 @@
 import Topbar from '@/components/structure/topbar.component.vue'
 import VideoButton from '@/components/bestHub/videoButton.component.vue'
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
-import information from '@/configurations/information';
+import information from '@/configurations/information'
+
+defineProps<{
+  showMenu: boolean
+}>()
 
 const sliderProps = {
   minimumValue: 50000,

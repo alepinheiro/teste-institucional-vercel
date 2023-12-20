@@ -40,6 +40,10 @@ import Topbar from '@/components/structure/topbar.component.vue'
 import information from '@/configurations/information';
 import { ref } from 'vue';
 
+defineProps<{
+  showMenu: boolean
+}>()
+
 const sliderProps = {
   minimumValue: 50000,
   maximumValue: 30000000,

@@ -2,7 +2,7 @@
   <div class="w-full bg-bglightColor">
 
     <section class="w-full gradienteSB">
-      <div class="maxWidth">
+      <div v-if="showMenu" class="maxWidth">
         <TopbarComponent position="relative" />
       </div>
       <div class="maxWidth ">
@@ -41,6 +41,13 @@ import TopbarComponent from '@/components/structure/topbar.component.vue'
 
 export default defineComponent({
   name: 'Help',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: { Questions, TopbarComponent },
   data() {
     return {

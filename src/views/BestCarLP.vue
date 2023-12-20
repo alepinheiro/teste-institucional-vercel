@@ -1,7 +1,6 @@
 <template>
   <div>
-    <!-- // eslint-disable-next-line vue/attribute-hyphenation -->
-    <headVideo :hide-menu="true" />
+    <headVideo :show-menu="showMenu" />
     <div class="gradientPrimaryToSecondary">
       <section2 />
       <section3 />
@@ -21,6 +20,13 @@ import section4 from '@/components/vehicle/BestCarLP/section4.vue'
 import rodape from '@/components/base/bannerBottomPage.vue'
 
 export default defineComponent({
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   name: 'BestCarLP',
   components: {
     headVideo,
@@ -31,4 +37,3 @@ export default defineComponent({
   },
 })
 </script>
-<style></style>
