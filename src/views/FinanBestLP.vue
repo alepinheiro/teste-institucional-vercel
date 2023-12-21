@@ -18,7 +18,6 @@
         table: {
           backgroundColor: '#EFEFEF',
           titleColor: 'TEXTPRIMARY',
-          padding: '2.5rem'
         },
       }"
       class="py-10"

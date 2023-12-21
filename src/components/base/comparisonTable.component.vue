@@ -22,7 +22,7 @@
           'background-color': props.table.backgroundColor,
           padding: props.table.padding,
         }"
-        class="mx-auto w-8/12 sm:w-full flex flex-col items-center rounded-xl p-5 sm:px-0 "
+        class="mx-auto w-8/12 sm:w-full flex flex-col items-center rounded-xl pt-5 sm:px-0 "
       >
         <h2
           v-if="props.table.title"
@@ -39,7 +39,7 @@
             'text-textPrimary': props.table.titleColor === 'TEXTPRIMARY',
             'text-primary': props.table.titleColor === 'PRIMARY',
           }"
-          class="text-4xl sm:text-2xl sm:text-center sm:w-8/12 sm:mx-auto"
+          class="text-4xl sm:text-2xl sm:text-center sm:w-full sm:mx-auto"
         >
           Por que financiar <br> com a <b> SejaBest?</b>
         </h2>
