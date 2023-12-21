@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col gap-8 lg:gap-10 xl:gap-20 mx-auto max-h-screen">
     <div
-      class="text-center flex flex-col gap-4 lg:gap-5 xl:gap-5 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto h-auto"
+      class="text-center flex flex-col gap-4 lg:gap-1 xl:gap-1 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto h-auto"
     >
       <div
         class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5 lg:w-10/12 lg:mx-auto"

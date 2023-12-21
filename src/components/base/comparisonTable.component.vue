@@ -31,7 +31,7 @@
             'text-primary': props.table.titleColor === 'PRIMARY',
           }"
           class="text-4xl sm:text-2xl sm:text-center sm:mx-auto"
-          v-html="props.table.title"
+          v-html="props.table.title.replace(/\s([^\s<]+)\s*$/,'\u00A0$1')"
         ></h2>
         <h2
           v-else
@@ -41,7 +41,7 @@
           }"
           class="text-4xl sm:text-2xl sm:text-center sm:w-8/12 sm:mx-auto"
         >
-          Por que financiar com a <b> SejaBest?</b>
+          Por que financiar <br> com a <b> SejaBest?</b>
         </h2>
 
         <div class="flex flex-col w-full px-10 sm:px-5 pt-10 text-textPrimary">

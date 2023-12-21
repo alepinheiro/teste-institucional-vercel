@@ -1,24 +1,26 @@
 <template>
   <section
-    class="flex flex-col gap-10 md:gap-8 lg:gap-8 xl:gap-8 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
+    class="flex flex-col gap-10 md:gap-8 lg:gap-8 xl:gap-12 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
   >
     <div
-      class="flex flex-col text-center gap-2 lg:gap-5 xl:gap-5 xl:w-8/12 xl:mx-auto"
+      class="flex flex-col text-center gap-2 lg:gap-5 xl:gap-5 xl:w-full xl:mx-auto"
     >
       <h2
-        class="text-primary text-xl md:text-3xl lg:text-5xl xl:text-5xl font-bold"
+        class="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold"
       >
-        {{ $props.title }}
+        {{ $props.title.replace(/\s([^\s<]+)\s*$/,'\u00A0$1') }}
       </h2>
-      <p v-html="$props.innerText" class="text-textPrimary md:text-xl lg:text-xl xl:text-xl">
-      </p>
+      <p
+        v-html="$props.innerText"
+        class="text-textPrimary md:text-xl lg:text-xl xl:text-xl"
+      ></p>
     </div>
-    <div class="flex lg:flex-row gap-5 items-center">
+    <div class="flex gap-8 items-center w-fit mx-auto">
       <img
         ref="phone"
         src="/images/Home/simulatorOnPhoneMockup.png"
         alt="A melhor plataforma multibancos."
-        class="h-128 hidden lg:block xl:block opacity-0"
+        class="h-160 hidden lg:block xl:block opacity-0"
       />
       <ul
         ref="banks"
@@ -37,7 +39,7 @@
                 ? 'w-auto bg-[#DADADA]'
                 : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#DADADA] to-transparent w-24',
             ]"
-            class="text-ellipsis rounded px-2 md:py-3 lg:py-3 xl:py-3"
+            class="text-ellipsis rounded px-2 py-1 md:py-3 lg:py-3 xl:py-3"
           >
             <img
               v-if="image"
