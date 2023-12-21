@@ -8,20 +8,20 @@
       <img
         src="/images/Home/heroBackground.png"
         alt="A melhor fintech de Crédito do Brasil"
-        class="object-cover h-full w-full"
+        class="object-cover h-full w-full sm:object-left"
       />
     </picture>
 
     <div
       class="flex flex-col gap-4 items-center mt-auto mx-auto h-fit px-5 "
     >
-      <div class="flex flex-col gap-4 text-center text-white w-2/3 mx-auto md:w-full lg:w-full xl:w-full">
+      <div class="flex flex-col gap-4 text-center text-white w-11/12 mx-auto md:w-full lg:w-full xl:w-full ">
         <h1
-          class="  font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-darkerGrotesque leading-7 tracking-normal md:tracking-wide lg:tracking-wide xl:tracking-wide"
+          class=" font-bold text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-darkerGrotesque leading-7 tracking-wide"
         >
           A melhor fintech de Crédito do Brasil
         </h1>
-        <h2 class="text-xl md:text-2xl lg:text-2xl xl:text-2xl">
+        <h2 class="text-2xl md:text-2xl lg:text-2xl xl:text-2xl">
           Sem
           <b> filas. </b>
           Sem
