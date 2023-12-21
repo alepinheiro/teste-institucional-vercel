@@ -22,31 +22,29 @@
         class="absolute flex sm:top-18 md:top-48 lg:top-1/3 top-1/3 inset-x-0"
       />
       <div
-        class="flex flex-row md:flex-col sm:flex-col mt-auto items-end justify-between w-full gap-3 sm:mt-40"
+        class="flex flex-row md:flex-col sm:flex-col mt-auto items-center justify-between w-full gap-4 lg:gap-12 xl:gap-12 sm:mt-40"
       >
         <div
-          class="w-7/12 md:w-full sm:w-full flex-grow flex flex-col gap-3 text-white"
+          class="w-full lg:w-1/2 flex-grow flex flex-col gap-3 text-white"
         >
-          <h1 class="text-5xl sm:text-3xl md:text-4xl font-bold leading-snug">
+          <h1 class="text-4xl sm:text-3xl md:text-4xl font-bold leading-snug">
             <span
               class="relative z-0 after:absolute after:bg-secondary after:-inset-0.5 after:content-[''] after:-z-10 mr-2"
             >
               CashBest:
             </span>
-            o Crédito com Garantia de Imóvel da SejaBest
+            <br class="hidden lg:block">
+            {{'o Crédito com Garantia de Imóvel da SejaBest'.replace(/\s([^\s<]+)\s*$/,'\u00A0$1')}}
           </h1>
-          <p class="sm:text-justify text-base">
-            Descubra as melhores taxas do mercado: a partir de 1.09% a.m. + IPCA
-            ou 1.49% a.m. fixa.
+          <p class="sm:text-justify text-xl">
+            Taxas a partir de 1.02% a.m + IPCA ou 1.49% a.m Fixa.
             <b>
-              Com a possibilidade de liberar até 60% do valor do seu imóvel como
-              capital
+              Libere até 60% do valor do seu imóvel como capital,
             </b>
-            para usar como desejar, e ainda contar com um prazo de até 20 anos
-            para pagamento.
+            use como quiser com até 240X para pagar.
           </p>
         </div>
-        <div class="w-5/12 md:w-full sm:w-full flex-grow">
+        <div class="lg:w-1/2 w-full flex-grow">
           <InputWithSlider :props="sliderProps" @submit="openSimulation" />
         </div>
       </div>

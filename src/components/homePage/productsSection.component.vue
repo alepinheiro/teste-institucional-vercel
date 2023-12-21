@@ -15,7 +15,7 @@
         />
       </div>
       <div
-        class="flex flex-col gap-5 md:gap-3 lg:gap-3 xl:gap-3 text-white xl:px-0 text-center lg:text-left xl:text-left lg:w-7/12 xl:w-1/2"
+        class="flex flex-col gap-5 md:gap-3 lg:gap-3 xl:gap-3 text-white xl:px-0 text-center lg:text-left xl:text-left w-2/3 lg:w-7/12 xl:w-1/2 mx-auto"
       >
         <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold">
           Como podemos ajudar você ou seu negócio?

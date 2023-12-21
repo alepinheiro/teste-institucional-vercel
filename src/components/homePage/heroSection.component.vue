@@ -15,9 +15,9 @@
     <div
       class="flex flex-col gap-4 items-center mt-auto mx-auto h-fit px-5 "
     >
-      <div class="flex flex-col gap-4 text-center text-white ">
+      <div class="flex flex-col gap-4 text-center text-white w-2/3 mx-auto md:w-full lg:w-full xl:w-full">
         <h1
-          class="font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-darkerGrotesque leading-7 tracking-normal md:tracking-wide lg:tracking-wide xl:tracking-wide"
+          class="  font-bold text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-darkerGrotesque leading-7 tracking-normal md:tracking-wide lg:tracking-wide xl:tracking-wide"
         >
           A melhor fintech de Crédito do Brasil
         </h1>
