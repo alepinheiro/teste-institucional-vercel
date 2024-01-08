@@ -1,16 +1,16 @@
 <template>
   <section class="flex flex-col xl:h-[50%] relative z-0 overflow-hidden">
-    <div class="h-64 overflow-hidden flex bg-[#EFEFEF]">
+    <div class="h-64 overflow-hidden flex bg-[#EFEFEF] xl:h-8">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
-          class="absolute -left-7 -right-8 top-24 flex md:top-80 md:left-2/3 lg:left-[45%] xl:left-1/2 lg:top-80 xl:top-80"
+          class="absolute -left-7 -right-8 top-24 flex md:top-80 md:left-2/3 lg:left-[35%] xl:left-[45%] lg:top-116 xl:top-40"
         >
           <img
             ref="bestPlayMockup"
             src="/images/Home/bestPlayMockup.png"
             alt="Conheça o maior canal de crédito do Brasil"
             loading="lazy"
-            class="w-auto h-[44rem] object-cover object-left-top"
+            class="w-auto h-[44rem] md:h-[54rem] lg:h-[54rem] xl:h-[54rem] object-cover object-left-top"
           />
         </div>
       </div>
@@ -25,7 +25,7 @@
         <div
           class="flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 text-white py-12"
         >
-          <div class="flex flex-col gap-5 lg:w-5/12 xl:w-5/12">
+          <div class="flex flex-col gap-5 lg:w-1/3 xl:w-1/3 xl:h-128 justify-center">
             <h2
               class="text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
             >

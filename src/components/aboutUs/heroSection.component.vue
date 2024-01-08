@@ -16,7 +16,7 @@
       <img
         src="/images/Home/heroBackground.png"
         alt="A melhor fintech de Crédito do Brasil"
-        class="object-cover h-full w-full"
+        class="object-cover h-full w-full sm:object-left"
       />
     </picture>
 

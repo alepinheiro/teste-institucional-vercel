@@ -18,12 +18,11 @@
         table: {
           backgroundColor: '#EFEFEF',
           titleColor: 'TEXTPRIMARY',
-          padding: '2.5rem'
         },
       }"
       class="py-10"
     />
-    <VideoSection :youtube-video-id="'Mlg8eDX61uE'" />
+    <VideoSection :youtube-video-id="'Mlg8eDX61uE'" class="lg:pt-20 xl:pt-20" />
     <StepsSection />
 
 

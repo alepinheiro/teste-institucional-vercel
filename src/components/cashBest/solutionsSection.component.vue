@@ -1,6 +1,8 @@
 <template>
   <section class="py-20 bg-[#EFEFEF]">
-    <div class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-col gap-14 px-5 sm:px-0">
+    <div
+      class="xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-col gap-14 px-5 sm:px-0"
+    >
       <div class="text-center flex flex-col gap-5 sm:px-5">
         <h2 class="text-4xl sm:text-2xl leading-snug font-bold text-primary">
           <span
@@ -8,7 +10,12 @@
           >
             Feito para você:
           </span>
-          com o CashBest, você decide como vai usar seu dinheiro.
+          {{
+            'com o CashBest, você decide como vai usar seu dinheiro.'.replace(
+              /\s([^\s<]+)\s*$/,
+              '\u00A0$1',
+            )
+          }}
         </h2>
         <p class="text-textPrimary text-base">
           <b>Aqui, o capital liberado é sua ferramenta multiúso.</b>
@@ -32,7 +39,9 @@
           <div
             class="w-full flex h-full bg-gradient-to-t from-black via-transparent to-transparent p-6 md:p-3 sm:p-3"
           >
-            <h3 class="text-white text-xl sm:text-lg font-bold w-1/2 md:w-full mt-auto sm:leading-5">
+            <h3
+              class="text-white text-xl sm:text-lg font-bold w-1/2 md:w-full mt-auto sm:leading-5"
+            >
               {{ title }}
             </h3>
           </div>

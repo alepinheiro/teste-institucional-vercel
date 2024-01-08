@@ -20,8 +20,8 @@
             class="object-contain h-14 mx-auto"
           />
         </div>
-        <div class="w-full">
-          <h2 class="text-4xl sm:text-2xl font-bold text-white text-center">
+        <div class="w-full xl:w-2/3">
+          <h2 class="text-4xl sm:text-xl font-bold text-white text-center">
             Há mais de 10 anos transformamos o acesso ao crédito para quem busca
             sua melhor versão.
           </h2>

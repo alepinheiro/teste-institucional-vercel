@@ -17,7 +17,7 @@
       </div>
       <HeroSection :show-menu="showMenu" class="sm:h-[70vh] h-screen" />
       <OurMotivation
-        class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl lg:pb-14"
+        class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl pb-10 lg:pb-14"
       />
     </div>
     <MissionSection

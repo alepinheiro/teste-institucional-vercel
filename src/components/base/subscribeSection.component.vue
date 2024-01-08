@@ -1,19 +1,25 @@
 <template>
   <section
-  :class="{
-    'bg-primary': component.bgColor === 'PRIMARY',
-    'bg-secondary': component.bgColor === 'SECONDARY',
-    'bg-bgDarkColor': component.bgColor === 'BGDARKCOLOR',
-  }"
-  class="w-full pt-10 md:py-10 lg:py-20 sm:py-20 bg-bgDarkColor">
+    :class="{
+      'bg-primary': component.bgColor === 'PRIMARY',
+      'bg-secondary': component.bgColor === 'SECONDARY',
+      'bg-bgDarkColor': component.bgColor === 'BGDARKCOLOR',
+    }"
+    class="w-full pt-10 md:py-10 lg:py-20 sm:py-20 bg-bgDarkColor"
+  >
     <div
       class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full flex flex-col gap-12"
     >
       <div class="text-white text-center flex flex-col gap-4 w-10/12 mx-auto">
         <h2 class="text-4xl sm:text-2xl font-bold">
-          Simule agora completamente de graça.
+          {{
+            'Simule agora completamente de graça.'.replace(
+              /\s([^\s<]+)\s*$/,
+              '\u00A0$1',
+            )
+          }}
         </h2>
-        <p class="text-base leading-loose">
+        <p class="text-base">
           <b>
             Simule gratuitamente em mais de 20 bancos e encontre a melhor opção
             de crédito para suas necessidades.</b
@@ -44,7 +50,7 @@ import SimulationForm from '@/components/base/forms/startSimulation.component.vu
 defineProps<{
   component: {
     bgColor: 'PRIMARY' | 'SECONDARY' | 'BGDARKCOLOR'
-  },
+  }
   form: {
     showRealtyValue: boolean
   }

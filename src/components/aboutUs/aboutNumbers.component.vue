@@ -9,7 +9,7 @@
       <div
         class="text-textPrimary flex flex-col gap-2 md:gap-5 lg:gap-7 xl:gap-7 text-center xl:text-left lg:w-2/3 xl:w-5/12"
       >
-        <h2 class="text-xl md:text-4xl lg:text-4xl xl:text-3xl font-bold">
+        <h2 class="text-base md:text-4xl lg:text-4xl xl:text-3xl font-bold">
           Há mais de 10 anos transformamos o acesso ao crédito
         </h2>
         <p class="text-sm md:text-xl lg:text-xl xl:text-xl">
