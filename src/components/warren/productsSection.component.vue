@@ -171,6 +171,29 @@ export default defineComponent({
   },
   data() {
     const slides = [
+     {
+        id: 'card-credito-com-garantia-de-imovel',
+        title: 'Crédito com Garantia de Imóvel',
+        description:
+          'Use seu imóvel quitado como garantia para conseguir crédito.',
+        options: [
+          {
+            id: 1,
+            icon: 'percent',
+            description: 'Taxas a partir de <b>1,09% a.m.</b> + indexadores.',
+          },
+          {
+            id: 2,
+            icon: 'calendar',
+            description: 'Escolha o prazo: pague em até <b>240 meses.</b>',
+          },
+          {
+            id: 3,
+            icon: 'dollarSign',
+            description: 'Até <b>60% do valor</b> do imóvel como capital.',
+          },
+        ],
+      },
       {
         id: 'card-financiamento-imobiliario',
         title: 'Financiamento Imobiliário',
@@ -194,29 +217,7 @@ export default defineComponent({
           },
         ],
       },
-      {
-        id: 'card-credito-com-garantia-de-imovel',
-        title: 'Crédito com Garantia de Imóvel',
-        description:
-          'Use seu imóvel quitado como garantia para conseguir crédito.',
-        options: [
-          {
-            id: 1,
-            icon: 'percent',
-            description: 'Taxas a partir de <b>1,09% a.m.</b> + indexadores.',
-          },
-          {
-            id: 2,
-            icon: 'calendar',
-            description: 'Escolha o prazo: pague em até <b>240 meses.</b>',
-          },
-          {
-            id: 3,
-            icon: 'dollarSign',
-            description: 'Até <b>60% do valor</b> do imóvel como capital.',
-          },
-        ],
-      },
+      
       {
         id: 'credito-com-garantia-de-veiculo',
         title: 'Crédito com Veículo de garantia',

@@ -122,6 +122,25 @@ const sliderOptions: SwiperOptions = {
 
 const steps = [
   {
+    title: 'Crédito com Garantia de Imóvel',
+    description: 'Use seu imóvel quitado como garantia para conseguir crédito.',
+    features: [
+      {
+        icon: markRaw(PercentIcon),
+        text: 'Taxas a partir de <b>1,09% a.m.</b> + indexadores.',
+      },
+      {
+        icon: markRaw(CalendarIcon),
+        text: 'Escolha o prazo: pague em até <b>240 meses.</b>',
+      },
+      {
+        icon: markRaw(DollarSignIcon),
+        text: 'Até <b>60% do valor</b> do imóvel como capital.',
+      },
+    ],
+    moreInformation: '/home-equity',
+  },
+  {
     title: 'Financiamento Imobiliário',
     description:
       'Financie seu imóvel com as melhores taxas e os melhores prazos.',
@@ -141,25 +160,7 @@ const steps = [
     ],
     moreInformation: '/financiamento-imobiliario',
   },
-  {
-    title: 'Crédito com Garantia de Imóvel',
-    description: 'Use seu imóvel quitado como garantia para conseguir crédito.',
-    features: [
-      {
-        icon: markRaw(PercentIcon),
-        text: 'Taxas a partir de <b>1,09% a.m.</b> + indexadores.',
-      },
-      {
-        icon: markRaw(CalendarIcon),
-        text: 'Escolha o prazo: pague em até <b>240 meses.</b>',
-      },
-      {
-        icon: markRaw(DollarSignIcon),
-        text: 'Até <b>60% do valor</b> do imóvel como capital.',
-      },
-    ],
-    moreInformation: '/home-equity',
-  },
+  
   {
     title: 'Crédito com Veículo de garantia',
     description: 'Use seu carro, caminhão ou utilitário como garantia.',
