@@ -1,6 +1,6 @@
 <template>
   <main class="bg-[#F1F1F1]">
-    <HeroSection />
+    <HeroSection :show-menu="showMenu" />
     <BusinessPartners
       title="Maximizamos suas chances de aprovação"
       inner-text="Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>"
@@ -45,6 +45,11 @@ import Steps from '@/components/cashBest/stepsSection.component.vue'
 import TheProduct from '@/components/cashBest/theProduct.component.vue'
 import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
+
+defineProps<{
+  showMenu: boolean
+}>()
+
 useHead({
   title: 'CashBest: o Crédito com Garantia de Imóvel da SejaBest',
   meta: [

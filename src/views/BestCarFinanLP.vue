@@ -1,6 +1,6 @@
 <template>
   <div>
-    <topBarVideo :hide-menu="true" />
+    <topBarVideo :show-menu="showMenu" />
 
     <section class="flex pt-6 maxWidth maxWidthNone">
       <div class="w-5/12 mb-auto mt-16 xl:mt-6 md:mt-10 sm:w-full sm:hidden">
@@ -111,11 +111,16 @@ import Carousel from '@/components/vehicle/BestCarLP/carousel.vue'
 import comparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue'
 import Rodape from '@/components/base/bannerBottomPage.vue'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
 export default defineComponent({
   name: 'BestCarFinanLP',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     topBarVideo,
     CardWhite,

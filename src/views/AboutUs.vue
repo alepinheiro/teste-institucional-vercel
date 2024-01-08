@@ -15,7 +15,7 @@
           class="absolute right-[85%] bottom-48 opacity-30 -scale-x-100"
         />
       </div>
-      <HeroSection class="sm:h-[70vh] h-screen" />
+      <HeroSection :show-menu="showMenu" class="sm:h-[70vh] h-screen" />
       <OurMotivation
         class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl pb-10 lg:pb-14"
       />
@@ -24,7 +24,7 @@
       class="py-10 pb-20 md:py-14 lg:pt-32 xl:pt-28 lg:pb-36 xl:pb-36 px-5 border-b-8 border-primary shadow-[#0C0A7030] shadow-xl"
     />
     <AboutNumbers class="py-12 md:py-16 xl:py-28" />
-    <Team class=" py-10" />
+    <Team class="py-10" />
     <BestExperience class="py-10 xl:pb-28" />
     <Testimonials class="py-10" />
     <Editorial class="max-w-7xl mx-auto hidden xl:block" />
@@ -49,6 +49,13 @@ import { useHead } from '@vueuse/head'
 
 export default defineComponent({
   name: 'AboutUs',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     HeroSection,
     OurMotivation,

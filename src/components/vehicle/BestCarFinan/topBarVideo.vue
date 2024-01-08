@@ -3,7 +3,7 @@
     <!-- 🖥️ Desktop -->
     <div class="bgFinanCar sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen">
-        <TopbarComponent class="relative" :class="{ hidden: hideMenu }" />
+        <TopbarComponent v-if="showMenu" class="relative" />
         <section class="maxWidth xl:h-screen lg:h-screen sm:hidden md:hidden">
           <div class="w-full flex pt-12 pt-xxl lg:pt-24 md:pt-8 sm:pt-4">
             <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
@@ -41,7 +41,10 @@
                         class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
                       >
                         <a
-                          :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"
+                          :href="
+                            $options.information.appVehicleSimulator +
+                            $root.utms
+                          "
                           style="text-decoration: none"
                           aria-label="Clique aqui para simular seu financiamento"
                           target="_blank"
@@ -65,7 +68,7 @@
     <!-- 🧮 Tablet -->
     <div class="sm:hidden xl:hidden lg:hidden">
       <div class="maxWidth bg-primary">
-        <TopbarComponent class="relative" />
+        <TopbarComponent v-if="showMenu" class="relative" />
         <section class="w-full flex justify-center items-center pt-6">
           <div
             class="w-10/12 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6"
@@ -73,11 +76,11 @@
             <div>
               <div class="text-5xl titleFontBold pt-2 text-white pb-6">
                 <h1 class="textDecoration pb-1 italic text-white flex w-48">
-                    FinanBest
-                  </h1>
-                  <h1 class="text-4xl titleFontBold pt-2 text-white">
-                    Financiamento veicular da SejaBest
-                  </h1>
+                  FinanBest
+                </h1>
+                <h1 class="text-4xl titleFontBold pt-2 text-white">
+                  Financiamento veicular da SejaBest
+                </h1>
               </div>
               <p class="text-white pb-6 text-lg">
                 Escolha o carro, novo ou usado, e financie até 100% do valor.
@@ -119,7 +122,9 @@
                     class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
                   >
                     <a
-                      :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"
+                      :href="
+                        $options.information.appVehicleSimulator + $root.utms
+                      "
                       style="text-decoration: none"
                       target="_blank"
                       aria-label="Clique aqui para simular seu financiamento"
@@ -137,7 +142,7 @@
     <!-- 📱 Mobile-->
     <div class="xl:hidden lg:hidden md:hidden">
       <div class="maxWidth bg-primary">
-        <TopbarComponent position="relative" />
+        <TopbarComponent v-if="showMenu" position="relative" />
         <section class="w-full">
           <div
             class="py-8 bg-secondary sm:py-4 p-6 mt-4 rounded-lg shadow-md w-full"
@@ -145,13 +150,13 @@
             <div class="rounded-xl w-full">
               <div class="text-4xl titleFontBold text-white pb-2">
                 <h1 class="textDecoration pb-1 italic text-white flex w-36">
-                    FinanBest
-                  </h1>
-                  <h1 class="text-2xl titleFontBold pt-2 text-white">
-                    Financiamento veicular da SejaBest
-                  </h1>
+                  FinanBest
+                </h1>
+                <h1 class="text-2xl titleFontBold pt-2 text-white">
+                  Financiamento veicular da SejaBest
+                </h1>
               </div>
-              <p class="text-white pb-6 ">
+              <p class="text-white pb-6">
                 Escolha o carro, novo ou usado, e financie até 100% do valor.
                 Faça uma simulação agora e veja como ficam as parcelas.
               </p>
@@ -190,7 +195,9 @@
                       class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
                     >
                       <a
-                        :href="$options.information.appVehicleSimulator+($root as IRootExtension).utms"
+                        :href="
+                          $options.information.appVehicleSimulator + $root.utms
+                        "
                         style="text-decoration: none"
                         aria-label="Clique aqui para simular seu financiamento"
                         target="_blank"
@@ -209,11 +216,8 @@
 </template>
 
 <script lang="ts">
-import { ComponentPublicInstance, defineComponent } from 'vue'
+import { defineComponent } from 'vue'
 import TopbarComponent from '@/components/structure/topbar.component.vue'
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 
 export default defineComponent({
   name: 'TopBarVideo',
@@ -221,9 +225,10 @@ export default defineComponent({
     TopbarComponent,
   },
   props: {
-    hideMenu: {
+    showMenu: {
       type: Boolean,
-      default: false,
+      required: false,
+      default: true,
     },
   },
   data() {

@@ -1,6 +1,9 @@
 <template>
   <main class="bg-[#EFEFEF] overflow-hidden">
-    <HeroSection class="bg-bgDarkColor pb-12 sm:h-[70vh] h-screen" />
+    <HeroSection
+      :show-menu="showMenu"
+      class="bg-bgDarkColor pb-12 sm:h-[70vh] h-screen"
+    />
     <Products class="bg-bgDarkColor md:py-10" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
@@ -32,9 +35,7 @@
       }"
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
-    <BestPlay
-      class="bg-[#181818]"
-    />
+    <BestPlay class="bg-[#181818]" />
   </main>
   <TheFooter />
 </template>
@@ -53,6 +54,13 @@ import { useHead } from '@vueuse/head'
 
 export default defineComponent({
   name: 'TheIndex',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     HeroSection,
     Products,

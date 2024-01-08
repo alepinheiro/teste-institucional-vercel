@@ -59,6 +59,13 @@ import FooterSection from '@/components/bestBroker/footerSection.component.vue'
 
 export default defineComponent({
   name: 'XoAluguelAdquirido',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: { FooterSection },
   data() {
     return {}
