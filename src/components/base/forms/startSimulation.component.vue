@@ -35,7 +35,7 @@
           ref="realtyValue"
           name="realtyValue"
           type="text"
-          placeholder="R$ 2500.000,00"
+          placeholder="R$ 250.000,00"
           :required="showHomeEquity"
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
@@ -49,7 +49,7 @@
           ref="creditAmount"
           name="creditAmount"
           type="text"
-          placeholder="R$ 2500.000,00"
+          placeholder="R$ 250.000,00"
           required
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
