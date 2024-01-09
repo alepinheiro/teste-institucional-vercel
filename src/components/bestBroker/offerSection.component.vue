@@ -33,18 +33,18 @@
                   <span
                     class="text-red-500 relative font-bold after:absolute after:content[''] after:h-0.5 after:w-5/6 after:bg-white after:inset-y-[55%] after:left-2 after:rotate-3"
                   >
-                    R$2499,90
+                    R$1499,90
                   </span>
                   por apenas
                 </p>
 
                 <div class="flex flex-row items-baseline gap-2 text-6xl">
                   <span class="text-4xl">12x</span>
-                  <span class="font-bold">143,00</span>
+                  <span class="font-bold">84,83</span>
                 </div>
 
                 <div>
-                  <p>Ou <b>R$1499,90</b> à vista no PIX</p>
+                  <p>Ou <b>R$849,99</b> à vista no PIX</p>
                 </div>
 
                 <button
