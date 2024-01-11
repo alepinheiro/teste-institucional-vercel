@@ -141,6 +141,7 @@ onMounted(() => {
   slideToLeft(firstRow.value)
   slideToRight(secondRow.value)
 })
+
 function slideToLeft(element: HTMLDivElement | null) {
   if (!element) return
   const cards = gsap.utils.toArray<HTMLDivElement>(
