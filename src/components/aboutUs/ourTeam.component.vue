@@ -129,8 +129,8 @@ const secondRowMembers = {
   paola: {
     alt: 'Paola'
   },
-  savio: {
-    alt: 'Sávio'
+  guilherme: {
+    alt: 'Guilherme'
   },
   vinicius: {
     alt: 'Vinícius'
