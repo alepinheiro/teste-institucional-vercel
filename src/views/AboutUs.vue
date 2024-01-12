@@ -2,12 +2,12 @@
   <main class="bg-[#EFEFEF]">
     <div class="relative z-0 flex flex-col">
       <div
-        class="absolute inset-x-0 top-0 bottom-0 bg-gradient-to-b from-[#070E37] to-[#10069F] via-[70%] via-[#0C0A70] -z-10 overflow-hidden"
+        class="absolute inset-x-0 top-0 bottom-0 bg-gradient-to-b from-[#070E37] to-[#10069F] via-[70%] via-[#0C0A70] -z-50 overflow-hidden"
       >
         <img
           src="/images/aboutUs/backgroundLines.svg"
           alt=""
-          class="absolute left-[85%] opacity-30"
+          class="absolute left-[92%] top-1/3 opacity-30"
         />
         <img
           src="/images/aboutUs/backgroundLines.svg"
@@ -15,7 +15,10 @@
           class="absolute right-[85%] bottom-48 opacity-30 -scale-x-100"
         />
       </div>
-      <HeroSection :show-menu="showMenu" class="sm:h-[70vh] h-screen" />
+      <HeroSection :background-videos="{
+        desktop: 'eYtBl05z-YM',
+        mobile: 'Tp-ZcMvXBiE',
+      }" :show-menu="showMenu" class="sm:h-[70vh] h-screen" />
       <OurMotivation
         class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl pb-10 lg:pb-14"
       />
