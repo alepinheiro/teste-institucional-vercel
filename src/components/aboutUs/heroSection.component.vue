@@ -18,18 +18,14 @@
         ></div>
         <iframe
           :src="`https://www.youtube.com/embed/${backgroundVideos.desktop}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.desktop}`"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
-          allowfullscreen
-          class="absolute top-0 bottom-0 w-full my-auto h-full z-0 scale-150 opacity-30 hidden lg:block xl:block"
+          class="absolute top-0 bottom-0 w-full my-auto h-full z-0 scale-150 opacity-[.35] hidden lg:block xl:block"
         ></iframe>
         <iframe
           :src="`https://www.youtube.com/embed/${backgroundVideos.mobile}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.mobile}`"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
-          allowfullscreen
-          class="w-full h-full absolute z-0 scale-150 opacity-30 block lg:hidden xl:hidden"
+          class="w-full h-[85%] md:h-[130%] absolute z-0 scale-150 opacity-[.35] block lg:hidden xl:hidden"
         ></iframe>
       </div>
-      </div>
+    </div>
 
     <div
       class="text-white text-2xl mt-auto pb-12 font-bold px-5 text-center h-2/6 md:h-2/5 flex flex-col justify-center md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto"
@@ -60,8 +56,8 @@ export default defineComponent({
     },
     backgroundVideos: {
       type: Object as PropType<{
-        desktop: string,
-        mobile: string,
+        desktop: string
+        mobile: string
       }>,
       required: true,
     },

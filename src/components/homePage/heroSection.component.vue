@@ -9,19 +9,15 @@
     <div class="absolute inset-0 -z-10 overflow-hidden">
       <div class="relative z-0 w-full h-full">
         <div
-          class="absolute inset-0 z-20 bg-gradient-to-t from-bgDarkColor via-bgDarkColor/70 to-transparent"
+          class="absolute inset-0 z-20 bg-gradient-to-t from-bgDarkColor via-bgDarkColor via-[15%] to-transparent"
         ></div>
         <iframe
           :src="`https://www.youtube.com/embed/${backgroundVideos.desktop}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.desktop}`"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
-          allowfullscreen
-          class="absolute top-0 bottom-0 w-full my-auto h-full z-0 scale-150 opacity-30 hidden lg:block xl:block"
+          class="absolute top-0 bottom-0 w-full my-auto h-full z-0 scale-150 opacity-[.35] hidden lg:block xl:block"
         ></iframe>
         <iframe
           :src="`https://www.youtube.com/embed/${backgroundVideos.mobile}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.mobile}`"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
-          allowfullscreen
-          class="w-full h-full absolute z-0 scale-150 opacity-30 block lg:hidden xl:hidden"
+          class="w-full h-[85%] md:h-[130%] absolute z-0 scale-150 opacity-[.35] block lg:hidden xl:hidden"
         ></iframe>
       </div>
     </div>
