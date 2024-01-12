@@ -82,7 +82,7 @@ export default defineComponent({
   created() {
     useHead({
       title:
-        'SejaBest - Financie seu imóvel com as melhores condições do mercado',
+        'SejaBest - Sem filas, sem gerentes, sem complexidade.',
       meta: [
         {
           name: 'description',
