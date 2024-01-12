@@ -1,7 +1,7 @@
 <template>
   <nav
-    class="w-full flex xl:py-8 justify-between"
-    :class="[position === 'top' ? 'bg-transparent' : 'bg-transparent']"
+    class="w-full flex xl:py-8 lg:py-6 justify-between bg-transparent"
+
   >
     <div class="pr-8">
       <router-link :to="'/' + $root.utms" aria-label="Página inicial SejaBest" class="lineDecoration">
