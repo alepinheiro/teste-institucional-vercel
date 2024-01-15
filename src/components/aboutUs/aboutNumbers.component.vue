@@ -7,7 +7,7 @@
       class="px-5 lg:px-0 mx-auto flex flex-col gap-10 md:gap-15 lg:gap-15 xl:flex-row xl:gap-5 items-center"
     >
       <div
-        class="text-textPrimary flex flex-col gap-2 md:gap-5 lg:gap-7 xl:gap-7 text-center xl:text-left lg:w-2/3 xl:w-5/12"
+        class="text-textPrimary flex flex-col gap-2 md:gap-5 lg:gap-7 xl:gap-7 text-center xl:text-left lg:w-2/3 xl:w-5/12 h-fit mb-auto"
       >
         <h2 class="text-base md:text-4xl lg:text-4xl xl:text-3xl font-bold">
           Há mais de 10 anos transformamos o acesso ao crédito
@@ -19,7 +19,7 @@
         </p>
       </div>
 
-      <div class="flex flex-col gap-20 xl:gap-10">
+      <div class="flex flex-col gap-20 xl:gap-10 flex-grow">
         <ul
           class="flex flex-row gap-2 md:gap-5 lg:gap-5 xl:gap-5 md:w-full"
         >
