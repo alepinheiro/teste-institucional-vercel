@@ -64,7 +64,7 @@ export default defineComponent({
   },
   methods: {
     onButtonClick() {
-      window.open(`${information.appSimulator}${this.$root.utms}`, '_blank')
+      window.open(`${information.simulatorWarren}${this.$root.utms}`, '_blank')
     },
   },
 })
