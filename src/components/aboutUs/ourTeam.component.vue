@@ -129,8 +129,8 @@ const secondRowMembers = {
   paola: {
     alt: 'Paola'
   },
-  savio: {
-    alt: 'Sávio'
+  guilherme: {
+    alt: 'Guilherme'
   },
   vinicius: {
     alt: 'Vinícius'
@@ -141,6 +141,7 @@ onMounted(() => {
   slideToLeft(firstRow.value)
   slideToRight(secondRow.value)
 })
+
 function slideToLeft(element: HTMLDivElement | null) {
   if (!element) return
   const cards = gsap.utils.toArray<HTMLDivElement>(

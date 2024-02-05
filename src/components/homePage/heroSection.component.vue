@@ -2,25 +2,30 @@
   <section class="relative z-0 flex">
     <div
       v-if="showMenu"
-      class="absolute inset-x-0 h-fit top-0 flex justify-center z-20"
+      class="absolute inset-x-0 h-fit top-0 flex justify-center z-20 w-full xl:bg-[#070e3730] xl:backdrop-blur-md lg:bg-[#070e3730] lg:backdrop-blur-md xl:shadow-sm lg:shadow-sm"
     >
       <TopBar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
     </div>
-    <picture class="absolute top-0 inset-x-0 bottom-0 -z-10">
-      <source type="image/png" />
-      <img
-        src="/images/Home/heroBackground.png"
-        alt="A melhor fintech de Crédito do Brasil"
-        class="object-cover h-full w-full sm:object-left"
-      />
-    </picture>
-
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+      <div class="relative z-0 w-full h-full">
+        <div
+          class="absolute inset-0 z-20 bg-gradient-to-t from-bgDarkColor via-bgDarkColor via-[15%] to-transparent"
+        ></div>
+        <iframe
+          :src="`https://www.youtube.com/embed/${backgroundVideos.desktop}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.desktop}`"
+          class="absolute top-0 bottom-0 w-full my-auto h-full z-0 scale-150 opacity-[.35] hidden lg:block xl:block"
+        ></iframe>
+        <iframe
+          :src="`https://www.youtube.com/embed/${backgroundVideos.mobile}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.mobile}`"
+          class="w-full h-[85%] md:h-[130%] absolute z-0 scale-150 opacity-[.35] block lg:hidden xl:hidden"
+        ></iframe>
+      </div>
+    </div>
 
     <div class="flex flex-col gap-4 items-center mt-auto mx-auto h-fit px-5">
       <div class="flex flex-col gap-4 text-center text-white">
-
         <h1
-          class=" font-bold text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-darkerGrotesque leading-7 tracking-wide"
+          class="font-bold text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-darkerGrotesque leading-7 tracking-wide"
         >
           A melhor fintech de Crédito do Brasil
         </h1>
@@ -43,7 +48,7 @@
   </section>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, type PropType } from 'vue'
 import TopBar from '@/components/structure/topbar.component.vue'
 import information from '@/configurations/information'
 
@@ -55,11 +60,19 @@ export default defineComponent({
       required: false,
       default: true,
     },
+    backgroundVideos: {
+      type: Object as PropType<{
+        desktop: string
+        mobile: string
+      }>,
+      required: true,
+    },
   },
   components: { TopBar },
   data() {
     return {
       information,
+      loadedPage: window,
     }
   },
 })

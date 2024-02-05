@@ -2,6 +2,10 @@
   <main class="bg-[#EFEFEF] overflow-hidden">
     <HeroSection
       :show-menu="showMenu"
+      :background-videos="{
+        desktop: 'cDoHr9yWwTA',
+        mobile: 'tj237hcYXjU',
+      }"
       class="bg-bgDarkColor pb-12 sm:h-[70vh] h-screen"
     />
     <Products class="bg-bgDarkColor md:py-10" />
@@ -78,7 +82,7 @@ export default defineComponent({
   created() {
     useHead({
       title:
-        'SejaBest - Financie seu imóvel com as melhores condições do mercado',
+        'SejaBest - Sem filas, sem gerentes, sem complexidade.',
       meta: [
         {
           name: 'description',
