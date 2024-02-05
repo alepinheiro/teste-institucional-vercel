@@ -1,10 +1,9 @@
 <template>
   <div class="relative z-0">
     <TopBar color="primary" class="bg-[#EFEFEF]" />
-    <!-- <div> -->
-      <HeroSection class="bg-[#EFEFEF]" />
-      <Products class="bg-[#EFEFEF] py-10" />
-      <BusinessPartners
+    <HeroSection class="bg-[#EFEFEF]" />
+    <Products class="bg-[#EFEFEF] py-10" />
+    <BusinessPartners
       title="A melhor plataforma multibancos."
       inner-text="<strong>
           Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
@@ -17,7 +16,7 @@
     />
     <SloganSection />
     <AboutUs
-      class="md:px-5 lg:px-5 bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
+      class="md:px-5 lg:px-5 md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
     />
     <Mission class="py-10 px-5" />
     <ComparisonTable
@@ -35,9 +34,7 @@
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
     <BestPlay class="bg-[#181818]" />
-    <!-- </div> -->
-
-  <TheFooter class="block" />
+    <TheFooter class="block" />
   </div>
 </template>
 <script lang="ts">
