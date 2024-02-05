@@ -1,15 +1,15 @@
 <template>
-  <nav class="flex mt-auto mb-auto justify-between">
+  <nav class="flex mb-auto w-fit">
     <button
       id="divMenu"
       title="Menu"
       aria-label="menu"
-      class="cursor-pointer"
+      class="cursor-pointer w-fit"
       @click="toggleMenu(), handleClickOutside($event)"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="w-8 h-8"
+        class="h-full w-8"
         fill="currentColor"
         viewBox="0 0 448 512"
       >

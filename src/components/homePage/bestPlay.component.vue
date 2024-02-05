@@ -20,14 +20,14 @@
       class="md:max-w-2xl md:mx-auto lg:max-w-5xl lg:mx-auto xl:max-w-7xl xl:mx-auto"
     >
       <div class="flex flex-col gap-5 md:w-4/6 py-10 px-5">
-        <BestPlayLogo class="h-14 mx-auto md:hidden lg:hidden xl:hidden" />
+        <BestPlayLogo class="h-16 mx-auto md:hidden lg:hidden xl:hidden" />
 
         <div
-          class="flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 text-white py-12"
+          class="flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 text-white"
         >
           <div class="flex flex-col gap-5 lg:w-1/3 xl:w-1/3 xl:h-128 justify-center">
             <h2
-              class="text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
+              class="text-3xl md:text-3xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
             >
               Conheça o maior canal de crédito do Brasil
             </h2>

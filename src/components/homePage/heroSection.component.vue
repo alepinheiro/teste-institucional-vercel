@@ -12,7 +12,7 @@
         class="flex flex-col gap-5 items-center xl:w-1/2 lg:w-7/12 xl:items-start lg:items-start text-center xl:text-left lg:text-left"
       >
         <h1
-          class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary"
+          class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7"
         >
           Facilitamos o seu
           <span class="text-primary"> acesso ao crédito </span>
