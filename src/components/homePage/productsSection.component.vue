@@ -63,7 +63,10 @@ const sliderOptions: SwiperOptions = {
   slidesPerView: 1.2,
   centeredSlides: true,
   autoHeight: false,
-  pagination: true,
+  pagination: {
+    enabled: true,
+    clickable: true,
+  },
   autoplay: {
     delay: 8000,
   },
