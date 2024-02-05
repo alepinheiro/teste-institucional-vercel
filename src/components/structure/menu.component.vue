@@ -1,21 +1,17 @@
 <template>
-  <div class="flex mt-auto mb-auto justify-between">
-    <div class="flex">
-      <div :class="linkStyle">
-        <router-link :to="'/' + $root.utms" class="decoration">
+  <div class="flex justify-between items-stretch">
+    <div class="flex justify-between gap-5 items-start pr-5">
+      <RouterLink :to="'/' + $root.utms" class="decoration">
           Início
-        </router-link>
-      </div>
-      <div :class="linkStyle">
+        </RouterLink>
         <dropdownMenu />
-      </div>
       <div :class="linkStyle">
         <dropdownForB />
       </div>
       <div :class="linkStyle">
-        <router-link :to="'/bestHub' + $root.utms" class="decoration">
+        <RouterLink :to="'/bestHub' + $root.utms" class="decoration">
           Seja um Parceiro
-        </router-link>
+        </RouterLink>
       </div>
       <div :class="linkStyle">
         <a
@@ -27,13 +23,13 @@
         >
       </div>
       <div :class="linkStyle">
-        <router-link
+        <RouterLink
           :to="'/sobre' + $root.utms"
           class="decoration"
           active-class:
         >
           Sobre
-        </router-link>
+        </RouterLink>
       </div>
     </div>
     <div class="flex">
