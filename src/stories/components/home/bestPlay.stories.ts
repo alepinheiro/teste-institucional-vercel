@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
-import BestPlay from '../../../components/homePage/bestPlay.component.vue'
+import BestPlay from '@/components/homePage/bestPlay.component.vue'
 
 const meta = {
   title: 'Components/Home/BestPlay',

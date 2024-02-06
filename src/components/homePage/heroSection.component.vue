@@ -34,7 +34,7 @@
 
         <img
           src="/images/Home/awards/awardsHeroSection.png"
-          class="xl:w-1/2 lg:w-3/5 md:w-7/12"
+          class="xl:w-1/2 lg:w-3/5 md:w-7/12 max-w-xs"
           alt=""
         />
 

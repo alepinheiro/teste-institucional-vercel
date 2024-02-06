@@ -22,11 +22,11 @@
         alt="A melhor plataforma multibancos."
         class="h-160 hidden lg:block xl:block opacity-0"
       />
-      <ul
+      <div
         ref="banks"
         class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto opacity-0"
       >
-        <div
+        <ul
           v-for="row of partners"
           :key="row.toString()"
           class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto xl:mx-auto"
@@ -50,8 +50,8 @@
             />
             <div v-else class="block w-8 h-8"></div>
           </li>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   </section>
 </template>

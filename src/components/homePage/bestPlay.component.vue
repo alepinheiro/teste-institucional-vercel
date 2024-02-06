@@ -9,7 +9,7 @@
             ref="bestPlayMockup"
             src="/images/Home/bestPlayMockup.png"
             alt="Conheça o maior canal de crédito do Brasil"
-            role="presentation"
+            title="Conheça o maior canal de crédito do Brasil no youtube"
             loading="lazy"
             class="w-auto h-[44rem] md:h-[54rem] lg:h-[54rem] xl:h-[54rem] object-cover object-left-top"
           />
