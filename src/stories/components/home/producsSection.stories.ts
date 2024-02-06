@@ -11,7 +11,7 @@ const meta = {
     setup() {
       return { args };
     },
-    template: '<Products class="bg-bgDarkColor md:py-10" />'
+    template: '<Products class="bg-zinc-100 py-10" />'
   })
 } satisfies Meta<typeof Products>
 
