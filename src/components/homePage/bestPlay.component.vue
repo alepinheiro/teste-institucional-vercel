@@ -3,12 +3,13 @@
     <div class="h-64 md:h-20 lg:h-20 overflow-hidden flex bg-[#EFEFEF] xl:h-8">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
-          class="absolute -left-7 -right-8 top-24 flex md:top-12 md:left-2/3 lg:left-2/3 xl:left-[45%] lg:top-12 xl:top-40"
+          class="absolute -left-7 -right-8 top-24 flex md:top-12 md:left-2/3 lg:left-2/3 xl:left-1/2 lg:top-12 xl:top-24"
         >
           <img
             ref="bestPlayMockup"
             src="/images/Home/bestPlayMockup.png"
             alt="Conheça o maior canal de crédito do Brasil"
+            role="presentation"
             loading="lazy"
             class="w-auto h-[44rem] md:h-[54rem] lg:h-[54rem] xl:h-[54rem] object-cover object-left-top"
           />
@@ -20,13 +21,13 @@
       class="md:max-w-2xl md:mx-auto lg:max-w-5xl lg:mx-auto xl:max-w-7xl xl:mx-auto"
     >
       <div class="flex flex-col gap-5 md:w-5/6 py-10 px-5">
-        <BestPlayLogo class="h-16 mx-auto md:ml-0 lg:ml-0 xl:hidden" />
+        <BestPlayLogo class="h-16 mx-auto md:ml-0 lg:ml-0 xl:ml-0" />
 
         <div
-          class="flex flex-col xl:flex-row lg:justify-between xl:justify-between gap-5 text-white"
+          class="flex flex-col lg:justify-between xl:justify-between gap-5 text-white"
         >
           <div
-            class="flex flex-col gap-5 lg:w-2/3 xl:w-1/3 xl:h-128 justify-center"
+            class="flex flex-col gap-5 lg:w-2/3 xl:w-1/2 justify-center"
           >
             <h2
               class="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
@@ -37,7 +38,7 @@
               <div
                 v-for="{ description, icon, number, suffix } of stats"
                 :key="icon"
-                class="flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:hidden md:even:block lg:even:block border border-zinc-800/60 hover:border-complementaryColor3 transition cursor-default bg-[#181818]"
+                class="flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:hidden md:even:block lg:even:block xl:even:block border border-zinc-800/60 hover:border-complementaryColor3 transition cursor-default bg-[#181818]"
               >
                 <div class="w-6 h-6 lg:w-8 lg:h-8 text-complementaryColor3">
                   <i :class="icon" class="w-full h-full"></i>
@@ -50,21 +51,17 @@
                 <div class="font-bold text-xs lg:text-base">{{ description }}</div>
               </div>
             </div>
-            <p class="text-sm md:text-xl lg:text-xl md:w-5/6 lg:w-5/6 leading-snug">
+            <p class="text-sm md:text-xl lg:text-xl xl:text-xl md:w-5/6 lg:w-5/6  xl:leading-loose">
               Explore temas como crédito, financiamento, empreendedorismo e
               mercado financeiro, visando levá-lo à sua melhor versão.
             </p>
           </div>
-          <div
-            class="flex flex-row lg:flex-col-reverse xl:flex-col-reverse gap-5 lg:my-auto xl:my-auto"
-          >
-            <a
+          <a
               href="https://www.youtube.com/@SejaBest"
-              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold md:ml-0 lg:ml-0"
+              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold md:ml-0 lg:ml-0 xl:ml-0"
             >
               Inscreva-se agora
             </a>
-          </div>
         </div>
       </div>
     </div>
