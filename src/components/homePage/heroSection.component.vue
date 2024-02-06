@@ -12,7 +12,7 @@
         class="flex flex-col gap-5 items-center xl:w-1/2 lg:w-7/12 xl:items-start lg:items-start text-center xl:text-left lg:text-left"
       >
         <h1
-          class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7"
+          class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]"
         >
           Facilitamos o seu
           <span class="text-primary"> acesso ao crédito </span>
@@ -24,7 +24,7 @@
           </span>
         </h1>
 
-        <h2 class="text-primary xl:text-2xl lg:text-xl md:text-2xl">
+        <h2 class="text-primary xl:text-2xl lg:text-2xl md:text-2xl">
           Sem <b> filas, </b> Sem
           <b> gerentes, <br class="xl:hidden lg:hidden md:hidden" /> </b> Sem
           <b> complexidade. </b>
@@ -34,7 +34,7 @@
 
         <img
           src="/images/Home/awards/awardsHeroSection.png"
-          class="xl:w-1/2 lg:w-2/3 md:w-4/6"
+          class="xl:w-1/2 lg:w-3/5 md:w-7/12"
           alt=""
         />
 

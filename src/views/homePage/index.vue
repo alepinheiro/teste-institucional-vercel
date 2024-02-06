@@ -2,7 +2,7 @@
   <div class="relative z-0">
     <TopBar color="primary" class="bg-[#EFEFEF]" />
     <HeroSection class="bg-[#EFEFEF]" />
-    <Products class="bg-[#EFEFEF] pt-10" />
+    <Products class="bg-[#EFEFEF] pt-10 lg:pt-20" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
       inner-text="<strong>
@@ -12,7 +12,7 @@
         o que pode lhe garantir as melhores taxas e as maiores chances de
         aprovação, além de um time de especialistas preparado para te atender e
         te guiar durante todo o processo."
-      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 max-h-screen"
+      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 max-h-screen "
     />
     <SloganSection />
     <AboutUs
@@ -33,7 +33,7 @@
       }"
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
-    <BestPlay class="bg-[#181818] border-b-4 border-primary" />
+    <BestPlay class="bg-[#181818] bg-gradient-to-br to-black from-transparent border-b-4 border-primary md:border-0" />
     <TheFooter class="block" />
   </div>
 </template>

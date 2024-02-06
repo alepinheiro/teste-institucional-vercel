@@ -78,8 +78,7 @@ const sliderOptions: SwiperOptions = {
       slidesPerView: 3.5,
     },
     1277: {
-      slidesPerView: 4,
-      centeredSlides: false,
+      slidesPerView: 3.5,
     },
     1919: {
       slidesPerView: 4,

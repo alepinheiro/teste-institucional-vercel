@@ -1,9 +1,9 @@
 <template>
   <section class="flex flex-col xl:h-[50%] relative z-0 overflow-hidden">
-    <div class="h-64 overflow-hidden flex bg-[#EFEFEF] xl:h-8">
+    <div class="h-64 md:h-20 lg:h-20 overflow-hidden flex bg-[#EFEFEF] xl:h-8">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
-          class="absolute -left-7 -right-8 top-24 flex md:top-80 md:left-2/3 lg:left-[35%] xl:left-[45%] lg:top-116 xl:top-40"
+          class="absolute -left-7 -right-8 top-24 flex md:top-12 md:left-2/3 lg:left-2/3 xl:left-[45%] lg:top-12 xl:top-40"
         >
           <img
             ref="bestPlayMockup"
@@ -19,17 +19,17 @@
     <div
       class="md:max-w-2xl md:mx-auto lg:max-w-5xl lg:mx-auto xl:max-w-7xl xl:mx-auto"
     >
-      <div class="flex flex-col gap-5 md:w-4/6 py-10 px-5">
-        <BestPlayLogo class="h-16 mx-auto md:hidden lg:hidden xl:hidden" />
+      <div class="flex flex-col gap-5 md:w-5/6 py-10 px-5">
+        <BestPlayLogo class="h-16 mx-auto md:ml-0 lg:ml-0 xl:hidden" />
 
         <div
-          class="flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 text-white"
+          class="flex flex-col xl:flex-row lg:justify-between xl:justify-between gap-5 text-white"
         >
           <div
-            class="flex flex-col gap-5 lg:w-1/3 xl:w-1/3 xl:h-128 justify-center"
+            class="flex flex-col gap-5 lg:w-2/3 xl:w-1/3 xl:h-128 justify-center"
           >
             <h2
-              class="text-3xl md:text-3xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
+              class="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
             >
               Conheça o maior canal de crédito do Brasil
             </h2>
@@ -37,20 +37,20 @@
               <div
                 v-for="{ description, icon, number, suffix } of stats"
                 :key="icon"
-                class="flex flex-col p-3 rounded w-full shadow-xl shadow-black/40"
+                class="flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:hidden md:even:block lg:even:block border border-zinc-800/60 hover:border-complementaryColor3 transition cursor-default bg-[#181818]"
               >
-                <div class="w-6 h-6 text-complementaryColor3">
+                <div class="w-6 h-6 lg:w-8 lg:h-8 text-complementaryColor3">
                   <i :class="icon" class="w-full h-full"></i>
                 </div>
                 <span
-                  class="text-4xl font-darkerGrotesque font-bold text-complementaryColor3"
+                  class="text-4xl lg:text-5xl font-darkerGrotesque font-bold text-complementaryColor3"
                 >
                   {{ number + suffix }}
                 </span>
-                <div class="font-bold text-xs">{{ description }}</div>
+                <div class="font-bold text-xs lg:text-base">{{ description }}</div>
               </div>
             </div>
-            <p class="text-sm">
+            <p class="text-sm md:text-xl lg:text-xl md:w-5/6 lg:w-5/6 leading-snug">
               Explore temas como crédito, financiamento, empreendedorismo e
               mercado financeiro, visando levá-lo à sua melhor versão.
             </p>
@@ -60,11 +60,10 @@
           >
             <a
               href="https://www.youtube.com/@SejaBest"
-              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold"
+              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold md:ml-0 lg:ml-0"
             >
               Inscreva-se agora
             </a>
-            <BestPlayLogo class="h-14 hidden md:block lg:block xl:block" />
           </div>
         </div>
       </div>
@@ -98,6 +97,12 @@ export default defineComponent({
           number: 500,
           suffix: '+',
           description: 'Vídeos grátis',
+        },
+        {
+          icon: 'fa-solid fa-people-group',
+          number: 2,
+          suffix: 'MI+',
+          description: 'Alcance mensal',
         },
         {
           icon: 'fa-solid fa-people-group',
