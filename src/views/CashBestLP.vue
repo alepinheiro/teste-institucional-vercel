@@ -1,7 +1,8 @@
 <template>
-  <main class="bg-[#F1F1F1]">
+  <main class=" relative">
+    <TopBar color="primary" customMobileMenuColor="white" class="text-primary" />
     <HeroSection :show-menu="showMenu" />
-    <BusinessPartners
+    <!-- <BusinessPartners
       title="Maximizamos suas chances de aprovação"
       inner-text="Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>"
       class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 bg-[#F1F1F1]"
@@ -31,7 +32,7 @@
       :component="{ bgColor: 'SECONDARY' }"
       :form="{ showRealtyValue: true }"
     />
-    <TheFooter />
+    <TheFooter /> -->
   </main>
 </template>
 <script lang="ts" setup>
@@ -45,6 +46,7 @@ import Steps from '@/components/cashBest/stepsSection.component.vue'
 import TheProduct from '@/components/cashBest/theProduct.component.vue'
 import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
+import TopBar from '@/components/structure/topBar/index.component.vue'
 
 defineProps<{
   showMenu: boolean

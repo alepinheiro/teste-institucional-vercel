@@ -1,5 +1,5 @@
 <template>
-  <section
+  <!-- <section
     class="bg-bgDarkColor w-full flex py-10 relative min-h-screen sm:pt-0 overflow-hidden z-0"
   >
     <div
@@ -52,14 +52,53 @@
         </div>
       </div>
     </div>
+  </section> -->
+  <section>
+    <div class="absolute top-0 inset-x-0 -z-10 pl-16 h-64">
+      <img
+        src="/images/cashBest/heroSectionGaspar.png"
+        class="object-bottom h-full w-full object-cover"
+        alt=""
+      />
+    </div>
+    <div class="pt-48 px-5 flex flex-col gap-5">
+      <h1
+        class="text-3xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
+      >
+        <span class="text-primary"> CashBest: </span>
+        o melhor Crédito com Garantia de Imóvel do mercado
+      </h1>
+
+      <component :is="'swiper-container'" v-bind="sliderOptions" class="w-full px-5">
+        <component
+          :is="'swiper-slide'"
+          v-for="{ description, icon, id } of cards"
+          :key="id"
+          class="flex flex-row gap-2 items-center cursor-default"
+        >
+          <component :is="icon" class="text-primary flex-shrink-0 " />
+          <p class="text-textSecondary text-center">
+            {{ description }}
+          </p>
+        </component>
+      </component>
+
+      <div class="lg:w-1/2 w-full flex-grow text-textPrimary">
+        <InputWithSlider :props="sliderProps" @submit="openSimulation" />
+      </div>
+    </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-import TopBar from '@/components/structure/topBar/index.component.vue'
+// import TopBar from '@/components/structure/topBar/index.component.vue'
 import VideoButton from '@/components/bestHub/videoButton.component.vue'
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
 import information from '@/configurations/information'
+import PercentIcon from '@/assets/svg/percentWithBackGround.vue'
+import HouseIcon from '@/assets/svg/houseWithMoneySign.vue'
+import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
+import type { SwiperOptions } from 'swiper/types'
 
 defineProps<{
   showMenu: boolean
@@ -69,8 +108,8 @@ const sliderProps = {
   minimumValue: 50000,
   maximumValue: 15000000,
   defaultValue: 350000,
-  backgroundColor: '#FFFFFF20',
-  title: 'De quanto você está precisando?',
+  backgroundColor: '#EFEFEF',
+  title: 'De quanto você precisa?',
 }
 
 const utm = new URLSearchParams({
@@ -78,6 +117,39 @@ const utm = new URLSearchParams({
   utm_medium: 'hero-section-cashbest',
   utm_campaign: 'landing-pages-dez-23',
 })
+
+const cards = [
+  {
+    id: 'percent',
+    icon: PercentIcon,
+    description: 'A partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
+  },
+  {
+    id: 'house',
+    icon: HouseIcon,
+    description: 'Até 60% do valor seu imóvel como crédito',
+  },
+  {
+    id: 'calendar',
+    icon: CalendarIcon,
+    description: 'Escolha como pagar. Em até 20 anos.',
+  },
+]
+
+const sliderOptions: SwiperOptions = {
+  spaceBetween: 0,
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  autoHeight: false,
+  pagination: {
+    enabled: false,
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2000,
+  },
+}
 
 const openSimulation = () => {
   window.open(`${information.appSimulator}?${utm.toString()}`, '_blank')

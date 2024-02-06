@@ -9,7 +9,7 @@
     >
       <label
         for="creditAmountWithSlider"
-        class="text-xl text-white font-bold text-center sm:text-md"
+        class="text-xl text-inherit font-bold text-center sm:text-md"
       >
         {{ props.title }}
       </label>
@@ -36,7 +36,7 @@
           title="simular"
           class="bg-complementaryColor1 text-white px-4 py-2 rounded-md sm:hidden hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
         >
-          Simular
+          Simular de graça
         </button>
       </div>
       <input
@@ -55,9 +55,9 @@
       <button
         aria-label="Simular"
         title="simular"
-        class="bg-complementaryColor1 text-white px-4 py-2 rounded-md hidden sm:block w-fit mx-auto"
+        class="bg-complementaryColor1 text-white px-4 py-2 rounded-md hidden sm:block w-fit mx-auto font-bold"
       >
-        Simular
+        Simular de graça
       </button>
     </form>
   </div>

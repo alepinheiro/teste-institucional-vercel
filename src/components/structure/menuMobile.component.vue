@@ -7,7 +7,9 @@
       class="cursor-pointer w-8 h-8 flex"
       @click="toggleMenu(), handleClickOutside($event)"
     >
-      <i class="fa-solid fa-bars w-full h-full"></i>
+      <i :style="{
+        color,
+      }" class="fa-solid fa-bars w-full h-full"></i>
     </button>
     <div
       v-if="openProfileMenu"

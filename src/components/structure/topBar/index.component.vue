@@ -8,7 +8,7 @@
       </RouterLink>
 
       <MenuComponent class="sm:hidden md:hidden" />
-      <MenuMobileComponent
+      <MenuMobileComponent :color="customMobileMenuColor"
         class="xl:hidden lg:hidden h-8 w-8 flex-shrink-0 aspect-square mr-0"
       />
     </header>
@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, type PropType } from 'vue'
+import { defineComponent } from 'vue'
 import MenuComponent from '@/components/structure/menu.component.vue'
 import MenuMobileComponent from '@/components/structure/menuMobile.component.vue'
 import LogoSejaBestSVG from '@/components/base/logos/logoSejaBestSVG.component.vue'
@@ -27,6 +27,13 @@ export default defineComponent({
     MenuComponent,
     MenuMobileComponent,
     LogoSejaBestSVG,
+  },
+  props:{
+    customMobileMenuColor: {
+      type: String,
+      required: false,
+      default: '',
+    },
   },
   data() {
     return {}
