@@ -1,10 +1,11 @@
 <template>
-  <nav
-    class="w-full flex xl:py-8 lg:py-6 justify-between bg-transparent"
-
-  >
+  <nav class="w-full flex xl:py-8 lg:py-6 justify-between bg-transparent">
     <div class="pr-8">
-      <router-link :to="'/' + $root.utms" aria-label="Página inicial SejaBest" class="lineDecoration">
+      <router-link
+        :to="'/' + $root.utms"
+        aria-label="Página inicial SejaBest"
+        class="lineDecoration"
+      >
         <img
           v-if="position === 'top'"
           :src="$options.imageConfig.logoSejabest"
@@ -43,18 +44,18 @@ export default defineComponent({
   name: 'TopBar',
   components: {
     MenuComponent,
-    MenuMobileComponent
+    MenuMobileComponent,
   },
   props: {
     position: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   data() {
     return {
       color: 'fill-white',
-      linkStyle: 'linkStyleDark'
+      linkStyle: 'linkStyleDark',
     }
   },
   mounted() {
@@ -62,6 +63,6 @@ export default defineComponent({
       this.color = 'fill-textPrimary'
       this.linkStyle = 'linkStyle'
     }
-  }
+  },
 })
 </script>
