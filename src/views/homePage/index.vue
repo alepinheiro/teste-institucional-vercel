@@ -1,8 +1,13 @@
 <template>
-  <div class="relative z-0">
-    <TopBar color="primary" class="bg-[#EFEFEF] text-primary" />
-    <HeroSection class="bg-[#EFEFEF]" />
-    <Products class="bg-[#EFEFEF] pt-10 lg:pt-20" />
+  <div class="relative z-0 bg-[#EFEFEF]">
+    <img
+      src="/images/Home/backgroundLines.png"
+      class="absolute -left-40 -top-40 md:-left-[40%] lg:-left-[40%] -z-10 hidden md:block lg:block xl:block"
+      alt=""
+    />
+    <TopBar color="primary" class="text-primary" />
+    <HeroSection class="" />
+    <Products class="pt-10 lg:pt-20" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
       inner-text="<strong>
