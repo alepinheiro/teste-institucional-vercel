@@ -1,7 +1,7 @@
 <template>
   <section class="bg-primary w-full flex pt-10 relative min-h-screen sm:pt-0">
     <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20 w-full xl:bg-[#070e3730] xl:backdrop-blur-md lg:bg-[#070e3730] lg:backdrop-blur-md xl:shadow-sm lg:shadow-sm">
-      <Topbar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
+      <TopBar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4 text-white" />
     </div>
     <div class="absolute inset-0 overflow-hidden z-0 flex items-end sm:h-2/3">
       <img
@@ -54,7 +54,7 @@
 </template>
 <script lang="ts" setup>
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
-import Topbar from '@/components/structure/topbar.component.vue'
+import TopBar from '@/components/structure/topBar/index.component.vue'
 import information from '@/configurations/information'
 import { ref } from 'vue'
 

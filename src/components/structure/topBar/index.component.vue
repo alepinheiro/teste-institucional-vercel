@@ -2,7 +2,6 @@
   <div>
     <nav
       class="sticky z-50 h-auto top-0 py-5 xl:py-4 w-full flex flex-row justify-between items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto px-5"
-      :class="{ 'text-primary': color === 'primary' }"
     >
       <RouterLink :to="'/' + $root.utms" class="w-auto h-8">
         <LogoSejaBestSVG class="w-auto h-8" />
@@ -28,12 +27,6 @@ export default defineComponent({
     MenuComponent,
     MenuMobileComponent,
     LogoSejaBestSVG,
-  },
-  props: {
-    color: {
-      type: String as PropType<'primary'>,
-      required: true,
-    },
   },
   data() {
     return {}

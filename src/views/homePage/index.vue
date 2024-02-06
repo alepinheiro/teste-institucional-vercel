@@ -1,6 +1,6 @@
 <template>
   <div class="relative z-0">
-    <TopBar color="primary" class="bg-[#EFEFEF]" />
+    <TopBar color="primary" class="bg-[#EFEFEF] text-primary" />
     <HeroSection class="bg-[#EFEFEF]" />
     <Products class="bg-[#EFEFEF] pt-10 lg:pt-20" />
     <BusinessPartners
@@ -12,7 +12,7 @@
         o que pode lhe garantir as melhores taxas e as maiores chances de
         aprovação, além de um time de especialistas preparado para te atender e
         te guiar durante todo o processo."
-      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 max-h-screen "
+      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 max-h-screen"
     />
     <SloganSection />
     <AboutUs
@@ -33,7 +33,9 @@
       }"
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
-    <BestPlay class="bg-[#181818] bg-gradient-to-br to-black from-transparent border-b-4 border-primary md:border-0 lg:border-0 xl:border-0" />
+    <BestPlay
+      class="bg-[#181818] bg-gradient-to-br to-black from-transparent border-b-4 border-primary md:border-0 lg:border-0 xl:border-0"
+    />
     <TheFooter class="block" />
   </div>
 </template>
@@ -48,6 +50,7 @@ import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import Mission from '@/components/aboutUs/missionSection.component.vue'
 import SloganSection from '@/components/homePage/sloganSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
+import { useHead } from '@vueuse/head'
 
 import { defineComponent } from 'vue'
 export default defineComponent({
@@ -63,6 +66,18 @@ export default defineComponent({
     Mission,
     SloganSection,
     TheFooter,
+  },
+  setup() {
+    useHead({
+      title: 'SejaBest - Sem filas, sem gerentes, sem complexidade.',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
+        },
+      ],
+    })
   },
   data() {
     return {}

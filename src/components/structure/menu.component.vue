@@ -4,8 +4,8 @@
       <RouterLink :to="'/' + $root.utms" class="decoration">
         Início
       </RouterLink>
-      <dropdownMenu class="hover:cursor-pointer" />
-      <dropdownForB class="hover:cursor-pointer" />
+      <dropdownMenu class="hover:cursor-pointer decoration" />
+      <dropdownForB class="hover:cursor-pointer decoration" />
       <RouterLink
         :to="'/bestHub' + $root.utms"
         class="decoration"
