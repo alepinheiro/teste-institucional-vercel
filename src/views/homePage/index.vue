@@ -2,7 +2,7 @@
   <div class="relative z-0">
     <TopBar color="primary" class="bg-[#EFEFEF]" />
     <HeroSection class="bg-[#EFEFEF]" />
-    <Products class="bg-[#EFEFEF] py-10" />
+    <Products class="bg-[#EFEFEF] pt-10" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
       inner-text="<strong>
@@ -33,7 +33,7 @@
       }"
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
-    <BestPlay class="bg-[#181818]" />
+    <BestPlay class="bg-[#181818] border-b-4 border-primary" />
     <TheFooter class="block" />
   </div>
 </template>

@@ -25,19 +25,34 @@
         <div
           class="flex flex-col lg:flex-row xl:flex-row lg:justify-between xl:justify-between gap-5 text-white"
         >
-          <div class="flex flex-col gap-5 lg:w-1/3 xl:w-1/3 xl:h-128 justify-center">
+          <div
+            class="flex flex-col gap-5 lg:w-1/3 xl:w-1/3 xl:h-128 justify-center"
+          >
             <h2
               class="text-3xl md:text-3xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
             >
               Conheça o maior canal de crédito do Brasil
             </h2>
-
-            <p class="leading-9 xl:text-xl">
-              BestPlay é o canal de comunicação da SejaBest no YouTube. Com mais
-              de 500 vídeos, nosso canal reúne uma comunidade de mais de 50 mil
-              pessoas. Abordamos temas como crédito, financiamento,
-              empreendedorismo e mercado financeiro, com o único propósito de
-              levar você à sua melhor versão.
+            <div class="flex flex-row gap-5">
+              <div
+                v-for="{ description, icon, number, suffix } of stats"
+                :key="icon"
+                class="flex flex-col p-3 rounded w-full shadow-xl shadow-black/40"
+              >
+                <div class="w-6 h-6 text-complementaryColor3">
+                  <i :class="icon" class="w-full h-full"></i>
+                </div>
+                <span
+                  class="text-4xl font-darkerGrotesque font-bold text-complementaryColor3"
+                >
+                  {{ number + suffix }}
+                </span>
+                <div class="font-bold text-xs">{{ description }}</div>
+              </div>
+            </div>
+            <p class="text-sm">
+              Explore temas como crédito, financiamento, empreendedorismo e
+              mercado financeiro, visando levá-lo à sua melhor versão.
             </p>
           </div>
           <div
@@ -45,7 +60,7 @@
           >
             <a
               href="https://www.youtube.com/@SejaBest"
-              class="bg-complementaryColor2 w-fit rounded px-6 py-4 ml-auto"
+              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold"
             >
               Inscreva-se agora
             </a>
@@ -76,7 +91,22 @@ export default defineComponent({
     }
   },
   data() {
-    return {}
+    return {
+      stats: [
+        {
+          icon: 'fa-solid fa-video-camera',
+          number: 500,
+          suffix: '+',
+          description: 'Vídeos grátis',
+        },
+        {
+          icon: 'fa-solid fa-people-group',
+          number: 60,
+          suffix: 'K+',
+          description: 'Inscritos no canal',
+        },
+      ],
+    }
   },
   mounted() {
     this.translateToTop(this.bestPlayMockup)
