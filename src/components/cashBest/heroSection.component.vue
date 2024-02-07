@@ -93,7 +93,10 @@
           @submit="onSubmit"
           class="md:hidden"
         />
-        <DoubleInputsForm v-model="doubleFormData" />
+        <DoubleInputsForm
+          v-model="doubleFormData"
+          class="bg-[#efeaea] px-12 py-8 rounded-2xl"
+        />
       </div>
     </div>
   </section>
@@ -123,7 +126,10 @@ const sliderProps = {
   title: 'De quanto você precisa?',
 }
 
-const doubleFormData = ref({
+const doubleFormData = ref<{
+  assetValue:  number
+  creditValue:  number
+}>({
   assetValue: 0,
   creditValue: 0,
 })
