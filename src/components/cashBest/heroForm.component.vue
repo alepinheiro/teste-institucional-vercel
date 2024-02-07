@@ -44,7 +44,7 @@
 
       <button
         type="submit"
-        class="text-white bg-complementaryColor1 rounded w-fit px-4 py-2 mx-auto"
+        class="text-white font-bold bg-complementaryColor1 rounded w-fit px-4 py-2 mx-auto hover:scale-105 shadow hover:shadow-black/10 hover:shadow-lg transition"
       >
         Simular de graça
       </button>
@@ -55,6 +55,10 @@
 import { ref } from 'vue'
 import { type CurrencyInputOptions, CurrencyDisplay } from 'vue-currency-input'
 import CurrencyInput from '@/components/base/currencyInput.component.vue'
+
+const emit = defineEmits<{
+  submit: [value: typeof model.value]
+}>()
 
 const model = defineModel<{
   assetValue: number
@@ -87,8 +91,6 @@ const onSlide = (event: Event) => {
 }
 
 const onSubmitForm = () => {
-  console.log({
-    form: model.value,
-  })
+  emit('submit', model.value)
 }
 </script>
