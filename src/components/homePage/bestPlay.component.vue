@@ -26,9 +26,7 @@
         <div
           class="flex flex-col lg:justify-between xl:justify-between gap-5 text-white"
         >
-          <div
-            class="flex flex-col gap-5 lg:w-2/3 xl:w-1/2 justify-center"
-          >
+          <div class="flex flex-col gap-5 lg:w-2/3 xl:w-1/2 justify-center">
             <h2
               class="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
             >
@@ -48,20 +46,24 @@
                 >
                   {{ number + suffix }}
                 </span>
-                <div class="font-bold text-xs lg:text-base">{{ description }}</div>
+                <div class="font-bold text-xs lg:text-base">
+                  {{ description }}
+                </div>
               </div>
             </div>
-            <p class="text-sm md:text-xl lg:text-xl xl:text-xl md:w-5/6 lg:w-5/6  xl:leading-loose">
+            <p
+              class="text-sm md:text-xl lg:text-xl xl:text-xl md:w-5/6 lg:w-5/6 xl:leading-loose text-center md:text-left lg:text-left xl:text-left"
+            >
               Explore temas como crédito, financiamento, empreendedorismo e
               mercado financeiro, visando levá-lo à sua melhor versão.
             </p>
           </div>
           <a
-              href="https://www.youtube.com/@SejaBest"
-              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold md:ml-0 lg:ml-0 xl:ml-0"
-            >
-              Inscreva-se agora
-            </a>
+            href="https://www.youtube.com/@SejaBest"
+            class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold md:ml-0 lg:ml-0 xl:ml-0"
+          >
+            Inscreva-se agora
+          </a>
         </div>
       </div>
     </div>
