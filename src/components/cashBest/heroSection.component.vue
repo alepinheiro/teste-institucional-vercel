@@ -9,10 +9,10 @@
         alt=""
       />
     </div>
-    <div class="min-md:hidden -mt-3/5 w-full flex pl-20">
+    <div class="min-md:hidden -mt-4/6  mb-0  flex ">
       <img
         src="/images/cashBest/heroSectionGaspar.png"
-        class="h-full w-full object-contain "
+        class="h-full w-full object-cover object-left ml-1/12 flex-shrink-0"
         alt=""
       />
     </div>
@@ -30,28 +30,30 @@
         <component
           :is="'swiper-container'"
           v-bind="sliderOptions"
-          class="w-full px-5"
+          class="w-full"
         >
           <component
             :is="'swiper-slide'"
             v-for="{ description, icon, id } of cards"
             :key="id"
-            class="flex flex-row gap-2 items-center cursor-default my-auto"
+            class="cursor-default my-auto px-5 min-md:px-0 w-full"
           >
-            <component :is="icon" class="text-primary flex-shrink-0" />
-            <p
-              class="text-textSecondary text-center text-sm md:text-left min-lg:text-base"
-            >
-              {{ description }}
-            </p>
+            <div class="flex flex-row gap-2 items-center w-fit mx-auto">
+              <component :is="icon" class="text-primary flex-shrink-0" />
+              <p
+                class="text-textSecondary text-center text-sm md:text-left min-lg:text-base"
+              >
+                {{ description }}
+              </p>
+            </div>
           </component>
         </component>
 
         <DoubleInputsForm
-            v-model="doubleFormData"
-            class="bg-[#efeaea] px-12 py-8 rounded-2xl"
-            @submit="onSubmit"
-          />
+          v-model="doubleFormData"
+          class="bg-[#efeaea] px-12 py-8 rounded-2xl"
+          @submit="onSubmit"
+        />
       </div>
     </div>
   </section>
