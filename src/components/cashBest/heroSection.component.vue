@@ -1,13 +1,24 @@
 <template>
   <section>
-    <div class="absolute -z-10 left-1/2 -top-[20rem] min-lg:w-[60rem] flex">
+    <div
+      class="min-lg:flex absolute -z-10 min-lg:-top-[20rem] min-lg:left-1/2 w-[60rem] hidden"
+    >
       <img
         src="/images/cashBest/heroSectionGaspar.png"
         class="h-full w-full object-contain pl-5"
         alt=""
       />
     </div>
-    <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto items-start">
+    <div class="min-md:hidden -mt-3/5 w-full flex pl-20">
+      <img
+        src="/images/cashBest/heroSectionGaspar.png"
+        class="h-full w-full object-contain "
+        alt=""
+      />
+    </div>
+    <div
+      class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto items-start px-5"
+    >
       <div class="flex flex-col gap-5 min-md:gap-8 w-full lg:w-8/12 xl:w-1/2">
         <h1
           class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"

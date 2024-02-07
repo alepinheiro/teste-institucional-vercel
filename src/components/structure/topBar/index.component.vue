@@ -1,7 +1,7 @@
 <template>
-  <header class="absolute top-0 w-full ">
+  <header class="absolute z-30 top-0 w-auto inset-x-0">
     <div
-      class="py-5 xl:py-4 w-full flex flex-row justify-between items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto px-5"
+      class="py-5 xl:py-4 w-full flex flex-row justify-between items-center xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto px-5"
     >
       <RouterLink :to="'/' + $root.utms" class="w-auto h-8">
         <LogoSejaBestSVG class="w-auto h-8" title="Página Inicial - SejaBest" />

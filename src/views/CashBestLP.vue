@@ -1,13 +1,13 @@
 <template>
-  <main class="relative">
+  <main class="relative w-full z-0">
     <TopBar
       color="primary"
       :customMobileMenuColor="menuColor"
-      class="text-primary xl:text-textPrimary"
+      class="text-primary xl:text-textPrimary "
     />
     <HeroSection
       :show-menu="showMenu"
-      class="pb-12 pt-48 md:pt-12 px-5 lg:py-24"
+      class="pt-48 pb-6"
     />
     <BusinessPartners
       title="Maximizamos suas chances de aprovação"
