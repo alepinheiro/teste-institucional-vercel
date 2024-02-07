@@ -54,37 +54,46 @@
     </div>
   </section> -->
   <section>
-    <div class="absolute top-0 inset-x-0 -z-10 pl-16 h-64">
+    <div class="absolute top-0 inset-x-0 -z-10 pl-16 h-64 md:hidden">
       <img
         src="/images/cashBest/heroSectionGaspar.png"
         class="object-bottom h-full w-full object-cover"
         alt=""
       />
     </div>
-    <div class="pt-48 px-5 flex flex-col gap-5">
+    <div class="pt-48 md:pt-12 px-5 flex flex-col gap-5 md:max-w-2xl mx-auto">
       <h1
-        class="text-3xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
+        class="text-3xl md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
       >
         <span class="text-primary"> CashBest: </span>
         o melhor Crédito com Garantia de Imóvel do mercado
       </h1>
 
-      <component :is="'swiper-container'" v-bind="sliderOptions" class="w-full px-5">
+      <component
+        :is="'swiper-container'"
+        v-bind="sliderOptions"
+        class="w-full px-5"
+      >
         <component
           :is="'swiper-slide'"
           v-for="{ description, icon, id } of cards"
           :key="id"
-          class="flex flex-row gap-2 items-center cursor-default"
+          class="flex flex-row gap-2 items-center cursor-default my-auto"
         >
-          <component :is="icon" class="text-primary flex-shrink-0 " />
-          <p class="text-textSecondary text-center">
+          <component :is="icon" class="text-primary flex-shrink-0" />
+          <p class="text-textSecondary text-center text-sm md:text-left">
             {{ description }}
           </p>
         </component>
       </component>
 
       <div class="lg:w-1/2 w-full flex-grow text-textPrimary">
-        <InputWithSlider :props="sliderProps" @submit="openSimulation" />
+        <InputWithSlider
+          :props="sliderProps"
+          @submit="onSubmit"
+          class="md:hidden"
+        />
+        <DoubleInputsForm v-model="doubleFormData" />
       </div>
     </div>
   </section>
@@ -98,7 +107,9 @@ import information from '@/configurations/information'
 import PercentIcon from '@/assets/svg/percentWithBackground.vue'
 import HouseIcon from '@/assets/svg/houseWithMoneySign.vue'
 import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
+import DoubleInputsForm from '@/components/cashBest/heroForm.component.vue'
 import type { SwiperOptions } from 'swiper/types'
+import { ref } from 'vue'
 
 defineProps<{
   showMenu: boolean
@@ -112,10 +123,9 @@ const sliderProps = {
   title: 'De quanto você precisa?',
 }
 
-const utm = new URLSearchParams({
-  utm_source: 'institucional-seja-best',
-  utm_medium: 'hero-section-cashbest',
-  utm_campaign: 'landing-pages-dez-23',
+const doubleFormData = ref({
+  assetValue: 0,
+  creditValue: 0,
 })
 
 const cards = [
@@ -139,19 +149,20 @@ const cards = [
 const sliderOptions: SwiperOptions = {
   spaceBetween: 0,
   slidesPerView: 1,
-  centeredSlides: true,
   loop: true,
   autoHeight: false,
-  pagination: {
-    enabled: false,
-    clickable: true,
-  },
   autoplay: {
     delay: 2000,
   },
+  breakpoints: {
+    667: {
+      slidesPerView: 3,
+      autoplay: false,
+      spaceBetween: 20,
+      loop: false,
+    },
+  },
 }
 
-const openSimulation = () => {
-  window.open(`${information.appSimulator}?${utm.toString()}`, '_blank')
-}
+const onSubmit = () => window.open(information.appSimulator, '_blank')
 </script>

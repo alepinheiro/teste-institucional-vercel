@@ -38,7 +38,7 @@
     "video.js": "7.0.3",
     "vite-plugin-pages": "^0.31.0",
     "vite-plugin-pages-sitemap": "^1.6.1",
-    "vue": "3.3.4",
+    "vue": "^3.4.15",
     "vue-cookies": "^1.8.0",
     "vue-currency-input": "^2.4.0",
     "vue-gtm": "^3.5.0",

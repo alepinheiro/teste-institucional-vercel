@@ -50,7 +50,7 @@ import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 import TheProduct from '@/components/cashBest/theProduct.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
-import { onMounted, ref, onBeforeMount, onBeforeUnmount } from 'vue'
+import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
 import { useHead } from '@vueuse/head'
 
 defineProps<{
@@ -68,7 +68,7 @@ useHead({
   ],
 })
 
-const menuColor = ref('white')
+const menuColor = ref(window.innerWidth > 667 ? 'black' : 'white')
 
 const setMenuColorOnResize = () => {
   if (window.innerWidth > 667) {
