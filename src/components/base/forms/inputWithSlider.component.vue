@@ -40,7 +40,7 @@
       </div>
       <input
         id="rangeSlider"
-        v-model="numberValue"
+        v-model="creditValue.modelValue"
         name="rangeSlider"
         step="10000"
         type="range"
@@ -49,7 +49,6 @@
         :min="props.minimumValue"
         :max="props.maximumValue"
         class="slider"
-        @input="setValue(numberValue)"
       />
       <button
         aria-label="Simular"
@@ -64,7 +63,7 @@
 <script setup lang="ts">
 import CurrencyInput from '@/components/base/currencyInput.component.vue'
 import { ref, computed } from 'vue'
-import { type CurrencyInputOptions } from 'vue-currency-input'
+import { type CurrencyInputOptions, CurrencyDisplay } from 'vue-currency-input'
 
 const { props: sliderProps } = defineProps<{
   props: {
@@ -86,7 +85,7 @@ const creditValue = ref<{
   modelValue: number
   options: CurrencyInputOptions
 }>({
-  modelValue: 0,
+  modelValue: sliderProps.defaultValue,
   options: {
     currency: 'BRL',
     currencyDisplay: CurrencyDisplay.narrowSymbol,
@@ -100,7 +99,7 @@ const creditValue = ref<{
   },
 })
 
-const { inputRef, numberValue, setValue } = useCurrencyInput(options)
+// const { inputRef, numberValue, setValue } = useCurrencyInput(options)
 const inputValue = ref(sliderProps.defaultValue)
 const sliderValue = ref(sliderProps.defaultValue)
 const bgColor = computed(() => sliderProps.backgroundColor)
@@ -109,7 +108,7 @@ const onInput = (event: Event) => {
   const { value } = event.target as HTMLInputElement
 
   if (value) {
-    sliderValue.value = numberValue.value
+    sliderValue.value = creditValue.value.modelValue
   }
 }
 
