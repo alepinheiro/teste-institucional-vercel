@@ -4,7 +4,7 @@
       id="divMenu"
       title="Menu"
       aria-label="menu"
-      class="cursor-pointer w-8 h-8 flex text-white"
+      class="cursor-pointer w-8 h-8 flex text-inherit"
       @click="toggleMenu(), handleClickOutside($event)"
     >
       <i class="fa-solid fa-bars w-full h-full"></i>
