@@ -7,8 +7,8 @@
         alt=""
       />
     </div>
-    <div class="md:max-w-2xl lg:max-w-5xl mx-auto items-start">
-      <div class="flex flex-col gap-5 md:gap-8 w-full lg:w-8/12">
+    <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto items-start">
+      <div class="flex flex-col gap-5 md:gap-8 w-full lg:w-8/12 xl:w-1/2 border border-red-500">
         <h1
           class="text-3xl md:text-5xl lg:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
         >
@@ -39,7 +39,7 @@
         <div class="w-full flex-grow text-textPrimary">
           <InputWithSlider
             :props="sliderProps"
-            class="md:hidden lg:hidden"
+            class="md:hidden lg:hidden xl:hidden"
             @submit="onSubmit"
           />
           <DoubleInputsForm
