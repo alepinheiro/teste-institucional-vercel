@@ -14,10 +14,9 @@
         {{ props.title }}
       </label>
       <div class="flex flex-row gap-2">
-        <input
-          id="creditAmountWithSlider"
-          ref="inputRef"
-          v-model="inputValue"
+        <CurrencyInput
+          :options="creditValue.options"
+          v-model="creditValue.modelValue"
           name="creditAmountWithSlider"
           data-testid="creditAmountWithSlider"
           type="text"
@@ -63,13 +62,9 @@
   </div>
 </template>
 <script setup lang="ts">
+import CurrencyInput from '@/components/base/currencyInput.component.vue'
 import { ref, computed } from 'vue'
-
-import {
-  CurrencyInputOptions,
-  useCurrencyInput,
-  //@ts-expect-error no types
-} from 'vue-currency-input'
+import { type CurrencyInputOptions } from 'vue-currency-input'
 
 const { props: sliderProps } = defineProps<{
   props: {
@@ -87,18 +82,24 @@ const emit = defineEmits<{
   (e: 'update:modelValue', value: number): void
 }>()
 
-const options: CurrencyInputOptions = {
-  currency: 'BRL',
-  currencyDisplay: 'narrowSymbol',
-  precision: 2,
-  hideCurrencySymbolOnFocus: false,
-  hideGroupingSeparatorOnFocus: false,
-  hideNegligibleDecimalDigitsOnFocus: false,
-  autoDecimalDigits: true,
-  autoSign: true,
-  useGrouping: true,
-  accountingSign: false,
-}
+const creditValue = ref<{
+  modelValue: number
+  options: CurrencyInputOptions
+}>({
+  modelValue: 0,
+  options: {
+    currency: 'BRL',
+    currencyDisplay: CurrencyDisplay.narrowSymbol,
+    precision: 2,
+    hideCurrencySymbolOnFocus: false,
+    hideGroupingSeparatorOnFocus: false,
+    hideNegligibleDecimalDigitsOnFocus: false,
+    autoDecimalDigits: true,
+    useGrouping: true,
+    accountingSign: false,
+  },
+})
+
 const { inputRef, numberValue, setValue } = useCurrencyInput(options)
 const inputValue = ref(sliderProps.defaultValue)
 const sliderValue = ref(sliderProps.defaultValue)

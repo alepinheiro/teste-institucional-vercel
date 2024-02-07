@@ -47,18 +47,11 @@
           </component>
         </component>
 
-        <div class="w-full flex-grow text-textPrimary">
-          <InputWithSlider
-            :props="sliderProps"
-            class="min-md:hidden"
-            @submit="onSubmit"
-          />
-          <DoubleInputsForm
+        <DoubleInputsForm
             v-model="doubleFormData"
-            class="bg-[#efeaea] px-12 py-8 rounded-2xl hidden min-md:block"
+            class="bg-[#efeaea] px-12 py-8 rounded-2xl"
             @submit="onSubmit"
           />
-        </div>
       </div>
     </div>
   </section>

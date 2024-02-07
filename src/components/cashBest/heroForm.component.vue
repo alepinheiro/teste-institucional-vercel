@@ -1,10 +1,10 @@
 <template>
   <form @submit.prevent="onSubmitForm">
     <div class="flex flex-col gap-5">
-      <div class="flex flex-col">
-        <label for="assetValue" class="font-bold"
-          >Quanto vale seu imóvel?</label
-        >
+      <div class="min-md:flex flex-col gap-2 hidden ">
+        <label for="assetValue" class="font-bold ">
+          Quanto vale seu imóvel?
+        </label>
         <CurrencyInput
           :options="creditValue.options"
           id="assetValue"
@@ -16,10 +16,10 @@
         />
       </div>
 
-      <div class="flex flex-col">
-        <label for="creditValue" class="font-bold"
-          >De quanto você precisa?</label
-        >
+      <div class="flex flex-col gap-2 text-center min-md:text-left">
+        <label for="creditValue" class="font-bold">
+          De quanto você precisa?
+        </label>
         <CurrencyInput
           :options="creditValue.options"
           id="creditValue"
