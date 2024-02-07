@@ -1,15 +1,16 @@
 <template>
   <nav class="flex">
     <button
+    :style="{
+        color,
+      }"
       id="divMenu"
       title="Menu"
       aria-label="menu"
       class="cursor-pointer w-8 h-8 flex"
       @click="toggleMenu(), handleClickOutside($event)"
     >
-      <i :style="{
-        color,
-      }" class="fa-solid fa-bars w-full h-full"></i>
+      <i  class="fa-solid fa-bars w-full h-full"></i>
     </button>
     <div
       v-if="openProfileMenu"

@@ -95,7 +95,7 @@
 import VideoButton from '@/components/bestHub/videoButton.component.vue'
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
 import information from '@/configurations/information'
-import PercentIcon from '@/assets/svg/percentWithBackGround.vue'
+import PercentIcon from '@/assets/svg/percentWithBackground.vue'
 import HouseIcon from '@/assets/svg/houseWithMoneySign.vue'
 import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
 import type { SwiperOptions } from 'swiper/types'
