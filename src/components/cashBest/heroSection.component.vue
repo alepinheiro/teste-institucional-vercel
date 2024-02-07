@@ -9,10 +9,10 @@
         alt=""
       />
     </div>
-    <div class="min-md:hidden -mt-4/6  mb-0  flex ">
+    <div class="min-md:hidden -mt-5/6 -mr-1/3 mb-10 flex">
       <img
         src="/images/cashBest/heroSectionGaspar.png"
-        class="h-full w-full object-cover object-left ml-1/12 flex-shrink-0"
+        class="h-full w-full object-cover object-left ml-1/12"
         alt=""
       />
     </div>
@@ -41,7 +41,7 @@
             <div class="flex flex-row gap-2 items-center w-fit mx-auto">
               <component :is="icon" class="text-primary flex-shrink-0" />
               <p
-                class="text-textSecondary text-center text-sm md:text-left min-lg:text-base"
+                class="text-textPrimary text-center text-sm md:text-left min-lg:text-base"
               >
                 {{ description }}
               </p>
@@ -51,7 +51,7 @@
 
         <DoubleInputsForm
           v-model="doubleFormData"
-          class="bg-[#efeaea] px-12 py-8 rounded-2xl"
+          class="bg-[#efeaea] p-4 min-md:px-12 min-md:py-8 rounded-2xl"
           @submit="onSubmit"
         />
       </div>

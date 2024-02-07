@@ -37,6 +37,7 @@
           step="10"
           min="150000"
           max="10000000"
+          aria-labelledby="creditValue"
           @change="onSlide"
           class="accent-primary w-full"
         />

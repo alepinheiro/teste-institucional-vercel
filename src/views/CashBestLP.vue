@@ -7,7 +7,7 @@
     />
     <HeroSection
       :show-menu="showMenu"
-      class="pt-48 pb-6"
+      class="pt-48 md:pt-32 pb-6"
     />
     <BusinessPartners
       title="Maximizamos suas chances de aprovação"
