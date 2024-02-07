@@ -5,7 +5,10 @@
       :customMobileMenuColor="menuColor"
       class="text-primary"
     />
-    <HeroSection :show-menu="showMenu" class="pb-12" />
+    <HeroSection
+      :show-menu="showMenu"
+      class="pb-12 pt-48 md:pt-12 px-5 lg:py-24"
+    />
     <BusinessPartners
       title="Maximizamos suas chances de aprovação"
       inner-text="Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>"

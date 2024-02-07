@@ -1,49 +1,53 @@
 <template>
   <section>
-    <div class="absolute top-0 inset-x-0 -z-10 pl-16 h-64 md:hidden">
+    <div class="absolute -z-10 -right-72 -top-80 h-[65rem] flex">
       <img
         src="/images/cashBest/heroSectionGaspar.png"
-        class="object-bottom h-full w-full object-cover"
+        class="h-full w-full object-contain object-bottom"
         alt=""
       />
     </div>
-    <div class="pt-48 md:pt-12 px-5 flex flex-col gap-5 md:gap-8 md:max-w-2xl mx-auto">
-      <h1
-        class="text-3xl md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
-      >
-        <span class="text-primary"> CashBest: </span>
-        o melhor Crédito com Garantia de Imóvel do mercado
-      </h1>
-
-      <component
-        :is="'swiper-container'"
-        v-bind="sliderOptions"
-        class="w-full px-5"
-      >
-        <component
-          :is="'swiper-slide'"
-          v-for="{ description, icon, id } of cards"
-          :key="id"
-          class="flex flex-row gap-2 items-center cursor-default my-auto"
+    <div class="md:max-w-2xl lg:max-w-5xl mx-auto items-start">
+      <div class="flex flex-col gap-5 md:gap-8 w-full lg:w-8/12">
+        <h1
+          class="text-3xl md:text-5xl lg:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
         >
-          <component :is="icon" class="text-primary flex-shrink-0" />
-          <p class="text-textSecondary text-center text-sm md:text-left">
-            {{ description }}
-          </p>
-        </component>
-      </component>
+          <span class="text-primary"> CashBest: </span>
+          o melhor Crédito com Garantia de Imóvel do mercado
+        </h1>
 
-      <div class="lg:w-1/2 w-full flex-grow text-textPrimary">
-        <InputWithSlider
-          :props="sliderProps"
-          class="md:hidden"
-          @submit="onSubmit"
-        />
-        <DoubleInputsForm
-          v-model="doubleFormData"
-          class="bg-[#efeaea] px-12 py-8 rounded-2xl"
-          @submit="onSubmit"
-        />
+        <component
+          :is="'swiper-container'"
+          v-bind="sliderOptions"
+          class="w-full px-5"
+        >
+          <component
+            :is="'swiper-slide'"
+            v-for="{ description, icon, id } of cards"
+            :key="id"
+            class="flex flex-row gap-2 items-center cursor-default my-auto"
+          >
+            <component :is="icon" class="text-primary flex-shrink-0" />
+            <p
+              class="text-textSecondary text-center text-sm md:text-left lg:text-base"
+            >
+              {{ description }}
+            </p>
+          </component>
+        </component>
+
+        <div class="w-full flex-grow text-textPrimary">
+          <InputWithSlider
+            :props="sliderProps"
+            class="md:hidden lg:hidden"
+            @submit="onSubmit"
+          />
+          <DoubleInputsForm
+            v-model="doubleFormData"
+            class="bg-[#efeaea] px-12 py-8 rounded-2xl hidden md:block lg:block xl:block"
+            @submit="onSubmit"
+          />
+        </div>
       </div>
     </div>
   </section>
