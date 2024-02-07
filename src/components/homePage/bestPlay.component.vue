@@ -1,9 +1,9 @@
 <template>
-  <section class="flex flex-col xl:h-[50%] relative z-0 overflow-hidden">
-    <div class="h-64 md:h-20 lg:h-20 overflow-hidden flex bg-[#EFEFEF] xl:h-8">
+  <section class="flex flex-col xl:h-[50%] relative z-0">
+    <div class="h-64 overflow-hidden flex bg-[#EFEFEF] xl:h-8">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
-          class="absolute -left-7 -right-8 top-24 flex md:top-12 md:left-2/3 lg:left-2/3 xl:left-[55%] lg:top-12 xl:top-24"
+          class="absolute -left-7 -right-8 top-24 flex md:top-48 md:left-2/3 lg:left-[70%] xl:left-[55%] lg:top-64 xl:top-24"
         >
           <img
             ref="bestPlayMockup"
@@ -18,7 +18,7 @@
     </div>
 
     <div
-      class="md:max-w-2xl md:mx-auto lg:max-w-5xl lg:mx-auto xl:max-w-7xl xl:mx-auto"
+      class="md:max-w-2xl md:mx-auto lg:max-w-5xl lg:mx-auto xl:max-w-7xl xl:mx-auto z-10"
     >
       <div class="flex flex-col gap-5 md:w-5/6 py-10 px-5">
         <BestPlayLogo class="h-16 mx-auto md:ml-0 lg:ml-0 xl:ml-0" />
