@@ -1,16 +1,16 @@
 <template>
   <section>
-    <div class="absolute -z-10 -right-72 -top-80 h-[65rem] flex">
+    <div class="absolute -z-10 left-1/2 -top-[20rem] min-lg:w-[60rem] flex">
       <img
         src="/images/cashBest/heroSectionGaspar.png"
-        class="h-full w-full object-contain object-bottom"
+        class="h-full w-full object-contain pl-5"
         alt=""
       />
     </div>
     <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto items-start">
-      <div class="flex flex-col gap-5 md:gap-8 w-full lg:w-8/12 xl:w-1/2 border border-red-500">
+      <div class="flex flex-col gap-5 min-md:gap-8 w-full lg:w-8/12 xl:w-1/2">
         <h1
-          class="text-3xl md:text-5xl lg:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
+          class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
         >
           <span class="text-primary"> CashBest: </span>
           o melhor Crédito com Garantia de Imóvel do mercado
@@ -29,7 +29,7 @@
           >
             <component :is="icon" class="text-primary flex-shrink-0" />
             <p
-              class="text-textSecondary text-center text-sm md:text-left lg:text-base"
+              class="text-textSecondary text-center text-sm md:text-left min-lg:text-base"
             >
               {{ description }}
             </p>
@@ -39,12 +39,12 @@
         <div class="w-full flex-grow text-textPrimary">
           <InputWithSlider
             :props="sliderProps"
-            class="md:hidden lg:hidden xl:hidden"
+            class="min-md:hidden"
             @submit="onSubmit"
           />
           <DoubleInputsForm
             v-model="doubleFormData"
-            class="bg-[#efeaea] px-12 py-8 rounded-2xl hidden md:block lg:block xl:block"
+            class="bg-[#efeaea] px-12 py-8 rounded-2xl hidden min-md:block"
             @submit="onSubmit"
           />
         </div>

@@ -3,7 +3,7 @@
     <TopBar
       color="primary"
       :customMobileMenuColor="menuColor"
-      class="text-primary"
+      class="text-primary xl:text-textPrimary"
     />
     <HeroSection
       :show-menu="showMenu"

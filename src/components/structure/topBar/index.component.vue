@@ -1,5 +1,5 @@
 <template>
-  <header class="absolute top-0 w-full">
+  <header class="absolute top-0 w-full ">
     <div
       class="py-5 xl:py-4 w-full flex flex-row justify-between items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto px-5"
     >
