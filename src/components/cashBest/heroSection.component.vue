@@ -6,7 +6,7 @@
       v-if="showMenu"
       class="absolute inset-x-0 h-fit top-0 flex justify-center z-20 w-full xl:bg-[#070e3730] xl:backdrop-blur-md lg:bg-[#070e3730] lg:backdrop-blur-md xl:shadow-sm lg:shadow-sm"
     >
-      <TopBar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4 text-white" />
+      <TopBar class="w-full xl:max-w-7xl lg:max-w-5xl px-5 mb-auto text-white" />
     </div>
 
     <div class="absolute inset-0 z-0 overflow-hidden flex sm:h-1/2 md:h-2/3">
