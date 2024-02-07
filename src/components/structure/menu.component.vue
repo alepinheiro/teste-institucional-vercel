@@ -34,7 +34,7 @@
       :href="$options.information.appSimulator + $root.utms"
       style="text-decoration: none"
       target="_blank"
-      class="bg-complementaryColor1 rounded-lg px-4 py-2 font-semibold text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:px-1 lg:text-sm"
+      class="bg-complementaryColor1 rounded-lg px-4 my-auto py-2 font-semibold text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:px-1 lg:text-sm"
     >
       Simule seu crédito
     </a>

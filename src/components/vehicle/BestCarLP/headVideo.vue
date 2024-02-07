@@ -3,7 +3,7 @@
     <!-- 🖥️ Desktop -->
     <section class="bgBestcar sm:hidden md:hidden z-10">
       <div class="maxWidth xl:h-screen lg:h-screen">
-        <TopBarComponent v-if="showMenu" class="relative" />
+        <TopBarComponent v-if="showMenu" class="relative text-white" />
 
         <div class="maxWidth xl:h-screen lg:h-screen sm:hidden md:hidden z-10">
           <div class="w-full flex pt-5 md:pt-8 sm:pt-4">
@@ -81,7 +81,7 @@
     <!-- 🧮 Tablet-->
     <section class="sm:hidden xl:hidden lg:hidden bg-primary">
       <div class="maxWidth">
-        <TopBarComponent v-if="showMenu" class="relative" />
+        <TopBarComponent v-if="showMenu" class="relative text-white" />
 
         <div class="w-full flex items-center justify-center">
           <div class="w-6/2 pt-4 mt-auto mb-auto justify-cente item-center">
@@ -147,7 +147,7 @@
     <!-- 📱 Mobile -->
     <section class="xl:hidden lg:hidden md:hidden bg-primary">
       <div class="maxWidth">
-        <TopBarComponent v-if="showMenu" position="relative" />
+        <TopBarComponent v-if="showMenu" position="relative text-white" />
 
         <div class="w-full">
           <div class="py-8 sm:py-4 mt-4 w-full bg-secondary p-6 rounded-lg">
@@ -229,7 +229,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue'
+import { defineComponent } from 'vue'
 import TopBarComponent from '@/components/structure/topbar.component.vue'
 
 export default defineComponent({
