@@ -30,7 +30,6 @@ import {
   CurrencyDisplay,
   CurrencyInputOptions,
   useCurrencyInput,
-  //@ts-expect-error no types
 } from 'vue-currency-input'
 
 export default defineComponent({
@@ -60,13 +59,12 @@ export default defineComponent({
   setup() {
     const options: CurrencyInputOptions = {
       currency: 'BRL' as string,
-      currencyDisplay: 'narrowSymbol' as CurrencyDisplay,
+      currencyDisplay: CurrencyDisplay.narrowSymbol ,
       precision: 2 as number,
       hideCurrencySymbolOnFocus: false as boolean,
       hideGroupingSeparatorOnFocus: false as boolean,
       hideNegligibleDecimalDigitsOnFocus: false as boolean,
       autoDecimalDigits: true as boolean,
-      autoSign: true as boolean,
       useGrouping: true as boolean,
       accountingSign: false as boolean,
     }

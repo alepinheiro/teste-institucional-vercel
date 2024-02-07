@@ -65,11 +65,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
-import {
-  CurrencyInputOptions,
-  useCurrencyInput,
-  //@ts-expect-error no types
-} from 'vue-currency-input'
+import { CurrencyInputOptions, useCurrencyInput, CurrencyDisplay } from 'vue-currency-input'
 
 const { props: sliderProps } = defineProps<{
   props: {
@@ -89,13 +85,12 @@ const emit = defineEmits<{
 
 const options: CurrencyInputOptions = {
   currency: 'BRL',
-  currencyDisplay: 'narrowSymbol',
+  currencyDisplay: CurrencyDisplay.narrowSymbol,
   precision: 2,
   hideCurrencySymbolOnFocus: false,
   hideGroupingSeparatorOnFocus: false,
   hideNegligibleDecimalDigitsOnFocus: false,
   autoDecimalDigits: true,
-  autoSign: true,
   useGrouping: true,
   accountingSign: false,
 }
@@ -107,7 +102,7 @@ const bgColor = computed(() => sliderProps.backgroundColor)
 const onInput = (event: Event) => {
   const { value } = event.target as HTMLInputElement
 
-  if (value) {
+  if (value && numberValue.value) {
     sliderValue.value = numberValue.value
   }
 }
