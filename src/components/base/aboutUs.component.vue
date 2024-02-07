@@ -28,8 +28,8 @@
         </div>
       </div>
       <div class="sm:flex flex-row flex-wrap items-center gap-6 mx-auto hidden  ">
-        <div v-for="{ alt, id, source } of seals" :key="id" class="w-1/3 last-of-type:w-1/2 last-of-type:mx-auto last-of-type:flex-grow-0 flex-grow">
-          <img :src="source" :alt="alt" class="h-24  sm:h-auto" />
+        <div v-for="{ alt, id, source } of seals" :key="id" class="w-1/3 last-of-type:w-1/2 last-of-type:mx-auto last-of-type:flex-grow-0 flex-grow first:px-5">
+          <img :src="source" :alt="alt" class="mx-auto" />
         </div>
       </div>
       <div class="flex flex-row sm:flex-col gap-4 text-white">
@@ -54,9 +54,9 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-row gap-6 mx-auto">
-        <div v-for="{ alt, id, source } of seals" :key="id">
-          <img :src="source" :alt="alt" class="h-24 sm:hidden" />
+      <div class="flex flex-row gap-6 mx-auto flex-wrap items-center sm:hidden">
+        <div v-for="{ alt, id, source } of seals" :key="id" class="flex-shrink-0 px-5 flex-grow">
+          <img :src="source" :alt="alt" class="h-24 mx-auto" />
         </div>
       </div>
     </div>
@@ -96,16 +96,21 @@ const cardContent = [
 const seals = [
   {
     id: 1,
+    source: '/images/finanBest/seals/sealTopPlayersInter.png',
+    alt: 'Top Player Imobiliário - Banco Inter - 2023',
+  },
+  {
+    id: 2,
     source: '/images/finanBest/seals/sealTopOfSalesCashMe.png',
     alt: 'Campeão de vendas CashMe 2022 - 2023',
   },
   {
-    id: 2,
+    id: 3,
     source: '/images/finanBest/seals/sealTopOfSalesDaycoval.png',
     alt: 'Campeão de vendas Daycoval 2022',
   },
   {
-    id: 3,
+    id: 4,
     source: '/images/finanBest/seals/sealTopHomeEquityFiveInter.png',
     alt: 'Top 5 Home Equity Banco Inter',
   },
