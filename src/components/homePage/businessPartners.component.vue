@@ -1,56 +1,58 @@
 <template>
-  <section
-    class="flex flex-col gap-10 md:gap-8 lg:gap-8 xl:gap-12 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
-  >
+  <section>
     <div
-      class="flex flex-col text-center gap-2 lg:gap-5 xl:gap-5 xl:w-full xl:mx-auto"
+      class="flex flex-col gap-10 md:gap-8 lg:gap-8 xl:gap-12 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
     >
-      <h2
-        class="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold"
-      >
-        {{ $props.title.replace(/\s([^\s<]+)\s*$/,'\u00A0$1') }}
-      </h2>
-      <p
-        v-html="$props.innerText"
-        class="text-textPrimary md:text-xl lg:text-xl xl:text-xl"
-      ></p>
-    </div>
-    <div class="flex gap-8 items-center w-fit mx-auto">
-      <img
-        ref="phone"
-        src="/images/Home/simulatorOnPhoneMockup.png"
-        alt="A melhor plataforma multibancos."
-        class="h-160 hidden lg:block xl:block opacity-0"
-      />
       <div
-        ref="banks"
-        class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto opacity-0"
+        class="flex flex-col text-center gap-2 lg:gap-5 xl:gap-5 xl:w-full xl:mx-auto"
       >
-        <ul
-          v-for="row of partners"
-          :key="row.toString()"
-          class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto xl:mx-auto"
+        <h2
+          class="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold"
         >
-          <li
-            v-for="({ alt, image }, i) of row"
-            :key="alt ?? '' + i"
-            :class="[
-              alt
-                ? 'w-auto bg-[#DADADA]'
-                : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#DADADA] to-transparent w-24',
-            ]"
-            class="text-ellipsis rounded px-2 py-1 md:py-3 lg:py-3 xl:py-3"
+          {{ $props.title.replace(/\s([^\s<]+)\s*$/, '\u00A0$1') }}
+        </h2>
+        <p
+          v-html="$props.innerText"
+          class="text-textPrimary md:text-xl lg:text-xl xl:text-xl"
+        ></p>
+      </div>
+      <div class="flex gap-8 items-center w-fit mx-auto">
+        <img
+          ref="phone"
+          src="/images/Home/simulatorOnPhoneMockup.png"
+          alt="A melhor plataforma multibancos."
+          class="h-160 hidden lg:block xl:block opacity-0"
+        />
+        <div
+          ref="banks"
+          class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto opacity-0"
+        >
+          <ul
+            v-for="row of partners"
+            :key="row.toString()"
+            class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto xl:mx-auto"
           >
-            <img
-              v-if="image"
-              :src="`/images/Home/icons/${image}.svg`"
-              class="h-8 md:py-1 md:px-2 lg:px-2 xl:px-2"
-              :alt="alt ?? ''"
-              loading="lazy"
-            />
-            <div v-else class="block w-8 h-8"></div>
-          </li>
-        </ul>
+            <li
+              v-for="({ alt, image }, i) of row"
+              :key="alt ?? '' + i"
+              :class="[
+                alt
+                  ? 'w-auto bg-[#DADADA]'
+                  : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#DADADA] to-transparent w-24',
+              ]"
+              class="text-ellipsis rounded px-2 py-1 md:py-3 lg:py-3 xl:py-3"
+            >
+              <img
+                v-if="image"
+                :src="`/images/Home/icons/${image}.svg`"
+                class="h-8 md:py-1 md:px-2 lg:px-2 xl:px-2"
+                :alt="alt ?? ''"
+                loading="lazy"
+              />
+              <div v-else class="block w-8 h-8"></div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>

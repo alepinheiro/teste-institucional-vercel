@@ -1,5 +1,5 @@
 <template>
-  <form onsubmit.prevent="submitForm()">
+  <form @submit.prevent="onSubmitForm">
     <div class="flex flex-col gap-5">
       <div class="flex flex-col">
         <label for="assetValue" class="font-bold"
@@ -12,7 +12,7 @@
           type="text"
           placeholder="R$ 35.000,00"
           v-model="model.assetValue"
-          class="bg-transparent border-b border-black py-2 px-4"
+          class="bg-transparent border-b border-black py-2 px-4 focus-visible:outline-none focus-within:border-primary"
         />
       </div>
 
@@ -25,14 +25,14 @@
           id="creditValue"
           name="creditValue"
           placeholder="R$ 35.000,00"
-          v-model="creditValue.modelValue"
-          class="bg-transparent border-b border-black py-2 px-4"
+          v-model="model.creditValue"
+          class="bg-transparent border-b border-black py-2 px-4 focus-visible:outline-none focus-within:border-primary"
         />
       </div>
 
       <div>
         <input
-          :value="creditValue.modelValue"
+          :value="model.creditValue"
           type="range"
           step="10"
           min="150000"
@@ -83,11 +83,12 @@ const creditValue = ref<{
 
 const onSlide = (event: Event) => {
   const { value } = event.target as HTMLInputElement
-  console.log(value)
-  creditValue.value.modelValue = Number(value)
+  model.value.creditValue = Number(value)
 }
 
-const submitForm = () => {
-  console.log('submit')
+const onSubmitForm = () => {
+  console.log({
+    form: model.value,
+  })
 }
 </script>
