@@ -21,6 +21,7 @@
         data-testid="creditAmountWithSlider"
         type="text"
         class="rounded-md w-full px-4 sm:py-2"
+        :class="{ 'bg-[#EFEFEF]': props.backgroundColor === 'transparent' }"
         :placeholder="
           props.defaultValue.toLocaleString('pt-BR', {
             style: 'currency',
@@ -48,14 +49,14 @@
       title="Faixa de valor"
       :min="props.minimumValue"
       :max="props.maximumValue"
-      class="slider"
+      class="slider w-full accent-primary"
     />
     <button
       aria-label="Simular"
       title="simular"
       class="bg-complementaryColor1 text-white px-4 py-2 rounded-md hidden sm:block w-fit mx-auto font-bold"
     >
-      Simular de graça
+      Simular
     </button>
   </form>
 </template>

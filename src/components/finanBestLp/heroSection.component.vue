@@ -17,25 +17,25 @@
     >
       <!--  -->
       <div
-        class="lg:w-7/12 xl:w-5/12 lg:flex-initial mt-auto mb-12 md:mb-10 sm:bg-gradient-to-b sm:from-transparent sm:to-white"
+        class="lg:w-7/12 xl:w-5/12 lg:flex-initial mt-auto mb-12 md:mb-0 "
       >
         <div
-          class="bg-transparent min-md:bg-white/90 flex flex-col gap-6 p-8 xl:px-6 py-4 rounded-xl min-hd:shadow-lg h-full justify-end"
+          class="bg-gradient-to-b min-md:bg-gradient-to-t via-white from-transparent to-white/80 flex flex-col gap-6 p-8 xl:px-6 py-4 min-md:rounded-xl min-hd:shadow-lg h-full justify-end"
         >
           <h1
-            class="font-darkerGrotesque text-2xl md:text-4xl min-lg:text-6xl text-primary leading-tight whitespace-pre-line xl:font-bold"
+            class="min-lg:font-darkerGrotesque font-Public-Sans text-2xl md:text-4xl min-lg:text-6xl text-primary leading-tight whitespace-pre-line min-lg:font-bold"
           >
-            <span class="min-md:hidden">
+            <span class="min-lg:hidden">
               <b>FinanBest:</b>
               Financie seu imóvel com a assessoria
               <b>SejaBest</b>
             </span>
-            <span class="hidden xl:block">
+            <span class="hidden min-lg:block">
               FinanBest: Financie seu imóvel com a assessoria SejaBest
             </span>
           </h1>
           <!--  -->
-          <p class="text-base text-textPrimary text-justify xl:hidden">
+          <p class="text-base text-textPrimary text-justify min-lg:hidden">
             Financie seu imóvel com as melhores condições do mercado.
             <b
               >Sem filas, sem gerentes, sem complexidade e com um time de
@@ -43,7 +43,7 @@
             >
           </p>
           <!--  -->
-          <div class="hidden xl:flex flex-row gap-4">
+          <div class="hidden min-lg:flex flex-row gap-4">
             <div
               v-for="{ description, icon, id } of cards"
               :key="id"
@@ -51,19 +51,26 @@
             >
               <component :is="icon" class="text-primary flex-shrink-0" />
               <p
-                class="text-textPrimary text-center text-sm md:text-left min-lg:text-base"
+                class="text-textPrimary text-left text-base"
               >
                 {{ description }}
               </p>
             </div>
           </div>
 
-          <hr class="border border-textSecondary">
+          <hr class="border border-textSecondary hidden min-lg:block">
 
           <InputWithSlider
             v-model="formValue"
-            :props="sliderProps"
-            class=""
+            :props="smallScreensFormProps"
+            class="min-lg:hidden"
+            @submit="openSimulation"
+          />
+
+          <InputWithSlider
+            v-model="formValue"
+            :props="largeScreensFormProps"
+            class="min-lg:flex hidden"
             @submit="openSimulation"
           />
         </div>
@@ -73,7 +80,7 @@
           v-scroll-to="'#businessPartners'"
           class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline"
         >
-          <i class="fa-solid fa-chevron-down"></i>
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
           <span class="text-xs"
             >Ou saiba mais sobre o FinanBest rolando para baixo</span
           >
@@ -96,11 +103,19 @@ defineProps<{
   showMenu: boolean
 }>()
 
-const sliderProps = {
+const smallScreensFormProps = {
   minimumValue: 50000,
   maximumValue: 30000000,
   defaultValue: 350000,
   backgroundColor: 'var(--primaryColor)',
+  title: 'Quanto custa o seu sonho?',
+}
+
+const largeScreensFormProps = {
+  minimumValue: 50000,
+  maximumValue: 30000000,
+  defaultValue: 350000,
+  backgroundColor: 'transparent',
   title: 'Quanto custa o seu sonho?',
 }
 
