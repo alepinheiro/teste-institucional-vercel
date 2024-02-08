@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full flex pt-0 min-md::pt-10 relative min-h-screen">
+  <section class="w-full flex pt-0 min-md:pt-10 relative min-h-screen">
     <!-- <div
       class="absolute inset-x-0 h-fit top-0 flex justify-center z-20 w-full xl:bg-[#070e3730] xl:backdrop-blur-md lg:bg-[#070e3730] lg:backdrop-blur-md xl:shadow-sm lg:shadow-sm"
     >
@@ -20,23 +20,23 @@
       />
     </div>
     <div
-      class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-row w-full z-10 py-12 sm:py-0 px-5 sm:px-0 relative"
+      class="relative max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-row w-full z-10 py-0 min-md:py-12 px-0 min-md:px-5"
     >
       <!--  -->
       <div
-        class="flex-1 lg:w-7/12 lg:flex-initial mt-auto sm:bg-gradient-to-b sm:from-transparent sm:to-bgDarkColor"
+        class="flex-1 lg:w-7/12 lg:flex-initial mt-auto mb-32 sm:bg-gradient-to-b sm:from-transparent sm:to-white"
       >
         <div
-          class="bg-white sm:bg-transparent flex flex-col gap-6 sm:gap-2 md:gap-3 font-Public-Sans p-8 md:px-8 py-4 rounded-xl shadow-lg sm:h-full sm:justify-end sm:pt-40"
+          class="bg-transparent min-hd:bg-white flex flex-col gap-6 md:gap-3 font-Public-Sans p-8 md:px-8 py-4 rounded-xl min-hd:shadow-lg h-full justify-end pt-40"
         >
           <h1
-            class="text-5xl sm:text-3xl sm:text-white text-primary leading-tight sm:drop-shadow whitespace-pre-line"
+            class="min-md:text-5xl text-2xl text-primary leading-tight whitespace-pre-line"
           >
             <strong>FinanBest:</strong>
             Financie seu imóvel com a assessoria
             <strong>SejaBest</strong>
           </h1>
-          <p class="text-base sm:text-white text-justify sm:drop-shadow">
+          <p class="text-base text-textPrimary text-justify">
             Financie seu imóvel com as melhores condições do mercado.
             <b
               >Sem filas, sem gerentes, sem complexidade e com um time de
@@ -46,6 +46,7 @@
           <InputWithSlider
             v-model="formValue"
             :props="sliderProps"
+            class=""
             @submit="openSimulation"
           />
         </div>
@@ -58,7 +59,6 @@
 </template>
 <script lang="ts" setup>
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
-import TopBar from '@/components/structure/topBar/index.component.vue'
 import information from '@/configurations/information'
 import { ref } from 'vue'
 
@@ -70,7 +70,7 @@ const sliderProps = {
   minimumValue: 50000,
   maximumValue: 30000000,
   defaultValue: 350000,
-  backgroundColor: '#0524DD',
+  backgroundColor: 'var(--primaryColor)',
   title: 'Quanto custa o seu sonho?',
 }
 
