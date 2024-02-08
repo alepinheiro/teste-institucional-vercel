@@ -30,7 +30,6 @@ import {
   CurrencyDisplay,
   CurrencyInputOptions,
   useCurrencyInput,
-  //@ts-expect-error no types
 } from 'vue-currency-input'
 
 export default defineComponent({
@@ -66,7 +65,6 @@ export default defineComponent({
       hideGroupingSeparatorOnFocus: false as boolean,
       hideNegligibleDecimalDigitsOnFocus: false as boolean,
       autoDecimalDigits: true as boolean,
-      autoSign: true as boolean,
       useGrouping: true as boolean,
       accountingSign: false as boolean,
     }

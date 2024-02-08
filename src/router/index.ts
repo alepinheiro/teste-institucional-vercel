@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import { useHead } from '@vueuse/head'
+import {
+  useHead,
+  useSeoMeta,
+  type UseHeadInput,
+  type UseSeoMetaInput,
+} from '@unhead/vue'
 declare module 'vue-router' {
   interface RouteMeta {
-    title: string
-    meta?: {
-      name: string
-      content: string
-    }[]
+    meta?: UseHeadInput<{}>
+    seoMeta?: UseSeoMetaInput
   }
 }
 
@@ -17,15 +19,30 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     meta: {
       title:
-        'Página Inicial - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
+        'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
       meta: [
         {
           name: 'description',
           content:
             'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
         },
-      ],
+        {
+          rel: 'canonical',
+          href: 'https://seja.best',
+        },
+      ] as UseHeadInput,
+      seoMeta: {
+        title:
+          'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
+        description:
+          'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
+        ogDescription: 'Still about my about page',
+        ogTitle: 'About',
+        ogImage: 'https://example.com/image.png',
+        twitterCard: 'summary_large_image',
+      },
     },
+
     props: {
       showMenu: true,
     },
@@ -43,7 +60,7 @@ const routes: Array<RouteRecordRaw> = [
           content:
             'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
         },
-      ],
+      ] as UseHeadInput,
     },
     props: {
       showMenu: true,
@@ -67,7 +84,7 @@ const routes: Array<RouteRecordRaw> = [
           content:
             'Financie seu imóvel com as melhores condições do mercado. Sem filas, sem gerentes, sem complexidade e com um time de especialistas totalmente pronto pra lhe ajudar.',
         },
-      ],
+      ] as UseHeadInput,
     },
     props: {
       showMenu: true,
@@ -86,7 +103,7 @@ const routes: Array<RouteRecordRaw> = [
           content:
             'Financie seu imóvel com as melhores condições do mercado. Sem filas, sem gerentes, sem complexidade e com um time de especialistas totalmente pronto pra lhe ajudar.',
         },
-      ],
+      ] as UseHeadInput,
     },
     props: {
       showMenu: true,
@@ -141,7 +158,7 @@ const routes: Array<RouteRecordRaw> = [
           content:
             'Use o seu carro como garantia em troca das melhores taxas.Você consegue crédito para seus objetivos financeiros sem precisar vender o veículo com taxas a partir de 1,59% ao mês e prazos de até 60 meses. ',
         },
-      ],
+      ] as UseHeadInput,
     },
     props: {
       showMenu: false,
@@ -159,7 +176,7 @@ const routes: Array<RouteRecordRaw> = [
           content:
             'Use o seu carro como garantia em troca das melhores taxas.Você consegue crédito para seus objetivos financeiros sem precisar vender o veículo com taxas a partir de 1,59% ao mês e prazos de até 60 meses. ',
         },
-      ],
+      ] as UseHeadInput,
     },
     props: {
       showMenu: true,
@@ -178,7 +195,7 @@ const routes: Array<RouteRecordRaw> = [
           content:
             'Escolha o carro, novo ou usado, e financie até 100% do valor. Faça uma simulação agora e veja como ficam as parcelas. ',
         },
-      ],
+      ] as UseHeadInput,
     },
     props: {
       showMenu: true,
@@ -196,7 +213,7 @@ const routes: Array<RouteRecordRaw> = [
           content:
             'Aprenda tudo sobre financiamento, modalidades de empréstimo e acompanhe o mercado financeiro todos os dias. ',
         },
-      ],
+      ] as UseHeadInput,
     },
     props: {
       showMenu: false,
@@ -207,14 +224,14 @@ const routes: Array<RouteRecordRaw> = [
     name: 'getOutRent',
     component: () => import('@/views/getOutRent.vue'),
     meta: {
-      title: 'Xô, Aluguel!',
+      title: 'Xô, Aluguel! Chegou a sua hora de deixar o aluguel para trás! ',
       meta: [
         {
           name: 'description',
           content:
             'O método best para conquistar seu primeiro imóvel com financiamento imobiliário',
         },
-      ],
+      ] as UseHeadInput,
     },
     props: {
       showMenu: false,
@@ -271,11 +288,10 @@ const router = createRouter({
 })
 
 router.afterEach((to, from) => {
-  const defaultPageTitle =
-    'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.'
-  useHead({
-    title: to.meta.title ?? defaultPageTitle,
-  })
+  if (!to.meta || !to.meta.meta) return
+  useHead(to.meta.meta)
+  if (!to.meta || !to.meta.seoMeta) return
+  useSeoMeta(to.meta.seoMeta)
 })
 
 export default router
