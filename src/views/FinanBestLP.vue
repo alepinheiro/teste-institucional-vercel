@@ -1,5 +1,10 @@
 <template>
-  <main>
+  <main class="relative">
+    <TopBar
+      :customMobileMenuColor="menuColor"
+      color="primary"
+      class="text-primary xl:text-textPrimary"
+    />
     <HeroSection :show-menu="showMenu" />
     <BusinessPartners
       :props="{
@@ -25,7 +30,6 @@
     <VideoSection :youtube-video-id="'Mlg8eDX61uE'" class="lg:pt-20 xl:pt-20" />
     <StepsSection />
 
-
     <AboutUs
       :cards="{ bgColor: 'PRIMARY' }"
       :container="{ bgColor: 'SECONDARY' }"
@@ -47,6 +51,8 @@ import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
 import AboutUs from '@/components/base/aboutUs.component.vue'
 import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
+import TopBar from '@/components/structure/topBar/index.component.vue'
+import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
 
 defineProps<{
   showMenu: boolean
@@ -61,5 +67,22 @@ useHead({
         'Financie seu imóvel com as melhores condições do mercado. Sem filas, sem gerentes, sem complexidade e com um time de especialistas totalmente pronto pra lhe ajudar.',
     },
   ],
+})
+
+const menuColor = ref(window.innerWidth > 667 ? 'black' : 'var(--textPrimaryColor)')
+const setMenuColorOnResize = () => {
+  if (window.innerWidth > 667) {
+    menuColor.value = 'black'
+  }
+  if (window.innerWidth <= 667) {
+    menuColor.value = 'var(--textPrimaryColor)'
+  }
+}
+
+onBeforeMount(() => {
+  window.addEventListener('resize', setMenuColorOnResize)
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', setMenuColorOnResize)
 })
 </script>
