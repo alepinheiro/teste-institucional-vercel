@@ -1,12 +1,5 @@
 <template>
   <section class="w-full flex pt-0 min-md:pt-10 relative min-h-screen">
-    <!-- <div
-      class="absolute inset-x-0 h-fit top-0 flex justify-center z-20 w-full xl:bg-[#070e3730] xl:backdrop-blur-md lg:bg-[#070e3730] lg:backdrop-blur-md xl:shadow-sm lg:shadow-sm"
-    >
-      <TopBar
-        class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4 text-primary"
-      />
-    </div> -->
     <div class="absolute inset-0 overflow-hidden z-0 flex items-end sm:h-2/3">
       <img
         src="/images/finanBest/heroBgXL.png"
@@ -24,25 +17,49 @@
     >
       <!--  -->
       <div
-        class="flex-1 lg:w-7/12 lg:flex-initial mt-auto mb-12 md:mb-10 sm:bg-gradient-to-b sm:from-transparent sm:to-white"
+        class="lg:w-7/12 xl:w-5/12 lg:flex-initial mt-auto mb-12 md:mb-10 sm:bg-gradient-to-b sm:from-transparent sm:to-white"
       >
         <div
-          class="bg-transparent min-md:bg-white/90 flex flex-col gap-6 font-Public-Sans p-8 md:px-8 py-4 rounded-xl min-hd:shadow-lg h-full justify-end"
+          class="bg-transparent min-md:bg-white/90 flex flex-col gap-6 p-8 xl:px-6 py-4 rounded-xl min-hd:shadow-lg h-full justify-end"
         >
           <h1
-            class="text-2xl md:text-4xl min-lg:text-5xl text-primary leading-tight whitespace-pre-line"
+            class="font-darkerGrotesque text-2xl md:text-4xl min-lg:text-6xl text-primary leading-tight whitespace-pre-line xl:font-bold"
           >
-            <strong>FinanBest:</strong>
-            Financie seu imóvel com a assessoria
-            <strong>SejaBest</strong>
+            <span class="min-md:hidden">
+              <b>FinanBest:</b>
+              Financie seu imóvel com a assessoria
+              <b>SejaBest</b>
+            </span>
+            <span class="hidden xl:block">
+              FinanBest: Financie seu imóvel com a assessoria SejaBest
+            </span>
           </h1>
-          <p class="text-base text-textPrimary text-justify">
+          <!--  -->
+          <p class="text-base text-textPrimary text-justify xl:hidden">
             Financie seu imóvel com as melhores condições do mercado.
             <b
               >Sem filas, sem gerentes, sem complexidade e com um time de
               especialistas totalmente pronto pra lhe ajudar.</b
             >
           </p>
+          <!--  -->
+          <div class="hidden xl:flex flex-row gap-4">
+            <div
+              v-for="{ description, icon, id } of cards"
+              :key="id"
+              class="flex flex-row gap-2 items-center mx-auto w-full"
+            >
+              <component :is="icon" class="text-primary flex-shrink-0" />
+              <p
+                class="text-textPrimary text-center text-sm md:text-left min-lg:text-base"
+              >
+                {{ description }}
+              </p>
+            </div>
+          </div>
+
+          <hr class="border border-textSecondary">
+
           <InputWithSlider
             v-model="formValue"
             :props="sliderProps"
@@ -63,13 +80,15 @@
         </a>
       </div>
       <!--  -->
-      <div class="flex-1 xl:block lg:block hidden"></div>
+      <!-- <div class="flex-1 xl:block lg:block hidden"></div> -->
       <!--  -->
     </div>
   </section>
 </template>
 <script lang="ts" setup>
+import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
+import PercentIcon from '@/assets/svg/percentWithBackground.vue'
 import information from '@/configurations/information'
 import { ref } from 'vue'
 
@@ -92,6 +111,19 @@ const utm = new URLSearchParams({
   utm_medium: 'hero-section-finanbest',
   utm_campaign: 'landing-pages-dez-23',
 })
+
+const cards = [
+  {
+    id: 'percent',
+    icon: PercentIcon,
+    description: 'A partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
+  },
+  {
+    id: 'calendar',
+    icon: CalendarIcon,
+    description: 'Escolha como pagar. Em até 20 anos.',
+  },
+]
 
 const openSimulation = () => {
   window.open(`${information.appSimulator}?${utm.toString()}`, '_blank')
