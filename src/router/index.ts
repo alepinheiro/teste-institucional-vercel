@@ -1,10 +1,20 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { useHead } from '@vueuse/head'
+import Vue from 'vue';
+declare module 'vue-router' {
+  interface RouteMeta {
+    title: string;
+  }
+}
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
     component: () => import('@/views/homePage/index.vue'),
+    meta: {
+      title: 'Página Inicial - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.'
+    },
     props: {
       showMenu: true,
     },
@@ -13,6 +23,9 @@ const routes: Array<RouteRecordRaw> = [
     path: '/sobre',
     name: 'AboutUs',
     component: () => import('@/views/AboutUs.vue'),
+    meta: {
+      title: 'Sobre nós - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.'
+    },
     props: {
       showMenu: true,
     },
@@ -201,6 +214,16 @@ const router = createRouter({
   scrollBehavior() {
     return { top: 0 }
   },
+})
+
+router.afterEach((to, from) => {
+  const defaultPageTitle = 'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.';
+  // Vue.nextTick(() => {
+    useHead({
+      title: to.meta.title ?? defaultPageTitle,
+    })
+
+  // })
 })
 
 export default router

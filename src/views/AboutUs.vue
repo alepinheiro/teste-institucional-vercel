@@ -48,7 +48,6 @@ import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue
 import Editorial from '@/components/aboutUs/bestEditorial.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 import { defineComponent } from 'vue'
-import { useHead } from '@vueuse/head'
 
 export default defineComponent({
   name: 'AboutUs',
@@ -73,19 +72,6 @@ export default defineComponent({
   },
   data() {
     return {}
-  },
-  created() {
-    useHead({
-      title:
-        'SejaBest - Financie seu imóvel com as melhores condições do mercado',
-      meta: [
-        {
-          name: 'description',
-          content:
-            'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
-        },
-      ],
-    })
   },
 })
 </script>

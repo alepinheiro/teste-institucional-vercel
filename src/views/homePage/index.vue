@@ -55,7 +55,6 @@ import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import Mission from '@/components/aboutUs/missionSection.component.vue'
 import SloganSection from '@/components/homePage/sloganSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
-import { useHead } from '@vueuse/head'
 
 import { defineComponent } from 'vue'
 export default defineComponent({
@@ -71,18 +70,6 @@ export default defineComponent({
     Mission,
     SloganSection,
     TheFooter,
-  },
-  setup() {
-    useHead({
-      title: 'SejaBest - Sem filas, sem gerentes, sem complexidade.',
-      meta: [
-        {
-          name: 'description',
-          content:
-            'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
-        },
-      ],
-    })
   },
   data() {
     return {}
