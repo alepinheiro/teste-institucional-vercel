@@ -1,19 +1,30 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import { useHead } from '@vueuse/head'
-import Vue from 'vue';
 declare module 'vue-router' {
   interface RouteMeta {
-    title: string;
+    title: string
+    meta?: {
+      name: string
+      content: string
+    }[]
   }
 }
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
     component: () => import('@/views/homePage/index.vue'),
+    name: 'Home',
     meta: {
-      title: 'Página Inicial - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.'
+      title:
+        'Página Inicial - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
+        },
+      ],
     },
     props: {
       showMenu: true,
@@ -24,7 +35,15 @@ const routes: Array<RouteRecordRaw> = [
     name: 'AboutUs',
     component: () => import('@/views/AboutUs.vue'),
     meta: {
-      title: 'Sobre nós - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.'
+      title:
+        'Sobre nós - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
+        },
+      ],
     },
     props: {
       showMenu: true,
@@ -34,6 +53,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/home-equity',
     name: 'HomeEquity',
     component: () => import('@/views/CashBestLP.vue'),
+    meta: {
+      title: 'CashBest: o Crédito com Garantia de Imóvel da SejaBest',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Financie seu imóvel com as melhores condições do mercado. Sem filas, sem gerentes, sem complexidade e com um time de especialistas totalmente pronto pra lhe ajudar.',
+        },
+      ],
+    },
     props: {
       showMenu: true,
     },
@@ -217,13 +246,11 @@ const router = createRouter({
 })
 
 router.afterEach((to, from) => {
-  const defaultPageTitle = 'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.';
-  // Vue.nextTick(() => {
-    useHead({
-      title: to.meta.title ?? defaultPageTitle,
-    })
-
-  // })
+  const defaultPageTitle =
+    'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.'
+  useHead({
+    title: to.meta.title ?? defaultPageTitle,
+  })
 })
 
 export default router
