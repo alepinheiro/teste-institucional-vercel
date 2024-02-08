@@ -35,11 +35,14 @@ const routes: Array<RouteRecordRaw> = [
         title:
           'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
         description:
+          ' Facilitamos o seu acesso ao crédito através de uma  plataforma multibancos. Sem filas, Sem gerentes, Sem complexidade.',
+        ogDescription:
           'A melhor fintech de Crédito do Brasil. Sem filas, Sem gerentes, Sem complexidade.',
-        ogDescription: 'Still about my about page',
-        ogTitle: 'About',
-        ogImage: 'https://example.com/image.png',
-        twitterCard: 'summary_large_image',
+        ogTitle:
+          'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
+        ogImage: window.location.origin + '/images/Home/gasparHeroSection.png',
+        ogUrl: window.location.origin,
+        ogType: 'website',
       },
     },
 
