@@ -42,8 +42,8 @@
     <TheFooter />
   </main>
 </template>
+
 <script setup lang="ts">
-import { useHead } from '@vueuse/head'
 import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
 import BusinessPartners from '@/components/base/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
@@ -58,17 +58,6 @@ import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
 defineProps<{
   showMenu: boolean
 }>()
-
-useHead({
-  title: 'FinanBest: Financie seu imóvel com a assessoria SejaBest',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Financie seu imóvel com as melhores condições do mercado. Sem filas, sem gerentes, sem complexidade e com um time de especialistas totalmente pronto pra lhe ajudar.',
-    },
-  ],
-})
 
 const menuColor = ref(
   window.innerWidth > 667 ? 'black' : 'var(--textPrimaryColor)',

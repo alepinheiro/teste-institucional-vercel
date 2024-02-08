@@ -75,24 +75,31 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/financiamento-imobiliario',
+    alias: ['/financiamento-imobiliario/finanBest'],
     name: 'Financing',
     component: () => import('@/views/FinanBestLP.vue'),
+    meta: {
+      title: 'FinanBest: Financie seu imóvel com a assessoria SejaBest',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Financie seu imóvel com as melhores condições do mercado. Sem filas, sem gerentes, sem complexidade e com um time de especialistas totalmente pronto pra lhe ajudar.',
+        },
+      ],
+    },
     props: {
       showMenu: true,
-    },
-  },
-  {
-    path: '/financiamento-imobiliario/finanBest',
-    name: 'FinancingLP',
-    component: () => import('@/views/FinanBestLP.vue'),
-    props: {
-      showMenu: false,
     },
   },
   {
     path: '/faq',
     name: 'Faq',
     component: () => import('@/views/Faq.vue'),
+    meta: {
+      title:
+        'Perguntas Frequentes - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem	complexidade.',
+    },
     props: {
       showMenu: true,
     },
@@ -101,6 +108,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/politica-de-privacidade',
     name: 'PrivacyPolicy',
     component: () => import('@/views/PrivacyPolicy.vue'),
+    meta: {
+      title:
+        'Política de privacidade - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem	complexidade.',
+    },
     props: {
       showMenu: true,
     },
@@ -109,22 +120,29 @@ const routes: Array<RouteRecordRaw> = [
     path: '/termos-de-uso',
     name: 'TermsOfUse',
     component: () => import('@/views/TermsOfUse.vue'),
+    meta: {
+      title:
+        'Termos de uso - SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem	complexidade.',
+    },
     props: {
       showMenu: true,
     },
   },
   {
     path: '/emprestimo-com-garantia-de-veiculo/BestCar',
+    alias: ['/credito-com-garantia-de-veiculo'],
     name: 'BestCarLP',
     component: () => import('@/views/BestCarLP.vue'),
-    props: {
-      showMenu: false,
+    meta: {
+      title: 'BestCar: Empréstimo com Garantia de Veículo',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Use o seu carro como garantia em troca das melhores taxas.Você consegue crédito para seus objetivos financeiros sem precisar vender o veículo com taxas a partir de 1,59% ao mês e prazos de até 60 meses. ',
+        },
+      ],
     },
-  },
-  {
-    path: '/credito-com-garantia-de-veiculo',
-    name: 'BestCarLP-credito',
-    component: () => import('@/views/BestCarLP.vue'),
     props: {
       showMenu: false,
     },
@@ -133,14 +151,35 @@ const routes: Array<RouteRecordRaw> = [
     path: '/emprestimo-com-garantia-de-veiculo',
     name: 'BestCar',
     component: () => import('@/views/BestCar.vue'),
+    meta: {
+      title: 'BestCar: Empréstimo com Garantia de Veículo',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Use o seu carro como garantia em troca das melhores taxas.Você consegue crédito para seus objetivos financeiros sem precisar vender o veículo com taxas a partir de 1,59% ao mês e prazos de até 60 meses. ',
+        },
+      ],
+    },
     props: {
       showMenu: true,
     },
   },
   {
     path: '/financiamento-veicular',
+    alias: ['/financiamento-veicular/BestCarFinan'],
     name: 'BestCarFinan',
     component: () => import('@/views/BestCarFinan.vue'),
+    meta: {
+      title: 'FinanBest: Financiamento veicular da SejaBest',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Escolha o carro, novo ou usado, e financie até 100% do valor. Faça uma simulação agora e veja como ficam as parcelas. ',
+        },
+      ],
+    },
     props: {
       showMenu: true,
     },
@@ -149,14 +188,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/best-news',
     name: 'BestNews',
     component: () => import('@/views/BestNewsLP.vue'),
-    props: {
-      showMenu: false,
+    meta: {
+      title: 'BestNews: Notícias da sobre financiamento imobiliário',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Aprenda tudo sobre financiamento, modalidades de empréstimo e acompanhe o mercado financeiro todos os dias. ',
+        },
+      ],
     },
-  },
-  {
-    path: '/financiamento-veicular/BestCarFinan',
-    name: 'BestCarFinanLP',
-    component: () => import('@/views/BestCarFinanLP.vue'),
     props: {
       showMenu: false,
     },
@@ -165,6 +206,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/xo-aluguel',
     name: 'getOutRent',
     component: () => import('@/views/getOutRent.vue'),
+    meta: {
+      title: 'Xô, Aluguel!',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'O método best para conquistar seu primeiro imóvel com financiamento imobiliário',
+        },
+      ],
+    },
     props: {
       showMenu: false,
     },
