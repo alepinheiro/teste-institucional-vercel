@@ -51,6 +51,12 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/home-equity',
+    alias: [
+      '/emprestimo-com-garantia-de-imovel/cashbest',
+      '/credito-com-garantia-de-imovel',
+      '/como-funciona',
+      '/emprestimo-com-garantia-de-imovel',
+    ],
     name: 'HomeEquity',
     component: () => import('@/views/CashBestLP.vue'),
     meta: {
@@ -65,38 +71,6 @@ const routes: Array<RouteRecordRaw> = [
     },
     props: {
       showMenu: true,
-    },
-  },
-  {
-    path: '/emprestimo-com-garantia-de-imovel/cashbest',
-    name: 'HomeEquityLP',
-    component: () => import('@/views/CashBestLP.vue'),
-    props: {
-      showMenu: false,
-    },
-  },
-  {
-    path: '/credito-com-garantia-de-imovel',
-    name: 'HomeEquityLP-credito',
-    component: () => import('@/views/CashBestLP.vue'),
-    props: {
-      showMenu: false,
-    },
-  },
-  {
-    path: '/como-funciona',
-    name: 'HomeEquityLP2',
-    component: () => import('@/views/CashBestLP.vue'),
-    props: {
-      showMenu: false,
-    },
-  },
-  {
-    path: '/emprestimo-com-garantia-de-imovel',
-    name: 'HomeEquityLP1',
-    component: () => import('@/views/CashBestLP.vue'),
-    props: {
-      showMenu: false,
     },
   },
   {
