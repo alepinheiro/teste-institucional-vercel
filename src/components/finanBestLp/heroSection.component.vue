@@ -9,12 +9,12 @@
     </div> -->
     <div class="absolute inset-0 overflow-hidden z-0 flex items-end sm:h-2/3">
       <img
-        src="/images/finanBest/heroSectionXL161123.png"
+        src="/images/finanBest/heroBgXL.png"
         alt=""
         class="hidden xl:block lg:block object-cover h-full ml-auto"
       />
       <img
-        src="/images/finanBest/heroSectionMD161123.png"
+        src="/images/finanBest/heroBgMD.png"
         alt=""
         class="xl:hidden lg:hidden object-cover h-full w-full"
       />
@@ -24,13 +24,13 @@
     >
       <!--  -->
       <div
-        class="flex-1 lg:w-7/12 lg:flex-initial mt-auto mb-32 sm:bg-gradient-to-b sm:from-transparent sm:to-white"
+        class="flex-1 lg:w-7/12 lg:flex-initial mt-auto mb-12 md:mb-10 sm:bg-gradient-to-b sm:from-transparent sm:to-white"
       >
         <div
-          class="bg-transparent min-hd:bg-white flex flex-col gap-6 md:gap-3 font-Public-Sans p-8 md:px-8 py-4 rounded-xl min-hd:shadow-lg h-full justify-end pt-40"
+          class="bg-transparent min-md:bg-white/90 flex flex-col gap-6 font-Public-Sans p-8 md:px-8 py-4 rounded-xl min-hd:shadow-lg h-full justify-end"
         >
           <h1
-            class="min-md:text-5xl text-2xl text-primary leading-tight whitespace-pre-line"
+            class="text-2xl md:text-4xl min-lg:text-5xl text-primary leading-tight whitespace-pre-line"
           >
             <strong>FinanBest:</strong>
             Financie seu imóvel com a assessoria
@@ -50,6 +50,17 @@
             @submit="openSimulation"
           />
         </div>
+        <!--  -->
+        <a
+          href="#"
+          v-scroll-to="'#businessPartners'"
+          class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline"
+        >
+          <i class="fa-solid fa-chevron-down"></i>
+          <span class="text-xs"
+            >Ou saiba mais sobre o FinanBest rolando para baixo</span
+          >
+        </a>
       </div>
       <!--  -->
       <div class="flex-1 xl:block lg:block hidden"></div>

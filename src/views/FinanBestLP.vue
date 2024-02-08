@@ -7,6 +7,7 @@
     />
     <HeroSection :show-menu="showMenu" />
     <BusinessPartners
+      id="businessPartners"
       :props="{
         backgroundColor: '#FFF',
         title: 'Na SejaBest, suas chances de aprovação são maiores',
@@ -69,7 +70,9 @@ useHead({
   ],
 })
 
-const menuColor = ref(window.innerWidth > 667 ? 'black' : 'var(--textPrimaryColor)')
+const menuColor = ref(
+  window.innerWidth > 667 ? 'black' : 'var(--textPrimaryColor)',
+)
 const setMenuColorOnResize = () => {
   if (window.innerWidth > 667) {
     menuColor.value = 'black'
