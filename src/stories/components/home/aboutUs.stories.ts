@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
-import AboutUs from '../../../components/homePage/aboutUs.component.vue'
+import AboutUs from '@/components/homePage/aboutUs.component.vue'
 
 const meta = {
   title: 'Components/Home/AboutUs',

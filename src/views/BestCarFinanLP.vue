@@ -1,6 +1,6 @@
 <template>
   <div>
-    <topBarVideo :show-menu="showMenu" />
+    <TopBar :show-menu="showMenu" />
 
     <section class="flex pt-6 maxWidth maxWidthNone">
       <div class="w-5/12 mb-auto mt-16 xl:mt-6 md:mt-10 sm:w-full sm:hidden">
@@ -68,7 +68,7 @@
             text-center font-bold uppercase rounded-lg"
           >
             <a
-              :href="$options.information.appVehicleSimulator + ($root as IRootExtension).utms"
+              :href="$options.information.appVehicleSimulator + $root.utms"
               target="_blank"
               aria-label="Clique aqui para contratar seu financiamento"
               >Quero contratar</a
@@ -103,8 +103,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue'
-import topBarVideo from '@/components/vehicle/BestCarFinan/topBarVideo.vue'
+import { defineComponent } from 'vue'
+import TopBar from '@/components/structure/topBar/index.component.vue'
 import CardWhite from '@/components/vehicle/BestCarFinan/cardWhite.vue'
 import StepByStep from '@/components/vehicle/BestCarFinan/stepByStep.vue'
 import Carousel from '@/components/vehicle/BestCarLP/carousel.vue'

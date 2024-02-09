@@ -4,7 +4,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/TheIndex.vue'),
+    component: () => import('@/views/homePage/index.vue'),
     props: {
       showMenu: true,
     },

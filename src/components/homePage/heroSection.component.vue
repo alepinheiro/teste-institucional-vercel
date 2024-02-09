@@ -1,74 +1,62 @@
 <template>
-  <section class="relative z-0 flex">
+  <section>
     <div
-      v-if="showMenu"
-      class="absolute inset-x-0 h-fit top-0 flex justify-center z-20 w-full xl:bg-[#070e3730] xl:backdrop-blur-md lg:bg-[#070e3730] lg:backdrop-blur-md xl:shadow-sm lg:shadow-sm"
+      class="px-5 flex flex-col xl:flex-row-reverse lg:flex-row-reverse gap-5 items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full "
     >
-      <TopBar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto pt-4" />
-    </div>
-    <div class="absolute inset-0 -z-10 overflow-hidden">
-      <div class="relative z-0 w-full h-full">
-        <div
-          class="absolute inset-0 z-20 bg-gradient-to-t from-bgDarkColor via-bgDarkColor via-[15%] to-transparent"
-        ></div>
-        <iframe
-          :src="`https://www.youtube.com/embed/${backgroundVideos.desktop}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.desktop}`"
-          class="absolute top-0 bottom-0 w-full my-auto h-full z-0 scale-150 opacity-[.35] hidden lg:block xl:block"
-        ></iframe>
-        <iframe
-          :src="`https://www.youtube.com/embed/${backgroundVideos.mobile}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.mobile}`"
-          class="w-full h-[85%] md:h-[130%] absolute z-0 scale-150 opacity-[.35] block lg:hidden xl:hidden"
-        ></iframe>
-      </div>
-    </div>
-
-    <div class="flex flex-col gap-4 items-center mt-auto mx-auto h-fit px-5">
-      <div class="flex flex-col gap-4 text-center text-white">
+      <img
+        src="/images/Home/gasparHeroSection.png"
+        class="w-48 xl:w-1/2 lg:w-5/12 md:hidden"
+        alt=""
+      />
+      <div
+        class="flex flex-col gap-5 items-center xl:w-1/2 lg:w-7/12 xl:items-start lg:items-start text-center xl:text-left lg:text-left"
+      >
         <h1
-          class="font-bold text-4xl md:text-5xl lg:text-5xl xl:text-5xl font-darkerGrotesque leading-7 tracking-wide"
+          class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]"
         >
-          A melhor fintech de Crédito do Brasil
+          Facilitamos o seu
+          <span class="text-primary"> acesso ao crédito </span>
+          através de uma
+          <span
+            class="before:inline before:absolute before:-left-2 before:-right-2 before:top-1 before:-bottom-2 before:bg-primary before:-z-10 text-white relative z-0 inline-table ml-2 whitespace-pre-line"
+          >
+            plataforma multibancos
+          </span>
         </h1>
-        <h2 class="text-2xl md:text-2xl lg:text-2xl xl:text-2xl">
-          Sem
-          <b> filas. </b>
-          Sem
-          <b> gerentes. </b>
-          Sem
+
+        <h2 class="text-primary xl:text-2xl lg:text-2xl md:text-2xl">
+          Sem <b> filas, </b> Sem
+          <b> gerentes, <br class="xl:hidden lg:hidden md:hidden" /> </b> Sem
           <b> complexidade. </b>
         </h2>
+
+        <hr class="border-px border-textSecondary w-full" />
+
+        <img
+          src="/images/Home/awards/awardsHeroSection.png"
+          class="xl:w-1/2 lg:w-3/5 md:w-7/12 max-w-xs"
+          alt=""
+        />
+
+        <a
+          :href="information.appSimulator + $root.utms"
+          class="bg-complementaryColor1 px-5 py-3 rounded text-white font-bold"
+        >
+          <span class="xl:hidden lg:hidden md:hidden">Simule seu crédito</span>
+          <span class="hidden xl:block text-2xl lg:block lg:text-xl md:block"
+            >Clique aqui e simule gratuitamente</span
+          >
+        </a>
       </div>
-      <a
-        :href="information.appSimulator + $root.utms"
-        class="bg-complementaryColor1 text-white font-bold w-fit px-5 py-3 rounded-md md:text-xl lg:text-xl xl:text-xl"
-      >
-        Simule seu crédito
-      </a>
     </div>
   </section>
 </template>
 <script lang="ts">
-import { defineComponent, type PropType } from 'vue'
-import TopBar from '@/components/structure/topbar.component.vue'
+import { defineComponent } from 'vue'
 import information from '@/configurations/information'
 
 export default defineComponent({
   name: 'HeroSection',
-  props: {
-    showMenu: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-    backgroundVideos: {
-      type: Object as PropType<{
-        desktop: string
-        mobile: string
-      }>,
-      required: true,
-    },
-  },
-  components: { TopBar },
   data() {
     return {
       information,

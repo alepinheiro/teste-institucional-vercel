@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
-import SloganSection from '../../../components/homePage/sloganSection.component.vue'
+import SloganSection from '@/components/homePage/sloganSection.component.vue'
 
 const meta = {
   title: 'Components/Home/SloganSection',

@@ -1,14 +1,13 @@
 <template>
-  <main class="bg-[#EFEFEF] overflow-hidden">
-    <HeroSection
-      :show-menu="showMenu"
-      :background-videos="{
-        desktop: 'cDoHr9yWwTA',
-        mobile: 'tj237hcYXjU',
-      }"
-      class="bg-bgDarkColor pb-12 sm:h-[70vh] h-screen"
+  <div class="relative z-0 bg-[#EFEFEF]">
+    <img
+      src="/images/Home/backgroundLines.png"
+      class="absolute -left-40 -top-40 md:-left-[40%] lg:-left-[40%] -z-10 hidden md:block lg:block xl:block"
+      alt=""
     />
-    <Products class="bg-bgDarkColor md:py-10" />
+    <TopBar color="primary" class="text-primary" />
+    <HeroSection class="pt-10" />
+    <Products class="pt-10 lg:pt-20" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
       inner-text="<strong>
@@ -22,7 +21,7 @@
     />
     <SloganSection />
     <AboutUs
-      class="md:px-5 lg:px-5 bg-[#DEDEDE] md:bg-[#EFEFEF] lg:bg-[#EFEFEF] xl:bg-[#EFEFEF] md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
+      class="md:px-5 lg:px-5 md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
     />
     <Mission class="py-10 px-5" />
     <ComparisonTable
@@ -39,50 +38,43 @@
       }"
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
-    <BestPlay class="bg-[#181818]" />
-  </main>
-  <TheFooter />
+    <BestPlay
+      class="bg-[#181818] bg-gradient-to-br to-black from-transparent border-b-4 border-primary md:border-0 lg:border-0 xl:border-0"
+    />
+    <TheFooter class="block" />
+  </div>
 </template>
 <script lang="ts">
+import TopBar from '@/components/structure/topBar/index.component.vue'
+import HeroSection from '@/components/homePage/heroSection.component.vue'
+import Products from '@/components/homePage/productsSection.component.vue'
 import AboutUs from '@/components/homePage/aboutUs.component.vue'
 import BestPlay from '@/components/homePage/bestPlay.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
-import HeroSection from '@/components/homePage/heroSection.component.vue'
 import Mission from '@/components/aboutUs/missionSection.component.vue'
-import Products from '@/components/homePage/productsSection.component.vue'
 import SloganSection from '@/components/homePage/sloganSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
-import { defineComponent } from 'vue'
 import { useHead } from '@vueuse/head'
 
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'TheIndex',
-  props: {
-    showMenu: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
+  name: 'HomePage',
   components: {
+    TopBar,
     HeroSection,
     Products,
-    BusinessPartners,
-    SloganSection,
     AboutUs,
-    Mission,
-    ComparisonTable,
     BestPlay,
+    BusinessPartners,
+    ComparisonTable,
+    Mission,
+    SloganSection,
     TheFooter,
   },
-  data() {
-    return {}
-  },
-  created() {
+  setup() {
     useHead({
-      title:
-        'SejaBest - Sem filas, sem gerentes, sem complexidade.',
+      title: 'SejaBest - Sem filas, sem gerentes, sem complexidade.',
       meta: [
         {
           name: 'description',
@@ -91,6 +83,9 @@ export default defineComponent({
         },
       ],
     })
+  },
+  data() {
+    return {}
   },
 })
 </script>
