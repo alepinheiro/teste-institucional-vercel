@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <section
-      class="px-5 flex flex-col xl:flex-row-reverse lg:flex-row-reverse gap-5 items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full pt-10"
+  <section>
+    <div
+      class="px-5 flex flex-col xl:flex-row-reverse lg:flex-row-reverse gap-5 items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full "
     >
       <img
         src="/images/Home/gasparHeroSection.png"
@@ -55,8 +55,8 @@
           >
         </a>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'

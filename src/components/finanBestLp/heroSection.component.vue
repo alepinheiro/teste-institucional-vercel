@@ -82,9 +82,6 @@
           >
         </a>
       </div>
-      <!--  -->
-      <!-- <div class="flex-1 xl:block lg:block hidden"></div> -->
-      <!--  -->
     </div>
   </section>
 </template>

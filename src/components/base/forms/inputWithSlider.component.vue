@@ -63,7 +63,6 @@
 <script setup lang="ts">
 import CurrencyInput from '@/components/base/currencyInput.component.vue'
 import { ref, computed } from 'vue'
-//@ts-expect-error
 import { type CurrencyInputOptions, CurrencyDisplay } from 'vue-currency-input'
 
 const { props: sliderProps } = defineProps<{
@@ -128,7 +127,6 @@ const onSubmit = (event: Event) => {
     const cleanedValue = data.creditAmount.toString().replace('R$', '').trim()
     const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.')
     const floatNumber = parseFloat(formattedValue)
-    // data.creditAmount = `${floatNumber}`
     emit('submit', floatNumber)
   }
 }

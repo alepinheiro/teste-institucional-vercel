@@ -68,7 +68,7 @@
             text-center font-bold uppercase rounded-lg"
           >
             <a
-              :href="$options.information.appVehicleSimulator + ($root as IRootExtension).utms"
+              :href="$options.information.appVehicleSimulator + $root.utms"
               target="_blank"
               aria-label="Clique aqui para contratar seu financiamento"
               >Quero contratar</a

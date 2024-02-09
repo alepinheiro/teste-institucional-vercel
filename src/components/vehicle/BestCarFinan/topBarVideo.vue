@@ -3,7 +3,7 @@
     <!-- 🖥️ Desktop -->
     <div class="bgFinanCar sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen">
-        <TopbarComponent v-if="showMenu" class="relative" />
+        <TopbarComponent v-if="showMenu" class="relative text-white" />
         <section class="maxWidth xl:h-screen lg:h-screen sm:hidden md:hidden">
           <div class="w-full flex pt-12 pt-xxl lg:pt-24 md:pt-8 sm:pt-4">
             <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">

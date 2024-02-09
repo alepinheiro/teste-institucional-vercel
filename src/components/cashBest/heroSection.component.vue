@@ -72,14 +72,6 @@ defineProps<{
   showMenu: boolean
 }>()
 
-const sliderProps = {
-  minimumValue: 50000,
-  maximumValue: 15000000,
-  defaultValue: 350000,
-  backgroundColor: '#EFEFEF',
-  title: 'De quanto você precisa?',
-}
-
 const doubleFormData = ref<{
   assetValue: number
   creditValue: number
