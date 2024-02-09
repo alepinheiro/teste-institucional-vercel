@@ -11,14 +11,15 @@ const props = defineProps<{
 }>()
 
 const { inputRef, setValue } = useCurrencyInput(props.options)
-const modelValue = defineModel<number>({
+const modelValue = defineModel<number | string>({
   required: true,
 })
 
 watch(
   () => modelValue.value,
   (value) => {
-    setValue(value)
+    if (typeof value === 'number') setValue(value)
+    if (typeof value === 'string') setValue(parseFloat(value))
   },
 )
 </script>
