@@ -7,7 +7,7 @@
       id="divMenu"
       title="Menu"
       aria-label="menu"
-      class="cursor-pointer w-8 h-8 flex"
+      class="cursor-pointer w-8 h-8 flex text-inherit"
       @click="toggleMenu(), handleClickOutside($event)"
     >
       <i  class="fa-solid fa-bars w-full h-full"></i>
@@ -15,7 +15,7 @@
     <div
       v-if="openProfileMenu"
       id="menuMobile"
-      class="w-full border-1 max-w-sm bgPopUpHover rounded-xl shadowDark z-40 fixed p-2 top-15 right-2"
+      class="w-full border-1 max-w-sm bgPopUpHover rounded-xl shadowDark z-40 fixed p-2 top-15 right-2 text-textPrimary"
     >
       <button
         class="cursor-pointer rounded-lg px-4 py-2 mb-2 optionsHover flex flex-row justify-between"

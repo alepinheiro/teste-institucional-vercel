@@ -60,7 +60,6 @@
 </template>
 
 <script lang="ts" setup>
-import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
 import information from '@/configurations/information'
 import PercentIcon from '@/assets/svg/percentWithBackground.vue'
 import HouseIcon from '@/assets/svg/houseWithMoneySign.vue'
@@ -72,14 +71,6 @@ import { ref } from 'vue'
 defineProps<{
   showMenu: boolean
 }>()
-
-const sliderProps = {
-  minimumValue: 50000,
-  maximumValue: 15000000,
-  defaultValue: 350000,
-  backgroundColor: '#EFEFEF',
-  title: 'De quanto você precisa?',
-}
 
 const doubleFormData = ref<{
   assetValue: number
