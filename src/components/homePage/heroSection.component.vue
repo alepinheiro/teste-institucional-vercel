@@ -1,15 +1,15 @@
 <template>
   <section>
     <div
-      class="px-5 flex flex-col xl:flex-row-reverse lg:flex-row-reverse gap-5 items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full "
+      class="flex flex-col xl:flex-row-reverse lg:flex-row-reverse gap-5 items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full"
     >
       <img
-        src="/images/Home/gasparHeroSection.png"
-        class="w-48 xl:w-1/2 lg:w-5/12 md:hidden"
+        src="/images/Home/heroBackground-sm.png"
+        class="aspect-square"
         alt=""
       />
       <div
-        class="flex flex-col gap-5 min-md:gap-10 items-center xl:w-1/2 lg:w-7/12 xl:items-start lg:items-start text-center xl:text-left lg:text-left"
+        class="flex flex-col gap-5 min-md:gap-10 items-center xl:w-1/2 lg:w-7/12 xl:items-start lg:items-start text-center xl:text-left lg:text-left -mt-24 px-5"
       >
         <h1
           class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]"

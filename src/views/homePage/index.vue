@@ -5,8 +5,8 @@
       class="absolute -left-40 -top-40 md:-left-[40%] lg:-left-[40%] -z-10 hidden md:block lg:block xl:block"
       alt=""
     />
-    <TopBar color="primary" class="text-primary" />
-    <HeroSection class="pt-20 min-md:pt-28" />
+    <TopBar color="primary" customMobileMenuColor="white" class="text-primary" />
+    <HeroSection class="min-md:pt-28" />
     <Products class="pt-24" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
