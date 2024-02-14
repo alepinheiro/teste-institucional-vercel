@@ -23,9 +23,9 @@
         o que pode lhe garantir as melhores taxas e as maiores chances de
         aprovação, além de um time de especialistas preparado para te atender e
         te guiar durante todo o processo."
-      class="pb-10 md:py-24 lg:py-12 xl:py-12 px-5 max-h-screen"
+      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 max-h-screen bg-white"
     />
-    <SloganSection />
+    <SloganSection class="bg-white" />
     <AboutUs
       class="md:px-5 lg:px-5 md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
     />

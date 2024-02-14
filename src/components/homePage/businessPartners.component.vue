@@ -21,7 +21,7 @@
           ref="phone"
           src="/images/Home/simulatorOnPhoneMockup.png"
           alt="A melhor plataforma multibancos."
-          class="h-160 hidden lg:block xl:block opacity-0"
+          class="h-128 hidden lg:block xl:block opacity-0"
         />
         <div
           ref="banks"
