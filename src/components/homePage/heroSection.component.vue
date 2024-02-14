@@ -8,8 +8,13 @@
         class="aspect-square min-md:hidden"
         alt=""
       />
+      <img
+        src="/images/Home/heroBackground-min-lg.png"
+        class="aspect-square hidden min-lg:block absolute inset-0 w-4/5 xl:w-1/2 object-contain ml-auto -z-10 -mr-48 -mt-20 xl:mr-0 xl:-mt-48"
+        alt=""
+      />
       <div
-        class="flex flex-col gap-5 min-md:gap-10 items-center xl:w-1/2 lg:w-7/12 xl:items-start lg:items-start text-center xl:text-left lg:text-left -mt-24 min-md:mt-0 px-5"
+        class="flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto xl:items-start lg:items-start text-center xl:text-left lg:text-left -mt-24 min-md:mt-0 px-5"
       >
         <h1
           class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]"
