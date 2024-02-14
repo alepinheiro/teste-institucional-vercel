@@ -23,7 +23,6 @@ const information = {
   appPartner: 'https://besthub.app/',
   appClient: 'https://app.seja.best/',
   simulatorWarren: 'http://simulador-teste.s3-website-sa-east-1.amazonaws.com',
-  apppartnerRegistration: 'https://parceiros.seja.best/register',
   appSimulator: 'https://simulador.seja.best/',
   appRealEstateSimulator: 'https://simulador.seja.best/imovel',
   appVehicleSimulator: 'https://simulador.seja.best/veiculo',

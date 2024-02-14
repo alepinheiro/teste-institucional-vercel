@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="w-full bg-bglight2Color overflow-x-hidden overflow-y-hidden">
     <div class="text-textPrimary gradienteSBLight">
       <div class="bgCashBest sm:hidden md:hidden">
@@ -1128,19 +1128,19 @@ export default defineComponent({
     Rodape,
     carouselTutorial,
   },
-  metaInfo() {
-    return {
-      title: 'Conheça o CashBest O Home Equity da SejaBest ',
-      meta: [
-        {
-          vmid: 'description',
-          name: 'description',
-          content:
-            'E o que é Home Equity? É o Crédito com Garantia de Imóvel, também conhecido como Home Equity, ideal para quem quer as menores taxas de juros do mercado e um longo prazo para pagamento. Nessa modalidade, você utiliza sua casa, apartamento ou sala comercial como garantia de crédito e desfruta das melhores condições disponíveis no mercado.  ',
-        },
-      ],
-    }
-  },
+  // metaInfo() {
+  //   return {
+  //     title: 'Conheça o CashBest O Home Equity da SejaBest ',
+  //     meta: [
+  //       {
+  //         vmid: 'description',
+  //         name: 'description',
+  //         content:
+  //           'E o que é Home Equity? É o Crédito com Garantia de Imóvel, também conhecido como Home Equity, ideal para quem quer as menores taxas de juros do mercado e um longo prazo para pagamento. Nessa modalidade, você utiliza sua casa, apartamento ou sala comercial como garantia de crédito e desfruta das melhores condições disponíveis no mercado.  ',
+  //       },
+  //     ],
+  //   }
+  // },
   data() {
     return {
       isVisible: false,
@@ -1248,4 +1248,4 @@ export default defineComponent({
     right: -1em;
   }
 }
-</style>
+</style> -->

@@ -54,22 +54,11 @@ import TheFooter from '@/components/structure/theFooter.component.vue'
 import TheProduct from '@/components/cashBest/theProduct.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
 import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
-import { useHead } from '@vueuse/head'
 
 defineProps<{
   showMenu: boolean
 }>()
 
-useHead({
-  title: 'CashBest: o Crédito com Garantia de Imóvel da SejaBest',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Financie seu imóvel com as melhores condições do mercado. Sem filas, sem gerentes, sem complexidade e com um time de especialistas totalmente pronto pra lhe ajudar.',
-    },
-  ],
-})
 
 const menuColor = ref(window.innerWidth > 667 ? 'black' : 'white')
 
