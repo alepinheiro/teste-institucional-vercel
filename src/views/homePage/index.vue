@@ -39,9 +39,9 @@
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
     <BestPlay
-      class="bg-[#181818] bg-gradient-to-br to-black from-transparent border-b-4 border-primary md:border-0 lg:border-0 xl:border-0"
+      class="bg-[#181818] bg-gradient-to-br to-black from-transparent border-b-4 border-primary md:border-0 lg:border-0 xl:border-0 z-0"
     />
-    <TheFooter class="block" />
+    <TheFooter class="block z-10" />
   </div>
 </template>
 <script lang="ts">

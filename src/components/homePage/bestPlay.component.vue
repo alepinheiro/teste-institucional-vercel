@@ -1,9 +1,9 @@
 <template>
   <section class="flex flex-col xl:h-[50%] relative z-0">
-    <div class="h-64 overflow-hidden flex bg-[#EFEFEF] xl:h-8">
+    <div class="h-64 overflow-hidden flex bg-[#EFEFEF] xl:h-10 ">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
-          class="absolute -left-7 -right-8 top-24 flex md:top-48 md:left-2/3 lg:left-[70%] xl:left-[55%] lg:top-64 xl:top-24"
+          class="absolute -left-7 -right-8 top-24 flex md:top-48 md:left-2/3 lg:left-[70%] xl:left-[55%] lg:top-64 xl:bottom-0 xl:overflow-hidden xl:top-0"
         >
           <img
             ref="bestPlayMockup"
@@ -11,7 +11,7 @@
             alt="Conheça o maior canal de crédito do Brasil"
             title="Conheça o maior canal de crédito do Brasil no youtube"
             loading="lazy"
-            class="w-auto h-[44rem] md:h-[54rem] lg:h-[54rem] xl:h-[54rem] object-cover object-left-top"
+            class="w-auto h-[44rem] md:h-[54rem] lg:h-[54rem] xl:h-[54rem] xl:mt-24 object-cover object-left-top"
           />
         </div>
       </div>
