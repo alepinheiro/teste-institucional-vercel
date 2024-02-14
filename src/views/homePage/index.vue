@@ -2,11 +2,17 @@
   <div class="relative z-0 bg-[#EFEFEF]">
     <img
       src="/images/Home/backgroundLines.png"
-      class="absolute -left-40 -top-40 md:-left-[40%] lg:-left-[40%] -z-10 hidden md:block lg:block xl:block"
+      class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
       alt=""
     />
-    <TopBar color="primary" customMobileMenuColor="white" class="text-primary" />
-    <HeroSection class="min-md:pt-28" />
+    <img
+      src="/images/Home/backgroundLines.png"
+      class="absolute top-96 -right-96 -z-10 hidden min-md:block -scale-x-100"
+      alt=""
+    />
+    <TopBar color="primary" customMobileMenuColor="white" class="text-primary min-md:hidden" />
+    <TopBar color="primary" class="sm:hidden text-primary" />
+    <HeroSection class="min-lg:pt-28" />
     <Products class="pt-24" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
