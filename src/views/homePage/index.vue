@@ -6,8 +6,8 @@
       alt=""
     />
     <TopBar color="primary" class="text-primary" />
-    <HeroSection class="pt-20 min-md:pt-24" />
-    <Products class="pt-10 lg:pt-20" />
+    <HeroSection class="pt-20 min-md:pt-28" />
+    <Products class="pt-24" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
       inner-text="<strong>
