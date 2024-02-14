@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="flex flex-col xl:flex-row-reverse lg:flex-row-reverse gap-5 items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full md:min-h-screen justify-center"
+      class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full md:min-h-screen justify-center"
     >
       <img
         src="/images/Home/heroBackground-sm.png"

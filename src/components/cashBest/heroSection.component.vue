@@ -1,25 +1,22 @@
 <template>
   <section>
     <div
-      class="min-lg:flex absolute -z-10 min-lg:-top-[20rem] min-lg:left-1/2 w-[60rem] hidden"
+      class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full md:min-h-screen justify-center"
     >
       <img
-        src="/images/cashBest/heroSectionGaspar.png"
-        class="h-full w-full object-contain pl-5"
+        src="/images/Home/heroBackground-sm.png"
+        class="aspect-square min-md:hidden"
         alt=""
       />
-    </div>
-    <div class="min-md:hidden -mt-5/6 -mr-1/3 mb-10 flex">
       <img
-        src="/images/cashBest/heroSectionGaspar.png"
-        class="h-full w-full object-cover object-left ml-1/12"
+        src="/images/Home/heroBackground-min-lg.png"
+        class="aspect-square hidden min-lg:block absolute inset-x-0 h-screen object-contain lg:-right-64 ml-auto -mt-32 -z-10"
         alt=""
       />
-    </div>
-    <div
-      class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto items-start px-5"
-    >
-      <div class="flex flex-col gap-5 min-md:gap-8 w-full lg:w-8/12 xl:w-1/2">
+      <div
+        class="flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto xl:items-start lg:items-start text-center xl:text-left lg:text-left -mt-24 min-md:mt-0 md:pt-20 px-5"
+      >
+        <!-- <div class="flex flex-col gap-5 min-md:gap-8 w-full lg:w-8/12 xl:w-1/2"> -->
         <h1
           class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
         >
@@ -51,10 +48,11 @@
 
         <DoubleInputsForm
           v-model="doubleFormData"
-          class="bg-[#efeaea] p-4 min-md:px-12 min-md:py-8 rounded-2xl"
+          class="bg-[#efeaea] p-4 min-md:px-12 min-md:py-8 rounded-2xl w-full"
           @submit="onSubmit"
         />
       </div>
+      <!-- </div> -->
     </div>
   </section>
 </template>

@@ -1,5 +1,15 @@
 <template>
   <main class="relative w-full z-0">
+    <img
+      src="/images/Home/backgroundLines.png"
+      class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
+      alt=""
+    />
+    <img
+      src="/images/Home/backgroundLines.png"
+      class="absolute top-96 -right-96 -z-10 hidden min-md:block -scale-x-100"
+      alt=""
+    />
     <TopBar
       color="primary"
       :customMobileMenuColor="menuColor"
@@ -7,7 +17,7 @@
     />
     <HeroSection
       :show-menu="showMenu"
-      class="pt-48 md:pt-32 pb-6"
+      class="min-lg:pt-28 pb-14"
     />
     <BusinessPartners
       title="Maximizamos suas chances de aprovação"
