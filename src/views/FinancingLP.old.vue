@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="w-full bg-bglight2Color overflow-x-hidden overflow-y-hidden">
 
     <div class="text-textPrimary ">
@@ -855,4 +855,4 @@ export default defineComponent({
     right: -1em;
   }
 }
-</style>
+</style> -->

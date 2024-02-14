@@ -9,7 +9,7 @@
         alt=""
       />
       <div
-        class="flex flex-col gap-5 items-center xl:w-1/2 lg:w-7/12 xl:items-start lg:items-start text-center xl:text-left lg:text-left"
+        class="flex flex-col gap-5 min-md:gap-10 items-center xl:w-1/2 lg:w-7/12 xl:items-start lg:items-start text-center xl:text-left lg:text-left"
       >
         <h1
           class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]"
@@ -32,11 +32,18 @@
 
         <hr class="border-px border-textSecondary w-full" />
 
-        <img
-          src="/images/Home/awards/awardsHeroSection.png"
-          class="xl:w-1/2 lg:w-3/5 md:w-7/12 max-w-xs"
-          alt=""
-        />
+        <div class="flex flex-col gap-4">
+          <h3 class="text-textPrimary text-xl">Reconhecidos pelo mercado:</h3>
+          <div class="flex flex-row gap-4">
+            <img
+              v-for="{ alt, id, src } of topOfSalesSeals"
+              :key="id"
+              :src="src"
+              :alt="alt"
+              class="h-9 min-md:h-12"
+            />
+          </div>
+        </div>
 
         <a
           :href="information.appSimulator + $root.utms"
@@ -54,13 +61,16 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import information from '@/configurations/information'
+import { topOfSales } from '@/configurations/images'
 
 export default defineComponent({
   name: 'HeroSection',
   data() {
+    const topOfSalesSeals = topOfSales('black')
     return {
       information,
       loadedPage: window,
+      topOfSalesSeals,
     }
   },
 })

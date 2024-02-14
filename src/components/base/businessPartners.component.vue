@@ -3,7 +3,7 @@
   :style="{
       'background-color': props.backgroundColor,
     }"
-  class="w-full flex py-20">
+  class="w-full flex py-10 pb-20">
     <div
       class="flex flex-col gap-6 max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto font-Public-Sans text-center px-5"
     >

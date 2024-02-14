@@ -728,19 +728,19 @@ export default defineComponent({
     carouselHome,
     carouselHomeTablet,
   },
-  metaInfo() {
-    return {
-      title: 'Como o BestHub pode ajudar o seu negócio?',
-      meta: [
-        {
-          vmid: 'description',
-          name: 'description',
-          content:
-            'Uma plataforma multibanco e 100% digital. As melhores opções do mercado na palma da sua mão. ',
-        },
-      ],
-    }
-  },
+  // metaInfo() {
+  //   return {
+  //     title: 'Como o BestHub pode ajudar o seu negócio?',
+  //     meta: [
+  //       {
+  //         vmid: 'description',
+  //         name: 'description',
+  //         content:
+  //           'Uma plataforma multibanco e 100% digital. As melhores opções do mercado na palma da sua mão. ',
+  //       },
+  //     ],
+  //   }
+  // },
   data() {
     return {
       isVisible: false,

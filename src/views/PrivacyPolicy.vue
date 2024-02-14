@@ -528,7 +528,7 @@
   <FooterComponent />
 </template>
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue'
+import { defineComponent } from 'vue'
 import TopBarComponent from '@/components/structure/topbar.component.vue'
 
 export default defineComponent({

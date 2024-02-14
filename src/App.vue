@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full defaultFont">
+  <div class="w-full defaultFont selection:bg-complementaryColor1 selection:text-white">
     <RouterView />
     <notificationPopUp />
   </div>

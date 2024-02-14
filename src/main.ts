@@ -3,11 +3,13 @@ import App from './App.vue'
 import router from './router/index'
 import VueTheMask from 'vue-the-mask' //importante campos inputs com mascara
 import moment from 'moment' // formata data
-import { createHead } from '@vueuse/head'
+// import { createHead } from '@vueuse/head'
 import VueCookies from 'vue-cookies'
+//@ts-expect-error no types
 import VueSplide from '@splidejs/vue-splide'
 import '@splidejs/vue-splide/css'
-import { createMetaManager } from 'vue-meta'
+// import { createMetaManager } from 'vue-meta'
+import { createHead } from '@unhead/vue'
 import { register } from 'swiper/element/bundle'
 import VueScrollTo from 'vue-scrollto'
 
@@ -32,7 +34,7 @@ app.use(VueCookies)
 app.use(createHead())
 app.use(VueSplide)
 app.use(VueScrollTo)
-app.use(createMetaManager())
+// app.use(createMetaManager())
 // componentes globais
 import { library, dom } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'

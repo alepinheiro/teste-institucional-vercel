@@ -1,60 +1,94 @@
 <template>
-  <section class="bg-primary w-full flex pt-10 relative min-h-screen sm:pt-0">
-    <div class="absolute inset-x-0 h-fit top-0 flex justify-center z-20 w-full xl:bg-[#070e3730] xl:backdrop-blur-md lg:bg-[#070e3730] lg:backdrop-blur-md xl:shadow-sm lg:shadow-sm">
-      <TopBar class="w-full max-w-7xl lg:max-w-5xl px-5 mb-auto text-white" />
-    </div>
+  <section class="w-full flex pt-0 min-md:pt-10 relative min-h-screen">
     <div class="absolute inset-0 overflow-hidden z-0 flex items-end sm:h-2/3">
       <img
-        src="/images/finanBest/heroSectionXL161123.png"
+        src="/images/finanBest/heroBgXL.png"
         alt=""
         class="hidden xl:block lg:block object-cover h-full ml-auto"
       />
       <img
-        src="/images/finanBest/heroSectionMD161123.png"
+        src="/images/finanBest/heroBgMD.png"
         alt=""
         class="xl:hidden lg:hidden object-cover h-full w-full"
       />
     </div>
     <div
-      class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-row w-full z-10 py-12 sm:py-0 px-5 sm:px-0 relative"
+      class="relative max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-row w-full z-10 py-0 min-md:py-12 px-0 min-md:px-5"
     >
       <!--  -->
-      <div
-        class="flex-1 lg:w-7/12 lg:flex-initial mt-auto sm:bg-gradient-to-b sm:from-transparent sm:to-bgDarkColor"
-      >
+      <div class="lg:w-7/12 xl:w-5/12 lg:flex-initial mt-auto mb-12 md:mb-0">
         <div
-          class="bg-white sm:bg-transparent flex flex-col gap-6 sm:gap-2 md:gap-3 font-Public-Sans p-8 md:px-8 py-4 rounded-xl shadow-lg sm:h-full sm:justify-end sm:pt-40"
+          class="bg-gradient-to-b min-md:bg-gradient-to-t via-white from-transparent to-white/80 flex flex-col gap-6 p-8 xl:px-6 py-4 min-md:rounded-xl min-hd:shadow-lg h-full justify-end"
         >
           <h1
-            class="text-5xl sm:text-3xl sm:text-white text-primary leading-tight sm:drop-shadow whitespace-pre-line"
+            class="min-lg:font-darkerGrotesque font-Public-Sans text-2xl md:text-4xl min-lg:text-6xl text-primary leading-tight whitespace-pre-line min-lg:font-bold"
           >
-            <strong>FinanBest:</strong>
-            Financie seu imóvel com a assessoria
-            <strong>SejaBest</strong>
+            <span class="min-lg:hidden">
+              <b>FinanBest:</b>
+              Financie seu imóvel com a assessoria
+              <b>SejaBest</b>
+            </span>
+            <span class="hidden min-lg:block">
+              FinanBest: Financie seu imóvel com a assessoria SejaBest
+            </span>
           </h1>
-          <p class="text-base sm:text-white text-justify sm:drop-shadow">
+          <!--  -->
+          <p class="text-base text-textPrimary text-justify min-lg:hidden">
             Financie seu imóvel com as melhores condições do mercado.
             <b
               >Sem filas, sem gerentes, sem complexidade e com um time de
               especialistas totalmente pronto pra lhe ajudar.</b
             >
           </p>
+          <!--  -->
+          <div class="hidden min-lg:flex flex-row gap-4">
+            <div
+              v-for="{ description, icon, id } of cards"
+              :key="id"
+              class="flex flex-row gap-2 items-center mx-auto w-full"
+            >
+              <component :is="icon" class="text-primary flex-shrink-0" />
+              <p class="text-textPrimary text-left text-base">
+                {{ description }}
+              </p>
+            </div>
+          </div>
+
+          <hr class="border border-textSecondary hidden min-lg:block" />
+
           <InputWithSlider
             v-model="formValue"
-            :props="sliderProps"
+            :props="smallScreensFormProps"
+            class="min-lg:hidden"
+            @submit="openSimulation"
+          />
+
+          <InputWithSlider
+            v-model="formValue"
+            :props="largeScreensFormProps"
+            class="min-lg:flex hidden"
             @submit="openSimulation"
           />
         </div>
+        <!--  -->
+        <a
+          href="#"
+          v-scroll-to="'#businessPartners'"
+          class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline"
+        >
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+          <span class="text-xs"
+            >Ou saiba mais sobre o FinanBest rolando para baixo</span
+          >
+        </a>
       </div>
-      <!--  -->
-      <div class="flex-1 xl:block lg:block hidden"></div>
-      <!--  -->
     </div>
   </section>
 </template>
 <script lang="ts" setup>
+import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
 import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
-import TopBar from '@/components/structure/topBar/index.component.vue'
+import PercentIcon from '@/assets/svg/percentWithBackground.vue'
 import information from '@/configurations/information'
 import { ref } from 'vue'
 
@@ -62,11 +96,19 @@ defineProps<{
   showMenu: boolean
 }>()
 
-const sliderProps = {
+const smallScreensFormProps = {
   minimumValue: 50000,
   maximumValue: 30000000,
   defaultValue: 350000,
-  backgroundColor: '#0524DD',
+  backgroundColor: 'var(--primaryColor)',
+  title: 'Quanto custa o seu sonho?',
+}
+
+const largeScreensFormProps = {
+  minimumValue: 50000,
+  maximumValue: 30000000,
+  defaultValue: 350000,
+  backgroundColor: 'transparent',
   title: 'Quanto custa o seu sonho?',
 }
 
@@ -77,6 +119,19 @@ const utm = new URLSearchParams({
   utm_medium: 'hero-section-finanbest',
   utm_campaign: 'landing-pages-dez-23',
 })
+
+const cards = [
+  {
+    id: 'percent',
+    icon: PercentIcon,
+    description: 'A partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
+  },
+  {
+    id: 'calendar',
+    icon: CalendarIcon,
+    description: 'Escolha como pagar. Em até 20 anos.',
+  },
+]
 
 const openSimulation = () => {
   window.open(`${information.appSimulator}?${utm.toString()}`, '_blank')

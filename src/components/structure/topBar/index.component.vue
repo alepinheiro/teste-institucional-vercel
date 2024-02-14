@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <header
-      class="sticky z-50 h-auto top-0 py-5 xl:pt-8 xl:pb-4 lg:pt-8 lg:pb-4 w-full flex flex-row justify-between items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto px-5"
+  <header class="absolute z-30 top-0 w-auto inset-x-0">
+    <div
+      class="py-5 w-full flex flex-row justify-between items-center xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto px-5"
     >
       <RouterLink :to="'/' + $root.utms" class="w-auto h-8">
         <LogoSejaBestSVG class="w-auto h-8" title="Página Inicial - SejaBest" />
@@ -9,10 +9,11 @@
 
       <MenuComponent class="sm:hidden md:hidden" />
       <MenuMobileComponent
+        :color="customMobileMenuColor"
         class="xl:hidden lg:hidden h-8 w-8 flex-shrink-0 aspect-square mr-0"
       />
-    </header>
-  </div>
+    </div>
+  </header>
 </template>
 
 <script lang="ts">
@@ -27,6 +28,13 @@ export default defineComponent({
     MenuComponent,
     MenuMobileComponent,
     LogoSejaBestSVG,
+  },
+  props: {
+    customMobileMenuColor: {
+      type: String,
+      required: false,
+      default: '',
+    },
   },
   data() {
     return {}
