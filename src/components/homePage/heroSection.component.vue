@@ -10,7 +10,7 @@
       />
       <img
         src="/images/Home/heroBackground-min-lg.png"
-        class="aspect-square hidden min-lg:block absolute inset-0 w-4/5 xl:w-1/2 object-contain ml-auto -z-10 -mr-48 -mt-20 xl:mr-0 xl:-mt-48"
+        class="aspect-square hidden min-lg:block absolute inset-x-0 h-screen object-contain lg:-right-64 ml-auto -mt-24"
         alt=""
       />
       <div
