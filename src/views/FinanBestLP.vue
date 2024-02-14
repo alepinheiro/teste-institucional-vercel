@@ -3,7 +3,7 @@
     <TopBar
       :customMobileMenuColor="menuColor"
       color="primary"
-      class="text-primary xl:text-textPrimary"
+      class="text-textPrimary"
     />
     <HeroSection :show-menu="showMenu" />
     <BusinessPartners

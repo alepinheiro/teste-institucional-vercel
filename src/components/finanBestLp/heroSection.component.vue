@@ -100,7 +100,7 @@ const smallScreensFormProps = {
   minimumValue: 50000,
   maximumValue: 30000000,
   defaultValue: 350000,
-  backgroundColor: 'var(--primaryColor)',
+  backgroundColor: 'transparent',
   title: 'Quanto custa o seu sonho?',
 }
 
