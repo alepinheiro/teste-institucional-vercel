@@ -28,7 +28,7 @@
           <i class="fa-solid fa-chevron-down animate-bounce"></i>
           <span class="text-xs">
             Clique aqui ou role para saber como estamos fazendo isso
-            </span>
+          </span>
         </a>
       </div>
     </div>
