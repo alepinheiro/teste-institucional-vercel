@@ -45,7 +45,7 @@
     />
     <Solutions />
     <Steps />
-    <TheProduct />
+    <TheProduct class="bg-white" />
 
     <Subscribe
       :component="{ bgColor: 'SECONDARY' }"

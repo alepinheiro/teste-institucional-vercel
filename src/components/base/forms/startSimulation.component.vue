@@ -36,6 +36,7 @@
           name="realtyValue"
           type="text"
           :required="showHomeEquity"
+          placeholder="R$ 1.000.000,00"
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
@@ -69,18 +70,17 @@ import { useRoute } from 'vue-router'
 import {
   CurrencyInputOptions,
   useCurrencyInput,
-  //@ts-expect-error no types
+  CurrencyDisplay,
 } from 'vue-currency-input'
 
 const options: CurrencyInputOptions = {
   currency: 'BRL',
-  currencyDisplay: 'narrowSymbol',
+  currencyDisplay: CurrencyDisplay.narrowSymbol,
   precision: 2,
   hideCurrencySymbolOnFocus: false,
   hideGroupingSeparatorOnFocus: false,
   hideNegligibleDecimalDigitsOnFocus: false,
   autoDecimalDigits: true,
-  autoSign: true,
   useGrouping: true,
   accountingSign: false,
 }
