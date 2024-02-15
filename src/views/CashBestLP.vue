@@ -1,5 +1,5 @@
 <template>
-  <main class="relative w-full z-0 bg-white">
+  <main class="relative overflow-hidden w-full z-0 bg-white">
     <img
       src="/images/Home/backgroundLines.png"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
