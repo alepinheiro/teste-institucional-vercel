@@ -7,14 +7,10 @@
     />
     <HeroSection :show-menu="showMenu" />
     <BusinessPartners
-      id="businessPartners"
-      :props="{
-        backgroundColor: '#FFF',
-        title: 'Na SejaBest, suas chances de aprovação são maiores',
-        description:
-          'Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>',
-      }"
-    />
+        title="Na SejaBest, suas chances de aprovação são maiores"
+        inner-text="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
+        class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
+      />
     <ComparisonTable
       :props="{
         component: {
@@ -38,6 +34,7 @@
     <Subscribe
       :component="{ bgColor: 'BGDARKCOLOR' }"
       :form="{ showRealtyValue: false }"
+      image="gaspar"
     />
     <TheFooter />
   </main>
@@ -45,7 +42,7 @@
 
 <script setup lang="ts">
 import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
-import BusinessPartners from '@/components/base/businessPartners.component.vue'
+import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
 import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
