@@ -20,7 +20,7 @@
       />
 
       <div
-        class="flex flex-col gap-5 min-md:gap-10 items-center lg:w-8/12 xl:w-1/2 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-24 min-md:mt-0 md:pt-20 px-5"
+        class="flex flex-col gap-5 min-md:gap-10 items-center lg:w-8/12 xl:w-1/2 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-16 min-md:mt-0 md:pt-20 px-5"
       >
         <h1
           class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7 lg:text-left"
