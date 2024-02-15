@@ -6,12 +6,7 @@
       class="text-white"
     />
     <HeroSection
-      :background-videos="{
-        desktop: 'eYtBl05z-YM',
-        mobile: 'Tp-ZcMvXBiE',
-      }"
-      :show-menu="showMenu"
-      class="sm:h-[70vh] h-screen"
+      class=""
     />
     <OurMotivation
       class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl pb-10 lg:pb-14"
