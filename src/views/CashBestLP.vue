@@ -1,5 +1,5 @@
 <template>
-  <main class="relative w-full z-0">
+  <main class="relative w-full z-0 bg-[#F1F1F1]">
     <img
       src="/images/Home/backgroundLines.png"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
@@ -13,30 +13,32 @@
     <TopBar
       color="primary"
       :customMobileMenuColor="menuColor"
-      class="text-primary xl:text-textPrimary "
+      class="text-primary xl:text-textPrimary"
     />
-    <HeroSection
-      :show-menu="showMenu"
-      class="min-lg:pt-28 pb-14"
-    />
-    <BusinessPartners
-      title="Maximizamos suas chances de aprovação"
-      inner-text="Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>"
-      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 bg-[#F1F1F1]"
-    />
-    <ComparisonTable
-      :props="{
-        component: {
-          backgroundColor: '#F1F1F1',
-          showBackGroundImage: false,
-        },
-        table: {
-          backgroundColor: '#FFF',
-          titleColor: 'PRIMARY',
-        },
-      }"
-      class="pb-20"
-    />
+
+    <HeroSection :show-menu="showMenu" class="min-lg:pt-28 pb-14" />
+
+    <div class="bg-gradient-to-b to-white from-[#F1F1F1]">
+      <BusinessPartners
+        title="Maximizamos suas chances de aprovação"
+        inner-text="Com a SejaBest, você tem acesso a produtos de mais de 20 instituições financeiras, o que pode lhe garantir as <b>melhores taxas</b> e as <b> maiores chances de aprovação</b>, além de um <b> time de especialistas </b>preparado para te atender e te guiar <b>durante todo o processo.</b>"
+        class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
+      />
+      <ComparisonTable
+        :props="{
+          component: {
+            backgroundColor: '',
+            showBackGroundImage: false,
+          },
+          table: {
+            backgroundColor: '#FFF',
+            titleColor: 'PRIMARY',
+          },
+        }"
+        class="pb-20"
+      />
+    </div>
+
     <AboutUs
       :cards="{ bgColor: 'SECONDARY' }"
       :container="{ bgColor: 'BGDARKCOLOR' }"
@@ -68,7 +70,6 @@ import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
 defineProps<{
   showMenu: boolean
 }>()
-
 
 const menuColor = ref(window.innerWidth > 667 ? 'black' : 'white')
 

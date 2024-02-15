@@ -17,11 +17,11 @@
           <img
             src="/images/logoBest/logoSejaBestWhite.png"
             alt=""
-            class="object-contain h-14 mx-auto"
+            class="object-contain h-20 mx-auto"
           />
         </div>
         <div class="w-full xl:w-2/3">
-          <h2 class="text-4xl sm:text-xl font-bold text-white text-center">
+          <h2 class="text-3xl sm:text-xl font-bold text-white text-center">
             Há mais de 10 anos transformamos o acesso ao crédito para quem busca
             sua melhor versão.
           </h2>
@@ -64,7 +64,7 @@
           :key="id"
           :src="src"
           :alt="alt"
-          class="h-24 mx-auto"
+          class="h-20 mx-auto"
         />
       </div>
     </div>
