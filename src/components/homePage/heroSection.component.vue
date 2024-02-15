@@ -10,12 +10,12 @@
       />
       <img
         src="/images/Home/heroBackground-xl.png"
-        class="hidden xl:block absolute inset-x-0 h-[90vh] object-contain -right-32 ml-auto -mt-32 -z-10"
+        class="hidden xl:block absolute inset-x-0 h-[80vh] object-contain -right-32 ml-auto -mt-48 -z-10"
         alt=""
       />
       <img
         src="/images/Home/heroBackground-lg.png"
-        class="hidden lg:block absolute inset-x-0  h-[90vh] object-contain -right-48 ml-auto -mt-60 -z-10"
+        class="hidden lg:block absolute inset-x-0  h-[80vh] object-contain -right-40 ml-auto -mt-60 -z-10"
         alt=""
       />
       <div
@@ -40,7 +40,7 @@
           <b> complexidade. </b>
         </h2>
 
-        <hr class="border-px border-textSecondary w-full" />
+        <hr class="border-px border-textSecondary w-full min-lg:w-2/3" />
 
         <div class="flex flex-col gap-4">
           <h3 class="text-textPrimary text-xl">Reconhecidos pelo mercado:</h3>

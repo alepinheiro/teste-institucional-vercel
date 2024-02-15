@@ -27,7 +27,7 @@
         o que pode lhe garantir as melhores taxas e as maiores chances de
         aprovação, além de um time de especialistas preparado para te atender e
         te guiar durante todo o processo."
-      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 max-h-screen bg-white"
+      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 bg-white"
     />
     <SloganSection class="bg-white" />
     <AboutUs
@@ -37,7 +37,7 @@
     <ComparisonTable
       :props="{
         component: {
-          backgroundColor: '#EFEFEF',
+          backgroundColor: '#FFF',
           showBackGroundImage: false,
         },
         table: {

@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col xl:h-[50%] relative z-0">
-    <div class="h-64 overflow-hidden flex bg-[#EFEFEF] xl:h-10">
+    <div class="h-64 overflow-hidden flex bg-white xl:h-10">
       <div class="mx-auto w-64 relative md:static lg:static xl:static ">
         <div
           class="absolute -left-7 -right-0 top-0 flex md:top-24 md:left-2/3 lg:left-[70%] xl:left-[55%] lg:top-10 min-md:bottom-0 overflow-hidden xl:top-0"

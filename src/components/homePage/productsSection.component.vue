@@ -2,7 +2,7 @@
   <section>
     <div class="flex flex-col px-5">
       <div class="flex flex-col text-textPrimary gap-5 text-center lg:text-left xl:text-left lg:max-w-5xl xl:max-w-7xl mx-auto w-full px-5">
-        <h2 class="text-3xl md:text-4xl lg:text-4xl xl:text-4xl font-bold ">
+        <h2 class="text-xl md:text-4xl lg:text-4xl xl:text-4xl font-bold ">
           Como podemos ajudar você ou seu negócio?
         </h2>
         <p class="md:text-xl lg:text-xl xl:text-xl">
