@@ -50,6 +50,7 @@
     <Subscribe
       :component="{ bgColor: 'SECONDARY' }"
       :form="{ showRealtyValue: true }"
+      image="gabrielle"
     />
     <TheFooter />
   </main>
