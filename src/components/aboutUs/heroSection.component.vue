@@ -7,7 +7,7 @@
         class="min-h-[50vh] object-cover"
       />
       <div class="md:max-w-2xl min-lg:max-w-5xl mx-auto">
-        <div class="flex flex-col gap-2 text-center -mt-14">
+        <div class="flex flex-col gap-2 text-center -mt-14 px-5">
           <h2
             class="bg-primary text-white w-fit mx-auto px-3 py-2 rounded-xl text-lg"
           >

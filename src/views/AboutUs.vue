@@ -9,7 +9,7 @@
       class=""
     />
     <OurMotivation
-      class="border-b-8 border-primary shadow-[#0C0A7030] shadow-xl pb-10 lg:pb-14"
+      class="py-20 flex flex-col gap-8 lg:gap-12 xl:h-screen min-h-screen"
     />
     <MissionSection class="py-10 px-5" />
     <AboutNumbers class="py-12 md:py-16 xl:py-28" />

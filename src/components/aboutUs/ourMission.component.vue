@@ -1,18 +1,18 @@
 <template>
-  <section class="text-white flex flex-col gap-8 lg:gap-12 xl:h-screen min-h-screen">
+  <section>
     <div
       class="px-5 flex flex-col gap-4 text-center md:max-w-[663px] md:mx-auto lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto"
     >
-      <h3 class="md:text-2xl lg:text-2xl xl:text-2xl lg:w-10/12 lg:mx-auto">
+      <h3 class="min-md:text-2xl lg:w-10/12 lg:mx-auto text-textPrimary">
         O que nos motiva a levantar todos os dias e lutar por nossa missão?
       </h3>
-      <h2 class="font-bold text-xl md:text-3xl lg:text-3xl xl:text-4xl lg:w-10/12 xl:w-8/12 lg:mx-auto xl:mx-auto">
+      <h2 class="font-bold text-xl min-md:text-3xl xl:text-4xl lg:w-10/12 xl:w-8/12 lg:mx-auto xl:mx-auto text-primary">
         Acreditar que o acesso ao crédito pode levar as pessoas à sua melhor
         versão quando elas:
       </h2>
     </div>
 
-    <div class="lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto m-auto">
+    <div class="lg:max-w-5xl xl:max-w-7xl lg:mx-auto px-5">
       <ul
         class="md:justify-center md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap xl:flex-wrap md:gap-10 lg:gap-10 xl:gap-10 md:mx-auto lg:mx-auto xl:mx-auto md:w-10/12 lg:w-10/12 xl:justify-center"
       >
@@ -39,7 +39,7 @@
               </div>
             </div>
             <div
-              class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl lg:rounded-xl xl:rounded-xl cursor-default select-none"
+              class="back flex items-center h-full bg-primary p-5 overflow-hidden md:rounded-xl lg:rounded-xl xl:rounded-xl cursor-default select-none text-white"
             >
               <!--  eslint-disable-next-line vue/no-v-html -->
               <span v-html="item.text"></span>
