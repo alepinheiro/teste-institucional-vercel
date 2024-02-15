@@ -9,7 +9,7 @@
       class=""
     />
     <OurMotivation
-      class="py-20 flex flex-col gap-8 lg:gap-12 xl:h-screen min-h-screen"
+      class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12 border-b-4 border-primary"
     />
     <MissionSection class="py-10 px-5" />
     <AboutNumbers class="py-12 md:py-16 xl:py-28" />

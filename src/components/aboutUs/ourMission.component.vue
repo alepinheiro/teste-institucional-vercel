@@ -12,7 +12,7 @@
       </h2>
     </div>
 
-    <div class="lg:max-w-5xl xl:max-w-7xl lg:mx-auto px-5">
+    <div class="lg:max-w-5xl xl:max-w-7xl lg:mx-auto px-5 mx-auto w-full">
       <ul
         class="md:justify-center md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:flex-wrap lg:flex-wrap xl:flex-wrap md:gap-10 lg:gap-10 xl:gap-10 md:mx-auto lg:mx-auto xl:mx-auto md:w-10/12 lg:w-10/12 xl:justify-center"
       >
