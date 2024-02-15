@@ -10,11 +10,11 @@
       />
       <img
         src="/images/Home/heroBackground-min-lg.png"
-        class="aspect-square hidden min-lg:block absolute inset-x-0 h-screen object-contain lg:-right-64 ml-auto -mt-24"
+        class="aspect-square hidden min-lg:block absolute inset-x-0 h-screen object-contain -right-24 lg:-right-64 ml-auto -mt-24 -z-10"
         alt=""
       />
       <div
-        class="flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto xl:items-start lg:items-start text-center xl:text-left lg:text-left -mt-24 min-md:mt-0 px-5"
+        class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto xl:items-start lg:items-start text-center xl:text-left lg:text-left -mt-24 min-md:mt-0 px-5"
       >
         <h1
           class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]"
