@@ -1,48 +1,55 @@
 <template>
-  <section class="relative z-0 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto bg-[#DEDEDE] md:bg-inherit lg:bg-inherit xl:bg-inherit">
+  <section>
     <div
-      class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] absolute top-0 bottom-0 w-full inset-x-0 -z-10 rounded-xl"
-    ></div>
-    <div
-      class="px-5 lg:px-0 py-10 mx-auto flex flex-col lg:flex-row xl:flex-row items-center"
+      class="relative z-0 xl:max-w-7xl mx-auto bg-[#DEDEDE] md:bg-inherit lg:bg-inherit xl:bg-inherit"
     >
       <div
-        class="flex flex-col gap-2 lg:gap-7 xl:gap-7 text-center md:text-left lg:text-left xl:text-left lg:w-5/12 xl:w-5/12"
+        class="hidden min-md:block bg-gradient-to-b from-[#DEDEDE] absolute top-0 bottom-0 w-full inset-x-0 -z-10 rounded-xl md:rounded-none lg:rounded-none"
+      ></div>
+      <div
+        class="lg:px-0 p-10 mx-auto flex flex-col lg:flex-row xl:flex-row items-center md:max-w-2xl lg:max-w-5xl"
       >
-        <p class="text-textSecondary md:text-textPrimary">
-          A <b> SejaBest </b> já tem história no mercado.
-        </p>
-        <h2
-          class="text-xl md:text-4xl lg:text-5xl xl:text-5xl md:text-textPrimary lg:text-textPrimary xl:text-textPrimary"
+        <div
+          class="flex flex-col gap-2 lg:gap-7 xl:gap-7 text-center md:text-left lg:text-left xl:text-left lg:w-5/12 xl:w-5/12"
         >
-          <strong> Há 10 anos </strong>
-          transformamos o acesso ao crédito
-        </h2>
-      </div>
-
-      <ul
-        class="flex flex-row gap-2 md:gap-5 lg:gap-5 xl:gap-5 py-10 md:w-full lg:w-7/12 xl:w-7/12"
-      >
-        <li
-          v-for="{ icon, title, description } in cards"
-          :key="icon"
-          class="p-3 w-1/3 flex-grow md:py-10 lg:py-10 xl:px-10 xl:py-16 bg-white drop-shadow-lg md:shadow-2xl lg:shadow-2xl xl:shadow-2xl rounded md:rounded-xl lg:rounded-xl xl:rounded-xl flex flex-col md:gap-6 lg:gap-3 lg:h-full"
-        >
-          <div class="w-4 h-4 md:h-7 md:w-7 lg:w-7 lg:h-7 xl:w-7 xl:h-7">
-            <i :class="icon" class="text-textSecondary block w-full h-full"></i>
-          </div>
-          <span
-            class="font-bold text-xl md:text-5xl lg:text-5xl xl:text-5xl text-primary"
+          <p class="text-textSecondary md:text-textPrimary">
+            A <b> SejaBest </b> já tem história no mercado.
+          </p>
+          <h2
+            class="text-xl md:text-4xl lg:text-5xl xl:text-5xl md:text-textPrimary lg:text-textPrimary xl:text-textPrimary"
           >
-            {{ title }}
-          </span>
-          <span class="text-sm text-textSecondary block md:text-xl leading-4">
-            {{ description }}
-          </span>
-        </li>
-      </ul>
+            <strong> Há 10 anos </strong>
+            transformamos o acesso ao crédito
+          </h2>
+        </div>
+        <ul
+          class="flex flex-row gap-2 md:gap-5 lg:gap-5 xl:gap-5 py-10 md:w-full lg:w-7/12 xl:w-7/12"
+        >
+          <li
+            v-for="{ icon, title, description } in cards"
+            :key="icon"
+            class="p-3 w-1/3 flex-grow min-md:p-6 bg-white drop-shadow-lg min-md:shadow-2xl rounded min-md:rounded-xl flex flex-col min-md:gap-3 lg:h-full"
+          >
+            <div class="w-4 h-4 md:h-7 md:w-7 lg:w-7 lg:h-7 xl:w-7 xl:h-7">
+              <i
+                :class="icon"
+                class="text-textSecondary block w-full h-full"
+              ></i>
+            </div>
+            <span
+              class="font-bold text-xl md:text-5xl lg:text-5xl xl:text-5xl text-primary pb-2"
+            >
+              {{ title }}
+            </span>
+            <span
+              class="text-sm text-textSecondary block min-md:text-xl leading-4"
+            >
+              {{ description }}
+            </span>
+          </li>
+        </ul>
 
-      <!-- <div
+        <!-- <div
         class="flex md:hidden lg:hidden xl:hidden flex-row flex-wrap items-center gap-6 mx-auto"
       >
         <div
@@ -57,6 +64,7 @@
           />
         </div>
       </div> -->
+      </div>
     </div>
   </section>
 </template>

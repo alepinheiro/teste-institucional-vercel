@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-0 bg-[#EFEFEF]">
+  <div class="relative z-0 overflow-hidden bg-[#EFEFEF]">
     <img
       src="/images/Home/backgroundLines.png"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
@@ -10,7 +10,11 @@
       class="absolute top-96 -right-96 -z-10 hidden min-md:block -scale-x-100"
       alt=""
     />
-    <TopBar color="primary" customMobileMenuColor="white" class="text-primary min-md:hidden" />
+    <TopBar
+      color="primary"
+      customMobileMenuColor="white"
+      class="text-primary min-md:hidden"
+    />
     <TopBar color="primary" class="sm:hidden text-primary" />
     <HeroSection class="min-lg:pt-28" />
     <Products class="pt-24" />
@@ -27,9 +31,9 @@
     />
     <SloganSection class="bg-white" />
     <AboutUs
-      class="md:px-5 lg:px-5 md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
+      class="min-md:pt-12 border-t-2 border-primary min-md:border-none bg-white"
     />
-    <Mission class="py-10 px-5" />
+    <Mission class="py-10 px-5 bg-white" />
     <ComparisonTable
       :props="{
         component: {
