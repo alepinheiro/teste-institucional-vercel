@@ -10,6 +10,7 @@
       class="absolute top-96 -right-96 -z-10 hidden min-md:block -scale-x-100"
       alt=""
     />
+
     <TopBar
       color="primary"
       :customMobileMenuColor="menuColor"

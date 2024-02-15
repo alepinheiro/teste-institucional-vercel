@@ -3,6 +3,7 @@
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full md:min-h-screen justify-center"
     >
+
       <img
         src="/images/Home/heroBackground-sm.png"
         class="aspect-square min-md:hidden"
@@ -13,11 +14,12 @@
         class="aspect-square hidden min-lg:block absolute inset-x-0 h-screen object-contain lg:-right-64 ml-auto -mt-32 -z-10"
         alt=""
       />
+
       <div
         class="flex flex-col gap-5 min-md:gap-10 items-center lg:w-8/12 xl:w-1/2 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-24 min-md:mt-0 md:pt-20 px-5"
       >
         <h1
-          class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7"
+          class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7 lg:text-left"
         >
           <span class="text-primary"> CashBest: </span>
           o melhor Crédito com Garantia de Imóvel do mercado
@@ -47,7 +49,7 @@
 
         <DoubleInputsForm
           v-model="doubleFormData"
-          class="bg-[#efeaea] p-4 min-md:px-12 min-md:py-8 rounded-2xl w-full"
+          class="bg-[#efeaea] p-4 min-md:px-12 min-md:py-8 rounded-2xl w-full lg:mr-8"
           @submit="onSubmit"
         />
       </div>
