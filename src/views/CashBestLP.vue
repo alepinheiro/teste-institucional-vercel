@@ -1,5 +1,5 @@
 <template>
-  <main class="relative w-full z-0 bg-[#F1F1F1]">
+  <main class="relative w-full z-0 bg-white">
     <img
       src="/images/Home/backgroundLines.png"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
@@ -17,7 +17,7 @@
       class="text-primary xl:text-textPrimary"
     />
 
-    <HeroSection :show-menu="showMenu" class="min-lg:pt-28 pb-14" />
+    <HeroSection :show-menu="showMenu" class="min-lg:pt-28 pb-20" />
 
     <div class="bg-gradient-to-b to-white from-[#F1F1F1]">
       <BusinessPartners

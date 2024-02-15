@@ -10,7 +10,7 @@
       />
       <img
         src="/images/Home/heroBackground-xl.png"
-        class="hidden xl:block absolute inset-x-0 h-[90vh] object-contain -right-32 ml-auto -mt-32 -z-10"
+        class="hidden xl:block absolute inset-x-0 h-[90vh] object-contain -right-32 ml-auto -mt-56 -z-10"
         alt=""
       />
       <img
