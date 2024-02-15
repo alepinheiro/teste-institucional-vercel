@@ -5,7 +5,7 @@
         class="flex flex-row w-full justify-between items-center md:max-w-2xl md:mx-auto"
       >
         <div class="flex flex-col gap-1">
-          <h2 class="text-4xl sm:text-2xl text-primary font-bold">
+          <h2 class="min-md:text-3xl text-2xl text-primary font-bold">
             Crédito sem filas, nem gerentes, nem complexidade
           </h2>
           <p class="text-base text-textPrimary">
