@@ -9,8 +9,13 @@
         alt=""
       />
       <img
-        src="/images/Home/heroBackground-min-lg.png"
-        class="aspect-square hidden min-lg:block absolute inset-x-0 h-screen object-contain -right-24 lg:-right-64 ml-auto -mt-24 -z-10"
+        src="/images/Home/heroBackground-xl.png"
+        class="hidden xl:block absolute inset-x-0 h-[90vh] object-contain -right-32 ml-auto -mt-32 -z-10"
+        alt=""
+      />
+      <img
+        src="/images/Home/heroBackground-lg.png"
+        class="hidden lg:block absolute inset-x-0  h-[90vh] object-contain -right-48 ml-auto -mt-60 -z-10"
         alt=""
       />
       <div
