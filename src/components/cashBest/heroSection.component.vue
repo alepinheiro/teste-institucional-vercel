@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full md:min-h-screen justify-center"
+      class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full min-md:min-h-screen justify-center"
     >
       <img
         src="/images/Home/heroBackground-sm.png"
@@ -10,12 +10,12 @@
       />
       <img
         src="/images/Home/heroBackground-xl.png"
-        class="hidden xl:block absolute inset-x-0 h-[90vh] object-contain -right-32 ml-auto -mt-56 -z-10"
+        class="hidden xl:block absolute inset-x-0 h-[95vh] object-contain -right-48 ml-auto -mt-12 -z-10"
         alt=""
       />
       <img
         src="/images/Home/heroBackground-lg.png"
-        class="hidden lg:block absolute inset-x-0 h-[90vh] object-contain -right-48 ml-auto -mt-60 -z-10"
+        class="hidden lg:block absolute inset-x-0  h-[95vh] object-contain -right-24 ml-auto -mt-12 -z-10"
         alt=""
       />
 

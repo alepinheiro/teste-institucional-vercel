@@ -7,7 +7,7 @@
     />
     <img
       src="/images/Home/backgroundLines.png"
-      class="absolute top-96 -right-96 -z-10 hidden min-md:block -scale-x-100"
+      class="absolute top-96 -right-96 -z-10 hidden md:block -scale-x-100"
       alt=""
     />
 
@@ -17,7 +17,7 @@
       class="text-primary xl:text-textPrimary"
     />
 
-    <HeroSection :show-menu="showMenu" class="min-lg:pt-28 pb-20" />
+    <HeroSection :show-menu="showMenu" class="" />
 
     <div class="bg-gradient-to-b to-white from-[#F1F1F1]">
       <BusinessPartners
