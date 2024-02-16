@@ -16,12 +16,12 @@
           class="text-textPrimary md:text-xl lg:text-xl xl:text-xl"
         ></p>
       </div>
-      <div class="flex gap-8 items-center w-fit mx-auto">
+      <div class="flex md:flex-col gap-8 items-center w-fit mx-auto">
         <img
           ref="phone"
           src="/images/Home/simulatorOnPhoneMockup.png"
           alt="A melhor plataforma multibancos."
-          class="h-160 hidden lg:block xl:block opacity-0"
+          class="h-128 hidden min-md:block opacity-0"
         />
         <div
           ref="banks"

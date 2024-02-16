@@ -1,13 +1,23 @@
 <template>
-  <div class="relative z-0 bg-[#EFEFEF]">
+  <div class="relative z-0 overflow-hidden bg-[#EFEFEF]">
     <img
       src="/images/Home/backgroundLines.png"
-      class="absolute -left-40 -top-40 md:-left-[40%] lg:-left-[40%] -z-10 hidden md:block lg:block xl:block"
+      class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
       alt=""
     />
-    <TopBar color="primary" class="text-primary" />
-    <HeroSection class="pt-10" />
-    <Products class="pt-10 lg:pt-20" />
+    <img
+      src="/images/Home/backgroundLines.png"
+      class="absolute top-96 -right-96 -z-10 hidden md:block -scale-x-100"
+      alt=""
+    />
+    <TopBar
+      color="primary"
+      customMobileMenuColor="white"
+      class="text-primary min-md:hidden"
+    />
+    <TopBar color="primary" class="sm:hidden text-primary" />
+    <HeroSection class="" />
+    <Products class="pt-24" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
       inner-text="<strong>
@@ -17,17 +27,17 @@
         o que pode lhe garantir as melhores taxas e as maiores chances de
         aprovação, além de um time de especialistas preparado para te atender e
         te guiar durante todo o processo."
-      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 max-h-screen"
+      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 bg-white"
     />
-    <SloganSection />
+    <SloganSection class="bg-white" />
     <AboutUs
-      class="md:px-5 lg:px-5 md:mt-10 lg:mt-12 xl:mt-12 border-t-2 border-primary md:border-none lg:border-none xl:border-none"
+      class="min-md:pt-12 border-t-2 border-primary min-md:border-none bg-white"
     />
-    <Mission class="py-10 px-5" />
+    <Mission class="py-10 px-5 bg-white" />
     <ComparisonTable
       :props="{
         component: {
-          backgroundColor: '#EFEFEF',
+          backgroundColor: '#FFF',
           showBackGroundImage: false,
         },
         table: {
@@ -39,9 +49,9 @@
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
     <BestPlay
-      class="bg-[#181818] bg-gradient-to-br to-black from-transparent border-b-4 border-primary md:border-0 lg:border-0 xl:border-0"
+      class="bg-[#181818] bg-gradient-to-br to-black from-transparent border-b-4 border-primary md:border-0 lg:border-0 xl:border-0 z-0"
     />
-    <TheFooter class="block" />
+    <TheFooter class="block z-10" />
   </div>
 </template>
 <script lang="ts">

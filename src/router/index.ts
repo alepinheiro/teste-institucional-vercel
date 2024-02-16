@@ -7,8 +7,6 @@ import {
 } from '@unhead/vue'
 declare module 'vue-router' {
   interface RouteMeta {
-    // payload?: UseHeadInput<{}>
-    // seoMeta?: UseSeoMetaInput
     title: string
     description: string
   }

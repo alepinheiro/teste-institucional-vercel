@@ -1,15 +1,25 @@
 <template>
   <section>
     <div
-      class="px-5 flex flex-col xl:flex-row-reverse lg:flex-row-reverse gap-5 items-center max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full "
+      class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full min-md:min-h-screen justify-center"
     >
       <img
-        src="/images/Home/gasparHeroSection.png"
-        class="w-48 xl:w-1/2 lg:w-5/12 md:hidden"
+        src="/images/Home/heroBackground-sm.png"
+        class="aspect-square min-md:hidden"
+        alt=""
+      />
+      <img
+        src="/images/Home/heroBackground-xl.png"
+        class="hidden xl:block absolute inset-x-0 h-[95vh] object-contain -right-48 ml-auto -mt-12 -z-10"
+        alt=""
+      />
+      <img
+        src="/images/Home/heroBackground-lg.png"
+        class="hidden lg:block absolute inset-x-0  h-[95vh] object-contain -right-24 ml-auto -mt-12 -z-10"
         alt=""
       />
       <div
-        class="flex flex-col gap-5 min-md:gap-10 items-center xl:w-1/2 lg:w-7/12 xl:items-start lg:items-start text-center xl:text-left lg:text-left"
+        class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto xl:items-start lg:items-start text-center min-lg:text-left -mt-24 min-md:mt-0 px-5"
       >
         <h1
           class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]"
@@ -30,17 +40,17 @@
           <b> complexidade. </b>
         </h2>
 
-        <hr class="border-px border-textSecondary w-full" />
+        <hr class="border-px border-textSecondary w-full min-lg:w-2/3" />
 
         <div class="flex flex-col gap-4">
           <h3 class="text-textPrimary text-xl">Reconhecidos pelo mercado:</h3>
-          <div class="flex flex-row gap-4">
+          <div class="flex flex-row gap-4 flex-wrap">
             <img
               v-for="{ alt, id, src } of topOfSalesSeals"
               :key="id"
               :src="src"
               :alt="alt"
-              class="h-9 min-md:h-12"
+              class="h-9 min-md:h-12 mx-auto max-w-[33%] min-md:max-w-[20%] flex-grow object-contain"
             />
           </div>
         </div>

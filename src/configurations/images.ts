@@ -32,9 +32,6 @@ const image = {
   iconSejaBestWhite: '/images/logoBest/iconSejaBestWhite.svg',
   bacen: '/images/LogoParceiros/LogoBancoCentraldoBrasil.svg',
   imagePageUnavailable: '/images/VetorPersonagens.svg',
-  bg: {
-    manWithPhone: '/images/Home/ImagemHomeGradiente.webp',
-  },
   depositions: [
     {
       img: '/images/depositions/Depoimento01.webp',

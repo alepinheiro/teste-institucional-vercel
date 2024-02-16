@@ -22,7 +22,7 @@
           'background-color': props.table.backgroundColor,
           padding: props.table.padding,
         }"
-        class="mx-auto w-8/12 sm:w-full flex flex-col items-center rounded-xl pt-5 sm:px-0 "
+        class="mx-auto md:w-10/12 min-lg:w-8/12 sm:w-full flex flex-col items-center rounded-xl pt-5 sm:px-0 "
       >
         <h2
           v-if="props.table.title"

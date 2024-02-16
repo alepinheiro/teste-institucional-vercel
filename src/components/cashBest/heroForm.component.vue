@@ -54,7 +54,6 @@
 </template>
 <script setup lang="ts">
 import { ref } from 'vue'
-//@ts-expect-error
 import { type CurrencyInputOptions, CurrencyDisplay } from 'vue-currency-input'
 import CurrencyInput from '@/components/base/currencyInput.component.vue'
 
