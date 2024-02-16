@@ -7,7 +7,7 @@
     />
     <img
       src="/images/Home/backgroundLines.png"
-      class="absolute top-96 -right-96 -z-10 hidden min-md:block -scale-x-100"
+      class="absolute top-96 -right-96 -z-10 hidden md:block -scale-x-100"
       alt=""
     />
     <TopBar
@@ -16,7 +16,7 @@
       class="text-primary min-md:hidden"
     />
     <TopBar color="primary" class="sm:hidden text-primary" />
-    <HeroSection class="min-lg:pt-28" />
+    <HeroSection class="" />
     <Products class="pt-24" />
     <BusinessPartners
       title="A melhor plataforma multibancos."

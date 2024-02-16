@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full md:min-h-screen justify-center"
+      class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full min-md:min-h-screen justify-center"
     >
       <img
         src="/images/Home/heroBackground-sm.png"
@@ -10,16 +10,16 @@
       />
       <img
         src="/images/Home/heroBackground-xl.png"
-        class="hidden xl:block absolute inset-x-0 h-[80vh] object-contain -right-32 ml-auto -mt-48 -z-10"
+        class="hidden xl:block absolute inset-x-0 h-[95vh] object-contain -right-48 ml-auto -mt-12 -z-10"
         alt=""
       />
       <img
         src="/images/Home/heroBackground-lg.png"
-        class="hidden lg:block absolute inset-x-0  h-[80vh] object-contain -right-40 ml-auto -mt-60 -z-10"
+        class="hidden lg:block absolute inset-x-0  h-[95vh] object-contain -right-24 ml-auto -mt-12 -z-10"
         alt=""
       />
       <div
-        class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto xl:items-start lg:items-start text-center xl:text-left lg:text-left -mt-24 min-md:mt-0 px-5"
+        class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto xl:items-start lg:items-start text-center min-lg:text-left -mt-24 min-md:mt-0 px-5"
       >
         <h1
           class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]"
