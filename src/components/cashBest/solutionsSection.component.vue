@@ -47,6 +47,7 @@
           </div>
         </div>
       </div>
+      <div class="hidden min-md:block h-px bg-primary w-full mt-20"></div>
     </div>
   </section>
 </template>
