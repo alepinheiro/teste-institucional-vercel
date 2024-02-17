@@ -13,7 +13,7 @@
           </p>
         </div>
         <div class="sm:hidden">
-          <img src="/images/logoBest/logoCashBestHomeEquity.svg" alt="" />
+          <img class="h-16" src="/images/logoBest/logoCashBestHomeEquity.svg" alt="" />
         </div>
       </div>
       <component
