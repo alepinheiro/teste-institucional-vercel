@@ -22,7 +22,7 @@
           'background-color': props.table.backgroundColor,
           padding: props.table.padding,
         }"
-        class="mx-auto md:w-10/12 min-lg:w-8/12 sm:w-full flex flex-col items-center rounded-xl pt-5 sm:px-0 "
+        class="mx-auto md:w-10/12 min-lg:w-8/12 sm:w-full flex flex-col items-center rounded-xl pt-5 sm:px-0"
       >
         <h2
           v-if="props.table.title"
@@ -31,7 +31,7 @@
             'text-primary': props.table.titleColor === 'PRIMARY',
           }"
           class="text-4xl sm:text-2xl sm:text-center sm:mx-auto"
-          v-html="props.table.title.replace(/\s([^\s<]+)\s*$/,'\u00A0$1')"
+          v-html="props.table.title.replace(/\s([^\s<]+)\s*$/, '\u00A0$1')"
         ></h2>
         <h2
           v-else
@@ -41,7 +41,7 @@
           }"
           class="text-4xl sm:text-2xl sm:text-center sm:w-full sm:mx-auto"
         >
-          Por que financiar <br> com a <b> SejaBest?</b>
+          Por que escolher a <b> SejaBest?</b>
         </h2>
 
         <div class="flex flex-col w-full px-10 sm:px-5 pt-10 text-textPrimary">
@@ -97,7 +97,7 @@ defineProps<{
       backgroundColor: string
       titleColor: 'PRIMARY' | 'TEXTPRIMARY'
       title?: string
-      padding?: string;
+      padding?: string
     }
   }
 }>()

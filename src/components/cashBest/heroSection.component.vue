@@ -56,6 +56,16 @@
           class="bg-[#efeaea] p-4 min-md:px-12 min-md:py-8 rounded-2xl w-full lg:mr-8"
           @submit="onSubmit"
         />
+        <a
+          href="#"
+          v-scroll-to="'#businessPartners'"
+          class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline"
+        >
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+          <span class="text-xs"
+            >Ou saiba mais sobre o CashBest rolando para baixo</span
+          >
+        </a>
       </div>
     </div>
   </section>
@@ -78,8 +88,8 @@ const doubleFormData = ref<{
   assetValue: number
   creditValue: number
 }>({
-  assetValue: 0,
-  creditValue: 0,
+  assetValue: 500000,
+  creditValue: 250000,
 })
 
 const cards = [

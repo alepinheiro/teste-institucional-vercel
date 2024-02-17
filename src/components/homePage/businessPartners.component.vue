@@ -4,7 +4,7 @@
       class="flex flex-col gap-10 md:gap-8 lg:gap-8 xl:gap-12 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
     >
       <div
-        class="flex flex-col text-center gap-2 lg:gap-5 xl:gap-5 xl:w-full xl:mx-auto"
+        class="flex flex-col text-center gap-2 lg:gap-5 xl:gap-5 xl:w-10/12 xl:mx-auto"
       >
         <h2
           class="text-primary text-2xl md:text-3xl lg:text-5xl xl:text-5xl font-bold"
