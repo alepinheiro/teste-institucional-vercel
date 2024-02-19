@@ -5,15 +5,15 @@
       <div class="absolute inset-0 -z-30 overflow-hidden">
         <div class="relative z-0 w-full h-full">
           <div
-            class="absolute inset-0 z-20 bg-gradient-to-t from-[#EFEFEF] lg:from-[#EFEFEF] xl:from-[#EFEFEF] to-transparent"
+            class="absolute inset-0 z-20 bg-gradient-to-t from-[#EFEFEF] to-black/60 from-[20%] via-transparent"
           ></div>
           <iframe
             :src="`https://www.youtube.com/embed/${backgroundVideos.desktop}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.desktop}`"
-            class="absolute top-0 bottom-0 w-full my-auto h-full z-0 scale-150 opacity-[.85] hidden lg:block xl:block"
+            class="absolute top-0 bottom-0 w-full my-auto h-full z-0 scale-150 opacity-[.90] hidden lg:block xl:block"
           ></iframe>
           <iframe
             :src="`https://www.youtube.com/embed/${backgroundVideos.mobile}?autoplay=1&mute=1&loop=1&playlist=${backgroundVideos.mobile}`"
-            class="w-full h-[125%] md:h-[130%] absolute z-0 scale-150 opacity-[.85] lg:hidden xl:hidden"
+            class="w-full h-[125%] md:h-[130%] absolute z-0 scale-150 opacity-[.90] lg:hidden xl:hidden"
           ></iframe>
         </div>
       </div>
@@ -35,10 +35,10 @@
         <a
           href="#"
           v-scroll-to="'#businessPartners'"
-          class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline"
+          class="flex gap-2 justify-between w-fit mx-auto pt-10 hover:underline text-black"
         >
           <i class="fa-solid fa-chevron-down animate-bounce"></i>
-          <span class="text-xs">
+          <span class="text-xs ">
             Clique aqui ou role para saber como estamos fazendo isso
           </span>
         </a>

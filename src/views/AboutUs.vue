@@ -1,7 +1,7 @@
 <template>
   <main class="bg-[#EFEFEF]">
     <TopBar
-      :customMobileMenuColor="menuColor"
+      customMobileMenuColor="white"
       color="primary"
       class="text-white"
     />
@@ -61,7 +61,6 @@ export default defineComponent({
   },
   data() {
     return {
-      menuColor: window.innerWidth > 667 ? 'black' : 'white',
     }
   },
 })
