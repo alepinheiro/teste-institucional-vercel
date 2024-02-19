@@ -33,7 +33,7 @@
           :key="id"
           :src="src"
           :alt="alt"
-          class="mx-auto h-24"
+          class="mx-auto h-12 min-md:h-24"
         />
       </div>
       <div class="flex flex-row sm:flex-col gap-4 text-white">
