@@ -5,9 +5,10 @@
       color="primary"
       class="text-white"
     />
-    <HeroSection
-      class=""
-    />
+    <HeroSection :background-videos="{
+        desktop: 'eYtBl05z-YM',
+        mobile: 'Tp-ZcMvXBiE',
+      }" :show-menu="showMenu" class="sm:h-[70vh] h-screen" />
     <OurMotivation
       class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12 border-b-4 border-primary"
     />
