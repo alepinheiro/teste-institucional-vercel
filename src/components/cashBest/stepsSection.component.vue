@@ -6,7 +6,7 @@
       >
         <div class="flex flex-col gap-1">
           <h2 class="min-md:text-3xl text-2xl text-primary font-bold">
-            Crédito sem filas, nem gerentes, nem complexidade
+            Sem filas, Sem gerentes, Sem complexidade
           </h2>
           <p class="text-base text-textPrimary">
             São apenas 4 passos para você receber o seu crédito.
