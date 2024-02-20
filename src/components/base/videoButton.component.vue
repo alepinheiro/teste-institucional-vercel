@@ -20,9 +20,6 @@ export default defineComponent({
   name: 'VideoButton',
   components: { PlayButton, Overlay },
   props: {
-    /**
-     * ID do vídeo do youtube se será reproduzido no popup
-     */
     videoId: {
       type: String,
       required: true,

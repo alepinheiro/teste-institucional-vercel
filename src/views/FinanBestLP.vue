@@ -1,16 +1,19 @@
 <template>
   <main class="relative">
+    <div
+      class="absolute inset-x-0 top-0 z-10 h-32 bg-gradient-to-b from-white min-lg:block hidden"
+    ></div>
     <TopBar
       :customMobileMenuColor="menuColor"
       color="primary"
-      class="text-textPrimary"
+      class="text-primary"
     />
     <HeroSection :show-menu="showMenu" />
     <BusinessPartners
-        title="Na SejaBest, suas chances de aprovação são maiores"
-        inner-text="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
-        class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
-      />
+      title="Na SejaBest, suas chances de aprovação são maiores"
+      inner-text="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
+      class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
+    />
     <ComparisonTable
       :props="{
         component: {

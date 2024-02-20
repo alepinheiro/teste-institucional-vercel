@@ -1,17 +1,18 @@
 <template>
   <main class="bg-[#EFEFEF]">
     <TopBar
-      :customMobileMenuColor="menuColor"
+      customMobileMenuColor="white"
       color="primary"
       class="text-white"
     />
-    <HeroSection
-      class=""
-    />
+    <HeroSection :background-videos="{
+        desktop: 'eYtBl05z-YM',
+        mobile: 'Tp-ZcMvXBiE',
+      }" :show-menu="showMenu" class="sm:h-[70vh] h-screen" />
     <OurMotivation
-      class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12 border-b-4 border-primary"
+      class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12 "
     />
-    <MissionSection class="py-10 px-5" />
+    <MissionSection class="py-10 px-5 border-y-4 border-primary bg-white" />
     <AboutNumbers class="py-12 md:py-16 xl:py-28" />
     <Team class="py-10" />
     <BestExperience class="py-10 xl:pb-28" />
@@ -60,7 +61,6 @@ export default defineComponent({
   },
   data() {
     return {
-      menuColor: window.innerWidth > 667 ? 'black' : 'white',
     }
   },
 })

@@ -116,8 +116,6 @@ const onSubmit = (event: Event) => {
   const formData = new FormData(event.target as HTMLFormElement)
 
   const data = {
-    name: '',
-    email: '',
     realtyValue: formData.get('realtyValue'),
     creditAmount: formData.get('creditAmountWithSlider'),
     rangeSlider: formData.get('rangeSlider'),

@@ -27,13 +27,13 @@
           </h2>
         </div>
       </div>
-      <div class="sm:flex flex-row flex-wrap items-center gap-6 mx-auto hidden">
+      <div class="sm:grid grid-flow-row grid-cols-2 flex-row flex-wrap items-center gap-6 mx-auto hidden">
         <img
           v-for="{ alt, id, src } of topOfSales('white')"
           :key="id"
           :src="src"
           :alt="alt"
-          class="mx-auto h-12"
+          class="mx-auto h-12 min-md:h-24"
         />
       </div>
       <div class="flex flex-row sm:flex-col gap-4 text-white">
@@ -64,7 +64,7 @@
           :key="id"
           :src="src"
           :alt="alt"
-          class="h-20 mx-auto"
+          class="h-20 md:h-16 mx-auto"
         />
       </div>
     </div>

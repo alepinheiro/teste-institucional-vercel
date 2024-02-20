@@ -3,6 +3,9 @@
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full min-md:min-h-screen justify-center"
     >
+    <div class="absolute inset-x-0 top-48 md:hidden lg:right-1/4 lg:top-[65vh] xl:right-1/3 xl:top-auto ">
+        <VideoButton video-id="eDWFe4Wrb2A" class="xl:mr-0 lg:mr-0"  />
+      </div>
       <img
         src="/images/Home/heroBackground-sm.png"
         class="aspect-square min-md:hidden"
@@ -15,12 +18,12 @@
       />
       <img
         src="/images/Home/heroBackground-lg.png"
-        class="hidden lg:block absolute inset-x-0  h-[95vh] object-contain -right-24 ml-auto -mt-12 -z-10"
+        class="hidden lg:block absolute inset-x-0 h-[95vh] object-contain -right-24 ml-auto -mt-12 -z-10"
         alt=""
       />
 
       <div
-        class="flex flex-col gap-5 min-md:gap-10 items-center lg:w-8/12 xl:w-1/2 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-16 min-md:mt-0 md:pt-20 px-5"
+        class="flex flex-col gap-5 min-md:gap-10 items-center lg:w-8/12 xl:w-1/2 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-16 min-md:mt-0 min-md:pt-20 min-md:pb-10 px-5"
       >
         <h1
           class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7 lg:text-left"
@@ -56,6 +59,16 @@
           class="bg-[#efeaea] p-4 min-md:px-12 min-md:py-8 rounded-2xl w-full lg:mr-8"
           @submit="onSubmit"
         />
+        <a
+          href="#"
+          v-scroll-to="'#businessPartners'"
+          class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline"
+        >
+          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+          <span class="text-xs"
+            >Ou saiba mais sobre o CashBest rolando para baixo</span
+          >
+        </a>
       </div>
     </div>
   </section>
@@ -68,6 +81,7 @@ import HouseIcon from '@/assets/svg/houseWithMoneySign.vue'
 import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
 import DoubleInputsForm from '@/components/cashBest/heroForm.component.vue'
 import type { SwiperOptions } from 'swiper/types'
+import VideoButton from '@/components/base/videoButton.component.vue'
 import { ref } from 'vue'
 
 defineProps<{
@@ -78,8 +92,8 @@ const doubleFormData = ref<{
   assetValue: number
   creditValue: number
 }>({
-  assetValue: 0,
-  creditValue: 0,
+  assetValue: 500000,
+  creditValue: 250000,
 })
 
 const cards = [

@@ -7,13 +7,16 @@
         class="w-5/12 lg:w-7/12 md:w-full sm:w-full flex flex-col gap-8 text-textPrimary text-center"
       >
         <h2 class="text-3xl sm:text-2xl font-bold">
-          O <span class="text-primary">FinanBest</span> é o financiamento imobiliário da SejaBest.
+          O <span class="text-primary">FinanBest</span> é o financiamento
+          imobiliário da SejaBest.
         </h2>
         <div class="text-base leading-relaxed sm:hidden">
           <p>
-            Financie seu novo imóvel sem sair de casa! Com um time de especialistas sempre disponíveis.
+            Financie seu novo imóvel sem sair de casa! Com um time de
+            especialistas sempre disponíveis.
             <b>
-              Assista ao vídeo exclusivo para entender cada detalhe desta operação.
+              Assista ao vídeo exclusivo para entender cada detalhe desta
+              operação.
             </b>
           </p>
         </div>
@@ -38,7 +41,12 @@
         <img
           src="/images/finanBest/bgVideoPlayer.png"
           alt=""
-          class="object-contain sm:h-auto w-2/3 mx-auto absolute inset-0"
+          class="object-contain w-2/3 mx-auto absolute inset-0 hidden min-md:block"
+        />
+        <img
+          src="/images/finanBest/bgVideoPlayerMobile.png"
+          alt=""
+          class="object-contain w- mx-auto min-md:hidden"
         />
         <div
           class="w-8 h-8 rounded-full absolute inset-0 m-auto animate-ping z-0 bg-zinc-300"
