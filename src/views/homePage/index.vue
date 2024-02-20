@@ -33,7 +33,7 @@
     <AboutUs
       class="min-md:pt-12 border-t-2 border-primary min-md:border-none bg-white"
     />
-    <Mission class="py-10 px-5 bg-white" />
+    <Mission title="Por que existimos?" class="py-10 px-5 bg-white" />
     <ComparisonTable
       :props="{
         component: {
@@ -41,7 +41,7 @@
           showBackGroundImage: false,
         },
         table: {
-          backgroundColor: '#EFEFEF',
+          backgroundColor: '#FFF',
           titleColor: 'TEXTPRIMARY',
           title: 'Por que escolher a <b>SejaBest?</b>',
         },
