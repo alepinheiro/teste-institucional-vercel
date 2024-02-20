@@ -9,7 +9,7 @@
         <h2
           class="text-primary text-xl md:text-4xl lg:text-4xl xl:text-4xl font-bold"
         >
-          E como entregamos nossa missão?
+          {{ title }}
         </h2>
         <p class="md:text-xl lg:text-2xl xl:text-2xl text-textPrimary">
           Acreditamos que o acesso ao crédito pode levar as pessoas a sua melhor
@@ -17,9 +17,7 @@
         </p>
       </div>
 
-      <p class="md:text-xl lg:text-2xl xl:text-2xl lg:w-10/12 lg:mx-auto">
-        <b>E como fazemos isso?</b> <br class="md:hidden lg:hidden xl:hidden" />
-        <i>Através dos nossos três pilares:</i>
+      <p class="md:text-xl lg:text-2xl xl:text-2xl lg:w-10/12 lg:mx-auto" v-html="description">
       </p>
     </div>
 
@@ -161,6 +159,26 @@ import useWindowSize from '@/composables/useWindowSize'
 
 export default defineComponent({
   name: 'MissionSection',
+  props: {
+    /**
+     * Título da seção
+     */
+    title: {
+      type: String,
+      required: false,
+      default: 'E como entregamos nossa missão?',
+    },
+    /**
+     * Texto abaixo do título da seção
+     */
+    description: {
+      type: String,
+      required: false,
+      default:
+        '<b>E como fazemos isso?</b> <br class="md:hidden lg:hidden xl:hidden" />' +
+        '<i>Através dos nossos três pilares:</i>',
+    },
+  },
   setup() {
     const activeImage = ref<HTMLDivElement | null>(null)
     const { size, width } = useWindowSize()
