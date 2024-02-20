@@ -16,13 +16,22 @@ import { defineComponent } from 'vue'
 import PlayButton from '@/components/base/buttons/playVideo.component.vue'
 import Overlay from '@/components/base/overlays/youtubeVideo.component.vue'
 
+// ## Documentação do Componente: VideoButton
+
+// Este componente representa um botão que aciona a exibição de um player de vídeo em overlay.
+
+// ### Propriedades
+// - **videoId:** (obrigatório) O identificador único do vídeo a ser reproduzido.
+
+// ### Eventos
+// - **closeOverlay:** Evento emitido quando o player de vídeo em overlay é fechado.
+
+// ### Exemplo de Uso
+
 export default defineComponent({
   name: 'VideoButton',
   components: { PlayButton, Overlay },
   props: {
-    /**
-     * ID do vídeo do youtube se será reproduzido no popup
-     */
     videoId: {
       type: String,
       required: true,
