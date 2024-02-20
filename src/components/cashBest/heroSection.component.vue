@@ -3,6 +3,9 @@
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full min-md:min-h-screen justify-center"
     >
+    <div class="absolute inset-x-0 top-48 md:hidden lg:right-1/4 lg:top-[65vh] xl:right-1/3 xl:top-auto ">
+        <VideoButton video-id="eDWFe4Wrb2A" class="xl:mr-0 lg:mr-0"  />
+      </div>
       <img
         src="/images/Home/heroBackground-sm.png"
         class="aspect-square min-md:hidden"
@@ -15,7 +18,7 @@
       />
       <img
         src="/images/Home/heroBackground-lg.png"
-        class="hidden lg:block absolute inset-x-0  h-[95vh] object-contain -right-24 ml-auto -mt-12 -z-10"
+        class="hidden lg:block absolute inset-x-0 h-[95vh] object-contain -right-24 ml-auto -mt-12 -z-10"
         alt=""
       />
 
@@ -78,6 +81,7 @@ import HouseIcon from '@/assets/svg/houseWithMoneySign.vue'
 import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
 import DoubleInputsForm from '@/components/cashBest/heroForm.component.vue'
 import type { SwiperOptions } from 'swiper/types'
+import VideoButton from '@/components/base/videoButton.component.vue'
 import { ref } from 'vue'
 
 defineProps<{
