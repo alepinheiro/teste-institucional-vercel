@@ -1,7 +1,7 @@
 <template>
   <nav class="flex">
     <button
-    :style="{
+      :style="{
         color,
       }"
       id="divMenu"
@@ -10,7 +10,7 @@
       class="cursor-pointer w-8 h-8 flex text-inherit"
       @click="toggleMenu(), handleClickOutside($event)"
     >
-      <i  class="fa-solid fa-bars w-full h-full"></i>
+      <i class="fa-solid fa-bars w-full h-full"></i>
     </button>
     <div
       v-if="openProfileMenu"
@@ -25,9 +25,9 @@
         @focusout="hoverSVG4 = false"
         @click="openProfileMenu = !openProfileMenu"
       >
-        <router-link :to="'/' + $root.utms" class="hover:font-semibold">
+        <RouterLink :to="'/' + $root.utms" class="hover:font-semibold">
           Início
-        </router-link>
+        </RouterLink>
         <svg
           v-show="hoverSVG4"
           xmlns="http://www.w3.org/2000/svg"
@@ -81,12 +81,12 @@
               @mouseout="hover4 = false"
               @focusout="hover4 = false"
             >
-              <router-link
+              <RouterLink
                 :to="'/home-equity' + $root.utms"
                 class="hover:text-primary hover:font-semibold text-textPrimary py-1"
               >
-                Home Equity
-              </router-link>
+                Crédito com Garantia de Imóvel
+              </RouterLink>
               <svg
                 v-show="hover4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,40 +106,15 @@
               @mouseover="hover1 = true"
               @mouseout="hover1 = false"
             >
-              <router-link
+              <RouterLink
                 :to="'/financiamento-imobiliario' + $root.utms"
                 class="block text-textPrimary py-1 hover:font-semibold"
                 :class="{ 'text-primary': hover1 }"
               >
                 Financiamento Imobiliário
-              </router-link>
+              </RouterLink>
               <svg
                 v-show="hover1"
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </li>
-            <li
-              class="w-full flex flex-row justify-between items-center"
-              @mouseover="hover2 = true"
-              @mouseout="hover2 = false"
-            >
-              <router-link
-                :to="'/financiamento-veicular' + $root.utms"
-                class="text-textPrimary block py-1 hover:font-semibold"
-                :class="{ 'text-primary': hover2 }"
-                >Financiamento de Veículo</router-link
-              >
-              <svg
-                v-show="hover2"
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary"
                 viewBox="0 0 20 20"
@@ -157,13 +132,13 @@
               @mouseover="hover3 = true"
               @mouseout="hover3 = false"
             >
-              <router-link
+              <RouterLink
                 :to="'/emprestimo-com-garantia-de-veiculo' + $root.utms"
                 class="text-textPrimary block py-1 hover:font-semibold"
                 :class="{ 'text-primary': hover3 }"
               >
-                Empréstimo com Garantia de Veículo
-              </router-link>
+              Crédito com Garantia Veicular
+              </RouterLink>
               <svg
                 v-show="hover3"
                 xmlns="http://www.w3.org/2000/svg"
@@ -178,6 +153,33 @@
                 />
               </svg>
             </li>
+            <li
+              class="w-full flex flex-row justify-between items-center"
+              @mouseover="hover2 = true"
+              @mouseout="hover2 = false"
+            >
+              <RouterLink
+                :to="'/financiamento-veicular' + $root.utms"
+                class="text-textPrimary block py-1 hover:font-semibold"
+                :class="{ 'text-primary': hover2 }"
+              >
+                Financiamento Veicular
+              </RouterLink>
+              <svg
+                v-show="hover2"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 opacity-o group-hover:opacity-100 text-primary"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -224,13 +226,13 @@
               @mouseover="hover4 = true"
               @mouseout="hover4 = false"
             >
-              <router-link
+              <RouterLink
                 :to="'/xo-aluguel' + $root.utms"
                 target="_blank"
                 class="hover:text-primary hover:font-semibold text-textPrimary py-1"
               >
                 Xô, aluguel
-              </router-link>
+              </RouterLink>
               <svg
                 v-show="hover4"
                 xmlns="http://www.w3.org/2000/svg"
@@ -250,13 +252,13 @@
               @mouseover="hover5 = true"
               @mouseout="hover5 = false"
             >
-              <router-link
+              <RouterLink
                 :to="'/best-broker' + $root.utms"
                 target="_blank"
                 class="block text-textPrimary py-1 hover:text-primary hover:font-semibold"
               >
                 Best Broker
-              </router-link>
+              </RouterLink>
               <svg
                 v-show="hover5"
                 xmlns="http://www.w3.org/2000/svg"
@@ -280,9 +282,9 @@
         @mouseout="hoverSVG1 = false"
         @click="openProfileMenu = !openProfileMenu"
       >
-        <router-link :to="'/besthub' + $root.utms" class="hover:font-semibold">
+        <RouterLink :to="'/besthub' + $root.utms" class="hover:font-semibold">
           Seja um Parceiro
-        </router-link>
+        </RouterLink>
         <svg
           v-show="hoverSVG1"
           xmlns="http://www.w3.org/2000/svg"
@@ -332,9 +334,9 @@
         @mouseout="hoverSVG3 = false"
         @click="openProfileMenu = !openProfileMenu"
       >
-        <router-link :to="'/sobre' + $root.utms" class="hover:font-semibold">
+        <RouterLink :to="'/sobre' + $root.utms" class="hover:font-semibold">
           Sobre
-        </router-link>
+        </RouterLink>
         <svg
           v-show="hoverSVG3"
           xmlns="http://www.w3.org/2000/svg"
