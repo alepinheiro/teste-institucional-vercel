@@ -111,7 +111,7 @@
                 class="block text-textPrimary py-1 hover:font-semibold"
                 :class="{ 'text-primary': hover1 }"
               >
-                Financiamento
+                Financiamento Imobiliário
               </router-link>
               <svg
                 v-show="hover1"

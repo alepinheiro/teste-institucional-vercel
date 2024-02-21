@@ -51,7 +51,7 @@
           :to="{ name: 'Financing', params: { id: 'div1' } }"
           class="text-sm"
         >
-          Financiamento
+          Financiamento Imobiliário
         </router-link>
         <svg
           v-show="hover"
