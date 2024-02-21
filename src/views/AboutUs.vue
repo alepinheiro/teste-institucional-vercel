@@ -1,17 +1,20 @@
 <template>
   <main class="bg-[#EFEFEF]">
-    <TopBar
-      customMobileMenuColor="white"
-      color="primary"
-      class="text-white"
-    />
-    <HeroSection :background-videos="{
+    <TopBar customMobileMenuColor="white" color="primary" class="text-white" />
+    <HeroSection
+      :background-videos="{
         desktop: 'eYtBl05z-YM',
         mobile: 'Tp-ZcMvXBiE',
-      }" :show-menu="showMenu" class="sm:h-[70vh] h-screen" />
-    <OurMotivation
-      class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12 "
+      }"
+      :show-menu="showMenu"
+      class="sm:h-[70vh] h-screen"
     />
+    <div class="relative z-0">
+      <div class="absolute inset-0  -z-10 hidden min-md:flex">
+        <img src="/images/aboutUs/backgroundLines.png" class="w-full object-cover scale-x-150 mt-auto">
+      </div>
+      <OurMotivation class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
+    </div>
     <MissionSection class="py-10 px-5" />
     <AboutNumbers class="py-12 md:py-16 xl:py-28" />
     <Team class="py-10" />
@@ -60,8 +63,7 @@ export default defineComponent({
     TopBar,
   },
   data() {
-    return {
-    }
+    return {}
   },
 })
 </script>
