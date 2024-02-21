@@ -9,7 +9,7 @@
       :show-menu="showMenu"
       class="sm:h-[70vh] h-screen"
     />
-    <div class="relative z-0">
+    <div class="relative z-0 overflow-hidden">
       <div class="absolute inset-0  -z-10 hidden min-md:flex">
         <img src="/images/aboutUs/backgroundLines.png" class="w-full object-cover scale-x-150 mt-auto">
       </div>
