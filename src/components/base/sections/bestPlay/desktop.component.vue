@@ -14,26 +14,26 @@
     </div>
     <div class="w-full my-auto flex">
       <div
-        class="md:max-w-2xl md:mx-auto lg:max-w-5xl lg:mx-auto xl:max-w-7xl xl:mx-auto z-10 my-auto"
+        class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl m-auto z-10 w-full"
       >
         <div class="flex md:w-5/6 py-10 px-5">
           <div
-            class="flex flex-col justify-between gap-10 text-white lg:w-2/3 xl:w-1/2"
+            class="flex flex-col justify-between items-start gap-10 text-white lg:w-2/3 xl:w-1/2"
           >
-            <BestPlayLogo class="h-16 mx-auto md:ml-0 lg:ml-0 xl:ml-0" />
+            <BestPlayLogo class="h-16" />
             <h2
-              class="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
+              class="text-5xl font-bold text-left"
             >
               Conheça o maior canal de crédito do Brasil
             </h2>
             <!--  -->
-            <div class="flex flex-row gap-5">
+            <div class="flex flex-row gap-5 w-full">
               <div
                 v-for="{ description, icon, number, suffix } of stats"
                 :key="icon"
-                class="flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:hidden md:even:block lg:even:block xl:even:block border border-zinc-800/60 hover:border-complementaryColor3 transition cursor-default bg-[#181818]"
+                class="flex-1 flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:block border border-zinc-800/60 hover:border-complementaryColor3 transition cursor-default bg-[#181818]"
               >
-                <div class="w-6 h-6 lg:w-8 lg:h-8 text-complementaryColor3">
+                <div class="w-8 h-8 text-complementaryColor3">
                   <i :class="icon" class="w-full h-full"></i>
                 </div>
                 <span
@@ -48,14 +48,14 @@
             </div>
             <!--  -->
             <p
-              class="text-sm md:text-xl lg:text-xl xl:text-xl md:w-5/6 lg:w-5/6 xl:leading-loose text-center md:text-left lg:text-left xl:text-left"
+              class="text-xl md:w-5/6 lg:w-5/6 leading-loose text-left"
             >
               Explore temas como crédito, financiamento, empreendedorismo e
               mercado financeiro, visando levá-lo à sua melhor versão.
             </p>
             <a
               href="https://www.youtube.com/@SejaBest"
-              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold md:ml-0 lg:ml-0 xl:ml-0"
+              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold ml-0"
             >
               Inscreva-se agora
             </a>
