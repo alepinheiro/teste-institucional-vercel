@@ -24,7 +24,7 @@
       <RouterLink
         :to="'/sobre' + $root.utms"
         class="decoration"
-        target="_blank"
+        target="_self"
         active-class:
       >
         Sobre
