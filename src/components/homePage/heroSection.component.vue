@@ -10,12 +10,12 @@
       />
       <img
         src="/images/Home/heroBackground-xl.png"
-        class="hidden xl:block absolute inset-x-0 h-[95vh] object-contain -right-48 ml-auto -mt-12 -z-10"
+        class="hidden xl:block absolute inset-0 h-screen object-contain -right-48 ml-auto -z-10"
         alt=""
       />
       <img
         src="/images/Home/heroBackground-lg.png"
-        class="hidden lg:block absolute inset-x-0  h-[95vh] object-contain -right-24 ml-auto -mt-12 -z-10"
+        class="hidden lg:block absolute inset-0 h-screen object-contain -right-24 ml-auto -z-10"
         alt=""
       />
 
