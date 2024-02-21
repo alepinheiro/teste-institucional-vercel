@@ -9,7 +9,7 @@
             alt="Conheça o maior canal de crédito do Brasil"
             title="Conheça o maior canal de crédito do Brasil no youtube"
             loading="lazy"
-            class="w-full h-[44rem] object-cover object-top ml-32 -mr-32"
+            class="w-full h-[44rem] object-cover object-top ml-24 -mr-32"
           />
         </div>
       </div>
@@ -22,9 +22,9 @@
           <BestPlayLogo class="h-16 mx-auto" />
 
           <div class="flex flex-col gap-5 text-white">
-            <div class="flex flex-col gap-5 lg:w-2/3 xl:w-1/2 justify-center">
+            <div class="flex flex-col gap-5 justify-center">
               <h2
-                class="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
+                class="text-3xl font-bold text-center"
               >
                 Conheça o maior canal de crédito do Brasil
               </h2>
@@ -32,9 +32,9 @@
                 <div
                   v-for="{ description, icon, number, suffix } of stats"
                   :key="icon"
-                  class="flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:hidden md:even:block lg:even:block xl:even:block border border-zinc-800/60 hover:border-complementaryColor3 transition cursor-default bg-[#181818]"
+                  class="flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:hidden border border-zinc-800/60 hover:border-complementaryColor3 transition cursor-default bg-[#181818]"
                 >
-                  <div class="w-6 h-6 lg:w-8 lg:h-8 text-complementaryColor3">
+                  <div class="w-6 h-6 text-complementaryColor3">
                     <i :class="icon" class="w-full h-full"></i>
                   </div>
                   <span
@@ -48,7 +48,7 @@
                 </div>
               </div>
               <p
-                class="text-sm md:text-xl lg:text-xl xl:text-xl md:w-5/6 lg:w-5/6 xl:leading-loose text-center md:text-left lg:text-left xl:text-left"
+                class="text-sm text-center"
               >
                 Explore temas como crédito, financiamento, empreendedorismo e
                 mercado financeiro, visando levá-lo à sua melhor versão.
