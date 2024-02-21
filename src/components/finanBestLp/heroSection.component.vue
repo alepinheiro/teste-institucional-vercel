@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full flex pt-0 min-md:pt-10 relative min-h-screen">
+  <section class="w-full flex relative min-h-screen">
     <div class="absolute inset-0 overflow-hidden z-0 flex items-end sm:h-2/3">
       <img
         src="/images/finanBest/heroBgXL.png"
@@ -12,11 +12,14 @@
         class="xl:hidden lg:hidden object-cover h-full w-full"
       />
     </div>
+
     <div
-      class="relative max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-row w-full z-10 py-0 min-md:py-12 px-0 min-md:px-5"
+      class="relative max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto flex flex-row w-full z-10 py-0 px-0 min-md:px-5"
     >
       <!--  -->
-      <div class="lg:w-7/12 xl:w-5/12 lg:flex-initial mt-64 min-md:mt-auto mb-12 md:mb-0">
+      <div
+        class="lg:w-7/12 xl:w-5/12 lg:flex-initial min-md:mt-auto  md:pb-10 pb-20 pt-32 min-lg:pb-32 "
+      >
         <div
           class="bg-gradient-to-b min-md:bg-gradient-to-t via-white from-transparent to-white/80 flex flex-col gap-6 p-8 xl:px-6 py-4 min-md:rounded-xl min-hd:shadow-lg h-full justify-end"
         >
@@ -92,10 +95,6 @@ import PercentIcon from '@/assets/svg/percentWithBackground.vue'
 import information from '@/configurations/information'
 import { ref } from 'vue'
 
-defineProps<{
-  showMenu: boolean
-}>()
-
 const smallScreensFormProps = {
   minimumValue: 50000,
   maximumValue: 30000000,
@@ -124,12 +123,12 @@ const cards = [
   {
     id: 'percent',
     icon: PercentIcon,
-    description: 'A partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
+    description: 'Taxas a partir de 9,70% a.a. + taxas referencial',
   },
   {
     id: 'calendar',
     icon: CalendarIcon,
-    description: 'Escolha como pagar. Em até 20 anos.',
+    description: 'Page em até 420 meses',
   },
 ]
 

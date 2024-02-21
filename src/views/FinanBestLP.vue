@@ -8,7 +8,7 @@
       color="primary"
       class="text-primary"
     />
-    <HeroSection :show-menu="showMenu" />
+    <HeroSection />
     <BusinessPartners
       title="Na SejaBest, suas chances de aprovação são maiores"
       inner-text="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
