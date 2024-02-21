@@ -56,7 +56,7 @@
             :key="id"
             :src="src"
             :alt="alt"
-            class="mx-auto h-12 min-md:h-auto min-md:w-full"
+            class="mx-auto h-12 min-md:h-14"
           />
         </div>
       </div>
