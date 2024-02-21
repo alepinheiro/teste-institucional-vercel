@@ -126,11 +126,11 @@ export default defineComponent({
         scrollTrigger: {
           trigger: element,
           start: 'top bottom',
-          end: '1000px',
+          end: '1200px',
           scrub: 1,
           toggleActions: 'restart pause restart restart',
         },
-        yPercent: -60,
+        yPercent: -75,
         duration: 0.5,
         ease: 'circ.in',
       })
