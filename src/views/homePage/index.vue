@@ -16,7 +16,7 @@
       class="text-primary min-md:hidden"
     />
     <TopBar color="primary" class="sm:hidden text-primary" />
-    <HeroSection class="" />
+    <HeroSection />
     <Products class="pt-24" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
