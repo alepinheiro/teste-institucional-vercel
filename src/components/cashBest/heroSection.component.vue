@@ -8,7 +8,7 @@
       </div>
       <img
         src="/images/Home/heroBackground-sm.png"
-        class="aspect-square min-md:hidden"
+        class="aspect-square min-md:hidden object-cover"
         alt=""
       />
       <img
