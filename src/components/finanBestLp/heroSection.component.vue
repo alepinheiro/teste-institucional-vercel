@@ -21,7 +21,7 @@
         class="lg:w-7/12 xl:w-5/12 lg:flex-initial min-md:mt-auto  md:pb-10 pb-20 pt-32 min-lg:pb-32 "
       >
         <div
-          class="bg-gradient-to-b min-md:bg-gradient-to-t via-white from-transparent to-white/80 flex flex-col gap-6 p-8 xl:px-6 py-4 min-md:rounded-xl min-hd:shadow-lg h-full justify-end"
+          class="bg-gradient-to-b min-md:bg-gradient-to-t via-white from-transparent to-white/80 lg:shadow-md xl:shadow-md flex flex-col gap-6 p-8 xl:px-6 py-4 min-md:rounded-xl min-hd:shadow-lg h-full justify-end"
         >
           <h1
             class="min-lg:font-darkerGrotesque font-Public-Sans text-2xl md:text-4xl min-lg:text-6xl text-primary leading-tight whitespace-pre-line min-lg:font-bold"
