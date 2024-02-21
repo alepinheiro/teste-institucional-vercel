@@ -26,7 +26,7 @@
 <script lang="ts">
 import AboutNumbers from '@/components/aboutUs/aboutNumbers.component.vue'
 import BestExperience from '@/components/aboutUs/bestExperience.component.vue'
-import BestPlay from '@/components/homePage/bestPlay.component.vue'
+import BestPlay from '@/components/base/sections/bestPlay.component.vue'
 import Editorial from '@/components/aboutUs/bestEditorial.component.vue'
 import HeroSection from '@/components/aboutUs/heroSection.component.vue'
 import MissionSection from '@/components/aboutUs/missionSection.component.vue'
