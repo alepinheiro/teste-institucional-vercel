@@ -135,6 +135,9 @@ const secondRowMembers = {
   vinicius: {
     alt: 'Vinícius',
   },
+  elen: {
+    alt: 'Elen',
+  },
 }
 
 onMounted(() => {
