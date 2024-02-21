@@ -59,7 +59,7 @@
 </template>
 <script lang="ts" setup>
 import AboutUs from '@/components/base/aboutUs.component.vue'
-import BestPlay from '@/components/base/sections/bestPlay.component.vue'
+import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import HeroSection from '@/components/cashBest/heroSection.component.vue'

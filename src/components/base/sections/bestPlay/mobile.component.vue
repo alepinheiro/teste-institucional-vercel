@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col relative z-0 h-screen">
+  <section>
     <div class="overflow-hidden flex-grow flex">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
