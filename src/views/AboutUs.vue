@@ -18,7 +18,7 @@
     <BestExperience class="py-10 xl:pb-28" />
     <Testimonials class="py-10" />
     <Editorial class="max-w-7xl mx-auto hidden xl:block" />
-    <BestPlay class="bg-[#181818]" />
+    <BestPlay />
     <TheFooter />
   </main>
 </template>
