@@ -129,7 +129,7 @@ export default defineComponent({
           end: '80% 80%',
           scrub: 1,
           toggleActions: 'restart pause restart restart',
-          markers: true,
+          // markers: true,
         },
         yPercent: -25,
         // duration: 0.5,
