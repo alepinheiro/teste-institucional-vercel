@@ -1,5 +1,5 @@
 <template>
-  <section class="relative z-0 lg:max-w-5xl xl:max-w-7xl mx-auto md:max-w-2xl">
+  <section class="relative z-0 lg:max-w-5xl xl:max-w-7xl mx-auto md:max-w-2xl border-b border-textSecondary">
     <!-- <div
       class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] to-[#EFEFEF] absolute top-0 bottom-1/3 w-full scale-x-105 inset-x-0 -z-10 rounded-xl"
     ></div> -->
@@ -51,12 +51,12 @@
 
         <div class="flex flex-row flex-wrap xl:flex-nowrap items-center gap-6 mx-auto">
           <div
-            v-for="{ alt, id, source } of seals"
+            v-for="{ alt, id, src } of topOfSales('black')"
             :key="id"
             class="w-1/3 md:w-fit lg:w-fit xl:w-fit last-of-type:w-1/2 md:last-of-type:w-fit lg:last-of-type:w-fit xl:last-of-type:w-fit last-of-type:mx-auto last-of-type:flex-grow-0 flex-grow"
           >
             <img
-              :src="`/images/Home/seals/dark/${source}`"
+              :src="src"
               :alt="alt"
               class="h-24 md:h-18 lg:h-20 xl:h-16 sm:h-auto"
             />
@@ -68,10 +68,12 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { topOfSales } from '@/configurations/images'
 export default defineComponent({
   name: 'AboutNumbers',
   data() {
     return {
+      topOfSales,
       cards: [
         {
           icon: 'fa-solid fa-money-bill-wave',

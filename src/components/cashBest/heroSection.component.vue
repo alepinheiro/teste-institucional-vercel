@@ -56,7 +56,7 @@
 
         <DoubleInputsForm
           v-model="doubleFormData"
-          class="bg-[#efeaea] p-4 min-md:px-12 min-md:py-8 rounded-2xl w-full lg:mr-8"
+          class="bg-[#EFEFEF] p-4 min-md:px-12 min-md:py-8 rounded-2xl w-full lg:mr-8"
           @submit="onSubmit"
         />
         <a
