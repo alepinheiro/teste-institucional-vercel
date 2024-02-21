@@ -38,11 +38,11 @@
                     <i :class="icon" class="w-full h-full"></i>
                   </div>
                   <span
-                    class="text-4xl lg:text-5xl font-darkerGrotesque font-bold text-complementaryColor3"
+                    class="text-4xl font-darkerGrotesque font-bold text-complementaryColor3"
                   >
                     {{ number + suffix }}
                   </span>
-                  <div class="font-bold text-xs lg:text-base">
+                  <div class="font-bold text-xs">
                     {{ description }}
                   </div>
                 </div>
@@ -56,7 +56,7 @@
             </div>
             <a
               href="https://www.youtube.com/@SejaBest"
-              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold md:ml-0 lg:ml-0 xl:ml-0"
+              class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold"
             >
               Inscreva-se agora
             </a>
