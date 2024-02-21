@@ -1,33 +1,27 @@
 <template>
   <section>
     <div class="overflow-hidden flex-grow flex">
-      <div class="mx-auto w-64 relative md:static lg:static xl:static">
-        <div
-          class="absolute overflow-hidden -left-7 -right-0 -top-20 flex min-md:top-0 md:left-2/3 lg:left-[70%] xl:left-[55%] min-md:bottom-0"
-        >
+      <div class="w-full">
+        <div class="overflow-hidden flex h-full pt-40">
           <img
             ref="bestPlayMockup"
             src="/images/Home/bestPlayMockup.png"
             alt="Conheça o maior canal de crédito do Brasil"
             title="Conheça o maior canal de crédito do Brasil no youtube"
             loading="lazy"
-            class="w-auto h-[44rem] min-md:h-[54rem] xl:h-[58rem] mt-28 min-md:mt-72 object-cover object-left-top"
+            class="w-full h-[44rem] object-cover object-top ml-32 -mr-32"
           />
         </div>
       </div>
     </div>
     <div
-      class="bg-[#181818] bg-gradient-to-br to-black from-transparent w-full h-4/5 mt-auto flex"
+      class="bg-[#181818] bg-gradient-to-br to-black from-transparent w-full h-3/5 mt-auto flex"
     >
-      <div
-        class="md:max-w-2xl md:mx-auto lg:max-w-5xl lg:mx-auto xl:max-w-7xl xl:mx-auto z-10 my-auto"
-      >
-        <div class="flex flex-col gap-5 md:w-5/6 py-10 px-5">
-          <BestPlayLogo class="h-16 mx-auto md:ml-0 lg:ml-0 xl:ml-0" />
+      <div class="my-auto">
+        <div class="flex flex-col gap-5 py-10 px-5">
+          <BestPlayLogo class="h-16 mx-auto" />
 
-          <div
-            class="flex flex-col lg:justify-between xl:justify-between gap-5 text-white"
-          >
+          <div class="flex flex-col gap-5 text-white">
             <div class="flex flex-col gap-5 lg:w-2/3 xl:w-1/2 justify-center">
               <h2
                 class="text-3xl md:text-5xl lg:text-5xl xl:text-5xl font-bold text-center md:text-left lg:text-left xl:text-left"
@@ -131,7 +125,7 @@ export default defineComponent({
           toggleActions: 'restart pause restart restart',
           // markers: true,
         },
-        yPercent: -25,
+        yPercent: -30,
         // duration: 0.5,
         ease: 'circ.in',
       })
