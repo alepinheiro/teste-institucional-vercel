@@ -11,7 +11,7 @@
             alt="Conheça o maior canal de crédito do Brasil"
             title="Conheça o maior canal de crédito do Brasil no youtube"
             loading="lazy"
-            class="w-auto h-[44rem] md:h-[54rem] lg:h-[54rem] xl:h-[54rem] mt-32 md:mt-24 lg:mt-48 xl:mt-24 object-cover object-left-top"
+            class="w-auto h-[44rem] md:h-[54rem] lg:h-[54rem] xl:h-[57rem] mt-32 md:mt-24 lg:mt-48 xl:mt-24 object-cover object-left-top"
           />
         </div>
       </div>
