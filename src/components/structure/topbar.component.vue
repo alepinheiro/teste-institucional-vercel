@@ -11,7 +11,7 @@
           :src="$options.imageConfig.logoSejabest"
           alt="Logo SejaBest "
           title="Logo SejaBest "
-          class="w-auto h-12"
+          class="w-auto h-12 min-lg:h-16"
         />
       </RouterLink>
 
@@ -21,7 +21,7 @@
           :src="$options.imageConfig.logoSejabestWhite"
           alt="Logo SejaBest "
           title="Logo SejaBest "
-          class="w-auto h-12"
+          class="w-auto h-12 min-lg:h-16"
         />
       </RouterLink>
     </div>
