@@ -49,7 +49,7 @@
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
     <BestPlay
-      class=" border-b-4 border-primary md:border-0 lg:border-0 xl:border-0 z-0"
+      class=" border-b-4 border-primary md:border-0 lg:border-0 xl:border-0 z-0 bg-white"
     />
     <TheFooter class="block z-10" />
   </div>
