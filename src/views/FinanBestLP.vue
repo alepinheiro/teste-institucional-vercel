@@ -39,20 +39,22 @@
       :form="{ showRealtyValue: false }"
       image="gaspar"
     />
+    <BestPlay class="bg-bgDarkColor" />
     <TheFooter />
   </main>
 </template>
 
 <script setup lang="ts">
-import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
+import AboutUs from '@/components/base/aboutUs.component.vue'
+import BestPlay from '@/components/base/sections/bestPlay.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
-import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
+import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
 import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
-import AboutUs from '@/components/base/aboutUs.component.vue'
 import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
+import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
 import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
 
 defineProps<{

@@ -3,7 +3,7 @@
     <div class="overflow-hidden flex-grow flex">
       <div class="mx-auto w-64 relative md:static lg:static xl:static">
         <div
-          class="absolute overflow-hidden -left-7 -right-0 -top-20 flex min-md:top-0 md:left-2/3 lg:left-[70%] xl:left-[55%] min-md:bottom-0 "
+          class="absolute overflow-hidden -left-7 -right-0 -top-20 flex min-md:top-0 md:left-2/3 lg:left-[70%] xl:left-[55%] min-md:bottom-0"
         >
           <img
             ref="bestPlayMockup"
@@ -11,7 +11,7 @@
             alt="Conheça o maior canal de crédito do Brasil"
             title="Conheça o maior canal de crédito do Brasil no youtube"
             loading="lazy"
-            class="w-auto h-[44rem] min-md:h-[54rem] xl:h-[58rem] mt-32 md:mt-24 lg:mt-48 xl:mt-24 object-cover object-left-top"
+            class="w-auto h-[44rem] min-md:h-[54rem] xl:h-[58rem] mt-28 min-md:mt-72 object-cover object-left-top"
           />
         </div>
       </div>
@@ -125,13 +125,14 @@ export default defineComponent({
       this.gsap.to(element, {
         scrollTrigger: {
           trigger: element,
-          start: 'top bottom',
-          end: '1200px',
+          start: 'top 90%',
+          end: '80% 80%',
           scrub: 1,
           toggleActions: 'restart pause restart restart',
+          markers: true,
         },
-        yPercent: -75,
-        duration: 0.5,
+        yPercent: -25,
+        // duration: 0.5,
         ease: 'circ.in',
       })
     },
