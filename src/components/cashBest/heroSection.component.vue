@@ -3,7 +3,7 @@
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full min-md:min-h-screen justify-center"
     >
-    <div class="absolute inset-x-0 top-48 md:hidden lg:right-1/4 lg:top-[65vh] xl:right-1/3 xl:top-auto ">
+    <div class="absolute inset-x-0 top-48 md:hidden lg:right-1/4 lg:top-[65vh] xl:right-1/3 xl:top-auto z-0">
         <VideoButton video-id="eDWFe4Wrb2A" class="xl:mr-0 lg:mr-0"  />
       </div>
       <img
