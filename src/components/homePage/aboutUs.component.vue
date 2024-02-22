@@ -12,7 +12,7 @@
         <div
           class="flex flex-col gap-2 lg:gap-7 xl:gap-7 text-center md:text-left lg:text-left xl:text-left lg:w-5/12 xl:w-5/12"
         >
-          <p class="text-textSecondary md:text-textPrimary">
+          <p class="text-textPrimary">
             A <b> SejaBest </b> já tem história no mercado.
           </p>
           <h2

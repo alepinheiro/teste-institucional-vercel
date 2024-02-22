@@ -26,7 +26,7 @@
               <h2
                 class="text-3xl font-bold text-center"
               >
-                Conheça o maior canal de crédito do Brasil
+              {{ title }}
               </h2>
               <div class="flex flex-row gap-5">
                 <div
@@ -76,6 +76,12 @@ import { gsap } from 'gsap'
 export default defineComponent({
   name: 'BestPlay',
   components: { BestPlayLogo },
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+  },
   setup() {
     gsap.registerPlugin(ScrollTrigger)
     const bestPlayMockup = ref<HTMLDivElement | null>(null)

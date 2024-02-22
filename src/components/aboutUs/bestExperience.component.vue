@@ -153,7 +153,7 @@ const cards = [
   {
     title: 'Um time de especialistas',
     description:
-      'Um time de especialistas altamente qualificado e certificado em relação a operação e produto. ',
+      'Um time de especialistas altamente qualificados e certificados em relação a operação e produto. ',
     image: '/images/aboutUs/bestExperience/gabrielle.webp',
   },
   {
