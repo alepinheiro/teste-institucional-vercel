@@ -193,7 +193,7 @@
           class="cursor-pointer flex items-center px-4 py-2 mb-2 justify-between"
           @click="toggleDropdown2(), removeClassDropdown2()"
         >
-          Produtos digitais
+          Soluções Digitais
           <svg
             :class="[
               'w-6',
@@ -312,8 +312,8 @@
           class="hover:font-semibold"
           target="_blank"
         >
-          Portal</a
-        >
+          Portal Best
+          </a>
         <svg
           v-show="hoverSVG2"
           xmlns="http://www.w3.org/2000/svg"
@@ -335,7 +335,7 @@
         @click="openProfileMenu = !openProfileMenu"
       >
         <RouterLink :to="'/sobre' + $root.utms" class="hover:font-semibold">
-          Sobre
+          Sobre Nós
         </RouterLink>
         <svg
           v-show="hoverSVG3"

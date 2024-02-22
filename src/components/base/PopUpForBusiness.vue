@@ -3,7 +3,8 @@
 
     <div
       id="div-2" class="decoration" :color="color" :linkStyle="linkStyle"
-      :class="{ 'textDecoration': activeDiv2 === 'div-2' }">Produtos digitais
+      :class="{ 'textDecoration': activeDiv2 === 'div-2' }">
+      Soluções Digitais
     </div>
 
     <div v-if="showPopOver" class="absolute z-10 w-[19rem] p-2 bgPopUpHover  rounded-lg shadowDark">
