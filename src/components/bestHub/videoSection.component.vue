@@ -34,21 +34,20 @@
           >, trazendo mais soluções para o seu cliente.
         </p>
 
-        <a
-          :href="$options.information.bestHubApp.subscribe+ $root.utms"
-          target="_blank"
+        <button
           class="text-black sm:text-center md:text-center text-xl font-bold px-5 py-3 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit sm:mx-auto md:mx-auto"
+          @click="openLink()"
         >
           Quero fintechizar meu negócio
-        </a>
+        </button>
       </div>
     </div>
   </section>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ComponentPublicInstance } from 'vue'
 import VideoButton from "@/components/bestHub/videoButton.component.vue";
-
+type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
   name: 'VideoSection',
   components: {
@@ -57,5 +56,10 @@ export default defineComponent({
   data() {
     return {}
   },
+  methods: {
+    openLink() {
+      window.open(this.$options.information.bestHubApp.subscribe + (this.$root as IRootExtension).utms, '_blank')
+    },
+  }
 })
 </script>
