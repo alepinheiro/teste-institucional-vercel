@@ -45,13 +45,13 @@
 
         <div class="flex flex-col gap-4">
           <h3 class="text-textPrimary text-xl">Reconhecidos pelo mercado:</h3>
-          <div class="flex flex-row gap-4 flex-wrap">
+          <div class="flex flex-row justify-center min-lg:justify-start gap-4 flex-wrap w-fit">
             <img
               v-for="{ alt, id, src } of topOfSalesSeals"
               :key="id"
               :src="src"
               :alt="alt"
-              class="h-9 min-md:h-12 mx-auto max-w-[33%] min-md:max-w-[20%] flex-grow object-contain"
+              class="h-9 w-1/3 min-md:w-full min-md:h-12 mx-0 max-w-[33%] min-md:max-w-[20%] flex-grow object-contain"
             />
           </div>
         </div>
