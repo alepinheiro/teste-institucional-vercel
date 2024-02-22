@@ -22,7 +22,7 @@ const information = {
     'https://www.google.com/search?q=sejabest&oq=sejabest&aqs=chrome.0.69i59j46i10i175i199i512j0i10i512l3j69i61j69i60l2.4633j0j7&sourceid=chrome&ie=UTF-8#',
   appPartner: 'https://besthub.app/',
   appClient: 'https://app.seja.best/',
-  apppartnerRegistration: 'https://parceiros.seja.best/register',
+  simulatorWarren: 'https://warren.seja.best/',
   appSimulator: 'https://simulador.seja.best/',
   appRealEstateSimulator: 'https://simulador.seja.best/imovel',
   appVehicleSimulator: 'https://simulador.seja.best/veiculo',

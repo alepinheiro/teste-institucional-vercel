@@ -37,6 +37,13 @@ import PopUpVideo from '@/components/base/popUpVideo.component.vue'
 
 export default defineComponent({
   name: 'BestBrokerLP',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     HeroSection,
     ProductBox,

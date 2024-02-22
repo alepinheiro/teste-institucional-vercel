@@ -29,6 +29,13 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'GetOutRent',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     BannerCommentsCarousel,
     BannerPackage,
@@ -38,19 +45,19 @@ export default defineComponent({
     FooterSection,
     PopUpVideo,
   },
-  metaInfo() {
-    return {
-      title: 'Xô, Aluguel!',
-      meta: [
-        {
-          vmid: 'description',
-          name: 'description',
-          content:
-            'O método best para conquistar seu primeiro imóvel com financiamento imobiliário',
-        },
-      ],
-    }
-  },
+  // metaInfo() {
+  //   return {
+  //     title: 'Xô, Aluguel!',
+  //     meta: [
+  //       {
+  //         vmid: 'description',
+  //         name: 'description',
+  //         content:
+  //           'O método best para conquistar seu primeiro imóvel com financiamento imobiliário',
+  //       },
+  //     ],
+  //   }
+  // },
   data() {
     return {
       isVisible: false,

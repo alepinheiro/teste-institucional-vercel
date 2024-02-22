@@ -1,12 +1,11 @@
 <template>
-  <div class="w-full defaultFont">
-    <RouterView  />
+  <div class="w-full defaultFont selection:bg-complementaryColor1 selection:text-white">
+    <RouterView />
     <notificationPopUp />
   </div>
 </template>
 
 <script lang="ts">
-
 import notificationPopUp from '@/components/base/notificationPopUp.component.vue'
 import { NotificationInterface } from '@/interfaces/notification.interface'
 import { defineComponent } from 'vue'
@@ -18,12 +17,12 @@ export default defineComponent({
       isLoading: true,
       notification: {
         type: 'warning',
-        title: "Aviso",
-        message: "teste",
+        title: 'Aviso',
+        message: 'teste',
         showMessage: false,
-        buttonText: 'Continuar'
+        buttonText: 'Continuar',
       } as NotificationInterface,
-      utms: "" as string
+      utms: '' as string,
     }
   },
   mounted() {
@@ -33,7 +32,7 @@ export default defineComponent({
     }
     setTimeout(() => {
       this.isLoading = true
-    }, 600);
-  }
+    }, 600)
+  },
 })
 </script>

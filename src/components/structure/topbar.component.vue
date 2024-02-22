@@ -1,28 +1,29 @@
 <template>
-  <nav
-    class="w-full flex xl:py-8 justify-between"
-    :class="[position === 'top' ? 'bg-transparent' : 'bg-transparent']"
-  >
+  <nav class="w-full flex xl:py-8 lg:py-6 justify-between bg-transparent">
     <div class="pr-8">
-      <router-link :to="'/' + $root.utms" class="lineDecoration">
+      <RouterLink
+        :to="'/' + $root.utms"
+        aria-label="Página inicial SejaBest"
+        class="lineDecoration"
+      >
         <img
           v-if="position === 'top'"
           :src="$options.imageConfig.logoSejabest"
           alt="Logo SejaBest "
           title="Logo SejaBest "
-          class="w-auto h-12"
+          class="w-auto h-12 min-lg:h-16"
         />
-      </router-link>
+      </RouterLink>
 
-      <router-link :to="'/' + $root.utms" class="lineDecoration">
+      <RouterLink :to="'/' + $root.utms" class="lineDecoration">
         <img
           v-if="position !== 'top'"
           :src="$options.imageConfig.logoSejabestWhite"
           alt="Logo SejaBest "
           title="Logo SejaBest "
-          class="w-auto h-12"
+          class="w-auto h-12 min-lg:h-16"
         />
-      </router-link>
+      </RouterLink>
     </div>
 
     <MenuComponent class="sm:hidden md:hidden" :link-style="linkStyle" />
@@ -40,21 +41,21 @@ import MenuComponent from '@/components/structure/menu.component.vue'
 import MenuMobileComponent from '@/components/structure/menuMobile.component.vue'
 
 export default defineComponent({
-  name: 'TopbarComponent',
+  name: 'TopBar',
   components: {
     MenuComponent,
-    MenuMobileComponent
+    MenuMobileComponent,
   },
   props: {
     position: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   data() {
     return {
       color: 'fill-white',
-      linkStyle: 'linkStyleDark'
+      linkStyle: 'linkStyleDark',
     }
   },
   mounted() {
@@ -62,6 +63,6 @@ export default defineComponent({
       this.color = 'fill-textPrimary'
       this.linkStyle = 'linkStyle'
     }
-  }
+  },
 })
 </script>

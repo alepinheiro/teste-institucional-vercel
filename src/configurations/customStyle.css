@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 @font-face {
   font-family: 'Public Sans Light';
   src: local('Public Sans Light'),
@@ -223,13 +225,6 @@
 }
 .bgBusinessman {
   background-image: url('/images/partner/ImagemAbertura.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.bgManWithPhone {
-  background-image: url('/images/Home/ImagemHomeGradiente.webp');
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -707,7 +702,7 @@
   font-style: var(--complementaryColor1);
 }
 .bgPopUpHover {
-  background: #e0e0e0eb;
+  background: #e0e0e0;
 }
 
 .shadowDark {

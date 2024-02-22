@@ -9,7 +9,11 @@ var projectRootDir = resolve("C:\\Users\\bruna\\Documents\\GitHub\\institutional
 var vite_config_default = defineConfig({
   plugins: [
     alias(),
-    vue(),
+    vue({
+      script: {
+        defineModel: true
+      }
+    }),
     Pages({
       onRoutesGenerated: (routes) => generateSitemap({ routes })
     })

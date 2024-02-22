@@ -4,28 +4,31 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "allowJs": true,
-    "target": "esnext",
-    "module": "nodenext",
+    "target": "ESNext",
+    "module": "ESNext",
     "useDefineForClassFields": true,
-    "moduleResolution": "nodenext",
+    "moduleResolution": "Bundler",
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["esnext", "dom"],
-    "typeRoots": [
-      "../../node_modules/@types/",
-    ],
+    "lib": ["ESNext", "dom"],
+    "typeRoots": ["../../node_modules/@types/"],
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/translations/i18n.ts"],
-  "exclude": [
-    "node_modules"
-  ]
-
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.stories.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    ".storybook/**/*.ts",
+    "src/translations/i18n.ts"
+  ],
+  "exclude": ["node_modules"]
 }

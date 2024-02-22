@@ -12,23 +12,30 @@ import FooterSection from '@/components/getOutRent/footerSection.component.vue'
 
 export default defineComponent({
   name: 'GetOutRent',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     SuccessBanner,
     FooterSection,
   },
-  metaInfo() {
-    return {
-      title: 'Conheça o FinanBest. O Financiamento Imobiliário da SejaBest.',
-      meta: [
-        {
-          vmid: 'description',
-          name: 'description',
-          content:
-            'Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, transparente e com o auxílio do nosso time de especialistas!',
-        },
-      ],
-    }
-  },
+  // metaInfo() {
+  //   return {
+  //     title: 'Conheça o FinanBest. O Financiamento Imobiliário da SejaBest.',
+  //     meta: [
+  //       {
+  //         vmid: 'description',
+  //         name: 'description',
+  //         content:
+  //           'Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, transparente e com o auxílio do nosso time de especialistas!',
+  //       },
+  //     ],
+  //   }
+  // },
   data() {
     return {
       isVisible: false,

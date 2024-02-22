@@ -4,7 +4,7 @@
       <div class="w-full gradienteSB">
 
         <div class="maxWidth ">
-          <TopbarComponent position="relative" />
+          <TopBarComponent v-if="showMenu" position="relative" />
         </div>
 
         <div class="maxWidth ">
@@ -142,13 +142,20 @@
 <script lang="ts">
 
 import { defineComponent } from 'vue'
-import TopbarComponent from '@/components/structure/topbar.component.vue'
+import TopBarComponent from '@/components/structure/topbar.component.vue'
 
 
 export default defineComponent({
   name: 'TermsOfUse',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
-    TopbarComponent
+    TopBarComponent
   },
   data() {
     return {

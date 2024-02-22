@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 import colors from "tailwindcss/colors";
 
 module.exports = {
@@ -11,6 +12,8 @@ module.exports = {
       md: { min: "668px", max: "1023px" },
       lg: { min: "1024px", max: "1279px" },
       xl: { min: "1280px" },
+      'min-md': { min: "668px" },
+      'min-lg': { min: "1024px" },
     },
     colors: {
       primary: "var(--primaryColor)",
@@ -60,6 +63,19 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      warren: {
+        terracota: "var(--warrenTerracota)",
+        gold: "var(--warrenGold)",
+        darkCharcoal: "var(--warrenDarkCharcoal)",
+        mortar: "var(--warrenMortar)",
+        stormGray: "var(--warrenStormGray)",
+        grey: "var(--warrenGrey)",
+        gainsboro: "var(--warrenGainsboro)",
+        metropole: "var(--warrenMetropole)",
+        solitude:  "var(--warrenSolitude)",
+        hintOfRed: "var(--warrenHintOfRed)",
+        whisper: "var(--warrenWhisper)",
+      }
     },
     columns: {
       auto: "auto",
@@ -128,9 +144,12 @@ module.exports = {
       56: "14rem",
       60: "15rem",
       64: "16rem",
+      68: "17rem",
+      72: "18rem",
+      76: "19rem",
       80: "20rem",
       84: "21rem",
-      90: "22,2rem",
+      90: "22.2rem",
       96: "24rem",
       97: "24.25rem",
       98: "25rem",
@@ -427,7 +446,9 @@ module.exports = {
       ],
       'Sizmo-Pro': ['FF Sizmo Pro', 'sans-serif'],
       'Public-Sans': ['Public Sans', 'sans-serif'],
-      'Sizmo': ["Sizmo", "sans-serif"]
+      'Sizmo': ["Sizmo", "sans-serif"],
+      'darkerGrotesque': ["Darker Grotesque", "sans-serif"],
+      'Mulish': ["Mulish", "sans-serif"]
     },
     fontSize: {
       '2xs': ["0.6rem", { lineHeight: "0.60rem" }],
@@ -666,6 +687,32 @@ module.exports = {
     },
     margin: ({ theme }) => ({
       auto: "auto",
+      "1/2": "50%",
+      "1/3": "33.333333%",
+      "2/3": "66.666667%",
+      "1/4": "25%",
+      "2/4": "50%",
+      "3/4": "75%",
+      "1/5": "20%",
+      "2/5": "40%",
+      "3/5": "60%",
+      "4/5": "80%",
+      "1/6": "16.666667%",
+      "2/6": "33.333333%",
+      "3/6": "50%",
+      "4/6": "66.666667%",
+      "5/6": "83.333333%",
+      "1/12": "8.333333%",
+      "2/12": "16.666667%",
+      "3/12": "25%",
+      "4/12": "33.333333%",
+      "5/12": "41.666667%",
+      "6/12": "50%",
+      "7/12": "58.333333%",
+      "8/12": "66.666667%",
+      "9/12": "75%",
+      "10/12": "83.333333%",
+      "11/12": "91.666667%",
       ...theme("spacing"),
     }),
     maxHeight: ({ theme }) => ({
@@ -1006,5 +1053,7 @@ module.exports = {
     "active",
     "disabled",
   ],
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

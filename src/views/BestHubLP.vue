@@ -33,7 +33,14 @@ import FaqSection from '@/components/bestHub/faqSection.component.vue'
 import FooterSection from '@/components/bestHub/footerSection.component.vue'
 type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
-  name: 'BestProLP',
+  name: 'BestHubLP',
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
   components: {
     HeroSection,
     BanksSection,

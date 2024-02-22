@@ -3,13 +3,14 @@
 
     <div
       id="div-2" class="decoration" :color="color" :linkStyle="linkStyle"
-      :class="{ 'textDecoration': activeDiv2 === 'div-2' }">Produtos digitais 
+      :class="{ 'textDecoration': activeDiv2 === 'div-2' }">
+      Soluções Digitais
     </div>
 
-    <div v-if="showPopOver" class="absolute z-10 w-[19rem] p-2 bgPopUpHover  bg-white rounded-lg shadowDark">
+    <div v-if="showPopOver" class="absolute z-10 w-[19rem] p-2 bgPopUpHover  rounded-lg shadowDark">
 
       <div
-        class="px-1 py-3 optionsHover hover:shadow-md  text-textPrimary flex flex-row items-center  w-full justify-between "
+        class="px-2 py-3 optionsHover hover:shadow-md  text-textPrimary flex flex-row items-center  w-full justify-between "
         @mouseover="hover4 = true" @mouseout="hover4 = false">
         <router-link :to="{ name: 'getOutRent', params: { id: 'div-2' } }" target="_blank" class="text-sm">Xô, aluguel</router-link>
         <svg

@@ -1,11 +1,9 @@
 <template>
   <div class="w-full bg-bglightColor">
+    <TopBar v-if="showMenu" class="text-white w-full" />
 
-    <section class="w-full gradienteSB">
-      <div class="maxWidth">
-        <TopbarComponent position="relative" />
-      </div>
-      <div class="maxWidth ">
+    <section class="w-full gradienteSB pt-8 min-md:pt-20">
+      <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto px-5 ">
         <h1 class="text-white text-5xl titleFontBold pt-12">
           Crédito Imobiliário pode ser complicado.
         </h1>
@@ -15,7 +13,7 @@
       </div>
     </section>
 
-    <section class="maxWidth py-12">
+    <section class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto px-5 py-12">
 
       <div class="pb-6">
         <Questions
@@ -37,11 +35,18 @@
 
 import { defineComponent } from "vue"
 import Questions from '@/components/base/questions.component.vue'
-import TopbarComponent from '@/components/structure/topbar.component.vue'
+import TopBar from '@/components/structure/topBar/index.component.vue'
 
 export default defineComponent({
   name: 'Help',
-  components: { Questions, TopbarComponent },
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
+  },
+  components: { Questions, TopBar },
   data() {
     return {
       perguntas: [

@@ -1,47 +1,50 @@
 <template>
-  <div class="flex mt-auto mb-auto justify-between">
-    <div class="flex ">
-      <div :class="linkStyle">
-        <router-link :to="'/' + $root.utms" class="decoration"> Início </router-link>
-      </div>
-      <div :class="linkStyle">
-        <dropdownMenu />
-      </div>
-      <div :class="linkStyle">
-        <dropdownForB />
-      </div>
-      <div :class="linkStyle">
-        <router-link :to="'/bestHub' + $root.utms" class="decoration"> Seja um Parceiro </router-link>
-      </div>
-      <div :class="linkStyle">
-        <a :href="'https://portal.seja.best/' + $root.utms" class="decoration" target="_blank"> Portal</a>
-      </div>
-      <div :class="linkStyle">
-        <router-link :to="'/sobre' + $root.utms" class="decoration" active-class:> Sobre </router-link>
-      </div>
-    </div>
-    <div class="flex">
+  <div class="flex justify-between items-stretch">
+    <div class="flex justify-between gap-5 items-start pr-5 pt-2">
+      <RouterLink :to="'/' + $root.utms" class="decoration">
+        Início
+      </RouterLink>
+      <dropdownMenu class="hover:cursor-pointer decoration" />
+      <dropdownForB class="hover:cursor-pointer decoration" />
+      <RouterLink
+        :to="'/sobre' + $root.utms"
+        class="decoration"
+        target="_self"
+        active-class:
+      >
+        Sobre Nós
+      </RouterLink>
+      <RouterLink
+        :to="'/bestHub' + $root.utms"
+        class="decoration"
+        target="_blank"
+      >
+        Seja um Parceiro
+      </RouterLink>
+      <a
+        :href="'https://portal.seja.best/' + $root.utms"
+        class="decoration"
+        target="_blank"
+      >
+        Portal Best
+      </a>
 
-      <div
-        class="bg-complementaryColor1 rounded-lg px-4 py-1 font-semibold  text-white
-        transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:px-1 lg:text-sm">
 
-        <a
-          :href="$options.information.appSimulator + $root.utms"
-          style=" text-decoration: none;"
-          target="_blank">
-          Simule seu crédito
-        </a>
-      </div>
     </div>
+    <a
+      :href="$options.information.appSimulator + $root.utms"
+      style="text-decoration: none"
+      target="_blank"
+      class="bg-complementaryColor1 rounded-lg px-4 py-2 font-semibold text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:text-sm"
+    >
+      Simule seu crédito
+    </a>
   </div>
 </template>
 <script lang="ts">
-
-import { defineComponent } from 'vue';
-import dropdownMenu from '../base/dropdownMenu.vue';
-import dropdownForB from '../base/PopUpForBusiness.vue';
-
+import { defineComponent } from 'vue'
+import dropdownMenu from '../base/dropdownMenu.vue'
+import dropdownForB from '../base/PopUpForBusiness.vue'
 
 export default defineComponent({
   name: 'MenuComponent',
@@ -52,8 +55,8 @@ export default defineComponent({
   props: {
     linkStyle: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   data() {
     return {
@@ -64,7 +67,7 @@ export default defineComponent({
 </script>
 
 <style>
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
   .linkStyleDark {
     padding-left: 0rem;
     padding-right: 0rem;
