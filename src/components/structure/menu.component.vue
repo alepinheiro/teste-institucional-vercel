@@ -5,6 +5,7 @@
         Início
       </RouterLink>
       <dropdownMenu class="hover:cursor-pointer decoration" />
+      <dropdownForB class="hover:cursor-pointer decoration" />
       <RouterLink
         :to="'/sobre' + $root.utms"
         class="decoration"
@@ -13,7 +14,6 @@
       >
         Sobre Nós
       </RouterLink>
-      <dropdownForB class="hover:cursor-pointer decoration" />
       <RouterLink
         :to="'/bestHub' + $root.utms"
         class="decoration"
