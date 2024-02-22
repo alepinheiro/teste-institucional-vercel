@@ -7,7 +7,6 @@
       complexidade.
     </title>
     <link rel="icon" href="/favicon.png" />
-    <!-- <link rel="canonical" href="https://seja.best" /> -->
     <meta
       name="description"
       content="A SejaBest é um fintech focada no mercado de crédito, atuando por meio de dois produtos: Financiamento Imobiliário e empréstimo com garantia de imóvel (Home Equity). Mais de 10 anos de experiência em crédito Imobiliario, temos uma missão clara: Transformar o acesso ao Crédito Imobiliário para todos os brasileiros."
@@ -24,31 +23,21 @@
       rel="stylesheet"
       href="https://unpkg.com/@icon/themify-icons/themify-icons.css"
     />
-    <script
-      defer
-      src="https://www.googleoptimize.com/optimize.js?id=GTM-T2VQFHZ"
-    ></script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-856125035"
-    ></script>
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'AW-856125035')
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-KVJ4GJS')
     </script>
+    <!-- End Google Tag Manager -->
 
-    <!-- Event snippet for Visualizaçao Redes Sociais conversion page -->
-    <script>
-      gtag('event', 'conversion', {
-        send_to: 'AW-856125035/ulv2CLPpycsCEOvcnZgD',
-      })
-    </script>
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -112,6 +101,18 @@
   </head>
 
   <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KVJ4GJS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>

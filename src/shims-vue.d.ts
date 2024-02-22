@@ -3,13 +3,25 @@ import { ComponentInternalInstance } from 'vue'
 import type information from '@/configurations/information'
 
 declare module '*.vue' {
-  import { Component } from 'vue';
-  const component: Component;
-  export default component;
+  import { Component } from 'vue'
+  const component: Component
+  export default component
 }
 
 declare global {
-  interface Window { fbq: function; }
+  interface Window {
+    fbq: function;
+    dataLayer: {
+      push: function;
+    }
+  }
+}
+
+declare module 'vue-router' {
+  interface RouteMeta {
+    title: string
+    description: string
+  }
 }
 
 declare module 'vue' {
@@ -21,6 +33,5 @@ declare module 'vue' {
     $options: {
       information?: information
     }
-
   }
 }

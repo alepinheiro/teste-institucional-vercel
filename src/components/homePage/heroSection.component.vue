@@ -45,7 +45,9 @@
 
         <div class="flex flex-col gap-4">
           <h3 class="text-textPrimary text-xl">Reconhecidos pelo mercado:</h3>
-          <div class="flex flex-row justify-center min-lg:justify-start gap-4 flex-wrap w-fit">
+          <div
+            class="flex flex-row justify-center min-lg:justify-start gap-4 flex-wrap w-fit"
+          >
             <img
               v-for="{ alt, id, src } of topOfSalesSeals"
               :key="id"
@@ -59,6 +61,7 @@
         <a
           :href="information.appSimulator + $root.utms"
           class="bg-complementaryColor1 px-5 py-3 rounded text-white font-bold"
+          target="_blank"
         >
           <span class="xl:hidden lg:hidden md:hidden">Simule seu crédito</span>
           <span class="hidden xl:block text-2xl lg:block lg:text-xl md:block"
