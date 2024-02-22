@@ -275,13 +275,6 @@ const image = {
     bestNewsTelegram: '/images/BestNews/LogoBestNewsTelegram.svg',
     youBest: '/images/BestNews/LogoBestPlay.svg',
   },
-  awards: {
-    newCashme: '/images/Home/awards/SeloCachMe2022.webp',
-    seloC6: '/images/Home/awards/SeloConexaoC6.webp',
-    seloDaycoval: '/images/Home/awards/SeloDaycoval2022.webp',
-    chashmeIcon: '/images/Home/awards/CashMeIcon.webp',
-    DaycovalIcon: '/images/Home/awards/DaycovalIcon.webp',
-  },
 }
 
 export default image

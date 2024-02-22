@@ -19,7 +19,7 @@
       <div class="flex md:flex-col gap-8 items-center w-fit mx-auto">
         <img
           ref="phone"
-          src="/images/Home/simulatorOnPhoneMockup.png"
+          :src="`/images/Home/simulatorOnPhoneMockup-${type}.png`"
           alt="A melhor plataforma multibancos."
           class="h-128 hidden min-md:block opacity-0"
         />
@@ -27,31 +27,11 @@
           ref="banks"
           class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto opacity-0"
         >
-          <ul
-            v-for="row of partners"
-            :key="row.toString()"
-            class="flex flex-row items-center gap-2 md:w-fit lg:w-fit md:mx-auto lg:mx-auto xl:mx-auto"
-          >
-            <li
-              v-for="({ alt, image }, i) of row"
-              :key="alt ?? '' + i"
-              :class="[
-                alt
-                  ? 'w-auto bg-[#DADADA]'
-                  : 'first-of-type:bg-gradient-to-l last-of-type:bg-gradient-to-r from-[#DADADA] to-transparent w-24',
-              ]"
-              class="text-ellipsis rounded px-2 py-1 md:py-3 lg:py-3 xl:py-3"
-            >
-              <img
-                v-if="image"
-                :src="`/images/Home/icons/${image}.svg`"
-                class="h-8 md:py-1 md:px-2 lg:px-2 xl:px-2"
-                :alt="alt ?? ''"
-                loading="lazy"
-              />
-              <div v-else class="block w-8 h-8"></div>
-            </li>
-          </ul>
+          <img
+            src="/images/Home/bankPartners.png"
+            alt="A melhor plataforma multibancos."
+            class=""
+          />
         </div>
       </div>
     </div>
@@ -59,7 +39,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, type PropType } from 'vue'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import { gsap } from 'gsap'
 
@@ -72,6 +52,10 @@ export default defineComponent({
     },
     innerText: {
       type: String,
+      required: true,
+    },
+    type: {
+      type: String as PropType<'HomeEquity' | 'Financing'>,
       required: true,
     },
   },
