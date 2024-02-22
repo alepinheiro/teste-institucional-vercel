@@ -27,7 +27,7 @@
         >
           Facilitamos o seu
           <span class="text-primary"> acesso ao crédito </span>
-          através de uma
+          através da melhor
           <span
             class="before:inline before:absolute before:-left-2 before:-right-2 before:top-1 before:-bottom-2 before:bg-primary before:-z-10 text-white relative z-0 inline-table ml-2 whitespace-pre-line"
           >
