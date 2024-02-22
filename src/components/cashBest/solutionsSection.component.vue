@@ -18,11 +18,8 @@
           }}
         </h2>
         <p class="text-textPrimary text-base xl:text-xl">
-          <b>Aqui, o capital liberado é sua ferramenta multiúso.</b>
-          Você pode usá-lo para quitar e reestruturar dívidas, impulsionar seu
-          capital de giro, embarcar na viagem dos seus sonhos, renovar sua casa
-          e <b>muito mais.</b> A escolha é sua, e a SejaBest coloca o
-          <u>poder nas suas mãos</u> para realizar seus projetos financeiros.
+          <b>Com o capital liberado pela SejaBest, você tem uma ferramenta multiuso.</b>
+          Quite dívidas, impulsione o capital de giro, realize sonhos de viagem, renove sua casa e mais. A escolha é sua, e a SejaBest coloca o poder em suas mãos para concretizar seus projetos financeiros.
         </p>
       </div>
       <div class="flex flex-row flex-wrap gap-5 md:gap-0 sm:gap-0 w-full">

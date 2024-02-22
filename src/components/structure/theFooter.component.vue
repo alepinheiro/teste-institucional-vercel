@@ -127,17 +127,17 @@
               aria-label="Financiamento"
               class="hover:text-black"
             >
-              Financiamento
+              Financiamento Imobiliário
             </router-link>
           </div>
 
           <div class="sm:text-sm text-black pb-6">
             <router-link
               :to="'/home-equity' + $root.utms"
-              aria-label="Home Equity"
+              aria-label="Crédito com Garantia de Imóvel "
               class="hover:text-black"
             >
-              Home Equity
+            Crédito com Garantia de Imóvel 
             </router-link>
           </div>
 

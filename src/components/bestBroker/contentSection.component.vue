@@ -59,8 +59,8 @@ export default defineComponent({
         },
         {
           id: 4,
-          title: 'O que você precisa saber sobre o <b>Home Equity</b>',
-          text: 'Home Equity de A-Z. Aprenda o passo-a-passo completo para o Empréstimo de Garantia de Imóvel: a modalidade que vêm transformando o jeito de fazer dinheiro do corretor moderno.',
+          title: 'O que você precisa saber sobre o <b>Crédito com Garantia de Imóvel </b>',
+          text: 'Crédito com Garantia de Imóvel de A-Z. Aprenda o passo-a-passo completo para o Empréstimo de Garantia de Imóvel: a modalidade que vêm transformando o jeito de fazer dinheiro do corretor moderno.',
         },
         {
           id: 5,
@@ -70,7 +70,7 @@ export default defineComponent({
         {
           id: 6,
           title: '<b>CashBest:</b> o Cliente Ideal',
-          text: 'O guia definitivo sobre identificação e aproveitamento de oportunidades. Descubra o que busca o cliente de Home Equity e confira dicas exclusivas sobre como identificar o cenário perfeito.',
+          text: 'O guia definitivo sobre identificação e aproveitamento de oportunidades. Descubra o que busca o cliente de Crédito com Garantia de Imóvel e confira dicas exclusivas sobre como identificar o cenário perfeito.',
         },
         {
           id: 7,

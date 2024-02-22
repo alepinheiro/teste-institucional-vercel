@@ -1,22 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import {
-  useHead,
-  useSeoMeta,
-  type UseHeadInput,
-  type UseSeoMetaInput,
-} from '@unhead/vue'
-declare module 'vue-router' {
-  interface RouteMeta {
-    title: string
-    description: string
-  }
-}
-
-const ogTitle =
-  'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.'
-const ogImage = `${window.location.origin}/images/Home/gasparHeroSection.png`
-const ogUrl = `${window.location.origin}${window.location.pathname}`
-const ogType = 'website'
+import { useHead, useSeoMeta } from '@unhead/vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -184,7 +167,8 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/getOutRent.vue'),
     meta: {
       title: 'Xô, Aluguel! O Método Best para Conquistar seu Primeiro Imóvel',
-      description: 'Não deixe o aluguel ser um obstáculo para alcançar seu sonho da casa própria! '
+      description:
+        'Não deixe o aluguel ser um obstáculo para alcançar seu sonho da casa própria! ',
     },
     props: {
       showMenu: false,
@@ -196,7 +180,8 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/successGuideGetOutOfRent.vue'),
     meta: {
       title: 'Agora você é BEST! Compra realizada com sucesso',
-      description: 'Parabéns pela aquisição do guia "Xô, Aluguel: O Método Best para conquistar seu primeiro imóvel com Financiamento Imobiliário". '
+      description:
+        'Parabéns pela aquisição do guia "Xô, Aluguel: O Método Best para conquistar seu primeiro imóvel com Financiamento Imobiliário". ',
     },
     props: {
       showMenu: false,
@@ -215,8 +200,10 @@ const routes: Array<RouteRecordRaw> = [
     name: 'bestBrokerSuccess',
     component: () => import('@/views/BestBrokerSuccess.vue'),
     meta: {
-      title: 'O curso definitivo para se tornar um expert em Crédito Imobiliário',
-      description: 'Pare de perder vendas e aumente seus lucros mensais com o curso "Best Broker"',
+      title:
+        'O curso definitivo para se tornar um expert em Crédito Imobiliário',
+      description:
+        'Pare de perder vendas e aumente seus lucros mensais com o curso "Best Broker"',
     },
     props: {
       showMenu: false,
@@ -228,7 +215,8 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/BestHubLP.vue'),
     meta: {
       title: 'O Melhor Hub de Crédito do Mercado',
-      description: 'Quer potencializar seus negócios e fintechizar sua marca? O BestHub é a solução que você procura! ',
+      description:
+        'Quer potencializar seus negócios e fintechizar sua marca? O BestHub é a solução que você procura! ',
     },
     props: {
       showMenu: false,
@@ -238,8 +226,10 @@ const routes: Array<RouteRecordRaw> = [
     path: '/warren',
     name: 'warren',
     meta: {
-      title: 'Warren + SejaBest: Os Melhores Produtos de Crédito ao seu Alcance',
-      description: 'Não perca mais tempo buscando crédito! Agora, os melhores produtos de crédito da SejaBest estão disponíveis na Warren',
+      title:
+        'Warren + SejaBest: Os Melhores Produtos de Crédito ao seu Alcance',
+      description:
+        'Não perca mais tempo buscando crédito! Agora, os melhores produtos de crédito da SejaBest estão disponíveis na Warren',
     },
     component: () => import('@/views/WarrenLandingPage.vue'),
     props: {
@@ -256,7 +246,7 @@ const router = createRouter({
   },
 })
 
-router.afterEach((to, from) => {
+router.beforeEach((to, from) => {
   if (!to.meta) return
   useHead({
     link: [
@@ -278,7 +268,7 @@ router.afterEach((to, from) => {
     description: to.meta.description,
     ogDescription: to.meta.description,
     ogTitle: to.meta.title,
-    ogImage: window.location.origin + '/images/Home/gasparHeroSection.png',
+    ogImage: window.location.origin + '/images/Home/heroBackground-sm.png ',
     ogUrl: window.location.origin + window.location.pathname,
     ogType: 'website',
   })

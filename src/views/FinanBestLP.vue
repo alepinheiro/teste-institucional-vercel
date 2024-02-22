@@ -8,8 +8,9 @@
       color="primary"
       class="text-primary"
     />
-    <HeroSection :show-menu="showMenu" />
+    <HeroSection />
     <BusinessPartners
+      type="Financing"
       title="Na SejaBest, suas chances de aprovação são maiores"
       inner-text="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
       class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
@@ -39,20 +40,22 @@
       :form="{ showRealtyValue: false }"
       image="gaspar"
     />
+    <BestPlay class="bg-bgDarkColor" />
     <TheFooter />
   </main>
 </template>
 
 <script setup lang="ts">
-import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
+import AboutUs from '@/components/base/aboutUs.component.vue'
+import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
-import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
+import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
 import StepsSection from '@/components/finanBestLp/stepsSection.component.vue'
-import AboutUs from '@/components/base/aboutUs.component.vue'
 import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
+import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
 import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
 
 defineProps<{

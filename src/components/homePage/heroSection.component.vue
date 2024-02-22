@@ -5,28 +5,29 @@
     >
       <img
         src="/images/Home/heroBackground-sm.png"
-        class="aspect-square min-md:hidden"
+        class="aspect-square min-md:hidden object-cover"
         alt=""
       />
       <img
         src="/images/Home/heroBackground-xl.png"
-        class="hidden xl:block absolute inset-x-0 h-[95vh] object-contain -right-48 ml-auto -mt-12 -z-10"
+        class="hidden xl:block absolute inset-0 h-screen object-contain -right-48 ml-auto -z-10"
         alt=""
       />
       <img
         src="/images/Home/heroBackground-lg.png"
-        class="hidden lg:block absolute inset-x-0  h-[95vh] object-contain -right-24 ml-auto -mt-12 -z-10"
+        class="hidden lg:block absolute inset-0 h-screen object-contain -right-24 ml-auto -z-10"
         alt=""
       />
+
       <div
-        class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto xl:items-start lg:items-start text-center min-lg:text-left -mt-24 min-md:mt-0 px-5 min-md:pt-20"
+        class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto xl:items-start lg:items-start text-center min-lg:text-left -mt-24 min-md:mt-0 px-5 min-md:pt-32"
       >
         <h1
           class="text-3xl xl:text-6xl lg:text-6xl md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]"
         >
           Facilitamos o seu
           <span class="text-primary"> acesso ao crédito </span>
-          através de uma
+          através da melhor
           <span
             class="before:inline before:absolute before:-left-2 before:-right-2 before:top-1 before:-bottom-2 before:bg-primary before:-z-10 text-white relative z-0 inline-table ml-2 whitespace-pre-line"
           >
@@ -44,13 +45,15 @@
 
         <div class="flex flex-col gap-4">
           <h3 class="text-textPrimary text-xl">Reconhecidos pelo mercado:</h3>
-          <div class="flex flex-row gap-4 flex-wrap">
+          <div
+            class="flex flex-row justify-center min-lg:justify-start gap-4 flex-wrap w-fit"
+          >
             <img
               v-for="{ alt, id, src } of topOfSalesSeals"
               :key="id"
               :src="src"
               :alt="alt"
-              class="h-9 min-md:h-12 mx-auto max-w-[33%] min-md:max-w-[20%] flex-grow object-contain"
+              class="h-9 w-1/3 min-md:w-full min-md:h-12 mx-0 max-w-[33%] min-md:max-w-[20%] flex-grow object-contain"
             />
           </div>
         </div>
@@ -58,6 +61,7 @@
         <a
           :href="information.appSimulator + $root.utms"
           class="bg-complementaryColor1 px-5 py-3 rounded text-white font-bold"
+          target="_blank"
         >
           <span class="xl:hidden lg:hidden md:hidden">Simule seu crédito</span>
           <span class="hidden xl:block text-2xl lg:block lg:text-xl md:block"

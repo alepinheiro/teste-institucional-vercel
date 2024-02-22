@@ -73,68 +73,71 @@ const secondRow = ref<HTMLDivElement | null>(null)
 
 const firstRowMembers = {
   alessandro: {
-    alt: 'Alessandro'
+    alt: 'Alessandro',
   },
   alexandre: {
-    alt: 'Alexandre'
+    alt: 'Alexandre',
   },
   allan: {
-    alt: 'Allan'
+    alt: 'Allan',
   },
   amanda: {
-    alt: 'Amanda'
+    alt: 'Amanda',
   },
   bianca: {
-    alt: 'Bianca'
+    alt: 'Bianca',
   },
   bruna: {
-    alt: 'Bruna'
+    alt: 'Bruna',
   },
   daniel: {
-    alt: 'Daniel'
+    alt: 'Daniel',
   },
   estevao: {
-    alt: 'Estevão'
+    alt: 'Estevão',
   },
   felipe: {
-    alt: 'Felipe'
+    alt: 'Felipe',
   },
   gabrielle: {
-    alt: 'Gabrielle'
-  }
+    alt: 'Gabrielle',
+  },
 }
 
 const secondRowMembers = {
   gaspar: {
-    alt: 'Gaspar'
+    alt: 'Gaspar',
   },
   gesiel: {
-    alt: 'Gesiel'
+    alt: 'Gesiel',
   },
   gustavo: {
-    alt: 'Gustavo'
+    alt: 'Gustavo',
   },
   jaqueline: {
-    alt: 'Jaqueline'
+    alt: 'Jaqueline',
   },
   julia: {
-    alt: 'Julia'
+    alt: 'Julia',
   },
   mateus: {
-    alt: 'Mateus'
+    alt: 'Mateus',
   },
   natalia: {
-    alt: 'Natália'
+    alt: 'Natália',
   },
   paola: {
-    alt: 'Paola'
+    alt: 'Paola',
   },
   guilherme: {
-    alt: 'Guilherme'
+    alt: 'Guilherme',
   },
   vinicius: {
-    alt: 'Vinícius'
-  }
+    alt: 'Vinícius',
+  },
+  elen: {
+    alt: 'Elen',
+  },
 }
 
 onMounted(() => {
@@ -185,6 +188,7 @@ function horizontalLoop(items: HTMLDivElement[], config: gsap.TweenVars = {}) {
 
   const length: number = items.length
   const startX: number = items[0].offsetLeft
+  const padding = 20
   const times: number[] = []
   const widths: number[] = []
   const xPercents: number[] = []
@@ -219,9 +223,8 @@ function horizontalLoop(items: HTMLDivElement[], config: gsap.TweenVars = {}) {
     startX +
     items[length - 1].offsetWidth *
       (gsap.getProperty(items[length - 1], 'scaleX') as number) +
-    //@ts-expect-error
-    (parseFloat(config.paddingRight) || 0) +
-    20 // 👈 padding
+    (parseFloat(config.paddingRight as string) || 0) +
+    padding
   for (i = 0; i < length; i++) {
     item = items[i]
     curX = (xPercents[i] / 100) * widths[i]

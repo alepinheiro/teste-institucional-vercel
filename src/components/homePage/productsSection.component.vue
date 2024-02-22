@@ -78,9 +78,6 @@ const sliderOptions: SwiperOptions = {
       slidesPerView: 3.5,
     },
     1277: {
-      slidesPerView: 3.5,
-    },
-    1919: {
       slidesPerView: 4,
       centeredSlides: false,
     },
@@ -129,7 +126,7 @@ const steps = [
   },
 
   {
-    title: 'Crédito com Veículo de garantia',
+    title: 'Crédito com garantia Veicular',
     description: 'Use seu carro, caminhão ou utilitário como garantia.',
     features: [
       {

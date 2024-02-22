@@ -22,39 +22,14 @@
         @mouseover="hover4 = true"
         @mouseout="hover4 = false"
       >
-        <router-link
+        <RouterLink
           :to="{ name: 'HomeEquity', params: { id: 'div1' } }"
           class="text-sm"
         >
-          Home Equity
-        </router-link>
+          Crédito com Garantia de Imóvel
+        </RouterLink>
         <svg
           v-show="hover4"
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 opacity-o group-hover:opacity-100"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <div
-        class="px-2 py-3 optionsHover hover:shadow-md text-textPrimary flex flex-row items-center w-full justify-between"
-        @mouseover="hover = true"
-        @mouseout="hover = false"
-      >
-        <router-link
-          :to="{ name: 'Financing', params: { id: 'div1' } }"
-          class="text-sm"
-        >
-          Financiamento
-        </router-link>
-        <svg
-          v-show="hover"
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5 opacity-o group-hover:opacity-100"
           viewBox="0 0 20 20"
@@ -70,16 +45,17 @@
 
       <div
         class="px-2 py-3 optionsHover hover:shadow-md text-textPrimary flex flex-row items-center w-full justify-between"
-        @mouseover="hover2 = true"
-        @mouseout="hover2 = false"
+        @mouseover="hover = true"
+        @mouseout="hover = false"
       >
-        <router-link
-          :to="{ name: 'BestCarFinan', params: { id: 'div1' } }"
+        <RouterLink
+          :to="{ name: 'Financing', params: { id: 'div1' } }"
           class="text-sm"
-          >Financiamento de Veículo</router-link
         >
+          Financiamento Imobiliário
+        </RouterLink>
         <svg
-          v-show="hover2"
+          v-show="hover"
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5 opacity-o group-hover:opacity-100"
           viewBox="0 0 20 20"
@@ -98,13 +74,40 @@
         @mouseover="hover3 = true"
         @mouseout="hover3 = false"
       >
-        <router-link
+        <RouterLink
           :to="{ name: 'BestCar', params: { id: 'div1' } }"
           class="text-sm"
-          >Empréstimo com Garantia de Veículo</router-link
         >
+          Crédito com Garantia Veicular
+        </RouterLink>
         <svg
           v-show="hover3"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 opacity-o group-hover:opacity-100"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M14.293 10.293a1 1 0 0 0 0-1.414L10.414 5.586a1 1 0 1 0-1.414 1.414L11.586 9H3a1 1 0 0 0 0 2h8.586l-3.707 3.707a1 1 0 1 0 1.414 1.414L14.293 11.7a1 1 0 0 0 0-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+
+      <div
+        class="px-2 py-3 optionsHover hover:shadow-md text-textPrimary flex flex-row items-center w-full justify-between"
+        @mouseover="hover2 = true"
+        @mouseout="hover2 = false"
+      >
+        <RouterLink
+          :to="{ name: 'BestCarFinan', params: { id: 'div1' } }"
+          class="text-sm"
+        >
+          Financiamento Veicular
+        </RouterLink>
+        <svg
+          v-show="hover2"
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5 opacity-o group-hover:opacity-100"
           viewBox="0 0 20 20"

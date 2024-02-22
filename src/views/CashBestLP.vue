@@ -21,6 +21,7 @@
 
     <div class="bg-gradient-to-b to-white from-[#F1F1F1]">
       <BusinessPartners
+        type="HomeEquity"
         title="Maximizamos suas chances de aprovação"
         inner-text="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação. Conte com nosso time de especialistas para orientação em todo o processo."
         class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
@@ -53,11 +54,13 @@
       :form="{ showRealtyValue: true }"
       image="gabrielle"
     />
+    <BestPlay class="bg-secondary" />
     <TheFooter />
   </main>
 </template>
 <script lang="ts" setup>
 import AboutUs from '@/components/base/aboutUs.component.vue'
+import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import HeroSection from '@/components/cashBest/heroSection.component.vue'

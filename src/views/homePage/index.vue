@@ -16,10 +16,11 @@
       class="text-primary min-md:hidden"
     />
     <TopBar color="primary" class="sm:hidden text-primary" />
-    <HeroSection class="" />
+    <HeroSection />
     <Products class="pt-24" />
     <BusinessPartners
       title="A melhor plataforma multibancos."
+      type="HomeEquity"
       inner-text="<strong>
           Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
           financeiras,
@@ -49,7 +50,7 @@
       class="py-0 md:py-14 lg:py-14 xl:py-14"
     />
     <BestPlay
-      class="bg-[#181818] bg-gradient-to-br to-black from-transparent border-b-4 border-primary md:border-0 lg:border-0 xl:border-0 z-0"
+      class="border-b-4 border-primary md:border-0 lg:border-0 xl:border-0 z-0 bg-white"
     />
     <TheFooter class="block z-10" />
   </div>
@@ -59,7 +60,7 @@ import TopBar from '@/components/structure/topBar/index.component.vue'
 import HeroSection from '@/components/homePage/heroSection.component.vue'
 import Products from '@/components/homePage/productsSection.component.vue'
 import AboutUs from '@/components/homePage/aboutUs.component.vue'
-import BestPlay from '@/components/homePage/bestPlay.component.vue'
+import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import Mission from '@/components/aboutUs/missionSection.component.vue'

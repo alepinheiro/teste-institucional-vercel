@@ -12,7 +12,7 @@
         <div
           class="flex flex-col gap-2 lg:gap-7 xl:gap-7 text-center md:text-left lg:text-left xl:text-left lg:w-5/12 xl:w-5/12"
         >
-          <p class="text-textSecondary md:text-textPrimary">
+          <p class="text-textPrimary">
             A <b> SejaBest </b> já tem história no mercado.
           </p>
           <h2
@@ -48,22 +48,6 @@
             </span>
           </li>
         </ul>
-
-        <!-- <div
-        class="flex md:hidden lg:hidden xl:hidden flex-row flex-wrap items-center gap-6 mx-auto"
-      >
-        <div
-          v-for="{ alt, id, source } of seals"
-          :key="id"
-          class="w-1/3 last-of-type:w-1/2 last-of-type:mx-auto last-of-type:flex-grow-0 flex-grow"
-        >
-          <img
-            :src="`/images/Home/seals/dark/${source}`"
-            :alt="alt"
-            class="h-24 sm:h-auto"
-          />
-        </div>
-      </div> -->
       </div>
     </div>
   </section>

@@ -7,6 +7,14 @@
       <dropdownMenu class="hover:cursor-pointer decoration" />
       <dropdownForB class="hover:cursor-pointer decoration" />
       <RouterLink
+        :to="'/sobre' + $root.utms"
+        class="decoration"
+        target="_self"
+        active-class:
+      >
+        Sobre Nós
+      </RouterLink>
+      <RouterLink
         :to="'/bestHub' + $root.utms"
         class="decoration"
         target="_blank"
@@ -18,17 +26,10 @@
         class="decoration"
         target="_blank"
       >
-        Portal
+        Portal Best
       </a>
 
-      <RouterLink
-        :to="'/sobre' + $root.utms"
-        class="decoration"
-        target="_blank"
-        active-class:
-      >
-        Sobre
-      </RouterLink>
+
     </div>
     <a
       :href="$options.information.appSimulator + $root.utms"
