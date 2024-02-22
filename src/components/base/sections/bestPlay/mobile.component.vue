@@ -2,20 +2,20 @@
   <section>
     <div class="overflow-hidden flex-grow flex">
       <div class="w-full">
-        <div class="overflow-hidden flex h-full pt-40">
+        <div class="overflow-hidden flex h-full pt-40 -mr-40">
           <img
             ref="bestPlayMockup"
             src="/images/Home/bestPlayMockup.png"
             alt="Conheça o maior canal de crédito do Brasil"
             title="Conheça o maior canal de crédito do Brasil no youtube"
             loading="lazy"
-            class="w-full h-[44rem] object-cover object-top ml-24 -mr-32"
+            class="w-full h-[44rem] object-contain object-top"
           />
         </div>
       </div>
     </div>
     <div
-      class="bg-[#181818] bg-gradient-to-br to-black from-transparent w-full h-3/5 mt-auto flex"
+      class="bg-[#181818] bg-gradient-to-br to-black from-transparent w-full mt-auto flex"
     >
       <div class="my-auto">
         <div class="flex flex-col gap-5 py-10 px-5">
