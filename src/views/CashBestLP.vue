@@ -17,7 +17,7 @@
       class="text-primary xl:text-textPrimary z-20"
     />
 
-    <HeroSection :show-menu="showMenu" class="pb-14 min-md:pb-0 z-0" />
+    <HeroSection :show-menu="showMenu" class="pb-14 min-md:pb-0 relative z-0" />
 
     <div class="bg-gradient-to-b to-white from-[#F1F1F1]">
       <BusinessPartners
