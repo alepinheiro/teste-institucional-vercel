@@ -1,5 +1,5 @@
 <template>
-  <main class="relative overflow-hidden w-full z-0 bg-white">
+  <main class="relative overflow-hidden w-full z-0 bg-white ">
     <img
       src="/images/Home/backgroundLines.png"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
@@ -14,10 +14,10 @@
     <TopBar
       color="primary"
       :customMobileMenuColor="menuColor"
-      class="text-primary xl:text-textPrimary"
+      class="text-primary xl:text-textPrimary z-20"
     />
 
-    <HeroSection :show-menu="showMenu" class="pb-14 min-md:pb-0" />
+    <HeroSection :show-menu="showMenu" class="pb-14 min-md:pb-0 relative z-0" />
 
     <div class="bg-gradient-to-b to-white from-[#F1F1F1]">
       <BusinessPartners

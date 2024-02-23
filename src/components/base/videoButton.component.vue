@@ -1,10 +1,12 @@
 <template>
-  <div class="relative w-16 mx-auto my-10 transition-all z-50">
-    <Overlay
-      v-if="showVideo"
-      :video-id="videoId"
-      @closeOverlay="showVideo = false"
-    />
+  <div class="relative w-16 mx-auto my-10 transition-all z-0">
+    <Teleport to="body">
+      <Overlay
+        v-if="showVideo"
+        :video-id="videoId"
+        @closeOverlay="showVideo = false"
+      />
+    </Teleport>
     <PlayButton
       class="absolute h-16 top-0 -z-10 inset-x-0"
       @click="showVideo = true"
