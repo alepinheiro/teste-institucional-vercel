@@ -25,7 +25,7 @@
       />
 
       <div
-        class="flex flex-col gap-5 min-md:gap-10 items-center lg:w-8/12 xl:w-1/2 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-16 min-md:mt-0 min-md:pt-28 min-md:pb-10 px-5"
+        class="flex flex-col gap-5 min-md:gap-10  items-center lg:w-8/12 xl:w-1/2 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-16 min-md:mt-0 min-md:pt-28 min-md:pb-10 px-5"
       >
         <h1
           class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7 lg:text-left"
@@ -37,7 +37,7 @@
         <component
           :is="'swiper-container'"
           v-bind="sliderOptions"
-          class="w-full"
+          class="w-full sm:my-2"
         >
           <component
             :is="'swiper-slide'"
@@ -58,7 +58,7 @@
 
         <DoubleInputsForm
           v-model="doubleFormData"
-          class="bg-[#EFEFEF] p-4 min-md:px-12 min-md:py-8 rounded-2xl w-full lg:mr-8"
+          class="bg-[#EFEFEF] p-2  rounded-2xl   sm:w-11/12 w-9/12 md:w-full mx-auto"
           @submit="onSubmit"
         />
         <a

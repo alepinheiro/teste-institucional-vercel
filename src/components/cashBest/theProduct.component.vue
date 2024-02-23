@@ -89,8 +89,8 @@ const products = [
   },
   {
     id: 3,
-    tax: 4.57,
-    title: 'Crediário',
+    tax: 6.35,
+    title: 'Empréstimo pessoal',
   },
   {
     id: 4,

@@ -3,7 +3,7 @@
     <div class="flex flex-col gap-5 ">
       
 
-      <div class="flex flex-col gap-2 text-left text-center py-4 sm:py-2">
+      <div class="flex flex-col gap-2 text-center pb-4 sm:py-2">
         <label for="creditValue" class="text-xl sm:text-base w-10/12 mx-auto">
           De quanto você precisa?
         </label>

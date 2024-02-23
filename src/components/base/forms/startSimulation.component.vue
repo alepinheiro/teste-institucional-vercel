@@ -26,20 +26,7 @@
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
-      <div v-if="showHomeEquity" class="flex flex-col gap-2">
-        <label for="realtyValue" class="sm:text-white">
-          Quanto vale seu imóvel?
-        </label>
-        <input
-          id="realtyValue"
-          ref="realtyValue"
-          name="realtyValue"
-          type="text"
-          :required="showHomeEquity"
-          placeholder="R$ 1.000.000,00"
-          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
-        />
-      </div>
+      
       <div class="flex flex-col gap-2">
         <label for="creditAmount" class="sm:text-white">
           De quanto você precisa?
@@ -51,7 +38,7 @@
           type="text"
           placeholder="R$ 250.000,00"
           required
-          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
+          class="bg-zinc-200 rounded p-2 text-5xl focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
       <button
