@@ -21,7 +21,7 @@
         </p>
       </div>
 
-      <div class="flex flex-col gap-20 xl:gap-10 flex-grow">
+      <div class="flex flex-col gap-6 flex-grow ">
         <ul class="flex flex-row gap-2 md:gap-5 lg:gap-5 xl:gap-5 md:w-full">
           <li
             v-for="{ icon, title, description } in cards"
@@ -48,9 +48,11 @@
             </span>
           </li>
         </ul>
+        <h3 class="text-textPrimary sm:text-base text-xl text-center">Premiada e Reconhecida pelo mercado:</h3>
         <div
           class="grid min-md:flex grid-flow-row grid-cols-2 flex-row flex-nowrap items-center gap-6 mx-auto max-w-xl"
         >
+        
           <img
             v-for="{ alt, id, src } of topOfSales('black')"
             :key="id"
