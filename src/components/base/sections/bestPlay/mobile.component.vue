@@ -23,10 +23,8 @@
 
           <div class="flex flex-col gap-5 text-white">
             <div class="flex flex-col gap-5 justify-center">
-              <h2
-                class="text-3xl font-bold text-center"
-              >
-              {{ title }}
+              <h2 class="text-3xl font-bold text-center">
+                {{ title }}
               </h2>
               <div class="flex flex-row gap-5">
                 <div
@@ -47,15 +45,16 @@
                   </div>
                 </div>
               </div>
-              <p
-                class="text-sm text-center"
-              >
+              <p class="text-sm text-center">
                 Explore temas como crédito, financiamento, empreendedorismo e
                 mercado financeiro, visando levá-lo à sua melhor versão.
               </p>
             </div>
             <a
-              href="https://www.youtube.com/@SejaBest"
+              :href="
+                'https://www.youtube.com/@SejaBest' +
+                useObjectToQueryString($route.query)
+              "
               class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold"
             >
               Inscreva-se agora
@@ -72,6 +71,7 @@ import BestPlayLogo from '@/components/imagesSVG/logos/bestPlay.component.vue'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import { defineComponent, ref } from 'vue'
 import { gsap } from 'gsap'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'BestPlay',
@@ -93,6 +93,7 @@ export default defineComponent({
   },
   data() {
     return {
+      useObjectToQueryString,
       stats: [
         {
           icon: 'fa-solid fa-video-camera',

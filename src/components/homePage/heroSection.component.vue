@@ -44,7 +44,9 @@
         <hr class="border-px border-textSecondary w-full min-lg:w-2/3" />
 
         <div class="flex flex-col gap-6">
-          <h3 class="text-textPrimary text-xl">Premiada e Reconhecida pelo mercado:</h3>
+          <h3 class="text-textPrimary text-xl">
+            Premiada e Reconhecida pelo mercado:
+          </h3>
           <div
             class="flex flex-row justify-center min-lg:justify-start gap-4 flex-wrap w-fit"
           >
@@ -59,14 +61,14 @@
         </div>
 
         <a
-          :href="information.appSimulator + $root.utms"
+          :href="information.appSimulator + useObjectToQueryString($route.query)"
           class="bg-complementaryColor1 px-5 py-3 rounded text-white font-bold sm:mt-2"
           target="_blank"
         >
           <span class="xl:hidden lg:hidden md:hidden">Simule seu crédito</span>
-          <span class="hidden xl:block text-2xl lg:block lg:text-xl md:block"
-            >Clique aqui e simule gratuitamente</span
-          >
+          <span class="hidden xl:block text-2xl lg:block lg:text-xl md:block">
+            Clique aqui e simule gratuitamente
+          </span>
         </a>
       </div>
     </div>
@@ -76,6 +78,7 @@
 import { defineComponent } from 'vue'
 import information from '@/configurations/information'
 import { topOfSales } from '@/configurations/images'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'HeroSection',
@@ -85,6 +88,7 @@ export default defineComponent({
       information,
       loadedPage: window,
       topOfSalesSeals,
+      useObjectToQueryString,
     }
   },
 })

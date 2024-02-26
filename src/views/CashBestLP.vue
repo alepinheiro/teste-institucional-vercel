@@ -21,6 +21,7 @@
 
     <div class="bg-gradient-to-b to-white from-[#F1F1F1]">
       <BusinessPartners
+        id="businessPartners"
         type="HomeEquity"
         title="Maximizamos suas chances de aprovação"
         inner-text="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação. Conte com nosso time de especialistas para orientação em todo o processo."
