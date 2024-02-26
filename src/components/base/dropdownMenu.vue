@@ -23,7 +23,11 @@
         @mouseout="hover4 = false"
       >
         <RouterLink
-          :to="{ name: 'HomeEquity', params: { id: 'div1' } }"
+          :to="{
+            name: 'HomeEquity',
+            params: { id: 'div1' },
+            query: $route.query,
+          }"
           class="text-sm"
         >
           Crédito com Garantia de Imóvel
@@ -49,7 +53,11 @@
         @mouseout="hover = false"
       >
         <RouterLink
-          :to="{ name: 'Financing', params: { id: 'div1' } }"
+          :to="{
+            name: 'Financing',
+            params: { id: 'div1' },
+            query: $route.query,
+          }"
           class="text-sm"
         >
           Financiamento Imobiliário
@@ -75,7 +83,7 @@
         @mouseout="hover3 = false"
       >
         <RouterLink
-          :to="{ name: 'BestCar', params: { id: 'div1' } }"
+          :to="{ name: 'BestCar', params: { id: 'div1' }, query: $route.query }"
           class="text-sm"
         >
           Crédito com Garantia Veicular
@@ -101,7 +109,11 @@
         @mouseout="hover2 = false"
       >
         <RouterLink
-          :to="{ name: 'BestCarFinan', params: { id: 'div1' } }"
+          :to="{
+            name: 'BestCarFinan',
+            params: { id: 'div1' },
+            query: $route.query,
+          }"
           class="text-sm"
         >
           Financiamento Veicular

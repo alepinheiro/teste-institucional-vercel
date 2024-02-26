@@ -22,17 +22,21 @@ export default defineComponent({
         showMessage: false,
         buttonText: 'Continuar',
       } as NotificationInterface,
-      utms: '' as string,
+      // utms: '' as string,
     }
   },
   mounted() {
-    let fullUrl = this.$route.fullPath.split('?')
-    if (this.$route.fullPath.includes('?') && this.$root) {
-      this.$root.utms = '?' + fullUrl[1]
-    }
-    setTimeout(() => {
-      this.isLoading = true
-    }, 600)
+    // let fullUrl = this.$route.fullPath.split('?')
+    // console.log(this.$route.fullPath)
+    // console.log(this.$route.fullPath.includes('?'))
+    // console.log(!!this.$root)
+    // console.log(this.$route.fullPath.includes('?') && this.$root)
+    // if (this.$route.fullPath.includes('?') && this.$root) {
+    //   this.$root.utms = '?' + fullUrl[1]
+    // }
+    // setTimeout(() => {
+    //   this.isLoading = true
+    // }, 600)
   },
 })
 </script>

@@ -25,7 +25,13 @@
         @focusout="hoverSVG4 = false"
         @click="openProfileMenu = !openProfileMenu"
       >
-        <RouterLink :to="'/' + $root.utms" class="hover:font-semibold">
+        <RouterLink
+          :to="{
+            path: '/',
+            query: $route.query,
+          }"
+          class="hover:font-semibold"
+        >
           Início
         </RouterLink>
         <svg
@@ -82,7 +88,10 @@
               @focusout="hover4 = false"
             >
               <RouterLink
-                :to="'/home-equity' + $root.utms"
+                :to="{
+                  path: '/home-equity',
+                  query: $route.query,
+                }"
                 class="hover:text-primary hover:font-semibold text-textPrimary py-1"
               >
                 Crédito com Garantia de Imóvel
@@ -107,7 +116,10 @@
               @mouseout="hover1 = false"
             >
               <RouterLink
-                :to="'/financiamento-imobiliario' + $root.utms"
+                :to="{
+                  path: '/financiamento-imobiliario',
+                  query: $route.query,
+                }"
                 class="block text-textPrimary py-1 hover:font-semibold"
                 :class="{ 'text-primary': hover1 }"
               >
@@ -133,11 +145,14 @@
               @mouseout="hover3 = false"
             >
               <RouterLink
-                :to="'/emprestimo-com-garantia-de-veiculo' + $root.utms"
+                :to="{
+                  path: '/emprestimo-com-garantia-de-veiculo',
+                  query: $route.query,
+                }"
                 class="text-textPrimary block py-1 hover:font-semibold"
                 :class="{ 'text-primary': hover3 }"
               >
-              Crédito com Garantia Veicular
+                Crédito com Garantia Veicular
               </RouterLink>
               <svg
                 v-show="hover3"
@@ -159,7 +174,10 @@
               @mouseout="hover2 = false"
             >
               <RouterLink
-                :to="'/financiamento-veicular' + $root.utms"
+                :to="{
+                  path: '/financiamento-veicular',
+                  query: $route.query,
+                }"
                 class="text-textPrimary block py-1 hover:font-semibold"
                 :class="{ 'text-primary': hover2 }"
               >
@@ -179,7 +197,6 @@
                 />
               </svg>
             </li>
-
           </ul>
         </div>
       </div>
@@ -227,7 +244,10 @@
               @mouseout="hover4 = false"
             >
               <RouterLink
-                :to="'/xo-aluguel' + $root.utms"
+                :to="{
+                  path: '/xo-aluguel',
+                  query: $route.query,
+                }"
                 target="_blank"
                 class="hover:text-primary hover:font-semibold text-textPrimary py-1"
               >
@@ -253,7 +273,10 @@
               @mouseout="hover5 = false"
             >
               <RouterLink
-                :to="'/best-broker' + $root.utms"
+                :to="{
+                  path: '/best-broker',
+                  query: $route.query,
+                }"
                 target="_blank"
                 class="block text-textPrimary py-1 hover:text-primary hover:font-semibold"
               >
@@ -282,7 +305,13 @@
         @mouseout="hoverSVG1 = false"
         @click="openProfileMenu = !openProfileMenu"
       >
-        <RouterLink :to="'/besthub' + $root.utms" class="hover:font-semibold">
+        <RouterLink
+          :to="{
+            path: '/besthub',
+            query: $route.query,
+          }"
+          class="hover:font-semibold"
+        >
           Seja um Parceiro
         </RouterLink>
         <svg
@@ -307,13 +336,15 @@
         @click="openProfileMenu = !openProfileMenu"
       >
         <a
-          :href="'https://portal.seja.best/' + $root.utms"
+          :href="
+            'https://portal.seja.best/' + objectToQueryString($route.query)
+          "
           style="text-decoration: none"
           class="hover:font-semibold"
           target="_blank"
         >
           Portal Best
-          </a>
+        </a>
         <svg
           v-show="hoverSVG2"
           xmlns="http://www.w3.org/2000/svg"
@@ -334,7 +365,13 @@
         @mouseout="hoverSVG3 = false"
         @click="openProfileMenu = !openProfileMenu"
       >
-        <RouterLink :to="'/sobre' + $root.utms" class="hover:font-semibold">
+        <RouterLink
+          :to="{
+            path: '/sobre',
+            query: $route.query,
+          }"
+          class="hover:font-semibold"
+        >
           Sobre Nós
         </RouterLink>
         <svg
@@ -356,7 +393,10 @@
         @click="openProfileMenu = !openProfileMenu"
       >
         <a
-          :href="$options.information.appSimulator + $root.utms"
+          :href="
+            $options.information.appSimulator +
+            objectToQueryString($route.query)
+          "
           style="text-decoration: none"
           target="_blank"
         >
@@ -434,6 +474,14 @@ export default defineComponent({
     },
     beforeDestroy() {
       window.removeEventListener('click', this.handleClickOutside)
+    },
+    objectToQueryString(obj: { [x: string]: any }) {
+      const queryString = Object.keys(obj)
+        .map(
+          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(obj[key])}`,
+        )
+        .join('&')
+      return '?' + queryString
     },
   },
 })
