@@ -1,7 +1,6 @@
 <template>
   <section>
-    <div class="z-0 relative h-full flex ">
-
+    <div class="z-0 relative h-full flex">
       <div class="absolute inset-0 -z-30 overflow-hidden">
         <div class="relative z-0 w-full h-full">
           <div
@@ -32,16 +31,15 @@
           </h1>
         </div>
         <!--  -->
-        <a
-          href="#"
-          v-scroll-to="'#businessPartners'"
+        <button
+          v-scroll-to="'#ourMotivation'"
           class="flex gap-2 justify-between w-fit mx-auto pt-10 hover:underline text-black"
         >
           <i class="fa-solid fa-chevron-down animate-bounce"></i>
-          <span class="text-xs ">
+          <span class="text-xs">
             Clique aqui ou role para saber como estamos fazendo isso
           </span>
-        </a>
+        </button>
       </div>
     </div>
   </section>
