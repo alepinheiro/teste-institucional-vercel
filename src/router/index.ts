@@ -33,7 +33,6 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home-equity',
     alias: [
-      '/emprestimo-com-garantia-de-imovel/cashbest',
       '/credito-com-garantia-de-imovel',
       '/como-funciona',
       '/emprestimo-com-garantia-de-imovel',
@@ -44,6 +43,20 @@ const routes: Array<RouteRecordRaw> = [
       title: 'CashBest: O Melhor Crédito com Garantia de Imóvel | SejaBest',
       description:
         'Descubra como o CashBest da SejaBest oferece o melhor crédito com garantia de imóvel do mercado',
+    },
+    props: {
+      showMenu: true,
+    },
+  },
+  {
+    path: '/emprestimo-com-garantia-de-imovel',
+    alias: ['/emprestimo-com-garantia-de-imovel/cashbest'],
+    name: 'Financing',
+    component: () => import('@/views/CashBestLPEmprestimo.vue'),
+    meta: {
+      title: 'FinanBest: Financie Seu Imóvel | Taxas a partir de 1.09% a.m.',
+      description:
+      'Descubra como o CashBest da SejaBest oferece o melhor empréstimo com garantia de imóvel do mercado',
     },
     props: {
       showMenu: true,
