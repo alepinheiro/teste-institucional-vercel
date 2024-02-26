@@ -41,8 +41,12 @@
 import useWindowSize from '@/composables/useWindowSize'
 import { SwiperOptions } from 'swiper/types'
 import { onMounted, computed } from 'vue'
+import { useRoute } from 'vue-router';
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+
 
 const { width } = useWindowSize()
+const route = useRoute()
 const pagination = computed(() => width.value < 1024)
 
 const sliderOptions: SwiperOptions = {
@@ -59,19 +63,13 @@ const sliderOptions: SwiperOptions = {
   },
 }
 
-const utm = new URLSearchParams({
-  utm_source: 'institucional-seja-best',
-  utm_medium: 'cards-section-cashbest',
-  utm_campaign: 'landing-pages-dez-23',
-})
-
 const steps = [
   {
     id: 1,
     icon: 'fa-solid fa-layer-group',
     title: '1. Simule',
     text: 'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
-    link: [`https://simulador.seja.best/?${utm.toString()}`, 'Simule agora'],
+    link: [`https://simulador.seja.best/${useObjectToQueryString(route.query)}`, 'Simule agora'],
   },
   {
     id: 2,
