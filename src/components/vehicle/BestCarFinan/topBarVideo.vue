@@ -3,8 +3,8 @@
     <!-- 🖥️ Desktop -->
     <div class="bgFinanCar sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen">
-        <TopbarComponent v-if="showMenu" class="relative text-white" />
-        <section class="maxWidth xl:h-screen lg:h-screen sm:hidden md:hidden">
+        <TopBar v-if="showMenu" class="relative text-white" />
+        <section class="maxWidth xl:h-screen lg:h-screen sm:hidden md:hidden px-5">
           <div class="w-full flex pt-12 pt-xxl lg:pt-24 md:pt-8 sm:pt-4">
             <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
               <div class="bg-primary rounded-xl w-full shadow-2xl p-12">
@@ -43,7 +43,7 @@
                         <a
                           :href="
                             $options.information.appVehicleSimulator +
-                            $root.utms
+                            useObjectToQueryString($route.query)
                           "
                           style="text-decoration: none"
                           aria-label="Clique aqui para simular seu financiamento"
@@ -68,7 +68,7 @@
     <!-- 🧮 Tablet -->
     <div class="sm:hidden xl:hidden lg:hidden">
       <div class="maxWidth bg-primary">
-        <TopbarComponent v-if="showMenu" class="relative" />
+        <TopBar v-if="showMenu" class="relative text-white" />
         <section class="w-full flex justify-center items-center pt-6">
           <div
             class="w-10/12 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6"
@@ -123,7 +123,8 @@
                   >
                     <a
                       :href="
-                        $options.information.appVehicleSimulator + $root.utms
+                        $options.information.appVehicleSimulator +
+                        useObjectToQueryString($route.query)
                       "
                       style="text-decoration: none"
                       target="_blank"
@@ -142,8 +143,8 @@
     <!-- 📱 Mobile-->
     <div class="xl:hidden lg:hidden md:hidden">
       <div class="maxWidth bg-primary">
-        <TopbarComponent v-if="showMenu" position="relative" />
-        <section class="w-full">
+        <TopBar v-if="showMenu" position="relative" class="text-white" />
+        <section class="w-full pt-10">
           <div
             class="py-8 bg-secondary sm:py-4 p-6 mt-4 rounded-lg shadow-md w-full"
           >
@@ -196,7 +197,8 @@
                     >
                       <a
                         :href="
-                          $options.information.appVehicleSimulator + $root.utms
+                          $options.information.appVehicleSimulator +
+                          useObjectToQueryString($route.query)
                         "
                         style="text-decoration: none"
                         aria-label="Clique aqui para simular seu financiamento"
@@ -217,12 +219,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import TopbarComponent from '@/components/structure/topbar.component.vue'
+import TopBar from '@/components/structure/topBar/index.component.vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'TopBarVideo',
   components: {
-    TopbarComponent,
+    TopBar,
   },
   props: {
     showMenu: {
@@ -233,6 +236,7 @@ export default defineComponent({
   },
   data() {
     return {
+      useObjectToQueryString,
       isVisible: false,
       value: 40000,
       showVideo: false,
