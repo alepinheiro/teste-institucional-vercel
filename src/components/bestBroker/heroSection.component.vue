@@ -67,7 +67,7 @@
                 Se você deseja se destacar e transformar a sua vida, essa é a
                 chance que você esperava.
               </p>
-              <a
+              <button
                 v-scroll-to="{
                   el: '#comprar',
                   duration: 1000,
@@ -79,11 +79,10 @@
                   x: false,
                   y: true,
                 }"
-                href="#"
                 class="px-6 py-4 rounded-xl text-2xl font-bold font-Public-Sans bg-[#D0FE42] text-black hover:border-white w-fit mx-auto xl:ml-0 lg:ml-0 hover:shadow-[#D0FE4260] hover:scale-105 hover:shadow-xl transition-all md:ml-0"
               >
                 Descubra o Best Broker
-              </a>
+              </button>
             </template>
           </GradientBackground>
         </div>

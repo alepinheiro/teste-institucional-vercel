@@ -47,13 +47,17 @@
                   <p>Ou <b>R$849,99</b> à vista no PIX</p>
                 </div>
 
-                <button
+                <a
                   class="w-fit px-6 py-4 flex flex-row items-center gap-2 border-4 rounded-xl font-bold bg-[#D0FE42] hover:bg-[#0063F2] transition-all border-white text-black uppercase"
-                  @click="openLink()"
+                  :href="
+                    $options.information.bestBroker.hotmart +
+                    useObjectToQueryString($route.query)
+                  "
+                  target="_blank"
                 >
                   <i class="fa-solid fa-cart-shopping"></i>
                   <span> Compre agora </span>
-                </button>
+                </a>
               </div>
 
               <img
@@ -71,19 +75,15 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import GradientBackground from '@/components/bestBroker/gradientBackground.component.vue'
-
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'OfferSection',
   components: { GradientBackground },
   data() {
-    return {}
-  },
-  methods: {
-    openLink() {
-      window.open(this.$options.information.bestBroker.hotmart + this.$root?.utms, '_blank')
-    },
-
+    return {
+      useObjectToQueryString,
+    }
   },
 })
 </script>

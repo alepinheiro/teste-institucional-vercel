@@ -1,7 +1,7 @@
 <template>
   <section class="w-full py-10 bg-black border-b border-[#D0FE42]">
     <div class="md:max-w-2xl max-w-7xl mx-auto px-5">
-      <div class="flex flex-col xl:flex-row ">
+      <div class="flex flex-col xl:flex-row">
         <div class="flex flex-col gap-5 lg:w-4/6 lg:mx-auto xl:pr-8">
           <img
             src="/images/bestBroker/logoBestHub.svg"
@@ -20,12 +20,16 @@
             completo para o seu negócio.
           </h2>
           <div class="w-full text-center py-4">
-            <button
-            class="py-4 px-6 bg-[#C7C7C7] hover:bg-[#D0FE42] text-black text-sm font-bold rounded"
-            @click="openLink()"
+            <a
+              class="py-4 px-6 bg-[#C7C7C7] hover:bg-[#D0FE42] text-black text-sm font-bold rounded"
+              :href="
+                $options.information.bestHubApp.subscribe +
+                useObjectToQueryString($route.query)
+              "
+              target="_blank"
             >
               Conheça o BestHub
-            </button>
+            </a>
           </div>
         </div>
         <div class="flex flex-row flex-wrap gap-4 py-5 max-w-7xl">
@@ -48,12 +52,14 @@
   </section>
 </template>
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue'
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import { defineComponent } from 'vue'
+
 export default defineComponent({
   name: 'BestHub',
   data() {
     return {
+      useObjectToQueryString,
       bestHubCards: [
         {
           id: 2,
@@ -86,10 +92,5 @@ export default defineComponent({
       ],
     }
   },
-  methods:{
-    openLink() {
-      window.open(this.$options.information.bestHubApp.subscribe + (this.$root as IRootExtension).utms, '_blank')
-    },
-  }
 })
 </script>
