@@ -8,40 +8,46 @@
           <h2 class="text-xl font-semibold text-black py-4">Sobre</h2>
 
           <div class="sm:text-sm text-black pb-6">
-            <router-link
-              :to="'/sobre' + $root.utms"
+            <RouterLink
+              :to="{ path: '/sobre', query: $route.query }"
               class="hover:text-black"
               aria-label="Sobre a SejaBest"
             >
               Sobre a SejaBest
-            </router-link>
+            </RouterLink>
           </div>
 
           <div class="sm:text-sm text-black pb-6">
             <a
-              :href="'https://portal.seja.best/' + $root.utms"
+              :href="
+                'https://portal.seja.best/' +
+                useObjectToQueryString($route.query)
+              "
               aria-label="Acesse nosso Portal"
               class="hover:text-black"
               style="text-decoration: none"
               target="_blank"
-              >
+            >
               Portal
             </a>
           </div>
 
           <div class="sm:text-sm text-black pb-6">
-            <router-link
-              :to="'/bestHub' + $root.utms"
+            <RouterLink
+              :to="{ path: '/bestHub', query: $route.query }"
               class="hover:text-black"
               aria-label="Seja um Parceiro"
             >
               Seja um Parceiro
-            </router-link>
+            </RouterLink>
           </div>
 
           <div class="sm:text-sm text-black pb-6">
             <a
-              :href="$options.information.appPartner"
+              :href="
+                $options.information.appPartner +
+                useObjectToQueryString($route.query)
+              "
               class="hover:text-black"
               style="text-decoration: none"
               aria-label="Acesse a área do Parceiro"
@@ -53,7 +59,9 @@
 
           <div class="sm:text-sm text-black pb-6">
             <a
-              :href="$options.information.jobs"
+              :href="
+                $options.information.jobs + useObjectToQueryString($route.query)
+              "
               class="hover:text-black"
               style="text-decoration: none"
               aria-label="Trabalhe Conosco"
@@ -64,23 +72,24 @@
           </div>
 
           <div class="sm:text-sm text-black pb-6">
-            <router-link
-              to="/faq"
+            <RouterLink
+              :to="{ path: '/faq', query: $route.query }"
               class="hover:text-black"
               aria-label="Dúvidas Frequentes"
             >
               Dúvidas Frequentes
-            </router-link>
+            </RouterLink>
           </div>
 
           <div class="md:hidden xl:hidden lg:hidden">
-            <h2 class="text-xl font-semibold text-black pt-4">
-              Fale Conosco
-            </h2>
+            <h2 class="text-xl font-semibold text-black pt-4">Fale Conosco</h2>
 
             <div class="text-black pb-2">
               <a
-                :href="$options.information.socialMedia.whatsapp"
+                :href="
+                  $options.information.socialMedia.whatsapp +
+                  useObjectToQueryString($route.query)
+                "
                 aria-label="Fale conosco pelo WhatsApp"
                 class="hover:text-black"
                 style="text-decoration: none"
@@ -102,18 +111,16 @@
               </a>
             </div>
 
-            <h2 class="text-xl font-semibold text-black pt-6">
-              Dúvidas?
-            </h2>
+            <h2 class="text-xl font-semibold text-black pt-6">Dúvidas?</h2>
 
             <div class="text-sm text-black pb-2">
-              <router-link
-                to="/faq"
+              <RouterLink
+                :to="{ path: '/faq', query: $route.query }"
                 class="hover:text-black"
                 aria-label="Acesse nosso FAQ"
               >
                 Acesse nosso FAQ
-              </router-link>
+              </RouterLink>
             </div>
           </div>
         </div>
@@ -122,28 +129,31 @@
           <h2 class="text-xl font-semibold text-black py-4">Podutos</h2>
 
           <div class="sm:text-sm text-black pb-6">
-            <router-link
-              :to="'/financiamento-imobiliario' + $root.utms"
+            <RouterLink
+              :to="{ path: '/financiamento-imobiliario', query: $route.query }"
               aria-label="Financiamento"
               class="hover:text-black"
             >
               Financiamento Imobiliário
-            </router-link>
+            </RouterLink>
           </div>
 
           <div class="sm:text-sm text-black pb-6">
-            <router-link
-              :to="'/home-equity' + $root.utms"
+            <RouterLink
+              :to="{ path: '/home-equity', query: $route.query }"
               aria-label="Crédito com Garantia de Imóvel "
               class="hover:text-black"
             >
-            Crédito com Garantia de Imóvel 
-            </router-link>
+              Crédito com Garantia de Imóvel
+            </RouterLink>
           </div>
 
           <div class="sm:text-sm text-black pb-6">
             <a
-              :href="$options.information.appSimulator + $root.utms"
+              :href="
+                $options.information.appSimulator +
+                useObjectToQueryString($route.query)
+              "
               class="hover:text-black"
               style="text-decoration: none"
               aria-label="Simule seu crédito"
@@ -155,7 +165,10 @@
 
           <div class="sm:text-sm text-black pb-6">
             <a
-              :href="$options.information.appClient"
+              :href="
+                $options.information.appClient +
+                useObjectToQueryString($route.query)
+              "
               class="hover:text-black"
               style="text-decoration: none"
               aria-label="Acesse sua conta"
@@ -166,23 +179,23 @@
           </div>
 
           <div class="sm:text-sm text-black pb-6">
-            <router-link
-              :to="'/termos-de-uso' + $root.utms"
+            <RouterLink
+              :to="{ path: '/termos-de-uso', query: $route.query }"
               aria-label="Termos de uso"
               class="hover:text-textPrimary"
             >
               Termos de uso
-            </router-link>
+            </RouterLink>
           </div>
 
           <div class="sm:text-sm text-black pb-6">
-            <router-link
-              :to="'/politica-de-privacidade' + $root.utms"
+            <RouterLink
+              :to="{ path: '/politica-de-privacidade', query: $route.query }"
               aria-label="Política de Privacidade"
               class="hover:text-black"
             >
               Política de Privacidade
-            </router-link>
+            </RouterLink>
           </div>
 
           <div class="md:hidden xl:hidden lg:hidden">
@@ -194,7 +207,10 @@
 
             <div class="text-xl font-semibold text-black py-4">
               <a
-                :href="$options.information.location"
+                :href="
+                  $options.information.location +
+                  useObjectToQueryString($route.query)
+                "
                 class="hover:text-textPrimary"
                 style="text-decoration: none"
                 aria-label="Veja no Google"
@@ -225,13 +241,14 @@
         </div>
 
         <div class="sm:hidden">
-          <h2 class="text-xl font-semibold text-black pt-4">
-            Fale Conosco
-          </h2>
+          <h2 class="text-xl font-semibold text-black pt-4">Fale Conosco</h2>
 
           <div class="text-black pb-2">
             <a
-              :href="$options.information.socialMedia.whatsapp"
+              :href="
+                $options.information.socialMedia.whatsapp +
+                useObjectToQueryString($route.query)
+              "
               class="hover:text-black"
               style="text-decoration: none"
               aria-label="Fale conosco pelo WhatsApp"
@@ -258,21 +275,22 @@
           </h2>
           <p class="text-black pb-2">contato@seja.best</p>
 
-          <h2 class="text-xl font-semibold text-black pt-4">
-            Dúvidas?
-          </h2>
+          <h2 class="text-xl font-semibold text-black pt-4">Dúvidas?</h2>
           <div class="text-black pb-2">
-            <router-link
-              to="/faq"
+            <RouterLink
+              :to="{ path: '/faq', query: $route.query }"
               class="hover:text-black"
               aria-label="Acesse nosso FAQ"
             >
               Acesse nosso FAQ
-            </router-link>
+            </RouterLink>
           </div>
           <div class="text-xl font-semibold text-black py-4">
             <a
-              :href="$options.information.location"
+              :href="
+                $options.information.location +
+                useObjectToQueryString($route.query)
+              "
               class="hover:text-textPrimary"
               style="text-decoration: none"
               aria-label="Veja no Google"
@@ -314,7 +332,10 @@
             class="sm:w-7/12 flex justify-end sm:mr-0 sm:ml-auto mt-auto mb-auto"
           >
             <a
-              :href="$options.information.socialMedia.youtube"
+              :href="
+                $options.information.socialMedia.youtube +
+                useObjectToQueryString($route.query)
+              "
               aria-label="Acesse nosso Youtube"
               style="text-decoration: none"
               target="_blank"
@@ -331,7 +352,10 @@
               </svg>
             </a>
             <a
-              :href="$options.information.socialMedia.linkedin"
+              :href="
+                $options.information.socialMedia.linkedin +
+                useObjectToQueryString($route.query)
+              "
               style="text-decoration: none"
               aria-label="Acesse nosso LinkedIn"
               target="_blank"
@@ -348,7 +372,10 @@
               </svg>
             </a>
             <a
-              :href="$options.information.socialMedia.instagram"
+              :href="
+                $options.information.socialMedia.instagram +
+                useObjectToQueryString($route.query)
+              "
               aria-label="Acesse nosso Instagram"
               style="text-decoration: none"
               target="_blank"
@@ -365,7 +392,10 @@
               </svg>
             </a>
             <a
-              :href="$options.information.socialMedia.facebook"
+              :href="
+                $options.information.socialMedia.facebook +
+                useObjectToQueryString($route.query)
+              "
               aria-label="Acesse nosso Facebook"
               style="text-decoration: none"
               target="_blank"
@@ -382,7 +412,10 @@
               </svg>
             </a>
             <a
-              :href="$options.information.socialMedia.telegram"
+              :href="
+                $options.information.socialMedia.telegram +
+                useObjectToQueryString($route.query)
+              "
               aria-label="Acesse nosso Telegram"
               style="text-decoration: none"
               target="_blank"
@@ -444,6 +477,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import bacenImage from '@/components/imagesSVG/partnersLogo/bacen.image.vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'FooterComponent',
@@ -451,6 +485,7 @@ export default defineComponent({
   data() {
     return {
       isVisible: false,
+      useObjectToQueryString,
     }
   },
 })

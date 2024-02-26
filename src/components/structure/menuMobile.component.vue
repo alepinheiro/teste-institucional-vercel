@@ -337,7 +337,7 @@
       >
         <a
           :href="
-            'https://portal.seja.best/' + objectToQueryString($route.query)
+            'https://portal.seja.best/' + useObjectToQueryString($route.query)
           "
           style="text-decoration: none"
           class="hover:font-semibold"
@@ -395,7 +395,7 @@
         <a
           :href="
             $options.information.appSimulator +
-            objectToQueryString($route.query)
+            useObjectToQueryString($route.query)
           "
           style="text-decoration: none"
           target="_blank"
@@ -409,6 +409,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'MenuMobileComponent',
@@ -439,6 +440,7 @@ export default defineComponent({
       hoverSVG2: false,
       hoverSVG3: false,
       hoverSVG4: false,
+      useObjectToQueryString,
     }
   },
   methods: {
@@ -474,14 +476,6 @@ export default defineComponent({
     },
     beforeDestroy() {
       window.removeEventListener('click', this.handleClickOutside)
-    },
-    objectToQueryString(obj: { [x: string]: any }) {
-      const queryString = Object.keys(obj)
-        .map(
-          (key) => `${encodeURIComponent(key)}=${encodeURIComponent(obj[key])}`,
-        )
-        .join('&')
-      return '?' + queryString
     },
   },
 })
