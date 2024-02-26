@@ -16,7 +16,8 @@
         </p>
         <hr class="hidden sm:block border-zinc-400" />
         <a
-          :href="`https://simulador.seja.best/?${utm.toString()}`"
+          :href="`https://simulador.seja.best/${useObjectToQueryString(route.query)}`"
+          target="_blank"
           class="font-bold text-white bg-complementaryColor1 rounded px-4 py-2 w-fit sm:hidden hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
           >Simule on-line de graça
         </a>
@@ -61,7 +62,8 @@
         </span>
       </div>
       <a
-        :href="`https://simulador.seja.best/?${utm.toString()}`"
+        :href="`https://simulador.seja.best/${useObjectToQueryString(route.query)}`"
+        target="_blank"
         class="font-bold text-white bg-complementaryColor1 rounded px-4 py-2 w-fit hidden sm:block sm:mt-8 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
       >
         Simule on-line de graça
@@ -70,11 +72,10 @@
   </section>
 </template>
 <script lang="ts" setup>
-const utm = new URLSearchParams({
-  utm_source: 'institucional-seja-best',
-  utm_medium: 'home-equity-taxes-cashbest',
-  utm_campaign: 'landing-pages-dez-23',
-})
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 
 const products = [
   {

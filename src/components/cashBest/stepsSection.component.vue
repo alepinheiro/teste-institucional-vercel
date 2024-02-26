@@ -13,7 +13,11 @@
           </p>
         </div>
         <div class="sm:hidden">
-          <img class="h-16" src="/images/logoBest/logoCashBestHomeEquity.svg" alt="" />
+          <img
+            class="h-16"
+            src="/images/logoBest/logoCashBestHomeEquity.svg"
+            alt=""
+          />
         </div>
       </div>
       <component
@@ -30,12 +34,20 @@
           <div
             class="flex flex-col gap-12 lg:gap-10 items-start font-Public-Sans"
           >
-            <i :class="icon" class="text-primary group-hover:text-white w-5 h-5"></i>
-            <h3 class="text-2xl lg:text-lg sm:text-xl font-bold group-hover:text-white">
+            <i
+              :class="icon"
+              class="text-primary group-hover:text-white w-5 h-5"
+            ></i>
+            <h3
+              class="text-2xl lg:text-lg sm:text-xl font-bold group-hover:text-white"
+            >
               {{ id }}. {{ title }}
             </h3>
             <!-- eslint-disable-next-line vue/no-v-html -->
-            <p class="text-base group-hover:text-white" v-html="description"></p>
+            <p
+              class="text-base group-hover:text-white"
+              v-html="description"
+            ></p>
             <a
               v-if="callToAction"
               :href="callToAction[1]"
@@ -51,7 +63,10 @@
 </template>
 <script setup lang="ts">
 import { SwiperOptions } from 'swiper/types'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const sliderOptions: SwiperOptions = {
   spaceBetween: 20,
   slidesPerView: 'auto',
@@ -66,12 +81,6 @@ const sliderOptions: SwiperOptions = {
   },
 }
 
-const utm = new URLSearchParams({
-  utm_source: 'institucional-seja-best',
-  utm_medium: 'cards-section-cashbest',
-  utm_campaign: 'landing-pages-dez-23',
-})
-
 const stepCards = [
   {
     id: 1,
@@ -81,7 +90,7 @@ const stepCards = [
       'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
     callToAction: [
       'Simule agora',
-      `https://simulador.seja.best/?${utm.toString()}`,
+      `https://simulador.seja.best/${useObjectToQueryString(route.query)}`,
     ],
   },
   {

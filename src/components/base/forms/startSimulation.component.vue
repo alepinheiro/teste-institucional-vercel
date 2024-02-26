@@ -26,7 +26,7 @@
           class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
-      
+
       <div class="flex flex-col gap-2">
         <label for="creditAmount" class="sm:text-white">
           De quanto você precisa?
@@ -59,6 +59,7 @@ import {
   useCurrencyInput,
   CurrencyDisplay,
 } from 'vue-currency-input'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 const options: CurrencyInputOptions = {
   currency: 'BRL',
@@ -74,7 +75,7 @@ const options: CurrencyInputOptions = {
 const { inputRef: realtyValue } = useCurrencyInput(options)
 const { inputRef: creditAmount } = useCurrencyInput(options)
 
-const { fullPath } = useRoute()
+const route = useRoute()
 
 defineProps({
   showHomeEquity: {
@@ -106,9 +107,7 @@ const onSubmit = (event: Event) => {
   localStorage.setItem('simulationData', JSON.stringify(data))
   window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
   window.open(
-    `${information.appSimulator}?${fullPath.split('?')[1]}&creditAmount=${
-      data.creditAmount
-    }`,
+    information.appSimulator + useObjectToQueryString(route.query),
     '_blank',
   )
 }
