@@ -79,7 +79,7 @@ export default defineComponent({
         {
           id: 4,
           title: 'O que é uma simulação detalhada?',
-          text: 'Uma simulação detalhada dentro do BesHub, traz todos os detalhes da operação que você escolheu, segundo uma taxa base de mercado (Não é um taxa final, mas sim usando uma base).',
+          text: 'Uma simulação detalhada dentro do BesHub, traz todos os detalhes da operação que você escolheu, segundo uma taxa base de mercado (Não é um taxa final).',
           isOpen: false,
         },
         {
