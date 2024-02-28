@@ -29,7 +29,7 @@
               loading="eager"
             />
             <PlayButton
-              class="absolute inset-0 z-0"
+              class="absolute inset-x-0 z-0 bottom-1/4"
               @click="openVideoOverlay(videoId)"
             />
           </div>
@@ -79,7 +79,7 @@
               loading="lazy"
             />
             <PlayButton
-              class="absolute inset-0 z-10"
+              class="absolute inset-x-0 bottom-1/3 z-10"
               @click="openVideoOverlay(videoId)"
             />
           </div>
