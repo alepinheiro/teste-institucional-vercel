@@ -13,17 +13,13 @@
       />
     </div>
     <div class="w-full my-auto flex">
-      <div
-        class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl m-auto z-10 w-full"
-      >
+      <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl m-auto z-10 w-full">
         <div class="flex md:w-5/6 py-10 px-5">
           <div
             class="flex flex-col justify-between items-start gap-10 text-white lg:w-2/3 xl:w-1/2"
           >
             <BestPlayLogo class="h-16" />
-            <h2
-              class="text-5xl font-bold text-left"
-            >
+            <h2 class="text-5xl font-bold text-left">
               {{ title }}
             </h2>
             <!--  -->
@@ -47,14 +43,15 @@
               </div>
             </div>
             <!--  -->
-            <p
-              class="text-xl md:w-5/6 lg:w-5/6 leading-loose text-left"
-            >
+            <p class="text-xl md:w-5/6 lg:w-5/6 leading-loose text-left">
               Explore temas como crédito, financiamento, empreendedorismo e
               mercado financeiro, visando levá-lo à sua melhor versão.
             </p>
             <a
-              href="https://www.youtube.com/@SejaBest"
+              :href="
+                'https://www.youtube.com/@SejaBest' +
+                useObjectToQueryString($route.query)
+              "
               class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold ml-0"
             >
               Inscreva-se agora
@@ -71,6 +68,7 @@ import BestPlayLogo from '@/components/imagesSVG/logos/bestPlay.component.vue'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import { defineComponent, ref } from 'vue'
 import { gsap } from 'gsap'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'BestPlayDesktop',
@@ -92,6 +90,7 @@ export default defineComponent({
   },
   data() {
     return {
+      useObjectToQueryString,
       stats: [
         {
           icon: 'fa-solid fa-video-camera',

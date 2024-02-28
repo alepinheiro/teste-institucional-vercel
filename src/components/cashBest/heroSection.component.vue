@@ -61,8 +61,7 @@
           class="bg-[#EFEFEF] p-2  rounded-2xl   sm:w-11/12 w-9/12 md:w-full mx-auto"
           @submit="onSubmit"
         />
-        <a
-          href="#"
+        <button
           v-scroll-to="'#businessPartners'"
           class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline"
         >
@@ -70,7 +69,7 @@
           <span class="text-xs"
             >Ou saiba mais sobre o CashBest rolando para baixo</span
           >
-        </a>
+        </button>
       </div>
     </div>
   </section>
@@ -85,10 +84,14 @@ import DoubleInputsForm from '@/components/cashBest/heroForm.component.vue'
 import type { SwiperOptions } from 'swiper/types'
 import VideoButton from '@/components/base/videoButton.component.vue'
 import { ref } from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+import { useRoute } from 'vue-router'
 
 defineProps<{
   showMenu: boolean
 }>()
+
+const route = useRoute()
 
 const doubleFormData = ref<{
   assetValue: number
@@ -134,5 +137,5 @@ const sliderOptions: SwiperOptions = {
   },
 }
 
-const onSubmit = () => window.open(information.appSimulator, '_blank')
+const onSubmit = () => window.open(information.appSimulator + useObjectToQueryString(route.query), '_blank')
 </script>

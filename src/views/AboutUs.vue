@@ -13,7 +13,7 @@
       <div class="absolute inset-0  -z-10 hidden min-md:flex">
         <img src="/images/aboutUs/backgroundLines.png" class="w-full object-cover scale-x-150 mt-auto">
       </div>
-      <OurMotivation class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
+      <OurMotivation id="ourMotivation" class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
     </div>
     <MissionSection class="py-10 px-5" />
     <AboutNumbers class="py-12 md:py-16 xl:py-28" />

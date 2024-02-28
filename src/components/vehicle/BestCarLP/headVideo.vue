@@ -55,7 +55,7 @@
                         <a
                           :href="
                             $options.information.appVehicleSimulator +
-                            $root.utms
+                            useObjectToQueryString($route.query)
                           "
                           style="text-decoration: none"
                           aria-label="Clique aqui para simular seu financiamento"
@@ -84,7 +84,7 @@
         <TopBarComponent v-if="showMenu" class="relative text-white" />
 
         <div class="w-full flex items-center justify-center">
-          <div class="w-6/2 pt-4 mt-auto mb-auto justify-cente item-center">
+          <div class="w-6/2 pt-4 mt-auto mb-auto justify-center items-center">
             <div class="bg-secondary p-6 rounded-lg shadow-lg">
               <div class="text-5xl titleFontBold text-white pb-6">
                 <h1
@@ -137,6 +137,23 @@
                     placeholder=""
                   />
                 </div>
+                <div class="w-3/12">
+                  <div
+                    class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
+                  >
+                    <a
+                      :href="
+                        $options.information.appVehicleSimulator +
+                        useObjectToQueryString($route.query)
+                      "
+                      style="text-decoration: none"
+                      aria-label="Clique aqui para simular seu financiamento"
+                      target="_blank"
+                    >
+                      Simular
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -147,9 +164,13 @@
     <!-- 📱 Mobile -->
     <section class="xl:hidden lg:hidden md:hidden bg-primary">
       <div class="maxWidth">
-        <TopBarComponent v-if="showMenu" position="relative text-white" />
+        <TopBarComponent
+          v-if="showMenu"
+          position="relative"
+          class="text-white"
+        />
 
-        <div class="w-full">
+        <div class="w-full pt-10">
           <div class="py-8 sm:py-4 mt-4 w-full bg-secondary p-6 rounded-lg">
             <div class="rounded-xl w-full">
               <div class="text-4xl titleFontBold text-white pb-2">
@@ -208,7 +229,8 @@
                     >
                       <a
                         :href="
-                          $options.information.appVehicleSimulator + $root.utms
+                          $options.information.appVehicleSimulator +
+                          useObjectToQueryString($route.query)
                         "
                         style="text-decoration: none"
                         aria-label="Clique aqui para simular seu financiamento"
@@ -230,7 +252,8 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import TopBarComponent from '@/components/structure/topbar.component.vue'
+import TopBarComponent from '@/components/structure/topBar/index.component.vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'HeadVideo',
@@ -243,6 +266,7 @@ export default defineComponent({
   },
   data() {
     return {
+      useObjectToQueryString,
       isVisible: false,
       value: 40000,
       showVideo: false,

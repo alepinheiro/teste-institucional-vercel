@@ -55,15 +55,15 @@
                 {{ description }}
               </p>
             </div>
-          </div>  
+          </div>
 
           <hr class="border-1 border-textSecondary hidden min-lg:block" />
-          <inputsForm
+          <InputsForm
             v-model="formData"
             class="w-full sm:bg-[#EFEFEF] rounded-xl py-4"
             @submit="onSubmit"
           />
-          
+
 
         </div>
         <!--  -->
@@ -83,11 +83,14 @@
 </template>
 <script lang="ts" setup>
 import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
-import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
+import InputsForm from '@/components/finanBestLp/heroForm.component.vue'
 import PercentIcon from '@/assets/svg/percentWithBackground.vue'
 import information from '@/configurations/information'
-import InputsForm from '@/components/finanBestLp/heroForm.component.vue'
 import { ref } from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+import { useRoute } from 'vue-router';
+
+const route = useRoute()
 
 const formData = ref<{
   assetValue: number
@@ -96,30 +99,7 @@ const formData = ref<{
   assetValue: 500000,
   creditValue: 400000,
 })
-const onSubmit = () => window.open(information.appSimulator, '_blank')
-const smallScreensFormProps = {
-  minimumValue: 50000,
-  maximumValue: 30000000,
-  defaultValue: 350000,
-  backgroundColor: 'transparent',
-  title: 'Quanto custa o seu sonho?',
-}
-
-const largeScreensFormProps = {
-  minimumValue: 50000,
-  maximumValue: 30000000,
-  defaultValue: 350000,
-  backgroundColor: 'transparent',
-  title: 'Quanto custa o seu sonho?',
-}
-
-const formValue = ref(0)
-
-const utm = new URLSearchParams({
-  utm_source: 'institucional-seja-best',
-  utm_medium: 'hero-section-finanbest',
-  utm_campaign: 'landing-pages-dez-23',
-})
+const onSubmit = () => window.open(information.appSimulator + useObjectToQueryString(route.query), '_blank')
 
 const cards = [
   {
@@ -134,7 +114,4 @@ const cards = [
   },
 ]
 
-const openSimulation = () => {
-  window.open(`${information.appSimulator}?${utm.toString()}`, '_blank')
-}
 </script>

@@ -9,6 +9,7 @@
 import notificationPopUp from '@/components/base/notificationPopUp.component.vue'
 import { NotificationInterface } from '@/interfaces/notification.interface'
 import { defineComponent } from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
 
 export default defineComponent({
   components: { notificationPopUp },
@@ -22,17 +23,8 @@ export default defineComponent({
         showMessage: false,
         buttonText: 'Continuar',
       } as NotificationInterface,
-      utms: '' as string,
+      utms: useObjectToQueryString(this.$route.query),
     }
-  },
-  mounted() {
-    let fullUrl = this.$route.fullPath.split('?')
-    if (this.$route.fullPath.includes('?') && this.$root) {
-      this.$root.utms = '?' + fullUrl[1]
-    }
-    setTimeout(() => {
-      this.isLoading = true
-    }, 600)
   },
 })
 </script>

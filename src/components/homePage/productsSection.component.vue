@@ -1,8 +1,10 @@
 <template>
   <section>
     <div class="flex flex-col px-5">
-      <div class="flex flex-col text-textPrimary gap-5 text-center lg:text-left xl:text-left lg:max-w-5xl xl:max-w-7xl mx-auto w-full px-5">
-        <h2 class="text-xl min-md:text-3xl font-bold ">
+      <div
+        class="flex flex-col text-textPrimary gap-5 text-center lg:text-left xl:text-left lg:max-w-5xl xl:max-w-7xl mx-auto w-full px-5"
+      >
+        <h2 class="text-xl min-md:text-3xl font-bold">
           Como podemos ajudar você ou seu negócio?
         </h2>
         <p class="min-md:text-xl">
@@ -32,13 +34,16 @@
 
           <div class="flex flex-row items-center gap-5 text-sm">
             <a
-              :href="information.appSimulator + $root.utms"
+              :href="information.appSimulator + useObjectToQueryString($route.query)"
               target="_blank"
               class="bg-complementaryColor1 px-3 py-2 rounded text-white font-bold"
             >
               Simule grátis
             </a>
-            <RouterLink :to="moreInformation + $root.utms" class="underline text-xs text-textSecondary">
+            <RouterLink
+              :to="{ path: moreInformation, query: $route.query }"
+              class="underline text-xs text-textSecondary"
+            >
               Saiba mais
             </RouterLink>
           </div>
@@ -57,6 +62,7 @@ import DollarSignIcon from '@/components/homePage/icons/dollarSign.component.vue
 import DollarBagIcon from '@/components/homePage/icons/dollarBag.component.vue'
 import CarIcon from '@/components/homePage/icons/carIcon.component.vue'
 import information from '@/configurations/information'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 const sliderOptions: SwiperOptions = {
   spaceBetween: 20,
