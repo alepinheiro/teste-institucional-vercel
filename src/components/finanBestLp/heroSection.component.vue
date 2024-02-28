@@ -21,10 +21,10 @@
         class="lg:w-7/12 xl:w-5/12 lg:flex-initial min-md:mt-auto  md:pb-10 pb-20 pt-32 min-lg:pb-32 "
       >
         <div
-          class="bg-gradient-to-b min-md:bg-gradient-to-t via-white from-transparent to-white/80 lg:shadow-md xl:shadow-md flex flex-col gap-6 p-8 xl:px-6 py-4 min-md:rounded-xl min-hd:shadow-lg h-full justify-end"
+          class="bg-gradient-to-b min-md:bg-gradient-to-t sm:text-center via-white from-transparent to-white/80 lg:shadow-md xl:shadow-md flex flex-col gap-6 p-8 xl:px-6 py-6 min-md:rounded-xl min-hd:shadow-lg md:shadow-lg h-full justify-end"
         >
           <h1
-            class="min-lg:font-darkerGrotesque font-Public-Sans text-2xl md:text-4xl min-lg:text-6xl text-primary leading-tight whitespace-pre-line min-lg:font-bold"
+            class="min-lg:font-darkerGrotesque font-Public-Sans text-2xl  md:text-4xl min-lg:text-6xl text-primary leading-tight whitespace-pre-line min-lg:font-bold"
           >
             <span class="min-lg:hidden">
               <b>FinanBest:</b>
@@ -36,7 +36,7 @@
             </span>
           </h1>
           <!--  -->
-          <p class="text-base text-textPrimary text-justify min-lg:hidden">
+          <p class="text-base text-textPrimary text-justify sm:text-center min-lg:hidden">
             Financie seu imóvel com as melhores condições do mercado.
             <b
               >Sem filas, sem gerentes, sem complexidade e com um time de
@@ -57,27 +57,20 @@
             </div>
           </div>
 
-          <hr class="border border-textSecondary hidden min-lg:block" />
-
-          <InputWithSlider
-            v-model="formValue"
-            :props="smallScreensFormProps"
-            class="min-lg:hidden"
-            @submit="openSimulation"
+          <hr class="border-1 border-textSecondary hidden min-lg:block" />
+          <InputsForm
+            v-model="formData"
+            class="w-full sm:bg-[#EFEFEF] rounded-xl py-4"
+            @submit="onSubmit"
           />
 
-          <InputWithSlider
-            v-model="formValue"
-            :props="largeScreensFormProps"
-            class="min-lg:flex hidden"
-            @submit="openSimulation"
-          />
+
         </div>
         <!--  -->
         <a
           href="#"
           v-scroll-to="'#businessPartners'"
-          class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline"
+          class="flex gap-2 justify-between w-fit mx-auto text-textSecondary sm:pt-4 pt-8 hover:underline"
         >
           <i class="fa-solid fa-chevron-down animate-bounce"></i>
           <span class="text-xs"
@@ -90,34 +83,23 @@
 </template>
 <script lang="ts" setup>
 import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
-import InputWithSlider from '@/components/base/forms/inputWithSlider.component.vue'
+import InputsForm from '@/components/finanBestLp/heroForm.component.vue'
 import PercentIcon from '@/assets/svg/percentWithBackground.vue'
 import information from '@/configurations/information'
 import { ref } from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+import { useRoute } from 'vue-router';
 
-const smallScreensFormProps = {
-  minimumValue: 50000,
-  maximumValue: 30000000,
-  defaultValue: 350000,
-  backgroundColor: 'transparent',
-  title: 'Quanto custa o seu sonho?',
-}
+const route = useRoute()
 
-const largeScreensFormProps = {
-  minimumValue: 50000,
-  maximumValue: 30000000,
-  defaultValue: 350000,
-  backgroundColor: 'transparent',
-  title: 'Quanto custa o seu sonho?',
-}
-
-const formValue = ref(0)
-
-const utm = new URLSearchParams({
-  utm_source: 'institucional-seja-best',
-  utm_medium: 'hero-section-finanbest',
-  utm_campaign: 'landing-pages-dez-23',
+const formData = ref<{
+  assetValue: number
+  creditValue: number
+}>({
+  assetValue: 500000,
+  creditValue: 400000,
 })
+const onSubmit = () => window.open(information.appSimulator + useObjectToQueryString(route.query), '_blank')
 
 const cards = [
   {
@@ -132,7 +114,4 @@ const cards = [
   },
 ]
 
-const openSimulation = () => {
-  window.open(`${information.appSimulator}?${utm.toString()}`, '_blank')
-}
 </script>

@@ -18,7 +18,7 @@
     />
 
     <HeroSection :show-menu="showMenu" class="pb-14 min-md:pb-0 relative z-0" />
-
+  
     <div class="bg-gradient-to-b to-white from-[#F1F1F1]">
       <BusinessPartners
         id="businessPartners"
@@ -64,12 +64,12 @@ import AboutUs from '@/components/base/aboutUs.component.vue'
 import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
-import HeroSection from '@/components/cashBest/heroSection.component.vue'
-import Solutions from '@/components/cashBest/solutionsSection.component.vue'
-import Steps from '@/components/cashBest/stepsSection.component.vue'
+import HeroSection from '@/components/cashBestLpEmprestimo/heroSection.component.vue'
+import Solutions from '@/components/cashBestLpEmprestimo/solutionsSection.component.vue'
+import Steps from '@/components/cashBestLpEmprestimo/stepsSection.component.vue'
 import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
-import TheProduct from '@/components/cashBest/theProduct.component.vue'
+import TheProduct from '@/components/cashBestLpEmprestimo/theProduct.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
 import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
 

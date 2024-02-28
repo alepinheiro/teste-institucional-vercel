@@ -5,14 +5,14 @@
     >
       <div class="flex flex-col gap-6 sm:gap-8 flex-1">
         <h2 class="text-4xl sm:text-2xl text-primary font-bold">
-          O crédito mais barato do mercado.
+          O empréstimo mais barato do mercado.
         </h2>
         <p
           class="text-textPrimary w-5/6 md:w-full md:text-justify sm:w-full text-base sm:text-justify"
         >
           Ao utilizar seu imóvel como garantia, você desfruta das taxas mais
           baixas, garantindo um
-          <b> crédito competitivo e acessível. </b>
+          <b> empréstimo competitivo e acessível. </b>
         </p>
         <hr class="hidden sm:block border-zinc-400" />
         <a

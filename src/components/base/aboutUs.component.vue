@@ -5,10 +5,10 @@
       'bg-primary': container.bgColor === 'PRIMARY',
       'bg-bgDarkColor': container.bgColor === 'BGDARKCOLOR',
     }"
-    class="py-24 w-full"
+    class="py-20 w-full"
   >
     <div
-      class="max-w-7xl lg:max-w-5xl flex flex-col gap-24 sm:gap-8 w-full mx-auto px-5"
+      class="max-w-7xl lg:max-w-5xl flex flex-col gap-12 md:gap-12 sm:gap-8 w-full mx-auto px-5"
     >
       <div
         class="flex flex-row gap-2 sm:flex-col sm:gap-5 w-10/12 mx-auto items-center"
@@ -27,15 +27,18 @@
           </h2>
         </div>
       </div>
-      <div class="sm:grid grid-flow-row grid-cols-2 flex-row flex-wrap items-center gap-6 mx-auto hidden">
+      <div>
+      <h3 class="text-textPrimary xl:hidden lg:hidden md:hidden text-xl text-center text-white py-8">Premiada e Reconhecida pelo mercado</h3>
+      <div class="w-full flex flex-wrap justify-around xl:hidden lg:hidden md:hidden">
         <img
           v-for="{ alt, id, src } of topOfSales('white')"
           :key="id"
           :src="src"
           :alt="alt"
-          class="mx-auto h-12 min-md:h-24"
+          class="mx-auto h-auto min-md:h-24 w-[20%] my-2"
         />
       </div>
+    </div>
       <div class="flex flex-row sm:flex-col gap-4 text-white">
         <div
           v-for="{ id, icon, title, description } in cardContent"
@@ -58,6 +61,8 @@
           </div>
         </div>
       </div>
+      <div>
+      <h3 class="text-textPrimary sm:hidden text-2xl text-center text-white py-16">Premiada e Reconhecida pelo mercado</h3>
       <div class="flex flex-row gap-6 mx-auto flex-wrap items-center sm:hidden">
         <img
           v-for="{ alt, id, src } of topOfSales('white')"
@@ -67,6 +72,7 @@
           class="h-20 md:h-16 mx-auto"
         />
       </div>
+    </div>
     </div>
   </section>
 </template>

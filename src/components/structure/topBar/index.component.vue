@@ -3,8 +3,11 @@
     <div
       class="py-5 w-full flex flex-row justify-between items-center xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto px-5"
     >
-      <RouterLink :to="'/' + $root.utms" class="w-auto h-fit">
-        <LogoSejaBestSVG class="w-auto h-8 min-lg:h-14" title="Página Inicial - SejaBest" />
+      <RouterLink :to="{ path: '/', query: $route.query }" class="w-auto h-fit">
+        <LogoSejaBestSVG
+          class="w-auto h-8 min-lg:h-14"
+          title="Página Inicial - SejaBest"
+        />
       </RouterLink>
 
       <MenuDesktop class="sm:hidden md:hidden" />
