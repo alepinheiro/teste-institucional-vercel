@@ -38,7 +38,7 @@
           type="text"
           placeholder="R$ 250.000,00"
           required
-          class="bg-zinc-200 rounded p-2 text-5xl focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
+          class="bg-zinc-200 rounded p-2 text-xl focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
       <button
