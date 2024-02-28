@@ -2,18 +2,24 @@
   <main class="bg-[#EFEFEF]">
     <TopBar customMobileMenuColor="white" color="primary" class="text-white" />
     <HeroSection
-      :background-videos="{
+      :backgroundVideos="{
         desktop: 'eYtBl05z-YM',
         mobile: 'Tp-ZcMvXBiE',
       }"
-      :show-menu="showMenu"
+      :showMenu="showMenu"
       class="sm:h-[70vh] h-screen"
     />
     <div class="relative z-0 overflow-hidden">
-      <div class="absolute inset-0  -z-10 hidden min-md:flex">
-        <img src="/images/aboutUs/backgroundLines.png" class="w-full object-cover scale-x-150 mt-auto">
+      <div class="absolute inset-0 -z-10 hidden min-md:flex">
+        <img
+          src="/images/aboutUs/backgroundLines.png"
+          class="w-full object-cover scale-x-150 mt-auto"
+        />
       </div>
-      <OurMotivation id="ourMotivation" class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
+      <OurMotivation
+        id="ourMotivation"
+        class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12"
+      />
     </div>
     <MissionSection class="py-10 px-5" />
     <AboutNumbers class="py-12 md:py-16 xl:py-28" />
@@ -42,13 +48,6 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'AboutUs',
-  props: {
-    showMenu: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
   components: {
     HeroSection,
     OurMotivation,
@@ -61,6 +60,13 @@ export default defineComponent({
     TheFooter,
     Editorial,
     TopBar,
+  },
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
   },
   data() {
     return {}

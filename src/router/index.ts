@@ -226,7 +226,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'besthub',
     component: () => import('@/views/BestHubLP.vue'),
     meta: {
-      title: 'O Melhor Hub de Crédito do Mercado',
+      title: 'BestHub: O Melhor Hub de Crédito do Mercado',
       description:
         'Quer potencializar seus negócios e fintechizar sua marca? O BestHub é a solução que você procura! ',
     },
