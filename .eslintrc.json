@@ -1,0 +1,50 @@
+{
+  "env": { "node": true },
+  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended", "plugin:@typescript-eslint/recommended", "plugin:storybook/recommended", "plugin:storybook/recommended", "prettier"],
+  "globals": {
+    "defineProps": "readonly",
+    "defineEmits": "readonly",
+    "defineModel": "readonly"
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "vue"
+  ],
+  "rules": {
+    "vue/script-setup-uses-vars": "error",
+    "vue/attribute-hyphenation": ["error", "never", {
+      "ignore": ["model-value", "update:modelValue"]
+    }],
+    "vue/component-name-in-template-casing": [
+      "error",
+      "PascalCase",
+      {
+        "registeredComponentsOnly": false
+      }
+    ],
+    "vue/multi-word-component-names": "off",
+    "vue/first-attribute-linebreak": ["error", {
+      "singleline": "ignore",
+      "multiline": "below"
+    }],
+    "no-unused-vars": "off",
+    "vue/valid-attribute-name": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "quotes": ["error", "single"],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "typeLike",
+        "format": ["PascalCase"]
+      },
+      {
+        "selector": "interface",
+        "format": ["PascalCase"]
+      }
+    ]
+  }
+}
