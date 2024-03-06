@@ -206,6 +206,12 @@ const routes: Array<RouteRecordRaw> = [
     props: {
       showMenu: false,
     },
+    meta: {
+      title:
+        'BestBroker: O curso definitivo para se tornar um expert em Crédito Imobiliário',
+      description:
+        'Pare de perder vendas e aumente seus lucros mensais com o curso BestBroker',
+    },
   },
   {
     path: '/best-broker-adquirido',
@@ -213,9 +219,9 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/BestBrokerSuccess.vue'),
     meta: {
       title:
-        'O curso definitivo para se tornar um expert em Crédito Imobiliário',
+        'BestBroker: O curso definitivo para se tornar um expert em Crédito Imobiliário',
       description:
-        'Pare de perder vendas e aumente seus lucros mensais com o curso "Best Broker"',
+        'Pare de perder vendas e aumente seus lucros mensais com o curso BestBroker',
     },
     props: {
       showMenu: false,
@@ -226,7 +232,7 @@ const routes: Array<RouteRecordRaw> = [
     name: 'besthub',
     component: () => import('@/views/BestHubLP.vue'),
     meta: {
-      title: 'O Melhor Hub de Crédito do Mercado',
+      title: 'BestHub: O Melhor Hub de Crédito do Mercado',
       description:
         'Quer potencializar seus negócios e fintechizar sua marca? O BestHub é a solução que você procura! ',
     },
