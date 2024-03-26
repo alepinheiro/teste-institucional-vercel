@@ -242,7 +242,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/warren',
-    name: 'warren',
+    name: 'Warren',
     meta: {
       title:
         'Warren + SejaBest: Os Melhores Produtos de Crédito ao seu Alcance',
@@ -250,6 +250,20 @@ const routes: Array<RouteRecordRaw> = [
         'Não perca mais tempo buscando crédito! Agora, os melhores produtos de crédito da SejaBest estão disponíveis na Warren',
     },
     component: () => import('@/views/partners/warren/indexView.vue'),
+    props: {
+      showMenu: false,
+    },
+  },
+  {
+    path: '/minha-casa-financiada',
+    name: 'MinhaCasaFinanciada',
+    meta: {
+      title:
+        'Minha Casa Financiada + SejaBest: Os Melhores Produtos de Crédito ao seu Alcance',
+      description:
+        'Não perca mais tempo buscando crédito! Agora, os melhores produtos de crédito da SejaBest estão disponíveis na Minha Casa Financiada',
+    },
+    component: () => import('@/views/partners/mfc/indexView.vue'),
     props: {
       showMenu: false,
     },
