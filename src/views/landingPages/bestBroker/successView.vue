@@ -59,6 +59,7 @@ import FooterSection from '@/components/bestBroker/footerSection.component.vue'
 
 export default defineComponent({
   name: 'XoAluguelAdquirido',
+  components: { FooterSection },
   props: {
     showMenu: {
       type: Boolean,
@@ -66,16 +67,14 @@ export default defineComponent({
       default: true,
     },
   },
-  components: { FooterSection },
   data() {
     return {}
   },
   mounted() {
-    //@ts-expect-error global function gtag
     // eslint-disable-next-line no-undef
-    gtag('event', 'ComprafinalizadaBestBroker')
+    // gtag('event', 'ComprafinalizadaBestBroker') //--> undefined
     ;
-    (window as any).fbq(
+    window.fbq(
         'trackCustom',
         'ComprafinalizadaBestBroker',
     )

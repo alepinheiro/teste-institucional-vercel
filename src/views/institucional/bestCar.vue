@@ -1,7 +1,7 @@
 <template>
 
 <div>
-  <HeadVideo :hide-menu="false"/>
+  <HeadVideo :hideMenu="false"/>
   <div class="gradientPrimaryToSecondary">
         <Section2 />
         <Section3 />

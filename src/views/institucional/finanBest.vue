@@ -10,10 +10,10 @@
     />
     <HeroSection />
     <BusinessPartners
+    id="businessPartners"
       type="Financing"
-      id="businessPartners"
       title="Na SejaBest, suas chances de aprovação são maiores"
-      inner-text="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
+      innerText="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
       class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
     />
     <ComparisonTable
@@ -29,7 +29,7 @@
       }"
       class="py-10"
     />
-    <VideoSection :youtube-video-id="'Mlg8eDX61uE'" class="lg:pt-20 xl:pt-20" />
+    <VideoSection :youtubeVideoId="'Mlg8eDX61uE'" class="lg:pt-20 xl:pt-20" />
     <StepsSection />
 
     <AboutUs

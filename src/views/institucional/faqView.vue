@@ -3,7 +3,7 @@
     <TopBar v-if="showMenu" class="text-white w-full" />
 
     <section class="w-full gradienteSB pt-8 min-md:pt-20">
-      <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto px-5 ">
+      <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto px-5">
         <h1 class="text-white text-5xl titleFontBold pt-12">
           Crédito Imobiliário pode ser complicado.
         </h1>
@@ -14,31 +14,31 @@
     </section>
 
     <section class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto px-5 py-12">
-
       <div class="pb-6">
         <Questions
           v-for="i in perguntas"
-          :key="i.id" :title="i.title"
+          :key="i.id"
+          :title="i.title"
           :text="i.text"
-          :text-aux="i.text2"
-          :video-url="i.videoUrl"
-          :video-style="videoStyle"
-          :with-video="true" />
+          :textAux="i.text2"
+          :videoUrl="i.videoUrl"
+          :videoStyle="videoStyle"
+          :withVideo="true"
+        />
       </div>
     </section>
-
   </div>
-  <FooterComponent  />
+  <FooterComponent />
 </template>
 
 <script lang="ts">
-
-import { defineComponent } from "vue"
+import { defineComponent } from 'vue'
 import Questions from '@/components/base/questions.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
 
 export default defineComponent({
   name: 'Help',
+  components: { Questions, TopBar },
   props: {
     showMenu: {
       type: Boolean,
@@ -46,7 +46,6 @@ export default defineComponent({
       default: true,
     },
   },
-  components: { Questions, TopBar },
   data() {
     return {
       perguntas: [
@@ -100,7 +99,8 @@ export default defineComponent({
           videoUrl: 'https://www.youtube.com/embed/PzSOvyV1mWY',
         },
       ],
-      videoStyle: "w-full h-80 mr-auto ml-auto  xl:rounded-br-2xl lg:rounded-br-2xl md:rounded-br-2xl"
+      videoStyle:
+        'w-full h-80 mr-auto ml-auto  xl:rounded-br-2xl lg:rounded-br-2xl md:rounded-br-2xl',
     }
   },
 })

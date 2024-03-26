@@ -1,6 +1,6 @@
 <template>
   <div class="gradienteSBHome h-screen flex justify-center xl:overflow-y-hidden lg:overflow-y-hidden">
-    <topbarComponent position="relative" />
+    <TopbarComponent position="relative" />
     <div class="w-full relative z-10 flex justify-center items-center ">
       <div class="flex flex-wrap items-center ">
         <div class="p-4 sm:w-full">
@@ -19,10 +19,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue';
-// import userModel from '@/models/user.model';
-
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'PageUnavailable',

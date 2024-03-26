@@ -14,8 +14,8 @@
     <FooterSection />
     <PopUpVideo
       v-if="showVideo"
-      :video-url="videoUrl"
-      :video-style="videoStyle"
+      :videoUrl="videoUrl"
+      :videoStyle="videoStyle"
       @close-pop-up="showVideo = false"
     />
   </div>
@@ -34,16 +34,8 @@ import OfferSection from '@/components/bestBroker/offerSection.component.vue'
 import FooterSection from '@/components/bestBroker/footerSection.component.vue'
 import PopUpVideo from '@/components/base/popUpVideo.component.vue'
 
-
 export default defineComponent({
   name: 'BestBrokerLP',
-  props: {
-    showMenu: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
   components: {
     HeroSection,
     ProductBox,
@@ -54,7 +46,14 @@ export default defineComponent({
     BestHub,
     OfferSection,
     FooterSection,
-    PopUpVideo
+    PopUpVideo,
+  },
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
   },
   data() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TopBarVideo :show-menu="showMenu" />
+    <TopBarVideo :showMenu="showMenu" />
 
     <section class="flex pt-6 maxWidth">
       <div
@@ -111,13 +111,6 @@ import Rodape from '@/components/base/bannerBottomPage.vue'
 
 export default defineComponent({
   name: 'BestCarFinanLP',
-  props: {
-    showMenu: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
   components: {
     TopBarVideo,
     CardWhite,
@@ -125,6 +118,13 @@ export default defineComponent({
     CarouselFinan,
     ComparativeBoardFinan,
     Rodape,
+  },
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
   },
 })
 </script>

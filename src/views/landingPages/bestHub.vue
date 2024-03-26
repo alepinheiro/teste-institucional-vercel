@@ -34,13 +34,6 @@ import FooterSection from '@/components/bestHub/footerSection.component.vue'
 type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
   name: 'BestHubLP',
-  props: {
-    showMenu: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
   components: {
     HeroSection,
     BanksSection,
@@ -54,6 +47,13 @@ export default defineComponent({
     VideoSection,
     ProductsSection,
     ProductBoxSection,
+  },
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
   },
   data() {
     return {
@@ -141,9 +141,9 @@ export default defineComponent({
   mounted() {
     let fullUrl = this.$route.fullPath.split('?')
     if (this.$route.fullPath.includes('?')) {
-      ;(this.$root as IRootExtension).utms = '?' + fullUrl[1]
+      this.$root.utms = '?' + fullUrl[1]
     }
-  }
+  },
 })
 </script>
 <style lang="scss"></style>

@@ -533,15 +533,15 @@ import TopBarComponent from '@/components/structure/topbar.component.vue'
 
 export default defineComponent({
   name: 'PrivacyPolicy',
+  components: {
+    TopBarComponent,
+  },
   props: {
     showMenu: {
       type: Boolean,
       required: false,
       default: true,
     },
-  },
-  components: {
-    TopBarComponent,
   },
   data() {
     return {
