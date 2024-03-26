@@ -1,5 +1,5 @@
 <template>
-  <main class="relative overflow-hidden w-full z-0 bg-white ">
+  <main class="relative overflow-hidden w-full z-0 bg-white">
     <img
       src="/images/Home/backgroundLines.png"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
@@ -17,14 +17,14 @@
       class="text-primary xl:text-textPrimary z-20"
     />
 
-    <HeroSection :show-menu="showMenu" class="pb-14 min-md:pb-0 relative z-0" />
+    <HeroSection :showMenu="showMenu" class="pb-14 min-md:pb-0 relative z-0" />
 
     <div class="bg-gradient-to-b to-white from-[#F1F1F1]">
       <BusinessPartners
         id="businessPartners"
         type="HomeEquity"
         title="Maximizamos suas chances de aprovação"
-        inner-text="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação. Conte com nosso time de especialistas para orientação em todo o processo."
+        innerText="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação. Conte com nosso time de especialistas para orientação em todo o processo."
         class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
       />
       <ComparisonTable

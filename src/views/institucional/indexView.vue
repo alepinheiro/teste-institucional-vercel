@@ -21,7 +21,7 @@
     <BusinessPartners
       title="A melhor plataforma multibancos."
       type="HomeEquity"
-      inner-text="<strong>
+      innerText="<strong>
           Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
           financeiras,
         </strong>

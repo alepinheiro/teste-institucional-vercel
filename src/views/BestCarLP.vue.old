@@ -20,13 +20,6 @@ import section4 from '@/components/vehicle/BestCarLP/section4.vue'
 import rodape from '@/components/base/bannerBottomPage.vue'
 
 export default defineComponent({
-  props: {
-    showMenu: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
   name: 'BestCarLP',
   components: {
     headVideo,
@@ -34,6 +27,13 @@ export default defineComponent({
     section3,
     section4,
     rodape,
+  },
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
   },
 })
 </script>

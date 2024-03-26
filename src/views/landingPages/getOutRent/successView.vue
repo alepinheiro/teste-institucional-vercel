@@ -12,6 +12,10 @@ import FooterSection from '@/components/getOutRent/footerSection.component.vue'
 
 export default defineComponent({
   name: 'GetOutRent',
+  components: {
+    SuccessBanner,
+    FooterSection,
+  },
   props: {
     showMenu: {
       type: Boolean,
@@ -19,23 +23,6 @@ export default defineComponent({
       default: true,
     },
   },
-  components: {
-    SuccessBanner,
-    FooterSection,
-  },
-  // metaInfo() {
-  //   return {
-  //     title: 'Conheça o FinanBest. O Financiamento Imobiliário da SejaBest.',
-  //     meta: [
-  //       {
-  //         vmid: 'description',
-  //         name: 'description',
-  //         content:
-  //           'Financie seu imóvel com as melhores condições do mercado. Tudo de forma online, digital, transparente e com o auxílio do nosso time de especialistas!',
-  //       },
-  //     ],
-  //   }
-  // },
   data() {
     return {
       isVisible: false,
@@ -46,18 +33,13 @@ export default defineComponent({
     }
   },
   mounted() {
-    //@ts-expect-error global function gtag
-    // eslint-disable-next-line no-undef
     gtag('event', 'CompraFinalizada')
-    ;(window as any)
-      .fbq(
-        'trackCustom',
-        'Comprafinalizada',
-      )(window as any)
-      .fbq('trackCustom', 'Comprafinalizada', { value: 0.0, currency: 'USD' })(
-        window as any,
-      )
-      .fbq('track', 'Purchase', { value: 0.0, currency: 'USD' })
+    window.fbq('trackCustom', 'Comprafinalizada')
+    window.fbq('trackCustom', 'Comprafinalizada', {
+      value: 0.0,
+      currency: 'USD',
+    })
+    window.fbq('track', 'Purchase', { value: 0.0, currency: 'USD' })
   },
 })
 </script>
