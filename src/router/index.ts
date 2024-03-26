@@ -4,7 +4,7 @@ import { useHead, useSeoMeta } from '@unhead/vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: () => import('@/views/homePage/index.vue'),
+    component: () => import('@/views/institucional/indexView.vue'),
     name: 'Home',
     meta: {
       title:
@@ -19,7 +19,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/sobre',
     name: 'AboutUs',
-    component: () => import('@/views/AboutUs.vue'),
+    component: () => import('@/views/institucional/aboutUs.vue'),
     meta: {
       title:
         'Sobre a SejaBest: Transformando o acesso ao crédito para sua melhor versão',
@@ -37,7 +37,7 @@ const routes: Array<RouteRecordRaw> = [
       '/como-funciona'
     ],
     name: 'HomeEquity',
-    component: () => import('@/views/CashBestLP.vue'),
+    component: () => import('@/views/institucional/cashBest.vue'),
     meta: {
       title: 'CashBest: O Melhor Crédito com Garantia de Imóvel | SejaBest',
       description:
@@ -51,7 +51,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/emprestimo-com-garantia-de-imovel',
     alias: ['/emprestimo-com-garantia-de-imovel/cashbest'],
     name: 'HomeEquityCopy',
-    component: () => import('@/views/CashBestLPEmprestimo.vue'),
+    component: () => import('@/views/institucional/cashBestEmprestimo.vue'),
     meta: {
       title: 'CashBest: O Melhor empréstimo com Garantia de Imóvel | SejaBest',
       description:
@@ -65,7 +65,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/financiamento-imobiliario',
     alias: ['/financiamento-imobiliario/finanBest'],
     name: 'Financing',
-    component: () => import('@/views/FinanBestLP.vue'),
+    component: () => import('@/views/institucional/finanBest.vue'),
     meta: {
       title: 'FinanBest: Financie Seu Imóvel | Taxas a partir de 1.09% a.m.',
       description:
@@ -78,7 +78,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/faq',
     name: 'Faq',
-    component: () => import('@/views/Faq.vue'),
+    component: () => import('@/views/institucional/faqView.vue'),
     meta: {
       title:
         'Perguntas Frequentes sobre Crédito Imobiliário e Home Equity - SejaBest',
@@ -92,7 +92,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/politica-de-privacidade',
     name: 'PrivacyPolicy',
-    component: () => import('@/views/PrivacyPolicy.vue'),
+    component: () => import('@/views/institucional/privacyPolicy.vue'),
     meta: {
       title: 'Política de Privacidade - Proteção de Dados Pessoais - SejaBest',
       description:
@@ -105,7 +105,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/termos-de-uso',
     name: 'TermsOfUse',
-    component: () => import('@/views/TermsOfUse.vue'),
+    component: () => import('@/views/institucional/termsOfUse.vue'),
     meta: {
       title: 'Termos de Uso - SejaBest Fintech de Crédito Imobiliário',
       description:
@@ -119,7 +119,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/emprestimo-com-garantia-de-veiculo/BestCar',
     alias: ['/credito-com-garantia-de-veiculo'],
     name: 'BestCarLP',
-    component: () => import('@/views/BestCarLP.vue'),
+    component: () => import('@/views/landingPages/BestCar.vue'),
     meta: {
       title:
         'Empréstimo com Garantia de Veículo - BestCar | SejaBest | Crédito Imobiliário',
@@ -133,7 +133,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/emprestimo-com-garantia-de-veiculo',
     name: 'BestCar',
-    component: () => import('@/views/BestCar.vue'),
+    component: () => import('@/views/institucional/bestCar.vue'),
     meta: {
       title:
         'BestCar: Empréstimo com Garantia de Veículo | SejaBest | Crédito Imobiliário',
@@ -148,7 +148,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/financiamento-veicular',
     alias: ['/financiamento-veicular/BestCarFinan'],
     name: 'BestCarFinan',
-    component: () => import('@/views/BestCarFinan.vue'),
+    component: () => import('@/views/institucional/bestCarFinan.vue'),
     meta: {
       title:
         'FinanBest: Financiamento Veicular | SejaBest | Crédito Imobiliário',
@@ -162,7 +162,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/best-news',
     name: 'BestNews',
-    component: () => import('@/views/BestNewsLP.vue'),
+    component: () => import('@/views/landingPages/bestNews.vue'),
     meta: {
       title:
         'Portal BestNews - Acompanhe as Últimas Notícias Financeiras | SejaBest',
@@ -176,7 +176,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/xo-aluguel',
     name: 'getOutRent',
-    component: () => import('@/views/getOutRent.vue'),
+    component: () => import('@/views/landingPages/getOutRent/indexView.vue'),
     meta: {
       title: 'Xô, Aluguel! O Método Best para Conquistar seu Primeiro Imóvel',
       description:
@@ -189,7 +189,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/xo-aluguel-adquirido',
     name: 'successGuideGetOutOfRent',
-    component: () => import('@/views/successGuideGetOutOfRent.vue'),
+    component: () => import('@/views/landingPages/getOutRent/successView.vue'),
     meta: {
       title: 'Agora você é BEST! Compra realizada com sucesso',
       description:
@@ -202,7 +202,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/best-broker',
     name: 'bestBroker',
-    component: () => import('@/views/BestBrokerLP.vue'),
+    component: () => import('@/views/landingPages/bestBroker/indexView.vue'),
     props: {
       showMenu: false,
     },
@@ -216,7 +216,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/best-broker-adquirido',
     name: 'bestBrokerSuccess',
-    component: () => import('@/views/BestBrokerSuccess.vue'),
+    component: () => import('@/views/landingPages/bestBroker/successView.vue'),
     meta: {
       title:
         'BestBroker: O curso definitivo para se tornar um expert em Crédito Imobiliário',
@@ -230,7 +230,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/besthub',
     name: 'besthub',
-    component: () => import('@/views/BestHubLP.vue'),
+    component: () => import('@/views/landingPages/bestHub.vue'),
     meta: {
       title: 'BestHub: O Melhor Hub de Crédito do Mercado',
       description:
@@ -249,7 +249,7 @@ const routes: Array<RouteRecordRaw> = [
       description:
         'Não perca mais tempo buscando crédito! Agora, os melhores produtos de crédito da SejaBest estão disponíveis na Warren',
     },
-    component: () => import('@/views/WarrenLandingPage.vue'),
+    component: () => import('@/views/partners/warren/indexView.vue'),
     props: {
       showMenu: false,
     },

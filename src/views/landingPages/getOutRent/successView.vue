@@ -33,7 +33,7 @@ export default defineComponent({
     }
   },
   mounted() {
-    gtag('event', 'CompraFinalizada')
+    // window.gtag('event', 'CompraFinalizada') --> undefined
     window.fbq('trackCustom', 'Comprafinalizada')
     window.fbq('trackCustom', 'Comprafinalizada', {
       value: 0.0,
