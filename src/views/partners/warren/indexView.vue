@@ -23,13 +23,6 @@ import TheFooter from '@/components/warren/theFooter.component.vue'
 
 export default defineComponent({
   name: 'WarrenLandingPage',
-  props: {
-    showMenu: {
-      type: Boolean,
-      required: false,
-      default: true,
-    },
-  },
   components: {
     Hero,
     Products,
@@ -38,6 +31,13 @@ export default defineComponent({
     CreditSteps,
     Contact,
     TheFooter,
+  },
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: false,
+      default: true,
+    },
   },
   data() {
     return {}
