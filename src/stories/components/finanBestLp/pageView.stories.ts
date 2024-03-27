@@ -1,5 +1,5 @@
+import Page from '@/views/institucional/finanBest.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
-import Page from '@/views/FinanBestLP.vue'
 import { vueRouter } from 'storybook-vue3-router';
 
 const meta = {
@@ -18,4 +18,7 @@ export const Default: Story = {
    * this is the basic setup with no params passed to the decorator
    */
   decorators: [vueRouter()],
+  args: {
+    showMenu: false,
+  }
 }

@@ -1,6 +1,6 @@
 import { vueRouter } from 'storybook-vue3-router';
 import type { Meta, StoryObj } from '@storybook/vue3'
-import Page from '@/views/CashBestLP.vue'
+import Page from '@/views/institucional/cashBest.vue'
 
 const meta = {
     title: 'Views/CashBestLP',
@@ -18,4 +18,7 @@ export const Default: Story = {
    * this is the basic setup with no params passed to the decorator
    */
   decorators: [vueRouter()],
+  args: {
+    showMenu: false,
+  }
 }

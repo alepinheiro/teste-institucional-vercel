@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
 import type { ComponentProps } from 'vue-component-type-helpers'
-import AboutUs from '../../../components/base/aboutUs.component.vue'
+import AboutUs from '@/components/base/aboutUs.component.vue'
 
 type CustomProps = ComponentProps<typeof AboutUs> & {
   bgCard: { bgColor: 'PRIMARY' | 'SECONDARY' | 'BGDARKCOLOR' }
