@@ -134,6 +134,7 @@ export default defineComponent({
       autoplay: {
         delay: 6000,
       },
+      updateOnWindowResize: true,
       pagination: {
         clickable: true,
         renderBullet: (index, className) => {
