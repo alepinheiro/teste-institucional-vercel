@@ -1,39 +1,47 @@
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 @font-face {
   font-family: 'Public Sans Light';
-  src: local('Public Sans Light'),
+  src:
+    local('Public Sans Light'),
     url('/fonts/Public_Sans/static/PublicSans-Light.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Public Sans';
-  src: local('Public Sans Light'),
+  src:
+    local('Public Sans Light'),
     url('/fonts/Public_Sans/static/PublicSans-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Public Sans Bold';
-  src: local('Public Sans Bold'),
+  src:
+    local('Public Sans Bold'),
     url('/fonts/Public_Sans/static/PublicSans-Bold.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Darker Grotesque';
-  src: local('Darker Grotesque'),
+  src:
+    local('Darker Grotesque'),
     url('/fonts/Darker_Grotesque/DarkerGrotesque-Regular.ttf')
       format('truetype');
 }
 @font-face {
   font-family: 'Darker Grotesque Bold';
-  src: local('Darker Grotesque Bold'),
+  src:
+    local('Darker Grotesque Bold'),
     url('/fonts/Darker_Grotesque/DarkerGrotesque-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'FF Sizmo Pro';
   src: url('/fonts/Sizmo_Pro/SizmoPro-Demibold.eot');
-  src: local('FF Sizmo Pro DemiBold'), local('SizmoPro-Demibold'),
-    url('/fonts/Sizmo_Pro/SizmoPro-Demibold.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro DemiBold'),
+    local('SizmoPro-Demibold'),
+    url('/fonts/Sizmo_Pro/SizmoPro-Demibold.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoPro-Demibold.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-Demibold.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoPro-Demibold.ttf') format('truetype');
@@ -44,7 +52,9 @@
 @font-face {
   font-family: 'FF Sizmo Pro Line';
   src: url('/fonts/Sizmo_Pro/SizmoLinePro.eot');
-  src: local('FF Sizmo Pro Line'), local('SizmoLinePro'),
+  src:
+    local('FF Sizmo Pro Line'),
+    local('SizmoLinePro'),
     url('/fonts/Sizmo_Pro/SizmoLinePro.eot?#iefix') format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoLinePro.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoLinePro.woff') format('woff'),
@@ -56,8 +66,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro Medium Oblique';
   src: url('/fonts/Sizmo_Pro/SizmoPro-MediumOblique.eot');
-  src: local('FF Sizmo Pro Medium Oblique'), local('SizmoPro-MediumOblique'),
-    url('/fonts/Sizmo_Pro/SizmoPro-MediumOblique.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Medium Oblique'),
+    local('SizmoPro-MediumOblique'),
+    url('/fonts/Sizmo_Pro/SizmoPro-MediumOblique.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoPro-MediumOblique.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-MediumOblique.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoPro-MediumOblique.ttf') format('truetype');
@@ -68,8 +81,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro Line';
   src: url('/fonts/Sizmo_Pro/SizmoLinePro-Demibold.eot');
-  src: local('FF Sizmo Pro Line DemiBold'), local('SizmoLinePro-Demibold'),
-    url('/fonts/Sizmo_Pro/SizmoLinePro-Demibold.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Line DemiBold'),
+    local('SizmoLinePro-Demibold'),
+    url('/fonts/Sizmo_Pro/SizmoLinePro-Demibold.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Demibold.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Demibold.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Demibold.ttf') format('truetype');
@@ -80,8 +96,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro DemiBold Oblique';
   src: url('/fonts/Sizmo_Pro/SizmoPro-DemiboldOblique.eot');
-  src: local('FF Sizmo Pro DemiBold Oblique'), local('SizmoPro-DemiboldOblique'),
-    url('/fonts/Sizmo_Pro/SizmoPro-DemiboldOblique.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro DemiBold Oblique'),
+    local('SizmoPro-DemiboldOblique'),
+    url('/fonts/Sizmo_Pro/SizmoPro-DemiboldOblique.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoPro-DemiboldOblique.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-DemiboldOblique.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoPro-DemiboldOblique.ttf') format('truetype');
@@ -92,8 +111,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro';
   src: url('/fonts/Sizmo_Pro/SizmoPro-Light.eot');
-  src: local('FF Sizmo Pro Light'), local('SizmoPro-Light'),
-    url('/fonts/Sizmo_Pro/SizmoPro-Light.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Light'),
+    local('SizmoPro-Light'),
+    url('/fonts/Sizmo_Pro/SizmoPro-Light.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoPro-Light.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-Light.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoPro-Light.ttf') format('truetype');
@@ -104,8 +126,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro';
   src: url('/fonts/Sizmo_Pro/SizmoPro-Medium.eot');
-  src: local('FF Sizmo Pro Medium'), local('SizmoPro-Medium'),
-    url('/fonts/Sizmo_Pro/SizmoPro-Medium.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Medium'),
+    local('SizmoPro-Medium'),
+    url('/fonts/Sizmo_Pro/SizmoPro-Medium.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoPro-Medium.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-Medium.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoPro-Medium.ttf') format('truetype');
@@ -116,8 +141,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro Line';
   src: url('/fonts/Sizmo_Pro/SizmoLinePro-Light.eot');
-  src: local('FF Sizmo Pro Line Light'), local('SizmoLinePro-Light'),
-    url('/fonts/Sizmo_Pro/SizmoLinePro-Light.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Line Light'),
+    local('SizmoLinePro-Light'),
+    url('/fonts/Sizmo_Pro/SizmoLinePro-Light.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Light.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Light.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Light.ttf') format('truetype');
@@ -128,8 +156,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro Line';
   src: url('/fonts/Sizmo_Pro/SizmoLinePro-Medium.eot');
-  src: local('FF Sizmo Pro Line Medium'), local('SizmoLinePro-Medium'),
-    url('/fonts/Sizmo_Pro/SizmoLinePro-Medium.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Line Medium'),
+    local('SizmoLinePro-Medium'),
+    url('/fonts/Sizmo_Pro/SizmoLinePro-Medium.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Medium.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Medium.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Medium.ttf') format('truetype');
@@ -140,7 +171,9 @@
 @font-face {
   font-family: 'FF Sizmo Pro';
   src: url('/fonts/Sizmo_Pro/SizmoPro-Bold.eot');
-  src: local('FF Sizmo Pro Bold'), local('SizmoPro-Bold'),
+  src:
+    local('FF Sizmo Pro Bold'),
+    local('SizmoPro-Bold'),
     url('/fonts/Sizmo_Pro/SizmoPro-Bold.eot?#iefix') format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoPro-Bold.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-Bold.woff') format('woff'),
@@ -152,8 +185,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro Line';
   src: url('/fonts/Sizmo_Pro/SizmoLinePro-Bold.eot');
-  src: local('FF Sizmo Pro Line Bold'), local('SizmoLinePro-Bold'),
-    url('/fonts/Sizmo_Pro/SizmoLinePro-Bold.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Line Bold'),
+    local('SizmoLinePro-Bold'),
+    url('/fonts/Sizmo_Pro/SizmoLinePro-Bold.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Bold.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Bold.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoLinePro-Bold.ttf') format('truetype');
@@ -164,8 +200,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro Bold Oblique';
   src: url('/fonts/Sizmo_Pro/SizmoPro-BoldOblique.eot');
-  src: local('FF Sizmo Pro Bold Oblique'), local('SizmoPro-BoldOblique'),
-    url('/fonts/Sizmo_Pro/SizmoPro-BoldOblique.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Bold Oblique'),
+    local('SizmoPro-BoldOblique'),
+    url('/fonts/Sizmo_Pro/SizmoPro-BoldOblique.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoPro-BoldOblique.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-BoldOblique.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoPro-BoldOblique.ttf') format('truetype');
@@ -176,8 +215,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro Light Oblique';
   src: url('/fonts/Sizmo_Pro/SizmoPro-LightOblique.eot');
-  src: local('FF Sizmo Pro Light Oblique'), local('SizmoPro-LightOblique'),
-    url('/fonts/Sizmo_Pro/SizmoPro-LightOblique.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Light Oblique'),
+    local('SizmoPro-LightOblique'),
+    url('/fonts/Sizmo_Pro/SizmoPro-LightOblique.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoPro-LightOblique.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-LightOblique.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoPro-LightOblique.ttf') format('truetype');
@@ -188,8 +230,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro Oblique';
   src: url('/fonts/Sizmo_Pro/SizmoPro-Oblique.eot');
-  src: local('FF Sizmo Pro Oblique'), local('SizmoPro-Oblique'),
-    url('/fonts/Sizmo_Pro/SizmoPro-Oblique.eot?#iefix') format('embedded-opentype'),
+  src:
+    local('FF Sizmo Pro Oblique'),
+    local('SizmoPro-Oblique'),
+    url('/fonts/Sizmo_Pro/SizmoPro-Oblique.eot?#iefix')
+      format('embedded-opentype'),
     url('/fonts/Sizmo_Pro/SizmoPro-Oblique.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-Oblique.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoPro-Oblique.ttf') format('truetype');
@@ -200,9 +245,11 @@
 @font-face {
   font-family: 'FF Sizmo Pro';
   src: url('/fonts/Sizmo_Pro/SizmoPro.eot');
-  src: local('FF Sizmo Pro'), local('SizmoPro'),
+  src:
+    local('FF Sizmo Pro'),
+    local('SizmoPro'),
     url('/fonts/Sizmo_Pro/SizmoPro.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Sizmo_Pro/SizmoPro.woff2') format('woff2'), url('SizmoPro.woff') format('woff'),
+    url('/fonts/Sizmo_Pro/SizmoPro.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -225,13 +272,6 @@
 }
 .bgBusinessman {
   background-image: url('/images/partner/ImagemAbertura.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.bgCashBest {
-  background-image: url('/images/cashBest/VideoCashBestDesktop.gif');
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -391,96 +431,6 @@
   border-image-slice: 1;
 }
 
-.bgBannerPrimary {
-  background-image: url('/images/CAPA_2_tlmhob.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.bgMidias {
-  background-image: url('/images/youtube_alkyqq.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-@media (max-width: 1023px) {
-  .bgMidias {
-    background-image: url('/images/sess%C3%B5es_site_1_p9of6s.webp');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-}
-.bgFinan {
-  background-image: url('/images/sess%C3%B5es_site_3_pul4z5.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.bgWhiteArrow {
-  background-image: url('/images/sess%C3%B5es_site_4_hrafo9.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-.bgBlueHalf {
-  background-image: url('/images/sess%C3%B5es_site_5_cp0iwo.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-@media (max-width: 1023px) {
-  .bgBlueHalf {
-    background-image: url('/images/sess%C3%B5es_site_5_rlaba6.webp');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-}
-.bgBannerArrowRight {
-  background-image: url('/images/Layout_-_1080x1080-1_hjk7cn.webp');
-  background-size: 50% 100%;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: right 0%;
-}
-.bgBannerArrowRightSM {
-  background-image: url('/images/Layout_-_1080x1080-1_hjk7cn.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-}
-.bgBannerProducts {
-  background-image: url('/images/fundo_site_meio_xmhlui.webp');
-  background-size: 100% 100%;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: right 0%;
-}
-.bgBannerBlueRight {
-  background-image: url('/images/6_iehzhf.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-}
-.bgBannerBlue {
-  background-image: url('/images/Fundo_azul_ueukye.webp');
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-}
 
 /* move from / to  */
 
@@ -626,11 +576,15 @@
 }
 
 .glitchBlue {
-  box-shadow: 0 0 20px #0063f2, 0 0 20px #0063f2;
+  box-shadow:
+    0 0 20px #0063f2,
+    0 0 20px #0063f2;
   border-radius: 0.75rem;
 }
 .glitchBlue:hover {
-  box-shadow: 0 0 20px #0063f2, 0 0 20px #0063f2;
+  box-shadow:
+    0 0 20px #0063f2,
+    0 0 20px #0063f2;
   border-radius: 0.75rem;
 }
 

@@ -10,7 +10,7 @@
 <script lang="ts">
 import NotificationPopUp from '@/components/base/notificationPopUp.component.vue'
 import { NotificationInterface } from '@/interfaces/notification.interface'
-import { defineComponent } from 'vue'
+import { defineComponent, defineAsyncComponent } from 'vue';
 
 export default defineComponent({
   components: { NotificationPopUp },
@@ -19,7 +19,7 @@ export default defineComponent({
       type: String,
       required: false,
       default: '',
-    }
+    },
   },
   data(props) {
     return {
@@ -33,6 +33,12 @@ export default defineComponent({
       } as NotificationInterface,
       utms: props.utmQuery ?? '',
     }
+  },
+  created() {
+    import('@/configurations/color.css')
+    import('@/assets/css/tailwind.css')
+    import('@/configurations/customStyle.css')
+    import('@/configurations/themeCustomization.scss')
   },
 })
 </script>

@@ -13048,6 +13048,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite-plugin-sitemap@npm:^0.5.3":
+  version: 0.5.3
+  resolution: "vite-plugin-sitemap@npm:0.5.3"
+  checksum: 10c0/db0a394212c7de89900825370149c43d6669eef04c273112b1dd363ae9c801c01e0e1257e005506778c8a1d5e5eb654cdd11029b14f6393836afffa9c9e8e6cb
+  languageName: node
+  linkType: hard
+
 "vite-project@workspace:.":
   version: 0.0.0-use.local
   resolution: "vite-project@workspace:."
@@ -13104,6 +13111,7 @@ __metadata:
     vite: "npm:^4.4.9"
     vite-plugin-pages: "npm:^0.31.0"
     vite-plugin-pages-sitemap: "npm:^1.6.1"
+    vite-plugin-sitemap: "npm:^0.5.3"
     vue: "npm:^3.4.15"
     vue-cookies: "npm:^1.8.0"
     vue-currency-input: "npm:^3.0.5"
