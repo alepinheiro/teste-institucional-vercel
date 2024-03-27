@@ -1,9 +1,9 @@
 import { vueRouter } from 'storybook-vue3-router';
 import type { Meta, StoryObj } from '@storybook/vue3'
-import Page from '@/views/partners/warren/indexView.vue'
+import Page from '@/views/partners/mcf/indexView.vue'
 
 const meta = {
-    title: 'Views/Warren',
+    title: 'Views/MCF',
     component: Page,
     // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
     tags: ['autodocs'],
