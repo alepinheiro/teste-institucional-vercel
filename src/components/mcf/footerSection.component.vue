@@ -109,25 +109,21 @@ export default defineComponent({
   data() {
     const socials = {
       warren: [
-        {
-          icon: 'fa-brands fa-facebook-f',
-          title: 'Acesse nosso Facebook',
-          link: 'https://www.facebook.com/warrenbrasil',
-        },
+
         {
           icon: 'fa-brands fa-instagram',
           title: 'Acesse nosso Instagram',
-          link: 'https://www.instagram.com/warrenbrasil/',
+          link: 'https://www.instagram.com/minha.casafinanciada/',
         },
         {
           icon: 'fa-brands fa-linkedin',
           title: 'Acesse nosso LinkedIn',
-          link: 'https://www.linkedin.com/company/warrenbrasil/',
+          link: 'https://www.linkedin.com/company/minhacasafinanciada/',
         },
         {
           icon: 'fa-brands fa-youtube',
           title: 'Acesse nosso Youtube',
-          link: 'https://www.youtube.com/channel/UCqIO5twa50iGz2wT5cGS-XQ',
+          link: 'https://www.youtube.com/@minhacasafinanciada20',
         },
       ],
       sejaBest: [
