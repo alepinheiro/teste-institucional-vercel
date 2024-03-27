@@ -60,7 +60,16 @@ import CheckSVG from '@/components/warren/icons/checkSVG.component.vue'
 import XMarkSVG from '@/components/warren/icons/xMark.component.vue'
 import information from '@/configurations/information'
 import { defineComponent } from 'vue'
-
+/**
+ * # Visão Geral
+ * O componente `ComparisonTable` é um componente Vue.js
+ * projetado para exibir uma tabela comparativa destacando
+ * as vantagens do produto "Minha Casa Financiada + SejaBest"
+ * em comparação com outros produtos no mercado.
+ *
+ * # Props
+ * Este componente não aceita nenhuma propriedade.
+ */
 export default defineComponent({
   name: 'ComparisonTable',
   components: {

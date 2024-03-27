@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
 
 const meta = {
-  title: 'Components/MCF/Footer',
+  title: 'Components/MCF/FooterSection',
   component: TheFooter,
   tags: ['autodocs'],
 } satisfies Meta<typeof TheFooter>

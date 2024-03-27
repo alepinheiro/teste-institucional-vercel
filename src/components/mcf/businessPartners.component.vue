@@ -9,13 +9,15 @@
         <div
           class="flex flex-col gap-2 md:gap-10 lg:gap-10 xl:gap-10 text-center lg:text-start xl:text-start md:w-4/6 mx-auto lg:justify-center xl:justify-center lg:h-full xl:h-full lg:px-9 xl:px-20"
         >
-      <span class="hidden xl:block w-28 bg-mcf-freeSpeechAquamarine h-2 rounded-full"></span>
+          <span
+            class="hidden xl:block w-28 bg-mcf-freeSpeechAquamarine h-2 rounded-full"
+          ></span>
           <h2
             class="text-3xl md:text-5xl lg:text-5xl xl:text-5xl text-warren-darkCharcoal"
           >
             Uma plataforma <b>multibancos</b>
           </h2>
-          <p class="text-warren-stormGray">
+          <p class="text-[#757680]">
             <b>São mais de 20 bancos parceiros</b> oferecendo os melhores
             produtos de crédito com as melhores taxas e os prazos mais
             flexíveis.
@@ -23,7 +25,7 @@
         </div>
       </div>
 
-      <ul
+      <div
         class="flex flex-col gap-5 md:gap-11 lg:gap-8 xl:gap-8 xl:w-1/2 p-6 md:py-16 xl:py-21 lg:px-16 xl:px-14 lg:my-auto lg:flex-1"
       >
         <div
@@ -31,7 +33,7 @@
           :key="index"
           class="flex flex-row gap-4 w-full justify-between items-center md:w-4/6 mx-auto"
         >
-          <li v-for="{ alt, id, image } of row" :key="id">
+          <div v-for="{ alt, id, image } of row" :key="id">
             <img
               :src="`/images/warren/partners/${image}@2x.png`"
               :srcset="
@@ -43,14 +45,22 @@
               :alt="alt"
               class="h-6 md:h-8 lg:h-8 xl:h-8 object-contain w-auto"
             />
-          </li>
+          </div>
         </div>
-      </ul>
+      </div>
     </div>
   </section>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+/**
+ * # Visão Geral
+ * O componente `BusinessPartners` é um componente Vue.js
+ * projetado para exibir uma lista de logos de parceiros comerciais.
+ *
+ * # Props
+ * Este componente não aceita nenhuma propriedade.
+ */
 export default defineComponent({
   name: 'BusinessPartners',
   data() {

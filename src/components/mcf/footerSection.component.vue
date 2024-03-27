@@ -93,9 +93,18 @@
 import { defineComponent } from 'vue'
 import Logo from '@/components/mcf/icons/logoMcfSVG.component.vue'
 import LogoSejaBestSVG from '@/components/base/logos/logoSejaBestSVG.component.vue'
-
+/**
+ * # Visão Geral
+ * O componente `FooterSection` é um componente Vue.js projetado para
+ * exibir o rodapé de uma página da web. Ele inclui informações importantes
+ * sobre as empresas envolvidas. Além disso, o componente fornece links
+ * para as páginas web das empresas e suas redes sociais.
+ *
+ * # Props
+ * Este componente não aceita nenhuma propriedade.
+ */
 export default defineComponent({
-  name: 'TheFooter',
+  name: 'FooterSection',
   components: { Logo, LogoSejaBestSVG },
   data() {
     const socials = {

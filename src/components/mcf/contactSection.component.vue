@@ -47,7 +47,19 @@ import { defineComponent } from 'vue'
 import LogoSejaBestSVG from '@/components/base/logos/logoSejaBestSVG.component.vue'
 import information from '@/configurations/information'
 import Logo from '@/components/mcf/icons/logoMcfSVG.component.vue'
-
+/**
+ * # Visão Geral
+ * O componente `ContactSection` é um componente Vue.js
+ * projetado para exibir uma seção de contato em um
+ * contexto de parceria entre empresas. Ele destaca uma
+ * parceria de sucesso entre duas empresas, oferecendo
+ * serviços financeiros abrangentes para necessidades imobiliárias.
+ * O componente apresenta uma mensagem de texto atraente e
+ * um botão para direcionar os usuários para simular seu crédito.
+ *
+ * # Props
+ * Este componente não aceita nenhuma propriedade.
+ */
 export default defineComponent({
   name: 'ContactSection',
   components: { LogoSejaBestSVG, Logo },

@@ -45,7 +45,16 @@
 import Logo from '@/components/mcf/icons/logoMcfSVG.component.vue'
 import information from '@/configurations/information'
 import { defineComponent } from 'vue'
-
+/**
+ * # Visão Geral
+ * O componente `HeroSection` é um componente Vue.js projetado para
+ * exibir uma seção de destaque na página inicial ou em outras páginas
+ * do site. Ele apresenta uma mensagem principal, um call-to-action
+ * e uma imagem ilustrativa.
+ *
+ * # Props
+ * Este componente não aceita nenhuma propriedade.
+ */
 export default defineComponent({
   name: 'HeroSection',
   components: {

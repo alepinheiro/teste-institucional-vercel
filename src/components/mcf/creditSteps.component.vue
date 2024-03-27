@@ -26,6 +26,18 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+
+/**
+ * # Visão Geral
+ * O componente `CreditSteps` é um componente Vue.js
+ * projetado para exibir os passos necessários para a
+ * liberação de crédito em um processo simplificado.
+ * Ele apresenta uma lista de passos simples e claros,
+ * destacando cada etapa até a liberação do crédito.
+ *
+ * # Props
+ * Este componente não aceita nenhuma propriedade.
+ */
 export default defineComponent({
   name: 'CreditSteps',
   data() {

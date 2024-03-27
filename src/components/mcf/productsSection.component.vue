@@ -71,7 +71,7 @@
           <button
             class="wNavigationPrev w-5 h-5"
             aria-label="Anterior"
-            aria-controls="previous"
+            aria-controls="productSliderMcf"
           >
             <svg
               width="20"
@@ -91,7 +91,7 @@
           <button
             class="wNavigationNext"
             aria-label="Próximo"
-            aria-controls="next"
+            aria-controls="productSliderMcf"
           >
             <svg
               width="20"
@@ -123,7 +123,15 @@ import Calendar from '@/components/icons/calendarIcon.component.vue'
 import DollarSign from '@/components/icons/dollarSign.component.vue'
 import DollarBag from '@/components/icons/dollarBag.component.vue'
 import Car from '@/components/icons/carIcon.component.vue'
-
+/**
+ * # Visão Geral
+ * O componente `ProductsSection` é responsável por exibir uma seção de produtos de
+ * crédito da SejaBest. Ele apresenta uma lista de opções de crédito com suas
+ * descrições e ícones representativos.
+ *
+ * # Props
+ * Este componente não aceita nenhuma propriedade.
+ */
 export default defineComponent({
   name: 'ProductsSection',
   setup() {
