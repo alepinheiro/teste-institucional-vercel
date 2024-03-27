@@ -77,9 +77,10 @@ module.exports = {
         whisper: 'var(--warrenWhisper)',
       },
       mcf: {
+        sherpaBlue: '#03583F',
         freeSpeechAquamarine: '#079269',
         burntOrange: '#FF7235',
-        nightRider: '#333131'
+        nightRider: '#333131',
       }
     },
     columns: {
