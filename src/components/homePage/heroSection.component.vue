@@ -61,7 +61,9 @@
         </div>
 
         <a
-          :href="information.appSimulator + useObjectToQueryString($route.query)"
+          :href="
+            information.appSimulator + useObjectToQueryString($route.query)
+          "
           class="bg-complementaryColor1 px-5 py-3 rounded text-white font-bold sm:mt-2"
           target="_blank"
         >

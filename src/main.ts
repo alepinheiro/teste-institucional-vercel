@@ -8,9 +8,6 @@ import { createHead } from '@unhead/vue'
 
 import VueScrollTo from 'vue-scrollto'
 
-const { register } = defineAsyncComponent(() => import('swiper/element/bundle'))
-register()
-
 // configurações do projeto
 import image from './configurations/images'
 import information from './configurations/information'

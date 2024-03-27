@@ -10,7 +10,8 @@
 <script lang="ts">
 import NotificationPopUp from '@/components/base/notificationPopUp.component.vue'
 import { NotificationInterface } from '@/interfaces/notification.interface'
-import { defineComponent, defineAsyncComponent } from 'vue';
+import { defineComponent } from 'vue'
+import { register } from 'swiper/element/bundle'
 
 export default defineComponent({
   components: { NotificationPopUp },
@@ -39,6 +40,9 @@ export default defineComponent({
     import('@/assets/css/tailwind.css')
     import('@/configurations/customStyle.css')
     import('@/configurations/themeCustomization.scss')
+  },
+  mounted() {
+    register()
   },
 })
 </script>
