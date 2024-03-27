@@ -35,6 +35,7 @@
 import { defineComponent } from 'vue'
 import Questions from '@/components/base/questions.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'Help',
@@ -102,6 +103,10 @@ export default defineComponent({
       videoStyle:
         'w-full h-80 mr-auto ml-auto  xl:rounded-br-2xl lg:rounded-br-2xl md:rounded-br-2xl',
     }
+  },
+  mounted() {
+    console.log(this.$route.query)
+    this.$root.utms = useObjectToQueryString(this.$route.query)
   },
 })
 </script>

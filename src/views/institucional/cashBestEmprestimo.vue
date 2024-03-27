@@ -71,11 +71,22 @@ import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 import TheProduct from '@/components/cashBestLpEmprestimo/theProduct.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
-import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
+import {
+  ref,
+  onBeforeMount,
+  onBeforeUnmount,
+  getCurrentInstance,
+  onMounted,
+} from 'vue'
+import { useRoute } from 'vue-router'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 defineProps<{
   showMenu: boolean
 }>()
+
+const app = getCurrentInstance()
+const route = useRoute()
 
 const menuColor = ref(window.innerWidth > 667 ? 'black' : 'white')
 
@@ -87,6 +98,12 @@ const setMenuColorOnResize = () => {
     menuColor.value = 'white'
   }
 }
+
+onMounted(() => {
+  if (app) {
+    app.root.data.utms = useObjectToQueryString(route.query)
+  }
+})
 
 onBeforeMount(() => {
   window.addEventListener('resize', setMenuColorOnResize)

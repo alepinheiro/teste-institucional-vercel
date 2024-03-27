@@ -108,6 +108,7 @@ import StepByStep from '@/components/vehicle/BestCarFinan/stepByStep.vue'
 import CarouselFinan from '@/components/vehicle/BestCarFinan/carouselFinan.vue'
 import ComparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue'
 import Rodape from '@/components/base/bannerBottomPage.vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'BestCarFinanLP',
@@ -126,6 +127,10 @@ export default defineComponent({
       default: true,
     },
   },
+  mounted(){
+    console.log(this.$route.query)
+    this.$root.utms = useObjectToQueryString(this.$route.query)
+  }
 })
 </script>
 

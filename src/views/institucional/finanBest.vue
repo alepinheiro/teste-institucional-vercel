@@ -10,7 +10,7 @@
     />
     <HeroSection />
     <BusinessPartners
-    id="businessPartners"
+      id="businessPartners"
       type="Financing"
       title="Na SejaBest, suas chances de aprovação são maiores"
       innerText="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
@@ -57,11 +57,22 @@ import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
 import VideoSection from '@/components/finanBestLp/videoSection.component.vue'
-import { ref, onBeforeMount, onBeforeUnmount } from 'vue'
+import {
+  ref,
+  onBeforeMount,
+  onBeforeUnmount,
+  onMounted,
+  getCurrentInstance,
+} from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import { useRoute } from 'vue-router'
 
 defineProps<{
   showMenu: boolean
 }>()
+
+const app = getCurrentInstance()
+const route = useRoute()
 
 const menuColor = ref(
   window.innerWidth > 667 ? 'black' : 'var(--textPrimaryColor)',
@@ -75,6 +86,11 @@ const setMenuColorOnResize = () => {
   }
 }
 
+onMounted(() => {
+  if (app) {
+    app.root.data.utms = useObjectToQueryString(route.query)
+  }
+})
 onBeforeMount(() => {
   window.addEventListener('resize', setMenuColorOnResize)
 })

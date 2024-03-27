@@ -148,6 +148,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import TopBarComponent from '@/components/structure/topbar.component.vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'TermsOfUse',
@@ -167,10 +168,8 @@ export default defineComponent({
     }
   },
   mounted() {
-    let fullUrl = this.$route.fullPath.split('?')
-    if (this.$route.fullPath.includes('?')) {
-      this.$root.utms = '?' + fullUrl[1]
-    }
+    console.log(this.$route.query)
+    this.$root.utms = useObjectToQueryString(this.$route.query)
   },
 })
 </script>

@@ -11,11 +11,17 @@
 import NotificationPopUp from '@/components/base/notificationPopUp.component.vue'
 import { NotificationInterface } from '@/interfaces/notification.interface'
 import { defineComponent } from 'vue'
-import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   components: { NotificationPopUp },
-  data() {
+  props: {
+    utmQuery: {
+      type: String,
+      required: false,
+      default: '',
+    }
+  },
+  data(props) {
     return {
       isLoading: true,
       notification: {
@@ -25,7 +31,7 @@ export default defineComponent({
         showMessage: false,
         buttonText: 'Continuar',
       } as NotificationInterface,
-      utms: useObjectToQueryString(this.$route.query),
+      utms: props.utmQuery ?? '',
     }
   },
 })

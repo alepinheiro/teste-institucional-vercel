@@ -20,6 +20,7 @@ import ComparisonTable from '@/components/warren/comparisonTable.component.vue'
 import CreditSteps from '@/components/warren/creditSteps.component.vue'
 import Contact from '@/components/warren/contactSection.component.vue'
 import TheFooter from '@/components/warren/theFooter.component.vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'WarrenLandingPage',
@@ -42,5 +43,9 @@ export default defineComponent({
   data() {
     return {}
   },
+  mounted(){
+    console.log(this.$route.query)
+    this.$root.utms = useObjectToQueryString(this.$route.query)
+  }
 })
 </script>

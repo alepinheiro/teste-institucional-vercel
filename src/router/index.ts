@@ -14,6 +14,7 @@ const routes: Array<RouteRecordRaw> = [
     },
     props: {
       showMenu: true,
+      utmQuery: '',
     },
   },
   {

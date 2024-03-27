@@ -45,6 +45,7 @@ import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue
 import TheFooter from '@/components/structure/theFooter.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
 import { defineComponent } from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'AboutUs',
@@ -71,5 +72,9 @@ export default defineComponent({
   data() {
     return {}
   },
+  mounted(){
+    console.log(this.$route.query)
+    this.$root.utms = useObjectToQueryString(this.$route.query)
+  }
 })
 </script>

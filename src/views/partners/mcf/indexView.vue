@@ -18,6 +18,7 @@ import HeroSection from '@/components/mcf/heroSection.component.vue';
 import Products from '@/components/mcf/productsSection.component.vue';
 import FooterSection from '@/components/mcf/footerSection.component.vue';
 import { defineComponent } from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
 
 export default defineComponent({
   name: 'IndexView',
@@ -33,5 +34,9 @@ export default defineComponent({
   data() {
     return {}
   },
+  mounted(){
+    console.log(this.$route.query)
+    this.$root.utms = useObjectToQueryString(this.$route.query)
+  }
 })
 </script>
