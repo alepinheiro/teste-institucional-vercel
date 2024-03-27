@@ -76,7 +76,7 @@ module.exports = {
         hintOfRed: 'var(--warrenHintOfRed)',
         whisper: 'var(--warrenWhisper)',
       },
-      mfc: {
+      mcf: {
         freeSpeechAquamarine: '#079269',
         burntOrange: '#FF7235',
         nightRider: '#333131'

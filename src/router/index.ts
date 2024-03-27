@@ -263,7 +263,7 @@ const routes: Array<RouteRecordRaw> = [
       description:
         'Não perca mais tempo buscando crédito! Agora, os melhores produtos de crédito da SejaBest estão disponíveis na Minha Casa Financiada',
     },
-    component: () => import('@/views/partners/mfc/indexView.vue'),
+    component: () => import('@/views/partners/mcf/indexView.vue'),
     props: {
       showMenu: false,
     },

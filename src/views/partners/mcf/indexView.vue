@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-col items-stretch justify-between">
     <HeroSection />
-    <section >Products</section>
+    <Products class="py-10" />
     <section >Partners</section>
     <section >ComparisonTable</section>
     <section >Steps</section>
@@ -10,13 +10,15 @@
   </main>
 </template>
 <script lang="ts">
-import HeroSection from '@/components/mfc/heroSection.component.vue';
+import HeroSection from '@/components/mcf/heroSection.component.vue';
+import Products from '@/components/mcf/productsSection.component.vue';
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'IndexView',
   components: {
     HeroSection,
+    Products,
   },
   data() {
     return {}

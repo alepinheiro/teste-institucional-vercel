@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="flex flex-col h-screen md:h-[80vh] min-lg:h-[90vh] min-lg:relative overflow-hidden">
-      <div class="bg-mfc-freeSpeechAquamarine h-4/5 px-5 text-white flex">
+      <div class="bg-mcf-freeSpeechAquamarine h-4/5 xl:h-full px-5 text-white flex">
         <div
           class="flex flex-col items-center justify-center min-md:items-start gap-5 xl:gap-16 md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto w-full"
         >
@@ -15,7 +15,7 @@
           <a
             href="https://simulador.seja.best/"
             target="_blank"
-            class="bg-mfc-burntOrange font-bold py-5 px-10 rounded-lg text-center"
+            class="bg-mcf-burntOrange font-bold py-5 px-10 rounded-lg text-center"
           >
             Quero simular meu crédito
           </a>
@@ -39,7 +39,8 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Logo from '@/components/mfc/icons/logoMfcSVG.component.vue'
+
+import Logo from '@/components/mcf/icons/logoMcfSVG.component.vue'
 export default defineComponent({
   name: 'HeroSection',
   components: {
