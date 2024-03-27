@@ -11,6 +11,7 @@ import VueScrollTo from 'vue-scrollto'
 // configurações do projeto
 import image from './configurations/images'
 import information from './configurations/information'
+
 const app = createApp(App)
 
 // componentes globais
