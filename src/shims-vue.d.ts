@@ -13,7 +13,7 @@ declare global {
     fbq: function;
     dataLayer: {
       push: function;
-    }
+    };
   }
 }
 

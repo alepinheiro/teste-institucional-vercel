@@ -1,6 +1,6 @@
 import { vueRouter } from 'storybook-vue3-router';
 import type { Meta, StoryObj } from '@storybook/vue3'
-import Page from '@/views/WarrenLandingPage.vue'
+import Page from '@/views/partners/warren/indexView.vue'
 
 const meta = {
     title: 'Views/Warren',

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Rota: Página inicial -->
+    <url>
+        <loc>https://www.sejabest.com/</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Rota: Sobre -->
+    <url>
+        <loc>https://www.sejabest.com/sobre</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Rota: Home Equity -->
+    <url>
+        <loc>https://www.sejabest.com/home-equity</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Rota: Empréstimo com garantia de imóvel -->
+    <url>
+        <loc>https://www.sejabest.com/emprestimo-com-garantia-de-imovel</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Rota: Financiamento imobiliário -->
+    <url>
+        <loc>https://www.sejabest.com/financiamento-imobiliario</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Rota: FAQ -->
+    <url>
+        <loc>https://www.sejabest.com/faq</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Rota: Política de Privacidade -->
+    <url>
+        <loc>https://www.sejabest.com/politica-de-privacidade</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Rota: Termos de Uso -->
+    <url>
+        <loc>https://www.sejabest.com/termos-de-uso</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Rota: Empréstimo com garantia de veículo - BestCar -->
+    <url>
+        <loc>https://www.sejabest.com/emprestimo-com-garantia-de-veiculo/BestCar</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Rota: Empréstimo com garantia de veículo -->
+    <url>
+        <loc>https://www.sejabest.com/emprestimo-com-garantia-de-veiculo</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Rota: Financiamento veicular -->
+    <url>
+        <loc>https://www.sejabest.com/financiamento-veicular</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Rota: Portal BestNews -->
+    <url>
+        <loc>https://www.sejabest.com/best-news</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Rota: Xô, Aluguel! -->
+    <url>
+        <loc>https://www.sejabest.com/xo-aluguel</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Rota: Sucesso na aquisição do guia -->
+    <!-- <url>
+        <loc>https://www.sejabest.com/xo-aluguel-adquirido</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url> -->
+
+    <!-- Rota: BestBroker -->
+    <url>
+        <loc>https://www.sejabest.com/best-broker</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Rota: Sucesso na aquisição do BestBroker -->
+    <!-- <url>
+        <loc>https://www.sejabest.com/best-broker-adquirido</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url> -->
+
+    <!-- Rota: BestHub -->
+    <url>
+        <loc>https://www.sejabest.com/besthub</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Rota: Warren -->
+    <url>
+        <loc>https://www.sejabest.com/warren</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Rota: Minha Casa Financiada -->
+    <url>
+        <loc>https://www.sejabest.com/minha-casa-financiada</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Aliases -->
+    <!-- Alias: /credito-com-garantia-de-imovel -->
+    <url>
+        <loc>https://www.sejabest.com/credito-com-garantia-de-imovel</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Alias: /como-funciona -->
+    <url>
+        <loc>https://www.sejabest.com/como-funciona</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Alias: /emprestimo-com-garantia-de-imovel/cashbest -->
+    <url>
+        <loc>https://www.sejabest.com/emprestimo-com-garantia-de-imovel/cashbest</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Alias: /financiamento-imobiliario/finanBest -->
+    <url>
+        <loc>https://www.sejabest.com/financiamento-imobiliario/finanBest</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Alias: /financiamento-veicular/BestCarFinan -->
+    <url>
+        <loc>https://www.sejabest.com/financiamento-veicular/BestCarFinan</loc>
+        <lastmod>2024-03-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
