@@ -8,7 +8,6 @@
     </div>
     <Rodape />
   </div>
-  <FooterComponent />
 </template>
 
 <script lang="ts">

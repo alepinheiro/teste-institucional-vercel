@@ -31,7 +31,6 @@ import BestTable from '@/components/bestHub/bestTable.component.vue'
 import ProductBoxSection from '@/components/bestHub/productBox.component.vue'
 import FaqSection from '@/components/bestHub/faqSection.component.vue'
 import FooterSection from '@/components/bestHub/footerSection.component.vue'
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
 export default defineComponent({
   name: 'BestHubLP',
   components: {

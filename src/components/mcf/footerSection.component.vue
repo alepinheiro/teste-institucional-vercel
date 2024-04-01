@@ -1,6 +1,7 @@
 <template>
   <footer class="bg-warren-darkCharcoal px-5 py-12">
     <div
+      data-nosnippet
       class="flex flex-col gap-12 md:max-w-3xl lg:max-w-5xl xl:max-w-6xl md:mx-auto lg:mx-auto xl:mx-auto"
     >
       <div class="flex flex-col gap-6 items-center">
@@ -109,7 +110,6 @@ export default defineComponent({
   data() {
     const socials = {
       warren: [
-
         {
           icon: 'fa-brands fa-instagram',
           title: 'Acesse nosso Instagram',

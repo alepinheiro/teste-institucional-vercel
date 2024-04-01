@@ -1,6 +1,6 @@
 <template>
   <footer class="w-full flex justify-center bg-bglight2Color">
-    <div class="mt-auto mb-auto">
+    <div data-nosnippet class="mt-auto mb-auto">
       <div
         class="maxWidth flex sm:flex-wrap justify-between pt-12 sm:pt-8 md:pt-8"
       >
@@ -467,7 +467,7 @@
           </p>
 
           <div class="">
-            <bacenImage class="w-40 h-auto" />
+            <BacenImage class="w-40 h-auto" />
           </div>
         </div>
       </div>
@@ -476,12 +476,12 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import bacenImage from '@/components/imagesSVG/partnersLogo/bacen.image.vue'
+import BacenImage from '@/components/imagesSVG/partnersLogo/bacen.image.vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'FooterComponent',
-  components: { bacenImage },
+  components: { BacenImage },
   data() {
     return {
       isVisible: false,
