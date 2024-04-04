@@ -32,7 +32,7 @@
           </b>
         </p>
         <a
-          :href="`${information.appSimulator}${$root.utms}`"
+          :href="`${information.simulatorMCF}${$root.utms}`"
           target="_blank"
           class="bg-mcf-burntOrange font-bold py-5 px-10 rounded-lg text-center text-white"
         >

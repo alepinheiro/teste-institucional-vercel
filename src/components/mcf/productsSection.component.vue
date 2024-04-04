@@ -54,7 +54,7 @@
               </div>
             </div>
             <a
-              :href="`${information.appSimulator}${$root.utms}`"
+              :href="`${information.simulatorMCF}${$root.utms}`"
               target="_blank"
               class="flex flex-row items-center gap-2 text-mcf-freeSpeechAquamarine font-bold hover:underline"
             >

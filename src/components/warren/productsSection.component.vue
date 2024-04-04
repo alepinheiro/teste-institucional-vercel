@@ -55,7 +55,7 @@
               </div>
             </div>
             <a
-              :href="`${information.appSimulator}${$root.utms}`"
+              :href="`${information.simulatorWarren}${$root.utms}`"
               target="_blank"
               class="flex flex-row items-center gap-2 text-warren-terracota font-bold"
             >
