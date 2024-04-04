@@ -7,14 +7,14 @@
         class="bg-mcf-freeSpeechAquamarine h-4/5 xl:h-full px-5 text-white flex"
       >
         <div
-          class="flex flex-col items-center justify-center min-md:items-start gap-5 xl:gap-16 md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto w-full"
+          class="flex flex-col items-center justify-center min-md:items-start gap-5 xl:gap-16 w-full max-w-xs md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto w-full"
         >
           <Logo class="fill-white" />
-          <div
+          <h1
             class="text-xl min-md:text-4xl font-bold text-center min-md:text-left md:w-3/4 min-lg:w-1/2"
           >
             Fazer crédito toma tempo, mas não precisa ser o seu
-          </div>
+          </h1>
           <img src="/images/warren/sejaBestLogosWhite.svg" alt="" srcset="" />
           <a
             :href="`${information.appSimulator}${$root.utms}`"
