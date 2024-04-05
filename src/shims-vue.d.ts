@@ -1,6 +1,7 @@
 import { NotificationInterface } from '@/interfaces/notification.interface'
 import { ComponentInternalInstance } from 'vue'
 import type information from '@/configurations/information'
+import { FbEvents } from '@/interfaces/analytics/fbEvents'
 
 declare module '*.vue' {
   import { Component } from 'vue'
@@ -10,7 +11,7 @@ declare module '*.vue' {
 
 declare global {
   interface Window {
-    fbq: function;
+    fbq: FbEvents;
     dataLayer: {
       push: function;
     };

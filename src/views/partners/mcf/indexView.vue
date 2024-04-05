@@ -1,11 +1,11 @@
 <template>
   <main class="flex flex-col items-stretch justify-between">
-    <HeroSection class="bg-zinc-100" />
-    <Products class="py-10 bg-zinc-100" />
-    <BusinessPartners class="py-10 px-5" />
-    <ComparisonTable class="py-10" />
+    <HeroSection class="bg-zinc-100" @click="onClick('HeroSection')" />
+    <Products class="py-10 bg-zinc-100" @click="onClick('Carrousel')" />
+    <BusinessPartners class="py-10 px-5"  />
+    <ComparisonTable class="py-10" @click="onClick('Table')" />
     <CreditSteps class="bg-zinc-200 py-20 px-5"/>
-    <ContactSection />
+    <ContactSection @click="onClick('Partnership')" />
     <FooterSection />
   </main>
 </template>
@@ -32,11 +32,21 @@ export default defineComponent({
     Products,
   },
   data() {
-    return {}
+    return {
+      pixelId: '386064430923138',
+    }
   },
   mounted(){
-    console.log(this.$route.query)
     this.$root.utms = useObjectToQueryString(this.$route.query)
+    window.fbq('init', this.pixelId)
+    window.fbq('trackSingle', this.pixelId, 'PageView')
+  },
+  methods: {
+    onClick(sectionName: string){
+      window.fbq('trackSingle', this.pixelId, 'ViewContent', {
+        content_ids: [sectionName]
+      })
+    }
   }
 })
 </script>
