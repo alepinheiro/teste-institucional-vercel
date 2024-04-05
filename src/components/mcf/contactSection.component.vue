@@ -35,6 +35,7 @@
           :href="`${information.simulatorMCF}${$root.utms}`"
           target="_blank"
           class="bg-mcf-burntOrange font-bold py-5 px-10 rounded-lg text-center text-white"
+          @click="$emit('click')"
         >
           Quero simular meu crédito
         </a>
@@ -63,6 +64,7 @@ import Logo from '@/components/mcf/icons/logoMcfSVG.component.vue'
 export default defineComponent({
   name: 'ContactSection',
   components: { LogoSejaBestSVG, Logo },
+  emits: ['click'],
   data() {
     return {
       information,

@@ -20,6 +20,7 @@
             :href="`${information.simulatorMCF}${$root.utms}`"
             target="_blank"
             class="bg-mcf-burntOrange font-bold py-5 px-10 rounded-lg text-center"
+            @click="$emit('click')"
           >
             Quero simular meu crédito
           </a>
@@ -60,6 +61,7 @@ export default defineComponent({
   components: {
     Logo,
   },
+  emits: ['click'],
   data() {
     return {
       information,

@@ -57,6 +57,7 @@
               :href="`${information.simulatorMCF}${$root.utms}`"
               target="_blank"
               class="flex flex-row items-center gap-2 text-mcf-freeSpeechAquamarine font-bold hover:underline"
+              @click="$emit('click')"
             >
               <span> Simule grátis </span>
               <i class="fa-solid fa-arrow-right-long"></i>
@@ -134,6 +135,7 @@ import Car from '@/components/icons/carIcon.component.vue'
  */
 export default defineComponent({
   name: 'ProductsSection',
+  emits: ['click'],
   setup() {
     const sliderOptions: SwiperOptions = {
       spaceBetween: 20,
