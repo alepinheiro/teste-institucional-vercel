@@ -1,19 +1,28 @@
 <template>
-  <div class="w-full defaultFont selection:bg-complementaryColor1 selection:text-white">
+  <div
+    class="w-full defaultFont selection:bg-complementaryColor1 selection:text-white"
+  >
     <RouterView />
-    <notificationPopUp />
+    <NotificationPopUp />
   </div>
 </template>
 
 <script lang="ts">
-import notificationPopUp from '@/components/base/notificationPopUp.component.vue'
+import NotificationPopUp from '@/components/base/notificationPopUp.component.vue'
 import { NotificationInterface } from '@/interfaces/notification.interface'
 import { defineComponent } from 'vue'
-import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+import { register } from 'swiper/element/bundle'
 
 export default defineComponent({
-  components: { notificationPopUp },
-  data() {
+  components: { NotificationPopUp },
+  props: {
+    utmQuery: {
+      type: String,
+      required: false,
+      default: '',
+    },
+  },
+  data(props) {
     return {
       isLoading: true,
       notification: {
@@ -23,8 +32,17 @@ export default defineComponent({
         showMessage: false,
         buttonText: 'Continuar',
       } as NotificationInterface,
-      utms: useObjectToQueryString(this.$route.query),
+      utms: props.utmQuery ?? '',
     }
+  },
+  created() {
+    import('@/configurations/color.css')
+    import('@/assets/css/tailwind.css')
+    import('@/configurations/customStyle.css')
+    import('@/configurations/themeCustomization.scss')
+  },
+  mounted() {
+    register()
   },
 })
 </script>

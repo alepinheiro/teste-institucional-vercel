@@ -23,6 +23,7 @@ const information = {
   appPartner: 'https://besthub.app/',
   appClient: 'https://app.seja.best/',
   simulatorWarren: 'https://warren.seja.best/',
+  simulatorMCF: 'https://minhacasafinanciada.seja.best/',
   appSimulator: 'https://simulador.seja.best/',
   appRealEstateSimulator: 'https://simulador.seja.best/imovel',
   appVehicleSimulator: 'https://simulador.seja.best/veiculo',

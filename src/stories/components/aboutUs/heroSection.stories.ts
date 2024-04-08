@@ -13,4 +13,10 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   decorators: [vueRouter()],
+  args: {
+    backgroundVideos: {
+      desktop: 'https://example.com/hero-video-desktop.mp4',
+      mobile: 'https://example.com/hero-video-mobile.mp4',
+    },
+  },
 }

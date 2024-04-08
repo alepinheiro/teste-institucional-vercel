@@ -28,6 +28,9 @@ const meta = {
   args: {
     bgContainer: { bgColor: 'BGDARKCOLOR' },
     showRealtyValue: false,
+    form: {
+      showRealtyValue: true,
+    },
   },
   render: (args) => ({
     components: { Subscribe },
@@ -46,8 +49,11 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    component: meta.args.bgContainer,
-    form: { showRealtyValue: meta.args.showRealtyValue },
+    component: {
+      bgColor: 'BGDARKCOLOR',
+    },
+    image: 'gabrielle',
   },
+
   decorators: [vueRouter()],
 }

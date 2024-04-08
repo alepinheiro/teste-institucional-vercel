@@ -1,6 +1,9 @@
 <template>
   <footer class="bg-warren-darkCharcoal px-5 py-12">
-    <div class="flex flex-col gap-12 md:max-w-3xl lg:max-w-5xl xl:max-w-6xl md:mx-auto lg:mx-auto xl:mx-auto">
+    <div
+      data-nosnippet
+      class="flex flex-col gap-12 md:max-w-3xl lg:max-w-5xl xl:max-w-6xl md:mx-auto lg:mx-auto xl:mx-auto"
+    >
       <div class="flex flex-col gap-6 items-center">
         <p class="text-warren-stormGray text-xs text-justify font-bold">
           A Warren Corretora de Títulos e Valores Mobiliários e Câmbio
@@ -28,7 +31,9 @@
           realização de operações. Consulte os riscos das operações e a
           compatibilidade com o seu perfil antes de investir.
         </p>
-        <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-6 items-center w-full md:justify-between lg:justify-between xl:justify-between">
+        <div
+          class="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-6 items-center w-full md:justify-between lg:justify-between xl:justify-between"
+        >
           <LogoWarrenSVG class="h-10 text-white" />
           <a
             href="https://www.warren.com.br"
@@ -75,7 +80,9 @@
           CNPJ 26.915.796/0001-04, com sede na Rua Miguel Matte, 687, sala 801,
           Ed. Evolution – CEP 88331-030, Pioneiros, Balneário Camboriú – SC.
         </p>
-        <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-6 items-center w-full md:justify-between lg:justify-between xl:justify-between">
+        <div
+          class="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-6 items-center w-full md:justify-between lg:justify-between xl:justify-between"
+        >
           <LogoSejaBestSVG class="h-10 text-white" />
           <a href="https://seja.best" class="text-xs text-white font-bold">
             www.seja.best
