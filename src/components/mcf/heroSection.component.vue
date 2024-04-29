@@ -1,17 +1,19 @@
 <template>
-  <section>
+  <section
+    class="relative z-0 flex flex-col items-stretch"
+  >
     <div
-      class="flex flex-col h-screen md:h-[80vh] min-lg:h-[90vh] min-lg:relative overflow-hidden"
+      class=" flex bg-mcf-freeSpeechAquamarine bg-cover px-5 pb-24 mb-48 xl:mb-16"
     >
       <div
-        class="bg-mcf-freeSpeechAquamarine h-4/5 xl:h-full px-5 text-white flex"
+        class="md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto pt-18 md:pt-28 lg:pt-36 xl:pt-32 pb-5 w-full xl:flex xl:flex-row gap-5 "
       >
         <div
-          class="flex flex-col items-center justify-center min-md:items-start gap-5 xl:gap-16 w-full max-w-xs md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto w-full"
+          class=" flex flex-col gap-6 md:gap-8 lg:gap-8 xl:gap-16 items-center md:items-start lg:items-start xl:items-start xl:justify-between md:w-5/6 lg:w-4/6 xl:w-1/2 xl:flex-1"
         >
-          <Logo class="fill-white" />
+          <Logo class="flex h-auto w-44 text-white" />
           <h1
-            class="text-xl min-md:text-4xl font-bold text-center min-md:text-left md:w-3/4 min-lg:w-1/2"
+            class="text-xl md:text-5xl lg:text-5xl xl:text-5xl sm:px-10 font-bold text-center md:text-start lg:text-start xl:text-start text-white"
           >
             Fazer crédito toma tempo, mas não precisa ser o seu
           </h1>
@@ -19,26 +21,32 @@
           <a
             :href="`${information.simulatorMCF}${$root.utms}`"
             target="_blank"
-            class="bg-mcf-burntOrange font-bold py-5 px-10 rounded-lg text-center"
+            class="bg-mcf-burntOrange font-bold py-5 px-10 rounded-lg text-center text-white"
             @click="$emit('click')"
           >
             Quero simular meu crédito
           </a>
         </div>
-      </div>
-      <div
-        class="h-1/5 min-lg:h-0 flex relative min-lg:static justify-center min-md:justify-end"
-      >
-        <div
-          class="absolute w-72 md:w-1/2 lg:w-1/2 xl:w-3/5 bottom-0 -top-32 md:-top-64 lg:top-14 lg:-right-20 xl:top-10 xl:left-[45%] xl:-right-24"
-        >
+        <div class="hidden xl:block xl:flex-1 relative h-auto">
           <img
-            src="/images/warren/proDisplay@4x.png"
+            src="/images/warren/proDisplay@2x.png"
+            class="absolute left-[20%] -top-[0%] scale-[130%]"
             alt=""
-            class="h-full w-fit xl:w-4/5 object-contain"
           />
         </div>
       </div>
+    </div>
+    <div class="bg-white flex w-full xl:h-0 xl:hidden">
+      <img
+        src="/images/warren/proDisplay@2x.png"
+        srcset="
+          /images/warren/proDisplay@1x.png 1x,
+          /images/warren/proDisplay@2x.png 2x,
+          /images/warren/proDisplay@4x.png 4x
+        "
+        class="h-2/5 object-contain md:h-96 scale-95 md:scale-125 mx-auto inset-x-0 absolute md:left-auto md:right-12 lg:left-[63%] bottom-0 md:bottom-8 lg:h-5/6 xl:top-1/4 xl:left-auto xl:right-12 xl:h-2/3 "
+        alt=""
+      />
     </div>
   </section>
 </template>

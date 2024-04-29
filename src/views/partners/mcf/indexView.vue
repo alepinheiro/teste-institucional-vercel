@@ -40,12 +40,28 @@ export default defineComponent({
     this.$root.utms = useObjectToQueryString(this.$route.query)
     window.fbq('init', this.pixelId)
     window.fbq('trackSingle', this.pixelId, 'PageView')
+    this.loadGoogleTagManager()
   },
   methods: {
     onClick(sectionName: string){
       window.fbq('trackSingle', this.pixelId, 'ViewContent', {
         content_ids: [sectionName]
       })
+    },
+    loadGoogleTagManager() {
+      // Crie um elemento script
+      let script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-318006787';
+      
+      // Adicione o script ao DOM
+      document.head.appendChild(script);
+      
+      // Configuração do Google Tag Manager
+      window.dataLayer = window.dataLayer || [];
+      function gtag(p0?: string, p1?: Date| string){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-318006787');
     }
   }
 })
