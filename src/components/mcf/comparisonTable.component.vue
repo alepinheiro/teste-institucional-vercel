@@ -5,7 +5,7 @@
     >
       <h2 class="text-3xl text-center text-mcf-nightRider min-md:text-5xl">
         Por que escolher a
-        <b class="min-md:block"> Minha Casa Financiada + SejaBest </b>
+        <b class="min-md:block"> Minha Casa Financiada + Bext </b>
       </h2>
       <div
         class="flex flex-col w-full pt-10 md:pt-20 lg:pt-14 text-textPrimary"
@@ -65,7 +65,7 @@ import { defineComponent } from 'vue'
  * # Visão Geral
  * O componente `ComparisonTable` é um componente Vue.js
  * projetado para exibir uma tabela comparativa destacando
- * as vantagens do produto "Minha Casa Financiada + SejaBest"
+ * as vantagens do produto "Minha Casa Financiada + Bext"
  * em comparação com outros produtos no mercado.
  *
  * # Props

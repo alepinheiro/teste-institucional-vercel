@@ -9,7 +9,7 @@
       <div
         class="mx-auto flex flex-col md:flex-row lg:flex-row xl:flex-row gap-5 justify-center lg:justify-end xl:justify-end lg:pr-5 xl:pr-5 items-center py-24 md:py-32 text-white w-4/6"
       >
-        <LogoSejaBestSVG class="h-14" />
+        <img class="h-10 w-auto" :src="$options.imageConfig.brand.logoWhite.image" :alt="$options.imageConfig.brand.logoWhite.alt" />
         <p class="text-3xl font-bold">+</p>
         <LogoWarrenSVG class="h-14" />
       </div>
@@ -39,14 +39,13 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import LogoSejaBestSVG from '@/components/base/logos/logoSejaBestSVG.component.vue'
 import LogoWarrenSVG from '@/components/warren/icons/logoWarrenSVG.component.vue'
 import CustomButton from '@/components/warren/customButton.component.vue'
 import information from '@/configurations/information'
 
 export default defineComponent({
   name: 'ContactSection',
-  components: { LogoSejaBestSVG, LogoWarrenSVG, CustomButton },
+  components: { LogoWarrenSVG, CustomButton },
   data() {
     const utm = new URLSearchParams({
       utm_source: 'warren-landing-page',

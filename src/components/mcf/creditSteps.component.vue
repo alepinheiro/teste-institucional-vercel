@@ -52,7 +52,7 @@ export default defineComponent({
         id: 2,
         title: 'Aprovação',
         description:
-          '<b>Agora é com a SejaBest:</b> a equipe entrará em contato com os bancos e cartórios.',
+          '<b>Agora é com a Bext:</b> a equipe entrará em contato com os bancos e cartórios.',
       },
       {
         id: 3,

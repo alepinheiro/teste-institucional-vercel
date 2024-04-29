@@ -17,7 +17,7 @@
           >
             Fazer crédito toma tempo, mas não precisa ser o seu
           </h1>
-          <img src="/images/warren/sejaBestLogosWhite.svg" alt="" srcset="" />
+          <img :src="$options.imageConfig.partners.ourLogos.image" :alt="$options.imageConfig.partners.ourLogos.alt" srcset="" />
           <CustomButton
             :text="'Quero simular meu crédito'"
             @click="onButtonClick"

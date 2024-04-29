@@ -275,6 +275,24 @@ const image = {
     bestNewsTelegram: '/images/BestNews/LogoBestNewsTelegram.svg',
     youBest: '/images/BestNews/LogoBestPlay.svg',
   },
+  partners:{
+    ourLogos:{
+      image:'/images/warren/HeroLogosWhite.svg',
+      alt:'Bext + BestHub'
+    },
+    mcf:{
+      logo:{
+        image: '/images/mcf/logoMCF.svg',
+        alt:'Minha casa Financiada'
+      }
+    }
+  },
+  brand:{
+    logoWhite: {
+      image:'/images/brand/logoWhite.svg',
+      alt:'Bext'
+    }
+  }
 }
 
 export default image

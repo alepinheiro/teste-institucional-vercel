@@ -9,9 +9,9 @@
       <div
         class="mx-auto flex flex-col md:flex-row lg:flex-row xl:flex-row gap-5 justify-center lg:justify-end xl:justify-end lg:pr-5 xl:pr-5 items-center py-24 md:py-32 text-white w-4/6"
       >
-        <LogoSejaBestSVG class="h-14" />
+        <img class="h-10 w-auto" :src="$options.imageConfig.brand.logoWhite.image" :alt="$options.imageConfig.brand.logoWhite.alt" />
         <p class="text-3xl font-bold">+</p>
-        <Logo class="h-14" />
+        <img class="h-16 w-auto" :src="$options.imageConfig.partners.mcf.logo.image" :alt="$options.imageConfig.partners.mcf.logo.alt" />
       </div>
       <div
         class="flex flex-col gap-5 justify-center items-center min-lg:items-start py-12 md:py-18 px-5 text-center min-lg:text-start text-white lg:w-2/6 xl:w-2/6"
@@ -45,7 +45,6 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import LogoSejaBestSVG from '@/components/base/logos/logoSejaBestSVG.component.vue'
 import information from '@/configurations/information'
 import Logo from '@/components/mcf/icons/logoMcfSVG.component.vue'
 /**
@@ -63,7 +62,7 @@ import Logo from '@/components/mcf/icons/logoMcfSVG.component.vue'
  */
 export default defineComponent({
   name: 'ContactSection',
-  components: { LogoSejaBestSVG, Logo },
+  components: {  Logo },
   emits: ['click'],
   data() {
     return {
