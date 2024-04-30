@@ -12,8 +12,6 @@ module.exports = {
       md: { min: '668px', max: '1199px' },
       lg: { min: '1200px', max: '1799px' },
       xl: { min: '1800px' },
-      'min-md': { min: '668px' },
-      'min-lg': { min: '1024px' },
     },
     colors: {
       primary: 'var(--primaryColor)',

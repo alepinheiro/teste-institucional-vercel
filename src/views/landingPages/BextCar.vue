@@ -26,7 +26,7 @@
         }"
         class="pb-20"
       />
-      <Section3 class="bg-[#343644]" />
+      <Section3 class="bg-[#343644] " />
     <BestPlay class="bg-[#343644]" />
   </div>
   <FooterComponent />
