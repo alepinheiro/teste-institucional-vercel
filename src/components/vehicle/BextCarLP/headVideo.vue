@@ -30,8 +30,8 @@
                 <div class="bg-bgLight2Color p-3 rounded-xl">
                   <div class="flex w-full items-center justify-center border-b-1 border-primary pb-4">
                     <div class=" mt-auto mb-auto p-2 sm:pr-4 ">
-                      <img :src="$options.imageConfig.brand.iconBlue.image"
-                        :alt="$options.imageConfig.brand.iconBlue.alt" class="w-6 sm:w-12  h-auto mr-auto ml-auto" />
+                      <img :src="$options.imageConfig.brand.blueIcon.image"
+                        :alt="$options.imageConfig.brand.blueIcon.alt" class="w-6 sm:w-12  h-auto mr-auto ml-auto" />
                     </div>
                     <p class="sm:text-xl">
                       Sem <span class="text-primary">Filas.</span> Sem

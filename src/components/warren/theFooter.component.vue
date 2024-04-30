@@ -80,7 +80,7 @@
         </p>
         <div
           class="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-6 items-center w-full md:justify-between lg:justify-between xl:justify-between">
-          <img class="h-8 w-auto" :src="$options.imageConfig.brand.logoWhite.image" :alt="$options.imageConfig.brand.logoWhite.alt" />
+          <img class="h-8 w-auto" :src="$options.imageConfig.brand.whiteLogo.image" :alt="$options.imageConfig.brand.whiteLogo.alt" />
           <a :href="$options.information.site.url" class="text-xs text-white font-bold">
             {{$options.information.site.name}}
           </a>

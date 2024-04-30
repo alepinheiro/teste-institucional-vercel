@@ -19,8 +19,8 @@
       <div class="flex md:flex-col gap-8 items-center w-fit mx-auto">
         <img
           ref="phone"
-          :src="`/images/Home/simulatorOnPhoneMockup-${type}.png`"
-          alt="A melhor plataforma multibancos."
+          :src="$options.imageConfig.mockUps.multiBankPhone.image"
+          :alt="$options.imageConfig.mockUps.multiBankPhone.alt"
           class="h-128 hidden min-md:block opacity-0"
         />
         <div

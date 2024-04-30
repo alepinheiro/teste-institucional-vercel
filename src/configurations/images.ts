@@ -23,7 +23,7 @@ export const topOfSales = (color: 'black' | 'white') => [
 
 const image = {
   logoSejabest: '/images/logoBest/logoBlue.svg',
-  logoSejabestWhite: '/images/logoBest/logoWhite.svg',
+  logoSejabestWhite: '/images/logoBest/whiteLogo.svg',
   logoSejabestGray: '/images/logoBest/logoGray.svg',
   logoBestHub: '/images/logoBest/LogoBestHub.svg',
   logoVertical: '/images/logoBest/Logotipo-vertical-azul.webp',
@@ -261,7 +261,7 @@ const image = {
   },
   BextCar: {
     carroNotas: '/images/BextCar/CARRO_1.webp',
-    graficoBextCar: '/images/BextCar/graficoBextCar.svg',
+    graficoBextCar: '/images/BextCar/graficoBextCar1.svg',
     carro: '/images/BextCar/CARRO_2.webp',
     graficoFinan: '/images/BextCar/GRAFICO_FINANCIAMENTO.svg',
     imgMulher: '/images/BextCar/IMAGEM_MULHER.webp',
@@ -288,13 +288,27 @@ const image = {
     }
   },
   brand:{
-    logoWhite: {
-      image:'/images/brand/logoWhite.svg',
+    whiteLogo: {
+      image:'/images/brand/whiteLogo.svg',
       alt:'Bext'
     },
-    iconBlue: {
-      image:'/images/brand/iconBlue.svg',
+    blueIcon: {
+      image:'/images/brand/blueIcon.svg',
       alt: 'Bext'
+    },
+    blackAndBlueLogo: {
+      image:'/images/brand/blackAndBlueLogo.svg',
+      alt: 'Bext'
+    },
+    whiteAndBlueLogo: {
+      image:'/images/brand/whiteAndBlueLogo.svg',
+      alt: 'Bext'
+    }
+  },
+  mockUps:{
+    multiBankPhone: {
+      image:'/images/mockups/MockupCelularHomeFinalSimuladorMultibancos.png',
+      alt: 'Plataforma multibancos e simulador online'
     }
   }
 }

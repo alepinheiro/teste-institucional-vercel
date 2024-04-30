@@ -9,7 +9,7 @@
       <div
         class="mx-auto flex flex-col md:flex-row lg:flex-row xl:flex-row gap-5 justify-center lg:justify-end xl:justify-end lg:pr-5 xl:pr-5 items-center py-24 md:py-32 text-white w-4/6"
       >
-        <img class="h-10 w-auto" :src="$options.imageConfig.brand.logoWhite.image" :alt="$options.imageConfig.brand.logoWhite.alt" />
+        <img class="h-10 w-auto" :src="$options.imageConfig.brand.whiteLogo.image" :alt="$options.imageConfig.brand.whiteLogo.alt" />
         <p class="text-3xl font-bold">+</p>
         <LogoWarrenSVG class="h-14" />
       </div>
