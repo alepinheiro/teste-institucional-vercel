@@ -125,12 +125,12 @@ export default defineComponent({
         {
           icon: 'fa-brands fa-facebook-f',
           title: 'Acesse nosso Facebook',
-          link: 'https://www.facebook.com/seja.best',
+          link: 'https://www.facebook.com/bext.vc',
         },
         {
           icon: 'fa-brands fa-instagram',
           title: 'Acesse nosso Instagram',
-          link: 'https://www.instagram.com/seja.best/',
+          link: 'https://www.instagram.com/bext.vc/',
         },
         {
           icon: 'fa-brands fa-linkedin',

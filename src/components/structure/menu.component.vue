@@ -34,7 +34,7 @@
         Seja um Parceiro
       </RouterLink>
       <a
-        :href="'https://portal.seja.best/' + useObjectToQueryString($route.query)"
+        :href="'https://portal.bext.vc/' + useObjectToQueryString($route.query)"
         class="decoration"
         target="_blank"
       >

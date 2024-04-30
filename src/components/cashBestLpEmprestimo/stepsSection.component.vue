@@ -90,7 +90,7 @@ const stepCards = [
       'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
     callToAction: [
       'Simule agora',
-      `https://simulador.seja.best/${useObjectToQueryString(route.query)}`,
+      `https://simulador.bext.vc/${useObjectToQueryString(route.query)}`,
     ],
   },
   {

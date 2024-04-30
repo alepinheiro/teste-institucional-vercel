@@ -63,7 +63,7 @@
         class="w-1/5 md:w-1/3 sm:w-1/3 pb-12 sm:pb-8 md:pb-8 flex justify-center"
       >
         <a
-          href="https://economiasc.com/2021/08/06/fintech-aproxima-brasileiros-de-home-equity-modalidade-de-credito-imobiliario-com-melhores-taxas-no-mercado/?utm_source=seja.best"
+          href="https://economiasc.com/2021/08/06/fintech-aproxima-brasileiros-de-home-equity-modalidade-de-credito-imobiliario-com-melhores-taxas-no-mercado/?utm_source=bext.vc"
           style="text-decoration: none"
           target="_blank"
           aria-label="Acesse a matéria no portal economiasc.com"

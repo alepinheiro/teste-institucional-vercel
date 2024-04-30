@@ -17,7 +17,7 @@
           >© {{ new Date().getFullYear() }} Bext Fintech</span
         >
         <RouterLink :to="'/' + $root.utms" class="block hover:text-[#D0FE42]">
-          <span> www.seja.best </span>
+          <span> www.bext.vc </span>
         </RouterLink>
       </div>
       <div class="flex flex-row mx-auto">

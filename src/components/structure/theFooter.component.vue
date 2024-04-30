@@ -13,7 +13,7 @@
           </div>
 
           <div class="sm:text-sm text-textPrimary pb-6">
-            <a :href="'https://portal.seja.best/' +
+            <a :href="'https://portal.bext.vc/' +
               useObjectToQueryString($route.query)
               " aria-label="Acesse nosso Portal" class="hover:text-textPrimary" style="text-decoration: none"
               target="_blank">

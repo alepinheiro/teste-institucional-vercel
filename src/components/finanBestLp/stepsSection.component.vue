@@ -69,7 +69,7 @@ const steps = [
     icon: 'fa-solid fa-layer-group',
     title: '1. Simule',
     text: 'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
-    link: [`https://simulador.seja.best/${useObjectToQueryString(route.query)}`, 'Simule agora'],
+    link: [`https://simulador.bext.vc/${useObjectToQueryString(route.query)}`, 'Simule agora'],
   },
   {
     id: 2,

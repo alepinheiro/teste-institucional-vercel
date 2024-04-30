@@ -6,7 +6,7 @@
     </div>
     <div class="text-primary text-sm text-center sm:hidden md:hidden">
       <div>© {{ new Date().getFullYear() }} Bext Fintech</div>
-      <div><a href="www.seja.best">www.seja.best</a></div>
+      <div><a href="www.bext.vc">www.bext.vc</a></div>
     </div>
     <div class=" flex sm:w-full justify-center sm:pb-6">
       <a
@@ -63,7 +63,7 @@ class="cls-1"
     </div>
     <div class="sm:w-full md:w-full md:pt-12 text-primary text-sm text-center xl:hidden lg:hidden ">
       <div>© {{ new Date().getFullYear() }} Bext Fintech</div>
-      <div><a href="www.seja.best">www.seja.best</a></div>
+      <div><a href="www.bext.vc">www.bext.vc</a></div>
     </div>
   </div>
 </template>

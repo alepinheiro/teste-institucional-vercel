@@ -337,7 +337,7 @@
       >
         <a
           :href="
-            'https://portal.seja.best/' + useObjectToQueryString($route.query)
+            'https://portal.bext.vc/' + useObjectToQueryString($route.query)
           "
           style="text-decoration: none"
           class="hover:font-semibold"

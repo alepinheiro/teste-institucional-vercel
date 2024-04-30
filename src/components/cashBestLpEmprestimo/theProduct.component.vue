@@ -16,7 +16,7 @@
         </p>
         <hr class="hidden sm:block border-zinc-400" />
         <a
-          :href="`https://simulador.seja.best/${useObjectToQueryString(route.query)}`"
+          :href="`https://simulador.bext.vc/${useObjectToQueryString(route.query)}`"
           target="_blank"
           class="font-bold text-white bg-primary rounded-xl px-4 py-2 w-fit sm:hidden hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
           >Simule on-line de graça
@@ -62,7 +62,7 @@
         </span>
       </div>
       <a
-        :href="`https://simulador.seja.best/${useObjectToQueryString(route.query)}`"
+        :href="`https://simulador.bext.vc/${useObjectToQueryString(route.query)}`"
         target="_blank"
         class="font-bold text-white bg-primary rounded-xl px-4 py-2 w-fit hidden sm:block sm:mt-8 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
       >
