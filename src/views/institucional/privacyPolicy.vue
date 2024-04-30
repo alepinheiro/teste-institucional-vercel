@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="bg-bgLightColor">
-      <section class="w-full gradienteSB">
-        <div v-if="showMenu" class="maxWidth">
-          <TopBarComponent position="relative" />
+    <div class="bg-bgLight2Color">
+      <section class="w-full bg-bgLightColor">
+        <div v-if="showMenu" >
+          <TopBar v-if="showMenu" customMobileMenuColor="black" color="primary"  />
         </div>
         <div class="maxWidth">
-          <h1 class="text-white text-4xl font-semibold pb-12 pt-16">
+          <h1 class=" text-4xl font-semibold pb-12 pt-16 xl:pt-24">
             Política de Privacidade
           </h1>
         </div>
@@ -15,8 +15,7 @@
       <section class="maxWidth py-12">
         <div class="text-textPrimary">
           <p>
-            Este site é mantido e operado por SejaBest Fintech de crédito
-            imobiliário LTDA.
+            Este site é mantido e operado por Bext Fintech LTDA.
           </p>
           <p>
             Nós coletamos e utilizamos alguns dados pessoais que pertencem
@@ -147,6 +146,12 @@
             </a>
           </p>
           <p class="pl-9 pb-3">
+            <a href="https://privacy.microsoft.com/pt-BR/privacystatement">
+              Microsoft Clarity: <br />
+              https://privacy.microsoft.com/pt-BR/privacystatement
+            </a>
+          </p>
+          <p class="pl-9 pb-3">
             <a
               href="https://support.google.com/analytics/answer/6004245?hl=pt-BR "
             >
@@ -172,12 +177,6 @@
             >
               Microsoft Ads: <br />
               https://about.ads.microsoft.com/en-gb/resources/policies/microsoft-advertising-privacy-policy
-            </a>
-          </p>
-          <p class="pl-9 pb-3">
-            <a href="https://www.hotjar.com/legal/policies/privacy/">
-              Hotjar: <br />
-              https://www.hotjar.com/legal/policies/privacy/
             </a>
           </p>
           <p class="pl-9 pb-3">
@@ -252,7 +251,7 @@
           <p class="pl-3 pb-3">Os dados compartilhados são os seguintes:</p>
           <p class="pl-3 pb-3">
             Alguns dados são compartilhados com os parceiros financeiros da
-            SEJABEST, tais como (Bancos, Fintechs, Financeiras, companhias
+            Bext, tais como (Bancos, Fintechs, Financeiras, companhias
             hipotecárias e fundos de investimentos), que são:
           </p>
 
@@ -493,7 +492,7 @@
           </p>
           <p class="pl-3 pb-3">
             A presente versão desta Política de Privacidade foi atualizada pela
-            última vez em: 30/10/2020.
+            última vez em: 30/04/2024.
           </p>
           <p class="pl-3 pb-3">
             Nos reservamos o direito de modificar, a qualquer momento, as
@@ -515,10 +514,10 @@
             Encarregado de Proteção de Dados Pessoais, por algum dos canais
             mencionados abaixo:
           </p>
-          <p class="pl-3 pb-3">E-mail: central@seja.best</p>
+          <p class="pl-3 pb-3">E-mail: contato@bext.vc</p>
           <p class="pl-3 pb-3">Telefone: +55 47 99112-1006</p>
           <p class="pl-3 pb-3">
-            Endereço postal:Rua Miguel Matte, 687, sala 801, Ed. Evolution – CEP
+            Endereço postal: Rua Miguel Matte, 687, sala 801, Ed. Evolution – CEP
             88331-085, Pioneiros, Balneário Camboriú – SC
           </p>
         </div>
@@ -529,13 +528,13 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import TopBarComponent from '@/components/structure/topbar.component.vue'
+import TopBar from '@/components/structure/topBar/index.component.vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'PrivacyPolicy',
   components: {
-    TopBarComponent,
+    TopBar,
   },
   props: {
     showMenu: {

@@ -24,7 +24,7 @@
       >
         <img
           :src="$options.imageConfig.logoSejabestWhite"
-          alt="Logo SejaBest"
+          alt="Logo Bext"
           class="w-48 lg:w-36 md:self-start xl:self-center"
         />
         <h1
@@ -38,11 +38,11 @@
         class="flex flex-wrap md:flex-row items-center md:justify-center sm:justify-center"
       >
         <div
-          class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mr-2 flex flex-col shadow-md rounded-xl md:my-8 sm:my-1"
+          class="cardShine text-white bg-primary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mr-2 flex flex-col shadow-md rounded-xl md:my-8 sm:my-1"
         >
           <img
             :src="$options.imageConfig.bestNews.youBest"
-            alt="Acompanhe a SejaBest no Youtube"
+            alt="Acompanhe a Bext no Youtube"
             class="w-36 md:w-28 lg:w-30 pb-2 pt-2 lg:pt-4 sm:self-center"
           />
           <p
@@ -60,11 +60,11 @@
           </a>
         </div>
         <div
-          class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4"
+          class="cardShine text-white bg-primary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4"
         >
           <img
             :src="$options.imageConfig.bestNews.bestNewsTelegram"
-            alt="Acompanhe a SejaBest no Telegram"
+            alt="Acompanhe a Bext no Telegram"
             class="w-36 md:w-28 lg:w-30 pb-2 pt-2 lg:pt-4 sm:self-center"
           />
           <p
@@ -82,11 +82,11 @@
           </a>
         </div>
         <div
-          class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4"
+          class="cardShine text-white bg-primary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4"
         >
           <img
             :src="$options.imageConfig.bestNews.bestNewsLinkedin"
-            alt="Acompanhe a SejaBest no LinkedIn"
+            alt="Acompanhe a Bext no LinkedIn"
             class="w-36 md:w-28 lg:w-30 pb-2 pt-4 sm:self-center"
           />
           <p

@@ -64,7 +64,7 @@
           :href="
             information.appSimulator + useObjectToQueryString($route.query)
           "
-          class="bg-primary px-5 py-3 rounded text-white font-bold sm:mt-2"
+          class="bg-primary px-5 py-3 rounded-xl text-white font-bold sm:mt-2"
           target="_blank"
         >
           <span class="xl:hidden lg:hidden md:hidden">Simule seu crédito</span>

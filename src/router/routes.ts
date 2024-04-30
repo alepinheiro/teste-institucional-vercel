@@ -7,7 +7,7 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'Home',
     meta: {
       title:
-        'SejaBest - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
+        'Bext - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
       description:
         'Descubra como maximizar suas chances de aprovação com mais de 20 instituições financeiras parceiras.',
     },
@@ -21,9 +21,9 @@ export const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/institucional/aboutUs.vue'),
     meta: {
       title:
-        'Sobre a SejaBest: Transformando o acesso ao crédito para sua melhor versão',
+        'Sobre a Bext: Transformando o acesso ao crédito para sua melhor versão',
       description:
-        'Descubra como a SejaBest está transformando o acesso ao crédito há mais de 10 anos.',
+        'Descubra como a Bext está transformando o acesso ao crédito há mais de 10 anos.',
     },
     props: {
       showMenu: true,
@@ -35,9 +35,9 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'HomeEquity',
     component: () => import('@/views/institucional/cashBest.vue'),
     meta: {
-      title: 'CashBest: O Melhor Crédito com Garantia de Imóvel | SejaBest',
+      title: 'CashBest: O Melhor Crédito com Garantia de Imóvel | Bext',
       description:
-        'Descubra como o CashBest da SejaBest oferece o melhor crédito com garantia de imóvel do mercado',
+        'Descubra como o CashBest da Bext oferece o melhor crédito com garantia de imóvel do mercado',
     },
     props: {
       showMenu: true,
@@ -49,9 +49,9 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'HomeEquityCopy',
     component: () => import('@/views/institucional/cashBestEmprestimo.vue'),
     meta: {
-      title: 'CashBest: O Melhor empréstimo com Garantia de Imóvel | SejaBest',
+      title: 'CashBest: O Melhor empréstimo com Garantia de Imóvel | Bext',
       description:
-        'Descubra como o CashBest da SejaBest oferece o melhor empréstimo com garantia de imóvel do mercado',
+        'Descubra como o CashBest da Bext oferece o melhor empréstimo com garantia de imóvel do mercado',
     },
     props: {
       showMenu: false,
@@ -65,7 +65,7 @@ export const routes: Array<RouteRecordRaw> = [
     meta: {
       title: 'FinanBest: Financie Seu Imóvel | Taxas a partir de 1.09% a.m.',
       description:
-        'Descubra como financiar seu imóvel com o FinanBest da SejaBest, oferecendo taxas a partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
+        'Descubra como financiar seu imóvel com o FinanBest da Bext, oferecendo taxas a partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
     },
     props: {
       showMenu: true,
@@ -77,9 +77,9 @@ export const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/institucional/faqView.vue'),
     meta: {
       title:
-        'Perguntas Frequentes sobre Crédito Imobiliário e Home Equity - SejaBest',
+        'Perguntas Frequentes sobre Crédito Imobiliário e Home Equity - Bext',
       description:
-        'Descubra respostas claras e detalhadas sobre financiamento imobiliário, crédito com garantia de imóvel e o funcionamento da SejaBest. ',
+        'Descubra respostas claras e detalhadas sobre financiamento imobiliário, crédito com garantia de imóvel e o funcionamento da Bext. ',
     },
     props: {
       showMenu: true,
@@ -90,7 +90,7 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'PrivacyPolicy',
     component: () => import('@/views/institucional/privacyPolicy.vue'),
     meta: {
-      title: 'Política de Privacidade - Proteção de Dados Pessoais - SejaBest',
+      title: 'Política de Privacidade - Proteção de Dados Pessoais - Bext',
       description:
         'Conheça nossa política de privacidade, conforme a Lei Geral de Proteção de Dados (LGPD), e saiba como protegemos e utilizamos seus dados pessoais. ',
     },
@@ -103,7 +103,7 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'TermsOfUse',
     component: () => import('@/views/institucional/termsOfUse.vue'),
     meta: {
-      title: 'Termos de Uso - SejaBest Fintech de Crédito Imobiliário',
+      title: 'Termos de Uso - Bext Fintech de Crédito Imobiliário',
       description:
         'Saiba mais sobre licenças, isenção de responsabilidade, limitações, precisão dos materiais, links externos, modificações e a lei aplicável.        ',
     },
@@ -118,9 +118,9 @@ export const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/landingPages/BextCar.vue'),
     meta: {
       title:
-        'Empréstimo com Garantia de Veículo - BextCar | SejaBest | Crédito Imobiliário',
+        'Empréstimo com Garantia de Veículo - BextCar | Bext | Crédito Imobiliário',
       description:
-        'Obtenha crédito usando seu veículo como garantia com o BextCar da SejaBest Fintech de Crédito.',
+        'Obtenha crédito usando seu veículo como garantia com o BextCar da Bext Fintech de Crédito.',
     },
     props: {
       showMenu: false,
@@ -132,9 +132,9 @@ export const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/institucional/bextCar.vue'),
     meta: {
       title:
-        'BextCar: Empréstimo com Garantia de Veículo | SejaBest | Crédito Imobiliário',
+        'BextCar: Empréstimo com Garantia de Veículo | Bext | Crédito Imobiliário',
       description:
-        'Obtenha crédito usando seu veículo como garantia com o BextCar da SejaBest Fintech de Crédito.',
+        'Obtenha crédito usando seu veículo como garantia com o BextCar da Bext Fintech de Crédito.',
     },
     props: {
       showMenu: true,
@@ -147,7 +147,7 @@ export const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/institucional/bextCarFinan.vue'),
     meta: {
       title:
-        'FinanBest: Financiamento Veicular | SejaBest | Crédito Imobiliário',
+        'FinanBest: Financiamento Veicular | Bext | Crédito Imobiliário',
       description:
         'Conheça os benefícios, o processo passo a passo e por que escolher o FinanBest.',
     },
@@ -161,9 +161,9 @@ export const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/landingPages/bestNews.vue'),
     meta: {
       title:
-        'Portal BestNews - Acompanhe as Últimas Notícias Financeiras | SejaBest',
+        'Portal BestNews - Acompanhe as Últimas Notícias Financeiras | Bext',
       description:
-        'Fique por dentro de tudo sobre financiamento, modalidades de empréstimo e atualizações do mercado financeiro diariamente com o portal BestNews da SejaBest.',
+        'Fique por dentro de tudo sobre financiamento, modalidades de empréstimo e atualizações do mercado financeiro diariamente com o portal BestNews da Bext.',
     },
     props: {
       showMenu: false,

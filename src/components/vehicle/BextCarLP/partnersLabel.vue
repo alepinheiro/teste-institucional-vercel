@@ -5,8 +5,8 @@
       <h1 class="text-4xl pt-28 sm:pt-8 md:pt-8 sm:text-2xl text-white font-semibold">
         A melhor plataforma multibancos
       </h1>
-      <p class="text-complementaryColor3 text-xl ">
-        Conheça os parceiros que estão decolando com a <span class="font-semibold">SejaBest</span>.
+      <p class="text-primary text-xl ">
+        Conheça os parceiros que estão decolando com a <span class="font-semibold">Bext</span>.
       </p>
     </div>
 

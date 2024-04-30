@@ -12,7 +12,7 @@
       </div>
 
       <div class="text-zinc-600 text-sm text-center sm:hidden md:hidden">
-        <div>© {{ new Date().getFullYear() }} SejaBest Fintech de Crédito</div>
+        <div>© {{ new Date().getFullYear() }} Bext Fintech de Crédito</div>
         <div><a href="www.seja.best">www.seja.best</a></div>
       </div>
       <div class="flex sm:w-full justify-center sm:pb-6 fill-zinc-600">
@@ -105,7 +105,7 @@
       <div
         class="sm:w-full md:w-full md:pt-12 text-zinc-600 text-sm text-center xl:hidden lg:hidden"
       >
-        <div>© {{ new Date().getFullYear() }} SejaBest Fintech de Crédito</div>
+        <div>© {{ new Date().getFullYear() }} Bext Fintech de Crédito</div>
         <div><a href="www.seja.best">www.seja.best</a></div>
       </div>
     </div>

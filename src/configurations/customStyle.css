@@ -362,10 +362,10 @@
 }
 
 .inputBase {
-  @apply rounded-xl focus:border-secondary border-gray-200 border-1 bg-gray-200  p-2;
+  @apply rounded-xl focus:border-primary border-gray-200 border-1 bg-gray-200  p-2;
 }
 .inputBaseError {
-  @apply rounded-xl focus:border-secondary border-red-500 border-1 bg-white p-2;
+  @apply rounded-xl focus:border-primary border-red-500 border-1 bg-white p-2;
 }
 .gradienteSB {
   background: rgb(0, 99, 242);
@@ -386,7 +386,7 @@
   @apply text-xs text-red-500;
 }
 .optionsCard {
-  @apply cursor-pointer rounded-xl focus:border-secondary p-4 border-1 border-gray-300 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 hover:shadow-lg;
+  @apply cursor-pointer rounded-xl focus:border-primary p-4 border-1 border-gray-300 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 hover:shadow-lg;
 }
 
 .linkStyle {
@@ -395,8 +395,8 @@
 .linkStyleDark {
   @apply text-white md:text-primary sm:text-primary px-2 py-1 rounded-xl  cursor-pointer mx-4 sm:mt-4;
 }
-.buttonComplementaryColor1 {
-  @apply rounded-xl py-2 px-8 bg-complementaryColor1 shadow-xl text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100;
+.buttonPrimary {
+  @apply rounded-xl py-2 px-8 bg-primary shadow-xl text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100;
 }
 .buttonGradient {
   @apply gradienteSB rounded-xl py-2 px-12 shadow-xl text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105;
@@ -560,7 +560,7 @@
 }
 
 .border-div-video {
-  border-bottom: 1px solid var(--complementaryColor2);
+  border-bottom: 1px solid var(--primary);
 }
 
 .borderGrey {
@@ -640,20 +640,20 @@
 /*bordas popOver e dropdown*/
 
 .borderB-complementary {
-  border-bottom: 1.5px solid var(--complementaryColor1);
+  border-bottom: 1.5px solid var(--primary);
 }
 
 .optionsHover:hover {
   background: #ffffff82;
   border-radius: 0.5rem;
-  color: var(--complementaryColor1);
-  font-style: var(--complementaryColor1);
+  color: var(--primary);
+  font-style: var(--primary);
 }
 .optionsOpen {
   background: #ffffff82;
   border-radius: 0.5rem;
-  color: var(--complementaryColor1);
-  font-style: var(--complementaryColor1);
+  color: var(--primary);
+  font-style: var(--primary);
 }
 .bgPopUpHover {
   background: #e0e0e0;

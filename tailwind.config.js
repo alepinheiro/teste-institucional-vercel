@@ -17,10 +17,8 @@ module.exports = {
     },
     colors: {
       primary: 'var(--primaryColor)',
-      secondary: 'var(--secondaryColor)',
-      complementaryColor1: 'var(--complementaryColor1)',
-      complementaryColor2: 'var(--complementaryColor2)',
-      complementaryColor3: 'var(--complementaryColor3)',
+      lightPrimary: 'var(--lightPrimaryColor)',
+      darkPrimary: 'var(--darkPrimaryColor)',
       textPrimary: 'var(--textPrimaryColor)',
       textSecondary: 'var(--textSecondaryColor)',
       textLight: 'var(--textLightColor)',

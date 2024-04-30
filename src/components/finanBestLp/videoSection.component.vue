@@ -8,7 +8,7 @@
       >
         <h2 class="text-3xl sm:text-2xl font-bold">
           O <span class="text-primary">FinanBest</span> é o financiamento
-          imobiliário da SejaBest.
+          imobiliário da Bext.
         </h2>
         <div class="text-base leading-relaxed sm:hidden">
           <p>

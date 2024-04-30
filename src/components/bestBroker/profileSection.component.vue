@@ -18,7 +18,7 @@
           <span class="text-[#D0FE42]">
             especialista em crédito imobiliário
           </span>
-          da atualidade e <b>CEO da SejaBest</b>
+          da atualidade e <b>CEO da Bext</b>
         </p>
         </div>
       </div>
@@ -30,7 +30,7 @@
           <span class="text-[#D0FE42]">
             especialista em crédito imobiliário
           </span>
-          da atualidade e <b>CEO da SejaBest</b>
+          da atualidade e <b>CEO da Bext</b>
         </p>
         <p class="text-2xl py-6">
           Tendo em sua carreira já estruturado mais de

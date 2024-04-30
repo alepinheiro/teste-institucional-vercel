@@ -12,8 +12,8 @@
     <BusinessPartners
       id="businessPartners"
       type="Financing"
-      title="Na SejaBest, suas chances de aprovação são maiores"
-      innerText="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
+      title="Na Bext, suas chances de aprovação são maiores"
+      innerText="<b> A Bext oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação."
       class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
     />
     <ComparisonTable
@@ -34,7 +34,7 @@
 
     <AboutUs
       :cards="{ bgColor: 'PRIMARY' }"
-      :container="{ bgColor: 'SECONDARY' }"
+      :container="{ bgColor: 'primary' }"
     />
     <Subscribe
       :component="{ bgColor: 'BGDARKCOLOR' }"

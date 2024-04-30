@@ -22,7 +22,7 @@
       title="A melhor plataforma multibancos."
       type="HomeEquity"
       innerText="<strong>
-          Com a SejaBest, você tem acesso a produtos de mais de 20 instituições
+          Com a Bext, você tem acesso a produtos de mais de 20 instituições
           financeiras,
         </strong>
         o que pode lhe garantir as melhores taxas e as maiores chances de
@@ -44,7 +44,7 @@
         table: {
           backgroundColor: '#FFF',
           titleColor: 'TEXTPRIMARY',
-          title: 'Por que escolher a <b>SejaBest?</b>',
+          title: 'Por que escolher a <b>Bext?</b>',
         },
       }"
       class="py-0 md:py-14 lg:py-14 xl:py-14"

@@ -21,12 +21,12 @@
           class="text-white text-right sm:pt-0 titleFontBold text-5xl lg:text-4xl md:text-5xl sm:text-3xl"
         >
           E aí, vamos ser<br />
-          <span class="text-complementaryColor3"> Best</span> com a gente?
+          <span class="text-primary"> Best</span> com a gente?
         </div>
         <div
           class="pt-10 pb-4 text-right md:py-0 md:pt-2 lg:py-6 sm:py-2 sm:text-xs"
         >
-          <button class="buttonprimary">
+          <button class="buttonPrimary">
             <a
               :href="`${$options.information.appSimulator}${$root.utms}`"
               aria-label="Clique aqui e simule agora"

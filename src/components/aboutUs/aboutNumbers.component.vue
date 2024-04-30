@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative z-0 lg:max-w-5xl xl:max-w-7xl mx-auto md:max-w-2xl border-b border-textSecondary"
+    class="relative z-0 lg:max-w-5xl xl:max-w-7xl mx-auto md:max-w-2xl border-b border-textprimary"
   >
     <!-- <div
       class="hidden md:block lg:block xl:block bg-gradient-to-b from-[#DEDEDE] to-[#EFEFEF] absolute top-0 bottom-1/3 w-full scale-x-105 inset-x-0 -z-10 rounded-xl"
@@ -26,14 +26,14 @@
           <li
             v-for="{ icon, title, description } in cards"
             :key="icon"
-            class="p-3 md:py-14 md:px-8 lg:p-8 xl:px-8 w-1/3 flex-grow lg:py-10 xl:py-12 bg-white group hover:bg-primary drop-shadow-lg md:shadow-2xl lg:shadow-2xl xl:shadow-2xl rounded md:rounded-xl lg:rounded-xl xl:rounded-xl flex flex-col md:gap-6 lg:gap-3 xl:gap-2 lg:h-auto transition-all cursor-default"
+            class="p-3 md:py-14 md:px-8 lg:p-8 xl:px-8 w-1/3 flex-grow lg:py-10 xl:py-12 bg-white group hover:bg-primary drop-shadow-lg md:shadow-2xl lg:shadow-2xl xl:shadow-2xl rounded-xl md:rounded-xl lg:rounded-xl xl:rounded-xl flex flex-col md:gap-6 lg:gap-3 xl:gap-2 lg:h-auto transition-all cursor-default"
           >
             <div
-              class="w-4 h-4 md:h-7 md:w-7 lg:w-7 lg:h-7 xl:w-7 xl:h-7 text-textSecondary"
+              class="w-4 h-4 md:h-7 md:w-7 lg:w-7 lg:h-7 xl:w-7 xl:h-7 text-textprimary"
             >
               <i
                 :class="icon"
-                class="group-hover:text-complementaryColor3 block w-full h-full transition-colors"
+                class="group-hover:text-primary block w-full h-full transition-colors"
               ></i>
             </div>
             <span

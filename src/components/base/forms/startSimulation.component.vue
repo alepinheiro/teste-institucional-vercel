@@ -12,7 +12,7 @@
           type="text"
           placeholder="Digite seu nome completo"
           required
-          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
+          class="bg-zinc-200 rounded-xl p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
       <div class="flex flex-col gap-2">
@@ -23,7 +23,7 @@
           type="email"
           placeholder="Seu melhor e-mail"
           required
-          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
+          class="bg-zinc-200 rounded-xl p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
 
@@ -38,7 +38,7 @@
           type="text"
           placeholder="R$ 250.000,00"
           required
-          class="bg-zinc-200 rounded p-2 text-xl focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
+          class="bg-zinc-200 rounded-xl p-2 text-xl focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
       <button

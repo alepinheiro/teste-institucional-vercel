@@ -28,13 +28,13 @@
       class="bgLigthGrey xl:pt-16 lg:pt-14 md:pt-14 sm:pt-12 pb-18 md:pb-12"
     >
       <h1
-        class="xl:text-5xl lg:text-4xl md:text-3xl sm:text-xl text-secondary font-bold text-center xl:mb-16 lg:mb-12 md:mb-12 sm:mb-10"
+        class="xl:text-5xl lg:text-4xl md:text-3xl sm:text-xl text-primary font-bold text-center xl:mb-16 lg:mb-12 md:mb-12 sm:mb-10"
       >
         Passo a passo <span class="text-primary">para financiar seu carro</span>
       </h1>
       <StepByStep />
       <div class="maxWidth xl:mt-11 lg:mt-6 md:mt-6 px-28 sm:px-8">
-        <p class="text-secondary md:text-sm text-lg text-center">
+        <p class="text-primary md:text-sm text-lg text-center">
           Com o carro na mão, você paga a
           <span class="font-bold underline">primeira parcela</span> 45 dias
           depois da aprovação. <br class="sm:hidden" />
@@ -45,7 +45,7 @@
       </div>
     </section>
 
-    <div class="bg-secondary">
+    <div class="bg-primary">
       <section
         class="maxWidth flex flex-wrap pt-8 sm:pt-16 xl:py-20 lg:py-32 md:py-24 sm:hidden"
       >
@@ -83,10 +83,10 @@
       </section>
       <section class="bgLigthGrey">
         <h1
-          class="maxWidth text-4xl sm:text-2xl text-secondary text-center pt-12 pb-5 font-bold"
+          class="maxWidth text-4xl sm:text-2xl text-primary text-center pt-12 pb-5 font-bold"
         >
           Quem sonhou, se organizou e<br />
-          investiu com a ajuda da SejaBest
+          investiu com a ajuda da Bext
         </h1>
         <CarouselFinan />
         <div>

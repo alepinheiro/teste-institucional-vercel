@@ -23,11 +23,11 @@
               </h2>
               <div class="flex flex-row gap-5">
                 <div v-for="{ description, icon, number, suffix } of stats" :key="icon"
-                  class="flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:hidden border border-zinc-800/60 hover:border-complementaryColor3 transition cursor-default bg-[#181818]">
-                  <div class="w-6 h-6 text-complementaryColor3">
+                  class="flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:hidden border border-zinc-800/60 hover:border-primary transition cursor-default bg-[#181818]">
+                  <div class="w-6 h-6 text-primary">
                     <i :class="icon" class="w-full h-full"></i>
                   </div>
-                  <span class="text-4xl font-darkerGrotesque font-bold text-complementaryColor3">
+                  <span class="text-4xl font-darkerGrotesque font-bold text-primary">
                     {{ number + suffix }}
                   </span>
                   <div class="font-bold text-xs">
@@ -42,7 +42,7 @@
             </div>
             <a :href="'https://www.youtube.com/@SejaBest' +
             useObjectToQueryString($route.query)
-            " class="bg-complementaryColor2 w-fit rounded px-6 py-4 mx-auto font-bold">
+            " class="bg-primary w-fit rounded-xl px-6 py-4 mx-auto font-bold">
               Inscreva-se agora
             </a>
           </div>

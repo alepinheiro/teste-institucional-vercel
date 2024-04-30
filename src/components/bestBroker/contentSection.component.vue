@@ -84,8 +84,8 @@ export default defineComponent({
         },
         {
           id: 9,
-          title: 'Fintequize a sua marca - <b>A SejaBest</b>',
-          text: 'Veja o CEO Gaspar Motta e o case de sucesso da SejaBest. Entenda como a fintech de crédito se tornou referência no mercado financeiro e como você pode transformar a sua marca também.',
+          title: 'Fintequize a sua marca - <b>A Bext</b>',
+          text: 'Veja o CEO Gaspar Motta e o case de sucesso da Bext. Entenda como a fintech de crédito se tornou referência no mercado financeiro e como você pode transformar a sua marca também.',
         },
       ],
     }

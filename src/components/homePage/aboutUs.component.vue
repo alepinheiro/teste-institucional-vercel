@@ -13,7 +13,7 @@
           class="flex flex-col gap-2 lg:gap-7 xl:gap-7 text-center md:text-left lg:text-left xl:text-left lg:w-5/12 xl:w-5/12"
         >
           <p class="text-textPrimary">
-            A <b> SejaBest </b> já tem história no mercado.
+            A <b> Bext </b> já tem história no mercado.
           </p>
           <h2
             class="text-xl md:text-4xl lg:text-5xl xl:text-5xl md:text-textPrimary lg:text-textPrimary xl:text-textPrimary"
@@ -28,7 +28,7 @@
           <li
             v-for="{ icon, title, description } in cards"
             :key="icon"
-            class="p-3 w-1/3 flex-grow min-md:p-6 bg-white drop-shadow-lg min-md:shadow-2xl rounded min-md:rounded-xl flex flex-col min-md:gap-3 lg:h-full"
+            class="p-3 w-1/3 flex-grow min-md:p-6 bg-white drop-shadow-lg min-md:shadow-2xl rounded-xl min-md:rounded-xl flex flex-col min-md:gap-3 lg:h-full"
           >
             <div class="w-4 h-4 md:h-7 md:w-7 lg:w-7 lg:h-7 xl:w-7 xl:h-7">
               <i

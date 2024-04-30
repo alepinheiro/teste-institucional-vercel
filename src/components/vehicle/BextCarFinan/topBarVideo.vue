@@ -13,7 +13,7 @@
                     FinanBest
                   </h1>
                   <h1 class="text-6xl titleFontBold pt-2 text-white">
-                    Financiamento veicular da SejaBest
+                    Financiamento veicular da Bext
                   </h1>
                 </div>
                 <p class="pt-0 text-white pb-8 border-div-video">
@@ -71,7 +71,7 @@
         <TopBar v-if="showMenu" class="relative text-white" />
         <section class="w-full flex justify-center items-center pt-6">
           <div
-            class="w-10/12 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6"
+            class="w-10/12 pt-4 mt-auto mb-auto bg-primary shadow-md rounded-lg p-6"
           >
             <div>
               <div class="text-5xl titleFontBold pt-2 text-white pb-6">
@@ -79,7 +79,7 @@
                   FinanBest
                 </h1>
                 <h1 class="text-4xl titleFontBold pt-2 text-white">
-                  Financiamento veicular da SejaBest
+                  Financiamento veicular da Bext
                 </h1>
               </div>
               <p class="text-white pb-6 text-lg">
@@ -87,19 +87,19 @@
                 Faça uma simulação agora e veja como ficam as parcelas.
               </p>
               <div
-                class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4"
+                class="flex w-full items-center border-b-1 border-primary pb-4"
               >
                 <div class="pr-1 mt-auto mb-auto">
                   <img
                     :src="$options.imageConfig.iconSejaBestWhite"
-                    alt="Logo SejaBest"
+                    alt="Logo Bext"
                     class="w-12 h-auto"
                   />
                 </div>
                 <p class="w-10/12 text-lg text-white">
-                  Sem <span class="text-complementaryColor3">Filas.</span> Sem
-                  <span class="text-complementaryColor3">gerentes.</span> Sem
-                  <span class="text-complementaryColor3">complexidades</span>
+                  Sem <span class="text-primary">Filas.</span> Sem
+                  <span class="text-primary">gerentes.</span> Sem
+                  <span class="text-primary">complexidades</span>
                 </p>
               </div>
               <h2
@@ -146,7 +146,7 @@
         <TopBar v-if="showMenu" position="relative" class="text-white" />
         <section class="w-full pt-10">
           <div
-            class="py-8 bg-secondary sm:py-4 p-6 mt-4 rounded-lg shadow-md w-full"
+            class="py-8 bg-primary sm:py-4 p-6 mt-4 rounded-lg shadow-md w-full"
           >
             <div class="rounded-xl w-full">
               <div class="text-4xl titleFontBold text-white pb-2">
@@ -154,7 +154,7 @@
                   FinanBest
                 </h1>
                 <h1 class="text-2xl titleFontBold pt-2 text-white">
-                  Financiamento veicular da SejaBest
+                  Financiamento veicular da Bext
                 </h1>
               </div>
               <p class="text-white pb-6">
@@ -168,7 +168,7 @@
                   <div class="w-1/12 pr-1 mt-auto mb-auto">
                     <img
                       :src="$options.imageConfig.iconSejaBest"
-                      alt="Logo SejaBest"
+                      alt="Logo Bext"
                       class="w-6 h-auto"
                     />
                   </div>

@@ -1,17 +1,15 @@
 :root {
   --primaryColor:  #0524DD;
-  --secondaryColor: #10069f;
-  --complementaryColor1: #FF671F;
-  --complementaryColor2: #0063f2;
-  --complementaryColor3: #0524DD;
-  --borderColor: #e4e4e7;
+  --lightPrimaryColor: #314FFC;
+  --darkPrimaryColor: #09155D;
+  --borderColor: #BDBDBD;
   --bgDefaultColor: #fff;
-  --bgDarkColor: #070E37;
-  --bgLightColor: #EEEEEE;
-  --bgLight2Color: #F4F4F5;
+  --bgDarkColor: #23242E;
+  --bgLightColor: #EFEFEF;
+  --bgLight2Color: #FFF;
   --bgPopUpColor: #fff;
-  --textPrimaryColor: #525252;
-  --textSecondaryColor: #A7A8AA;
+  --textPrimaryColor: #23242E;
+  --textSecondaryColor: #A3A3A3;
   --textLightColor: #fff;
   --WhiteTransparency:#ffffffd8;
   --bgDarkColor2: #000211;

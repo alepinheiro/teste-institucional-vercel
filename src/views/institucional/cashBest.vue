@@ -24,7 +24,7 @@
         id="businessPartners"
         type="HomeEquity"
         title="Maximizamos suas chances de aprovação"
-        innerText="<b> A SejaBest oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação. Conte com nosso time de especialistas para orientação em todo o processo."
+        innerText="<b> A Bext oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação. Conte com nosso time de especialistas para orientação em todo o processo."
         class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
       />
       <ComparisonTable

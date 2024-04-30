@@ -5,7 +5,7 @@
                A melhor plataforma multibancos 
             </div>
             <div class="text-textPrimary text-lg ">
-              Conheça os parceiros que estão decolando com a <span class="font-semibold">SejaBest</span>.
+              Conheça os parceiros que estão decolando com a <span class="font-semibold">Bext</span>.
             </div>
           </div>
           <div class="w-full pt-16 sm:pt-8 md:pt-8 flex flex-wrap justify-center">

@@ -31,7 +31,7 @@ export default defineComponent({
       this.perguntas = [
         {
           title: 'Estou negativado, consigo fazer o financiamento de carro?',
-          text: 'A SejaBest é uma fintech de crédito imobiliário, que visa trazer agilidade e segurança por meio da tecnologia para pessoas que buscam: Financiamento Imobiliário ou Home Equity (Crédito com Garantia de Imóvel).',
+          text: 'A Bext é uma fintech de crédito imobiliário, que visa trazer agilidade e segurança por meio da tecnologia para pessoas que buscam: Financiamento Imobiliário ou Home Equity (Crédito com Garantia de Imóvel).',
           text2:null,
           videoUrl: 'https://www.youtube.com/embed/rb49Jt9dt4M',
         },

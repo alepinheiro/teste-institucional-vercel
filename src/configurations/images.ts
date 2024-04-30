@@ -288,6 +288,10 @@ const image = {
     }
   },
   brand:{
+    grayLogo: {
+      image:'/images/brand/grayLogo.svg',
+      alt:'Bext'
+    },
     whiteLogo: {
       image:'/images/brand/whiteLogo.svg',
       alt:'Bext'

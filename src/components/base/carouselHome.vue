@@ -18,7 +18,7 @@
           class="border-1 w-full gradienteSBDark h-[480px] rounded-xl text-white flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-secondary p-4 text-center border-b-4 border-complementaryColor3"
+            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
               Finan<span class="font-semibold">Best</span>
@@ -69,12 +69,12 @@
             </div>
           </div>
           <div
-            class="buttonprimary text-center mt-auto mb-5 w-10/12 self-center"
+            class="buttonPrimary text-center mt-auto mb-5 w-10/12 self-center"
           >
             <a
               :href="
                 $options.information.appSimulator +
-                ($root as IRootExtension).utms
+                $root.utms
               "
               style="text-decoration: none"
               target="_blank"
@@ -89,7 +89,7 @@
     <swiper-slide id="testimonial2">
       <article class="w-full mr-auto ml-auto max-w-sm p-4">
         <div
-          class="border-1 rounded-xl bg-secondary h-[480px] w-full text-white flex flex-col"
+          class="border-1 rounded-xl bg-primary h-[480px] w-full text-white flex flex-col"
         >
           <div
             class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
@@ -141,12 +141,12 @@
             </div>
           </div>
           <div
-            class="buttonprimary mt-auto mb-5 self-center w-10/12 text-center"
+            class="buttonPrimary mt-auto mb-5 self-center w-10/12 text-center"
           >
             <a
               :href="
                 $options.information.appSimulator +
-                ($root as IRootExtension).utms
+                $root.utms
               "
               style="text-decoration: none"
               target="_blank"
@@ -163,7 +163,7 @@
           class="border-1 w-full gradienteSBDark h-[480px] rounded-xl text-white flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-secondary p-4 text-center border-b-4 border-complementaryColor3"
+            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
               Car<span class="font-semibold">Best</span>
@@ -212,12 +212,12 @@
             </div>
           </div>
           <div
-            class="buttonprimary mt-auto self-center mb-5 w-10/12 text-center"
+            class="buttonPrimary mt-auto self-center mb-5 w-10/12 text-center"
           >
             <a
               :href="
                 $options.information.appSimulator +
-                ($root as IRootExtension).utms
+                $root.utms
               "
               style="text-decoration: none"
               target="_blank"
@@ -231,7 +231,7 @@
     <swiper-slide>
       <article class="w-full mr-auto ml-auto max-w-sm p-4">
         <div
-          class="border-1 rounded-xl bg-secondary h-[480px] w-full text-white flex flex-col"
+          class="border-1 rounded-xl bg-primary h-[480px] w-full text-white flex flex-col"
         >
           <div
             class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
@@ -247,7 +247,7 @@
             </h2>
           </div>
           <div
-            class="w-full p-4 bg-secondary rounded-b-xl justify-between flex flex-col mt-auto"
+            class="w-full p-4 bg-primary rounded-b-xl justify-between flex flex-col mt-auto"
           >
             <div class="w-full flex items-center">
               <div class="pr-6">
@@ -286,12 +286,12 @@
             </div>
           </div>
           <div
-            class="buttonprimary mt-auto self-center mb-5 w-10/12 text-center"
+            class="buttonPrimary mt-auto self-center mb-5 w-10/12 text-center"
           >
             <a
               :href="
                 $options.information.appSimulator +
-                ($root as IRootExtension).utms
+                $root.utms
               "
               style="text-decoration: none"
               target="_blank"

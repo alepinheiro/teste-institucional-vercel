@@ -22,7 +22,7 @@
     </div>
 
     <div
-      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-2xl overflow-hidden border border-textSecondary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto transition lg:h-128 xl:h-128"
+      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-2xl overflow-hidden border border-textprimary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto transition lg:h-128 xl:h-128"
     >
       <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button
@@ -31,7 +31,7 @@
           :class="[
             activeCard.id === id
               ? 'bg-primary text-white border-primary'
-              : 'border-textSecondary text-textSecondary hover:bg-white hover:text-primary',
+              : 'border-textprimary text-textprimary hover:bg-white hover:text-primary',
           ]"
           class="border-b md:last-of-type:border-0 lg:last-of-type:border-0 xl:last-of-type:border-0 p-4 md:py-4 xl:px-10 md:h-full lg:h-full xl:h-full md:text-2xl lg:text-2xl xl:text-2xl w-full text-start transition-all"
           @click="changeActiveImage(index)"

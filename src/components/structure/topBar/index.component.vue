@@ -1,7 +1,7 @@
 <template>
   <header class="absolute z-30 top-0 w-auto inset-x-0">
     <div
-      class="py-5 w-full flex flex-row justify-between items-center xl:max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto px-5"
+      class="py-5 w-full flex flex-row justify-between items-center maxWidth mx-auto "
     >
       <RouterLink :to="{ path: '/', query: $route.query }" class="w-auto h-fit">
         <img

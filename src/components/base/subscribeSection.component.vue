@@ -24,7 +24,7 @@
             Simule gratuitamente em mais de 20 bancos e encontre a melhor opção
             de crédito para suas necessidades.</b
           >
-          Com a SejaBest, você terá seu próprio assessor dedicado para
+          Com a Bext, você terá seu próprio assessor dedicado para
           simplificar todo o processo relacionado ao crédito imobiliário.
           Deixe-nos guiar você rumo à melhor escolha para o seu momento
           financeiro.

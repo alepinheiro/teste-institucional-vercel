@@ -36,7 +36,7 @@
             <a
               :href="information.appSimulator + useObjectToQueryString($route.query)"
               target="_blank"
-              class="bg-primary px-3 py-2 rounded text-white font-bold"
+              class="bg-primary px-3 py-2 rounded-xl text-white font-bold"
             >
               Simule grátis
             </a>

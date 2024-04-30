@@ -8,13 +8,13 @@
           <div class="w-full flex ml-8 sm:ml-0 py-4 ">
             <h1
               class="w-1/3 sm:w-2/4 text-3xl sm:text-xl mt-auto mb-0 font-bold
-              text-complementaryColor3 text-center">
+              text-primary text-center">
               Por que ser Bext?
             </h1>
             <div class="w-1/3 sm:w-1/4 mt-auto mb-0">
               <img
                 :src="$options.imageConfig.logoVerticalWhite"
-                alt="Logo SejaBest"
+                alt="Logo Bext"
                 class="w-28 sm:w-20 h-auto mr-auto ml-auto"/>
             </div>
             <div class="w-1/3  sm:w-1/4 mt-auto mb-0 text-center">

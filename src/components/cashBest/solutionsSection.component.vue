@@ -6,7 +6,7 @@
       <div class="text-center flex flex-col gap-5 sm:px-5">
         <h2 class="text-3xl sm:text-2xl leading-snug font-bold text-primary">
           <span
-            class="relative after:content-[''] after:absolute after:-inset-1 after:bg-secondary after:-z-10 text-white mr-2 z-0"
+            class="relative after:content-[''] after:absolute after:-inset-1 after:bg-primary after:-z-10 text-white mr-2 z-0"
           >
             Feito para você:
           </span>
@@ -18,8 +18,8 @@
           }}
         </h2>
         <p class="text-textPrimary text-base xl:text-xl">
-          <b>Com o capital liberado pela SejaBest, você tem uma ferramenta multiuso.</b>
-          Quite dívidas, impulsione o capital de giro, realize sonhos de viagem, renove sua casa e mais. A escolha é sua, e a SejaBest coloca o poder em suas mãos para concretizar seus projetos financeiros.
+          <b>Com o capital liberado pela Bext, você tem uma ferramenta multiuso.</b>
+          Quite dívidas, impulsione o capital de giro, realize sonhos de viagem, renove sua casa e mais. A escolha é sua, e a Bext coloca o poder em suas mãos para concretizar seus projetos financeiros.
         </p>
       </div>
       <div class="flex flex-row flex-wrap gap-5 md:gap-0 sm:gap-0 w-full">

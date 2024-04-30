@@ -18,7 +18,7 @@
             class="leading-8 sm:px-5 text-center text-base lg:text-left xl:text-left"
           >
             Com mais de 10 anos de experiência em crédito Imobiliário, a
-            SejaBest reuniu um time de ponta para desenvolver uma ferramenta
+            Bext reuniu um time de ponta para desenvolver uma ferramenta
             poderosa e capaz de fintechizar o seu negócio. Mais de 200 parceiros
             já confiaram na capacidade do BestHub, utilizando nossos recursos
             para potencializar seus negócios.

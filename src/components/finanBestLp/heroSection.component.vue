@@ -29,10 +29,10 @@
             <span class="min-lg:hidden">
               <b>FinanBest:</b>
               Financie seu imóvel com a assessoria
-              <b>SejaBest</b>
+              <b>Bext</b>
             </span>
             <span class="hidden min-lg:block">
-              FinanBest: Financie seu imóvel com a assessoria SejaBest
+              FinanBest: Financie seu imóvel com a assessoria Bext
             </span>
           </h1>
           <!--  -->
@@ -57,7 +57,7 @@
             </div>
           </div>
 
-          <hr class="border-1 border-textSecondary hidden min-lg:block" />
+          <hr class="border-1 border-textprimary hidden min-lg:block" />
           <InputsForm
             v-model="formData"
             class="w-full sm:bg-[#EFEFEF] rounded-xl py-4"
