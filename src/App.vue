@@ -2,7 +2,7 @@
   <div
     class="w-full defaultFont selection:bg-primary selection:text-white"
   >
-  <LoadingBrandChange />
+    <LoadingBrandChange />
     <RouterView />
     <NotificationPopUp />
   </div>
