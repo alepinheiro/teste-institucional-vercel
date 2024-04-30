@@ -7,7 +7,7 @@
         class="w-5/12 md:w-4/12 mb-auto mt-16 xl:mt-6 md:mt-10 sm:w-full sm:hidden md:hidden"
       >
         <img
-          :src="$options.imageConfig.bestCar.carroNotas"
+          :src="$options.imageConfig.BextCar.carroNotas"
           alt="Uma mercedez benz branca com cédulas de cem reais ao fundo"
           class="absolute left-[-4rem] lg:left-[-3rem] md:left-[-4rem] lg:w-[30rem] xl:w-[45rem] md:w-[24rem] sm:hidden max-w-3xl"
         />
@@ -75,7 +75,7 @@
         </div>
         <div class="w-1/2 mt-auto mb-auto sm:w-full">
           <img
-            :src="$options.imageConfig.bestCar.gráficoFinan"
+            :src="$options.imageConfig.BextCar.gráficoFinan"
             alt="Gráfico comparando as taxas de juros do FinanBest e do empréstimo pessoal"
             class="sm:w-full md:w-11/12 w-full h-auto"
           />
@@ -102,16 +102,16 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import TopBarVideo from '@/components/vehicle/BestCarFinan/topBarVideo.vue'
-import CardWhite from '@/components/vehicle/BestCarFinan/cardWhite.vue'
-import StepByStep from '@/components/vehicle/BestCarFinan/stepByStep.vue'
-import CarouselFinan from '@/components/vehicle/BestCarFinan/carouselFinan.vue'
-import ComparativeBoardFinan from '@/components/vehicle/BestCarFinan/comparativeBoardFinan.vue'
+import TopBarVideo from '@/components/vehicle/BextCarFinan/topBarVideo.vue'
+import CardWhite from '@/components/vehicle/BextCarFinan/cardWhite.vue'
+import StepByStep from '@/components/vehicle/BextCarFinan/stepByStep.vue'
+import CarouselFinan from '@/components/vehicle/BextCarFinan/carouselFinan.vue'
+import ComparativeBoardFinan from '@/components/vehicle/BextCarFinan/comparativeBoardFinan.vue'
 import Rodape from '@/components/base/bannerBottomPage.vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
-  name: 'BestCarFinanLP',
+  name: 'BextCarFinanLP',
   components: {
     TopBarVideo,
     CardWhite,

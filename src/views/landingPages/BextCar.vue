@@ -6,26 +6,25 @@
       <Section3 />
       <Section4 />
     </div>
-    <Rodape />
+    <BestPlay class="bg-secondary" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HeadVideo from '@/components/vehicle/BestCarLP/headVideo.vue'
-import Section2 from '@/components/vehicle/BestCarLP/section2.vue'
-import Section3 from '@/components/vehicle/BestCarLP/section3.vue'
-import Section4 from '@/components/vehicle/BestCarLP/section4.vue'
-import Rodape from '@/components/base/bannerBottomPage.vue'
-
+import HeadVideo from '@/components/vehicle/BextCarLP/headVideo.vue'
+import Section2 from '@/components/vehicle/BextCarLP/section2.vue'
+import Section3 from '@/components/vehicle/BextCarLP/section3.vue'
+import Section4 from '@/components/vehicle/BextCarLP/section4.vue'
+import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 export default defineComponent({
-  name: 'BestCarLP',
+  name: 'BextCarLP',
   components: {
     HeadVideo,
     Section2,
     Section3,
     Section4,
-    Rodape,
+    BestPlay 
   },
   props: {
     showMenu: {

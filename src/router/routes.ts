@@ -112,15 +112,15 @@ export const routes: Array<RouteRecordRaw> = [
     },
   },
   {
-    path: '/emprestimo-com-garantia-de-veiculo/BestCar',
+    path: '/emprestimo-com-garantia-de-veiculo/BextCar',
     alias: ['/credito-com-garantia-de-veiculo'],
-    name: 'BestCarLP',
-    component: () => import('@/views/landingPages/BestCar.vue'),
+    name: 'BextCarLP',
+    component: () => import('@/views/landingPages/BextCar.vue'),
     meta: {
       title:
-        'Empréstimo com Garantia de Veículo - BestCar | SejaBest | Crédito Imobiliário',
+        'Empréstimo com Garantia de Veículo - BextCar | SejaBest | Crédito Imobiliário',
       description:
-        'Obtenha crédito usando seu veículo como garantia com o BestCar da SejaBest Fintech de Crédito.',
+        'Obtenha crédito usando seu veículo como garantia com o BextCar da SejaBest Fintech de Crédito.',
     },
     props: {
       showMenu: false,
@@ -128,13 +128,13 @@ export const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/emprestimo-com-garantia-de-veiculo',
-    name: 'BestCar',
-    component: () => import('@/views/institucional/bestCar.vue'),
+    name: 'BextCar',
+    component: () => import('@/views/institucional/bextCar.vue'),
     meta: {
       title:
-        'BestCar: Empréstimo com Garantia de Veículo | SejaBest | Crédito Imobiliário',
+        'BextCar: Empréstimo com Garantia de Veículo | SejaBest | Crédito Imobiliário',
       description:
-        'Obtenha crédito usando seu veículo como garantia com o BestCar da SejaBest Fintech de Crédito.',
+        'Obtenha crédito usando seu veículo como garantia com o BextCar da SejaBest Fintech de Crédito.',
     },
     props: {
       showMenu: true,
@@ -142,9 +142,9 @@ export const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/financiamento-veicular',
-    alias: ['/financiamento-veicular/BestCarFinan'],
-    name: 'BestCarFinan',
-    component: () => import('@/views/institucional/bestCarFinan.vue'),
+    alias: ['/financiamento-veicular/BextCarFinan'],
+    name: 'BextCarFinan',
+    component: () => import('@/views/institucional/bextCarFinan.vue'),
     meta: {
       title:
         'FinanBest: Financiamento Veicular | SejaBest | Crédito Imobiliário',

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-bglightColor">
+    <div class="bg-bgLightColor">
       <div class="w-full gradienteSB">
         <div class="maxWidth">
           <TopBarComponent v-if="showMenu" position="relative" />

@@ -9,7 +9,7 @@
         <section>
             <h1 class="maxWidth text-4xl sm:text-2xl text-white text-center pt-5l pb-5 sm:pb-2 font-bold">
                 Quem sonhou, se organizou e<br />
-                investiu com a ajuda da SejaBest
+                investiu com a ajuda da Bext
             </h1>
             <Carousel />
         </section>
@@ -21,7 +21,7 @@
 
 import Faq from './Faq.vue';
 import Carousel from './carousel.vue';
-import ComparativeBoard from './comparativeBoard.vue';
+import ComparativeBoard from './comparativeBoard.vue'
 import { defineComponent } from 'vue';
 export default defineComponent({
     name: 'Section4',

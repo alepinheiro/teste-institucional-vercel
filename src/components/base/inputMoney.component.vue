@@ -14,8 +14,8 @@
       type="text"
       :placeholder="placeholder"
       :class="{
-        'inputBaseError w-full': error !== undefined && error !== '',
-        'inputBase w-full': !(error !== undefined && error !== ''),
+        'inputBaseError p-3 w-full': error !== undefined && error !== '',
+        'inputBase p-3 w-full': !(error !== undefined && error !== ''),
       }"
     />
     <div v-if="error !== undefined && error !== ''" class="textError px-2">

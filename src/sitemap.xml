@@ -65,9 +65,9 @@
         <priority>0.6</priority>
     </url>
 
-    <!-- Rota: Empréstimo com garantia de veículo - BestCar -->
+    <!-- Rota: Empréstimo com garantia de veículo - BextCar -->
     <url>
-        <loc>https://www.sejabest.com/emprestimo-com-garantia-de-veiculo/BestCar</loc>
+        <loc>https://www.sejabest.com/emprestimo-com-garantia-de-veiculo/BextCar</loc>
         <lastmod>2024-03-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -182,9 +182,9 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <!-- Alias: /financiamento-veicular/BestCarFinan -->
+    <!-- Alias: /financiamento-veicular/BextCarFinan -->
     <url>
-        <loc>https://www.sejabest.com/financiamento-veicular/BestCarFinan</loc>
+        <loc>https://www.sejabest.com/financiamento-veicular/BextCarFinan</loc>
         <lastmod>2024-03-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

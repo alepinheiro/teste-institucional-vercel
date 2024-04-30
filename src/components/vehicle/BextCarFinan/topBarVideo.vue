@@ -1,51 +1,39 @@
 <template>
   <div class="w-full h-full">
     <!-- 🖥️ Desktop -->
-    <section class="bgBestcar sm:hidden md:hidden z-10">
+    <div class="bgFinanCar sm:hidden md:hidden">
       <div class="maxWidth xl:h-screen lg:h-screen">
-        <TopBarComponent v-if="showMenu" class="relative text-white" />
-
-        <div class="maxWidth xl:h-screen lg:h-screen sm:hidden md:hidden z-10">
-          <div class="w-full flex pt-5 md:pt-8 sm:pt-4">
+        <TopBar v-if="showMenu" class="relative text-white" />
+        <section class="maxWidth xl:h-screen lg:h-screen sm:hidden md:hidden px-5">
+          <div class="w-full flex pt-12 pt-xxl lg:pt-24 md:pt-8 sm:pt-4">
             <div class="md:pt-4 sm:py-8 max-w-[600px] w-full">
-              <div
-                class="bg-primary rounded-xl w-full shadow-2xl p-12 mt-xxl xl:mt-6 lg:mt-12"
-              >
+              <div class="bg-primary rounded-xl w-full shadow-2xl p-12">
                 <div class="text-6xl titleFontBold text-white pb-6">
-                  <h1 class="textDecoration flex w-52 pb-1 text-white">
-                    BestCar:
+                  <h1 class="textDecoration pb-1 italic text-white flex w-60">
+                    FinanBest
                   </h1>
                   <h1 class="text-6xl titleFontBold pt-2 text-white">
-                    Empréstimo com Garantia de Veículo
+                    Financiamento veicular da SejaBest
                   </h1>
                 </div>
-                <p class="pt-0 text-white pb-8 border-b">
-                  Use o seu carro como garantia em troca das melhores taxas.Você
-                  consegue crédito para seus objetivos fincanceiros
-                  <span class="font-semibold">
-                    sem precisar vender o veículo
-                  </span>
-                  com taxas a partir de
-                  <span class="font-semibold"> 1,59% ao mês </span>
-                  <span class="text-white font-bold">
-                    e prazos de até 60 meses.
-                  </span>
+                <p class="pt-0 text-white pb-8 border-div-video">
+                  Escolha o carro, novo ou usado, e financie até 100% do valor.
+                  Faça uma simulação agora e veja como ficam as parcelas.
                 </p>
                 <div class="flex pt-2">
                   <h2
                     class="w-6/12 text-lg text-white pt-2 font-semibold text-textPrimary"
                   >
-                    Quanto vale <br />
-                    o seu sonho?
+                    De quanto <br />
+                    você precisa?
                   </h2>
                   <div class="w-full flex items-end gap-4">
                     <div class="w-9/12 pr-1">
                       <inputMoney
-                        id="value"
+                        id="valueDesktop"
                         v-model="value"
                         class="w-full"
-                        label=""
-                        placeholder=""
+                        placeholder="60.000,00"
                       />
                     </div>
                     <div class="w-3/12">
@@ -60,9 +48,8 @@
                           style="text-decoration: none"
                           aria-label="Clique aqui para simular seu financiamento"
                           target="_blank"
+                          >Simular</a
                         >
-                          Simular
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -74,45 +61,38 @@
               @click="showVideo = true"
             ></div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
 
-    <!-- 🧮 Tablet-->
-    <section class="sm:hidden xl:hidden lg:hidden bg-primary">
-      <div class="maxWidth">
-        <TopBarComponent v-if="showMenu" class="relative text-white" />
-
-        <div class="w-full flex items-center justify-center">
-          <div class="w-6/2 pt-4 mt-auto mb-auto justify-center items-center">
-            <div class="bg-secondary p-6 rounded-lg shadow-lg">
-              <div class="text-5xl titleFontBold text-white pb-6">
-                <h1
-                  class="textDecoration flex w-42 pb-1 text-complementaryColor3"
-                >
-                  BestCar
+    <!-- 🧮 Tablet -->
+    <div class="sm:hidden xl:hidden lg:hidden">
+      <div class="maxWidth bg-primary">
+        <TopBar v-if="showMenu" class="relative text-white" />
+        <section class="w-full flex justify-center items-center pt-6">
+          <div
+            class="w-10/12 pt-4 mt-auto mb-auto bg-secondary shadow-md rounded-lg p-6"
+          >
+            <div>
+              <div class="text-5xl titleFontBold pt-2 text-white pb-6">
+                <h1 class="textDecoration pb-1 italic text-white flex w-48">
+                  FinanBest
                 </h1>
-                <h1 class="text-5xl titleFontBold pt-2 text-white">
-                  Empréstimo com Garantia de Veículo
+                <h1 class="text-4xl titleFontBold pt-2 text-white">
+                  Financiamento veicular da SejaBest
                 </h1>
               </div>
-              <p class="py-4 text-white pb-6">
-                Use o seu carro como garantia em troca das melhores taxas. Você
-                consegue crédito para seus objetivos fincanceiros
-                <span class="font-semibold">sem precisar vender o veículo</span>
-                com taxas a partir de
-                <span class="font-semibold">1,59% ao mês</span>
-                <span class="text-white font-bold">
-                  e prazos de até 60 meses.</span
-                >
+              <p class="text-white pb-6 text-lg">
+                Escolha o carro, novo ou usado, e financie até 100% do valor.
+                Faça uma simulação agora e veja como ficam as parcelas.
               </p>
               <div
                 class="flex w-full items-center border-b-1 border-complementaryColor3 pb-4"
               >
-                <div class="w-2/12 pr-6 mt-auto mb-auto">
+                <div class="pr-1 mt-auto mb-auto">
                   <img
                     :src="$options.imageConfig.iconSejaBestWhite"
-                    alt="SejaBest"
+                    alt="Logo SejaBest"
                     class="w-12 h-auto"
                   />
                 </div>
@@ -127,7 +107,7 @@
               >
                 De quanto você precisa?
               </h2>
-              <div class="w-full flex items-end justify-between">
+              <div class="w-full flex items-end justify-between pb-2">
                 <div class="w-9/12 pr-1">
                   <inputMoney
                     id="value"
@@ -147,64 +127,52 @@
                         useObjectToQueryString($route.query)
                       "
                       style="text-decoration: none"
-                      aria-label="Clique aqui para simular seu financiamento"
                       target="_blank"
+                      aria-label="Clique aqui para simular seu financiamento"
+                      >Simular</a
                     >
-                      Simular
-                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
 
-    <!-- 📱 Mobile -->
-    <section class="xl:hidden lg:hidden md:hidden bg-primary">
-      <div class="maxWidth">
-        <TopBarComponent
-          v-if="showMenu"
-          position="relative"
-          class="text-white"
-        />
-
-        <div class="w-full pt-10">
-          <div class="py-8 sm:py-4 mt-4 w-full bg-secondary p-6 rounded-lg">
+    <!-- 📱 Mobile-->
+    <div class="xl:hidden lg:hidden md:hidden">
+      <div class="maxWidth bg-primary">
+        <TopBar v-if="showMenu" position="relative" class="text-white" />
+        <section class="w-full pt-10">
+          <div
+            class="py-8 bg-secondary sm:py-4 p-6 mt-4 rounded-lg shadow-md w-full"
+          >
             <div class="rounded-xl w-full">
               <div class="text-4xl titleFontBold text-white pb-2">
-                <h1
-                  class="textDecoration flex w-30 pb-1 text-complementaryColor3"
-                >
-                  BestCar
+                <h1 class="textDecoration pb-1 italic text-white flex w-36">
+                  FinanBest
                 </h1>
-                <h1 class="text-4xl titleFontBold pt-2 text-white">
-                  Empréstimo com Garantia de Veículo
+                <h1 class="text-2xl titleFontBold pt-2 text-white">
+                  Financiamento veicular da SejaBest
                 </h1>
               </div>
-              <p class="py-4 text-white pb-6">
-                Use o seu carro como garantia em troca das melhores taxas. Você
-                consegue crédito para seus objetivos fincanceiros
-                <span class="font-semibold">sem precisar vender o veículo</span>
-                com taxas a partir de
-                <span class="font-semibold">1,59% ao mês</span>
-                <span class="text-white font-bold">
-                  e prazos de até 60 meses.</span
-                >
+              <p class="text-white pb-6">
+                Escolha o carro, novo ou usado, e financie até 100% do valor.
+                Faça uma simulação agora e veja como ficam as parcelas.
               </p>
-              <div class="bg-bglight2Color p-3 rounded-xl">
+              <div class="bg-bgLight2Color p-4 rounded-xl">
                 <div
                   class="flex w-full items-center border-b-1 border-primary pb-4"
                 >
-                  <div class="w-2/12 pr-6 mt-auto mb-auto">
+                  <div class="w-1/12 pr-1 mt-auto mb-auto">
                     <img
                       :src="$options.imageConfig.iconSejaBest"
-                      alt="SejaBest"
+                      alt="Logo SejaBest"
                       class="w-6 h-auto"
                     />
                   </div>
-                  <p class="w-10/12 text-lg">
+                  <p class="w-10/12 text-md">
                     Sem <span class="text-primary">Filas.</span> Sem
                     <span class="text-primary">gerentes.</span> Sem
                     <span class="text-primary">complexidade</span>
@@ -235,32 +203,34 @@
                         style="text-decoration: none"
                         aria-label="Clique aqui para simular seu financiamento"
                         target="_blank"
+                        >Simular</a
                       >
-                        Simular
-                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import TopBarComponent from '@/components/structure/topBar/index.component.vue'
+import TopBar from '@/components/structure/topBar/index.component.vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
-  name: 'HeadVideo',
-  components: { TopBarComponent },
+  name: 'TopBarVideo',
+  components: {
+    TopBar,
+  },
   props: {
     showMenu: {
       type: Boolean,
+      required: false,
       default: true,
     },
   },
@@ -285,8 +255,8 @@ export default defineComponent({
 
 <style>
 @media (min-width: 1880px) {
-  .mt-xxl {
-    margin-top: 9rem;
+  .pt-xxl {
+    padding-top: 6.5rem;
   }
 }
 </style>

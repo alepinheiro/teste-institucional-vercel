@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full flex justify-center bg-bglight2Color">
+  <footer class="w-full flex justify-center bg-bgLight2Color">
     <div data-nosnippet class="mt-auto mb-auto">
       <div
         class="maxWidth flex sm:flex-wrap justify-between pt-12 sm:pt-8 md:pt-8"

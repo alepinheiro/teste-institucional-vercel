@@ -12,9 +12,9 @@
           do mercado. Olhe no gráfico ao lado e compare.
         </p>
         <div
-          class="p-2 w-4/12 md:w-6/12 lg:w-6/12 md:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-xl">
+          class="p-3 w-5/12 md:w-6/12 lg:w-6/12 md:text-xs bg-primary text-white text-center font-bold uppercase rounded-xl">
           <a
-            :href="$options.information.appVehicleSimulator + ($root as IRootExtension).utms"
+            :href="$options.information.appVehicleSimulator +$root.utms"
             aria-label="Clique aqui para simular seu financiamento"
             target="_blank">
             Quero contratar
@@ -23,11 +23,10 @@
       </div>
       <div class="w-1/2 mt-auto mb-auto sm:w-full">
         <img
-          :src=$options.imageConfig.bestCar.gráficoBestCar alt="Gráfico comparando as taxas de juros do BestHub "
+          :src=$options.imageConfig.BextCar.graficoBextCar alt="Gráfico comparando as taxas do crédito como garantia veicular"
           class="sm:w-full md:w-11/12 w-full h-auto  " />
       </div>
     </section>
-    <partnersLabel />
   </div>
 </template>
 

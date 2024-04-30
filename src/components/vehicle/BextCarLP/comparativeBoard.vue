@@ -9,7 +9,7 @@
             <h1
               class="w-1/3 sm:w-2/4 text-3xl sm:text-xl mt-auto mb-0 font-bold
               text-complementaryColor3 text-center">
-              Por que ser Best?
+              Por que ser Bext?
             </h1>
             <div class="w-1/3 sm:w-1/4 mt-auto mb-0">
               <img

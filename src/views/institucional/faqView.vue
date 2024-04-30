@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-bglightColor">
+  <div class="w-full bg-bgLightColor">
     <TopBar v-if="showMenu" class="text-white w-full" />
 
     <section class="w-full gradienteSB pt-8 min-md:pt-20">
