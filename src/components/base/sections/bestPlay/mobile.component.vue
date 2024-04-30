@@ -12,7 +12,7 @@
     <div class="bg-[#181818] bg-gradient-to-br to-black from-transparent w-full mt-auto flex">
       <div class="my-auto">
         <div class="flex flex-col gap-5 py-10 px-5">
-          <img ref="bestPlayMockup" :src="$options.imageConfig.brand.youtubeLogo.image"
+          <img :src="$options.imageConfig.brand.youtubeLogo.image"
             :alt="$options.imageConfig.brand.youtubeLogo.alt" :title="$options.imageConfig.brand.youtubeLogo.alt"
             class="h-16" />
 

@@ -10,7 +10,7 @@
         <div class="flex md:w-5/6 py-10 px-5">
           <div class="flex flex-col justify-between items-start gap-10 text-white lg:w-2/3 xl:w-1/2">
           
-            <img ref="bestPlayMockup" :src="$options.imageConfig.brand.youtubeLogo.image"
+            <img :src="$options.imageConfig.brand.youtubeLogo.image"
               :alt="$options.imageConfig.brand.youtubeLogo.alt" :title="$options.imageConfig.brand.youtubeLogo.alt"
               class="h-16   w-64" />
             <h2 class="text-5xl font-bold text-left">
