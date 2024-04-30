@@ -311,6 +311,10 @@ const image = {
     youtubeLogo: {
       image:'/images/brand/LogotipoBextPlayNegativo.svg',
       alt: 'BextPlay'
+    },
+    loadingBrandChange: {
+      image:'/images/brand/MudancaDeMarca.gif',
+      alt: 'SejaBest agora é Bext'
     }
   },
   mockUps:{
