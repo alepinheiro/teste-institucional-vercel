@@ -19,7 +19,7 @@
           class="border-1 rounded-xl bg-secondary w-full text-white h-[440px] flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-complementaryColor1"
+            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
               Cash<span class="font-semibold">Best</span>
@@ -67,7 +67,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 w-11/12 text-center mt-auto self-center mb-5"
+            class="buttonprimary w-11/12 text-center mt-auto self-center mb-5"
           >
             <a
               :href="
@@ -139,7 +139,7 @@
           </div>
 
           <div
-            class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
+            class="buttonprimary w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
           >
             <a
               :href="
@@ -210,7 +210,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
+            class="buttonprimary w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
           >
             <a
               :href="
@@ -232,7 +232,7 @@
           class="border-1 rounded-xl bg-secondary w-full text-white h-[440px] flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-primary p-2 text-center border-b-4 border-complementaryColor1"
+            class="rounded-t-xl bg-primary p-2 text-center border-b-4 border-primary"
           >
             <div class="text-3xl titleFont">
               Finan<span class="font-semibold">Best</span> Veicular
@@ -283,7 +283,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 w-11/12 flex self-center mt-auto mb-5 justify-center text-center"
+            class="buttonprimary w-11/12 flex self-center mt-auto mb-5 justify-center text-center"
           >
             <a
               :href="

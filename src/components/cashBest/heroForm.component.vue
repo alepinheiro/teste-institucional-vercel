@@ -19,7 +19,7 @@
 
       <button
         type="submit"
-        class="text-white mb-4 sm:mb-2 sm:px-6 font-bold bg-complementaryColor1 rounded-lg w-fit px-4 py-3 mx-auto hover:scale-105 shadow hover:shadow-black/10 hover:shadow-lg transition"
+        class="text-white mb-4 sm:mb-2 sm:px-6 font-bold bg-primary rounded-lg w-fit px-4 py-3 mx-auto hover:scale-105 shadow hover:shadow-black/10 hover:shadow-lg transition"
       >
         Simular de graça
       </button>

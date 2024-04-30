@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.74 89.88">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Axia-Bold, Axia;
+        letter-spacing: -.04em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-6 {
+        font-size: 72.56px;
+      }
+
+      .cls-1, .cls-6, .cls-7, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15 {
+        font-family: PublicSans-Regular, 'Public Sans';
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        font-family: PublicSans-Bold, 'Public Sans';
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0em;
+      }
+
+      .cls-16 {
+        fill: #c4c4c4;
+      }
+
+      .cls-16, .cls-17, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-17 {
+        fill: #e5e5e5;
+      }
+
+      .cls-14 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        font-family: AxiaLight-Regular, Axia;
+        letter-spacing: -.04em;
+      }
+
+      .cls-7 {
+        font-size: 11.62px;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-15 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <text class="cls-6" transform="translate(69.07 66.23)"><tspan x="0" y="0">bext</tspan></text>
+        <text class="cls-1" transform="translate(191.37 66.23)"><tspan x="0" y="0">Play</tspan></text>
+        <g>
+          <path class="cls-17" d="M21.44,44.94H0v32.48c0,6.88,5.58,12.46,12.46,12.46h.19c3.31,0,6.48-1.32,8.82-3.65l17.62-17.62-17.65-23.66h0Z"/>
+          <path class="cls-16" d="M21.47,3.65C19.13,1.32,15.95,0,12.65,0h-.19C5.58,0,0,5.58,0,12.46v32.48h21.44s17.68-23.56,17.68-23.56L21.47,3.65Z"/>
+          <path class="cls-8" d="M53.93,36.21l-14.81-14.83-17.68,23.56,17.65,23.66,14.84-14.84c4.83-4.85,4.83-12.7,0-17.55Z"/>
+        </g>
+      </g>
+      <text class="cls-7" transform="translate(73.11 83.92)"><tspan class="cls-9" x="0" y="0">P</tspan><tspan class="cls-14" x="7.3" y="0">o</tspan><tspan class="cls-15" x="13.79" y="0">w</tspan><tspan class="cls-13" x="22.74" y="0">e</tspan><tspan class="cls-12" x="29.32" y="0">r</tspan><tspan class="cls-10" x="33.77" y="0">ed </tspan><tspan class="cls-14" x="50.11" y="0">b</tspan><tspan class="cls-11" x="56.96" y="0">y</tspan><tspan class="cls-10" x="63.13" y="0"> </tspan><tspan class="cls-5" x="65.96" y="0">B</tspan><tspan class="cls-2" x="73.99" y="0">e</tspan><tspan class="cls-3" x="80.22" y="0">x</tspan><tspan class="cls-4" x="86.93" y="0">t</tspan></text>
+    </g>
+  </g>
+</svg>

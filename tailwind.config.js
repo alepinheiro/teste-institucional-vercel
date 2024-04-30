@@ -9,9 +9,9 @@ module.exports = {
   theme: {
     screens: {
       sm: { max: '667px' },
-      md: { min: '668px', max: '1023px' },
-      lg: { min: '1024px', max: '1279px' },
-      xl: { min: '1280px' },
+      md: { min: '668px', max: '1199px' },
+      lg: { min: '1200px', max: '1799px' },
+      xl: { min: '1800px' },
       'min-md': { min: '668px' },
       'min-lg': { min: '1024px' },
     },

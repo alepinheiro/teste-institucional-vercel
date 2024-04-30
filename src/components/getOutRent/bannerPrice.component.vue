@@ -10,7 +10,7 @@
       />
 
       <a
-        class="bg-complementaryColor1 text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 rounded-lg text-2xl sm:text-xl sm:p-2 p-4 font-semibold"
+        class="bg-primary text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 rounded-lg text-2xl sm:text-xl sm:p-2 p-4 font-semibold"
         :href="
           $options.information.hotmartXoAluguel +
           useObjectToQueryString($route.query)

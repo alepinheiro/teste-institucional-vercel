@@ -54,7 +54,7 @@
           <a
             :href="$options.information.socialMediaUTM.youtube"
             aria-label="Clique aqui para acessar o YoutBest"
-            class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
+            class="font-bold bg-primary btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
           >
             Assista grátis
           </a>
@@ -76,7 +76,7 @@
           <a
             :href="$options.information.socialMediaUTM.telegram"
             aria-label="Receba conteúdo exclusivo no Telegram"
-            class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
+            class="font-bold bg-primary btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
           >
             Exlcusividade agora
           </a>
@@ -99,7 +99,7 @@
             <a
               :href="$options.information.socialMediaUTM.linkedin"
               aria-label="Receba conteúdo exclusivo no LinkedIn"
-              class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
+              class="font-bold bg-primary btnShine xl:py-2 md:text-xs lg:py-2 flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
             >
               Quero ser best
             </a>

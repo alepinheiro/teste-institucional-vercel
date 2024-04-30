@@ -63,7 +63,7 @@
             linhas de crédito tradicionais.
           </p>
           <div
-            class="p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-complementaryColor1 text-white text-center font-bold uppercase rounded-lg"
+            class="p-2 w-4/12 lg:w-6/12 md:w-6/12 md:text-xs lg:text-xs bg-primary text-white text-center font-bold uppercase rounded-lg"
           >
             <a
               :href="$options.information.appVehicleSimulator + $root.utms"

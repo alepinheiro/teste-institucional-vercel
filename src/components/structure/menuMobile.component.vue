@@ -56,7 +56,7 @@
       >
         <button
           class="cursor-pointer flex items-center px-4 py-2 justify-between"
-          :class="{ 'text-complementaryColor1': dropdownOpen }"
+          :class="{ 'text-primary': dropdownOpen }"
           @click="toggleDropdown(), removeClass()"
         >
           Produtos
@@ -389,7 +389,7 @@
         </svg>
       </div>
       <div
-        class="bg-complementaryColor1 text-white rounded-lg px-4 py-2 font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100 text-center"
+        class="bg-primary text-white rounded-lg px-4 py-2 font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100 text-center"
         @click="openProfileMenu = !openProfileMenu"
       >
         <a

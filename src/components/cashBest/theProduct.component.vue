@@ -18,7 +18,7 @@
         <a
           :href="`https://simulador.seja.best/${useObjectToQueryString(route.query)}`"
           target="_blank"
-          class="font-bold text-white bg-complementaryColor1 rounded px-4 py-2 w-fit sm:hidden hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
+          class="font-bold text-white bg-primary rounded px-4 py-2 w-fit sm:hidden hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
           >Simule on-line de graça
         </a>
       </div>
@@ -64,7 +64,7 @@
       <a
         :href="`https://simulador.seja.best/${useObjectToQueryString(route.query)}`"
         target="_blank"
-        class="font-bold text-white bg-complementaryColor1 rounded px-4 py-2 w-fit hidden sm:block sm:mt-8 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
+        class="font-bold text-white bg-primary rounded px-4 py-2 w-fit hidden sm:block sm:mt-8 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
       >
         Simule on-line de graça
       </a>

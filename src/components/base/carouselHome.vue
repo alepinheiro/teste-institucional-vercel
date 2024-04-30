@@ -69,7 +69,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 text-center mt-auto mb-5 w-10/12 self-center"
+            class="buttonprimary text-center mt-auto mb-5 w-10/12 self-center"
           >
             <a
               :href="
@@ -92,7 +92,7 @@
           class="border-1 rounded-xl bg-secondary h-[480px] w-full text-white flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-complementaryColor1"
+            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
               Cash<span class="font-semibold">Best</span>
@@ -141,7 +141,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 mt-auto mb-5 self-center w-10/12 text-center"
+            class="buttonprimary mt-auto mb-5 self-center w-10/12 text-center"
           >
             <a
               :href="
@@ -212,7 +212,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 mt-auto self-center mb-5 w-10/12 text-center"
+            class="buttonprimary mt-auto self-center mb-5 w-10/12 text-center"
           >
             <a
               :href="
@@ -234,7 +234,7 @@
           class="border-1 rounded-xl bg-secondary h-[480px] w-full text-white flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-complementaryColor1"
+            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
               Finan<span class="font-semibold">Best</span> Veicular
@@ -286,7 +286,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 mt-auto self-center mb-5 w-10/12 text-center"
+            class="buttonprimary mt-auto self-center mb-5 w-10/12 text-center"
           >
             <a
               :href="

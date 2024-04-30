@@ -24,7 +24,7 @@
       }
 
       .cls-1, .cls-2, .cls-3 {
-        font-style: italic;
+        font-style: bold;
       }
 
       .cls-1, .cls-2, .cls-4 {
@@ -36,11 +36,13 @@
       }
 
       .cls-5, .cls-3 {
-        fill: #27e0ff;
+        fill: #314FFC;
+        font-style: bold;
+        
       }
 
       .cls-6 {
-        fill: #08025d;
+        fill: #fff;
       }
 
       .cls-6, .cls-3, .cls-4 {
@@ -72,7 +74,7 @@
       <text class="cls-2 titleFont" transform="translate(0 718.31)"><tspan x="0" y="0">Empréstimo</tspan><tspan x="94.32" y="63.23">pessoal</tspan></text>
       <text class="cls-4 titleFont" transform="translate(683.02 757.89)"><tspan x="0" y="0">149%</tspan></text>
       <rect class="cls-5 titleFont" x="339.35" y="921.58" width="246.11" height="246.11" rx="19.93" ry="19.93" transform="translate(1507.05 582.23) rotate(90)"/>
-      <text class="cls-3 titleFont" transform="translate(74.25 1059.98)"><tspan x="0" y="0">CarBest</tspan></text>
+      <text class="cls-3 titleFont" transform="translate(74.25 1059.98)"><tspan x="0" y="0">BextCar</tspan></text>
       <text class="cls-6 titleFont" transform="translate(378.44 1067.95)"><tspan x="0" y="0">23%</tspan></text>
       <text class="cls-1 titleFont" transform="translate(1627.12 1161.32)"><tspan x="0" y="0">Fonte: Banco Central do Brasil</tspan></text>
     </g>

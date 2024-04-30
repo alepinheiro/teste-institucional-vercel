@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full defaultFont selection:bg-complementaryColor1 selection:text-white"
+    class="w-full defaultFont selection:bg-primary selection:text-white"
   >
     <RouterView />
     <NotificationPopUp />

@@ -303,12 +303,20 @@ const image = {
     whiteAndBlueLogo: {
       image:'/images/brand/whiteAndBlueLogo.svg',
       alt: 'Bext'
+    },
+    youtubeLogo: {
+      image:'/images/brand/LogotipoBextPlayNegativo.svg',
+      alt: 'BextPlay'
     }
   },
   mockUps:{
     multiBankPhone: {
       image:'/images/mockups/MockupCelularHomeFinalSimuladorMultibancos.png',
       alt: 'Plataforma multibancos e simulador online'
+    },
+    youtubePhone: {
+      image:'/images/mockups/mockupBextPlay.png',
+      alt: 'BextPlay- Conheça o maior canal de crédito do Brasil no youtube'
     }
   }
 }

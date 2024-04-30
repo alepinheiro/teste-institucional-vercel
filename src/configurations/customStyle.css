@@ -413,7 +413,7 @@
 }
 .lineDecoration:hover {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #27e0ff);
+  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524DD);
   border-image-slice: 1;
   height: 120px;
   border-radius: 10px;
@@ -421,13 +421,13 @@
 
 .textDecoration {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #27e0ff);
+  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524DD);
   border-image-slice: 1;
 }
 
 .decoration.router-link-active {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #27e0ff);
+  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524DD);
   border-image-slice: 1;
 }
 

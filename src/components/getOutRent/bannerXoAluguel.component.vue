@@ -60,7 +60,7 @@
                 independência imobiliária.
               </span>
               <a
-                class="bg-complementaryColor1 px-8 py-5 rounded-xl sm:mx-auto md:mx-auto transition-all hover:bg-[#0063f2] hover:scale-105 hover:shadow-md sm:tracking-wider"
+                class="bg-primary px-8 py-5 rounded-xl sm:mx-auto md:mx-auto transition-all hover:bg-[#0063f2] hover:scale-105 hover:shadow-md sm:tracking-wider"
                 :href="$options.information.hotmartXoAluguel + useObjectToQueryString($route.query)"
                 target="_blank"
               >

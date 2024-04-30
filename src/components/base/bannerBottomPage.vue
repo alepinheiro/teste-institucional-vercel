@@ -26,7 +26,7 @@
         <div
           class="pt-10 pb-4 text-right md:py-0 md:pt-2 lg:py-6 sm:py-2 sm:text-xs"
         >
-          <button class="buttonComplementaryColor1">
+          <button class="buttonprimary">
             <a
               :href="`${$options.information.appSimulator}${$root.utms}`"
               aria-label="Clique aqui e simule agora"

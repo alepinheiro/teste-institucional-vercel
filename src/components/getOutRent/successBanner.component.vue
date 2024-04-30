@@ -25,7 +25,7 @@
             </p>
             <div class="sm:text-center  md:text-center ">
               <button 
-                class="bg-complementaryColor1 text-white transition duration-500 ease-in-out  mt-12
+                class="bg-primary text-white transition duration-500 ease-in-out  mt-12
                     transform hover:translate-y-1 hover:scale-105 rounded-lg text-xl sm:text-xl sm:p-2 p-4 font-semibold"
                 @click="openLink()">
                 <i class="fa-brands fa-telegram"></i> Quero conteúdos gratuitos

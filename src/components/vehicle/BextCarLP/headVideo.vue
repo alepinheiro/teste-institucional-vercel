@@ -6,7 +6,7 @@
         <TopBar v-if="showMenu" customMobileMenuColor="white" color="primary" class="text-white" />
         <div class="maxWidth">
 
-          <div class="w-full xl:w-5/12 lg:w-5/12 md:w-10/12 md:mr-auto md:ml-auto pt-24 sm:pt-8 ">
+          <div class="w-full xl:w-5/12 lg:w-5/12 md:w-10/12 md:mr-auto md:ml-auto xl:pt-42 pt-18 sm:pt-8 ">
             <div class="py-8 sm:py-4 mt-4 w-full bg-bgLightColor p-6 rounded-lg">
               <div class="rounded-xl w-full">
                 <div class="titleFontBold flex pb-2">

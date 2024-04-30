@@ -27,7 +27,7 @@
         class="pb-20"
       />
       <Section3 class="bg-[#343644]" />
-    <BestPlay class="bg-secondary" />
+    <BestPlay class="bg-[#343644]" />
   </div>
   <FooterComponent />
 </template>
@@ -44,7 +44,7 @@ import ComparisonTable from '@/components/base/comparisonTable.component.vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
-  name: 'BextCarLP',
+  name: 'BextCar',
   props: {
     showMenu: {
       type: Boolean,

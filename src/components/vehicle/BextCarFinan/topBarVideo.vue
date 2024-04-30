@@ -38,7 +38,7 @@
                     </div>
                     <div class="w-3/12">
                       <div
-                        class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
+                        class="p-2 w-full bg-primary rounded-xl text-white text-center"
                       >
                         <a
                           :href="
@@ -119,7 +119,7 @@
                 </div>
                 <div class="w-3/12">
                   <div
-                    class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
+                    class="p-2 w-full bg-primary rounded-xl text-white text-center"
                   >
                     <a
                       :href="
@@ -193,7 +193,7 @@
                   </div>
                   <div class="w-3/12">
                     <div
-                      class="p-2 w-full bg-complementaryColor1 rounded-xl text-white text-center"
+                      class="p-2 w-full bg-primary rounded-xl text-white text-center"
                     >
                       <a
                         :href="
