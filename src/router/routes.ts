@@ -59,13 +59,13 @@ export const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/financiamento-imobiliario',
-    alias: ['/financiamento-imobiliario/finanBest'],
+    alias: ['/financiamento-imobiliario/finanBext'],
     name: 'Financing',
-    component: () => import('@/views/institucional/finanBest.vue'),
+    component: () => import('@/views/institucional/finanBext.vue'),
     meta: {
-      title: 'FinanBest: Financie Seu Imóvel | Taxas a partir de 1.09% a.m.',
+      title: 'FinanBext: Financie Seu Imóvel | Taxas a partir de 1.09% a.m.',
       description:
-        'Descubra como financiar seu imóvel com o FinanBest da Bext, oferecendo taxas a partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
+        'Descubra como financiar seu imóvel com o FinanBext da Bext, oferecendo taxas a partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
     },
     props: {
       showMenu: true,
@@ -147,9 +147,9 @@ export const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/institucional/bextCarFinan.vue'),
     meta: {
       title:
-        'FinanBest: Financiamento Veicular | Bext | Crédito Imobiliário',
+        'FinanBext: Financiamento Veicular | Bext | Crédito Imobiliário',
       description:
-        'Conheça os benefícios, o processo passo a passo e por que escolher o FinanBest.',
+        'Conheça os benefícios, o processo passo a passo e por que escolher o FinanBext.',
     },
     props: {
       showMenu: true,

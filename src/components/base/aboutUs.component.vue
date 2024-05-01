@@ -5,23 +5,23 @@
       'bg-primary': container.bgColor === 'PRIMARY',
       'bg-bgDarkColor': container.bgColor === 'BGDARKCOLOR',
     }"
-    class="py-20 w-full"
+    class="py-20 sm:py-12 w-full"
   >
     <div
-      class="max-w-7xl lg:max-w-5xl flex flex-col gap-12 md:gap-12 sm:gap-8 w-full mx-auto px-5"
+      class="max-w-7xl lg:max-w-5xl flex flex-col gap-8 md:gap-12 sm:gap-5 w-full mx-auto px-5"
     >
       <div
         class="flex flex-row gap-2 sm:flex-col sm:gap-5 w-10/12 mx-auto items-center"
       >
-        <div class="w-1/3 sm:w-full">
+        <div class="xl:w-5/12 w-1/3 sm:w-full sm:pb-4 ">
           <img
-            src="/images/logoBest/logoSejaBestWhite.png"
-            alt=""
-            class="object-contain h-20 mx-auto"
+            :src="$options.imageConfig.brand.whiteAndBlueLogo.image"
+            :alt="$options.imageConfig.brand.whiteAndBlueLogo.alt"
+            class="object-contain h-auto w-full sm:w-2/3 mx-auto"
           />
         </div>
-        <div class="w-full xl:w-2/3">
-          <h2 class="text-3xl sm:text-xl font-bold text-white text-center">
+        <div class="w-full xl:w-7/12 w-2/3">
+          <h2 class="text-3xl lg:text-2xl sm:text-xl font-bold text-white text-center">
             Há mais de 10 anos transformamos o acesso ao crédito para quem busca
             sua melhor versão.
           </h2>

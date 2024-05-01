@@ -11,7 +11,7 @@
         class="sm:w-full sm:text-left mb-auto text-primary xl:ml-24 xl:mt-24 lg:mt-16 md:mt-10 lg:ml-12 lg:w-7/12 w-full md:justify-center md:flex md:flex-col">
         <h1
           class="sm:pt-12 md:w-full sm:text-center text-5xl md:text-2xl lg:text-4xl sm:text-3xl text-center font-semibold mr-0 flex justify-end md:justify-center lg:justify-center sm:justify-center">
-          Com o FinanBest você tem:
+          Com o FinanBext você tem:
         </h1>
         <CardWhite />
       </div>
@@ -55,7 +55,7 @@
         </div>
         <div class="w-1/2 mt-auto mb-auto sm:w-full">
           <img :src="$options.imageConfig.BextCar.graficoFinan"
-            alt="Gráfico comparando as taxas de juros do FinanBest e do empréstimo pessoal"
+            alt="Gráfico comparando as taxas de juros do FinanBext e do empréstimo pessoal"
             class="sm:w-full md:w-11/12 w-full h-auto" />
         </div>
       </section>

@@ -92,10 +92,10 @@ const image = {
     photoFooter: '/images/Home/FotoGaspar.webp',
     reclameaqui: '/images/Home/reclameaqui.webp',
   },
-  finanBest: {
-    phoneVideo: '/images/finanBest/VideoFinanBestMobile.gif',
-    phoneVideoMd: '/images/finanBest/VideoFinanBestTablett.gif',
-    photoKeys: '/images/finanBest/FotoMaoChave.webp',
+  finanBext: {
+    phoneVideo: '/images/finanBext/VideofinanBextMobile.gif',
+    phoneVideoMd: '/images/finanBext/VideofinanBextTablett.gif',
+    photoKeys: '/images/finanBext/FotoMaoChave.webp',
   },
   cashBest: {
     phoneVideo: '/images/cashBest/CashBestMobile.gif',

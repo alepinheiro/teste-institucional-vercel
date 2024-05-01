@@ -10,7 +10,7 @@
       class="absolute z-0 inset-0 flex"
     >
       <img
-        src="/images/finanBest/bgComparisonTable.png"
+        src="/images/finanBext/bgComparisonTable.png"
         alt=""
         class="self-end"
       />

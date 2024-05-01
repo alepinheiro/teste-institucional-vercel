@@ -93,7 +93,7 @@
             class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
-              Finan<span class="font-semibold">Best</span>
+              Finan<span class="font-semibold">Bext</span>
             </h1>
             <h2 class="text-base pl-2 defaultFont">As melhores soluções em</h2>
             <h2 class="text-base pl-2 defaultFont">

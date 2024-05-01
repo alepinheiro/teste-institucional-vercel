@@ -99,7 +99,7 @@ const stepCards = [
     title: 'Documentação',
     description:
       'Para uma análise de crédito detalhada, envie os documentos solicitados. <b>Então seus dados serão analisados e, em seguida, uma proposta será enviada.</b>',
-    callToAction: ['Baixe o checklist', '#'],
+    callToAction: ['Baixe o checklist', `https://simulador.bext.vc/${useObjectToQueryString(route.query)}`],
   },
   {
     id: 3,

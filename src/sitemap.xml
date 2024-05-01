@@ -175,9 +175,9 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <!-- Alias: /financiamento-imobiliario/finanBest -->
+    <!-- Alias: /financiamento-imobiliario/finanBext -->
     <url>
-        <loc>https://www.sejabest.com/financiamento-imobiliario/finanBest</loc>
+        <loc>https://www.sejabest.com/financiamento-imobiliario/finanBext</loc>
         <lastmod>2024-03-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

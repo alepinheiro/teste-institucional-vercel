@@ -14,7 +14,7 @@
     <TopBar
       color="primary"
       :customMobileMenuColor="menuColor"
-      class="text-primary xl:text-textPrimary z-20"
+      class="text-textPrimary z-20"
     />
 
     <HeroSection :showMenu="showMenu" class="pb-14 min-md:pb-0 relative z-0" />

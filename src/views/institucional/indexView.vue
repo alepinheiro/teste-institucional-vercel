@@ -13,9 +13,9 @@
     <TopBar
       color="primary"
       customMobileMenuColor="white"
-      class="text-primary min-md:hidden"
+      class="text-textPrimary min-md:hidden"
     />
-    <TopBar color="primary" class="sm:hidden text-primary" />
+    <TopBar color="primary" class="sm:hidden text-textPrimary" />
     <HeroSection />
     <Products class="pt-24" />
     <BusinessPartners

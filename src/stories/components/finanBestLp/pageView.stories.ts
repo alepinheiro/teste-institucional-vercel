@@ -1,9 +1,9 @@
-import Page from '@/views/institucional/finanBest.vue'
+import Page from '@/views/institucional/finanBext.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router';
 
 const meta = {
-  title: 'Views/FinanBestLP',
+  title: 'Views/finanBextLP',
   component: Page,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/vue/writing-docs/autodocs
   tags: ['autodocs'],

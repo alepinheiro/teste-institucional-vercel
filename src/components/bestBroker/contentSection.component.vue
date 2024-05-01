@@ -64,7 +64,7 @@ export default defineComponent({
         },
         {
           id: 5,
-          title: '<b>FinanBest:</b> o Cliente Ideal',
+          title: '<b>FinanBext:</b> o Cliente Ideal',
           text: 'Aprenda a guiar seu cliente para o seu primeiro financiamento Imobiliário. O guia completo para contornar objeções, dicas de venda e o que você precisa saber sobre o cliente perfeito.',
         },
         {
