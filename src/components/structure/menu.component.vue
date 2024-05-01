@@ -38,7 +38,7 @@
         class="decoration"
         target="_blank"
       >
-        Portal Best
+        Portal Bext
       </a>
     </div>
     <a

@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeadVideo :showMenu="showMenu" />
-    <div class="bg-[#343644]">
+    <div class="bg-bgDarkColor">
       <Section2 />
     </div>
      
@@ -26,8 +26,8 @@
         }"
         class="pb-20"
       />
-      <Section3 class="bg-[#343644] " />
-    <BestPlay class="bg-[#343644]" />
+      <Section3 class="bg-bgDarkColor " />
+    <BestPlay class="bg-bgDarkColor" />
   </div>
   <FooterComponent />
 </template>
@@ -37,7 +37,6 @@ import { defineComponent } from 'vue'
 import HeadVideo from '@/components/vehicle/BextCarLP/headVideo.vue'
 import Section2 from '@/components/vehicle/BextCarLP/section2.vue'
 import Section3 from '@/components/vehicle/BextCarLP/section3.vue'
-import Section4 from '@/components/vehicle/BextCarLP/section4.vue'
 import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
@@ -55,7 +54,6 @@ export default defineComponent({
   components: {
     Section2,
     Section3,
-    Section4,
     HeadVideo,
     BusinessPartners,
     ComparisonTable,

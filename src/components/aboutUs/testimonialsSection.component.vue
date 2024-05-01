@@ -6,7 +6,7 @@
       <h2
         class="text-xl md:text-4xl lg:text-4xl xl:text-4xl text-primary font-bold px-5 text-center lg:w-2/3 xl:w-2/3 lg:mx-auto xl:mx-auto lg:px-0"
       >
-        Não queremos apenas clientes, trabalhamos duro para termos fãs
+        {{ title }}
       </h2>
 
       <div
@@ -84,9 +84,16 @@ import { SwiperOptions } from 'swiper/types'
 import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'TestimonialsSection',
+  props: {
+    title: {
+      type: String,
+      required: false,
+      default: 'Não queremos apenas clientes, trabalhamos duro para termos fãs',
+    },
+  },
   data() {
     const sliderOptions: SwiperOptions = {
-      spaceBetween: 20,
+      spaceBetween: 12,
       slidesPerView: 1.2,
       centeredSlides: true,
       autoHeight: false,

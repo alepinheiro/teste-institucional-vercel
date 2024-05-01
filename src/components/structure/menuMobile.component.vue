@@ -343,7 +343,7 @@
           class="hover:font-semibold"
           target="_blank"
         >
-          Portal Best
+          Portal Bext
         </a>
         <svg
           v-show="hoverSVG2"
