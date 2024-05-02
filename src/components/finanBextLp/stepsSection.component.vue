@@ -1,5 +1,5 @@
 <template>
-  <section class="py-10 w-full bg-[#EFEFEF]">
+  <section class="pb-10 w-full bg-[#EFEFEF]">
     <div class="w-full mx-auto maxWidth ">
       <component
         :is="'swiper-container'"

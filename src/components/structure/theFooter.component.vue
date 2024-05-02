@@ -39,7 +39,8 @@
 
           <div class="sm:text-sm text-textPrimary pb-6">
             <a :href="$options.information.jobs + useObjectToQueryString($route.query)
-              " class="hover:text-textPrimary" style="text-decoration: none" aria-label="Trabalhe Conosco" target="_blank">
+              " class="hover:text-textPrimary" style="text-decoration: none" aria-label="Trabalhe Conosco"
+              target="_blank">
               Trabalhe Conosco
             </a>
           </div>
@@ -102,7 +103,8 @@
           <div class="sm:text-sm text-textPrimary pb-6">
             <a :href="$options.information.appSimulator +
               useObjectToQueryString($route.query)
-              " class="hover:text-textPrimary" style="text-decoration: none" aria-label="Simule seu crédito" target="_blank">
+              " class="hover:text-textPrimary" style="text-decoration: none" aria-label="Simule seu crédito"
+              target="_blank">
               Simule seu crédito
             </a>
           </div>
@@ -110,7 +112,8 @@
           <div class="sm:text-sm text-textPrimary pb-6">
             <a :href="$options.information.appClient +
               useObjectToQueryString($route.query)
-              " class="hover:text-textPrimary" style="text-decoration: none" aria-label="Acesse sua conta" target="_blank">
+              " class="hover:text-textPrimary" style="text-decoration: none" aria-label="Acesse sua conta"
+              target="_blank">
               Acesse sua conta
             </a>
           </div>
@@ -269,25 +272,17 @@
           <p class="text-xs text-textPrimary">
             A <strong>Bext</strong> é uma plataforma digital que atua como correspondente Bancário para facilitar o processo de
             contratação de empréstimos. Como Correspondente Bancário, seguimos as diretrizes da Resolução nº 3.954, de
-            24 de fevereiro de 2011. Somos correspondentes bancários das seguintes instituições: banco Daycoval S. A
-            cnpj sob o no 62.232.889/0001-90. banco Santander s.a. cnpj sob o no 90.400.888/0001-42 Cashme soluções
-            financeiras Ltda. cnpj sob o no 34.175.529/0001-68. Itaú Unibanco s.a. cnpj sob o no 60.701.190/0001-04.
-            companhia promotora Uci cnpj sob o no 14.010.548/0001-27. Pontte soluções financeiras Ltda. cnpj sob o no
-            33.296.599/0001-01. banco Bari de investimentos e financiamentos S.A. cnpj sob o no 00.556.603/0001-74.
-            companhia hipotecaria piratini – CHP. cnpj sob o no 18.282.093/0001-50. B.V. financeira S.A cnpj sob o no
-            01.149.953/0001-89. BANCO BARI DE INVESTIMENTO E FINANCIAMENTOS S.A. cnpj sob o no 00.556.603/0001-74. BANCO
-            BRADESCO S.A. cnpj sob o no 60.746.948.0001-12. BANCO DE BRASÍLIA S.A. cnpj sob o no 00.000.208/0001-00 cnpj
-            sob o no. BANCO C6 S.A. 31.872.495/0001-72. CASHME SOLUÇÕES FINANCEIRAS LTDA. cnpj sob o no
-            34.175.529/0001-68. CREDIBLUE SOLUCOES FINANCEIRAS E IMOBILIARIAS LTDA. cnpj sob o no 36.750.257/0001-08.
-            CREDITAS SOLUCOES FINANCEIRAS LTDA. cnpj sob o no 17.770.708/0001-24. BANCO DAYCOVAL S.A. cnpj sob o no
-            62.232.889/0001-90. GALLERIA SOCIEDADE DE CREDITO DIRETO S.A. cnpj sob o no 51.604.356/0001-75. BANCO INTER
-            S.A. cnpj sob o no 00.416.968/0001-01. ITAU UNIBANCO S.A. cnpj sob o no 60.701.190/0001-04. LIBRA CRÉDITO
-            SOLUÇÕES FINANCEIRAS LTDA. cnpj sob o no 34.308.576/0001-32. MONETARE SOLUÇÕES FINANCEIRAS S.A. cnpj sob o
-            no 32.295.379/0001-09. PONTTE SOLUCÕES FINANCEIRAS LTDA. cnpj sob o no 33.296.599/0001-01
-            SANTANDER - SANB PROMOTORA DE VENDAS E COBRANCA S.A. 02.254.093/0001-06. SANTANDER - COMPANHIA PROMOTORA UCI
-            cnpj sob o no 14.010.548/0001-27. TRISUL S.A. cnpj sob o no 08.811.643/0001-27. WP2 CORRETORA DES SEGUROS
-            LTDA. cnpj sob o no 40.631.755/0001-09. ALL IN CRED SOCIEDADE DE CREDITO DIRETO S.A. cnpj sob o no
-            51.414.521/0001-26.
+            24 de fevereiro de 2011. Somos correspondentes bancários das seguintes instituições: BANCO BARI DE
+            INVESTIMENTO E FINANCIAMENTOS S.A. 00.556.603/0001-74, BANCO BRADESCO S.A. 60.746.948.0001-12, BANCO DE
+            BRASÍLIA S.A. 00.000.208/0001-00, BANCO C6 S.A. 31.872.495/0001-72, CASHME SOLUÇÕES FINANCEIRAS LTDA.
+            34.175.529/0001-68, CREDIBLUE SOLUCOES FINANCEIRAS E IMOBILIARIAS LTDA. 36.750.257/0001-08, CREDITAS
+            SOLUCOES FINANCEIRAS LTDA. 17.770.708/0001-24, BANCO DAYCOVAL S.A. 62.232.889/0001-90, GALLERIA SOCIEDADE DE
+            CREDITO DIRETO S.A. 51.604.356/0001-75, BANCO INTER S.A. 00.416.968/0001-0, ITAU UNIBANCO S.A.
+            60.701.190/0001-04, LIBRA CRÉDITO SOLUÇÕES FINANCEIRAS LTDA. 34.308.576/0001-32, MONETARE SOLUÇÕES
+            FINANCEIRAS S.A. 32.295.379/0001-09, PONTTE SOLUCÕES FINANCEIRAS LTDA. 33.296.599/0001-01, SANTANDER - SANB
+            PROMOTORA DE VENDAS E COBRANCA S.A. 02.254.093/0001-06, SANTANDER - COMPANHIA PROMOTORA UCI
+            14.010.548/0001-27, TRISUL S.A. 08.811.643/0001-27, WP2 CORRETORA DE SEGUROS LTDA. 40.631.755/0001-09, ALL
+            IN CRED SOCIEDADE DE CREDITO DIRETO S.A. 51.414.521/0001-26.
           </p>
 
           <p class="text-xs text-textPrimary py-4">

@@ -3,7 +3,7 @@
     class="flex flex-wrap justify-end sm:justify-center pb-16 sm:pb-5 pt-10 md:pt-4 md:ml-4"
   >
     <div
-      class="mb-8 md:mb-2 lg:w-1/2 md:w-1/2 w-[40%] px-3 md:px-0 md:pl-1 sm:w-full"
+      class="mb-8 md:mb-2 xl:w-1/2 lg:w-1/2 md:w-1/2 w-[40%] px-3 md:px-0 md:pl-1 sm:w-full"
     >
       <div
         class="p-2 md:p-[0.7rem] lg:p-[0.625rem] bg-white flex sm:p-3 gap-4 borderGrey rounded-lg
@@ -28,7 +28,7 @@
     </div>
 
     <div
-      class="mb-8 md:mb-2 lg:w-1/2 md:w-1/2 w-[40%] px-3 sm:w-full md:px-0 md:pl-1"
+      class="mb-8 md:mb-2 xl:w-1/2  lg:w-1/2 md:w-1/2 w-[40%] px-3 sm:w-full md:px-0 md:pl-1"
     >
       <div
         class="p-2 md:p-2 lg:p-2 bg-white flex sm:p-3 gap-2 borderGrey rounded-lg lg:h-[70px]
@@ -55,7 +55,7 @@
       </div>
     </div>
 
-    <div class="mb-8 lg:w-1/2 md:w-1/2 w-[40%] px-3 sm:w-full md:px-0 md:pl-1">
+    <div class="mb-8 xl:w-1/2  lg:w-1/2 md:w-1/2 w-[40%] px-3 sm:w-full md:px-0 md:pl-1">
       <div
         class="p-2 bg-white flex sm:p-3 gap-4 borderGrey rounded-lg lg:h-[70px] md:h-[75px] xl:h-[88px]"
       >
@@ -77,7 +77,7 @@
       </div>
     </div>
 
-    <div class="mb-8 lg:w-1/2 md:w-1/2 w-[40%] px-3 sm:w-full md:px-0 md:pl-1">
+    <div class="mb-8 xl:w-1/2  lg:w-1/2 md:w-1/2 w-[40%] px-3 sm:w-full md:px-0 md:pl-1">
       <div
         class="p-2 lg:p-[0.625rem] md:p-3 gap-3 bg-white flex sm:p-3 borderGrey rounded-lg lg:h-[70px] md:h-[75px] xl:h-[88px]"
       >

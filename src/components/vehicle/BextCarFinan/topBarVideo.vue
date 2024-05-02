@@ -6,7 +6,7 @@
         <div class="maxWidth">
 
           <div class="w-full xl:w-5/12 lg:w-5/12 md:w-10/12 md:mr-auto md:ml-auto xl:pt-42 pt-18 sm:pt-8 ">
-            <div class="py-8 sm:py-4 mt-4 w-full bg-bgLightColor p-6 rounded-lg">
+            <div class="py-8 sm:py-4 mt-4 w-full bg-bgLightColor p-6 rounded-xl">
               <div class="rounded-xl w-full">
                 <div class="titleFontBold flex pb-2">
                   <h1 class="text-5xl sm:text-4xl textDecoration pb-1 text-primary">

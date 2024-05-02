@@ -1,12 +1,12 @@
 <template>
   <main class="relative overflow-hidden w-full z-0 bg-white">
     <img
-      src="/images/Home/backgroundLines.png"
+      src="/images/Home/backgroundLines.jpg"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
       alt=""
     />
     <img
-      src="/images/Home/backgroundLines.png"
+      src="/images/Home/backgroundLines.jpg"
       class="absolute top-96 -right-96 -z-10 hidden md:block -scale-x-100"
       alt=""
     />

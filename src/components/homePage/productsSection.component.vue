@@ -1,8 +1,8 @@
 <template>
-  <section>
-    <div class="flex flex-col px-5">
+  <section class="px-5">
+    <div class="flex flex-col ">
       <div
-        class="flex flex-col text-textPrimary gap-5 text-center lg:text-left xl:text-left lg:max-w-5xl xl:max-w-7xl mx-auto w-full px-5"
+        class="flex flex-col text-textPrimary gap-5 text-center lg:text-left xl:text-left lg:max-w-5xl xl:max-w-7xl mx-auto w-full "
       >
         <h2 class="text-xl min-md:text-3xl font-bold">
           Como podemos ajudar você ou seu negócio?
@@ -15,13 +15,14 @@
     <component
       :is="'swiper-container'"
       v-bind="sliderOptions"
-      class="pb-12 pt-8 xl:max-w-7xl xl:px-5"
+      class="pb-12 pt-8 xl:max-w-7xl "
     >
       <component
         :is="'swiper-slide'"
         v-for="{ title, description, features, moreInformation } of steps"
         :key="title"
-        class="bg-white text-textPrimary hover:text-white py-8 px-4 rounded-lg mb-16 h-auto group hover:bg-secondary transition-all"
+
+        class="bg-white text-textPrimary hover:text-white py-8 px-4 rounded-lg mb-16 h-auto group hover:bg-bgDarkColor transition-all"
       >
         <div class="flex flex-col gap-6 justify-between h-full">
           <h3 class="text-2xl font-bold">

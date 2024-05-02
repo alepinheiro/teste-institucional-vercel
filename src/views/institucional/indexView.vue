@@ -1,23 +1,18 @@
 <template>
   <div class="relative z-0 overflow-hidden bg-[#EFEFEF]">
     <img
-      src="/images/Home/backgroundLines.png"
+      src="/images/Home/backgroundLines.jpg"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
       alt=""
     />
     <img
-      src="/images/Home/backgroundLines.png"
+      src="/images/Home/backgroundLines.jpg"
       class="absolute top-96 -right-96 -z-10 hidden md:block -scale-x-100"
       alt=""
     />
-    <TopBar
-      color="primary"
-      customMobileMenuColor="white"
-      class="text-textPrimary min-md:hidden"
-    />
-    <TopBar color="primary" class="sm:hidden text-textPrimary" />
+    <TopBar color="primary" class="text-textPrimary" />
     <HeroSection />
-    <Products class="pt-24" />
+    
     <BusinessPartners
       title="A melhor plataforma multibancos."
       type="HomeEquity"
@@ -31,9 +26,7 @@
       class="py-10 md:py-24 lg:py-12 xl:py-12 px-5 bg-white"
     />
     <SloganSection class="bg-white" />
-    <AboutUs
-      class="min-md:pt-12 border-t-2 border-primary min-md:border-none bg-white"
-    />
+    <Rebranding />
     <Mission title="Por que existimos?" class="py-10 px-5 bg-white" />
     <ComparisonTable
       :props="{
@@ -58,7 +51,7 @@
 <script lang="ts">
 import TopBar from '@/components/structure/topBar/index.component.vue'
 import HeroSection from '@/components/homePage/heroSection.component.vue'
-import Products from '@/components/homePage/productsSection.component.vue'
+import Rebranding from '@/components/base/sections/rebranding/index.componente.vue'
 import AboutUs from '@/components/homePage/aboutUs.component.vue'
 import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
@@ -74,7 +67,7 @@ export default defineComponent({
   components: {
     TopBar,
     HeroSection,
-    Products,
+    Rebranding,
     AboutUs,
     BestPlay,
     BusinessPartners,

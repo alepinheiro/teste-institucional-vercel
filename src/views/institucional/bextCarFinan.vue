@@ -2,15 +2,15 @@
   <div class="w-full">
     <TopBarVideo :showMenu="showMenu" />
 
-    <section class="flex sm:flex-wrap-reverse pt-6 maxWidth">
-      <div class="w-5/12 md:w-4/12 mb-auto mt-16 sm:mt-0 xl:mt-6 md:mt-10 sm:w-full  md:hidden">
+    <section class="flex sm:flex-wrap-reverse maxWidth items-center my-24 sm:my-0">
+      <div class="w-5/12 md:w-4/12  sm:w-full  md:hidden">
         <img :src="$options.imageConfig.BextCar.carroNotas"
           alt="Uma mercedez benz branca com cédulas de cem reais ao fundo" class="h-64" />
       </div>
       <div
-        class="sm:w-full sm:text-left mb-auto text-primary xl:ml-24 xl:mt-24 lg:mt-16 md:mt-10 lg:ml-12 lg:w-7/12 w-full md:justify-center md:flex md:flex-col">
+        class="sm:w-full sm:text-left mb-auto text-primary  lg:ml-12 lg:w-7/12 xl:w-7/12 w-full md:justify-center md:flex md:flex-col">
         <h1
-          class="sm:pt-12 md:w-full sm:text-center text-5xl md:text-2xl lg:text-4xl sm:text-3xl text-center font-semibold mr-0 flex justify-end md:justify-center lg:justify-center sm:justify-center">
+          class="sm:pt-12 md:w-full sm:text-center text-5xl md:text-2xl lg:text-4xl sm:text-3xl text-center font-semibold mr-0 flex justify-center">
           Com o FinanBext você tem:
         </h1>
         <CardWhite />

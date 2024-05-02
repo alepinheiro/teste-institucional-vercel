@@ -26,13 +26,9 @@
           <h1
             class="min-lg:font-darkerGrotesque font-Public-Sans text-2xl  md:text-4xl min-lg:text-6xl text-primary leading-tight whitespace-pre-line min-lg:font-bold"
           >
-            <span class="min-lg:hidden">
-              <b>FinanBext:</b>
-              Financie seu imóvel com a assessoria
-              <b>Bext</b>
-            </span>
-            <span class="hidden min-lg:block">
-              FinanBext: Financie seu imóvel com a assessoria Bext
+            
+            <span class="font-bold">
+              Financie com a Bext e multiplique as suas opções
             </span>
           </h1>
           <!--  -->
@@ -57,7 +53,7 @@
             </div>
           </div>
 
-          <hr class="border-1 border-textprimary hidden min-lg:block" />
+          <hr class="border-1 border-textPrimary hidden min-lg:block" />
           <InputsForm
             v-model="formData"
             class="w-full sm:bg-[#EFEFEF] rounded-xl py-4"

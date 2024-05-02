@@ -5,7 +5,7 @@
       'bg-secondary': component.bgColor === 'SECONDARY',
       'bg-bgDarkColor': component.bgColor === 'BGDARKCOLOR',
     }"
-    class="w-full py-20 xl:pb-0 bg-bgDarkColor"
+    class="w-full py-20 xl:pb-0 lg:pb-0 bg-bgDarkColor"
   >
     <div
       class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full flex flex-col gap-12"
@@ -31,16 +31,17 @@
         </p>
       </div>
 
-      <div class="flex flex-row items-center">
+      <div class="flex flex-row items-center ">
         <div
-          class="w-5/12 flex flex-grow justify-end lg:hidden md:hidden sm:hidden"
+          class="w-5/12 flex flex-grow justify-end md:hidden sm:hidden"
         >
           <img
             :src="`/images/components/forms/subscribe/${image}.png`"
             alt=""
+            class="mb-0 mt-auto"
           />
         </div>
-        <div class="w-7/12 lg:w-8/12 md:w-full sm:w-full lg:mx-auto px-5">
+        <div class="w-7/12 lg:w-7/12 md:w-full sm:w-full lg:mx-auto px-5 pb-8">
           <SimulationForm :show-home-equity="form.showRealtyValue" />
         </div>
       </div>

@@ -29,8 +29,8 @@
       }"
       class="py-10"
     />
-    <VideoSection :youtubeVideoId="'Mlg8eDX61uE'" class="lg:pt-20 xl:pt-20" />
-    <StepsSection />
+    <VideoSection :youtubeVideoId="'Mlg8eDX61uE'" class="" />
+    <StepsSection class="-mt-12 lg:-mt-24 lg:pb-24 xl:pb-36 sm:pt-12 md:pt-12" />
 
     <AboutUs
       :cards="{ bgColor: 'PRIMARY' }"

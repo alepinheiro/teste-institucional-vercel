@@ -315,6 +315,10 @@ const image = {
     loadingBrandChange: {
       image:'/images/brand/MudancaDeMarca.gif',
       alt: 'SejaBest agora é Bext'
+    },
+    loadingBrandChangeLight: {
+      image:'/images/brand/MudancaDeMarcaClaro.gif',
+      alt: 'SejaBest agora é Bext'
     }
   },
   mockUps:{

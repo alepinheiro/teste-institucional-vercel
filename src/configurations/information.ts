@@ -32,6 +32,7 @@ const information = {
   appRealEstateSimulator: 'https://simulador.bext.vc/imovel',
   appVehicleSimulator: 'https://simulador.bext.vc/veiculo',
   hotmartXoAluguel: 'https://pay.hotmart.com/K85603528M',
+  linkRebranding:'',
   bestHubApp: {
     login: 'https://besthub.app/',
     subscribe: 'https://besthub.app/pre-cadastro',

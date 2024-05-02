@@ -4,16 +4,15 @@
       class="text-center flex flex-col gap-4 lg:gap-1 xl:gap-1 md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto h-auto"
     >
       <div
-        class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5 lg:w-10/12 lg:mx-auto"
+        class="flex flex-col gap-2 md:gap-4 lg:gap-5 xl:gap-5 lg:w-10/12 xl:w-10/12 mx-auto"
       >
         <h2
           class="text-primary text-xl md:text-4xl lg:text-4xl xl:text-4xl font-bold"
         >
           {{ title }}
         </h2>
-        <p class="md:text-xl lg:text-2xl xl:text-2xl text-textPrimary">
-          Acreditamos que o acesso ao crédito pode levar as pessoas a sua melhor
-          versão.
+        <p class="md:text-xl lg:text-2xl xl:text-2xl text-textPrimary pb-4">
+          Há 10 anos colocamos os clientes no centro da disrupção, oferecendo soluções mais eficientes para possibilitar seu acesso ao crédito.
         </p>
       </div>
 
@@ -22,7 +21,7 @@
     </div>
 
     <div
-      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-2xl overflow-hidden border border-textprimary md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto transition lg:h-128 xl:h-128"
+      class="flex flex-col md:flex-col lg:flex-row xl:flex-row rounded-2xl overflow-hidden border-1 border-bgDarkColor md:max-w-[663px] lg:max-w-5xl xl:max-w-7xl md:mx-auto lg:mx-auto xl:mx-auto transition lg:h-128 xl:h-128"
     >
       <div class="flex flex-col font-bold md:flex-1 lg:flex-1 xl:flex-1">
         <button
@@ -30,8 +29,8 @@
           :key="id"
           :class="[
             activeCard.id === id
-              ? 'bg-primary text-white border-primary'
-              : 'border-textprimary text-textprimary hover:bg-white hover:text-primary',
+              ? 'bg-bgDarkColor text-white border-bgDarkColor'
+              : 'border-bgDarkColor text-textSecondary  hover:bg-white hover:text-primary',
           ]"
           class="border-b md:last-of-type:border-0 lg:last-of-type:border-0 xl:last-of-type:border-0 p-4 md:py-4 xl:px-10 md:h-full lg:h-full xl:h-full md:text-2xl lg:text-2xl xl:text-2xl w-full text-start transition-all"
           @click="changeActiveImage(index)"
@@ -200,21 +199,21 @@ export default defineComponent({
           id: 'education' as 'education',
           title: '1. Educação',
           description:
-            'Através de conteúdos gratuitos que produzimos para empoderar o cliente na tomada da melhor decisão. Confira clicando abaixo:',
+            ' Produzimos conteúdos gratuitos para dar conhecimento aos processos de acesso ao crédito, explanando suas opções. Confira clicando abaixo:',
           image: '/images/aboutUs/3Pilares/PilaresEducacaoCorMobile.webp',
         },
         technology: {
           id: 'technology' as 'technology',
           title: '2. Tecnologia',
           description:
-            'Onde através da nossa plataforma multibancos , de forma simples e segura, conectamos você com todo o mercado.',
+            'o cliente tem acesso a uma plataforma open finance, intuitiva e rápida, onde suas possibilidades são multiplicadas e apresentadas através do nosso simulador.',
           image: '/images/aboutUs/3Pilares/PilaresTecnologiaCorMobile.webp',
         },
         humanizedExperience: {
           id: 'humanizedExperience' as 'humanizedExperience',
           title: '3. Experiência Humanizada',
           description:
-            'Com assessores especializados que vão te acompanhar do inicio ao fim.',
+            'Transformamos o trauma do suporte bancário em uma jornada de troca, clareza e resultados. Nossos assessores estarão disponíveis durante todo o processo.',
           image: 'images/aboutUs/3Pilares/PilaresExperienciaCorMobile.webp',
         },
       },
