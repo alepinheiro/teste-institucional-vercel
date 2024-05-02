@@ -10,7 +10,7 @@
         lg:h-[70px] md:h-[75px] xl:h-[88px]"
       >
         <img
-          :src="$options.imageConfig.icons.moneyFV"
+          :src="$options.imageConfig.icons.moneyFill"
           alt="Ícone redondo com cifrão no centro"
           class="w-12 h-12 lg:w-11 sm:w-12 mt-auto mb-auto"
         />
@@ -35,7 +35,7 @@
         md:h-[75px] xl:h-[88px]"
       >
         <img
-          :src="$options.imageConfig.icons.phoneFV"
+          :src="$options.imageConfig.icons.notebookFill"
           alt="Ícone representando um celular"
           class="w-12 h-12 lg:w-11 sm:w-12 mt-auto mb-auto"
         />
@@ -60,7 +60,7 @@
         class="p-2 bg-white flex sm:p-3 gap-4 borderGrey rounded-lg lg:h-[70px] md:h-[75px] xl:h-[88px]"
       >
         <img
-          :src="$options.imageConfig.icons.calendarFV"
+          :src="$options.imageConfig.icons.calendarOutline"
           alt="Ícone representando um calendário"
           class="w-12 h-12 lg:w-11 sm:w-12 mt-auto mb-auto"
         />
@@ -82,7 +82,7 @@
         class="p-2 lg:p-[0.625rem] md:p-3 gap-3 bg-white flex sm:p-3 borderGrey rounded-lg lg:h-[70px] md:h-[75px] xl:h-[88px]"
       >
         <img
-          :src="$options.imageConfig.icons.clockFV"
+          :src="$options.imageConfig.icons.phoneFill"
           alt="Ícone representando um relógio"
           class="w-12 h-12 lg:w-11 sm:w-12 mt-auto mb-auto"
         />

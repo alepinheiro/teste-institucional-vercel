@@ -47,7 +47,7 @@
             disso, as taxas de juros são mais baixas em comparação com outras
             linhas de crédito tradicionais.
           </p>
-          <div class="p-3 w-4/12 lg:w-6/12 md:w-6/12 text-xl
+          <div class="p-3 w-4/12 lg:w-6/12 md:w-6/12 xl:w-1/2 text-xl
              bg-primary text-white text-center font-bold uppercase rounded-lg">
             <a :href="$options.information.appVehicleSimulator + $root.utms"
               aria-label="Clique aqui para contratar seu financiamento" target="_blank">Quero contratar</a>
