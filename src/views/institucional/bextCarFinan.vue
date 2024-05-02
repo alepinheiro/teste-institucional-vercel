@@ -2,7 +2,7 @@
   <div class="w-full">
     <TopBarVideo :showMenu="showMenu" />
 
-    <section class="flex sm:flex-wrap-reverse maxWidth items-center my-24 sm:my-0">
+    <section class="flex sm:flex-wrap-reverse maxWidth items-center my-24 xl:py-24 sm:my-0">
       <div class="w-5/12 md:w-4/12  sm:w-full  md:hidden">
         <img :src="$options.imageConfig.BextCar.carroNotas"
           alt="Uma mercedez benz branca com cédulas de cem reais ao fundo" class="h-64" />
@@ -17,13 +17,13 @@
       </div>
     </section>
 
-    <section class="bg-bgLightColor xl:pt-16 lg:pt-14 md:pt-14 sm:pt-12 pb-18 md:pb-12">
+    <section class="bg-bgLightColor xl:pt-36 xl:pb-48 lg:pt-24 md:pt-14 sm:pt-12 pb-18 sm:pb-0 md:pb-12">
       <h1
-        class="xl:text-5xl lg:text-4xl md:text-3xl sm:text-xl text-primary text-center xl:mb-16 lg:mb-12 md:mb-12 sm:mb-10">
+        class="xl:text-5xl lg:text-4xl md:text-3xl sm:text-xl text-primary text-center xl:mb-24 lg:mb-12 md:mb-12 sm:mb-10">
         Passo a passo <span class="font-bold ">para financiar seu carro</span>
       </h1>
       <StepByStep />
-      <div class="maxWidth xl:mt-11 lg:mt-6 md:mt-6 px-28 sm:px-8">
+      <div class="maxWidth xl:mt-24 lg:mt-6 md:mt-6 px-28 sm:px-4">
         <p class=" md:text-sm text-lg text-center">
           Com o carro na mão, você paga a
           <span class="font-bold underline">primeira parcela</span> 45 dias
