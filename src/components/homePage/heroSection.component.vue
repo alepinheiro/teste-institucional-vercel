@@ -14,8 +14,13 @@
         alt=""
       />
       <img
+        src="/images/Home/linesMd.png"
+        class="hidden md:block absolute inset-0 w-full object-contain  -z-10"
+        alt=""
+      />
+      <img
         src="/images/Home/heroBackground-lg.png"
-        class="hidden lg:block absolute inset-0 w-5/12 object-contain right-12 ml-auto -z-10"
+        class="hidden lg:block absolute inset-0 w-5/12 object-contain  ml-auto -z-10"
         alt=""
       />
 

@@ -5,12 +5,12 @@
         <div class="w-5/12 sm:w-full md:w-full sm:text-center md:text-center pb-5">
           <h3 class="font-bold text-2xl ">Uma nova marca. Pela mesma causa, com a mesma cultura e somando muito
             mais possibilidades.</h3>
-          <p class="py-5">
+          <p class="pt-5 pb-8">
             Seguimos com a cultura e propósito da SejaBest, mas inserimos o X como fator potencial: Mais tecnologia,
             mais negócios, mais possibilidades.
           </p>
           <a :href="$options.information.linkRebranding
-            " class="sm:hidden md:hidden bg-primary px-5 py-3 rounded-xl text-white font-bold sm:mt-2" target="_blank">
+            " class="sm:hidden md:hidden bg-primary  px-5 py-3 rounded-xl text-white font-bold sm:mt-2" target="_blank">
             <span class="text-xl">
               Conheça a Bext
             </span>
