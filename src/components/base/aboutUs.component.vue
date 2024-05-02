@@ -55,7 +55,7 @@
           </div>
           <div>
             <h3 class="flex flex-col gap-4">
-              <span class="text-4xl font-bold">{{ title }}</span>
+              <span class="text-3xl font-bold">{{ title }}</span>
               <span class="text-lg">{{ description }}</span>
             </h3>
           </div>
