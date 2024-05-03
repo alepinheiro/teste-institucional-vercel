@@ -69,7 +69,7 @@ export default defineComponent({
         },
         {
           id: 6,
-          title: '<b>CashBest:</b> o Cliente Ideal',
+          title: '<b>cashBext:</b> o Cliente Ideal',
           text: 'O guia definitivo sobre identificação e aproveitamento de oportunidades. Descubra o que busca o cliente de Crédito com Garantia de Imóvel e confira dicas exclusivas sobre como identificar o cenário perfeito.',
         },
         {

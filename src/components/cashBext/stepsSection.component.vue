@@ -12,13 +12,7 @@
             São apenas 4 passos para você receber o seu crédito.
           </p>
         </div>
-        <div class="sm:hidden">
-          <img
-            class="h-16"
-            src="/images/logoBest/logoCashBestHomeEquity.svg"
-            alt=""
-          />
-        </div>
+        
       </div>
       <component
         :is="'swiper-container'"

@@ -13,14 +13,14 @@
       <div
         class="flex flex-row gap-2 sm:flex-col sm:gap-5 w-10/12 mx-auto items-center"
       >
-        <div class="xl:w-5/12 w-1/3 sm:w-full sm:pb-4 ">
+        <div class="xl:w-4/12 w-1/3 sm:w-full sm:pb-4 ">
           <img
             :src="$options.imageConfig.brand.whiteAndBlueLogo.image"
             :alt="$options.imageConfig.brand.whiteAndBlueLogo.alt"
             class="object-contain h-auto w-full sm:w-2/3 mx-auto xl:w-10/12"
           />
         </div>
-        <div class="w-full xl:w-7/12 w-2/3">
+        <div class="w-full xl:w-8/12 w-2/3">
           <h2 class="text-3xl lg:text-2xl sm:text-xl font-bold text-white text-center">
             Há mais de 10 anos transformamos o acesso ao crédito para quem busca
             sua melhor versão.

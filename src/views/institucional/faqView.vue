@@ -73,8 +73,8 @@ export default defineComponent({
         },
         {
           id: 3,
-          title: 'O que é o CashBest?',
-          text: 'O CashBest é o nome dado para uma modalidade de crédito, onde você deixa seu imóvel como garantia, e em troca recebe o capital que você precisa.',
+          title: 'O que é o cashBext?',
+          text: 'O cashBext é o nome dado para uma modalidade de crédito, onde você deixa seu imóvel como garantia, e em troca recebe o capital que você precisa.',
           text2: undefined,
           videoUrl: 'https://www.youtube.com/embed/1-y5dOFywUg',
         },

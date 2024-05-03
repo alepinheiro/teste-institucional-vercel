@@ -97,85 +97,85 @@ const image = {
     phoneVideoMd: '/images/finanBext/VideofinanBextTablett.gif',
     photoKeys: '/images/finanBext/FotoMaoChave.webp',
   },
-  cashBest: {
-    phoneVideo: '/images/cashBest/CashBestMobile.gif',
-    phoneVideoMd: '/images/cashBest/VídeoCashBestTablet.gif',
-    photoMan: '/images/cashBest/FotonaFormaHomem.webp',
+  cashBext: {
+    phoneVideo: '/images/cashBext/cashBextMobile.gif',
+    phoneVideoMd: '/images/cashBext/VídeocashBextTablet.gif',
+    photoMan: '/images/cashBext/FotonaFormaHomem.webp',
     sliderPhones: [
       {
-        img: '/images/cashBest/Celulares/01.webp',
+        img: '/images/cashBext/Celulares/01.webp',
         alt: 'Válido para imóveis residenciais e comerciais.',
       },
       {
-        img: '/images/cashBest/Celulares/02.webp',
+        img: '/images/cashBext/Celulares/02.webp',
         alt: 'As menores parcelas do mercado.',
       },
       {
-        img: '/images/cashBest/Celulares/03.webp',
+        img: '/images/cashBext/Celulares/03.webp',
         alt: 'As menores taxas de crédito.',
       },
       {
-        img: '/images/cashBest/Celulares/04.webp',
+        img: '/images/cashBext/Celulares/04.webp',
         alt: 'Atendimento humanizado 7 dias por semana.',
       },
       {
-        img: '/images/cashBest/Celulares/05.webp',
+        img: '/images/cashBext/Celulares/05.webp',
         alt: 'Prazos de até 420 meses.',
       },
       {
-        img: '/images/cashBest/Celulares/06.webp',
+        img: '/images/cashBext/Celulares/06.webp',
         alt: 'Prazos de até 420 meses.',
       },
     ],
     sliderMoney1: [
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/ReformarOuConstruir.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/ReformarOuConstruir.webp',
         alt: 'Reformar ou construir.',
       },
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/Investir.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/Investir.webp',
         alt: 'Investir.',
       },
     ],
     sliderMoney2: [
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/PagarSuasDividas.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/PagarSuasDividas.webp',
         alt: 'Pagar suas dividas.',
       },
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/AbrirUmNegocio.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/AbrirUmNegocio.webp',
         alt: 'Abrir um negócio.',
       },
     ],
     sliderMoney3: [
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/CapitaldeGiro.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/CapitaldeGiro.webp',
         alt: 'Capital de giro.',
       },
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/ObtencaoDeBens.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/ObtencaoDeBens.webp',
         alt: 'Obtenção de bens.',
       },
     ],
     sliderTutorial: [
       {
-        img: '/images/cashBest/Tutorial/4PassosTela00.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela00.webp',
         alt: 'É tão simples você precisa só de 4 passos.',
       },
       {
-        img: '/images/cashBest/Tutorial/4PassosTela01.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela01.webp',
         alt: 'Passo 1 - Simule e solicite. A simulação é feita através do nosso simulador.Em até 20 minutos você tem o resultado, porque seu tempo é valioso.',
       },
       {
-        img: '/images/cashBest/Tutorial/4PassosTela02.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela02.webp',
         alt: 'Passo 2 - Envie seus documentos. Após o envio, seus documentos serão analisados e será enviado uma proposta concreta.',
       },
       {
-        img: '/images/cashBest/Tutorial/4PassosTela03.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela03.webp',
         alt: 'Passo 3 - Avaliação do Imóvel. Nesta etapa o imóvel passará por uma avaliação que irá certificar que o mesmo está apto para ser a garantia do processo.',
       },
       {
-        img: '/images/cashBest/Tutorial/4PassosTela04.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela04.webp',
         alt: 'Passo 4 - Liberação do recurso. Aqui encerramos a operação com êxito, sempre entregando a melhor experiência ao cliente!',
       },
     ],

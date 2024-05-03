@@ -33,11 +33,11 @@ export const routes: Array<RouteRecordRaw> = [
     path: '/home-equity',
     alias: ['/credito-com-garantia-de-imovel', '/como-funciona'],
     name: 'HomeEquity',
-    component: () => import('@/views/institucional/cashBest.vue'),
+    component: () => import('@/views/institucional/cashBext.vue'),
     meta: {
-      title: 'CashBest: O Melhor Crédito com Garantia de Imóvel | Bext',
+      title: 'cashBext: O Melhor Crédito com Garantia de Imóvel | Bext',
       description:
-        'Descubra como o CashBest da Bext oferece o melhor crédito com garantia de imóvel do mercado',
+        'Descubra como o cashBext da Bext oferece o melhor crédito com garantia de imóvel do mercado',
     },
     props: {
       showMenu: true,
@@ -45,13 +45,13 @@ export const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/emprestimo-com-garantia-de-imovel',
-    alias: ['/emprestimo-com-garantia-de-imovel/cashbest'],
+    alias: ['/emprestimo-com-garantia-de-imovel/cashBext'],
     name: 'HomeEquityCopy',
-    component: () => import('@/views/institucional/cashBestEmprestimo.vue'),
+    component: () => import('@/views/institucional/cashBextEmprestimo.vue'),
     meta: {
-      title: 'CashBest: O Melhor empréstimo com Garantia de Imóvel | Bext',
+      title: 'cashBext: O Melhor empréstimo com Garantia de Imóvel | Bext',
       description:
-        'Descubra como o CashBest da Bext oferece o melhor empréstimo com garantia de imóvel do mercado',
+        'Descubra como o cashBext da Bext oferece o melhor empréstimo com garantia de imóvel do mercado',
     },
     props: {
       showMenu: false,

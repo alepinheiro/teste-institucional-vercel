@@ -1,9 +1,9 @@
-import Product from '@/components/cashBest/theProduct.component.vue'
+import Product from '@/components/cashBext/theProduct.component.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
 
 const meta = {
-  title: 'Components/CashBestLp/Product',
+  title: 'Components/cashBextLp/Product',
   component: Product,
   tags: ['autodocs'],
 } satisfies Meta<typeof Product>

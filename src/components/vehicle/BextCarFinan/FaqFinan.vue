@@ -49,7 +49,7 @@ export default defineComponent({
         },
         {
           title: 'O carro tem d ser, exclusicamento, de uma concessionária?',
-          text: 'O CashBest é o nome dado para uma modalidade de crédito, onde você deixa seu imóvel como garantia, e em troca recebe o capital que você precisa.',
+          text: 'O cashBext é o nome dado para uma modalidade de crédito, onde você deixa seu imóvel como garantia, e em troca recebe o capital que você precisa.',
           text2:null,
           videoUrl: 'https://www.youtube.com/embed/1-y5dOFywUg',
         },

@@ -35,7 +35,7 @@
           },
           table: {
             backgroundColor: '#FFF',
-            titleColor: 'PRIMARY',
+            titleColor: 'TEXTPRIMARY',
           },
         }"
         class="pb-20"
@@ -43,7 +43,7 @@
     </div>
 
     <AboutUs
-      :cards="{ bgColor: 'SECONDARY' }"
+      :cards="{ bgColor: 'PRIMARY' }"
       :container="{ bgColor: 'BGDARKCOLOR' }"
     />
     <Solutions />
@@ -64,12 +64,12 @@ import AboutUs from '@/components/base/aboutUs.component.vue'
 import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
-import HeroSection from '@/components/cashBest/heroSection.component.vue'
-import Solutions from '@/components/cashBest/solutionsSection.component.vue'
-import Steps from '@/components/cashBest/stepsSection.component.vue'
+import HeroSection from '@/components/cashBext/heroSection.component.vue'
+import Solutions from '@/components/cashBext/solutionsSection.component.vue'
+import Steps from '@/components/cashBext/stepsSection.component.vue'
 import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
-import TheProduct from '@/components/cashBest/theProduct.component.vue'
+import TheProduct from '@/components/cashBext/theProduct.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
 import { ref, onBeforeMount, onBeforeUnmount, onMounted } from 'vue'
 import { getCurrentInstance } from 'vue'

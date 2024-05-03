@@ -168,9 +168,9 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
-    <!-- Alias: /emprestimo-com-garantia-de-imovel/cashbest -->
+    <!-- Alias: /emprestimo-com-garantia-de-imovel/cashBext -->
     <url>
-        <loc>https://www.sejabest.com/emprestimo-com-garantia-de-imovel/cashbest</loc>
+        <loc>https://www.sejabest.com/emprestimo-com-garantia-de-imovel/cashBext</loc>
         <lastmod>2024-03-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>

@@ -81,7 +81,7 @@ const products = [
   {
     id: 1,
     tax: 1.09,
-    title: 'CashBest',
+    title: 'cashBext',
   },
   {
     id: 2,

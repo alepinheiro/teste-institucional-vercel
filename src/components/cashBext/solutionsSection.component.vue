@@ -11,7 +11,7 @@
             Feito para você:
           </span>
           {{
-            'com o CashBest, você decide como vai usar seu dinheiro.'.replace(
+            'com o cashBext, você decide como vai usar seu dinheiro.'.replace(
               /\s([^\s<]+)\s*$/,
               '\u00A0$1',
             )
@@ -53,32 +53,32 @@ const solutionsCards = [
   {
     id: 1,
     title: 'Capital de Giro',
-    image: '/images/cashBest/solutions/capitalDeGiro.png',
+    image: '/images/cashBext/solutions/capitalDeGiro.png',
   },
   {
     id: 2,
     title: 'Viagem dos sonhos',
-    image: '/images/cashBest/solutions/viagemDosSonhos.png',
+    image: '/images/cashBext/solutions/viagemDosSonhos.png',
   },
   {
     id: 3,
     title: 'Estudar ou se Especializar',
-    image: '/images/cashBest/solutions/estudarOuSeEspecializar.png',
+    image: '/images/cashBext/solutions/estudarOuSeEspecializar.png',
   },
   {
     id: 4,
     title: 'Adquirir bens',
-    image: '/images/cashBest/solutions/adquirirBens.png',
+    image: '/images/cashBext/solutions/adquirirBens.png',
   },
   {
     id: 5,
     title: 'Reformar ou Construir',
-    image: '/images/cashBest/solutions/reformarOuConstruir.png',
+    image: '/images/cashBext/solutions/reformarOuConstruir.png',
   },
   {
     id: 6,
     title: 'Quitar todas as dívidas',
-    image: '/images/cashBest/solutions/quitarDividas.png',
+    image: '/images/cashBext/solutions/quitarDividas.png',
   },
 ]
 </script>
