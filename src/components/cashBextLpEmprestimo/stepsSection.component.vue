@@ -9,7 +9,7 @@
             Sem filas, Sem gerentes, Sem complexidade
           </h2>
           <p class="text-base text-textPrimary">
-            São apenas 4 passos para você receber o seu crédito.
+            São apenas 4 passos para você receber o seu emprestimo.
           </p>
         </div>
         
@@ -92,7 +92,7 @@ const stepCards = [
     icon: 'fa-solid fa-file',
     title: 'Documentação',
     description:
-      'Para uma análise de crédito detalhada, envie os documentos solicitados. <b>Então seus dados serão analisados e, em seguida, uma proposta será enviada.</b>',
+      'Para uma análise de emprestimo detalhada, envie os documentos solicitados. <b>Então seus dados serão analisados e, em seguida, uma proposta será enviada.</b>',
     callToAction: ['Baixe o checklist', `https://simulador.bext.vc/${useObjectToQueryString(route.query)}`],
   },
   {
