@@ -25,7 +25,7 @@
         type="HomeEquity"
         title="Maximizamos suas chances de aprovação"
         innerText="<b> A Bext oferece acesso a produtos de 20+ instituições financeiras</b> para garantir as melhores taxas e altas chances de aprovação. Conte com nosso time de especialistas para orientação em todo o processo."
-        class="py-10 md:py-24 lg:py-12 xl:py-12 px-5"
+        class="py-10 md:py-24 lg:py-12 xl:py-24 px-5"
       />
       <ComparisonTable
         :props="{
@@ -35,7 +35,7 @@
           },
           table: {
             backgroundColor: '#FFF',
-            titleColor: 'PRIMARY',
+            titleColor: 'TEXTPRIMARY',
           },
         }"
         class="pb-20"
@@ -43,7 +43,7 @@
     </div>
 
     <AboutUs
-      :cards="{ bgColor: 'SECONDARY' }"
+      :cards="{ bgColor: 'PRIMARY' }"
       :container="{ bgColor: 'BGDARKCOLOR' }"
     />
     <Solutions />
@@ -53,9 +53,9 @@
     <Subscribe
       :component="{ bgColor: 'SECONDARY' }"
       :form="{ showRealtyValue: true }"
-      image="gabrielle"
+      image="gaspar"
     />
-    <BestPlay class="bg-secondary" />
+    <BestPlay class="bg-bgDarkColor" />
     <TheFooter />
   </main>
 </template>
@@ -64,22 +64,17 @@ import AboutUs from '@/components/base/aboutUs.component.vue'
 import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
-import HeroSection from '@/components/cashBextLpEmprestimo/heroSection.component.vue'
-import Solutions from '@/components/cashBextLpEmprestimo/solutionsSection.component.vue'
-import Steps from '@/components/cashBextLpEmprestimo/stepsSection.component.vue'
+import HeroSection from '@/components/cashBext/heroSection.component.vue'
+import Solutions from '@/components/cashBext/solutionsSection.component.vue'
+import Steps from '@/components/cashBext/stepsSection.component.vue'
 import Subscribe from '@/components/base/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
-import TheProduct from '@/components/cashBextLpEmprestimo/theProduct.component.vue'
+import TheProduct from '@/components/cashBext/theProduct.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
-import {
-  ref,
-  onBeforeMount,
-  onBeforeUnmount,
-  getCurrentInstance,
-  onMounted,
-} from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, onBeforeMount, onBeforeUnmount, onMounted } from 'vue'
+import { getCurrentInstance } from 'vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import { useRoute } from 'vue-router'
 
 defineProps<{
   showMenu: boolean

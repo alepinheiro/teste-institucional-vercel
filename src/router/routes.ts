@@ -103,7 +103,7 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'TermsOfUse',
     component: () => import('@/views/institucional/termsOfUse.vue'),
     meta: {
-      title: 'Termos de Uso - Bext Fintech de Crédito Imobiliário',
+      title: 'Termos de Uso - Bext Fintech',
       description:
         'Saiba mais sobre licenças, isenção de responsabilidade, limitações, precisão dos materiais, links externos, modificações e a lei aplicável.        ',
     },
