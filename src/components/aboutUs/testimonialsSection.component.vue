@@ -6,14 +6,14 @@
       <h2
         class="text-xl md:text-4xl lg:text-4xl xl:text-4xl text-primary font-bold px-5 text-center lg:w-2/3 xl:w-2/3 lg:mx-auto xl:mx-auto lg:px-0"
       >
-        Não queremos apenas clientes, trabalhamos duro para termos fãs
+        {{ title }}
       </h2>
 
       <div
         class="md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:gap-2 lg:gap-2 xl:gap-2 md:items-center lg:items-center xl:items-center w-full lg:w-fit md:max-w-[633px] lg:max-w-5xl xl:max-w-5xl md:mx-auto lg:mx-auto xl:mx-auto"
       >
         <div
-          class="testimonialsPrev hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8"
+          class="testimonialsPrev hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8"
         >
           <i class="fa-solid fa-chevron-left w-full h-full"></i>
         </div>
@@ -61,7 +61,7 @@
                 {{ name }}
               </span>
               <span
-                class="text-textSecondary text-sm lg:text-base xl:text-base"
+                class="text-textprimary text-sm lg:text-base xl:text-base"
               >
                 {{ profissional }} - {{ location }}
               </span>
@@ -70,7 +70,7 @@
         </component>
 
         <div
-          class="testimonialsNext hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8"
+          class="testimonialsNext hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8"
         >
           <i class="fa-solid fa-chevron-right w-full h-full"></i>
         </div>
@@ -84,9 +84,16 @@ import { SwiperOptions } from 'swiper/types'
 import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'TestimonialsSection',
+  props: {
+    title: {
+      type: String,
+      required: false,
+      default: 'Não queremos apenas clientes, trabalhamos duro para termos fãs',
+    },
+  },
   data() {
     const sliderOptions: SwiperOptions = {
-      spaceBetween: 20,
+      spaceBetween: 12,
       slidesPerView: 1.2,
       centeredSlides: true,
       autoHeight: false,
@@ -145,7 +152,7 @@ export default defineComponent({
         location: 'São Paulo / SP',
         image: 'eduardoFrancisco',
         testimonial:
-          'Só tenho a agradecer toda ajuda que a SejaBest e principalmente o Felipe me deram durante todo o processo de financiamento!',
+          'Só tenho a agradecer toda ajuda que a Bext e principalmente o Felipe me deram durante todo o processo de financiamento!',
       },
       {
         name: 'Elias Pereira de Sousa Neto',
@@ -153,7 +160,7 @@ export default defineComponent({
         location: 'Cotia / SP',
         image: 'eliasPereira',
         testimonial:
-          'Excelente atendimento, Gesiel é ágil nos retornos e deu todo suporte no processo tirando todas dúvidas e orientação, o que mais me chamou a atenção foi a sua energia e motivação na solução de cada etapa do processo, fiquei muito feliz com a consultoria SejaBest!!',
+          'Excelente atendimento, Gesiel é ágil nos retornos e deu todo suporte no processo tirando todas dúvidas e orientação, o que mais me chamou a atenção foi a sua energia e motivação na solução de cada etapa do processo, fiquei muito feliz com a consultoria Bext!!',
       },
       {
         name: 'Moacir da Silva Bento',
@@ -161,7 +168,7 @@ export default defineComponent({
         location: 'São Paulo / SP',
         image: 'moacirSilva',
         testimonial:
-          'Estou até o exato momento muito feliz por finalizar com o auxílio da SejaBest. Podem confiar no seus trabalhos. Super indico.',
+          'Estou até o exato momento muito feliz por finalizar com o auxílio da Bext. Podem confiar no seus trabalhos. Super indico.',
       },
     ]
 

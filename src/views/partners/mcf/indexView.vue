@@ -49,7 +49,6 @@ export default defineComponent({
       })
     },
     loadGoogleTagManager() {
-      
       let script = document.createElement('script');
       script.async = true;
       script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-318006787';

@@ -8,7 +8,7 @@
         <ul class="flex flex-col py-4 divide-y-1 divide-white/30">
           <li class="flex flex-row items-stretch h-16 sm:h-24 text-center">
             <div class="w-4/6 sm:w-1/2 my-auto"></div>
-            <div class="w-1/6 sm:w-1/4 my-auto">SejaBest</div>
+            <div class="w-1/6 sm:w-1/4 my-auto">Bext</div>
             <div class="w-1/6 sm:w-1/4 my-auto">Bancos Tradicionais</div>
           </li>
 

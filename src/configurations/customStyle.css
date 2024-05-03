@@ -277,8 +277,8 @@
   height: 100%;
   position: relative;
 }
-.bgFinanBest {
-  background-image: url('/images/finanBest/VideoFinanBestDesktop.gif');
+.bgfinanBext {
+  background-image: url('/images/finanBext/VideofinanBextDesktop.gif');
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -292,15 +292,15 @@
   position: relative;
   background-repeat: no-repeat;
 }
-.bgBestcar {
-  background-image: url('/images/BestCar/CABECALHO_BESTCAR.webp');
+.bgBextCar {
+  background-image: url('/images/BextCar/head.webp');
   background-size: cover;
   width: 100%;
   height: 100%;
   position: relative;
 }
 .bgFinanCar {
-  background-image: url('/images/BestCar/CABECALHO_FINAN_VEICULOS.webp');
+  background-image: url('/images/BextCar/CABECALHO_FINAN_VEICULOS.png');
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -362,10 +362,10 @@
 }
 
 .inputBase {
-  @apply rounded-xl focus:border-secondary border-gray-200 border-1 bg-gray-200  p-2;
+  @apply rounded-xl focus:border-primary border-gray-200 border-1 bg-gray-200  p-2;
 }
 .inputBaseError {
-  @apply rounded-xl focus:border-secondary border-red-500 border-1 bg-white p-2;
+  @apply rounded-xl focus:border-primary border-red-500 border-1 bg-white p-2;
 }
 .gradienteSB {
   background: rgb(0, 99, 242);
@@ -386,7 +386,7 @@
   @apply text-xs text-red-500;
 }
 .optionsCard {
-  @apply cursor-pointer rounded-xl focus:border-secondary p-4 border-1 border-gray-300 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 hover:shadow-lg;
+  @apply cursor-pointer rounded-xl focus:border-primary p-4 border-1 border-gray-300 transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 hover:shadow-lg;
 }
 
 .linkStyle {
@@ -395,8 +395,8 @@
 .linkStyleDark {
   @apply text-white md:text-primary sm:text-primary px-2 py-1 rounded-xl  cursor-pointer mx-4 sm:mt-4;
 }
-.buttonComplementaryColor1 {
-  @apply rounded-xl py-2 px-8 bg-complementaryColor1 shadow-xl text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100;
+.buttonPrimary {
+  @apply rounded-xl py-2 px-8 bg-primary shadow-xl text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100;
 }
 .buttonGradient {
   @apply gradienteSB rounded-xl py-2 px-12 shadow-xl text-white font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105;
@@ -413,7 +413,7 @@
 }
 .lineDecoration:hover {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #27e0ff);
+  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524DD);
   border-image-slice: 1;
   height: 120px;
   border-radius: 10px;
@@ -421,13 +421,13 @@
 
 .textDecoration {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #27e0ff);
+  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524DD);
   border-image-slice: 1;
 }
 
 .decoration.router-link-active {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #27e0ff);
+  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524DD);
   border-image-slice: 1;
 }
 
@@ -560,16 +560,13 @@
 }
 
 .border-div-video {
-  border-bottom: 1px solid var(--complementaryColor2);
+  border-bottom: 1px solid var(--primaryColor);
 }
 
 .borderGrey {
   border: 1px solid #a7a8aa99;
 }
 
-.bgLigthGrey {
-  background-color: rgba(234, 234, 234, 255);
-}
 
 .borderWhite {
   border: solid 1px white;
@@ -630,7 +627,7 @@
 
 /* pop up cookies styles */
 .cookiesPopUP {
-  background: var(--bglightColor);
+  background: var(--bgLightColor);
   -webkit-box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
   -moz-box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
   box-shadow: -1px 5px 28px 2px rgba(34, 33, 33, 0.4);
@@ -640,20 +637,20 @@
 /*bordas popOver e dropdown*/
 
 .borderB-complementary {
-  border-bottom: 1.5px solid var(--complementaryColor1);
+  border-bottom: 1.5px solid var(--primaryColor);
 }
 
 .optionsHover:hover {
   background: #ffffff82;
   border-radius: 0.5rem;
-  color: var(--complementaryColor1);
-  font-style: var(--complementaryColor1);
+  color: var(--primaryColor);
+  font-style: var(--primaryColor);
 }
 .optionsOpen {
   background: #ffffff82;
   border-radius: 0.5rem;
-  color: var(--complementaryColor1);
-  font-style: var(--complementaryColor1);
+  color: var(--primaryColor);
+  font-style: var(--primaryColor);
 }
 .bgPopUpHover {
   background: #e0e0e0;

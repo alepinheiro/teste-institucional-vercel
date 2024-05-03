@@ -12,7 +12,7 @@
           type="text"
           placeholder="Digite seu nome completo"
           required
-          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
+          class="bg-zinc-200 rounded-xl p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
       <div class="flex flex-col gap-2">
@@ -23,7 +23,7 @@
           type="email"
           placeholder="Seu melhor e-mail"
           required
-          class="bg-zinc-200 rounded p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
+          class="bg-zinc-200 rounded-xl p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
 
@@ -38,13 +38,13 @@
           type="text"
           placeholder="R$ 250.000,00"
           required
-          class="bg-zinc-200 rounded p-2 text-xl focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
+          class="bg-zinc-200 rounded-xl p-2 text-xl focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
         />
       </div>
       <button
         title="Iniciar simulação agora"
         aria-label="Iniciar simulação agora"
-        class="bg-complementaryColor1 w-fit mx-auto px-3 py-2 rounded-md text-white font-bold mt-4 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
+        class="bg-primary w-fit mx-auto px-3 py-2 rounded-md text-white font-bold mt-4 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
       >
         Iniciar simulação agora
       </button>

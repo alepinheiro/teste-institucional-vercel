@@ -83,7 +83,7 @@
         @mouseout="hover3 = false"
       >
         <RouterLink
-          :to="{ name: 'BestCar', params: { id: 'div1' }, query: $route.query }"
+          :to="{ name: 'BextCar', params: { id: 'div1' }, query: $route.query }"
           class="text-sm"
         >
           Crédito com Garantia Veicular
@@ -110,7 +110,7 @@
       >
         <RouterLink
           :to="{
-            name: 'BestCarFinan',
+            name: 'BextCarFinan',
             params: { id: 'div1' },
             query: $route.query,
           }"

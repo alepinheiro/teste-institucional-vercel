@@ -12,7 +12,7 @@
       </h2>
       <div class="hidden sm:block">
         <img
-          src="/images/finanBest/businessPartnersXL161123.png"
+          src="/images/finanBext/businessPartnersXL161123.png"
           alt=""
           srcset=""
           class="object-contain"
@@ -28,7 +28,7 @@
       >
         <div class="flex-1 lg:w-7/12 lg:flex-initial sm:hidden">
           <img
-            src="/images/finanBest/businessPartnersXL161123.png"
+            src="/images/finanBext/businessPartnersXL161123.png"
             alt=""
             srcset=""
             class="object-contain"
@@ -54,82 +54,82 @@ const banks = [
   {
     id: 1,
     alt: 'Banco Paulista',
-    source: '/images/finanBest/banks/bancoPaulista.png',
+    source: '/images/finanBext/banks/bancoPaulista.png',
   },
   {
     id: 2,
     alt: 'Banco Pontte',
-    source: '/images/finanBest/banks/bancoPontte.png',
+    source: '/images/finanBext/banks/bancoPontte.png',
   },
   {
     id: 3,
     alt: 'Banco Libra',
-    source: '/images/finanBest/banks/bancoLibra.png',
+    source: '/images/finanBext/banks/bancoLibra.png',
   },
   {
     id: 4,
     alt: 'Banco Bari',
-    source: '/images/finanBest/banks/bancoBari.png',
+    source: '/images/finanBext/banks/bancoBari.png',
   },
   {
     id: 5,
     alt: 'Banco Rodobens',
-    source: '/images/finanBest/banks/bancoRodobens.svg',
+    source: '/images/finanBext/banks/bancoRodobens.svg',
   },
   {
     id: 6,
     alt: 'Banco Daycoval',
-    source: '/images/finanBest/banks/bancoDaycoval.svg',
+    source: '/images/finanBext/banks/bancoDaycoval.svg',
   },
   {
     id: 7,
     alt: 'Banco Santander',
-    source: '/images/finanBest/banks/bancoSantander.svg',
+    source: '/images/finanBext/banks/bancoSantander.svg',
   },
   {
     id: 8,
     alt: 'Banco Piratini',
-    source: '/images/finanBest/banks/bancoPiratini.png',
+    source: '/images/finanBext/banks/bancoPiratini.png',
   },
   {
     id: 9,
     alt: 'Banco Creditas',
-    source: '/images/finanBest/banks/bancoCreditas.png',
+    source: '/images/finanBext/banks/bancoCreditas.png',
   },
   {
     id: 10,
     alt: 'Banco CashMe',
-    source: '/images/finanBest/banks/bancoCashMe.svg',
+    source: '/images/finanBext/banks/bancoCashMe.svg',
   },
   {
     id: 11,
     alt: 'Banco Inter',
-    source: '/images/finanBest/banks/bancoInter.svg',
+    source: '/images/finanBext/banks/bancoInter.svg',
   },
   {
     id: 12,
     alt: 'Banco BRB',
-    source: '/images/finanBest/banks/bancoBRB.png',
+    source: '/images/finanBext/banks/bancoBRB.png',
   },
   {
     id: 13,
     alt: 'Banco Itaú',
-    source: '/images/finanBest/banks/bancoItau.png',
+    source: '/images/finanBext/banks/bancoItau.png',
   },
   {
     id: 14,
     alt: 'Banco T-cash',
-    source: '/images/finanBest/banks/bancoTCash.png',
+    source: '/images/finanBext/banks/bancoTCash.png',
   },
   {
     id: 15,
     alt: 'Banco BV',
-    source: '/images/finanBest/banks/bancoBV.png',
+    source: '/images/finanBext/banks/bancoBV.png',
   },
   {
     id: 16,
     alt: 'Banco C6',
-    source: '/images/finanBest/banks/bancoC6.png',
+    source: '/images/finanBext/banks/bancoC6.png',
   },
 ]
 

@@ -1,9 +1,9 @@
-import HeroSection from '@/components/finanBestLp/heroSection.component.vue'
+import HeroSection from '@/components/finanBextLp/heroSection.component.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
 
 const meta = {
-  title: 'Components/FinanBestLp/HeroSection',
+  title: 'Components/finanBextLp/HeroSection',
   component: HeroSection,
   tags: ['autodocs'],
 } satisfies Meta<typeof HeroSection>

@@ -1,5 +1,5 @@
 <template>
-  <section
+   <section
     class="relative z-0 flex flex-col items-stretch"
   >
     <div
@@ -9,19 +9,19 @@
         class="md:max-w-2xl lg:max-w-5xl xl:max-w-6xl m-auto pt-18 md:pt-28 lg:pt-36 xl:pt-32 pb-5 w-full xl:flex xl:flex-row gap-5 "
       >
         <div
-          class=" flex flex-col gap-6 md:gap-8 lg:gap-8 xl:gap-16 items-center md:items-start lg:items-start xl:items-start xl:justify-between md:w-5/6 lg:w-4/6 xl:w-1/2 xl:flex-1"
+          class=" flex flex-col gap-6 md:gap-8 lg:gap-8 xl:gap-21 items-center md:items-start lg:items-start xl:items-start xl:justify-between md:w-5/6 lg:w-4/6 xl:w-1/2 xl:flex-1"
         >
-          <Logo class="flex h-auto w-44 text-white" />
+          <Logo class="flex h-auto w-64 text-white" />
           <h1
-            class="text-xl md:text-5xl lg:text-5xl xl:text-5xl sm:px-10 font-bold text-center md:text-start lg:text-start xl:text-start text-white"
+            class="text-xl md:text-5xl sm:px-8 lg:text-5xl xl:text-5xl font-bold text-center md:text-start lg:text-start xl:text-start text-white"
           >
             Fazer crédito toma tempo, mas não precisa ser o seu
           </h1>
-          <img src="/images/warren/sejaBestLogosWhite.svg" alt="" srcset="" />
+          <img :src="$options.imageConfig.partners.ourLogos.image" :alt="$options.imageConfig.partners.ourLogos.alt" srcset="" />
           <a
             :href="`${information.simulatorMCF}${$root.utms}`"
             target="_blank"
-            class="bg-mcf-burntOrange font-bold py-5 px-10 rounded-lg text-center text-white"
+            class="bg-mcf-burntOrange font-bold py-5 px-10 rounded-lg text-center text-2xl text-white"
             @click="$emit('click')"
           >
             Quero simular meu crédito
@@ -74,6 +74,11 @@ export default defineComponent({
     return {
       information,
     }
+  },
+  methods: {
+    onButtonClick() {
+      window.open(`${information.simulatorWarren}${this.$root.utms}`, '_blank')
+    },
   },
 })
 </script>

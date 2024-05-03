@@ -4,9 +4,9 @@
       class="text-center flex flex-col gap-5 px-5 lg:w-4/6 xl:w-3/6 mx-auto md:max-w-[707px] lg:max-w-5xl"
     >
       <h2
-        class="font-bold text-3xl text-warren-darkCharcoal md:text-5xl lg:text-5xl xl:text-5xl"
+        class="font-bold text-4xl text-warren-darkCharcoal md:text-5xl lg:text-5xl xl:text-5xl"
       >
-        Os melhores produtos de crédito da SejaBest agora na Warren
+        Os melhores produtos de crédito da Bext agora na Warren
       </h2>
       <p class="text-warren-stormGray">
         <b>Escolha a opção</b> que melhor se encaixa nas suas

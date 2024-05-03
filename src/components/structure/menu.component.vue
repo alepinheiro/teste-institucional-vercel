@@ -34,11 +34,11 @@
         Seja um Parceiro
       </RouterLink>
       <a
-        :href="'https://portal.seja.best/' + useObjectToQueryString($route.query)"
+        :href="'https://portal.bext.vc/' + useObjectToQueryString($route.query)"
         class="decoration"
         target="_blank"
       >
-        Portal Best
+        Portal Bext
       </a>
     </div>
     <a
@@ -47,7 +47,7 @@
       "
       style="text-decoration: none"
       target="_blank"
-      class="bg-complementaryColor1 rounded-lg px-4 py-2 font-semibold text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:text-sm"
+      class="bg-primary rounded-lg px-4 py-2 font-semibold text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:text-sm"
     >
       Simule seu crédito
     </a>

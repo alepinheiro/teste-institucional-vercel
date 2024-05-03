@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-bglightColor">
+  <div class="w-full bg-bgLightColor">
     <TopBar v-if="showMenu" class="text-white w-full" />
 
     <section class="w-full gradienteSB pt-8 min-md:pt-20">
@@ -52,8 +52,8 @@ export default defineComponent({
       perguntas: [
         {
           id: 0,
-          title: 'O que é a SejaBest?',
-          text: 'A SejaBest é uma fintech de crédito imobiliário, que visa trazer agilidade e segurança por meio da tecnologia para pessoas que buscam: Financiamento Imobiliário ou Home Equity (Crédito com Garantia de Imóvel).',
+          title: 'O que é a Bext?',
+          text: 'A Bext é uma fintech de crédito imobiliário, que visa trazer agilidade e segurança por meio da tecnologia para pessoas que buscam: Financiamento Imobiliário ou Home Equity (Crédito com Garantia de Imóvel).',
           text2: undefined,
           videoUrl: 'https://www.youtube.com/embed/rb49Jt9dt4M',
         },
@@ -73,8 +73,8 @@ export default defineComponent({
         },
         {
           id: 3,
-          title: 'O que é o CashBest?',
-          text: 'O CashBest é o nome dado para uma modalidade de crédito, onde você deixa seu imóvel como garantia, e em troca recebe o capital que você precisa.',
+          title: 'O que é o cashBext?',
+          text: 'O cashBext é o nome dado para uma modalidade de crédito, onde você deixa seu imóvel como garantia, e em troca recebe o capital que você precisa.',
           text2: undefined,
           videoUrl: 'https://www.youtube.com/embed/1-y5dOFywUg',
         },
@@ -94,7 +94,7 @@ export default defineComponent({
         },
         {
           id: 6,
-          title: 'Por que escolher a SejaBest?',
+          title: 'Por que escolher a Bext?',
           text: 'Você tem um sonho, certo? Nós também temos nossos sonhos e um deles é ajudar você a conquistar tudo que precisa. Nós iremos lutar por você até o fim. E o fim para a gente, é o seu sonho sendo concretizado.',
           text2: undefined,
           videoUrl: 'https://www.youtube.com/embed/PzSOvyV1mWY',

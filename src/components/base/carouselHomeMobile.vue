@@ -16,10 +16,10 @@
     <swiper-slide id="testimonial1">
       <article class="w-full mr-auto ml-auto max-w-sm h-full p-4">
         <div
-          class="border-1 rounded-xl bg-secondary w-full text-white h-[440px] flex flex-col"
+          class="border-1 rounded-xl bg-primary w-full text-white h-[440px] flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-complementaryColor1"
+            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
               Cash<span class="font-semibold">Best</span>
@@ -28,7 +28,7 @@
             <h2 class="text-base pl-2 defaultFont">Garantia de Imóvel</h2>
           </div>
 
-          <div class="w-full p-3 bg-secondary rounded-b-xl mt-auto">
+          <div class="w-full p-3 bg-primary rounded-b-xl mt-auto">
             <div class="w-full flex items-center">
               <div class="pr-w-6">
                 <img
@@ -68,7 +68,7 @@
           </div>
 
           <div
-            class="buttonComplementaryColor1 w-11/12 text-center mt-auto self-center mb-5"
+            class="buttonPrimary w-11/12 text-center mt-auto self-center mb-5"
           >
             <a
               :href="
@@ -91,10 +91,10 @@
           class="border-1 w-full gradienteSBDark rounded-xl text-white h-[440px] flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-secondary p-4 text-center border-b-4 border-complementaryColor3"
+            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
-              Finan<span class="font-semibold">Best</span>
+              Finan<span class="font-semibold">Bext</span>
             </h1>
             <h2 class="text-base pl-2 defaultFont">As melhores soluções em</h2>
             <h2 class="text-base pl-2 defaultFont">
@@ -139,7 +139,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
+            class="buttonPrimary w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
           >
             <a
               :href="
@@ -162,7 +162,7 @@
           class="border-1 w-full gradienteSBDark rounded-xl text-white h-[440px] flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-secondary p-4 text-center border-b-4 border-complementaryColor3"
+            class="rounded-t-xl bg-primary p-4 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
               Car<span class="font-semibold">Best</span>
@@ -210,7 +210,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
+            class="buttonPrimary w-11/12 flex mt-auto mb-5 justify-center self-center text-center"
           >
             <a
               :href="
@@ -230,10 +230,10 @@
     <swiper-slide>
       <article class="w-full mr-auto ml-auto max-w-sm h-full p-4">
         <div
-          class="border-1 rounded-xl bg-secondary w-full text-white h-[440px] flex flex-col"
+          class="border-1 rounded-xl bg-primary w-full text-white h-[440px] flex flex-col"
         >
           <div
-            class="rounded-t-xl bg-primary p-2 text-center border-b-4 border-complementaryColor1"
+            class="rounded-t-xl bg-primary p-2 text-center border-b-4 border-primary"
           >
             <h1 class="text-3xl titleFont">
               Finan<span class="font-semibold">Best</span> Veicular
@@ -244,7 +244,7 @@
             </h2>
           </div>
 
-          <div class="w-full p-3 bg-secondary rounded-b-x mt-auto">
+          <div class="w-full p-3 bg-primary rounded-b-x mt-auto">
             <div class="w-full flex items-center">
               <div class="pr-w-6">
                 <img
@@ -284,7 +284,7 @@
             </div>
           </div>
           <div
-            class="buttonComplementaryColor1 w-11/12 flex self-center mt-auto mb-5 justify-center text-center"
+            class="buttonPrimary w-11/12 flex self-center mt-auto mb-5 justify-center text-center"
           >
             <a
               :href="

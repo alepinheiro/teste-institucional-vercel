@@ -1,9 +1,9 @@
-import Solutions from '@/components/cashBest/solutionsSection.component.vue'
+import Solutions from '@/components/cashBext/solutionsSection.component.vue'
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { vueRouter } from 'storybook-vue3-router'
 
 const meta = {
-  title: 'Components/CashBestLp/Solutions',
+  title: 'Components/cashBextLp/Solutions',
   component: Solutions,
   tags: ['autodocs'],
 } satisfies Meta<typeof Solutions>

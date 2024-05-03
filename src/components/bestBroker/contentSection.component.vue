@@ -64,12 +64,12 @@ export default defineComponent({
         },
         {
           id: 5,
-          title: '<b>FinanBest:</b> o Cliente Ideal',
+          title: '<b>FinanBext:</b> o Cliente Ideal',
           text: 'Aprenda a guiar seu cliente para o seu primeiro financiamento Imobiliário. O guia completo para contornar objeções, dicas de venda e o que você precisa saber sobre o cliente perfeito.',
         },
         {
           id: 6,
-          title: '<b>CashBest:</b> o Cliente Ideal',
+          title: '<b>cashBext:</b> o Cliente Ideal',
           text: 'O guia definitivo sobre identificação e aproveitamento de oportunidades. Descubra o que busca o cliente de Crédito com Garantia de Imóvel e confira dicas exclusivas sobre como identificar o cenário perfeito.',
         },
         {
@@ -84,8 +84,8 @@ export default defineComponent({
         },
         {
           id: 9,
-          title: 'Fintequize a sua marca - <b>A SejaBest</b>',
-          text: 'Veja o CEO Gaspar Motta e o case de sucesso da SejaBest. Entenda como a fintech de crédito se tornou referência no mercado financeiro e como você pode transformar a sua marca também.',
+          title: 'Fintequize a sua marca - <b>A Bext</b>',
+          text: 'Veja o CEO Gaspar Motta e o case de sucesso da Bext. Entenda como a fintech de crédito se tornou referência no mercado financeiro e como você pode transformar a sua marca também.',
         },
       ],
     }

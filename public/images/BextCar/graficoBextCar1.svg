@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1984.94 1167.7">
+  <defs>
+    <style>
+      @font-face {
+	      font-family: "Darker Grotesque";
+	      src: local("Darker Grotesque"),
+	      url("/fonts/Darker_Grotesque/DarkerGrotesque-Regular.ttf") format("truetype");
+      }
+      @font-face {
+	      font-family: "Darker Grotesque Bold";
+	      src: local("Darker Grotesque Bold"),
+	      url("/fonts/Darker_Grotesque/DarkerGrotesque-Bold.ttf") format("truetype");
+      }
+      .titleFont{
+	      font-family: Darker Grotesque;
+	    }
+      .cls-1 {
+        font-size: 26.55px;
+      }
+
+      .cls-1, .cls-2 {
+        font-weight: 300;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        font-style: bold;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 49.38px;
+      }
+
+      .cls-5, .cls-3 {
+        fill: #314FFC;
+        font-style: bold;
+        
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-6, .cls-3, .cls-4 {
+        font-weight: 700;
+      }
+
+      .cls-6, .cls-4 {
+        font-size: 75px;
+      }
+
+      .cls-3 {
+
+      }
+
+      .cls-7 {
+        fill: #0524dd;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1" data-name="Camada 1">
+    <g>
+      <rect class="cls-7 titleFont" x="1039.09" y="-699.74" width="246.11" height="1645.59" rx="12.65" ry="12.65" transform="translate(1285.2 -1039.09) rotate(90)"/>
+      <text class="cls-2 titleFont" transform="translate(80.79 75.17)"><tspan x="0" y="0">Rotativo</tspan><tspan x="-25.85" y="63.23">do cartão</tspan><tspan x="-39.83" y="126.46">de crédito</tspan></text>
+      <text class="cls-4 titleFont" transform="translate(1681 146.36)"><tspan x="0" y="0">508%</tspan></text>
+      <rect class="cls-7 titleFont" x="648.23" y="-7.41" width="246.11" height="863.88" rx="13.8" ry="13.8" transform="translate(1195.82 -346.76) rotate(90)"/>
+      <text class="cls-2 titleFont" transform="translate(94.57 408.26)"><tspan x="0" y="0">Cheque</tspan><tspan x="-14.07" y="63.23">especial</tspan></text>
+      <text class="cls-4 titleFont" transform="translate(900.39 447.83)"><tspan x="0" y="0">160%</tspan></text>
+      <rect class="cls-7 titleFont" x="515.49" y="435.39" width="246.11" height="598.39" rx="13.8" ry="13.8" transform="translate(1373.13 96.04) rotate(90)"/>
+      <text class="cls-2 titleFont" transform="translate(0 718.31)"><tspan x="0" y="0">Empréstimo</tspan><tspan x="94.32" y="63.23">pessoal</tspan></text>
+      <text class="cls-4 titleFont" transform="translate(683.02 757.89)"><tspan x="0" y="0">149%</tspan></text>
+      <rect class="cls-5 titleFont" x="339.35" y="921.58" width="246.11" height="246.11" rx="19.93" ry="19.93" transform="translate(1507.05 582.23) rotate(90)"/>
+      <text class="cls-3 titleFont" transform="translate(74.25 1059.98)"><tspan x="0" y="0">BextCar</tspan></text>
+      <text class="cls-6 titleFont" transform="translate(378.44 1067.95)"><tspan x="0" y="0">23%</tspan></text>
+      <text class="cls-1 titleFont" transform="translate(1627.12 1161.32)"><tspan x="0" y="0">Fonte: Banco Central do Brasil</tspan></text>
+    </g>
+  </g>
+</svg>

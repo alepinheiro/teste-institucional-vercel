@@ -81,7 +81,7 @@ export default defineComponent({
         {
           id: 2,
           title: 'Aprovação',
-          text: 'Agora é com a SejaBest, nosso time de assessores vai assumir o processo.',
+          text: 'Agora é com a Bext, nosso time de assessores vai assumir o processo.',
         },
         {
           id: 3,

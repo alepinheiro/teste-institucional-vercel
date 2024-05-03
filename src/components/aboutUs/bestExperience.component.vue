@@ -51,7 +51,7 @@
       class="md:flex lg:flex md:flex-row lg:flex-row md:gap-2 lg:gap-2 md:items-center lg:items-center md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto xl:hidden"
     >
       <div
-        class="bestExperiencePrev hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8"
+        class="bestExperiencePrev hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8"
       >
         <i class="fa-solid fa-chevron-left w-full h-full"></i>
       </div>
@@ -97,7 +97,7 @@
       </component>
 
       <div
-        class="bestExperienceNext hidden md:block lg:block xl:block text-textSecondary hover:text-primary h-8 w-8"
+        class="bestExperienceNext hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8"
       >
         <i class="fa-solid fa-chevron-right w-full h-full"></i>
       </div>

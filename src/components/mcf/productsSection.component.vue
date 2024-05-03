@@ -6,7 +6,7 @@
       <h2
         class="font-bold text-3xl text-mcf-nightRider md:text-5xl lg:text-5xl xl:text-5xl"
       >
-        Os melhores produtos de crédito da SejaBest agora na Minha Casa Financiada
+        Os melhores produtos de crédito da Bext agora na Minha Casa Financiada
       </h2>
       <p class="text-warren-stormGray">
         <b>Escolha a opção</b> que melhor se encaixa nas suas
@@ -127,7 +127,7 @@ import Car from '@/components/icons/carIcon.component.vue'
 /**
  * # Visão Geral
  * O componente `ProductsSection` é responsável por exibir uma seção de produtos de
- * crédito da SejaBest. Ele apresenta uma lista de opções de crédito com suas
+ * crédito da Bext. Ele apresenta uma lista de opções de crédito com suas
  * descrições e ícones representativos.
  *
  * # Props

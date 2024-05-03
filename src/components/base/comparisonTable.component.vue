@@ -10,7 +10,7 @@
       class="absolute z-0 inset-0 flex"
     >
       <img
-        src="/images/finanBest/bgComparisonTable.png"
+        src="/images/finanBext/bgComparisonTable.png"
         alt=""
         class="self-end"
       />
@@ -41,7 +41,7 @@
           }"
           class="text-4xl sm:text-2xl sm:text-center sm:w-full sm:mx-auto"
         >
-          Por que escolher a <b> SejaBest?</b>
+          Por que escolher a <b> Bext?</b>
         </h2>
 
         <div class="flex flex-col w-full px-10 sm:px-5 pt-10 text-textPrimary">
@@ -49,9 +49,9 @@
             <div class="w-1/2"></div>
             <div class="w-1/4 text-center">
               <img
-                src="/images/logoBest/logoGray.svg"
-                alt="Logomarca SejaBest"
-                class="h-10 mx-auto sm:pr-2"
+                :src="$options.imageConfig.brand.blackAndBlueLogo.image"
+                :alt="$options.imageConfig.brand.blackAndBlueLogo.alt"
+                class="h-6 mx-auto sm:pr-2"
               />
             </div>
             <div class="w-1/4 text-center sm:text-xs">

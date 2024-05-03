@@ -1,6 +1,6 @@
 <template>
   <div>
-    <svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" fill = "var(--textSecondaryColor)" viewBox="0 0 1920 1080">
+    <svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" fill = "var(--textPrimaryColor)" viewBox="0 0 1920 1080">
       
       <path id="path84" class="cls-2" d="M1351.3,500.85h30.13l-1.05-84.02h.36l42.95,84.02h40.72v-122.95h-29.96l.52,83.5h-.36l-41.57-83.5h-41.74v122.95" />
       <path id="path86" class="cls-2" d="M1509.36,500.85h32.74v-98.63h30.32v-24.32h-93.38v24.32h30.32v98.63" />

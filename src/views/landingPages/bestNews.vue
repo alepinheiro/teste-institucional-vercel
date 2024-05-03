@@ -24,7 +24,7 @@
       >
         <img
           :src="$options.imageConfig.logoSejabestWhite"
-          alt="Logo SejaBest"
+          alt="Logo Bext"
           class="w-48 lg:w-36 md:self-start xl:self-center"
         />
         <h1
@@ -38,11 +38,11 @@
         class="flex flex-wrap md:flex-row items-center md:justify-center sm:justify-center"
       >
         <div
-          class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mr-2 flex flex-col shadow-md rounded-xl md:my-8 sm:my-1"
+          class="cardShine text-white bg-primary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mr-2 flex flex-col shadow-md rounded-xl md:my-8 sm:my-1"
         >
           <img
             :src="$options.imageConfig.bestNews.youBest"
-            alt="Acompanhe a SejaBest no Youtube"
+            alt="Acompanhe a Bext no Youtube"
             class="w-36 md:w-28 lg:w-30 pb-2 pt-2 lg:pt-4 sm:self-center"
           />
           <p
@@ -54,17 +54,17 @@
           <a
             :href="$options.information.socialMediaUTM.youtube"
             aria-label="Clique aqui para acessar o YoutBest"
-            class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
+            class="font-bold bg-primary btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
           >
             Assista grátis
           </a>
         </div>
         <div
-          class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4"
+          class="cardShine text-white bg-primary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4"
         >
           <img
             :src="$options.imageConfig.bestNews.bestNewsTelegram"
-            alt="Acompanhe a SejaBest no Telegram"
+            alt="Acompanhe a Bext no Telegram"
             class="w-36 md:w-28 lg:w-30 pb-2 pt-2 lg:pt-4 sm:self-center"
           />
           <p
@@ -76,17 +76,17 @@
           <a
             :href="$options.information.socialMediaUTM.telegram"
             aria-label="Receba conteúdo exclusivo no Telegram"
-            class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
+            class="font-bold bg-primary btnShine xl:py-2 md:text-xs lg:py-2 items-center flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
           >
             Exlcusividade agora
           </a>
         </div>
         <div
-          class="cardShine text-white bg-secondary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4"
+          class="cardShine text-white bg-primary justify-between w-3/12 xl:w-[28%] lg:w-[31%] md:w-[30%] sm:w-11/12 h-auto xl:h-[22.8rem] lg:h-[18.5rem] md:h-[280px] p-6 lg:p-5 md:p-5 md:mx-3 flex flex-col shadow-md rounded-xl ml-8 md:ml-0 sm:ml-0 md:my-8 sm:my-4 lg:ml-4"
         >
           <img
             :src="$options.imageConfig.bestNews.bestNewsLinkedin"
-            alt="Acompanhe a SejaBest no LinkedIn"
+            alt="Acompanhe a Bext no LinkedIn"
             class="w-36 md:w-28 lg:w-30 pb-2 pt-4 sm:self-center"
           />
           <p
@@ -99,7 +99,7 @@
             <a
               :href="$options.information.socialMediaUTM.linkedin"
               aria-label="Receba conteúdo exclusivo no LinkedIn"
-              class="font-bold bg-complementaryColor1 btnShine xl:py-2 md:text-xs lg:py-2 flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
+              class="font-bold bg-primary btnShine xl:py-2 md:text-xs lg:py-2 flex justify-center mt-5 lg:mt-0 rounded-xl p-1 lg:p-1 w-full self-center shadow-lg lg:text-sm lg:w-full md:w-full sm:w-10/12 sm:text-sm lg:normal-case md:normal-case xl:text-sm"
             >
               Quero ser best
             </a>

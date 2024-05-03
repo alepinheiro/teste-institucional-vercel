@@ -12,7 +12,7 @@
           alt=""
         />
         <div
-          class="sm:bg-black/50 rounded sm:flex flex-row items-center gap-4 py-4 px-6 w-fit m-auto z-10 h-fit sm:mb-5"
+          class="sm:bg-black/50 rounded-xl sm:flex flex-row items-center gap-4 py-4 px-6 w-fit m-auto z-10 h-fit sm:mb-5"
         >
           <button
             class="relative sm:w-8 sm:h-8 w-14 h-14 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0 aspect-square"

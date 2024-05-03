@@ -32,7 +32,7 @@
           <li
             v-for="{ icon, id, text } of includedTools"
             :key="id"
-            class="sm:w-full sm:flex-row sm:flex border-2 border-[#D0FE42] rounded px-10 py-5 shadow-md shadow-[#D0FE4260] flex flex-row items-center justify-center gap-4 hover:bg-[#D0FE42] hover:text-black cursor-default transition-all"
+            class="sm:w-full sm:flex-row sm:flex border-2 border-[#D0FE42] rounded-xl px-10 py-5 shadow-md shadow-[#D0FE4260] flex flex-row items-center justify-center gap-4 hover:bg-[#D0FE42] hover:text-black cursor-default transition-all"
           >
             <div class="w-5 h-5">
               <i :class="icon" class="w-full h-full"></i>

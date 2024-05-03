@@ -9,7 +9,7 @@ type CustomProps = ComponentProps<typeof Subscribe> & {
 }
 
 const meta = {
-  title: 'Components/FinanBestLp/Subscribe',
+  title: 'Components/finanBextLp/Subscribe',
   component: Subscribe,
   tags: ['autodocs'],
   argTypes: {

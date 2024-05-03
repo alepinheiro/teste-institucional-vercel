@@ -23,7 +23,7 @@ export const topOfSales = (color: 'black' | 'white') => [
 
 const image = {
   logoSejabest: '/images/logoBest/logoBlue.svg',
-  logoSejabestWhite: '/images/logoBest/logoWhite.svg',
+  logoSejabestWhite: '/images/logoBest/whiteLogo.svg',
   logoSejabestGray: '/images/logoBest/logoGray.svg',
   logoBestHub: '/images/logoBest/LogoBestHub.svg',
   logoVertical: '/images/logoBest/Logotipo-vertical-azul.webp',
@@ -92,118 +92,118 @@ const image = {
     photoFooter: '/images/Home/FotoGaspar.webp',
     reclameaqui: '/images/Home/reclameaqui.webp',
   },
-  finanBest: {
-    phoneVideo: '/images/finanBest/VideoFinanBestMobile.gif',
-    phoneVideoMd: '/images/finanBest/VideoFinanBestTablett.gif',
-    photoKeys: '/images/finanBest/FotoMaoChave.webp',
+  finanBext: {
+    phoneVideo: '/images/finanBext/VideofinanBextMobile.gif',
+    phoneVideoMd: '/images/finanBext/VideofinanBextTablett.gif',
+    photoKeys: '/images/finanBext/FotoMaoChave.webp',
   },
-  cashBest: {
-    phoneVideo: '/images/cashBest/CashBestMobile.gif',
-    phoneVideoMd: '/images/cashBest/VídeoCashBestTablet.gif',
-    photoMan: '/images/cashBest/FotonaFormaHomem.webp',
+  cashBext: {
+    phoneVideo: '/images/cashBext/cashBextMobile.gif',
+    phoneVideoMd: '/images/cashBext/VídeocashBextTablet.gif',
+    photoMan: '/images/cashBext/FotonaFormaHomem.webp',
     sliderPhones: [
       {
-        img: '/images/cashBest/Celulares/01.webp',
+        img: '/images/cashBext/Celulares/01.webp',
         alt: 'Válido para imóveis residenciais e comerciais.',
       },
       {
-        img: '/images/cashBest/Celulares/02.webp',
+        img: '/images/cashBext/Celulares/02.webp',
         alt: 'As menores parcelas do mercado.',
       },
       {
-        img: '/images/cashBest/Celulares/03.webp',
+        img: '/images/cashBext/Celulares/03.webp',
         alt: 'As menores taxas de crédito.',
       },
       {
-        img: '/images/cashBest/Celulares/04.webp',
+        img: '/images/cashBext/Celulares/04.webp',
         alt: 'Atendimento humanizado 7 dias por semana.',
       },
       {
-        img: '/images/cashBest/Celulares/05.webp',
+        img: '/images/cashBext/Celulares/05.webp',
         alt: 'Prazos de até 420 meses.',
       },
       {
-        img: '/images/cashBest/Celulares/06.webp',
+        img: '/images/cashBext/Celulares/06.webp',
         alt: 'Prazos de até 420 meses.',
       },
     ],
     sliderMoney1: [
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/ReformarOuConstruir.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/ReformarOuConstruir.webp',
         alt: 'Reformar ou construir.',
       },
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/Investir.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/Investir.webp',
         alt: 'Investir.',
       },
     ],
     sliderMoney2: [
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/PagarSuasDividas.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/PagarSuasDividas.webp',
         alt: 'Pagar suas dividas.',
       },
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/AbrirUmNegocio.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/AbrirUmNegocio.webp',
         alt: 'Abrir um negócio.',
       },
     ],
     sliderMoney3: [
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/CapitaldeGiro.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/CapitaldeGiro.webp',
         alt: 'Capital de giro.',
       },
       {
-        img: '/images/cashBest/ImagensSeuDinheiro/ObtencaoDeBens.webp',
+        img: '/images/cashBext/ImagensSeuDinheiro/ObtencaoDeBens.webp',
         alt: 'Obtenção de bens.',
       },
     ],
     sliderTutorial: [
       {
-        img: '/images/cashBest/Tutorial/4PassosTela00.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela00.webp',
         alt: 'É tão simples você precisa só de 4 passos.',
       },
       {
-        img: '/images/cashBest/Tutorial/4PassosTela01.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela01.webp',
         alt: 'Passo 1 - Simule e solicite. A simulação é feita através do nosso simulador.Em até 20 minutos você tem o resultado, porque seu tempo é valioso.',
       },
       {
-        img: '/images/cashBest/Tutorial/4PassosTela02.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela02.webp',
         alt: 'Passo 2 - Envie seus documentos. Após o envio, seus documentos serão analisados e será enviado uma proposta concreta.',
       },
       {
-        img: '/images/cashBest/Tutorial/4PassosTela03.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela03.webp',
         alt: 'Passo 3 - Avaliação do Imóvel. Nesta etapa o imóvel passará por uma avaliação que irá certificar que o mesmo está apto para ser a garantia do processo.',
       },
       {
-        img: '/images/cashBest/Tutorial/4PassosTela04.webp',
+        img: '/images/cashBext/Tutorial/4PassosTela04.webp',
         alt: 'Passo 4 - Liberação do recurso. Aqui encerramos a operação com êxito, sempre entregando a melhor experiência ao cliente!',
       },
     ],
   },
   icons: {
-    percentageFill: '/images/SejaBestIcons/iconePorcentagemFill.svg',
-    calendarFill: '/images/SejaBestIcons/iconeCalendarioFill.svg',
-    calendarOutline: '/images/SejaBestIcons/iconeCalendárioOutlineWhite.svg',
-    moneyFill: '/images/SejaBestIcons/iconeDinheiroFill.svg',
-    checkFill: '/images/SejaBestIcons/iconeCheckFill.svg',
-    errorFill: '/images/SejaBestIcons/iconeErradoFill.svg',
-    errorDark: '/images/SejaBestIcons/iconeErradoDark.svg',
-    phoneFill: '/images/SejaBestIcons/iconeCelularFill.svg',
-    userFill: '/images/SejaBestIcons/iconePessoaFill.svg',
-    notebookFill: '/images/SejaBestIcons/iconeNotebookFill.svg',
-    errorBlue: '/images/SejaBestIcons/iconeErradoAzul.svg',
-    checkBlue: '/images/SejaBestIcons/iconeCheckBlue.svg',
-    checkCompleto: '/images/SejaBestIcons/iconeCheckfillCompleto.svg',
-    checkWhite: '/images/SejaBestIcons/iconeCheckWhite.svg',
-    checkAqua: '/images/SejaBestIcons/iconeCheckAqua.svg',
-    grafico: '/images/SejaBestIcons/iconeGraficoBranco.svg',
-    setaDireita: '/images/SejaBestIcons/iconeSetaDireita.svg',
-    setaBaixo: '/images/SejaBestIcons/iconeSetaBaixo.svg',
-    setaBaixowhite: '/images/SejaBestIcons/IconeSetaBaixoWhite.svg',
-    clockFV: '/images/SejaBestIcons/iconeRelogioFV.png',
-    phoneFV: '/images/SejaBestIcons/iconeCelularFV.png',
-    calendarFV: '/images/SejaBestIcons/iconeCalendarioFV.png',
-    moneyFV: '/images/SejaBestIcons/iconeDinheiroFV.png',
+    percentageFill: '/images/Icons/iconePorcentagemFill.svg',
+    calendarFill: '/images/Icons/iconeCalendarioFill.svg',
+    calendarOutline: '/images/Icons/iconeCalendárioOutlineWhite.svg',
+    moneyFill: '/images/Icons/iconeDinheiroFill.svg',
+    checkFill: '/images/Icons/iconeCheckFill.svg',
+    errorFill: '/images/Icons/iconeErradoFill.svg',
+    errorDark: '/images/Icons/iconeErradoDark.svg',
+    phoneFill: '/images/Icons/iconeCelularFill.svg',
+    userFill: '/images/Icons/iconePessoaFill.svg',
+    notebookFill: '/images/Icons/iconeNotebookFill.svg',
+    errorBlue: '/images/Icons/iconeErradoAzul.svg',
+    checkBlue: '/images/Icons/iconeCheckBlue.svg',
+    checkCompleto: '/images/Icons/iconeCheckfillCompleto.svg',
+    checkWhite: '/images/Icons/iconeCheckWhite.svg',
+    checkAqua: '/images/Icons/iconeCheckAqua.svg',
+    grafico: '/images/Icons/iconeGraficoBranco.svg',
+    setaDireita: '/images/Icons/iconeSetaDireita.svg',
+    setaBaixo: '/images/Icons/iconeSetaBaixo.svg',
+    setaBaixowhite: '/images/Icons/IconeSetaBaixoWhite.svg',
+    clockFV: '/images/Icons/iconeRelogioFV.png',
+    phoneFV: '/images/Icons/iconeCelularFV.png',
+    calendarFV: '/images/Icons/iconeCalendarioFV.png',
+    moneyFV: '/images/Icons/iconeDinheiroFV.png',
   },
   logoMedia: {
     gray: {
@@ -259,14 +259,14 @@ const image = {
       wimo: '/images/LogoPartners/white/LogoWimo.svg',
     },
   },
-  bestCar: {
-    carroNotas: '/images/BestCar/CARRO_1.webp',
-    gráficoBestCar: '/images/BestCar/gráficobestCar.svg',
-    carro: '/images/BestCar/CARRO_2.webp',
-    gráficoFinan: '/images/BestCar/GRÁFICO_FINANCIAMENTO.svg',
-    imgMulher: '/images/BestCar/IMAGEM_MULHER.webp',
-    imgBestCar: '/images/BestCar/CABELHO_BESTCAR.webp',
-    imgFinanCar: '/images/BestCar/CABELHO_FINANCAR.webp',
+  BextCar: {
+    carroNotas: '/images/BextCar/CARRO_1.webp',
+    graficoBextCar: '/images/BextCar/graficoBextCar1.svg',
+    carro: '/images/BextCar/CARRO_2.webp',
+    graficoFinan: '/images/BextCar/GRAFICO_FINANCIAMENTO.svg',
+    imgMulher: '/images/BextCar/IMAGEM_MULHER.webp',
+    imgBextCar: '/images/BextCar/CABELHO_BextCar.webp',
+    imgFinanCar: '/images/BextCar/CABELHO_FINANCAR.webp',
   },
   bestNews: {
     doublePhone: '/images/BestNews/celularNews.webp',
@@ -275,6 +275,62 @@ const image = {
     bestNewsTelegram: '/images/BestNews/LogoBestNewsTelegram.svg',
     youBest: '/images/BestNews/LogoBestPlay.svg',
   },
+  partners:{
+    ourLogos:{
+      image:'/images/warren/HeroLogosWhite.svg',
+      alt:'Bext + BestHub'
+    },
+    mcf:{
+      logo:{
+        image: '/images/mcf/logoMCF.svg',
+        alt:'Minha casa Financiada'
+      }
+    }
+  },
+  brand:{
+    grayLogo: {
+      image:'/images/brand/grayLogo.svg',
+      alt:'Bext'
+    },
+    whiteLogo: {
+      image:'/images/brand/whiteLogo.svg',
+      alt:'Bext'
+    },
+    blueIcon: {
+      image:'/images/brand/blueIcon.svg',
+      alt: 'Bext'
+    },
+    blackAndBlueLogo: {
+      image:'/images/brand/blackAndBlueLogo.svg',
+      alt: 'Bext'
+    },
+    whiteAndBlueLogo: {
+      image:'/images/brand/whiteAndBlueLogo.svg',
+      alt: 'Bext'
+    },
+    youtubeLogo: {
+      image:'/images/brand/LogotipoBextPlayNegativo.svg',
+      alt: 'BextPlay'
+    },
+    loadingBrandChange: {
+      image:'/images/brand/MudancaDeMarca.gif',
+      alt: 'SejaBest agora é Bext'
+    },
+    loadingBrandChangeLight: {
+      image:'/images/brand/MudancaDeMarcaClaro.gif',
+      alt: 'SejaBest agora é Bext'
+    }
+  },
+  mockUps:{
+    multiBankPhone: {
+      image:'/images/mockups/MockupCelularHomeFinalSimuladorMultibancos.png',
+      alt: 'Plataforma multibancos e simulador online'
+    },
+    youtubePhone: {
+      image:'/images/mockups/mockupBextPlay.png',
+      alt: 'BextPlay- Conheça o maior canal de crédito do Brasil no youtube'
+    }
+  }
 }
 
 export default image

@@ -7,7 +7,7 @@
         class="flex-1 lg:flex-auto lg:w-4/6 xl:flex-auto xl:w-4/6 flex flex-col gap-5 my-auto px-5 sm:text-center md:text-center sm:pt-80 md:pt-80 z-10"
       >
         <div
-          class="md:bg-transparent xl:hidden lg:hidden rounded sm:flex flex-row items-center gap-4 py-4 px-6 w-fit sm:mx-auto md:mx-auto mr-auto"
+          class="md:bg-transparent xl:hidden lg:hidden rounded-xl sm:flex flex-row items-center gap-4 py-4 px-6 w-fit sm:mx-auto md:mx-auto mr-auto"
         >
           <button
             class="relative sm:w-8 sm:h-8 w-14 h-14 bg-zinc-200 rounded-full mx-auto flex justify-center items-center z-0"
@@ -60,7 +60,7 @@
                 independência imobiliária.
               </span>
               <a
-                class="bg-complementaryColor1 px-8 py-5 rounded-xl sm:mx-auto md:mx-auto transition-all hover:bg-[#0063f2] hover:scale-105 hover:shadow-md sm:tracking-wider"
+                class="bg-primary px-8 py-5 rounded-xl sm:mx-auto md:mx-auto transition-all hover:bg-[#0063f2] hover:scale-105 hover:shadow-md sm:tracking-wider"
                 :href="$options.information.hotmartXoAluguel + useObjectToQueryString($route.query)"
                 target="_blank"
               >

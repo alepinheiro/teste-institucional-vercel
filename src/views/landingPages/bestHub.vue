@@ -66,13 +66,13 @@ export default defineComponent({
         {
           id: 2,
           title: 'Para onde vão as operações do BestHub?',
-          text: 'As operações simuladas dentro de um requisito específico (confira o manual de contratação), são encaminhadas para a SejaBest, que estrutura as operações com vários parceiros com o fim de trazer o melhor produto para seus clientes.',
+          text: 'As operações simuladas dentro de um requisito específico (confira o manual de contratação), são encaminhadas para a Bext, que estrutura as operações com vários parceiros com o fim de trazer o melhor produto para seus clientes.',
           isOpen: false,
         },
         {
           id: 3,
-          title: 'O que é a SejaBest?',
-          text: 'A SejaBest é uma fintech multibancos, que trabalha com operações de crédito com garantia. Sejam elas de financiamento ou empréstimo.',
+          title: 'O que é a Bext?',
+          text: 'A Bext é uma fintech multibancos, que trabalha com operações de crédito com garantia. Sejam elas de financiamento ou empréstimo.',
           isOpen: false,
         },
         {
@@ -84,7 +84,7 @@ export default defineComponent({
         {
           id: 5,
           title: 'O que é uma simulação multibanco?',
-          text: 'Uma simulação multibancos traz todas as comparações entre simulações de bancos que estão na base da SejaBest. De forma resumida, você consegue acompanhar as diferentes taxas e parcelas segundo cada instituição.',
+          text: 'Uma simulação multibancos traz todas as comparações entre simulações de bancos que estão na base da Bext. De forma resumida, você consegue acompanhar as diferentes taxas e parcelas segundo cada instituição.',
           isOpen: false,
         },
         {

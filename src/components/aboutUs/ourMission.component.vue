@@ -32,7 +32,7 @@
               />
 
               <div
-                class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 md:p-4 lg:p-4 xl:p-4 text-complementaryColor3"
+                class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 md:p-4 lg:p-4 xl:p-4 text-primary"
               >
                 <p class="font-bold text-white md:w-3/4 select-none">{{ item.title }}</p>
                 <i class="fa-solid fa-chevron-up"></i>
@@ -62,7 +62,7 @@ export default defineComponent({
       },
       assetAdvance: {
         title: 'Adquirem novos bens',
-        text: 'Sonha em adquirir seu primeiro imóvel ou um veículo novo? As opções de Financiamento oferecidas pela SejaBest são as mais assertivas do mercado.',
+        text: 'Sonha em adquirir seu primeiro imóvel ou um veículo novo? As opções de Financiamento oferecidas pela Bext são as mais assertivas do mercado.',
       },
       educateEnrich: {
         title: 'Estudam ou se especializam',
@@ -74,7 +74,7 @@ export default defineComponent({
       },
       assetAbode: {
         title: 'Reformam, constroem ou adquirem um imóvel',
-        text: 'Pensa em mobiliar sua casa ou o escritório da sua empresa? Ou quem sabe adquirir um imóvel ou sala comercial. A SejaBest faz acontecer.',
+        text: 'Pensa em mobiliar sua casa ou o escritório da sua empresa? Ou quem sabe adquirir um imóvel ou sala comercial. A Bext faz acontecer.',
       },
       debtFree: {
         title: 'Quitam suas dívidas',

@@ -7,17 +7,17 @@
       <RouterLink :to="'/' + $root.utms" class="block sm:w-5/12 mx-auto">
         <img
           :src="$options.imageConfig.logoSejabestWhite"
-          alt="Logo SejaBest "
-          title="SejaBest"
+          alt="Logo Bext "
+          title="Bext"
           class="w-40 sm:w-11/12 h-auto"
         />
       </RouterLink>
       <div class="text-center text-sm text-[#ABABAB]">
         <span class="block"
-          >© {{ new Date().getFullYear() }} SejaBest Fintech de Crédito</span
+          >© {{ new Date().getFullYear() }} Bext Fintech</span
         >
         <RouterLink :to="'/' + $root.utms" class="block hover:text-[#D0FE42]">
-          <span> www.seja.best </span>
+          <span> www.bext.vc </span>
         </RouterLink>
       </div>
       <div class="flex flex-row mx-auto">

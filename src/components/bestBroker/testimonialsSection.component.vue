@@ -7,7 +7,7 @@
         Faça como eles e descubra como o
         <b
           >conhecimento da
-          <span class="text-[#D0FE42]">SejaBest</span>
+          <span class="text-[#D0FE42]">Bext</span>
         </b>
 
         pode transformar a sua carreira.

@@ -1,4 +1,8 @@
 const information = {
+  site: {
+    url:'https://bext.vc',
+    name: 'www.bext.vc'
+  },
   socialMedia: {
     facebook: 'https://www.facebook.com/seja.best',
     instagram: 'https://www.instagram.com/seja.best/',
@@ -21,13 +25,14 @@ const information = {
   location:
     'https://www.google.com/search?q=sejabest&oq=sejabest&aqs=chrome.0.69i59j46i10i175i199i512j0i10i512l3j69i61j69i60l2.4633j0j7&sourceid=chrome&ie=UTF-8#',
   appPartner: 'https://besthub.app/',
-  appClient: 'https://app.seja.best/',
-  simulatorWarren: 'https://warren.seja.best/',
-  simulatorMCF: 'https://minhacasafinanciada.seja.best/',
-  appSimulator: 'https://simulador.seja.best/',
-  appRealEstateSimulator: 'https://simulador.seja.best/imovel',
-  appVehicleSimulator: 'https://simulador.seja.best/veiculo',
+  appClient: 'https://app.bext.vc/',
+  simulatorWarren: 'https://warren.bext.vc/',
+  simulatorMCF: 'https://minhacasafinanciada.bext.vc/',
+  appSimulator: 'https://simulador.bext.vc/',
+  appRealEstateSimulator: 'https://simulador.bext.vc/imovel',
+  appVehicleSimulator: 'https://simulador.bext.vc/veiculo',
   hotmartXoAluguel: 'https://pay.hotmart.com/K85603528M',
+  linkRebranding:'',
   bestHubApp: {
     login: 'https://besthub.app/',
     subscribe: 'https://besthub.app/pre-cadastro',

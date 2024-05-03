@@ -16,9 +16,9 @@
         </p>
         <hr class="hidden sm:block border-zinc-400" />
         <a
-          :href="`https://simulador.seja.best/${useObjectToQueryString(route.query)}`"
+          :href="`https://simulador.bext.vc/${useObjectToQueryString(route.query)}`"
           target="_blank"
-          class="font-bold text-white bg-complementaryColor1 rounded px-4 py-2 w-fit sm:hidden hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
+          class="font-bold text-white bg-primary rounded-xl px-4 py-2 w-fit sm:hidden hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
           >Simule on-line de graça
         </a>
       </div>
@@ -44,7 +44,7 @@
               <div
                 :style="{ height: tax * 10 + '%' }"
                 :class="[id === 1 ? 'bg-primary' : 'bg-[#D9D9D9]']"
-                class="w-full rounded-t-lg flex-shrink-0 hover:bg-secondary transition-all ease-out duration-700"
+                class="w-full rounded-t-lg flex-shrink-0 hover:bg-primary transition-all ease-out duration-700"
               ></div>
               <div class="absolute -mb-14 h-10 text-center">
                 <span
@@ -62,9 +62,9 @@
         </span>
       </div>
       <a
-        :href="`https://simulador.seja.best/${useObjectToQueryString(route.query)}`"
+        :href="`https://simulador.bext.vc/${useObjectToQueryString(route.query)}`"
         target="_blank"
-        class="font-bold text-white bg-complementaryColor1 rounded px-4 py-2 w-fit hidden sm:block sm:mt-8 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
+        class="font-bold text-white bg-primary rounded-xl px-4 py-2 w-fit hidden sm:block sm:mt-8 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
       >
         Simule on-line de graça
       </a>
@@ -81,7 +81,7 @@ const products = [
   {
     id: 1,
     tax: 1.09,
-    title: 'CashBest',
+    title: 'cashBext',
   },
   {
     id: 2,
