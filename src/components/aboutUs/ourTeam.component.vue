@@ -12,9 +12,8 @@
         Um time de profissionais qualificados
       </h2>
       <p class="lg:w-10/12 xl:w-8/12 xl:text-xl text-textPrimary">
-        A Bext conta com um forte time de assessores que estão preparados para
-        te ajudar a encontrar uma solução de crédito que se encaixa nas suas
-        necessidades.
+        Hoje a Bext conta com assessores certificados pela ABECIP e mais de 10
+        anos de experiência no mercado financeiro.
       </p>
     </div>
 
@@ -81,9 +80,9 @@
     bruna: {
       alt: 'Bruna',
     },
-    daniel: {
-      alt: 'Daniel',
-    },
+    // daniel: {
+    //   alt: 'Daniel',
+    // },
     estevao: {
       alt: 'Estevão',
     },
@@ -99,8 +98,11 @@
     gaspar: {
       alt: 'Gaspar',
     },
-    gesiel: {
-      alt: 'Gesiel',
+    davi: {
+      alt: 'Davi',
+    },
+    'davi-silva': {
+      alt: 'Davi Silva',
     },
     gustavo: {
       alt: 'Gustavo',
@@ -117,15 +119,15 @@
     natalia: {
       alt: 'Natália',
     },
-    paola: {
-      alt: 'Paola',
-    },
+    // paola: {
+    //   alt: 'Paola',
+    // },
     guilherme: {
       alt: 'Guilherme',
     },
-    vinicius: {
-      alt: 'Vinícius',
-    },
+    // vinicius: {
+    //   alt: 'Vinícius',
+    // },
     elen: {
       alt: 'Elen',
     },
