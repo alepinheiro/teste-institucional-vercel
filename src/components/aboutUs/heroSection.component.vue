@@ -24,7 +24,7 @@
             loop
             muted
             playsinline
-            src="/public/images/brand/MudancaDeMarcaClaro.webm"
+            src="/images/brand/MudancaDeMarcaClaro.webm"
             class="py-5 h-4/5"></video>
           <h2
             class="bg-primary text-white w-fit mx-auto px-3 py-2 rounded-xl text-lg">

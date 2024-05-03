@@ -15,13 +15,15 @@
       <div class="absolute inset-0 -z-10 hidden min-md:flex">
         <img
           src="/images/aboutUs/backgroundLines.png"
-          class="w-full object-cover scale-x-150 mt-auto" />
+          class="w-full object-cover mt-auto" />
       </div>
       <OurMotivation
         id="ourMotivation"
         class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
     </div>
-    <MissionSection class="py-10 px-5" />
+    <MissionSection
+      class="py-10 px-5"
+      description="Nós nascemos com o propósito de transformar o acesso ao crédito para quem busca sua melhor versão e fazemos isto através de três pilares:" />
     <AboutNumbers class="py-12 md:py-16 xl:py-28" />
     <Team class="py-10" />
     <BestExperience class="py-10 xl:pb-28" />
