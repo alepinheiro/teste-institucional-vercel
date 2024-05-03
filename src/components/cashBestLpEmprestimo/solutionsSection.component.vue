@@ -6,12 +6,12 @@
       <div class="text-center flex flex-col gap-5 sm:px-5">
         <h2 class="text-3xl sm:text-2xl leading-snug font-bold text-primary">
           <span
-            class="relative after:content-[''] after:absolute after:-inset-1 after:bg-primary after:-z-10 text-white mr-2 z-0"
+            class="relative after:content-[''] after:absolute after:-inset-1 after:bg-bgDarkColor after:-z-10 text-white mr-2 z-0"
           >
             Feito para você:
           </span>
           {{
-            'com o cashBext, você decide como vai usar seu dinheiro.'.replace(
+            'com o CashBext, você decide como vai usar seu dinheiro.'.replace(
               /\s([^\s<]+)\s*$/,
               '\u00A0$1',
             )

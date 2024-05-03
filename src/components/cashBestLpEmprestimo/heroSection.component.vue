@@ -7,7 +7,8 @@
       <img src="/images/Home/heroBackground-sm.png" class="aspect-square min-md:hidden object-cover" alt="" />
       <img src="/images/Home/heroBackground-xl.png"
         class="hidden xl:block absolute inset-0 h-screen object-contain -right-48 ml-auto -z-10" alt="" />
-      x
+      <img src="/images/Home/heroBackground-lg.png"
+        class="hidden lg:block absolute inset-0  w-9/12  mr-0 ml-auto -z-10" alt="" />
 
       <div class="">
         <h1

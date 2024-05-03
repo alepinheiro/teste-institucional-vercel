@@ -23,10 +23,10 @@
           :is="'swiper-slide'"
           v-for="{ id, icon, title, description, callToAction } of stepCards"
           :key="id"
-          class="bg-white rounded-lg p-6 lg:p-10 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10 hover:shadow-lg hover:shadow-[#0524dd30] transition-all ease-linear cursor-default group hover:bg-primary"
+          class="bg-white rounded-lg p-6  h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10 hover:shadow-lg hover:shadow-[#0524dd30] transition-all ease-linear cursor-default group hover:bg-primary"
         >
           <div
-            class="flex flex-col gap-12 lg:gap-10 items-start font-Public-Sans"
+            class="flex flex-col gap-5 xl:gap-8 items-start font-Public-Sans"
           >
             <i
               :class="icon"

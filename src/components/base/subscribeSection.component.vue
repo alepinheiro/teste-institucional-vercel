@@ -8,9 +8,9 @@
     class="w-full py-20 xl:pb-0 lg:pb-0 bg-bgDarkColor"
   >
     <div
-      class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full flex flex-col gap-12"
+      class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full flex flex-col gap-12 sm:gap-8"
     >
-      <div class="text-white text-center flex flex-col gap-4 w-10/12 mx-auto">
+      <div class="text-white text-center flex flex-col gap-4 sm:gap-4 w-10/12 mx-auto">
         <h2 class="text-4xl sm:text-2xl font-bold">
           {{
             'Simule agora completamente de graça.'.replace(
