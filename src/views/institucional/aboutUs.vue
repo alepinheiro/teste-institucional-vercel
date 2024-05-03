@@ -10,24 +10,23 @@
         mobile: 'Tp-ZcMvXBiE',
       }"
       :showMenu="showMenu"
-      class="sm:h-[70vh] h-screen" />
+      class="h-screen" />
     <div class="relative z-0 overflow-hidden">
       <div class="absolute inset-0 -z-10 hidden min-md:flex">
         <img
           src="/images/aboutUs/backgroundLines.png"
           class="w-full object-cover mt-auto" />
       </div>
-      <OurMotivation
-        id="ourMotivation"
-        class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
     </div>
+    <OurMotivation
+      id="ourMotivation"
+      class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
     <MissionSection
       class="py-10 px-5 border-y-8 border-primary"
       description="Nós nascemos com o propósito de transformar o acesso ao crédito para quem busca sua melhor versão e fazemos isto através de três pilares:" />
-    <!-- <AboutNumbers class="py-12 md:py-16 xl:py-28" /> -->
     <NewBrand />
     <Team class="py-10" />
-    <BestExperience class="py-10 xl:pb-28" />
+    <BextExperience class="py-10 xl:pb-28" />
     <Testimonials class="py-10" />
     <Editorial class="max-w-7xl mx-auto hidden xl:block" />
     <BestPlay />
@@ -36,8 +35,7 @@
 </template>
 
 <script lang="ts">
-  import AboutNumbers from '@/components/aboutUs/aboutNumbers.component.vue';
-  import BestExperience from '@/components/aboutUs/bestExperience.component.vue';
+  import BextExperience from '@/components/aboutUs/bextExperience.component.vue';
   import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
   import Editorial from '@/components/aboutUs/bestEditorial.component.vue';
   import HeroSection from '@/components/aboutUs/heroSection.component.vue';
@@ -54,8 +52,7 @@
   export default defineComponent({
     name: 'AboutUs',
     components: {
-      AboutNumbers,
-      BestExperience,
+      BextExperience,
       BestPlay,
       Editorial,
       HeroSection,
