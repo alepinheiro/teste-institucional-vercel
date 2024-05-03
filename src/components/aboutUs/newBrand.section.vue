@@ -22,7 +22,7 @@
       loop
       muted
       playsinline
-      src="/images/brand/MudancaDeMarcaClaro.webm"
+      :src="$options.imageConfig.brand.loadingBrandChangeLight.image"
       class="py-5 h-4/5 min-lg:w-full"></video>
     <button
       class="bg-primary text-white mx-auto px-5 py-2 rounded-lg font-bold active:scale-95 transition min-lg:hidden">

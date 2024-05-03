@@ -26,7 +26,7 @@
             loop
             muted
             playsinline
-            src="/images/brand/MudancaDeMarcaClaro.webm"
+            :src="$options.imageConfig.brand.loadingBrandChangeLight.image"
             class="py-5 h-4/5 max-h-64"></video>
           <h2
             class="bg-primary text-white w-fit mx-auto px-3 py-2 rounded-xl text-lg">
