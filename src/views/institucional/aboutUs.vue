@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-[#EFEFEF]">
+  <main class="bg-[#EFEFEF] relative z-0">
     <TopBar
       customMobileMenuColor="black"
       color="primary"
@@ -11,16 +11,16 @@
       }"
       :showMenu="showMenu"
       class="h-screen" />
-    <div class="relative z-0 overflow-hidden">
-      <div class="absolute inset-0 -z-10 hidden min-md:flex">
+    <div class="relative z-10 overflow-hidden">
+      <div class="absolute inset-0 z-0 hidden min-md:flex">
         <img
           src="/images/aboutUs/backgroundLines.png"
           class="w-full object-cover mt-auto" />
       </div>
+      <OurMotivation
+        id="ourMotivation"
+        class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
     </div>
-    <OurMotivation
-      id="ourMotivation"
-      class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
     <MissionSection
       class="py-10 px-5 border-y-8 border-primary"
       description="Nós nascemos com o propósito de transformar o acesso ao crédito para quem busca sua melhor versão e fazemos isto através de três pilares:" />
