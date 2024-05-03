@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section >
     <div class="overflow-hidden flex-grow flex">
       <div class="w-full">
         <div class="overflow-hidden flex h-full pt-40 -mr-40">
