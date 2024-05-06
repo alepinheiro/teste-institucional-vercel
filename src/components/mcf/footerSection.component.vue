@@ -135,7 +135,7 @@ export default defineComponent({
         {
           icon: 'fa-brands fa-linkedin',
           title: 'Acesse nosso LinkedIn',
-          link: 'https://www.linkedin.com/company/bestsf/',
+          link: 'https://www.linkedin.com/company/bextvc',
         },
         {
           icon: 'fa-brands fa-youtube',

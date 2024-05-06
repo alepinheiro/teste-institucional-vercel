@@ -4,10 +4,10 @@ const information = {
     name: 'www.bext.vc'
   },
   socialMedia: {
-    facebook: 'https://www.facebook.com/seja.best',
-    instagram: 'https://www.instagram.com/seja.best/',
+    facebook: 'https://www.facebook.com/bext.vc',
+    instagram: 'https://www.instagram.com/bext.vc',
     youtube: 'https://www.youtube.com/c/SejaBest/videos?sub_confirmation=1',
-    linkedin: 'https://www.linkedin.com/company/bestsf/',
+    linkedin: 'https://www.linkedin.com/company/bextvc',
     telegram:
       ' https://t.me/bextnews?utm_source=landingpagenews&utm_campaign=bestnewstelegram&utm_content=telegramsejabest',
     whatsapp:
@@ -17,11 +17,11 @@ const information = {
     youtube:
       'https://www.youtube.com/c/SejaBest/videos?sub_confirmation=1&utm_source=Lpbestnews&utm_medium=Youbest&utm_campaign=Youbest',
     linkedin:
-      'https://www.linkedin.com/newsletters/6916790645441359872/?utm_source=Lpbestnews&utm_medium=BestNewslinkedin&utm_campaign=Bestnews/',
+      'https://www.linkedin.com/newsletters/6916790645441359872/?utm_source=Lpbextnews&utm_medium=BextNewslinkedin&utm_campaign=Bextnews/',
     telegram:
       'https://t.me/bextnews?utm_source=Lpbestnews&utm_medium=BestNewstelegram&utm_campaign=Bestnews',
   },
-  jobs: 'https://www.linkedin.com/company/sejabest/jobs/',
+  jobs: 'https://www.linkedin.com/company/bextvc/jobs/',
   location:
     'https://www.google.com/search?q=sejabest&oq=sejabest&aqs=chrome.0.69i59j46i10i175i199i512j0i10i512l3j69i61j69i60l2.4633j0j7&sourceid=chrome&ie=UTF-8#',
   appPartner: 'https://besthub.app/',
