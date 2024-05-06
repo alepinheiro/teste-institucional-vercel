@@ -1,5 +1,5 @@
 <template>
-  <div class="relative z-0 overflow-hidden bg-[#EFEFEF]">
+  <div class="relative z-0 overflow-hidden bg-[#efefef]">
     <img
       src="/images/Home/backgroundLines.jpg"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"

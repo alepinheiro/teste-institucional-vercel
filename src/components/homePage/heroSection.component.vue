@@ -4,7 +4,7 @@
       <img src="/images/Home/heroBackground-sm.png"
         class="aspect-square min-md:hidden object-cover w-10/12 mr-0 ml-auto" alt="" />
       <img src="/images/Home/heroBackground.png"
-        class="hidden xl:block absolute inset-0 w-8/12 object-contain -right-80 ml-auto -z-10" alt="" />
+        class="hidden xl:block absolute inset-0 w-7/12 object-contain -right-80 ml-auto -z-10" alt="" />
       <img src="/images/Home/linesMd.png" class="hidden md:block absolute inset-0 w-full object-contain  -z-10"
         alt="" />
       <img src="/images/Home/heroBackground-lg.png"
