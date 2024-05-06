@@ -18,7 +18,7 @@
       </div> -->
 
       <div
-        class="maxWidth m-auto min-md:mb-20 h-8/12 min-md:h-full xl:pt-24 flex flex-col">
+        class="maxWidth m-auto min-md:mb-20 h-8/12 min-md:h-full xl:py-12  flex flex-col">
         <div
           class="flex flex-col items-center justify-center gap-10 text-center px-5 h-full">
           <video
@@ -27,7 +27,7 @@
             muted
             playsinline
             :src="$options.imageConfig.brand.loadingBrandChangeLight.image"
-            class="py-5 h-10/12 xl:pt-36 pt-24 sm:pt-18"></video>
+            class="py-5 h-4/12 xl:pt-36 pt-36 sm:pt-18"></video>
           <h2
             class="bg-primary text-white w-fit mx-auto px-3 py-2 rounded-xl text-lg">
             Temos uma missão <b>grandiosa:</b>
@@ -37,15 +37,6 @@
             “Transformar o acesso ao crédito para quem busca sua melhor versão”
           </h1>
         </div>
-        <!--  -->
-        <button
-          v-scroll-to="'#ourMotivation'"
-          class="flex gap-2 justify-between w-fit mx-auto hover:underline text-black min-md:pb-5 my-20 ">
-          <i class="fa-solid fa-chevron-down animate-bounce"></i>
-          <span class="text-xs">
-            Clique aqui ou role para saber como estamos fazendo isso
-          </span>
-        </button>
       </div>
     </div>
   </section>

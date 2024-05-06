@@ -19,7 +19,7 @@
       </div>
       <OurMotivation
         id="ourMotivation"
-        class="pt-0 pb-10 flex flex-col gap-8 lg:gap-12" />
+        class="pt-0 pb-10 flex flex-col gap-8 lg:gap-12 lg:mt-36 xl:mt-36 md:mt-48" />
     </div>
     <MissionSection
       class="py-10 px-5 border-y-8 border-primary"

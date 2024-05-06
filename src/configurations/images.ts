@@ -317,7 +317,7 @@ const image = {
       alt: 'SejaBest agora é Bext',
     },
     loadingBrandChangeLight: {
-      image: '/images/brand/MudancaDeMarcaClaro.webm',
+      image: '/images/brand/mudancaMarcaBext.mp4',
       alt: 'SejaBest agora é Bext',
     },
   },
