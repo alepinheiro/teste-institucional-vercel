@@ -1,4 +1,4 @@
-import { RouteRecordRaw } from 'vue-router'
+import { RouteRecordRaw } from 'vue-router';
 
 export const routes: Array<RouteRecordRaw> = [
   {
@@ -146,8 +146,7 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'BextCarFinan',
     component: () => import('@/views/institucional/bextCarFinan.vue'),
     meta: {
-      title:
-        'FinanBext: Financiamento Veicular | Bext | Crédito Imobiliário',
+      title: 'FinanBext: Financiamento Veicular | Bext | Crédito Imobiliário',
       description:
         'Conheça os benefícios, o processo passo a passo e por que escolher o FinanBext.',
     },
@@ -240,8 +239,7 @@ export const routes: Array<RouteRecordRaw> = [
     path: '/warren',
     name: 'Warren',
     meta: {
-      title:
-        'Warren + Bext: Os Melhores Produtos de Crédito ao seu Alcance',
+      title: 'Warren + Bext: Os Melhores Produtos de Crédito ao seu Alcance',
       description:
         'Não perca mais tempo buscando crédito! Agora, os melhores produtos de crédito da Bext estão disponíveis na Warren',
     },
@@ -264,4 +262,4 @@ export const routes: Array<RouteRecordRaw> = [
       showMenu: false,
     },
   },
-]
+];

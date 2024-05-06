@@ -8,7 +8,7 @@
           <h2 class="min-md:text-3xl text-2xl text-primary font-bold">
             Sem filas, Sem gerentes, Sem complexidade
           </h2>
-          <p class="text-base text-textPrimary">
+          <p class="text-base text-textPrimary">7
             São apenas 4 passos para você receber o seu emprestimo.
           </p>
         </div>

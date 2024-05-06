@@ -1,56 +1,52 @@
 <template>
   <header class="absolute z-30 top-0 w-auto inset-x-0">
     <div
-      class="py-5 w-full flex flex-row justify-between items-center maxWidth mx-auto "
-    >
+      class="py-5 w-full flex flex-row justify-between items-center maxWidth mx-auto">
       <RouterLink :to="{ path: '/', query: $route.query }" class="w-auto h-fit">
         <img
           v-if="customMobileMenuColor !== 'white'"
           :src="$options.imageConfig.brand.blackAndBlueLogo.image"
-          :alt="$options.imageConfig.brand.blackAndBlueLogo.alt "
-          :title="$options.imageConfig.brand.blackAndBlueLogo.alt "
-          class="w-auto h-8 "
-        />
+          :alt="$options.imageConfig.brand.blackAndBlueLogo.alt"
+          :title="$options.imageConfig.brand.blackAndBlueLogo.alt"
+          class="w-auto h-8" />
         <img
           v-if="customMobileMenuColor === 'white'"
           :src="$options.imageConfig.brand.whiteAndBlueLogo.image"
-          :alt="$options.imageConfig.brand.whiteAndBlueLogo.alt "
-          :title="$options.imageConfig.brand.whiteAndBlueLogo.alt "
-          class="w-auto h-8 "
-        />
+          :alt="$options.imageConfig.brand.whiteAndBlueLogo.alt"
+          :title="$options.imageConfig.brand.whiteAndBlueLogo.alt"
+          class="w-auto h-8" />
       </RouterLink>
 
       <MenuDesktop class="sm:hidden md:hidden" />
       <MenuMobile
         :color="customMobileMenuColor"
-        class="xl:hidden lg:hidden h-8 w-8 flex-shrink-0 aspect-square mr-0"
-      />
+        class="xl:hidden lg:hidden h-8 w-8 flex-shrink-0 aspect-square mr-0" />
     </div>
   </header>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import MenuDesktop from '@/components/structure/menu.component.vue'
-import MenuMobile from '@/components/structure/menuMobile.component.vue'
-import LogoSejaBestSVG from '@/components/base/logos/logoSejaBestSVG.component.vue'
+  import { defineComponent } from 'vue';
+  import MenuDesktop from '@/components/structure/menu.component.vue';
+  import MenuMobile from '@/components/structure/menuMobile.component.vue';
+  import LogoSejaBestSVG from '@/components/base/logos/logoSejaBestSVG.component.vue';
 
-export default defineComponent({
-  name: 'TopBar',
-  components: {
-    MenuDesktop,
-    MenuMobile,
-    LogoSejaBestSVG,
-  },
-  props: {
-    customMobileMenuColor: {
-      type: String,
-      required: false,
-      default: '',
+  export default defineComponent({
+    name: 'TopBar',
+    components: {
+      MenuDesktop,
+      MenuMobile,
+      LogoSejaBestSVG,
     },
-  },
-  data() {
-    return {}
-  },
-})
+    props: {
+      customMobileMenuColor: {
+        type: String,
+        required: false,
+        default: '',
+      },
+    },
+    data() {
+      return {};
+    },
+  });
 </script>

@@ -19,7 +19,7 @@ export const topOfSales = (color: 'black' | 'white') => [
     src: '/images/topOfSales/' + color + '/inter.png',
     alt: 'Top Player imobiliário Inter',
   },
-]
+];
 
 const image = {
   logoSejabest: '/images/logoBest/logoBlue.svg',
@@ -275,62 +275,62 @@ const image = {
     bestNewsTelegram: '/images/BestNews/LogoBestNewsTelegram.svg',
     youBest: '/images/BestNews/LogoBestPlay.svg',
   },
-  partners:{
-    ourLogos:{
-      image:'/images/warren/HeroLogosWhite.svg',
-      alt:'Bext + BestHub'
+  partners: {
+    ourLogos: {
+      image: '/images/warren/HeroLogosWhite.svg',
+      alt: 'Bext + BestHub',
     },
-    mcf:{
-      logo:{
+    mcf: {
+      logo: {
         image: '/images/mcf/logoMCF.svg',
-        alt:'Minha casa Financiada'
-      }
-    }
+        alt: 'Minha casa Financiada',
+      },
+    },
   },
-  brand:{
+  brand: {
     grayLogo: {
-      image:'/images/brand/grayLogo.svg',
-      alt:'Bext'
+      image: '/images/brand/grayLogo.svg',
+      alt: 'Bext',
     },
     whiteLogo: {
-      image:'/images/brand/whiteLogo.svg',
-      alt:'Bext'
+      image: '/images/brand/whiteLogo.svg',
+      alt: 'Bext',
     },
     blueIcon: {
-      image:'/images/brand/blueIcon.svg',
-      alt: 'Bext'
+      image: '/images/brand/blueIcon.svg',
+      alt: 'Bext',
     },
     blackAndBlueLogo: {
-      image:'/images/brand/blackAndBlueLogo.svg',
-      alt: 'Bext'
+      image: '/images/brand/blackAndBlueLogo.svg',
+      alt: 'Bext',
     },
     whiteAndBlueLogo: {
-      image:'/images/brand/whiteAndBlueLogo.svg',
-      alt: 'Bext'
+      image: '/images/brand/whiteAndBlueLogo.svg',
+      alt: 'Bext',
     },
     youtubeLogo: {
-      image:'/images/brand/LogotipoBextPlayNegativo.svg',
-      alt: 'BextPlay'
+      image: '/images/brand/LogotipoBextPlayNegativo.svg',
+      alt: 'BextPlay',
     },
     loadingBrandChange: {
-      image:'/images/brand/MudancaDeMarca.gif',
-      alt: 'SejaBest agora é Bext'
+      image: '/images/brand/MudancaDeMarca.webm',
+      alt: 'SejaBest agora é Bext',
     },
     loadingBrandChangeLight: {
-      image:'/images/brand/MudancaDeMarcaClaro.gif',
-      alt: 'SejaBest agora é Bext'
-    }
+      image: '/images/brand/MudancaDeMarcaClaro.webm',
+      alt: 'SejaBest agora é Bext',
+    },
   },
-  mockUps:{
+  mockUps: {
     multiBankPhone: {
-      image:'/images/mockups/MockupCelularHomeFinalSimuladorMultibancos.png',
-      alt: 'Plataforma multibancos e simulador online'
+      image: '/images/mockups/MockupCelularHomeFinalSimuladorMultibancos.png',
+      alt: 'Plataforma multibancos e simulador online',
     },
     youtubePhone: {
-      image:'/images/mockups/mockupBextPlay.png',
-      alt: 'BextPlay- Conheça o maior canal de crédito do Brasil no youtube'
-    }
-  }
-}
+      image: '/images/mockups/mockupBextPlay.png',
+      alt: 'BextPlay- Conheça o maior canal de crédito do Brasil no youtube',
+    },
+  },
+};
 
-export default image
+export default image;
