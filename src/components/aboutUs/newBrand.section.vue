@@ -11,10 +11,10 @@
         Há 10 anos colocamos os clientes no centro da disrupção, oferecendo
         soluções mais eficientes para possibilitar seu acesso ao crédito.
       </p>
-      <button
+      <a :href="$options.information.linkRebranding"
         class="text-2xl hidden bg-primary text-white mr-auto px-5 py-2 rounded-lg font-bold active:scale-95 transition min-lg:block">
         Conheça a Bext
-      </button>
+      </a>
     </div>
 
     <video
