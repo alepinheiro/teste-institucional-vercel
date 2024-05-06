@@ -13,7 +13,7 @@
 
       <div class="text-zinc-600 text-sm text-center sm:hidden md:hidden">
         <div>© {{ new Date().getFullYear() }} Bext Fintech de Crédito</div>
-        <div><a href="www.bext.vc">www.bext.vc</a></div>
+        <div><a href="https://www.bext.vc">www.bext.vc</a></div>
       </div>
       <div class="flex sm:w-full justify-center sm:pb-6 fill-zinc-600">
         <a
@@ -106,7 +106,7 @@
         class="sm:w-full md:w-full md:pt-12 text-zinc-600 text-sm text-center xl:hidden lg:hidden"
       >
         <div>© {{ new Date().getFullYear() }} Bext Fintech de Crédito</div>
-        <div><a href="www.bext.vc">www.bext.vc</a></div>
+        <div><a href="https://www.bext.vc">www.bext.vc</a></div>
       </div>
     </div>
   </section>
