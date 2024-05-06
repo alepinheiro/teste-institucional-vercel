@@ -3,14 +3,10 @@
     v-if="isLoading"
     class="w-full flex items-center bg-primary h-screen transition duration-500 ease-out">
     <div class="w-5/12 sm:w-10/12 mr-auto ml-auto bg-red-500">
-      <video
-        autoplay
-        loop
-        muted
-        playsinline
-        :src="$options.imageConfig.brand.loadingBrandChange.image"
+      <img
+        src="/images/brand/MudancaDeMarca.gif"
         :alt="$options.imageConfig.brand.loadingBrandChange.alt"
-        class="w-full h-auto mr-auto ml-auto"></video>
+        class="w-full h-auto mr-auto ml-auto" />
     </div>
   </div>
 </template>
@@ -21,7 +17,7 @@
     name: 'LoadingBrandChange',
     data() {
       return {
-        isLoading: false,
+        isLoading: true,
       };
     },
     watch: {
