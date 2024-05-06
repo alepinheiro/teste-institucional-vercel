@@ -66,7 +66,7 @@
           uma taxa de juros de 1,09% ao mês + IPCA, Sistema de Amortização Price. CET de 16,38% ao ano.
           <br />
           <br />
-          Bext.vc pertence à Bext Fintech de Crédito LTDA, CNPJ 26.915.796/0001-04, com sede na Rua Miguel Matte, 687, sala 801, Ed. Evolution – CEP 88331-030, Pioneiros, Balneário Camboriú – SC.
+          Bext.vc pertence à Bext Fintech LTDA, CNPJ 26.915.796/0001-04, com sede na Rua Miguel Matte, 687, sala 801, Ed. Evolution – CEP 88331-030, Pioneiros, Balneário Camboriú – SC.
         </p>
         <div
           class="flex flex-col md:flex-row lg:flex-row xl:flex-row gap-6 items-center w-full md:justify-between lg:justify-between xl:justify-between">

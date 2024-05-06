@@ -35,7 +35,7 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'HomeEquity',
     component: () => import('@/views/institucional/cashBext.vue'),
     meta: {
-      title: 'cashBext: O Melhor Crédito com Garantia de Imóvel | Bext',
+      title: 'CashBext: O Melhor Crédito com Garantia de Imóvel | Bext',
       description:
         'Descubra como o cashBext da Bext oferece o melhor crédito com garantia de imóvel do mercado',
     },
@@ -49,7 +49,7 @@ export const routes: Array<RouteRecordRaw> = [
     name: 'HomeEquityCopy',
     component: () => import('@/views/institucional/cashBextEmprestimo.vue'),
     meta: {
-      title: 'cashBext: O Melhor empréstimo com Garantia de Imóvel | Bext',
+      title: 'CashBext: O Melhor empréstimo com Garantia de Imóvel | Bext',
       description:
         'Descubra como o cashBext da Bext oferece o melhor empréstimo com garantia de imóvel do mercado',
     },
@@ -120,7 +120,7 @@ export const routes: Array<RouteRecordRaw> = [
       title:
         'Empréstimo com Garantia de Veículo - BextCar | Bext | Crédito Imobiliário',
       description:
-        'Obtenha crédito usando seu veículo como garantia com o BextCar da Bext Fintech de Crédito.',
+        'Obtenha crédito usando seu veículo como garantia com o BextCar da Bext Fintech.',
     },
     props: {
       showMenu: false,
@@ -134,7 +134,7 @@ export const routes: Array<RouteRecordRaw> = [
       title:
         'BextCar: Empréstimo com Garantia de Veículo | Bext | Crédito Imobiliário',
       description:
-        'Obtenha crédito usando seu veículo como garantia com o BextCar da Bext Fintech de Crédito.',
+        'Obtenha crédito usando seu veículo como garantia com o BextCar da Bext Fintech.',
     },
     props: {
       showMenu: true,
