@@ -17,9 +17,13 @@
           </a>
         </div>
         <div class="w-7/12 sm:w-full md:w-full px-8">
-          <img :src="$options.imageConfig.brand.loadingBrandChangeLight.image"
-            :alt="$options.imageConfig.brand.loadingBrandChangeLight.alt"
-            class="object-contain h-auto w-full  mx-auto xl:w-10/12" />
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              :src="$options.imageConfig.brand.loadingBrandChangeLight.image"
+              class="h-auto w-full  mx-auto xl:w-10/12"></video>
         </div>
         <div class="pt-12 mx-auto">
           <a :href="$options.information.linkRebranding

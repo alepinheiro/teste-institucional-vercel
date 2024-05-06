@@ -1,7 +1,7 @@
 <template>
   <section>
     <div
-      class="px-5 flex flex-col gap-4 text-center md:max-w-[663px] md:mx-auto lg:max-w-5xl xl:max-w-7xl lg:mx-auto xl:mx-auto"
+      class="px-5 flex flex-col gap-4 text-center maxWidth md:mx-auto  lg:mx-auto xl:mx-auto"
     >
       <h3 class="min-md:text-2xl lg:w-10/12 lg:mx-auto text-textPrimary">
         O que nos motiva a levantar todos os dias e lutar por nossa missão?

@@ -1,13 +1,13 @@
 <template>
   <section
-    class="p-5 flex flex-col min-lg:flex-row gap-5 max-w-xl min-lg:max-w-4xl xl:!max-w-7xl mx-auto min-lg:py-10">
+    class="p-5 flex flex-col min-lg:flex-row gap-5 maxWidth mx-auto min-lg:py-36">
     <div class="flex flex-col gap-5 w-full">
       <h3
         class="font-bold text-lg min-md:text-2xl text-center min-lg:text-left">
         Uma nova marca. Pela mesma causa, com a mesma cultura e somando muito
         mais possibilidades.
       </h3>
-      <p class="min-md:text-xl">
+      <p class="min-md:text-xl sm:text-center sm:text-center">
         Há 10 anos colocamos os clientes no centro da disrupção, oferecendo
         soluções mais eficientes para possibilitar seu acesso ao crédito.
       </p>

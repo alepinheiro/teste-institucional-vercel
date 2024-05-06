@@ -18,7 +18,7 @@
       </div> -->
 
       <div
-        class="md:max-w-2xl min-lg:max-w-5xl m-auto min-md:mb-20 h-5/6 min-md:h-full flex flex-col">
+        class="maxWidth m-auto min-md:mb-20 h-8/12 min-md:h-full xl:pt-24 flex flex-col">
         <div
           class="flex flex-col items-center justify-center gap-10 text-center px-5 h-full">
           <video
@@ -27,7 +27,7 @@
             muted
             playsinline
             :src="$options.imageConfig.brand.loadingBrandChangeLight.image"
-            class="py-5 h-4/5 max-h-64"></video>
+            class="py-5 h-10/12 xl:pt-36 pt-24"></video>
           <h2
             class="bg-primary text-white w-fit mx-auto px-3 py-2 rounded-xl text-lg">
             Temos uma missão <b>grandiosa:</b>
@@ -40,7 +40,7 @@
         <!--  -->
         <button
           v-scroll-to="'#ourMotivation'"
-          class="flex gap-2 justify-between w-fit mx-auto hover:underline text-black min-md:pb-5">
+          class="flex gap-2 justify-between w-fit mx-auto hover:underline text-black min-md:pb-5 my-20 ">
           <i class="fa-solid fa-chevron-down animate-bounce"></i>
           <span class="text-xs">
             Clique aqui ou role para saber como estamos fazendo isso
