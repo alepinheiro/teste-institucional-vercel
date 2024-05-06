@@ -21,7 +21,7 @@
         class="flex flex-col gap-5 min-md:gap-10  items-center lg:w-8/12 xl:w-7/12 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-16 min-md:mt-0 min-md:pt-28 min-md:pb-10 px-5">
         <h1
           class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7 lg:text-left xl:text-left">
-          Maximize as oportunidades com <span class="text-primary">CashBext:</span> obtenha até <span class="text-primary">20X</span> mais opções através do empréstimo com
+          Maximize as oportunidades com <span class="text-primary">CashBext:</span> obtenha até <span class="text-primary">20X</span> mais opções através do crédito com
           garantia de imóvel
         </h1>
 

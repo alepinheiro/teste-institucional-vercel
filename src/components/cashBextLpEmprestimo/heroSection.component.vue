@@ -76,7 +76,7 @@ const cards = [
   {
     id: 'house',
     icon: HouseIcon,
-    description: 'Até 60% do valor seu imóvel como crédito',
+    description: 'Até 60% do valor seu imóvel como emprestimo',
   },
   {
     id: 'calendar',
