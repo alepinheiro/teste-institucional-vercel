@@ -2,10 +2,10 @@
   <section >
     <div class="overflow-hidden flex-grow flex">
       <div class="w-full">
-        <div class="overflow-hidden flex h-full pt-40 -mr-40">
+        <div class="overflow-hidden flex h-full pt-30 -mr-12">
           <img ref="bestPlayMockup" :src="$options.imageConfig.mockUps.youtubePhone.image"
             :alt="$options.imageConfig.mockUps.youtubePhone.alt" :title="$options.imageConfig.mockUps.youtubePhone.alt"
-            loading="lazy" class="w-full h-[44rem] object-contain object-top" />
+            loading="lazy" class="w-full h-[26rem] object-contain object-top" />
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@
         mobile: 'Tp-ZcMvXBiE',
       }"
       :showMenu="showMenu"
-      class="h-screen" />
+      class="h-screen sm:h-full" />
     <div class="relative z-10 overflow-hidden">
       <div class="absolute inset-0 z-0 hidden min-md:flex">
         <img
@@ -19,7 +19,7 @@
       </div>
       <OurMotivation
         id="ourMotivation"
-        class="pt-20 pb-10 flex flex-col gap-8 lg:gap-12" />
+        class="pt-0 pb-10 flex flex-col gap-8 lg:gap-12" />
     </div>
     <MissionSection
       class="py-10 px-5 border-y-8 border-primary"

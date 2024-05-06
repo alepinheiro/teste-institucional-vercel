@@ -5,7 +5,7 @@
       'bg-secondary': component.bgColor === 'SECONDARY',
       'bg-bgDarkColor': component.bgColor === 'BGDARKCOLOR',
     }"
-    class="w-full py-20 xl:pb-0 lg:pb-0 bg-bgDarkColor"
+    class="w-full py-20 sm:pt-20 sm:pb-4 xl:pb-0 lg:pb-0 bg-bgDarkColor"
   >
     <div
       class="max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full flex flex-col gap-12 sm:gap-8"

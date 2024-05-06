@@ -10,7 +10,7 @@
       <div
         class="sm:w-full sm:text-left mb-auto text-primary  lg:ml-12 lg:w-7/12 xl:w-7/12 w-full md:justify-center md:flex md:flex-col">
         <h1
-          class="sm:pt-12 md:w-full sm:text-center text-5xl md:text-2xl lg:text-4xl sm:text-3xl text-center font-semibold mr-0 flex justify-center">
+          class="sm:pt-12 md:w-full sm:text-center text-5xl md:text-2xl lg:text-4xl sm:text-2xl text-center font-semibold mr-0 flex justify-center">
           Com o FinanBext você tem:
         </h1>
         <CardWhite />

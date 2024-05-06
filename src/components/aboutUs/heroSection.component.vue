@@ -27,7 +27,7 @@
             muted
             playsinline
             :src="$options.imageConfig.brand.loadingBrandChangeLight.image"
-            class="py-5 h-10/12 xl:pt-36 pt-24"></video>
+            class="py-5 h-10/12 xl:pt-36 pt-24 sm:pt-18"></video>
           <h2
             class="bg-primary text-white w-fit mx-auto px-3 py-2 rounded-xl text-lg">
             Temos uma missão <b>grandiosa:</b>
