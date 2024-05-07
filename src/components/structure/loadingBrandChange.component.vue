@@ -17,7 +17,7 @@
     name: 'LoadingBrandChange',
     data() {
       return {
-        isLoading: true,
+        isLoading: false,
       };
     },
     watch: {
