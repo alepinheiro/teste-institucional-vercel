@@ -24,7 +24,7 @@
     <MissionSection
       class="py-10 px-5 border-y-8 border-primary"
       description="Nós nascemos com o propósito de transformar o acesso ao crédito para quem busca sua melhor versão e fazemos isto através de três pilares:" />
-    <NewBrand />
+    <Rebranding />
     <Team class="py-10" />
     <BextExperience class="py-10 xl:pb-28" />
     <Testimonials class="py-10" />
@@ -40,7 +40,7 @@
   import Editorial from '@/components/aboutUs/bestEditorial.component.vue';
   import HeroSection from '@/components/aboutUs/heroSection.component.vue';
   import MissionSection from '@/components/aboutUs/missionSection.component.vue';
-  import NewBrand from '@/components/aboutUs/newBrand.section.vue';
+  import Rebranding from '@/components/base/sections/rebranding/index.componente.vue'
   import OurMotivation from '@/components/aboutUs/ourMission.component.vue';
   import Team from '@/components/aboutUs/ourTeam.component.vue';
   import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue';
@@ -57,7 +57,7 @@
       Editorial,
       HeroSection,
       MissionSection,
-      NewBrand,
+      Rebranding,
       OurMotivation,
       Team,
       Testimonials,

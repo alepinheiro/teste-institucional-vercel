@@ -23,7 +23,7 @@
               muted
               playsinline
               :src="$options.imageConfig.brand.loadingBrandChangeLight.image"
-              class="h-auto w-full  mx-auto xl:w-10/12"></video>
+              class="h-auto w-full  mx-auto xl:w-10/12 lg:w-10/12"></video>
         </div>
         <div class="pt-12 mx-auto">
           <a :href="$options.information.linkRebranding

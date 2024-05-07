@@ -84,7 +84,7 @@
         </div>
 
         <div class="  ">
-          <h2 class="text-xl font-semibold text-textPrimary py-4">Podutos</h2>
+          <h2 class="text-xl font-semibold text-textPrimary py-4">Produtos</h2>
 
           <div class="sm:text-sm text-textPrimary pb-6">
             <RouterLink :to="{ path: '/financiamento-imobiliario', query: $route.query }" aria-label="Financiamento"
