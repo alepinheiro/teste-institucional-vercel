@@ -172,7 +172,7 @@ export default defineComponent({
   },
   mounted() {
     this.animateElement(this.phone)
-    this.animateElement(this.banks)?.delay(0.6)
+    this.animateElement(this.banks)?.delay(0.1)
   },
   methods: {
     animateElement(element: HTMLDivElement | null) {
@@ -185,7 +185,7 @@ export default defineComponent({
         },
         opacity: 100,
         duration: 3,
-        delay: 0.5,
+        delay: 0.2,
         ease: 'circ.in',
       })
     },
