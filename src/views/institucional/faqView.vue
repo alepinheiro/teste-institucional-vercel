@@ -1,13 +1,13 @@
 <template>
-  <div class="w-full bg-bgLightColor">
-    <TopBar v-if="showMenu" class="text-white w-full" />
+  <div class="w-full bg-bgLight2Color">
+    <TopBar v-if="showMenu" customMobileMenuColor="black" color="primary"  />
 
-    <section class="w-full gradienteSB pt-8 min-md:pt-20">
+    <section class="w-full bg-bgLightColor pt-8 min-md:pt-20">
       <div class="md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto px-5">
-        <h1 class="text-white text-5xl titleFontBold pt-12">
+        <h1 class=" text-5xl titleFontBold pt-12">
           Crédito Imobiliário pode ser complicado.
         </h1>
-        <h3 class="text-white text-2xl pt-8 pb-12">
+        <h3 class=" text-2xl pt-8 pb-12">
           Por isto estamos aqui com você.
         </h3>
       </div>

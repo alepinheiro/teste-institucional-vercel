@@ -1,11 +1,11 @@
 <template>
-  <article class="mb-4 bg-bgDefaultColor rounded-2xl">
+  <article class="mb-4 bg-bgLightColor rounded-2xl">
     <div class="header">
       <div>
         <div
           :class="{
             'bg-primary text-white rounded-t-2xl': (show == true),
-            'bg-bgDefaultColor text-primary rounded-2xl': (show == false)
+            'bg-bgLightColor text-textPrimary rounded-2xl': (show == false)
           }"
           style="cursor: pointer; display: flex; font-size: 16px;"
           class="justify-between p-6 sm:p-4"

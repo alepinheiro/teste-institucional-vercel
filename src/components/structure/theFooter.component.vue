@@ -1,7 +1,7 @@
 <template>
-  <footer class="w-full flex justify-center bg-bgLight2Color">
+  <footer class="w-full flex justify-center bg-bgLight2Color xl:h-screen lg:h-screen">
     <div data-nosnippet class="mt-auto mb-auto">
-      <div class="maxWidth flex sm:flex-wrap justify-between pt-12 sm:pt-8 md:pt-8">
+      <div class="maxWidth flex sm:flex-wrap justify-between pt-8 sm:pt-8 md:pt-8">
         <div class="sm:w-1/2">
           <h2 class="text-xl font-semibold text-textPrimary py-4">Sobre</h2>
 
@@ -210,8 +210,8 @@
           </div>
         </div>
       </div>
-      <div class="maxWidth mt-12">
-        <div class="w-full flex sm:flex-wrap justify-between py-2 sm:px-2">
+      <div class="maxWidth xl:mt-20  ">
+        <div class="w-full flex sm:flex-wrap justify-between py-2 sm:px-2 ">
           <div class="sm:w-5/12">
             <img :src="$options.imageConfig.brand.grayLogo.image" :alt="$options.imageConfig.brand.grayLogo.alt"
               :title="$options.imageConfig.brand.grayLogo.alt" class="w-40 sm:w-11/12 h-auto" />
@@ -296,7 +296,7 @@
             sala 801, Ed. Evolution – CEP 88331-030, Pioneiros, Balneário Camboriú – SC.
           </p>
 
-          <div class="">
+          <div class="sm:py-6 xl:py-8 ">
             <BacenImage class="w-40 h-auto" />
           </div>
         </div>
