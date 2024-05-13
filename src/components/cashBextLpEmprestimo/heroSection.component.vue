@@ -1,20 +1,28 @@
 <template>
+ 
   <section>
-    <div class="flex  mx-auto w-full min-md:min-h-screen justify-center">
-      <div class="">
+    <div class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full min-md:min-h-screen justify-center">
+      <!--  <div
+        class="absolute inset-x-0 top-48 md:hidden lg:right-1/4 lg:top-[65vh] xl:right-1/3 xl:top-auto z-50"
+      >
         <VideoButton video-id="eDWFe4Wrb2A" class="xl:mr-0 lg:mr-0" />
-      </div>
-      <img src="/images/Home/heroBackground-sm.png" class="aspect-square min-md:hidden object-cover" alt="" />
-      <img src="/images/Home/heroBackground-xl.png"
+      </div>-->
+      <img src="/images/cashBext/initialSessionSM.png" class="aspect-square min-md:hidden object-cover" alt="" />
+      <img src="/images/cashBext/initialSessionXL.png"
         class="hidden xl:block absolute inset-0 h-screen object-contain -right-48 ml-auto -z-10" alt="" />
-      <img src="/images/Home/heroBackground-lg.png"
-        class="hidden lg:block absolute inset-0  w-9/12  mr-0 ml-auto -z-10" alt="" />
-
-      <div class="">
+      <img src="/images/cashBext/initialSessionLG.png"
+        class="hidden lg:block absolute inset-0  object-contain -right-24 ml-auto -z-10" alt="" />
+        <img
+        src="/images/Home/linesMd.png"
+        class="hidden md:block absolute inset-0 w-full object-contain  -z-10"
+        alt=""
+      />
+      <div
+        class="flex flex-col gap-5 min-md:gap-10  items-center lg:w-8/12 xl:w-7/12 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-16 min-md:mt-0 min-md:pt-28 min-md:pb-10 px-5">
         <h1
-          class="text-3xl min-md:text-6xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7 lg:text-left xl:text-left">
-          <span class="text-primary"> cashBext: </span>
-          o melhor Empréstimo com Garantia de Imóvel do mercado
+          class="text-3xl min-md:text-5xl font-bold font-darkerGrotesque text-center text-textPrimary leading-7 lg:text-left xl:text-left">
+          Maximize as oportunidades com <span class="text-primary">CashBext:</span> obtenha até <span class="text-primary">20X</span> mais opções através do empréstimo com
+          garantia de imóvel
         </h1>
 
         <component :is="'swiper-container'" v-bind="sliderOptions" class="w-full sm:my-2">
@@ -76,7 +84,7 @@ const cards = [
   {
     id: 'house',
     icon: HouseIcon,
-    description: 'Até 60% do valor seu imóvel como emprestimo',
+    description: 'Até 60% do valor seu imóvel como crédito',
   },
   {
     id: 'calendar',

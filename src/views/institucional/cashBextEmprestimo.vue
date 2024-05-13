@@ -60,16 +60,16 @@
   </main>
 </template>
 <script lang="ts" setup>
-import AboutUs from '@/components/base/aboutUs.component.vue'
+import AboutUs from '@/components/cashBextLpEmprestimo/aboutUs.component.vue'
 import BestPlay from '@/components/base/sections/bestPlay/index.component.vue'
 import BusinessPartners from '@/components/homePage/businessPartners.component.vue'
 import ComparisonTable from '@/components/base/comparisonTable.component.vue'
-import HeroSection from '@/components/cashBext/heroSection.component.vue'
-import Solutions from '@/components/cashBext/solutionsSection.component.vue'
-import Steps from '@/components/cashBext/stepsSection.component.vue'
-import Subscribe from '@/components/base/subscribeSection.component.vue'
+import HeroSection from '@/components/cashBextLpEmprestimo/heroSection.component.vue'
+import Solutions from '@/components/cashBextLpEmprestimo/solutionsSection.component.vue'
+import Steps from '@/components/cashBextLpEmprestimo/stepsSection.component.vue'
+import Subscribe from '@/components/cashBextLpEmprestimo/subscribeSection.component.vue'
 import TheFooter from '@/components/structure/theFooter.component.vue'
-import TheProduct from '@/components/cashBext/theProduct.component.vue'
+import TheProduct from '@/components/cashBextLpEmprestimo/theProduct.component.vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
 import { ref, onBeforeMount, onBeforeUnmount, onMounted } from 'vue'
 import { getCurrentInstance } from 'vue'
