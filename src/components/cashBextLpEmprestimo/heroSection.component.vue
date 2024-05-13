@@ -27,8 +27,8 @@
 
         <component :is="'swiper-container'" v-bind="sliderOptions" class="w-full sm:my-2">
           <component :is="'swiper-slide'" v-for="{ description, icon, id } of cards" :key="id"
-            class="cursor-default my-auto px-5 min-md:px-0 w-full">
-            <div class="flex flex-row gap-2 items-center w-fit mx-auto">
+            class="cursor-default my-auto px-2 min-md:px-0 w-full">
+            <div class="flex flex-row gap-1 items-center w-fit mx-auto">
               <component :is="icon" class="text-primary flex-shrink-0" />
               <p class="text-textPrimary text-center text-sm md:text-left min-lg:text-base">
                 {{ description }}
@@ -84,7 +84,7 @@ const cards = [
   {
     id: 'house',
     icon: HouseIcon,
-    description: 'Até 60% do valor seu imóvel como crédito',
+    description: 'Até 60% do valor seu imóvel como empréstimo',
   },
   {
     id: 'calendar',
