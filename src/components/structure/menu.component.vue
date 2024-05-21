@@ -34,7 +34,7 @@
         Seja um Parceiro
       </RouterLink>
       <a
-        :href="'https://portal.seja.best/' + useObjectToQueryString($route.query)"
+        :href="'https://portal.seja.best/' + $root.utms"
         class="decoration"
         target="_blank"
       >
@@ -43,7 +43,7 @@
     </div>
     <a
       :href="
-        $options.information.appSimulator + useObjectToQueryString($route.query)
+        $options.information.appSimulator + $root.utms
       "
       style="text-decoration: none"
       target="_blank"
@@ -58,7 +58,7 @@ import { defineComponent } from 'vue'
 import dropdownMenu from '../base/dropdownMenu.vue'
 import dropdownForB from '../base/PopUpForBusiness.vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
-
+import { useRoute } from 'vue-router'
 export default defineComponent({
   name: 'MenuComponent',
   components: {
@@ -72,6 +72,7 @@ export default defineComponent({
     },
   },
   data() {
+    const route = useRoute()
     return {
       isVisible: false,
       useObjectToQueryString,

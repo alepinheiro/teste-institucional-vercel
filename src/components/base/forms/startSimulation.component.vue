@@ -51,8 +51,9 @@
     </form>
   </div>
 </template>
-<script lang="ts" setup>
-import information from '@/configurations/information'
+
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import {
   CurrencyInputOptions,
@@ -60,55 +61,62 @@ import {
   CurrencyDisplay,
 } from 'vue-currency-input'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import information from '@/configurations/information'
 
-const options: CurrencyInputOptions = {
-  currency: 'BRL',
-  currencyDisplay: CurrencyDisplay.narrowSymbol,
-  precision: 2,
-  hideCurrencySymbolOnFocus: false,
-  hideGroupingSeparatorOnFocus: false,
-  hideNegligibleDecimalDigitsOnFocus: false,
-  autoDecimalDigits: true,
-  useGrouping: true,
-  accountingSign: false,
-}
-const { inputRef: realtyValue } = useCurrencyInput(options)
-const { inputRef: creditAmount } = useCurrencyInput(options)
-
-const route = useRoute()
-
-defineProps({
-  showHomeEquity: {
-    type: Boolean,
-    required: true,
+export default defineComponent({
+  props: {
+    showHomeEquity: {
+      type: Boolean,
+      required: true,
+    }
   },
+  data() {
+    const options: CurrencyInputOptions = {
+      currency: 'BRL',
+      currencyDisplay: CurrencyDisplay.narrowSymbol,
+      precision: 2,
+      hideCurrencySymbolOnFocus: false,
+      hideGroupingSeparatorOnFocus: false,
+      hideNegligibleDecimalDigitsOnFocus: false,
+      autoDecimalDigits: true,
+      useGrouping: true,
+      accountingSign: false,
+    }
+
+    const { inputRef: realtyValue } = useCurrencyInput(options)
+    const { inputRef: creditAmount } = useCurrencyInput(options)
+
+    return {
+      route: useRoute(),
+      realtyValue,
+      creditAmount
+    }
+  },
+  methods: {
+    onSubmit(event: Event) {
+      if (!event || !event.target) return
+      const formData = new FormData(event.target as HTMLFormElement)
+
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        realtyValue: formData.get('realtyValue'),
+        creditAmount: formData.get('creditAmount'),
+        rangeSlider: '',
+      }
+
+      if (data.creditAmount) {
+        const cleanedValue = data.creditAmount.toString().replace('R$', '').trim()
+        const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.')
+        const floatNumber = parseFloat(formattedValue)
+        data.creditAmount = `${floatNumber}`
+      }
+
+      localStorage.setItem('simulationData', JSON.stringify(data))
+      window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
+      window.open(information.appSimulator + this.$root.utms, '_blank')
+    }
+  }
 })
-
-const onSubmit = (event: Event) => {
-  if (!event) return
-  if (!event.target) return
-  const formData = new FormData(event.target as HTMLFormElement)
-
-  const data = {
-    name: formData.get('name'),
-    email: formData.get('email'),
-    realtyValue: formData.get('realtyValue'),
-    creditAmount: formData.get('creditAmount'),
-    rangeSlider: '',
-  }
-
-  if (data.creditAmount) {
-    const cleanedValue = data.creditAmount.toString().replace('R$', '').trim()
-    const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.')
-    const floatNumber = parseFloat(formattedValue)
-    data.creditAmount = `${floatNumber}`
-  }
-
-  localStorage.setItem('simulationData', JSON.stringify(data))
-  window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
-  window.open(
-    information.appSimulator + useObjectToQueryString(route.query),
-    '_blank',
-  )
-}
 </script>
+

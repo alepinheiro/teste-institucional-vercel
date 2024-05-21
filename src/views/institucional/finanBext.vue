@@ -73,7 +73,7 @@ defineProps<{
 
 const app = getCurrentInstance()
 const route = useRoute()
-
+const utm = 'utm_source=organico&utm_medium=financiamento-imobiliario'
 const menuColor = ref(
   window.innerWidth > 667 ? 'black' : 'var(--textPrimaryColor)',
 )

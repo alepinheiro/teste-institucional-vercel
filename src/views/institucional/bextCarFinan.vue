@@ -108,8 +108,12 @@ export default defineComponent({
       default: true,
     },
   },
+  data() {
+    return {
+      utm: 'utm_source=organico&utm_medium=financiamento-veicular'
+    };
+  },
   mounted() {
-    console.log(this.$route.query)
     this.$root.utms = useObjectToQueryString(this.$route.query)
   }
 })

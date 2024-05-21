@@ -49,7 +49,10 @@
   </section>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
+import { useRoute } from 'vue-router'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 import information from '@/configurations/information'
 import PercentIcon from '@/assets/svg/percentWithBackground.vue'
 import HouseIcon from '@/assets/svg/houseWithMoneySign.vue'
@@ -57,59 +60,69 @@ import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
 import DoubleInputsForm from '@/components/cashBext/heroForm.component.vue'
 import type { SwiperOptions } from 'swiper/types'
 import VideoButton from '@/components/base/videoButton.component.vue'
-import { ref } from 'vue'
-import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
-import { useRoute } from 'vue-router'
 
-defineProps<{
-  showMenu: boolean
-}>()
-
-const route = useRoute()
-
-const doubleFormData = ref<{
-  assetValue: number
-  creditValue: number
-}>({
-  assetValue: 500000,
-  creditValue: 250000,
+export default defineComponent({
+  props: {
+    showMenu: {
+      type: Boolean,
+      required: true
+    }
+  },
+  components: {
+    PercentIcon,
+    HouseIcon,
+    CalendarIcon,
+    DoubleInputsForm,
+    VideoButton
+  },
+  data() {
+    return {
+      route: useRoute(),
+      doubleFormData: ref({
+        assetValue: 500000,
+        creditValue: 250000
+      }),
+      cards: [
+        {
+          id: 'percent',
+          icon: PercentIcon,
+          description: 'A partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
+        },
+        {
+          id: 'house',
+          icon: HouseIcon,
+          description: 'Até 60% do valor seu imóvel como empréstimo',
+        },
+        {
+          id: 'calendar',
+          icon: CalendarIcon,
+          description: 'Escolha como pagar. Em até 20 anos.',
+        }
+      ],
+      sliderOptions: {
+        spaceBetween: 0,
+        slidesPerView: 1,
+        loop: true,
+        autoHeight: false,
+        autoplay: {
+          delay: 2000,
+        },
+        breakpoints: {
+          667: {
+            slidesPerView: 3,
+            autoplay: false,
+            spaceBetween: 20,
+            loop: false,
+          },
+        },
+      } as SwiperOptions
+    }
+  },
+  methods: {
+    onSubmit() {
+      window.open(information.appSimulator + this.$root.utms, '_blank')
+    }
+  }
 })
-
-const cards = [
-  {
-    id: 'percent',
-    icon: PercentIcon,
-    description: 'A partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
-  },
-  {
-    id: 'house',
-    icon: HouseIcon,
-    description: 'Até 60% do valor seu imóvel como empréstimo',
-  },
-  {
-    id: 'calendar',
-    icon: CalendarIcon,
-    description: 'Escolha como pagar. Em até 20 anos.',
-  },
-]
-
-const sliderOptions: SwiperOptions = {
-  spaceBetween: 0,
-  slidesPerView: 1,
-  loop: true,
-  autoHeight: false,
-  autoplay: {
-    delay: 2000,
-  },
-  breakpoints: {
-    667: {
-      slidesPerView: 3,
-      autoplay: false,
-      spaceBetween: 20,
-      loop: false,
-    },
-  },
-}
-
-const onSubmit = () => window.open(information.appSimulator + useObjectToQueryString(route.query), '_blank')
 </script>
+

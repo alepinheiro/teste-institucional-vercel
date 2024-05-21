@@ -77,7 +77,9 @@ export default defineComponent({
     TheFooter,
   },
   data() {
-    return {}
+    return {
+      utm: 'utm_source=organico&utm_medium=home'
+    }
   },
   mounted(){
     this.$root.utms = useObjectToQueryString(this.$route.query)

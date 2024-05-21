@@ -31,6 +31,7 @@ import BestTable from '@/components/bestHub/bestTable.component.vue'
 import ProductBoxSection from '@/components/bestHub/productBox.component.vue'
 import FaqSection from '@/components/bestHub/faqSection.component.vue'
 import FooterSection from '@/components/bestHub/footerSection.component.vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 export default defineComponent({
   name: 'BestHubLP',
   components: {
@@ -138,10 +139,7 @@ export default defineComponent({
     }
   },
   mounted() {
-    let fullUrl = this.$route.fullPath.split('?')
-    if (this.$route.fullPath.includes('?')) {
-      this.$root.utms = '?' + fullUrl[1]
-    }
+    this.$root.utms = useObjectToQueryString(this.$route.query)
   },
 })
 </script>

@@ -308,10 +308,10 @@
 import { defineComponent } from 'vue'
 import BacenImage from '@/components/imagesSVG/partnersLogo/bacen.image.vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
-
 export default defineComponent({
   name: 'FooterComponent',
   components: { BacenImage },
+  
   data() {
     return {
       isVisible: false,

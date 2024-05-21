@@ -26,6 +26,7 @@ import BannerXoAluguel from '@/components/getOutRent/bannerXoAluguel.component.v
 import FooterSection from '@/components/getOutRent/footerSection.component.vue'
 import PopUpVideo from '@/components/base/popUpVideo.component.vue'
 import { defineComponent } from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'GetOutRent',
@@ -53,6 +54,9 @@ export default defineComponent({
       videoStyle: 'w-full h-[36rem] mr-auto ml-auto rounded-2xl ',
       videoUrl: 'https://www.youtube.com/embed/XgvSqZf8PM0',
     }
+  },
+  mounted() {
+    this.$root.utms = useObjectToQueryString(this.$route.query)
   },
 })
 </script>

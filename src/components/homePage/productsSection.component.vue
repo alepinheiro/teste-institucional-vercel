@@ -53,9 +53,10 @@
     </component>
   </section>
 </template>
-<script lang="ts" setup>
+<script lang="ts">
+import { defineComponent, ref, computed, markRaw, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
 import { SwiperOptions } from 'swiper/types'
-import { markRaw } from 'vue'
 import PercentIcon from '@/components/homePage/icons/percentIcon.component.vue'
 import CalendarIcon from '@/components/homePage/icons/calendarIcon.component.vue'
 import BuildingIcon from '@/components/homePage/icons/buildingIcon.component.vue'
@@ -64,114 +65,134 @@ import DollarBagIcon from '@/components/homePage/icons/dollarBag.component.vue'
 import CarIcon from '@/components/homePage/icons/carIcon.component.vue'
 import information from '@/configurations/information'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import useWindowSize from '@/composables/useWindowSize'
 
-const sliderOptions: SwiperOptions = {
-  spaceBetween: 20,
-  slidesPerView: 1.2,
-  centeredSlides: true,
-  autoHeight: false,
-  pagination: {
-    enabled: true,
-    clickable: true,
-  },
-  autoplay: {
-    delay: 8000,
-  },
-  breakpoints: {
-    767: {
-      slidesPerView: 2.5,
-    },
-    1021: {
-      slidesPerView: 3.5,
-    },
-    1277: {
-      slidesPerView: 4,
-      centeredSlides: false,
-    },
-  },
-}
+export default defineComponent({
+  setup() {
+    const route = useRoute()
+    const { width } = useWindowSize()
+    const utm = 'utm_source=organico&utm_medium=' + route.path
+    const pagination = computed(() => width.value < 1024)
+    
+    const sliderOptions = ref<SwiperOptions>({
+      spaceBetween: 20,
+      slidesPerView: 1.2,
+      centeredSlides: true,
+      autoHeight: false,
+      pagination: {
+        enabled: true,
+        clickable: true,
+      },
+      autoplay: {
+        delay: 8000,
+      },
+      breakpoints: {
+        767: {
+          slidesPerView: 2.5,
+        },
+        1021: {
+          slidesPerView: 3.5,
+        },
+        1277: {
+          slidesPerView: 4,
+          centeredSlides: false,
+        },
+      },
+    })
 
-const steps = [
-  {
-    title: 'Crédito com Garantia de Imóvel',
-    description: 'Use seu imóvel quitado como garantia para conseguir crédito.',
-    features: [
+    const steps = ref([
       {
-        icon: markRaw(PercentIcon),
-        text: 'Taxas a partir de <b>1,09% a.m.</b> + indexadores.',
+        title: 'Crédito com Garantia de Imóvel',
+        description: 'Use seu imóvel quitado como garantia para conseguir crédito.',
+        features: [
+          {
+            icon: markRaw(PercentIcon),
+            text: 'Taxas a partir de <b>1,09% a.m.</b> + indexadores.',
+          },
+          {
+            icon: markRaw(CalendarIcon),
+            text: 'Escolha o prazo: pague em até <b>240 meses.</b>',
+          },
+          {
+            icon: markRaw(DollarSignIcon),
+            text: 'Até <b>60% do valor</b> do imóvel como capital.',
+          },
+        ],
+        moreInformation: '/home-equity',
       },
       {
-        icon: markRaw(CalendarIcon),
-        text: 'Escolha o prazo: pague em até <b>240 meses.</b>',
+        title: 'Financiamento Imobiliário',
+        description: 'Financie seu imóvel com as melhores taxas e os melhores prazos.',
+        features: [
+          {
+            icon: markRaw(PercentIcon),
+            text: 'Taxas a partir de <b> 9,70% a.a. </b> + indexadores.',
+          },
+          {
+            icon: markRaw(CalendarIcon),
+            text: 'Pagamento flexível em até <b>420 meses.</b>',
+          },
+          {
+            icon: markRaw(BuildingIcon),
+            text: 'Financie em mais de <b>20 bancos parceiros.</b>',
+          },
+        ],
+        moreInformation: '/financiamento-imobiliario',
       },
       {
-        icon: markRaw(DollarSignIcon),
-        text: 'Até <b>60% do valor</b> do imóvel como capital.',
+        title: 'Crédito com Garantia Veicular',
+        description: 'Use seu carro, caminhão ou utilitário como garantia.',
+        features: [
+          {
+            icon: markRaw(PercentIcon),
+            text: 'Crédito a partir de <b>1,59% a.m.</b> + taxas.',
+          },
+          {
+            icon: markRaw(CalendarIcon),
+            text: 'Pague em até 60 meses. <b>Você escolhe.</b>',
+          },
+          {
+            icon: markRaw(DollarBagIcon),
+            text: 'Use seu crédito como <b>você quiser.</b>',
+          },
+        ],
+        moreInformation: '/emprestimo-com-garantia-de-veiculo',
       },
-    ],
-    moreInformation: '/home-equity',
-  },
-  {
-    title: 'Financiamento Imobiliário',
-    description:
-      'Financie seu imóvel com as melhores taxas e os melhores prazos.',
-    features: [
       {
-        icon: markRaw(PercentIcon),
-        text: 'Taxas a partir de <b> 9,70% a.a. </b> + indexadores.',
+        title: 'Financiamento Veicular',
+        description: 'Simule on-line e grátis e financie o carro dos seus sonhos.',
+        features: [
+          {
+            icon: markRaw(PercentIcon),
+            text: 'Taxas a partir de <b>1,49% a.m.</b> + indexadores.',
+          },
+          {
+            icon: markRaw(CalendarIcon),
+            text: 'Pagamento em até <b>60 meses ou 5 anos.</b>',
+          },
+          {
+            icon: markRaw(CarIcon),
+            text: 'Financie carros novos ou até seminovos.',
+          },
+        ],
+        moreInformation: '/financiamento-veicular',
       },
-      {
-        icon: markRaw(CalendarIcon),
-        text: 'Pagamento flexível em até <b>420 meses.</b>',
-      },
-      {
-        icon: markRaw(BuildingIcon),
-        text: 'Financie em mais de <b>20 bancos parceiros.</b>',
-      },
-    ],
-    moreInformation: '/financiamento-imobiliario',
-  },
+    ])
 
-  {
-    title: 'Crédito com garantia Veicular',
-    description: 'Use seu carro, caminhão ou utilitário como garantia.',
-    features: [
-      {
-        icon: markRaw(PercentIcon),
-        text: 'Crédito a partir de <b>1,59% a.m.</b> + taxas.',
-      },
-      {
-        icon: markRaw(CalendarIcon),
-        text: 'Pague em até 60 meses. <b>Você escolhe.</b>',
-      },
-      {
-        icon: markRaw(DollarBagIcon),
-        text: 'Use seu crédito como <b>você quiser.</b>',
-      },
-    ],
-    moreInformation: '/emprestimo-com-garantia-de-veiculo',
-  },
-  {
-    title: 'Financiamento Veicular',
-    description: 'Simule on-line e grátis e financie o carro dos seus sonhos.',
-    features: [
-      {
-        icon: markRaw(PercentIcon),
-        text: 'Taxas a partir de <b>1,49% a.m.</b> + indexadores.',
-      },
-      {
-        icon: markRaw(CalendarIcon),
-        text: 'Pagamento em até <b>60 meses ou 5 anos.</b>',
-      },
-      {
-        icon: markRaw(CarIcon),
-        text: 'Financie carros novos ou até seminovos.',
-      },
-    ],
-    moreInformation: '/financiamento-veicular',
-  },
-]
+    onMounted(() => {
+      sliderOptions.value.pagination = pagination.value
+    })
+
+    return {
+      information,
+      useObjectToQueryString,
+      sliderOptions,
+      steps
+    }
+  }
+})
 </script>
+
 
 <style lang="scss" scoped>
 ::part(bullet) {

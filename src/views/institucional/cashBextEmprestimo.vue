@@ -82,7 +82,7 @@ defineProps<{
 
 const app = getCurrentInstance()
 const route = useRoute()
-
+const utm = 'utm_source=organico&utm_medium=emprestimo-com-garantia-de-imovel'
 const menuColor = ref(window.innerWidth > 667 ? 'black' : 'white')
 
 const setMenuColorOnResize = () => {

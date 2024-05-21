@@ -23,8 +23,7 @@
             <a
               class="py-4 px-6 bg-[#C7C7C7] hover:bg-[#D0FE42] text-black text-sm font-bold rounded"
               :href="
-                $options.information.bestHubApp.subscribe +
-                useObjectToQueryString($route.query)
+                $options.information.bestHubApp.subscribe +$root.utms
               "
               target="_blank"
             >
@@ -92,5 +91,7 @@ export default defineComponent({
       ],
     }
   },
+  mounted() {
+  }
 })
 </script>

@@ -77,37 +77,50 @@
     </div>
   </section>
 </template>
-<script lang="ts" setup>
+
+<script lang="ts">
+import { defineComponent, ref, getCurrentInstance } from 'vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import information from '@/configurations/information'
 import CalendarIcon from '@/assets/svg/calendarWithClock.vue'
 import InputsForm from '@/components/finanBextLp/heroForm.component.vue'
 import PercentIcon from '@/assets/svg/percentWithBackground.vue'
-import information from '@/configurations/information'
-import { ref } from 'vue'
-import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
-import { useRoute } from 'vue-router';
 
-const route = useRoute()
+export default defineComponent({
+  components: {
+    CalendarIcon,
+    InputsForm,
+    PercentIcon
+  },
+  data() {
+    const formData = ref({
+      assetValue: 500000,
+      creditValue: 400000,
+    })
 
-const formData = ref<{
-  assetValue: number
-  creditValue: number
-}>({
-  assetValue: 500000,
-  creditValue: 400000,
+    const cards = [
+      {
+        id: 'percent',
+        icon: PercentIcon,
+        description: 'Taxas a partir de 9,70% a.a. + taxas referencial',
+      },
+      {
+        id: 'calendar',
+        icon: CalendarIcon,
+        description: 'Pague em até 420 meses',
+      },
+    ]
+
+    return {
+      formData,
+      cards
+    }
+  },
+  methods: {
+    onSubmit() {
+      window.open(information.appSimulator + this.$root.utms, '_blank')
+    }
+  }
 })
-const onSubmit = () => window.open(information.appSimulator + useObjectToQueryString(route.query), '_blank')
-
-const cards = [
-  {
-    id: 'percent',
-    icon: PercentIcon,
-    description: 'Taxas a partir de 9,70% a.a. + taxas referencial',
-  },
-  {
-    id: 'calendar',
-    icon: CalendarIcon,
-    description: 'Page em até 420 meses',
-  },
-]
-
 </script>
+

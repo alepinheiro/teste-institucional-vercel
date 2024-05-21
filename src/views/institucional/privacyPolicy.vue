@@ -545,11 +545,10 @@ export default defineComponent({
   },
   data() {
     return {
-      isVisible: false,
+      isVisible: false
     }
   },
   mounted() {
-    console.log(this.$route.query)
     this.$root.utms = useObjectToQueryString(this.$route.query)
   },
 })

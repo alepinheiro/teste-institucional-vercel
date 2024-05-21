@@ -15,7 +15,7 @@ const information = {
   },
   socialMediaUTM: {
     youtube:
-      'https://www.youtube.com/c/SejaBest/videos?sub_confirmation=1&utm_source=Lpbestnews&utm_medium=Youbest&utm_campaign=Youbest',
+      'https://www.youtube.com/@bextplay',
     linkedin:
       'https://www.linkedin.com/newsletters/6916790645441359872/?utm_source=Lpbextnews&utm_medium=BextNewslinkedin&utm_campaign=Bextnews/',
     telegram:

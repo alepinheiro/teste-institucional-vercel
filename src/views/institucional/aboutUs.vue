@@ -72,7 +72,9 @@
       },
     },
     data() {
-      return {};
+      return {
+        utm:'utm_source=organico&utm_medium=sobre'
+      };
     },
     mounted() {
       this.$root.utms = useObjectToQueryString(this.$route.query);

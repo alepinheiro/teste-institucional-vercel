@@ -33,6 +33,7 @@ import BestHub from '@/components/bestBroker/bestHub.component.vue'
 import OfferSection from '@/components/bestBroker/offerSection.component.vue'
 import FooterSection from '@/components/bestBroker/footerSection.component.vue'
 import PopUpVideo from '@/components/base/popUpVideo.component.vue'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
 export default defineComponent({
   name: 'BestBrokerLP',
@@ -63,6 +64,9 @@ export default defineComponent({
       videoStyle: 'w-full h-[36rem] mr-auto ml-auto rounded-2xl ',
       videoUrl: 'https://www.youtube.com/embed/BlVZJTj7jZk',
     }
+  },
+  mounted() {
+    this.$root.utms = useObjectToQueryString(this.$route.query)
   },
 })
 </script>

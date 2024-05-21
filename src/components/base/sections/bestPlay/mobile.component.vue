@@ -1,5 +1,5 @@
 <template>
-  <section >
+  <section>
     <div class="overflow-hidden flex-grow flex">
       <div class="w-full">
         <div class="overflow-hidden flex h-full pt-30 -mr-12">
@@ -12,9 +12,8 @@
     <div class="bg-[#181818] bg-gradient-to-br to-black from-transparent w-full mt-auto flex">
       <div class="my-auto">
         <div class="flex flex-col gap-5 py-10 px-5">
-          <img :src="$options.imageConfig.brand.youtubeLogo.image"
-            :alt="$options.imageConfig.brand.youtubeLogo.alt" :title="$options.imageConfig.brand.youtubeLogo.alt"
-            class="h-16" />
+          <img :src="$options.imageConfig.brand.youtubeLogo.image" :alt="$options.imageConfig.brand.youtubeLogo.alt"
+            :title="$options.imageConfig.brand.youtubeLogo.alt" class="h-16" />
 
           <div class="flex flex-col gap-5 text-white">
             <div class="flex flex-col gap-5 justify-center">
@@ -40,8 +39,7 @@
                 mercado financeiro, visando levá-lo à sua melhor versão.
               </p>
             </div>
-            <a :href="'https://www.youtube.com/@SejaBest' +
-            useObjectToQueryString($route.query)
+            <a :href="`${$options.information.socialMedia.youtube}${$root.utms}`
             " class="bg-primary w-fit rounded-xl px-6 py-4 mx-auto font-bold">
               Inscreva-se agora
             </a>
@@ -58,10 +56,10 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import { defineComponent, ref } from 'vue'
 import { gsap } from 'gsap'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
-
 export default defineComponent({
   name: 'BestPlay',
   components: { BestPlayLogo },
+
   props: {
     title: {
       type: String,
@@ -103,6 +101,8 @@ export default defineComponent({
     }
   },
   mounted() {
+
+    this.$root.utms = useObjectToQueryString(this.$route.query)
     this.translateToTop(this.bestPlayMockup)
   },
   methods: {

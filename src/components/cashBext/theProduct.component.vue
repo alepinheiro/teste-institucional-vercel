@@ -53,32 +53,44 @@
     </div>
   </section>
 </template>
-<script lang="ts" setup>
-import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+
+<script lang="ts">
+import { defineComponent } from 'vue'
 import { useRoute } from 'vue-router'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 
-const route = useRoute()
+export default defineComponent({
+  data() {
+    const route = useRoute()
+    const products = [
+      {
+        id: 1,
+        tax: 1.09,
+        title: 'cashBext',
+      },
+      {
+        id: 2,
+        tax: 2.85,
+        title: 'Crédito Consignado',
+      },
+      {
+        id: 3,
+        tax: 6.35,
+        title: 'Empréstimo pessoal',
+      },
+      {
+        id: 4,
+        tax: 8.26,
+        title: 'Cheque especial',
+      },
+    ]
 
-const products = [
-  {
-    id: 1,
-    tax: 1.09,
-    title: 'cashBext',
-  },
-  {
-    id: 2,
-    tax: 2.85,
-    title: 'Crédito Consignado',
-  },
-  {
-    id: 3,
-    tax: 6.35,
-    title: 'Empréstimo pessoal',
-  },
-  {
-    id: 4,
-    tax: 8.26,
-    title: 'Cheque especial',
-  },
-]
+    return {
+      useObjectToQueryString ,
+      route,
+      products
+    }
+  }
+})
 </script>
+

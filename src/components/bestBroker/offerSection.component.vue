@@ -76,13 +76,14 @@
 import { defineComponent } from 'vue'
 import GradientBackground from '@/components/bestBroker/gradientBackground.component.vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import { useRoute } from 'vue-router'
 
 export default defineComponent({
   name: 'OfferSection',
   components: { GradientBackground },
   data() {
     return {
-      useObjectToQueryString,
+      useObjectToQueryString
     }
   },
 })

@@ -40,11 +40,7 @@ export default defineComponent({
       default: true,
     },
   },
-  data() {
-    return {}
-  },
   mounted(){
-    console.log(this.$route.query)
     this.$root.utms = useObjectToQueryString(this.$route.query)
   }
 })

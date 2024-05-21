@@ -62,7 +62,6 @@
 import { defineComponent } from 'vue'
 import TopBar from '@/components/structure/topBar/index.component.vue'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
-
 export default defineComponent({
   name: 'TopBarVideo',
   components: {

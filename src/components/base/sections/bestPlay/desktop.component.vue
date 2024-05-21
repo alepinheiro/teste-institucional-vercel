@@ -36,8 +36,7 @@
               Explore temas como crédito, financiamento, empreendedorismo e
               mercado financeiro, visando levá-lo à sua melhor versão.
             </p>
-            <a :href="'https://www.youtube.com/@SejaBest' +
-        useObjectToQueryString($route.query)
+            <a :href="`${$options.information.socialMedia.youtube}${$root.utms}`
         " class="bg-lightPrimary w-fit rounded-xl px-6 py-4 mx-auto font-bold ml-0">
               Inscreva-se agora
             </a>
@@ -54,7 +53,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import { defineComponent, ref } from 'vue'
 import { gsap } from 'gsap'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
-
+import { useRoute } from 'vue-router'
 export default defineComponent({
   name: 'BestPlayDesktop',
   components: { BestPlayLogo },
@@ -96,9 +95,11 @@ export default defineComponent({
           description: 'Inscritos no canal',
         },
       ],
+      route: useRoute(),
     }
   },
   mounted() {
+    this.$root.utms=useObjectToQueryString(this.route.query)
     this.translateToTop(this.bestPlayMockup)
   },
   methods: {

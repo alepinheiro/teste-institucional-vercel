@@ -53,6 +53,7 @@ import information from '@/configurations/information'
 import { topOfSales } from '@/configurations/images'
 import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
 import Products from '@/components/homePage/productsSection.component.vue'
+import { useRoute } from 'vue-router'
 export default defineComponent({
   name: 'HeroSection',
   components: {
@@ -60,6 +61,7 @@ export default defineComponent({
   },
   data() {
     const topOfSalesSeals = topOfSales('black')
+    const route = useRoute()
     return {
       information,
       loadedPage: window,

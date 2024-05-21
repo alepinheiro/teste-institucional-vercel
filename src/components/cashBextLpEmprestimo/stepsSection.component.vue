@@ -55,64 +55,76 @@
     </div>
   </section>
 </template>
-<script setup lang="ts">
-import { SwiperOptions } from 'swiper/types'
-import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+<script lang="ts">
+import { defineComponent } from 'vue'
 import { useRoute } from 'vue-router'
+import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
+import type { SwiperOptions } from 'swiper/types'
 
-const route = useRoute()
-const sliderOptions: SwiperOptions = {
-  spaceBetween: 20,
-  slidesPerView: 'auto',
-  pagination: true,
-  autoplay: {
-    delay: 8000,
-  },
-  breakpoints: {
-    1280: {
-      slidesPerView: 4,
-    },
-  },
-}
+export default defineComponent({
+  data() {
+    const route = useRoute()
+    const sliderOptions: SwiperOptions = {
+      spaceBetween: 20,
+      slidesPerView: 'auto',
+      pagination: true,
+      autoplay: {
+        delay: 8000,
+      },
+      breakpoints: {
+        1280: {
+          slidesPerView: 4,
+        },
+      },
+    }
 
-const stepCards = [
-  {
-    id: 1,
-    icon: 'fa-solid fa-layer-group',
-    title: 'Simule',
-    description:
-      'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
-    callToAction: [
-      'Simule agora',
-      `https://simulador.bext.vc/${useObjectToQueryString(route.query)}`,
-    ],
-  },
-  {
-    id: 2,
-    icon: 'fa-solid fa-file',
-    title: 'Documentação',
-    description:
-      'Para uma análise de emprestimo detalhada, envie os documentos solicitados. <b>Então seus dados serão analisados e, em seguida, uma proposta será enviada.</b>',
-    callToAction: ['Baixe o checklist', `https://simulador.bext.vc/${useObjectToQueryString(route.query)}`],
-  },
-  {
-    id: 3,
-    icon: 'fa-solid fa-search',
-    title: 'Avaliação e jurídico',
-    description:
-      'Nesta etapa, um engenheiro avalia quanto o imóvel vale. Além disso, é feita uma análise para conferir a <b>situação jurídica da propriedade e validar o bem como uma garantia.</b>',
-    callToAction: null,
-  },
-  {
-    id: 4,
-    icon: 'fa-solid fa-circle-dollar-to-slot',
-    title: 'Liberação',
-    description:
-      'Agora a documentação é encaminhada para o cartório e você assina os documentos digitalmente. <b>O seu bem é então alienado e seu recurso liberado na sua conta!</b>',
-    callToAction: null,
-  },
-]
+    const stepCards = [
+      {
+        id: 1,
+        icon: 'fa-solid fa-layer-group',
+        title: 'Simule',
+        description:
+          'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
+        callToAction: [
+          'Simule agora',
+          `https://simulador.bext.vc/${useObjectToQueryString(route.query)}`,
+        ],
+      },
+      {
+        id: 2,
+        icon: 'fa-solid fa-file',
+        title: 'Documentação',
+        description:
+          'Para uma análise de emprestimo detalhada, envie os documentos solicitados. <b>Então seus dados serão analisados e, em seguida, uma proposta será enviada.</b>',
+        callToAction: ['Baixe o checklist', `https://simulador.bext.vc/${useObjectToQueryString(route.query)}`],
+      },
+      {
+        id: 3,
+        icon: 'fa-solid fa-search',
+        title: 'Avaliação e jurídico',
+        description:
+          'Nesta etapa, um engenheiro avalia quanto o imóvel vale. Além disso, é feita uma análise para conferir a <b>situação jurídica da propriedade e validar o bem como uma garantia.</b>',
+        callToAction: null,
+      },
+      {
+        id: 4,
+        icon: 'fa-solid fa-circle-dollar-to-slot',
+        title: 'Liberação',
+        description:
+          'Agora a documentação é encaminhada para o cartório e você assina os documentos digitalmente. <b>O seu bem é então alienado e seu recurso liberado na sua conta!</b>',
+        callToAction: null,
+      },
+    ]
+
+    return {
+      route,
+      sliderOptions,
+      stepCards
+    }
+  }
+})
 </script>
+
 <style lang="scss" scoped>
 @screen sm {
   .swiper-slide-active {

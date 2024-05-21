@@ -102,10 +102,10 @@ export default defineComponent({
       ],
       videoStyle:
         'w-full h-80 mr-auto ml-auto  xl:rounded-br-2xl lg:rounded-br-2xl md:rounded-br-2xl',
+      utm:'utm_source=organico&utm_medium=faq'
     }
   },
   mounted() {
-    console.log(this.$route.query)
     this.$root.utms = useObjectToQueryString(this.$route.query)
   },
 })
