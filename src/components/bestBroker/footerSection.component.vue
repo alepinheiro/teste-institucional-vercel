@@ -7,8 +7,8 @@
       <div
         class="flex flex-row gap-5 sm:w-full items-center justify-center sm:pb-6"
       >
-        <img src="/images/logoBest/logoGray.svg" class="h-12 w-auto" />
-        <img src="/images/bestBroker/logoBestHubGray.svg" class="h-14 w-auto" />
+        <img :src="$options.imageConfig.brand.whiteLogo.image" :alt="$options.imageConfig.brand.whiteLogo.alt" class="h-12 w-auto" />
+        <img src="/images/bestBroker/logoBestHub.svg" class="h-14 w-auto" />
       </div>
 
       <div class="text-zinc-600 text-sm text-center sm:hidden md:hidden">

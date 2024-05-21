@@ -70,14 +70,14 @@ export default defineComponent({
         icon: 'fa-solid fa-layer-group',
         title: '1. Simule',
         text: 'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
-        link: [`https://simulador.bext.vc/${useObjectToQueryString(route.query)}`, 'Simule agora'],
+        link: [`https://simulador.bext.vc/imovel${useObjectToQueryString(route.query)}`, 'Simule agora'],
       },
       {
         id: 2,
         icon: 'fa-solid fa-file',
         title: '2. Documentação',
         text: 'Para uma análise de crédito detalhada, envie os documentos solicitados.<b> Então seus dados serão analisados e, em seguida, uma proposta será enviada </b>',
-        link: [`https://simulador.bext.vc/${useObjectToQueryString(route.query)}`, 'Baixe o checklist'],
+        link: [`https://simulador.bext.vc/imovel${useObjectToQueryString(route.query)}`, 'Baixe o checklist'],
       },
       {
         id: 3,

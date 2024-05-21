@@ -39,9 +39,7 @@
                   <div class="w-full ">
                     <inputMoney id="value" v-model="value" class="w-full text-xl sm:text-base mb-4" label="" placeholder="" />
                     <div class="py-3 px-8 w-full bg-primary rounded-xl text-white font-bold text-center">
-                        <a :href="$options.information.appVehicleSimulator +
-                          useObjectToQueryString($route.query)
-                          " style="text-decoration: none" 
+                        <a :href="$options.information.appVehicleSimulator +$root.utms" style="text-decoration: none" 
                           aria-label="Clique aqui para simular seu financiamento" target="_blank">
                           Simular
                         </a>

@@ -118,7 +118,7 @@ export default defineComponent({
   },
   methods: {
     onSubmit() {
-      window.open(information.appSimulator + this.$root.utms, '_blank')
+      window.open(information.appRealEstateSimulator + this.$root.utms, '_blank')
     }
   }
 })

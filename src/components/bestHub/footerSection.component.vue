@@ -6,9 +6,8 @@
     >
       <RouterLink :to="'/' + $root.utms" class="block sm:w-5/12 mx-auto">
         <img
-          :src="$options.imageConfig.logoSejabestWhite"
-          alt="Logo Bext "
-          title="Bext"
+          :src="$options.imageConfig.brand.whiteLogo.image" 
+          :alt="$options.imageConfig.brand.whiteLogo.alt"
           class="w-40 sm:w-11/12 h-auto"
         />
       </RouterLink>

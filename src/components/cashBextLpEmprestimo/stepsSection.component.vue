@@ -87,7 +87,7 @@ export default defineComponent({
           'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
         callToAction: [
           'Simule agora',
-          `https://simulador.bext.vc/${useObjectToQueryString(route.query)}`,
+          `https://simulador.bext.vc/imovel${useObjectToQueryString(route.query)}`,
         ],
       },
       {
@@ -96,7 +96,7 @@ export default defineComponent({
         title: 'Documentação',
         description:
           'Para uma análise de emprestimo detalhada, envie os documentos solicitados. <b>Então seus dados serão analisados e, em seguida, uma proposta será enviada.</b>',
-        callToAction: ['Baixe o checklist', `https://simulador.bext.vc/${useObjectToQueryString(route.query)}`],
+        callToAction: ['Baixe o checklist', `https://simulador.bext.vc/imovel${useObjectToQueryString(route.query)}`],
       },
       {
         id: 3,
