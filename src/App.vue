@@ -1,20 +1,18 @@
 <template>
   <div class="w-full defaultFont selection:bg-primary selection:text-white">
-    <LoadingBrandChange />
     <RouterView />
     <NotificationPopUp />
   </div>
 </template>
 
 <script lang="ts">
-  import LoadingBrandChange from '@/components/structure/loadingBrandChange.component.vue';
   import NotificationPopUp from '@/components/base/notificationPopUp.component.vue';
   import { NotificationInterface } from '@/interfaces/notification.interface';
   import { defineComponent } from 'vue';
   import { register } from 'swiper/element/bundle';
 
   export default defineComponent({
-    components: { NotificationPopUp, LoadingBrandChange },
+    components: { NotificationPopUp },
     props: {
       utmQuery: {
         type: String,
