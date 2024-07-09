@@ -14,6 +14,11 @@ export const routes: Array<RouteRecordRaw> = [
     props: {
       showMenu: true,
     },
+    beforeEnter: async (to, from, next) => {
+      const image = new Image();
+      image.src = '/images/webp/Home/heroBackground-sm.webp';
+      next();
+    },
   },
   {
     path: '/sobre',

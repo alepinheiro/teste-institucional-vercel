@@ -2,7 +2,10 @@
   <section>
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full justify-center items-end overflow-hidden">
+      <div v-if="showHeroImage" class="h-96 w-full"></div>
       <picture
+        v-else
+        fetchpriority="high"
         class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 min-lg:right-0 min-lg:h-screen md:hidden mx-auto">
         <source
           media="(max-width: 767px)"
@@ -16,6 +19,7 @@
 
         <img
           src="/images/webp/Home/heroBackground-sm.webp"
+          fetchpriority="high"
           class="h-full w-full object-cover"
           alt="" />
       </picture>
@@ -83,7 +87,6 @@
   import { defineComponent } from 'vue';
   import { topOfSales } from '@/configurations/images';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
-  import { useRoute } from 'vue-router';
   export default defineComponent({
     name: 'HeroSection',
     components: {
@@ -91,13 +94,19 @@
     },
     data() {
       const topOfSalesSeals = topOfSales('black');
-      const route = useRoute();
+
       return {
         information,
-        loadedPage: window,
         topOfSalesSeals,
+        loadedPage: window,
+        showHeroImage: false,
         useObjectToQueryString,
       };
+    },
+    mounted() {
+      window.addEventListener('DOMContentLoaded', () => {
+        this.showHeroImage = true;
+      });
     },
   });
 </script>
