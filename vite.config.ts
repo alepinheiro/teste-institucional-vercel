@@ -1,16 +1,13 @@
-import alias from '@rollup/plugin-alias'
-import vue from '@vitejs/plugin-vue'
-import { defineConfig } from 'vite'
-import { resolve } from 'path'
+import alias from '@rollup/plugin-alias';
+import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
+import convertImagesToWebP from './src/plugins/vite-plugin-webp';
 
-const projectRootDir = resolve(__dirname)
+const projectRootDir = resolve(__dirname);
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    alias(),
-    vue(),
-  ],
   resolve: {
     alias: {
       '@': resolve(projectRootDir, 'src'),
@@ -27,5 +24,6 @@ export default defineConfig({
     target: ['edge90', 'chrome90', 'firefox90', 'safari15'],
     chunkSizeWarningLimit: 1500,
   },
+  plugins: [alias(), vue(), convertImagesToWebP()],
   // optimizeDeps: { exclude: ["swiper/vue", "swiper/types"], },
-})
+});
