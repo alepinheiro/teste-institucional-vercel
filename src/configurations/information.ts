@@ -1,7 +1,7 @@
 const information = {
   site: {
-    url:'https://bext.vc',
-    name: 'www.bext.vc'
+    url: 'https://bext.vc',
+    name: 'www.bext.vc',
   },
   socialMedia: {
     facebook: 'https://www.facebook.com/bext.vc',
@@ -14,8 +14,7 @@ const information = {
       'https://api.whatsapp.com/send?1=pt_br&phone=554733110180&text=simular',
   },
   socialMediaUTM: {
-    youtube:
-      'https://www.youtube.com/@bextplay',
+    youtube: 'https://www.youtube.com/@bextplay',
     linkedin:
       'https://www.linkedin.com/newsletters/6916790645441359872/?utm_source=Lpbextnews&utm_medium=BextNewslinkedin&utm_campaign=Bextnews/',
     telegram:
@@ -32,14 +31,15 @@ const information = {
   appRealEstateSimulator: 'https://simulador.bext.vc/imovel',
   appVehicleSimulator: 'https://simulador.bext.vc/veiculo',
   hotmartXoAluguel: 'https://pay.hotmart.com/K85603528M',
-  linkRebranding:'https://portal.seja.best/sejabest-agora-e-bext-uma-mudanca-de-marca-para-externar-o-proposito-de-multiplicar-na-vida-da-pessoas-transformando-o-acesso-ao-credito-com-muito-mais-tecnologia-e-possibilidades/',
+  linkRebranding:
+    'https://portal.seja.best/sejabest-agora-e-bext-uma-mudanca-de-marca-para-externar-o-proposito-de-multiplicar-na-vida-da-pessoas-transformando-o-acesso-ao-credito-com-muito-mais-tecnologia-e-possibilidades/',
   bestHubApp: {
-    login: 'https://besthub.app/',
+    url: 'https://besthub.app/',
     subscribe: 'https://besthub.app/pre-cadastro',
   },
   bestBroker: {
     hotmart: 'https://pay.hotmart.com/V86683542A',
   },
-}
+};
 
-export default information
+export default information;

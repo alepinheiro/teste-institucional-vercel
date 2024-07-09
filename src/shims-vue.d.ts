@@ -33,7 +33,7 @@ declare module 'vue' {
       utms: string;
     };
     $options: {
-      information?: typeof information;
+      information: typeof information;
       imageConfig: typeof imageConfig;
     };
   }

@@ -15,14 +15,19 @@ import information from './configurations/information';
 const app = createApp(App);
 
 // componentes globais
-// import { library, dom } from '@fortawesome/fontawesome-svg-core'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import {
+  faArrowRight,
+  faBars,
+  faChevronDown,
+} from '@fortawesome/free-solid-svg-icons';
 // import { fas } from '@fortawesome/free-solid-svg-icons'
 // import { far } from '@fortawesome/free-regular-svg-icons'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 
-// library.add(fas, far, fab)
+library.add(faBars, faArrowRight, faChevronDown);
 // dom.watch()
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 app.component('Icon', FontAwesomeIcon);
 app.component('InputBase', import('@/components/base/inputBase.component.vue'));

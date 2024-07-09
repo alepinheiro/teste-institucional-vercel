@@ -28,15 +28,13 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import MenuDesktop from '@/components/structure/menu.component.vue';
-  import MenuMobile from '@/components/structure/menuMobile.component.vue';
-  import LogoSejaBestSVG from '@/components/base/logos/logoSejaBestSVG.component.vue';
+  import MenuMobile from '@/components/structure/topBar/menuMobile/index.vue';
 
   export default defineComponent({
     name: 'TopBar',
     components: {
       MenuDesktop,
       MenuMobile,
-      LogoSejaBestSVG,
     },
     props: {
       customMobileMenuColor: {
