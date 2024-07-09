@@ -1,76 +1,63 @@
-import { createApp, defineAsyncComponent } from 'vue'
-import App from './App.vue'
-import router from './router/index'
-import VueTheMask from 'vue-the-mask' //importante campos inputs com mascara
-import moment from 'moment' // formata data
-import VueCookies from 'vue-cookies'
-import { createHead } from '@unhead/vue'
+import { createApp, defineAsyncComponent } from 'vue';
+import App from './App.vue';
+import router from './router/index';
+import VueTheMask from 'vue-the-mask'; //importante campos inputs com mascara
+import moment from 'moment'; // formata data
+import VueCookies from 'vue-cookies';
+import { createHead } from '@unhead/vue';
 
-import VueScrollTo from 'vue-scrollto'
+import VueScrollTo from 'vue-scrollto';
 
 // configurações do projeto
-import image from './configurations/images'
-import information from './configurations/information'
+import image from './configurations/images';
+import information from './configurations/information';
 
-const app = createApp(App)
+const app = createApp(App);
 
 // componentes globais
-import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
+// import { library, dom } from '@fortawesome/fontawesome-svg-core'
+// import { fas } from '@fortawesome/free-solid-svg-icons'
+// import { far } from '@fortawesome/free-regular-svg-icons'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
 
-library.add(fas, far, fab)
-dom.watch()
+// library.add(fas, far, fab)
+// dom.watch()
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-app.component(
-  'FontAwesomeIcon',
-  defineAsyncComponent(() => import('@fortawesome/vue-fontawesome')),
-)
-app.component(
-  'InputBase',
-  defineAsyncComponent(
-    () => import('@/components/base/inputBase.component.vue'),
-  ),
-)
+app.component('Icon', FontAwesomeIcon);
+app.component('InputBase', import('@/components/base/inputBase.component.vue'));
 app.component(
   'InputMoney',
-  defineAsyncComponent(
-    () => import('@/components/base/inputMoney.component.vue'),
-  ),
-)
+  import('@/components/base/inputMoney.component.vue'),
+);
 app.component(
   'SelectBase',
-  defineAsyncComponent(
-    () => import('@/components/base/selectBase.component.vue'),
-  ),
-)
+  import('@/components/base/selectBase.component.vue'),
+);
 app.component(
   'VideoBase',
   defineAsyncComponent(
     () => import('@/components/base/videoBase.component.vue'),
   ),
-)
+);
 app.component(
   'FooterComponent',
-  defineAsyncComponent(
-    () => import('@/components/structure/theFooter.component.vue'),
-  ),
-)
+  import('@/components/structure/theFooter.component.vue'),
+);
 
 app.mixin({
   created() {
-    this.$options.imageConfig = image
-    this.$options.information = information
+    this.$options.imageConfig = image;
+    this.$options.information = information;
   },
-})
+});
 
 app.config.globalProperties.$filters = {
   // formatos aceitos listados em https://momentjs.com/
   formatDate(date: Date, format: string) {
-    return moment(date).format(format)
+    return moment(date).format(format);
   },
-}
+};
 
 app
   // @ts-expect-error plugin error
@@ -79,4 +66,4 @@ app
   .use(createHead())
   .use(VueScrollTo)
   .use(router)
-  .mount('#app')
+  .mount('#app');

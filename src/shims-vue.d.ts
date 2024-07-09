@@ -1,12 +1,13 @@
-import { NotificationInterface } from '@/interfaces/notification.interface'
-import { ComponentInternalInstance } from 'vue'
-import type information from '@/configurations/information'
-import { FbEvents } from '@/interfaces/analytics/fbEvents'
+import { NotificationInterface } from '@/interfaces/notification.interface';
+import { ComponentInternalInstance } from 'vue';
+import type information from '@/configurations/information';
+import { FbEvents } from '@/interfaces/analytics/fbEvents';
+import imageConfig from './configurations/images';
 
 declare module '*.vue' {
-  import { Component } from 'vue'
-  const component: Component
-  export default component
+  import { Component } from 'vue';
+  const component: Component;
+  export default component;
 }
 
 declare global {
@@ -20,19 +21,20 @@ declare global {
 
 declare module 'vue-router' {
   interface RouteMeta {
-    title: string
-    description: string
+    title: string;
+    description: string;
   }
 }
 
 declare module 'vue' {
   interface ComponentCustomProperties {
     $root: ComponentInternalInstance & {
-      notificationData?: NotificationInterface
-      utms: string
-    }
+      notificationData?: NotificationInterface;
+      utms: string;
+    };
     $options: {
-      information?: information
-    }
+      information?: typeof information;
+      imageConfig: typeof imageConfig;
+    };
   }
 }
