@@ -13,6 +13,7 @@ export default defineConfig({
       '@': resolve(projectRootDir, 'src'),
     },
   },
+  plugins: [alias(), vue(), convertImagesToWebP()],
   server: {
     host: '0.0.0.0',
     port: 10086,
@@ -24,6 +25,5 @@ export default defineConfig({
     target: ['edge90', 'chrome90', 'firefox90', 'safari15'],
     chunkSizeWarningLimit: 1500,
   },
-  plugins: [alias(), vue(), convertImagesToWebP()],
-  // optimizeDeps: { exclude: ["swiper/vue", "swiper/types"], },
+  // optimizeDeps: { exclude: ['swiper/vue', 'swiper/types'] },
 });

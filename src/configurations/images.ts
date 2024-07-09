@@ -1,22 +1,22 @@
 export const topOfSales = (color: 'black' | 'white') => [
   {
     id: 'cashMe',
-    src: '/images/topOfSales/' + color + '/cashMe.png',
+    src: '/images/webp/topOfSales/' + color + '/cashMe.webp',
     alt: 'Campeão de vendas CashMe - 2022/2023',
   },
   {
     id: 'crediblue',
-    src: '/images/topOfSales/' + color + '/crediBlue.png',
+    src: '/images/webp/topOfSales/' + color + '/crediBlue.webp',
     alt: 'Parceiro Elite CrediBlue',
   },
   {
     id: 'daycoval',
-    src: '/images/topOfSales/' + color + '/daycoval.png',
+    src: '/images/webp/topOfSales/' + color + '/daycoval.webp',
     alt: 'Campeão de vendas Daycoval - 2023',
   },
   {
     id: 'inter',
-    src: '/images/topOfSales/' + color + '/inter.png',
+    src: '/images/webp/topOfSales/' + color + '/inter.webp',
     alt: 'Top Player imobiliário Inter',
   },
 ];

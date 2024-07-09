@@ -26,7 +26,7 @@ export default function convertImagesToWebP(): Plugin {
         try {
           await sharp(filePath).webp({ quality: 80 }).toFile(outputFilePath);
           console.log(
-            `✅ Converted ${relativePath} ➡️ ${path.join('webp', relativePath)}`,
+            `✅ Converted ${relativePath} ➡️  ${path.join('webp', relativePath).replace('png', 'webp')}`,
           );
         } catch (error) {
           console.error(`Failed to convert ${relativePath}:`, error);

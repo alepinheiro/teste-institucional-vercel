@@ -8,11 +8,11 @@ module.exports = {
   darkMode: 'media', // or 'class'
   theme: {
     screens: {
-      sm: { max: '667px' },
-      md: { min: '668px', max: '1199px' },
-      lg: { min: '1200px', max: '1799px' },
-      xl: { min: '1800px' },
-      'min-md': { min: '668px' },
+      sm: { max: '767px' },
+      md: { min: '768px', max: '1023px' },
+      lg: { min: '1024px', max: '1279px' },
+      xl: { min: '1280px' },
+      'min-md': { min: '768px' },
       'min-lg': { min: '1024px' },
     },
     colors: {
@@ -70,7 +70,7 @@ module.exports = {
         grey: 'var(--warrenGrey)',
         gainsboro: 'var(--warrenGainsboro)',
         metropole: 'var(--warrenMetropole)',
-        solitude:  'var(--warrenSolitude)',
+        solitude: 'var(--warrenSolitude)',
         hintOfRed: 'var(--warrenHintOfRed)',
         whisper: 'var(--warrenWhisper)',
       },
@@ -79,7 +79,7 @@ module.exports = {
         freeSpeechAquamarine: '#079269',
         burntOrange: '#FF7235',
         nightRider: '#333131',
-      }
+      },
     },
     columns: {
       auto: 'auto',
@@ -450,9 +450,9 @@ module.exports = {
       ],
       'Sizmo-Pro': ['FF Sizmo Pro', 'sans-serif'],
       'Public-Sans': ['Public Sans', 'sans-serif'],
-      'Sizmo': ['Sizmo', 'sans-serif'],
-      'darkerGrotesque': ['Darker Grotesque', 'sans-serif'],
-      'Mulish': ['Mulish', 'sans-serif']
+      Sizmo: ['Sizmo', 'sans-serif'],
+      darkerGrotesque: ['Darker Grotesque', 'sans-serif'],
+      Mulish: ['Mulish', 'sans-serif'],
     },
     fontSize: {
       '2xs': ['0.6rem', { lineHeight: '0.60rem' }],
@@ -1057,7 +1057,5 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 };
