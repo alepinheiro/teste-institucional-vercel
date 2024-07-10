@@ -6,7 +6,7 @@ import imageConfig from './configurations/images';
 
 declare module '*.vue' {
   import { Component } from 'vue';
-  const component: Component;
+  const component: DefineComponent<{}, {}, any>;
   export default component;
 }
 
@@ -38,3 +38,10 @@ declare module 'vue' {
     };
   }
 }
+
+declare module 'vue-the-mask';
+declare module 'vue-cookies';
+declare module 'vue-scrollto';
+declare module '@fortawesome/fontawesome-svg-core';
+declare module '@fortawesome/vue-fontawesome';
+declare module '@unhead/vue';

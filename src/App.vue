@@ -1,7 +1,6 @@
 <template>
   <div class="w-full defaultFont selection:bg-primary selection:text-white">
     <RouterView />
-    <NotificationPopUp />
   </div>
 </template>
 
@@ -11,10 +10,6 @@
   import { register } from 'swiper/element/bundle';
 
   export default defineComponent({
-    components: {
-      NotificationPopUp: () =>
-        '@/components/base/notificationPopUp.component.vue',
-    },
     props: {
       utmQuery: {
         type: String,

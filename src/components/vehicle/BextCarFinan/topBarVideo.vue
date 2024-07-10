@@ -79,13 +79,15 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
+  import InputMoney from '@/components/base/inputMoney.component.vue';
   import TopBar from '@/components/structure/topBar/index.component.vue';
+  import { defineComponent } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   export default defineComponent({
     name: 'TopBarVideo',
     components: {
       TopBar,
+      InputMoney,
     },
     props: {
       showMenu: {

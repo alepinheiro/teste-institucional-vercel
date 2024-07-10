@@ -9,7 +9,7 @@
       class="absolute top-96 -right-96 -z-10 hidden md:block -scale-x-100"
       alt="" />
     <TopBar color="primary" class="text-textPrimary" />
-    <HeroSection />
+    <IndexHeroSection />
 
     <BusinessPartners
       title="A melhor plataforma multibancos."
@@ -44,10 +44,8 @@
   </div>
 </template>
 <script lang="ts">
-  import HeroSection from '@/components/homePage/heroSection.component.vue';
-  const TopBar = defineAsyncComponent(
-    () => import('@/components/structure/topBar/index.component.vue'),
-  );
+  import TopBar from '@/components/structure/topBar/index.component.vue';
+
   const Rebranding = defineAsyncComponent(
     () => import('@/components/base/sections/rebranding/index.componente.vue'),
   );
@@ -75,7 +73,6 @@
   export default defineComponent({
     name: 'HomePage',
     components: {
-      HeroSection,
       TopBar,
       Mission,
       BestPlay,

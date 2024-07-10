@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
     "target": "ESNext",
     "module": "ESNext",
@@ -14,8 +16,13 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["ESNext", "dom"],
-    "typeRoots": ["../../node_modules/@types/"],
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "strictNullChecks": true,
@@ -30,5 +37,7 @@
     ".storybook/**/*.ts",
     "src/translations/i18n.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
