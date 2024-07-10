@@ -2,36 +2,35 @@
   <section>
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full justify-center items-end overflow-hidden">
-      <div v-if="showHeroImage" class="h-96 w-full"></div>
       <picture
-        v-else
-        fetchpriority="high"
         class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 min-lg:right-0 min-lg:h-screen md:hidden mx-auto">
         <source
+          type="image/webp"
           media="(max-width: 767px)"
           srcset="/images/webp/Home/heroBackground-sm.webp" />
 
         <source
+          type="image/webp"
           media="(min-width: 1024px)"
           srcset="/images/webp/Home/heroBackground-lg.webp" />
 
-        <source srcset="/images/webp/Home/heroBackground.webp" />
+        <source
+          type="image/webp"
+          srcset="/images/webp/Home/heroBackground.webp" />
 
         <img
-          src="/images/webp/Home/heroBackground-sm.webp"
+          alt=""
+          loading="eager"
           fetchpriority="high"
           class="h-full w-full object-cover"
-          alt="" />
+          src="/images/webp/Home/heroBackground-sm.webp" />
       </picture>
 
       <img
+        loading="lazy"
+        role="presentation"
         src="/images/webp/Home/linesMd.webp"
-        class="hidden md:block absolute inset-0 w-full object-contain -z-10"
-        alt="" />
-      <!-- <img
-        src="/images/webp/Home/heroBackground-lg.webp"
-        class="hidden lg:block absolute inset-0 w-5/12 object-contain ml-auto -z-10"
-        alt="" /> -->
+        class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
 
       <div
         class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto min-lg:items-start text-center min-lg:text-left mt-8 min-md:mt-0 px-5 min-md:pt-32">
@@ -60,7 +59,9 @@
               :key="id"
               :src="src"
               :alt="alt"
-              class="h-9 min-md:w-full min-md:h-12 mx-0 max-w-[33%] min-md:max-w-[20%] flex-grow object-contain" />
+              sizes="(min-width: 768px) 48h, 36h"
+              loading="lazy"
+              class="h-9 min-md:w-full min-md:h-12 mx-0 max-w-[33%] min-md:max-w-[20%] flex-grow object-contain max-h-full" />
           </div>
         </div>
 
@@ -70,7 +71,9 @@
           "
           class="bg-primary px-5 py-3 rounded-xl text-white font-bold sm:mt-2"
           target="_blank">
-          <span class="xl:hidden lg:hidden md:hidden">Simule seu crédito</span>
+          <span class="xl:hidden lg:hidden md:hidden">
+            Simule seu crédito
+          </span>
           <span class="hidden xl:block text-2xl lg:block lg:text-xl md:block">
             Clique aqui e simule gratuitamente
           </span>
@@ -102,11 +105,6 @@
         showHeroImage: false,
         useObjectToQueryString,
       };
-    },
-    mounted() {
-      window.addEventListener('DOMContentLoaded', () => {
-        this.showHeroImage = true;
-      });
     },
   });
 </script>
