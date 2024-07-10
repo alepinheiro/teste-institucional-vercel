@@ -38,6 +38,37 @@
           );
           return [{}];
         },
+        title:
+          'Bext - Crédito imobiliário - Sem filas, sem gerentes, sem complexidade.',
+        meta: [
+          {
+            name: 'description',
+            content:
+              'A Bext é um fintech focada no mercado de crédito, atuando por meio de dois produtos: Financiamento Imobiliário e empréstimo com garantia de imóvel (Home Equity). Mais de 10 anos de experiência em crédito Imobiliario, temos uma missão clara: Transformar o acesso ao Crédito Imobiliário para todos os brasileiros.',
+          },
+          {
+            name: 'keywords',
+            content:
+              'crédito imobiliário, crédito automotivo, menores taxas, pagamento em até 60x, pagamento em até 240x, pagamento em até 420x, plataforma multibancos, processo agilizado, assessoria personalizada, atendimento 7 dias por semana, sem burocracias, sem filas, foco no cliente',
+          },
+          {
+            name: 'robots',
+            content:
+              'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
+          },
+          {
+            name: 'googlebot',
+            content: 'index, follow, all',
+          },
+          {
+            name: 'author',
+            content: 'Bext',
+          },
+          {
+            name: 'publisher',
+            content: 'Bext',
+          },
+        ],
       });
     },
     data(props) {
