@@ -44,6 +44,11 @@ export default function convertImagesToWebP(): Plugin {
           const relativeFilePath = path.join(relativeDir, file);
           const stat = fs.statSync(filePath);
 
+          // Verifica se o arquivo está dentro da pasta webp
+          if (relativeFilePath.startsWith('webp')) {
+            continue;
+          }
+
           if (
             stat.isFile() &&
             ['.webp', '.png', '.jpg', '.jpeg'].includes(
