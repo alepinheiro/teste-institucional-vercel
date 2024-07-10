@@ -86,9 +86,8 @@
     },
     created() {
       import('@/configurations/color.css');
-      import('@/assets/css/tailwind.css');
-      import('@/configurations/customStyle.css');
       import('@/configurations/themeCustomization.scss');
+      import('@/configurations/customStyle.css');
     },
     mounted() {
       register();
