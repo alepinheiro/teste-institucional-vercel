@@ -1,36 +1,36 @@
-import type { Preview } from '@storybook/vue3'
-import { setup } from '@storybook/vue3'
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
+import type { Preview } from '@storybook/vue3';
+import { setup } from '@storybook/vue3';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
-import('@/configurations/color.css')
-import('@/assets/css/tailwind.css')
-import('@/configurations/customStyle.css')
-import('@/configurations/themeCustomization.scss')
-import image from '@/configurations/images'
-import information from '@/configurations/information'
+import('@/configurations/color.css');
+import('@/assets/css/tailwind.css');
+import('@/configurations/customStyle.css');
+import('@/configurations/themeCustomization.scss');
+import image from '@/configurations/images';
+import information from '@/configurations/information';
 
-import { library, dom } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { register } from 'swiper/element/bundle'
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+// import { far } from '@fortawesome/free-regular-svg-icons'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+import { register } from 'swiper/element/bundle';
 // import { createMetaManager } from 'vue-meta'
-import { createHead } from '@unhead/vue'
+import { createHead } from '@unhead/vue';
 
 setup((app) => {
-  app.use(createHead())
+  app.use(createHead());
   // app.use(createMetaManager())
   app.mixin({
     created() {
-      this.$options.imageConfig = image
-      this.$options.information = information
+      this.$options.imageConfig = image;
+      this.$options.information = information;
     },
-  })
-})
+  });
+});
 
-register()
-library.add(fas, far, fab)
-dom.watch()
+register();
+library.add(fas);
+dom.watch();
 
 const customViewports = {
   smMin: {
@@ -82,7 +82,7 @@ const customViewports = {
       height: '850px',
     },
   },
-}
+};
 
 const preview: Preview = {
   parameters: {
@@ -94,9 +94,9 @@ const preview: Preview = {
       },
     },
     viewport: {
-      viewports: { ...customViewports, ...INITIAL_VIEWPORTS, },
+      viewports: { ...customViewports, ...INITIAL_VIEWPORTS },
     },
   },
-}
+};
 
-export default preview
+export default preview;

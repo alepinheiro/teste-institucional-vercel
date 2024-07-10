@@ -23,6 +23,16 @@ export default function convertImagesToWebP(): Plugin {
           fs.mkdirSync(outputDir, { recursive: true });
         }
 
+        // Verifica se a imagem WebP já existe e se a imagem original foi modificada
+        if (fs.existsSync(outputFilePath)) {
+          const originalStat = fs.statSync(filePath);
+          const webpStat = fs.statSync(outputFilePath);
+          if (originalStat.mtime <= webpStat.mtime) {
+            console.log(`🟡 Skipping ${relativePath} (not modified)`);
+            return;
+          }
+        }
+
         try {
           await sharp(filePath).webp({ quality: 80 }).toFile(outputFilePath);
           console.log(
