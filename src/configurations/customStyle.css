@@ -1,26 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 @font-face {
+  font-weight: 300;
+  font-style: normal;
   font-family: 'Public Sans Light';
   src:
     local('Public Sans Light'),
     url('/fonts/Public_Sans/static/PublicSans-Light.ttf') format('truetype');
 }
 @font-face {
+  font-weight: 600;
+  font-style: normal;
   font-family: 'Public Sans';
   src:
     local('Public Sans Light'),
     url('/fonts/Public_Sans/static/PublicSans-Regular.ttf') format('truetype');
 }
 @font-face {
+  font-weight: 700;
+  font-style: normal;
   font-family: 'Public Sans Bold';
   src:
     local('Public Sans Bold'),
     url('/fonts/Public_Sans/static/PublicSans-Bold.ttf') format('truetype');
 }
 @font-face {
+  font-weight: 400;
+  font-style: normal;
   font-family: 'Darker Grotesque';
   src:
     local('Darker Grotesque'),
@@ -28,6 +32,8 @@
       format('truetype');
 }
 @font-face {
+  font-weight: 700;
+  font-style: normal;
   font-family: 'Darker Grotesque Bold';
   src:
     local('Darker Grotesque Bold'),
@@ -35,6 +41,8 @@
 }
 
 @font-face {
+  font-weight: 600;
+  font-style: normal;
   font-family: 'FF Sizmo Pro';
   src: url('/fonts/Sizmo_Pro/SizmoPro-Demibold.eot');
   src:
@@ -45,8 +53,6 @@
     url('/fonts/Sizmo_Pro/SizmoPro-Demibold.woff2') format('woff2'),
     url('/fonts/Sizmo_Pro/SizmoPro-Demibold.woff') format('woff'),
     url('/fonts/Sizmo_Pro/SizmoPro-Demibold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
 }
 
 @font-face {
@@ -413,7 +419,7 @@
 }
 .lineDecoration:hover {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524DD);
+  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524dd);
   border-image-slice: 1;
   height: 120px;
   border-radius: 10px;
@@ -421,16 +427,15 @@
 
 .textDecoration {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524DD);
+  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524dd);
   border-image-slice: 1;
 }
 
 .decoration.router-link-active {
   border-bottom: 5px solid transparent;
-  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524DD);
+  border-image: linear-gradient(45deg, rgba(255, 0, 0, 0), #0524dd);
   border-image-slice: 1;
 }
-
 
 /* move from / to  */
 
@@ -566,7 +571,6 @@
 .borderGrey {
   border: 1px solid #a7a8aa99;
 }
-
 
 .borderWhite {
   border: solid 1px white;

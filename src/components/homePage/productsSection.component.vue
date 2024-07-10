@@ -15,7 +15,7 @@
     <div class="pb-12 pt-8 xl:max-w-7xl max-w-[100vw]">
       <Swiper
         v-bind="{
-          loop: true,
+          loop: useWindow.width.value < 1024,
           spaceBetween: 20,
           autoHeight: false,
           slidesPerView: 1.2,
@@ -78,6 +78,7 @@
 </template>
 
 <script lang="ts">
+  import 'swiper/css/bundle';
   import BuildingIcon from '@/components/homePage/icons/buildingIcon.component.vue';
   import CalendarIcon from '@/components/homePage/icons/calendarIcon.component.vue';
   import CarIcon from '@/components/homePage/icons/carIcon.component.vue';
@@ -85,12 +86,11 @@
   import DollarSignIcon from '@/components/homePage/icons/dollarSign.component.vue';
   import PercentIcon from '@/components/homePage/icons/percentIcon.component.vue';
   import information from '@/configurations/information';
+  import { Pagination, Autoplay, Navigation } from 'swiper/modules';
+  import { Swiper, SwiperSlide } from 'swiper/vue';
   import { defineComponent, ref, markRaw } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
-  import { Swiper, SwiperSlide } from 'swiper/vue';
-  import { Pagination, Autoplay, Navigation } from 'swiper/modules';
-
-  import 'swiper/css/bundle';
+  import { useWindowSize } from '@vueuse/core';
 
   export default defineComponent({
     components: { Swiper, SwiperSlide },
@@ -183,7 +183,7 @@
         Pagination,
         information,
         Navigation,
-        // sliderOptions,
+        useWindow: useWindowSize(),
         useObjectToQueryString,
       };
     },

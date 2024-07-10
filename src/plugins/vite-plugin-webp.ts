@@ -46,7 +46,9 @@ export default function convertImagesToWebP(): Plugin {
 
           if (
             stat.isFile() &&
-            ['.png', '.jpg', '.jpeg'].includes(path.extname(file).toLowerCase())
+            ['.webp', '.png', '.jpg', '.jpeg'].includes(
+              path.extname(file).toLowerCase(),
+            )
           ) {
             await convertToWebP(filePath, relativeFilePath);
           } else if (stat.isDirectory()) {
