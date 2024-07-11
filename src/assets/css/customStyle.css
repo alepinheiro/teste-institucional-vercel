@@ -234,13 +234,13 @@
 }
 
 .titleFont {
-  font-family: 'Darker Grotesque';
+  @apply font-darkerGrotesque;
 }
 .titleFontBold {
-  font-family: 'Darker Grotesque Bold';
+  @apply font-darkerGrotesque font-bold;
 }
 .defaultFont {
-  font-family: 'Public Sans';
+  @apply font-Public-Sans;
 }
 
 .bgBextCar {

@@ -82,7 +82,7 @@
 
 <script lang="ts">
   import Products from '@/components/homePage/productsSection.component.vue';
-  import ResponsiveImage from '@/components/base/image.component.vue';
+
   import information from '@/configurations/information';
   import type { ImgHTMLAttributes } from 'vue';
   import { defineComponent } from 'vue';
@@ -93,7 +93,6 @@
     name: 'HeroSection',
     components: {
       Products,
-      ResponsiveImage,
     },
     data() {
       const topOfSalesSeals = topOfSales('black');

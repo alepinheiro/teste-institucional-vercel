@@ -33,7 +33,8 @@ import VueTheMask from 'vue-the-mask'; //importante campos inputs com mascara
 import VueCookies from 'vue-cookies';
 import { createHead } from '@unhead/vue';
 import VueScrollTo from 'vue-scrollto';
-
+import ResponsiveImage from '@/components/base/image.component.vue';
+app.component('ResponsiveImage', ResponsiveImage);
 app
   // @ts-expect-error plugin error
   .use(VueTheMask)
