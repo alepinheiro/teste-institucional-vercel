@@ -46,17 +46,25 @@ export function generateResponsiveImages(): Plugin {
             outputDir,
             `${basename}-${name}.webp`,
           );
-          try {
-            await sharp(filePath)
-              .resize({ width })
-              .webp({ quality: 80 })
-              .toFile(outputFilePath);
-            console.log(`✅ Converted ${relativePath} to ${outputFilePath}`);
-          } catch (error) {
-            console.error(
-              `❌ Failed to convert ${relativePath} to ${outputFilePath}:`,
-              error,
-            );
+          const shouldConvert =
+            !fs.existsSync(outputFilePath) ||
+            fs.statSync(filePath).mtime > fs.statSync(outputFilePath).mtime;
+
+          if (shouldConvert) {
+            try {
+              await sharp(filePath)
+                .resize({ width })
+                .webp({ quality: 80 })
+                .toFile(outputFilePath);
+              console.log(`✅ Converted ${relativePath} to ${outputFilePath}`);
+            } catch (error) {
+              console.error(
+                `❌ Failed to convert ${relativePath} to ${outputFilePath}:`,
+                error,
+              );
+            }
+          } else {
+            console.log(`🟡 Skipping ${relativePath}, already up to date.`);
           }
         }
       };
