@@ -2,7 +2,9 @@ import alias from '@rollup/plugin-alias';
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import convertImagesToWebP from './src/plugins/vite-plugin-webp';
+import { convertImagesToWebP } from './src/plugins/convertImagesToWebP';
+import { findUnusedImages } from './src/plugins/findUnusedImages';
+import { generateResponsiveImages } from './src/plugins/generateResponsiveImages';
 
 const projectRootDir = resolve(__dirname);
 
@@ -13,7 +15,7 @@ export default defineConfig({
       '@': resolve(projectRootDir, 'src'),
     },
   },
-  plugins: [alias(), vue(), convertImagesToWebP()],
+  plugins: [alias(), vue(), generateResponsiveImages()],
   server: {
     host: '0.0.0.0',
     port: 10086,

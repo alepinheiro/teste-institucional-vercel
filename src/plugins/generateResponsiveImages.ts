@@ -1,45 +1,63 @@
 import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
-import type { Plugin } from 'vite';
+import { Plugin } from 'vite';
 
-export default function convertImagesToWebP(): Plugin {
+const breakpoints = {
+  sm: 767,
+  md: 1023,
+  lg: 1279,
+  xl: 1920,
+  'min-md': 768,
+  'min-lg': 1024,
+};
+
+const imageResolutions = [
+  { name: 'sm', width: breakpoints.sm },
+  { name: 'md', width: breakpoints['min-md'] },
+  { name: 'lg', width: breakpoints['min-lg'] },
+  { name: 'xl', width: breakpoints.xl },
+];
+
+export function generateResponsiveImages(): Plugin {
   return {
-    name: 'convert-images-to-webp',
+    name: 'generate-responsive-images',
     apply: 'build',
 
     async buildStart() {
       const imagesDir = path.resolve('./public/images');
       const webpDir = path.resolve('./public/images/webp');
 
-      const convertToWebP = async (filePath: string, relativePath: string) => {
+      const createResponsiveImages = async (
+        filePath: string,
+        relativePath: string,
+      ) => {
         const extname = path.extname(filePath);
         const basename = path.basename(filePath, extname);
         const outputDir = path.join(webpDir, path.dirname(relativePath));
-        const outputFilePath = path.join(outputDir, `${basename}.webp`);
 
         // Cria a pasta de saída se não existir
         if (!fs.existsSync(outputDir)) {
           fs.mkdirSync(outputDir, { recursive: true });
         }
 
-        // Verifica se a imagem WebP já existe e se a imagem original foi modificada
-        if (fs.existsSync(outputFilePath)) {
-          const originalStat = fs.statSync(filePath);
-          const webpStat = fs.statSync(outputFilePath);
-          if (originalStat.mtime <= webpStat.mtime) {
-            console.log(`🟡 Skipping ${relativePath} (not modified)`);
-            return;
-          }
-        }
-
-        try {
-          await sharp(filePath).webp({ quality: 80 }).toFile(outputFilePath);
-          console.log(
-            `✅ Converted ${relativePath} ➡️  ${path.join('webp', relativePath).replace('png', 'webp')}`,
+        for (const { name, width } of imageResolutions) {
+          const outputFilePath = path.join(
+            outputDir,
+            `${basename}-${name}.webp`,
           );
-        } catch (error) {
-          console.error(`Failed to convert ${relativePath}:`, error);
+          try {
+            await sharp(filePath)
+              .resize({ width })
+              .webp({ quality: 80 })
+              .toFile(outputFilePath);
+            console.log(`✅ Converted ${relativePath} to ${outputFilePath}`);
+          } catch (error) {
+            console.error(
+              `❌ Failed to convert ${relativePath} to ${outputFilePath}:`,
+              error,
+            );
+          }
         }
       };
 
@@ -48,7 +66,6 @@ export default function convertImagesToWebP(): Plugin {
         relativeDir: string = '',
       ) => {
         const files = fs.readdirSync(dir);
-
         for (const file of files) {
           const filePath = path.join(dir, file);
           const relativeFilePath = path.join(relativeDir, file);
@@ -61,11 +78,11 @@ export default function convertImagesToWebP(): Plugin {
 
           if (
             stat.isFile() &&
-            ['.webp', '.png', '.jpg', '.jpeg'].includes(
+            ['.png', '.jpg', '.jpeg', '.gif'].includes(
               path.extname(file).toLowerCase(),
             )
           ) {
-            await convertToWebP(filePath, relativeFilePath);
+            await createResponsiveImages(filePath, relativeFilePath);
           } else if (stat.isDirectory()) {
             await processDirectory(filePath, relativeFilePath);
           }

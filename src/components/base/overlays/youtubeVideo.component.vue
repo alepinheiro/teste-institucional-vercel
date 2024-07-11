@@ -4,20 +4,17 @@
       title="Overlay"
       aria-label="Fechar vídeo"
       class="fixed text-white inset-0 bg-black/80 content-[''] w-full"
-      @click="$emit('closeOverlay')"
-    ></button>
+      @click="$emit('closeOverlay')"></button>
     <Teleport to="body">
       <dialog
         open="true"
-        class="fixed inset-0 z-[200] bg-black bestHubDialogBox rounded-2xl"
-      >
+        class="fixed inset-0 z-[200] bg-black bestHubDialogBox rounded-2xl">
         <div class="relative shadow-lg flex justify-center items-center">
           <button
             title="Fechar vídeo"
             aria-label="Fechar vídeo"
             class="absolute -top-4 -right-4 text-white/30 hover:text-white transition-all"
-            @click="$emit('closeOverlay')"
-          >
+            @click="$emit('closeOverlay')">
             <i class="fa-regular fa-circle-xmark"></i>
           </button>
           <iframe
@@ -26,8 +23,7 @@
             :src="`https://www.youtube.com/embed/${videoId}`"
             title="Financiamento imobiliário: Vale a pena fazer agora?"
             frameborder="0"
-            allowfullscreen
-          >
+            allowfullscreen>
           </iframe>
         </div>
       </dialog>
@@ -35,32 +31,31 @@
   </div>
 </template>
 <script setup lang="ts">
-defineProps<{
-  videoId: string
-}>()
+  defineProps<{
+    videoId: string;
+  }>();
 
-defineEmits(['closeOverlay'])
+  defineEmits(['closeOverlay']);
 </script>
 <style lang="scss" scoped>
-.overlay {
-  &::after {
-    @apply absolute inset-0 bg-black/60 z-10 blur-lg;
-    content: ' ';
-  }
-}
-
-.bh-videoPlayer {
-  @apply aspect-video;
-
-  @screen sm {
-    width: 80vw;
+  .overlay {
+    &::after {
+      @apply absolute inset-0 bg-black/60 z-10 blur-lg;
+      content: ' ';
+    }
   }
 
-  @screen md {
-    width: 75vw;
-  }
+  .bh-videoPlayer {
+    width: 50vw;
+    height: auto;
+    @apply aspect-video;
 
-  width: 50vw;
-  height: auto;
-}
+    @screen sm {
+      width: 80vw;
+    }
+
+    @screen md {
+      width: 75vw;
+    }
+  }
 </style>
