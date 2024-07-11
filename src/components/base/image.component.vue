@@ -84,7 +84,8 @@
       // },
       generateSrcset(size: string) {
         const src = this.generateSrc(this.imagePath, size);
-        const srcset = `${src} 1x, ${this.generateSrc(this.imagePath, `${size}@2x`)} 2x`;
+        // const srcset = `${src} 1x, ${this.generateSrc(this.imagePath, `${size}@2x`)} 2x`;
+        const srcset = `${src} 1x`;
         return srcset;
       },
     },

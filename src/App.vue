@@ -16,7 +16,7 @@
   import { NotificationInterface } from '@/interfaces/notification.interface';
   import { defineComponent } from 'vue';
   import { useHead } from '@unhead/vue';
-  import { useGoogleTagManager } from '@/composables/useGoogleTagManager';
+  // import { useGoogleTagManager } from '@/composables/useGoogleTagManager';
 
   export default defineComponent({
     props: {
@@ -83,15 +83,15 @@
     },
     mounted() {
       import('@/assets/css/customStyle.css');
-      document.addEventListener('DOMContentLoaded', () => {
-        useGoogleTagManager(
-          window,
-          document,
-          'script',
-          'dataLayer',
-          'GTM-KVJ4GJS',
-        );
-      });
+      // document.addEventListener('DOMContentLoaded', () => {
+      //   useGoogleTagManager(
+      //     window,
+      //     document,
+      //     'script',
+      //     'dataLayer',
+      //     'GTM-KVJ4GJS',
+      //   );
+      // });
       // window.onload = () => {
       //   useGoogleTagManager(
       //     window,
