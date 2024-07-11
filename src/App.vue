@@ -92,15 +92,15 @@
       //     'GTM-KVJ4GJS',
       //   );
       // });
-      // window.onload = () => {
-      //   useGoogleTagManager(
-      //     window,
-      //     document,
-      //     'script',
-      //     'dataLayer',
-      //     'GTM-KVJ4GJS',
-      //   );
-      // };
+      window.onload = () => {
+        useGoogleTagManager(
+          window,
+          document,
+          'script',
+          'dataLayer',
+          'GTM-KVJ4GJS',
+        );
+      };
     },
   });
 </script>
