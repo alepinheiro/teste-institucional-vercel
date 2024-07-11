@@ -9,12 +9,24 @@ app.component('IndexHeroSection', IndexHeroSection);
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import {
-  faArrowRight,
   faBars,
+  faCheck,
+  faXmark,
+  faArrowRight,
+  faVideoCamera,
   faChevronDown,
+  faPeopleGroup,
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faBars, faArrowRight, faChevronDown);
+library.add(
+  faBars,
+  faXmark,
+  faCheck,
+  faArrowRight,
+  faChevronDown,
+  faVideoCamera,
+  faPeopleGroup,
+);
 
 app.component('Icon', FontAwesomeIcon);
 
