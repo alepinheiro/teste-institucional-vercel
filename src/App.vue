@@ -87,9 +87,9 @@
     created() {
       import('@/configurations/color.css');
       import('@/configurations/themeCustomization.scss');
-      import('@/configurations/customStyle.css');
     },
     mounted() {
+      import('@/configurations/customStyle.css');
       register();
     },
   });
