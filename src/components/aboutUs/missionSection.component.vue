@@ -120,9 +120,14 @@
           <div
             class="absolute inset-0 w-full h-1/2 mt-auto bg-gradient-to-t from-black/70 -z-10"></div>
 
-          <img
-            :src="activeCard.image"
-            :alt="options[activeCard.id].title"
+          <ResponsiveImage
+            :imagePath="activeCard.image"
+            :imgAttrs="
+              {
+                loading: 'lazy',
+                alt: options[activeCard.id].title,
+              } as ImgHTMLAttributes
+            "
             class="object-cover h-full w-full absolute inset-0 -z-20" />
         </div>
       </div>
@@ -130,7 +135,7 @@
   </section>
 </template>
 <script lang="ts">
-  import { defineComponent, ref } from 'vue';
+  import { defineComponent, ImgHTMLAttributes, ref } from 'vue';
   import { gsap } from 'gsap';
   import useWindowSize from '@/composables/useWindowSize';
 
@@ -169,7 +174,7 @@
     data() {
       return {
         activeCard: {
-          image: '/images/webp/aboutUs/3Pilares/PilaresEducacaoCorMobile.webp',
+          image: '/images/aboutUs/3Pilares/PilaresEducacaoCorMobile.webp',
           id: 'education' as 'education' | 'technology' | 'humanizedExperience',
         },
         options: {
@@ -178,24 +183,21 @@
             title: '1. Educação',
             description:
               ' Produzimos conteúdos gratuitos para dar conhecimento aos processos de acesso ao crédito, explanando suas opções. Confira clicando abaixo:',
-            image:
-              '/images/webp/aboutUs/3Pilares/PilaresEducacaoCorMobile.webp',
+            image: '/images/aboutUs/3Pilares/PilaresEducacaoCorMobile.webp',
           },
           technology: {
             id: 'technology' as const,
             title: '2. Tecnologia',
             description:
               'o cliente tem acesso a uma plataforma open finance, intuitiva e rápida, onde suas possibilidades são multiplicadas e apresentadas através do nosso simulador.',
-            image:
-              '/images/webp/aboutUs/3Pilares/PilaresTecnologiaCorMobile.webp',
+            image: '/images/aboutUs/3Pilares/PilaresTecnologiaCorMobile.webp',
           },
           humanizedExperience: {
             id: 'humanizedExperience' as const,
             title: '3. Experiência Humanizada',
             description:
               'Transformamos o trauma do suporte bancário em uma jornada de troca, clareza e resultados. Nossos assessores estarão disponíveis durante todo o processo.',
-            image:
-              '/images/webp/aboutUs/3Pilares/PilaresExperienciaCorMobile.webp',
+            image: '/images/aboutUs/3Pilares/PilaresExperienciaCorMobile.webp',
           },
         },
       };

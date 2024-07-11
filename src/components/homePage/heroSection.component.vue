@@ -19,7 +19,7 @@
           {
             role: 'presentation',
             loading: 'lazy',
-            fetchpriority: 'high',
+            fetchpriority: 'low',
           } as ImgHTMLAttributes
         "
         class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
@@ -82,7 +82,6 @@
 
 <script lang="ts">
   import Products from '@/components/homePage/productsSection.component.vue';
-
   import information from '@/configurations/information';
   import type { ImgHTMLAttributes } from 'vue';
   import { defineComponent } from 'vue';
