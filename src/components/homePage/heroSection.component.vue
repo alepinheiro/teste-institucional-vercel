@@ -2,34 +2,21 @@
   <section>
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full justify-center items-end overflow-hidden">
-      <picture
-        class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 min-lg:right-0 min-lg:h-screen md:hidden mx-auto">
-        <source
-          type="image/webp"
-          media="(max-width: 767px)"
-          srcset="/images/webp/Home/heroBackground-sm.webp" />
+      <ResponsiveImage
+        imagePath="/images/Home/heroBackground-sm.webp"
+        :imgAttrs="{
+          loading: 'eager',
+          alt: 'Gaspar Motta - CEO Bext',
+        }"
+        class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 min-lg:right-0 min-lg:h-screen md:hidden mx-auto" />
 
-        <source
-          type="image/webp"
-          media="(min-width: 1024px)"
-          srcset="/images/webp/Home/heroBackground-lg.webp" />
-
-        <source
-          type="image/webp"
-          srcset="/images/webp/Home/heroBackground.webp" />
-
-        <img
-          alt=""
-          loading="eager"
-          fetchpriority="high"
-          class="h-full w-full object-cover"
-          src="/images/webp/Home/heroBackground-sm.webp" />
-      </picture>
-
-      <img
-        loading="lazy"
-        role="presentation"
-        src="/images/webp/Home/linesMd.webp"
+      <ResponsiveImage
+        imagePath="/images/Home/linesMd.webp"
+        :imgAttrs="{
+          role: 'presentation',
+          loading: 'lazy',
+          alt: 'Gaspar Motta - CEO Bext',
+        }"
         class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
 
       <div
@@ -53,15 +40,16 @@
             Premiada e Reconhecida pelo mercado:
           </h3>
           <div
-            class="flex flex-row justify-center min-lg:justify-start gap-4 flex-wrap w-fit">
-            <img
+            class="flex flex-row justify-center min-lg:justify-start gap-4 flex-wrap">
+            <ResponsiveImage
               v-for="{ alt, id, src } of topOfSalesSeals"
               :key="id"
-              :src="src"
-              :alt="alt"
-              sizes="(min-width: 768px) 48h, 36h"
-              loading="lazy"
-              class="h-9 min-md:w-full min-md:h-12 mx-0 max-w-[33%] min-md:max-w-[20%] flex-grow object-contain max-h-full" />
+              :imagePath="src"
+              :imgAttrs="{
+                loading: 'lazy',
+                alt,
+              }"
+              class="h-12 mx-0 object-contain" />
           </div>
         </div>
 
@@ -90,10 +78,13 @@
   import { defineComponent } from 'vue';
   import { topOfSales } from '@/configurations/images';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+  import ResponsiveImage from '@/components/base/image.component.vue';
+
   export default defineComponent({
     name: 'HeroSection',
     components: {
       Products,
+      ResponsiveImage,
     },
     data() {
       const topOfSalesSeals = topOfSales('black');

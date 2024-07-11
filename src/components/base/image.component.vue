@@ -8,34 +8,39 @@
       :srcset="generateSrcset(breakpoint.name)"
       :sizes="breakpoint.sizes" />
     <img
-      :alt="alt"
-      loading="eager"
-      fetchpriority="high"
+      v-bind="$props.imgAttrs"
       class="h-full w-full object-cover"
-      :src="generateSrc(imagePath, 'sm')" />
+      :src="generateSrc(imagePath, 'xs')" />
   </picture>
 </template>
 
-<script>
-  export default {
+<script lang="ts">
+  import { defineComponent, type PropType, type ImgHTMLAttributes } from 'vue';
+
+  export default defineComponent({
     name: 'ResponsiveImage',
     props: {
       imagePath: {
         type: String,
         required: true,
       },
-      alt: {
-        type: String,
-        default: '',
+      imgAttrs: {
+        type: Object as PropType<ImgHTMLAttributes>,
+        default: () => ({}),
       },
     },
     data() {
       return {
         breakpoints: [
           {
+            name: 'xs',
+            media: '(max-width: 320px)',
+            sizes: '(max-width: 320px) 100vw, 50vw',
+          },
+          {
             name: 'sm',
-            media: '(max-width: 767px)',
-            sizes: '(max-width: 767px) 100vw, 50vw',
+            media: '(min-width: 321px) and (max-width: 767px)',
+            sizes: '(min-width: 321px) and (max-width: 767px) 100vw, 50vw',
           },
           {
             name: 'md',
@@ -56,30 +61,32 @@
       };
     },
     methods: {
-      getFileName(imagePath) {
+      getFileName(imagePath: string) {
         const parts = imagePath.split('/');
         return parts[parts.length - 1];
       },
-      getFileDir(imagePath) {
+      getFileDir(imagePath: string) {
         const parts = imagePath.split('/');
         parts.pop();
         return parts.join('/');
       },
-      getFileBaseName(fileName) {
+      getFileBaseName(fileName: string) {
         return fileName.substring(0, fileName.lastIndexOf('.'));
       },
-      getFileExtension(fileName) {
-        return fileName.substring(fileName.lastIndexOf('.'));
-      },
-      generateSrc(imagePath, size) {
+      generateSrc(imagePath: string, size: string) {
         const fileName = this.getFileName(imagePath);
         const dirName = this.getFileDir(imagePath);
         const baseName = this.getFileBaseName(fileName);
-        return `${dirName}/${baseName}-${size}.webp`;
+        return `${dirName.replace('images', 'images/webp')}/${baseName}-${size}.webp`;
       },
-      generateSrcset(size) {
-        return `${this.generateSrc(this.imagePath, size)} 1x, ${this.generateSrc(this.imagePath, `${size}@2x`)} 2x`;
+      // generateSrcset(size: string) {
+      //   return `${this.generateSrc(this.imagePath, size)} 1x, ${this.generateSrc(this.imagePath, `${size}@2x`)} 2x`;
+      // },
+      generateSrcset(size: string) {
+        const src = this.generateSrc(this.imagePath, size);
+        const srcset = `${src} 1x`;
+        return srcset;
       },
     },
-  };
+  });
 </script>

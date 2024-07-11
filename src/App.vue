@@ -1,12 +1,13 @@
 <template>
   <div class="w-full defaultFont selection:bg-primary selection:text-white">
-    <noscript
-      ><iframe
+    <!-- <noscript>
+      <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-KVJ4GJS"
         height="0"
         width="0"
-        style="display: none; visibility: hidden"></iframe
-    ></noscript>
+        style="display: none; visibility: hidden">
+      </iframe>
+    </noscript> -->
     <RouterView />
   </div>
 </template>
@@ -14,7 +15,6 @@
 <script lang="ts">
   import { NotificationInterface } from '@/interfaces/notification.interface';
   import { defineComponent } from 'vue';
-  import { register } from 'swiper/element/bundle';
   import { useHead } from '@unhead/vue';
   import { useGoogleTagManager } from '@/composables/useGoogleTagManager';
 
@@ -29,13 +29,6 @@
     setup(props, ctx) {
       useHead({
         script() {
-          useGoogleTagManager(
-            window,
-            document,
-            'script',
-            'dataLayer',
-            'GTM-KVJ4GJS',
-          );
           return [{}];
         },
         title:
@@ -90,7 +83,15 @@
     },
     mounted() {
       import('@/assets/css/customStyle.css');
-      register();
+      window.onload = () => {
+        useGoogleTagManager(
+          window,
+          document,
+          'script',
+          'dataLayer',
+          'GTM-KVJ4GJS',
+        );
+      };
     },
   });
 </script>

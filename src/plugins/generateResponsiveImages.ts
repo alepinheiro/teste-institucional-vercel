@@ -4,6 +4,7 @@ import sharp from 'sharp';
 import { Plugin } from 'vite';
 
 const breakpoints = {
+  xs: 320,
   sm: 767,
   md: 1023,
   lg: 1279,
@@ -13,10 +14,16 @@ const breakpoints = {
 };
 
 const imageResolutions = [
+  { name: 'xs', width: breakpoints.xs },
+  { name: 'xs@2x', width: breakpoints.xs * 2 },
   { name: 'sm', width: breakpoints.sm },
+  { name: 'sm@2x', width: breakpoints.sm * 2 },
   { name: 'md', width: breakpoints['min-md'] },
+  { name: 'md@2x', width: breakpoints['min-md'] * 2 },
   { name: 'lg', width: breakpoints['min-lg'] },
+  { name: 'lg@2x', width: breakpoints['min-lg'] * 2 },
   { name: 'xl', width: breakpoints.xl },
+  { name: 'xl@2x', width: breakpoints.xl * 2 },
 ];
 
 export function generateResponsiveImages(): Plugin {
@@ -86,7 +93,7 @@ export function generateResponsiveImages(): Plugin {
 
           if (
             stat.isFile() &&
-            ['.png', '.jpg', '.jpeg', '.gif'].includes(
+            ['.png', '.jpg', '.jpeg', '.gif', '.webp'].includes(
               path.extname(file).toLowerCase(),
             )
           ) {

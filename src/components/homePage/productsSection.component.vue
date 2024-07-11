@@ -91,6 +91,7 @@
   import { defineComponent, ref, markRaw } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import { useWindowSize } from '@vueuse/core';
+  import { register } from 'swiper/element/bundle';
 
   export default defineComponent({
     components: { Swiper, SwiperSlide },
@@ -186,6 +187,9 @@
         useWindow: useWindowSize(),
         useObjectToQueryString,
       };
+    },
+    mounted() {
+      register();
     },
   });
 </script>
