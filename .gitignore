@@ -148,6 +148,8 @@ dist
 .vscode-test
 
 # yarn v2
+.yarn
+/.yarn
 .yarn/*
 yarn.lock
 .yarn/cache
@@ -155,6 +157,7 @@ yarn.lock
 .yarn/build-state.yml
 .yarn/install-state.gz
 *storybook.log
+.yarn/install-state.gz
 
 # Cypress cache
 /test-results/
