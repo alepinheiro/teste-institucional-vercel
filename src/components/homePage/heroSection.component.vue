@@ -4,18 +4,20 @@
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full justify-center items-end overflow-hidden">
       <ResponsiveImage
         imagePath="/images/Home/heroBackground-sm.webp"
-        :imgAttrs="{
-          loading: 'eager',
-          alt: 'Gaspar Motta - CEO Bext',
-        }"
+        :imgAttrs="
+          {
+            loading: 'eager',
+            fetchpriority: 'high',
+            alt: 'Gaspar Motta - CEO Bext',
+          } as ImgHTMLAttributes
+        "
         class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 min-lg:right-0 min-lg:h-screen md:hidden mx-auto" />
 
       <ResponsiveImage
         imagePath="/images/Home/linesMd.webp"
         :imgAttrs="{
           role: 'presentation',
-          loading: 'lazy',
-          alt: 'Gaspar Motta - CEO Bext',
+          loading: 'eager',
         }"
         class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
 
@@ -46,7 +48,8 @@
               :key="id"
               :imagePath="src"
               :imgAttrs="{
-                loading: 'lazy',
+                fetchpriority: 'high',
+                loading: 'eager',
                 alt,
               }"
               class="h-12 mx-0 object-contain" />
@@ -79,6 +82,7 @@
   import { topOfSales } from '@/configurations/images';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import ResponsiveImage from '@/components/base/image.component.vue';
+  import { ImgHTMLAttributes } from 'vue';
 
   export default defineComponent({
     name: 'HeroSection',

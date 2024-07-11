@@ -34,13 +34,13 @@
         breakpoints: [
           {
             name: 'xs',
-            media: '(max-width: 320px)',
-            sizes: '(max-width: 320px) 100vw, 50vw',
+            media: '(max-width: 420px)',
+            sizes: '(max-width: 420px) 100vw, 50vw',
           },
           {
             name: 'sm',
-            media: '(min-width: 321px) and (max-width: 767px)',
-            sizes: '(min-width: 321px) and (max-width: 767px) 100vw, 50vw',
+            media: '(min-width: 421px) and (max-width: 767px)',
+            sizes: '(min-width: 421px) and (max-width: 767px) 100vw, 50vw',
           },
           {
             name: 'md',
@@ -84,7 +84,7 @@
       // },
       generateSrcset(size: string) {
         const src = this.generateSrc(this.imagePath, size);
-        const srcset = `${src} 1x`;
+        const srcset = `${src} 1x, ${this.generateSrc(this.imagePath, `${size}@2x`)} 2x`;
         return srcset;
       },
     },

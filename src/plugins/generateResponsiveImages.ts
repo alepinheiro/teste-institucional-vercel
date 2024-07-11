@@ -4,7 +4,7 @@ import sharp from 'sharp';
 import { Plugin } from 'vite';
 
 const breakpoints = {
-  xs: 320,
+  xs: 420,
   sm: 767,
   md: 1023,
   lg: 1279,
