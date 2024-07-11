@@ -57,7 +57,7 @@
                   fetchpriority: 'high',
                 } as ImgHTMLAttributes
               "
-              class="h-12 mx-0 object-contain" />
+              class="h-9 min-md:h-12 mx-0 object-contain" />
           </div>
         </div>
 

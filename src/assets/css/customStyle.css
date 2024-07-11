@@ -1,43 +1,15 @@
 @font-face {
-  font-weight: 300;
-  font-style: normal;
-  font-family: 'Public Sans Light';
-  src:
-    local('Public Sans Light'),
-    url('/fonts/Public_Sans/static/PublicSans-Light.ttf') format('truetype');
-}
-@font-face {
-  font-weight: 600;
-  font-style: normal;
   font-family: 'Public Sans';
-  src:
-    local('Public Sans Light'),
-    url('/fonts/Public_Sans/static/PublicSans-Regular.ttf') format('truetype');
+  src: url('/fonts/Public_Sans/PublicSans-VariableFont.ttf')
+    format('truetype-variations');
+  font-weight: 1 999;
 }
+
 @font-face {
-  font-weight: 700;
-  font-style: normal;
-  font-family: 'Public Sans Bold';
-  src:
-    local('Public Sans Bold'),
-    url('/fonts/Public_Sans/static/PublicSans-Bold.ttf') format('truetype');
-}
-@font-face {
-  font-weight: 400;
-  font-style: normal;
   font-family: 'Darker Grotesque';
-  src:
-    local('Darker Grotesque'),
-    url('/fonts/Darker_Grotesque/DarkerGrotesque-Regular.ttf')
-      format('truetype');
-}
-@font-face {
-  font-weight: 700;
-  font-style: normal;
-  font-family: 'Darker Grotesque Bold';
-  src:
-    local('Darker Grotesque Bold'),
-    url('/fonts/Darker_Grotesque/DarkerGrotesque-Bold.ttf') format('truetype');
+  src: url('/fonts/Darker_Grotesque/DarkerGrotesque-Variable.ttf')
+    format('truetype-variations');
+  font-weight: 1 999;
 }
 
 @font-face {
