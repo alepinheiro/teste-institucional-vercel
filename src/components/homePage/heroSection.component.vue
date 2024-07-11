@@ -15,10 +15,13 @@
 
       <ResponsiveImage
         imagePath="/images/Home/linesMd.webp"
-        :imgAttrs="{
-          role: 'presentation',
-          loading: 'low',
-        }"
+        :imgAttrs="
+          {
+            role: 'presentation',
+            loading: 'lazy',
+            fetchpriority: 'high',
+          } as ImgHTMLAttributes
+        "
         class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
 
       <div
@@ -47,11 +50,13 @@
               v-for="{ alt, id, src } of topOfSalesSeals"
               :key="id"
               :imagePath="src"
-              :imgAttrs="{
-                fetchpriority: 'high',
-                loading: 'eager',
-                alt,
-              }"
+              :imgAttrs="
+                {
+                  alt,
+                  loading: 'eager',
+                  fetchpriority: 'high',
+                } as ImgHTMLAttributes
+              "
               class="h-12 mx-0 object-contain" />
           </div>
         </div>
@@ -77,12 +82,12 @@
 
 <script lang="ts">
   import Products from '@/components/homePage/productsSection.component.vue';
+  import ResponsiveImage from '@/components/base/image.component.vue';
   import information from '@/configurations/information';
+  import type { ImgHTMLAttributes } from 'vue';
   import { defineComponent } from 'vue';
   import { topOfSales } from '@/configurations/images';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
-  import ResponsiveImage from '@/components/base/image.component.vue';
-  import { ImgHTMLAttributes } from 'vue';
 
   export default defineComponent({
     name: 'HeroSection',
