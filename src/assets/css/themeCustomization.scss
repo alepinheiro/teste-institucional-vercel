@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  a {
+    @apply cursor-pointer;
+  }
+
   #bestProReleaseLandingPage {
     h1 {
       @apply text-5xl font-bold;

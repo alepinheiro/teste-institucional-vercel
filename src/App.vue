@@ -85,11 +85,11 @@
       };
     },
     created() {
-      import('@/configurations/color.css');
-      import('@/configurations/themeCustomization.scss');
+      import('@/assets/css/color.css');
+      import('@/assets/css/themeCustomization.scss');
     },
     mounted() {
-      import('@/configurations/customStyle.css');
+      import('@/assets/css/customStyle.css');
       register();
     },
   });
