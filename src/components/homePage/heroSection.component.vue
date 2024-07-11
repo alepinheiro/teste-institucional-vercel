@@ -2,16 +2,18 @@
   <section>
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full justify-center items-end overflow-hidden">
-      <ResponsiveImage
-        imagePath="/images/Home/heroBackground-sm.webp"
-        :imgAttrs="
-          {
-            loading: 'eager',
-            fetchpriority: 'high',
-            alt: 'Gaspar Motta - CEO Bext',
-          } as ImgHTMLAttributes
-        "
-        class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 min-lg:right-0 min-lg:h-screen md:hidden mx-auto" />
+      <div class="pl-6">
+        <ResponsiveImage
+          imagePath="/images/Home/heroBackground-sm.webp"
+          :imgAttrs="
+            {
+              loading: 'eager',
+              fetchpriority: 'high',
+              alt: 'Gaspar Motta - CEO Bext',
+            } as ImgHTMLAttributes
+          "
+          class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 lg:-right-56 xl:-right-[10%] min-lg:h-screen md:hidden mx-auto" />
+      </div>
 
       <ResponsiveImage
         imagePath="/images/Home/linesMd.webp"
