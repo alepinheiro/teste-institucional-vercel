@@ -83,7 +83,7 @@
     },
     mounted() {
       import('@/assets/css/customStyle.css');
-      window.onload = () => {
+      document.addEventListener('DOMContentLoaded', () => {
         useGoogleTagManager(
           window,
           document,
@@ -91,7 +91,16 @@
           'dataLayer',
           'GTM-KVJ4GJS',
         );
-      };
+      });
+      // window.onload = () => {
+      //   useGoogleTagManager(
+      //     window,
+      //     document,
+      //     'script',
+      //     'dataLayer',
+      //     'GTM-KVJ4GJS',
+      //   );
+      // };
     },
   });
 </script>

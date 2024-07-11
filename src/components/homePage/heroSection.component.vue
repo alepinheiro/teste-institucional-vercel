@@ -17,7 +17,7 @@
         imagePath="/images/Home/linesMd.webp"
         :imgAttrs="{
           role: 'presentation',
-          loading: 'eager',
+          loading: 'low',
         }"
         class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
 
