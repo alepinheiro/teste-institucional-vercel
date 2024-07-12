@@ -30,8 +30,8 @@ export const routes: Array<RouteRecordRaw> = [
     },
   },
   {
-    path: 'home-equity',
-    alias: ['credito-com-garantia-de-imovel', 'como-funciona'],
+    path: '/home-equity',
+    alias: ['/credito-com-garantia-de-imovel', '/como-funciona'],
     name: 'HomeEquity',
     component: () => import('@/views/institucional/cashBext.vue'),
     meta: {

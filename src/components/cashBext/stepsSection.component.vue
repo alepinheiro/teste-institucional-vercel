@@ -41,7 +41,6 @@
               class="text-2xl lg:text-lg sm:text-xl font-bold group-hover:text-white">
               {{ id }}. {{ title }}
             </h3>
-            <!-- eslint-disable-next-line vue/no-v-html -->
             <p
               class="text-base group-hover:text-white"
               v-html="description"></p>
