@@ -17,24 +17,20 @@
           <ResponsiveImage
             ref="phone"
             :imagePath="$options.imageConfig.mockUps.multiBankPhone.image"
-            :imgAttrs="
-              {
-                loading: 'lazy',
-                alt: $options.imageConfig.mockUps.multiBankPhone.alt,
-              } as ImgHTMLAttributes
-            " />
+            :imgAttrs="{
+              loading: 'lazy',
+              alt: $options.imageConfig.mockUps.multiBankPhone.alt,
+            }" />
         </div>
         <div
           ref="banks"
           class="flex flex-col gap-2 md:gap-4 lg:gap-4 xl:gap-4 lg:w-7/12 xl:w-7/12 mx-auto opacity-0 max-w-xl">
           <ResponsiveImage
             imagePath="/images/Home/bankPartners.png"
-            :imgAttrs="
-              {
-                loading: 'lazy',
-                alt: 'Com a Bext, você tem acesso a produtos de mais de 20 instituições financeiras. ',
-              } as ImgHTMLAttributes
-            " />
+            :imgAttrs="{
+              loading: 'lazy',
+              alt: 'Com a Bext, você tem acesso a produtos de mais de 20 instituições financeiras. ',
+            }" />
         </div>
       </div>
     </div>

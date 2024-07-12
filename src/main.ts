@@ -23,8 +23,11 @@ import {
   faChevronDown,
   faPeopleGroup,
   faChevronRight,
+  faCartShopping,
   faMoneyBillWave,
 } from '@fortawesome/free-solid-svg-icons';
+
+import { faTelegram } from '@fortawesome/free-brands-svg-icons';
 
 app.component('Icon', FontAwesomeIcon);
 
@@ -46,12 +49,14 @@ app.mixin({
       faXmark,
       faCoins,
       faDiceD6,
+      faTelegram,
       faChevronUp,
       faArrowRight,
       faVideoCamera,
       faChevronLeft,
       faChevronDown,
       faPeopleGroup,
+      faCartShopping,
       faChevronRight,
       faMoneyBillWave,
     );

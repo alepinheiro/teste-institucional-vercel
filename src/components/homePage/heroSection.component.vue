@@ -17,10 +17,9 @@
         imagePath="/images/Home/linesMd.webp"
         :imgAttrs="{
           role: 'presentation',
-          loading: 'lazy',
-          fetchpriority: 'low',
+          class: 'object-cover ',
         }"
-        class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
+        class="hidden md:block absolute top-0 left-0 w-full -z-10" />
 
       <div
         class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto min-lg:items-start text-center min-lg:text-left mt-8 min-md:mt-0 px-5 min-md:pt-32">
@@ -48,13 +47,11 @@
               v-for="{ alt, id, src } of topOfSalesSeals"
               :key="id"
               :imagePath="src"
-              :imgAttrs="
-                {
-                  alt,
-                  loading: 'eager',
-                  fetchpriority: 'high',
-                } as ImgHTMLAttributes
-              "
+              :imgAttrs="{
+                alt,
+                loading: 'eager',
+                fetchpriority: 'high',
+              }"
               class="h-9 min-md:h-12 mx-0 object-contain" />
           </div>
         </div>
@@ -81,7 +78,6 @@
 <script lang="ts">
   import Products from '@/components/homePage/productsSection.component.vue';
   import information from '@/configurations/information';
-  import type { ImgHTMLAttributes } from 'vue';
   import { defineComponent } from 'vue';
   import { topOfSales } from '@/configurations/images';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';

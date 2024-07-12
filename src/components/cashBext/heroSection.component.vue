@@ -71,7 +71,7 @@
         <button
           v-scroll-to="'#businessPartners'"
           class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline">
-          <i class="fa-solid fa-chevron-down animate-bounce"></i>
+          <Icon icon="fa-solid fa-chevron-down" class="animate-bounce" />
           <span class="text-xs">
             Ou saiba mais sobre o cashBext rolando para baixo
           </span>
