@@ -215,12 +215,26 @@ const image = {
   },
   logoMedia: {
     gray: {
-      agenciaOGlobo: '/images/webp/logoMedia/AgenciaOGloboCinza.webp',
-      economiaSC: '/images/webp/logoMedia/EconomiaSCCinza.webp',
-      imobileReport: '/images/webp/logoMedia/ImobliReportCinza.webp',
-      peqEmpresasGrandesNegocios:
-        '/images/webp/logoMedia/PequenasEmpresasGrandeNegociosCinza.webp',
-      valorEconomico: '/images/webp/logoMedia/ValorEconomicoCinza.webp',
+      agenciaOGlobo: {
+        src: '/images/logoMedia/AgenciaOGloboCinza.webp',
+        alt: 'Link para matéria no portal Agência O Globo',
+      },
+      economiaSC: {
+        src: '/images/logoMedia/EconomiaSCCinza.webp',
+        alt: 'Link para matéria no portal Economia SC',
+      },
+      imobileReport: {
+        src: '/images/logoMedia/ImobliReportCinza.webp',
+        alt: 'Link para matéria no portal Imobi Report',
+      },
+      peqEmpresasGrandesNegocios: {
+        src: '/images/logoMedia/PequenasEmpresasGrandeNegociosCinza.webp',
+        alt: 'Link para matéria no portal Pequenas empresas grandes negócios',
+      },
+      valorEconomico: {
+        src: '/images/logoMedia/ValorEconomicoCinza.webp',
+        alt: 'Link para matéria no portal Valor economico',
+      },
     },
   },
   logoPartners: {

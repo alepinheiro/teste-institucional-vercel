@@ -1,21 +1,23 @@
 <template>
   <main class="bg-[#EFEFEF] relative z-0">
     <TopBar
-      customMobileMenuColor="black"
       color="primary"
-      class="text-textPrimary" />
+      class="text-textPrimary"
+      customMobileMenuColor="black" />
     <HeroSection
       :backgroundVideos="{
-        desktop: 'eYtBl05z-YM',
         mobile: 'Tp-ZcMvXBiE',
+        desktop: 'eYtBl05z-YM',
       }"
       :showMenu="showMenu"
       class="h-screen sm:h-full" />
     <div class="relative z-10 overflow-hidden">
       <div class="absolute inset-0 z-0 hidden min-md:flex">
         <img
-          src="/images/aboutUs/backgroundLines.png"
-          class="w-full object-cover mt-auto" />
+          loading="lazy"
+          role="presentation"
+          class="w-full object-cover mt-auto"
+          src="/images/aboutUs/backgroundLines.png" />
       </div>
       <OurMotivation
         id="ourMotivation"
@@ -40,7 +42,7 @@
   import Editorial from '@/components/aboutUs/bestEditorial.component.vue';
   import HeroSection from '@/components/aboutUs/heroSection.component.vue';
   import MissionSection from '@/components/aboutUs/missionSection.component.vue';
-  import Rebranding from '@/components/base/sections/rebranding/index.componente.vue'
+  import Rebranding from '@/components/base/sections/rebranding/index.componente.vue';
   import OurMotivation from '@/components/aboutUs/ourMission.component.vue';
   import Team from '@/components/aboutUs/ourTeam.component.vue';
   import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue';
@@ -73,7 +75,7 @@
     },
     data() {
       return {
-        utm:'utm_source=organico&utm_medium=sobre'
+        utm: 'utm_source=organico&utm_medium=sobre',
       };
     },
     mounted() {

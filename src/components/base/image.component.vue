@@ -10,6 +10,7 @@
     <img
       v-bind="$props.imgAttrs"
       class="h-full w-full"
+      :loading="$props.imgAttrs?.loading ?? 'lazy'"
       :src="generateSrc(imagePath, 'xs')" />
   </picture>
 </template>

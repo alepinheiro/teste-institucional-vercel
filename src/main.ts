@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import {
   faBars,
+  faPlay,
   faCheck,
   faXmark,
   faCoins,
@@ -37,6 +38,7 @@ app.mixin({
     register();
     library.add(
       faBars,
+      faPlay,
       faXmark,
       faCheck,
       faCoins,
