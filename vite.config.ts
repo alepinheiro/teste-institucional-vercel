@@ -17,6 +17,14 @@ export default defineConfig({
     },
   },
   plugins: [alias(), vue(), vercel(), generateResponsiveImages()],
+  vercel: {
+    images: {
+      sizes: [640, 750, 828, 1080, 1200],
+      domains: [],
+      minimumCacheTTL: 60,
+      formats: ['image/avif', 'image/webp'],
+    },
+  },
   server: {
     host: '0.0.0.0',
     port: 10086,
