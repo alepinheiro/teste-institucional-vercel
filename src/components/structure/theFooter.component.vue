@@ -290,9 +290,9 @@
               aria-label="Empresa verificada no Reclame Aqui"
               target="_blank">
               <img
-                :src="$options.imageConfig.home.reclameaqui"
-                alt="Empresa verificada Reclame Aqui "
-                title="Empresa verificada Reclame Aqui "
+                :src="$options.imageConfig.home.reclameaqui.src"
+                :alt="$options.imageConfig.home.reclameaqui.alt"
+                :title="$options.imageConfig.home.reclameaqui.alt"
                 class="w-auto h-12 rounded-xl" />
             </a>
           </div>
