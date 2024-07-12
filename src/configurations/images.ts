@@ -95,7 +95,10 @@ const image = {
     mockupPhonesCropNew: '/images/webp/Home/imgHomeNewPhones.webp',
     mockupPhonesSM: '/images/webp/Home/MockupPhonesMobile.webp',
     photoFooter: '/images/webp/Home/FotoGaspar.webp',
-    reclameaqui: '/images/webp/Home/reclameaqui.webp',
+    reclameaqui: {
+      src: '/images/Home/reclameaqui.webp',
+      alt: 'Empresa verificada Reclame Aqui',
+    },
   },
   finanBext: {
     phoneVideo: '/images/finanBext/VideofinanBextMobile.gif',
