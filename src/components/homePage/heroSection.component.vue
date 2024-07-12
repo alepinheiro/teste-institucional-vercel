@@ -22,7 +22,7 @@
         class="hidden md:block absolute top-0 left-0 w-full -z-10" />
 
       <div
-        class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto min-lg:items-start text-center min-lg:text-left mt-8 min-md:mt-0 px-5 min-md:pt-32">
+        class="z-0 flex flex-col gap-5 min-md:gap-10 items-center min-lg:w-8/12 min-lg:mr-auto min-lg:items-start text-center min-lg:text-left mt-8 min-md:mt-0 px-10 min-md:pt-32">
         <h1
           class="text-3xl min-md:text-6xl font-bold font-darkerGrotesque text-textPrimary leading-7 lg:leading-[48px]">
           A Fintech que transforma, multiplica e facilita o seu acesso ao
@@ -70,22 +70,23 @@
           </span>
         </a>
       </div>
-      <Products class="pt-24" />
+      <Products v-if="DOMLoaded" class="pt-24" />
     </div>
   </section>
 </template>
 
 <script lang="ts">
-  import Products from '@/components/homePage/productsSection.component.vue';
   import information from '@/configurations/information';
-  import { defineComponent } from 'vue';
+  import { defineAsyncComponent, defineComponent } from 'vue';
   import { topOfSales } from '@/configurations/images';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
 
   export default defineComponent({
     name: 'HeroSection',
     components: {
-      Products,
+      Products: defineAsyncComponent(
+        () => import('@/components/homePage/productsSection.component.vue'),
+      ),
     },
     data() {
       const topOfSalesSeals = topOfSales('black');
@@ -93,10 +94,16 @@
       return {
         information,
         topOfSalesSeals,
+        DOMLoaded: false,
         loadedPage: window,
         showHeroImage: false,
         useObjectToQueryString,
       };
+    },
+    mounted() {
+      setTimeout(() => {
+        this.DOMLoaded = true;
+      }, 1000 * 1);
     },
   });
 </script>
