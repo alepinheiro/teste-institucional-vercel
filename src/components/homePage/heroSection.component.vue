@@ -2,7 +2,7 @@
   <section>
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full justify-center items-end overflow-hidden">
-      <div class="pl-6">
+      <div class="pl-6 h-96 min-md:h-auto">
         <ResponsiveImage
           imagePath="/images/Home/heroBackground-sm.webp"
           :imgAttrs="{
