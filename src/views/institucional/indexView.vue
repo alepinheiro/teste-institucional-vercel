@@ -46,42 +46,34 @@
 <script lang="ts">
   import TopBar from '@/components/structure/topBar/index.component.vue';
 
-  const Rebranding = defineAsyncComponent(
-    () => import('@/components/base/sections/rebranding/index.componente.vue'),
-  );
-  const BestPlay = defineAsyncComponent(
-    () => import('@/components/base/sections/bestPlay/index.component.vue'),
-  );
-  const BusinessPartners = defineAsyncComponent(
-    () => import('@/components/homePage/businessPartners.component.vue'),
-  );
-  const ComparisonTable = defineAsyncComponent(
-    () => import('@/components/base/comparisonTable.component.vue'),
-  );
-  const Mission = defineAsyncComponent(
-    () => import('@/components/aboutUs/missionSection.component.vue'),
-  );
-  const SloganSection = defineAsyncComponent(
-    () => import('@/components/homePage/sloganSection.component.vue'),
-  );
-  const TheFooter = defineAsyncComponent(
-    () => import('@/components/structure/theFooter.component.vue'),
-  );
-
   import { defineAsyncComponent, defineComponent } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   export default defineComponent({
     name: 'HomePage',
     components: {
       TopBar,
-      Mission,
-      BestPlay,
-      TheFooter,
-      Rebranding,
-      BusinessPartners,
-      ComparisonTable,
-      SloganSection,
-      // AboutUs,
+      Mission: defineAsyncComponent(
+        () => import('@/components/aboutUs/missionSection.component.vue'),
+      ),
+      BestPlay: defineAsyncComponent(
+        () => import('@/components/base/sections/bestPlay/index.component.vue'),
+      ),
+      TheFooter: defineAsyncComponent(
+        () => import('@/components/structure/theFooter.component.vue'),
+      ),
+      Rebranding: defineAsyncComponent(
+        () =>
+          import('@/components/base/sections/rebranding/index.componente.vue'),
+      ),
+      BusinessPartners: defineAsyncComponent(
+        () => import('@/components/homePage/businessPartners.component.vue'),
+      ),
+      ComparisonTable: defineAsyncComponent(
+        () => import('@/components/base/comparisonTable.component.vue'),
+      ),
+      SloganSection: defineAsyncComponent(
+        () => import('@/components/homePage/sloganSection.component.vue'),
+      ),
     },
     data() {
       return {
