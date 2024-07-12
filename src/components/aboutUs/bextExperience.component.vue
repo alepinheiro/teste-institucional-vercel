@@ -61,11 +61,12 @@
           class="flex flex-col md:flex-row lg:flex-row rounded-xl w-full border border-[#D9D9D9] mb-12 h-auto">
           <div
             class="relative w-full h-80 md:h-full overflow-hidden rounded-t-xl md:rounded-l-xl lg:rounded-l-xl md:rounded-r-none lg:rounded-r-none -z-10">
-            <img
-              :src="image"
-              alt=""
-              class="object-cover object-left-center w-full h-full"
-              loading="lazy" />
+            <ResponsiveImage
+              :imagePath="image"
+              :imgAttrs="{
+                class: 'object-cover object-left-center',
+              }"
+              class="w-full h-full" />
             <PlayButton
               class="absolute inset-x-0 bottom-1/3 z-10"
               @click="openVideoOverlay(videoId)" />
