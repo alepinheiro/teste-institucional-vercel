@@ -67,10 +67,13 @@
 
       <div
         class="flex-1 lg:flex-auto lg:w-2/6 xl:flex-auto xl:w-2/6 h-full flex w-full">
-        <img
-          src="/images/getOutRent/heroBg.png"
-          alt="Xô, Aluguel! o método best para conquistar seu primeiro imóvel com financiamento imobiliário "
-          class="absolute lg:-right-1/3 xl:-right-[40%] z-0 sm:h-4/5 object-cover md:inset-x-0" />
+        <ResponsiveImage
+          imagePath="/images/getOutRent/heroBg.png"
+          :imgAttrs="{
+            alt: 'Xô, Aluguel! o método best para conquistar seu primeiro imóvel com financiamento imobiliário',
+            class: 'object-cover',
+          }"
+          class="absolute lg:-right-1/3 xl:-right-[40%] z-0 sm:h-4/5 md:inset-x-0" />
 
         <div class="absolute right-[10%] bottom-1/4 hidden lg:block xl:block">
           <button

@@ -47,13 +47,11 @@
               v-for="{ alt, id, src } of topOfSalesSeals"
               :key="id"
               :imagePath="src"
-              :imgAttrs="
-                {
-                  alt,
-                  loading: 'eager',
-                  fetchpriority: 'high',
-                } as ImgHTMLAttributes
-              "
+              :imgAttrs="{
+                alt,
+                loading: 'eager',
+                fetchpriority: 'high',
+              }"
               class="h-9 min-md:h-12 mx-0 object-contain" />
           </div>
         </div>
@@ -80,7 +78,6 @@
 <script lang="ts">
   import Products from '@/components/homePage/productsSection.component.vue';
   import information from '@/configurations/information';
-  import type { ImgHTMLAttributes } from 'vue';
   import { defineComponent } from 'vue';
   import { topOfSales } from '@/configurations/images';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';

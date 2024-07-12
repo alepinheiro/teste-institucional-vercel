@@ -16,6 +16,7 @@
     "test-storybook": "test-storybook"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@rollup/plugin-alias": "^3.1.9",
