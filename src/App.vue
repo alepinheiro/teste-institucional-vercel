@@ -9,7 +9,7 @@
   import { defineComponent } from 'vue';
   import { useHead } from '@unhead/vue';
   import { useGoogleTagManager } from '@/composables/useGoogleTagManager';
-
+  import 'swiper/css/bundle';
   export default defineComponent({
     props: {
       utmQuery: {

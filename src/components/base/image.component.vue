@@ -9,7 +9,7 @@
       :sizes="breakpoint.sizes" />
     <img
       v-bind="$props.imgAttrs"
-      class="h-full w-full object-cover"
+      class="h-full w-full"
       :src="generateSrc(imagePath, 'xs')" />
   </picture>
 </template>

@@ -5,25 +5,21 @@
       <div class="pl-6">
         <ResponsiveImage
           imagePath="/images/Home/heroBackground-sm.webp"
-          :imgAttrs="
-            {
-              loading: 'eager',
-              fetchpriority: 'high',
-              alt: 'Gaspar Motta - CEO Bext',
-            } as ImgHTMLAttributes
-          "
+          :imgAttrs="{
+            loading: 'eager',
+            fetchpriority: 'high',
+            alt: 'Gaspar Motta - CEO Bext',
+          }"
           class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 lg:-right-56 xl:-right-[10%] min-lg:h-screen md:hidden mx-auto" />
       </div>
 
       <ResponsiveImage
         imagePath="/images/Home/linesMd.webp"
-        :imgAttrs="
-          {
-            role: 'presentation',
-            loading: 'lazy',
-            fetchpriority: 'low',
-          } as ImgHTMLAttributes
-        "
+        :imgAttrs="{
+          role: 'presentation',
+          loading: 'lazy',
+          fetchpriority: 'low',
+        }"
         class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
 
       <div
