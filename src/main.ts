@@ -60,8 +60,8 @@ app.component('ResponsiveImage', ResponsiveImage);
 app
   .use(createHead())
   .use(VueCookies)
+  .use(router)
   // @ts-expect-error plugin error
   .use(VueTheMask)
   .use(VueScrollTo)
-  .use(router)
   .mount('#app');
