@@ -4,7 +4,7 @@
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full justify-center items-end overflow-hidden">
       <div class="pl-6 h-96 min-md:h-auto">
         <ResponsiveImage
-          imagePath="/images/Home/heroBackground-sm.webp"
+          imagePath="/images/Home/heroBackground-sm.webp&w=320&q=75"
           :imgAttrs="{
             loading: 'eager',
             fetchpriority: 'high',
@@ -70,6 +70,7 @@
           </span>
         </a>
       </div>
+      <img src="/images/Home/heroBackground-sm.webp&w=320&q=75" alt="" />
       <Products v-if="DOMLoaded" class="pt-24" />
     </div>
   </section>
