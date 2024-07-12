@@ -26,11 +26,13 @@
           v-for="({ alt }, index) in firstRowMembers"
           :key="alt"
           class="card h-full aspect-square bg-primary flex rounded-md">
-          <img
-            :src="`/images/aboutUs/teamMembers/${index}.webp`"
-            :alt="alt"
-            class="w-full h-full object-cover my-auto py-2"
-            loading="lazy" />
+          <ResponsiveImage
+            :imagePath="`/images/aboutUs/teamMembers/${index}.webp`"
+            :imgAttrs="{
+              alt,
+              class: 'object-cover',
+            }"
+            class="w-full h-full my-auto py-2" />
         </div>
       </div>
 
@@ -41,16 +43,19 @@
           v-for="({ alt }, index) in secondRowMembers"
           :key="alt"
           class="card h-full aspect-square bg-primary flex rounded-md">
-          <img
-            :src="`/images/aboutUs/teamMembers/${index}.webp`"
-            :alt="alt"
-            class="w-full h-full object-cover my-auto py-2"
-            loading="lazy" />
+          <ResponsiveImage
+            :imagePath="`/images/aboutUs/teamMembers/${index}.webp`"
+            :imgAttrs="{
+              alt,
+              class: 'object-cover',
+            }"
+            class="w-full h-full my-auto py-2" />
         </div>
       </div>
     </div>
   </section>
 </template>
+
 <script lang="ts" setup>
   import { ref, onMounted } from 'vue';
   import ScrollTrigger from 'gsap/ScrollTrigger';

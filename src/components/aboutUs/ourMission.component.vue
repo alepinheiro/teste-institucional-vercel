@@ -26,16 +26,16 @@
                 :imagePath="`/images/aboutUs/cards/${index}.png`"
                 :imgAttrs="{
                   alt: item.title,
-                  loading: 'lazy',
+                  class: 'object-cover object-left-top',
                 }"
-                class="absolute inset-0 h-full w-full object-cover object-left-top -z-10 transition-all" />
+                class="absolute inset-0 h-full w-full -z-10 transition-all" />
 
               <div
                 class="flex flex-row h-fit items-center justify-between mt-auto w-full p-2 md:p-4 lg:p-4 xl:p-4 text-primary">
                 <p class="font-bold text-white md:w-3/4 select-none">
                   {{ item.title }}
                 </p>
-                <i class="fa-solid fa-chevron-up"></i>
+                <Icon icon="fa-solid fa-chevron-up"></Icon>
               </div>
             </div>
             <div
@@ -50,7 +50,6 @@
   </section>
 </template>
 <script lang="ts">
-  import { lazy } from 'react';
   import { defineComponent } from 'vue';
   export default defineComponent({
     name: 'OurMission',

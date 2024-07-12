@@ -122,13 +122,11 @@
 
           <ResponsiveImage
             :imagePath="activeCard.image"
-            :imgAttrs="
-              {
-                loading: 'lazy',
-                alt: options[activeCard.id].title,
-              } as ImgHTMLAttributes
-            "
-            class="object-cover h-full w-full absolute inset-0 -z-20" />
+            :imgAttrs="{
+              alt: options[activeCard.id].title,
+              class: 'object-cover',
+            }"
+            class="h-full w-full absolute inset-0 -z-20" />
         </div>
       </div>
     </div>

@@ -18,11 +18,12 @@
           class="flex flex-row rounded-xl border border-[#D9D9D9] h-68 w-1/3 flex-grow">
           <div
             class="md:h-68 overflow-hidden rounded-l-xl rounded-r-none w-1/3 relative z-0">
-            <img
-              :src="image"
-              alt=""
-              class="object-cover w-full h-full z-0"
-              loading="eager" />
+            <ResponsiveImage
+              :imagePath="image"
+              :imgAttrs="{
+                class: 'object-cover',
+              }"
+              class="w-full h-full z-0" />
             <PlayButton
               class="absolute inset-x-0 z-0 bottom-1/4"
               @click="openVideoOverlay(videoId)" />
@@ -44,7 +45,7 @@
       class="md:flex lg:flex md:flex-row lg:flex-row md:gap-2 lg:gap-2 md:items-center lg:items-center md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto xl:hidden">
       <div
         class="bestExperiencePrev hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8">
-        <i class="fa-solid fa-chevron-left w-full h-full"></i>
+        <Icon icon="fa-solid fa-chevron-left" class="w-full h-full" />
       </div>
 
       <component
@@ -83,7 +84,7 @@
 
       <div
         class="bestExperienceNext hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8">
-        <i class="fa-solid fa-chevron-right w-full h-full"></i>
+        <Icon icon="fa-solid fa-chevron-right" class="w-full h-full" />
       </div>
     </div>
   </section>

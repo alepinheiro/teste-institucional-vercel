@@ -16,10 +16,13 @@ import {
   faXmark,
   faCoins,
   faDiceD6,
+  faChevronUp,
   faArrowRight,
   faVideoCamera,
+  faChevronLeft,
   faChevronDown,
   faPeopleGroup,
+  faChevronRight,
   faMoneyBillWave,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -39,14 +42,17 @@ app.mixin({
     library.add(
       faBars,
       faPlay,
-      faXmark,
       faCheck,
+      faXmark,
       faCoins,
       faDiceD6,
+      faChevronUp,
       faArrowRight,
-      faChevronDown,
       faVideoCamera,
+      faChevronLeft,
+      faChevronDown,
       faPeopleGroup,
+      faChevronRight,
       faMoneyBillWave,
     );
   },
