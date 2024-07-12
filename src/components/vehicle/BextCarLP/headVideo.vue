@@ -25,12 +25,13 @@
                 <p class="py-4 pb-6">
                   Use o seu carro como garantia em troca das melhores taxas.
                   Você consegue crédito para seus objetivos financeiros
-                  <span class="font-semibold"
-                    >sem precisar vender o veículo</span
-                  >com taxas a partir de
-                  <span class="font-semibold"
-                    >1,59% ao mês e prazos de até 60 meses.</span
-                  >
+                  <span class="font-semibold">
+                    sem precisar vender o veículo
+                  </span>
+                  com taxas a partir de
+                  <span class="font-semibold">
+                    1,59% ao mês e prazos de até 60 meses.
+                  </span>
                 </p>
                 <div class="bg-bgLight2Color p-3 rounded-xl">
                   <div

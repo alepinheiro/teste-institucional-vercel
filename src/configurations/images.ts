@@ -1,22 +1,22 @@
 export const topOfSales = (color: 'black' | 'white') => [
   {
     id: 'cashMe',
-    src: '/images/topOfSales/' + color + '/cashMe.webp',
+    src: '/images/topOfSales/' + color + '/cashMe.png',
     alt: 'Campeão de vendas CashMe - 2022/2023',
   },
   {
     id: 'crediblue',
-    src: '/images/topOfSales/' + color + '/crediBlue.webp',
+    src: '/images/topOfSales/' + color + '/crediBlue.png',
     alt: 'Parceiro Elite CrediBlue',
   },
   {
     id: 'daycoval',
-    src: '/images/topOfSales/' + color + '/daycoval.webp',
+    src: '/images/topOfSales/' + color + '/daycoval.png',
     alt: 'Campeão de vendas Daycoval - 2023',
   },
   {
     id: 'inter',
-    src: '/images/topOfSales/' + color + '/inter.webp',
+    src: '/images/topOfSales/' + color + '/inter.png',
     alt: 'Top Player imobiliário Inter',
   },
 ];
@@ -95,7 +95,10 @@ const image = {
     mockupPhonesCropNew: '/images/webp/Home/imgHomeNewPhones.webp',
     mockupPhonesSM: '/images/webp/Home/MockupPhonesMobile.webp',
     photoFooter: '/images/webp/Home/FotoGaspar.webp',
-    reclameaqui: '/images/webp/Home/reclameaqui.webp',
+    reclameaqui: {
+      src: '/images/Home/reclameaqui.webp',
+      alt: 'Empresa verificada Reclame Aqui',
+    },
   },
   finanBext: {
     phoneVideo: '/images/finanBext/VideofinanBextMobile.gif',
@@ -212,12 +215,26 @@ const image = {
   },
   logoMedia: {
     gray: {
-      agenciaOGlobo: '/images/webp/logoMedia/AgenciaOGloboCinza.webp',
-      economiaSC: '/images/webp/logoMedia/EconomiaSCCinza.webp',
-      imobileReport: '/images/webp/logoMedia/ImobliReportCinza.webp',
-      peqEmpresasGrandesNegocios:
-        '/images/webp/logoMedia/PequenasEmpresasGrandeNegociosCinza.webp',
-      valorEconomico: '/images/webp/logoMedia/ValorEconomicoCinza.webp',
+      agenciaOGlobo: {
+        src: '/images/logoMedia/AgenciaOGloboCinza.webp',
+        alt: 'Link para matéria no portal Agência O Globo',
+      },
+      economiaSC: {
+        src: '/images/logoMedia/EconomiaSCCinza.webp',
+        alt: 'Link para matéria no portal Economia SC',
+      },
+      imobileReport: {
+        src: '/images/logoMedia/ImobliReportCinza.webp',
+        alt: 'Link para matéria no portal Imobi Report',
+      },
+      peqEmpresasGrandesNegocios: {
+        src: '/images/logoMedia/PequenasEmpresasGrandeNegociosCinza.webp',
+        alt: 'Link para matéria no portal Pequenas empresas grandes negócios',
+      },
+      valorEconomico: {
+        src: '/images/logoMedia/ValorEconomicoCinza.webp',
+        alt: 'Link para matéria no portal Valor economico',
+      },
     },
   },
   logoPartners: {

@@ -2,27 +2,39 @@
   <section>
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full min-md:min-h-screen justify-center">
-      <!--  <div
-        class="absolute inset-x-0 top-48 md:hidden lg:right-1/4 lg:top-[65vh] xl:right-1/3 xl:top-auto z-50"
-      >
-        <VideoButton video-id="eDWFe4Wrb2A" class="xl:mr-0 lg:mr-0" />
-      </div>-->
-      <img
-        src="/images/cashBext/initialSessionSM.png"
+      <ResponsiveImage
+        imagePath="/images/cashBext/initialSessionSM.png"
         class="aspect-square min-md:hidden object-cover"
-        alt="" />
-      <img
-        src="/images/cashBext/initialSessionXL.png"
-        class="hidden xl:block absolute inset-0 h-screen object-contain -right-48 ml-auto -z-10"
-        alt="" />
-      <img
-        src="/images/cashBext/initialSessionLG.png"
+        :imgAttrs="{
+          loading: 'eager',
+          fetchpriority: 'high',
+          alt: 'Gaspar Motta - CEO Bext',
+        }" />
+
+      <ResponsiveImage
+        imagePath="/images/cashBext/initialSessionXL.png"
+        class="hidden xl:block absolute inset-0 h-screen -right-48 ml-auto -z-10"
+        :imgAttrs="{
+          loading: 'eager',
+          fetchpriority: 'high',
+          alt: 'Gaspar Motta - CEO Bext',
+          class: 'object-contain object-right',
+        }" />
+
+      <ResponsiveImage
+        imagePath="/images/cashBext/initialSessionLG.png"
         class="hidden lg:block absolute inset-0 object-contain -right-24 ml-auto -z-10"
-        alt="" />
+        :imgAttrs="{
+          loading: 'eager',
+          fetchpriority: 'high',
+          alt: 'Gaspar Motta - CEO Bext',
+          class: 'object-contain object-right',
+        }" />
+
       <img
         src="/images/Home/linesMd.png"
         class="hidden md:block absolute inset-0 w-full object-contain -z-10"
-        alt="" />
+        role="presentation" />
       <div
         class="flex flex-col gap-5 min-md:gap-10 items-center lg:w-8/12 xl:w-7/12 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-16 min-md:mt-0 min-md:pt-28 min-md:pb-10 px-5">
         <h1
@@ -60,9 +72,9 @@
           v-scroll-to="'#businessPartners'"
           class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline">
           <i class="fa-solid fa-chevron-down animate-bounce"></i>
-          <span class="text-xs"
-            >Ou saiba mais sobre o cashBext rolando para baixo</span
-          >
+          <span class="text-xs">
+            Ou saiba mais sobre o cashBext rolando para baixo
+          </span>
         </button>
       </div>
     </div>

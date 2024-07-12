@@ -78,7 +78,6 @@
 </template>
 
 <script lang="ts">
-  import 'swiper/css/bundle';
   import BuildingIcon from '@/components/homePage/icons/buildingIcon.component.vue';
   import CalendarIcon from '@/components/homePage/icons/calendarIcon.component.vue';
   import CarIcon from '@/components/homePage/icons/carIcon.component.vue';
@@ -91,7 +90,6 @@
   import { defineComponent, ref, markRaw } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import { useWindowSize } from '@vueuse/core';
-  import { register } from 'swiper/element/bundle';
 
   export default defineComponent({
     components: { Swiper, SwiperSlide },
@@ -187,9 +185,6 @@
         useWindow: useWindowSize(),
         useObjectToQueryString,
       };
-    },
-    mounted() {
-      register();
     },
   });
 </script>

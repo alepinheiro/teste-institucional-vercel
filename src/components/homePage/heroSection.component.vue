@@ -2,26 +2,24 @@
   <section>
     <div
       class="flex flex-col max-w-7xl lg:max-w-5xl md:max-w-2xl mx-auto w-full justify-center items-end overflow-hidden">
-      <ResponsiveImage
-        imagePath="/images/Home/heroBackground-sm.webp"
-        :imgAttrs="
-          {
+      <div class="pl-6">
+        <ResponsiveImage
+          imagePath="/images/Home/heroBackground-sm.webp"
+          :imgAttrs="{
             loading: 'eager',
             fetchpriority: 'high',
             alt: 'Gaspar Motta - CEO Bext',
-          } as ImgHTMLAttributes
-        "
-        class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 min-lg:right-0 min-lg:h-screen md:hidden mx-auto" />
+          }"
+          class="h-96 min-lg:w-auto min-lg:absolute min-lg:top-0 lg:-right-56 xl:-right-[10%] min-lg:h-screen md:hidden mx-auto" />
+      </div>
 
       <ResponsiveImage
         imagePath="/images/Home/linesMd.webp"
-        :imgAttrs="
-          {
-            role: 'presentation',
-            loading: 'lazy',
-            fetchpriority: 'high',
-          } as ImgHTMLAttributes
-        "
+        :imgAttrs="{
+          role: 'presentation',
+          loading: 'lazy',
+          fetchpriority: 'low',
+        }"
         class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
 
       <div
@@ -57,7 +55,7 @@
                   fetchpriority: 'high',
                 } as ImgHTMLAttributes
               "
-              class="h-12 mx-0 object-contain" />
+              class="h-9 min-md:h-12 mx-0 object-contain" />
           </div>
         </div>
 
@@ -82,7 +80,6 @@
 
 <script lang="ts">
   import Products from '@/components/homePage/productsSection.component.vue';
-  import ResponsiveImage from '@/components/base/image.component.vue';
   import information from '@/configurations/information';
   import type { ImgHTMLAttributes } from 'vue';
   import { defineComponent } from 'vue';
@@ -93,7 +90,6 @@
     name: 'HeroSection',
     components: {
       Products,
-      ResponsiveImage,
     },
     data() {
       const topOfSalesSeals = topOfSales('black');

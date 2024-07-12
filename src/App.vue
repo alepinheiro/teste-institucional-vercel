@@ -1,13 +1,5 @@
 <template>
   <div class="w-full defaultFont selection:bg-primary selection:text-white">
-    <!-- <noscript>
-      <iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-KVJ4GJS"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden">
-      </iframe>
-    </noscript> -->
     <RouterView />
   </div>
 </template>
@@ -16,8 +8,8 @@
   import { NotificationInterface } from '@/interfaces/notification.interface';
   import { defineComponent } from 'vue';
   import { useHead } from '@unhead/vue';
-  // import { useGoogleTagManager } from '@/composables/useGoogleTagManager';
-
+  import { useGoogleTagManager } from '@/composables/useGoogleTagManager';
+  import 'swiper/css/bundle';
   export default defineComponent({
     props: {
       utmQuery: {
@@ -83,24 +75,17 @@
     },
     mounted() {
       import('@/assets/css/customStyle.css');
-      // document.addEventListener('DOMContentLoaded', () => {
-      //   useGoogleTagManager(
-      //     window,
-      //     document,
-      //     'script',
-      //     'dataLayer',
-      //     'GTM-KVJ4GJS',
-      //   );
-      // });
-      window.onload = () => {
-        useGoogleTagManager(
-          window,
-          document,
-          'script',
-          'dataLayer',
-          'GTM-KVJ4GJS',
-        );
-      };
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          useGoogleTagManager(
+            window,
+            document,
+            'script',
+            'dataLayer',
+            'GTM-KVJ4GJS',
+          );
+        }, 1000 * 2);
+      });
     },
   });
 </script>
