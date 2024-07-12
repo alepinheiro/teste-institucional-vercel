@@ -5,6 +5,7 @@ import { resolve } from 'path';
 import { convertImagesToWebP } from './src/plugins/convertImagesToWebP';
 import { findUnusedImages } from './src/plugins/findUnusedImages';
 import { generateResponsiveImages } from './src/plugins/generateResponsiveImages';
+import vercel from 'vite-plugin-vercel';
 
 const projectRootDir = resolve(__dirname);
 
@@ -15,7 +16,7 @@ export default defineConfig({
       '@': resolve(projectRootDir, 'src'),
     },
   },
-  plugins: [alias(), vue(), generateResponsiveImages()],
+  plugins: [alias(), vue(), vercel(), generateResponsiveImages()],
   server: {
     host: '0.0.0.0',
     port: 10086,
@@ -26,6 +27,20 @@ export default defineConfig({
     outDir: 'dist',
     target: ['edge90', 'chrome90', 'firefox90', 'safari15'],
     chunkSizeWarningLimit: 1500,
+  },
+  vercel: {
+    // routes?: Route[];
+    // images?: ImagesConfig;
+    // wildcard?: WildcardConfig;
+    // overrides?: OverrideConfig;
+    // cache?: string[];
+    // crons?: CronsConfig;
+    images: {
+      sizes: [256, 384, 600, 1000],
+      domains: [],
+      minimumCacheTTL: 60,
+      formats: ['image/webp', 'image/avif'],
+    },
   },
   // optimizeDeps: { exclude: ['swiper/vue', 'swiper/types'] },
 });
