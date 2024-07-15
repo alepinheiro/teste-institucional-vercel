@@ -1,4 +1,10 @@
 {
   "rewrites": [{ "source": "/(.*)", "destination": "/" }],
-  "regions": ["gru1"]
+  "regions": ["gru1"],
+  "images": {
+    "sizes": [320, 420, 640, 750, 828, 1080, 1200],
+    "domains": [],
+    "minimumCacheTTL": 60,
+    "formats": ["image/avif", "image/webp"]
+  }
 }

@@ -70,7 +70,11 @@
           </span>
         </a>
       </div>
-      <img src="/images/Home/heroBackground-sm.png" alt="" />
+      <img
+        src="/images/Home/heroBackground-sm.png"
+        width="300"
+        height="500"
+        alt="" />
       <Products v-if="DOMLoaded" class="pt-24" />
     </div>
   </section>
