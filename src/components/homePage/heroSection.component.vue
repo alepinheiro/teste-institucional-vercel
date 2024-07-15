@@ -70,9 +70,7 @@
           </span>
         </a>
       </div>
-      <img
-        src="/_vercel/image?url=/images/Home/heroBackground-sm.webp&w=320&q=75"
-        alt="" />
+      <img src="/images/Home/heroBackground-sm.webp" alt="" />
       <Products v-if="DOMLoaded" class="pt-24" />
     </div>
   </section>
