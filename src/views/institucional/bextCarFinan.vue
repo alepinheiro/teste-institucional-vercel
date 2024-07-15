@@ -5,9 +5,11 @@
     <section
       class="flex sm:flex-wrap-reverse maxWidth items-center my-24 xl:py-24 sm:my-0">
       <div class="w-5/12 md:w-4/12 sm:w-full md:hidden">
-        <img
-          :src="$options.imageConfig.BextCar.carroNotas"
-          alt="Uma mercedez benz branca com cédulas de cem reais ao fundo"
+        <ResponsiveImage
+          :imagePath="$options.imageConfig.BextCar.carroNotas.src"
+          :imgAttrs="{
+            alt: $options.imageConfig.BextCar.carroNotas.alt,
+          }"
           class="h-64" />
       </div>
       <div

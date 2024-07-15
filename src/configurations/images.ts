@@ -282,7 +282,10 @@ const image = {
     },
   },
   BextCar: {
-    carroNotas: '/images/BextCar/CARRO_1.webp',
+    carroNotas: {
+      src: '/images/BextCar/CARRO_1.webp',
+      alt: 'Uma mercedez benz branca com cédulas de cem reais ao fundo',
+    },
     graficoBextCar: '/images/BextCar/graficoBextCar1.svg',
     carro: '/images/BextCar/CARRO_2.webp',
     graficoFinan: '/images/BextCar/GRAFICO_FINANCIAMENTO.svg',
