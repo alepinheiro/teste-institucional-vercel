@@ -165,3 +165,6 @@ yarn.lock
 /blob-report/
 /playwright/.cache/
 /storybook-static/
+
+# Vercel
+.vercel/*
