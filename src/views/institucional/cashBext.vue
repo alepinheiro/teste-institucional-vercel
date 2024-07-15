@@ -5,13 +5,7 @@
       :imgAttrs="{
         role: 'presentation',
         loading: 'lazy',
-      }"
-      class="absolute -top-40 -left-96 -z-0 hidden min-md:block" />
-    <ResponsiveImage
-      imagePath="/images/Home/backgroundLines.jpg"
-      :imgAttrs="{
-        role: 'presentation',
-        loading: 'lazy',
+        class: 'hidden',
       }"
       class="absolute top-96 -right-96 -z-10 hidden md:block -scale-x-100" />
 
@@ -59,18 +53,51 @@
   </main>
 </template>
 <script lang="ts" setup>
-  import AboutUs from '@/components/base/aboutUs.component.vue';
-  import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
-  import BusinessPartners from '@/components/homePage/businessPartners.component.vue';
-  import ComparisonTable from '@/components/base/comparisonTable.component.vue';
+  const AboutUs = defineAsyncComponent(
+    () => import('@/components/base/aboutUs.component.vue'),
+  );
+  const BestPlay = defineAsyncComponent(
+    () => import('@/components/base/sections/bestPlay/index.component.vue'),
+  );
+  const BusinessPartners = defineAsyncComponent(
+    () => import('@/components/homePage/businessPartners.component.vue'),
+  );
+  const ComparisonTable = defineAsyncComponent(
+    () => import('@/components/base/comparisonTable.component.vue'),
+  );
+  const Solutions = defineAsyncComponent(
+    () => import('@/components/cashBext/solutionsSection.component.vue'),
+  );
+  const Steps = defineAsyncComponent(
+    () => import('@/components/cashBext/stepsSection.component.vue'),
+  );
+  const Subscribe = defineAsyncComponent(
+    () => import('@/components/base/subscribeSection.component.vue'),
+  );
+  const TheFooter = defineAsyncComponent(
+    () => import('@/components/structure/theFooter.component.vue'),
+  );
+  const TheProduct = defineAsyncComponent(
+    () => import('@/components/cashBext/theProduct.component.vue'),
+  );
+
+  // import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
+  // import BusinessPartners from '@/components/homePage/businessPartners.component.vue';
+  // import ComparisonTable from '@/components/base/comparisonTable.component.vue';
   import HeroSection from '@/components/cashBext/heroSection.component.vue';
-  import Solutions from '@/components/cashBext/solutionsSection.component.vue';
-  import Steps from '@/components/cashBext/stepsSection.component.vue';
-  import Subscribe from '@/components/base/subscribeSection.component.vue';
-  import TheFooter from '@/components/structure/theFooter.component.vue';
-  import TheProduct from '@/components/cashBext/theProduct.component.vue';
+  // import Solutions from '@/components/cashBext/solutionsSection.component.vue';
+  // import Steps from '@/components/cashBext/stepsSection.component.vue';
+  // import Subscribe from '@/components/base/subscribeSection.component.vue';
+  // import TheFooter from '@/components/structure/theFooter.component.vue';
+  // import TheProduct from '@/components/cashBext/theProduct.component.vue';
   import TopBar from '@/components/structure/topBar/index.component.vue';
-  import { ref, onBeforeMount, onBeforeUnmount, onMounted } from 'vue';
+  import {
+    ref,
+    onBeforeMount,
+    onBeforeUnmount,
+    onMounted,
+    defineAsyncComponent,
+  } from 'vue';
   import { getCurrentInstance } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import { useRoute } from 'vue-router';
