@@ -28,19 +28,4 @@ export default defineConfig({
     target: ['edge90', 'chrome90', 'firefox90', 'safari15'],
     chunkSizeWarningLimit: 1500,
   },
-  vercel: {
-    // routes?: Route[];
-    // images?: ImagesConfig;
-    // wildcard?: WildcardConfig;
-    // overrides?: OverrideConfig;
-    // cache?: string[];
-    // crons?: CronsConfig;
-    images: {
-      sizes: [256, 384, 600, 1000],
-      domains: [],
-      minimumCacheTTL: 60,
-      formats: ['image/webp', 'image/avif'],
-    },
-  },
-  // optimizeDeps: { exclude: ['swiper/vue', 'swiper/types'] },
 });
