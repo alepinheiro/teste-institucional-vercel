@@ -68,7 +68,6 @@
           }"
           class="w-full sm:my-2">
           <SwiperSlide
-            :is="'swiper-slide'"
             v-for="{ description, icon, id } of cards"
             :key="id"
             class="cursor-default my-auto px-5 min-md:px-0 w-full">
