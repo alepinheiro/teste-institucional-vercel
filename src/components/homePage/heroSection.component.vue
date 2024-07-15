@@ -70,7 +70,7 @@
           </span>
         </a>
       </div>
-      <Products v-if="DOMLoaded" class="pt-24" />
+      <Products class="pt-24" />
     </div>
   </section>
 </template>
@@ -94,16 +94,10 @@
       return {
         information,
         topOfSalesSeals,
-        DOMLoaded: false,
         loadedPage: window,
         showHeroImage: false,
         useObjectToQueryString,
       };
-    },
-    mounted() {
-      setTimeout(() => {
-        this.DOMLoaded = true;
-      }, 1000 * 2);
     },
   });
 </script>
