@@ -48,12 +48,26 @@
           com garantia de imóvel
         </h1>
 
-        <component
-          :is="'swiper-container'"
-          v-bind="sliderOptions"
+        <Swiper
+          v-bind="{
+            spaceBetween: 0,
+            slidesPerView: 1,
+            loop: true,
+            autoHeight: false,
+            autoplay: {
+              delay: 2000,
+            },
+            breakpoints: {
+              667: {
+                slidesPerView: 3,
+                autoplay: false,
+                spaceBetween: 20,
+                loop: false,
+              },
+            },
+          }"
           class="w-full sm:my-2">
-          <component
-            :is="'swiper-slide'"
+          <SwiperSlide
             v-for="{ description, icon, id } of cards"
             :key="id"
             class="cursor-default my-auto px-5 min-md:px-0 w-full">
@@ -64,8 +78,8 @@
                 {{ description }}
               </p>
             </div>
-          </component>
-        </component>
+          </SwiperSlide>
+        </Swiper>
 
         <DoubleInputsForm
           v-model="doubleFormData"
@@ -85,22 +99,17 @@
 </template>
 
 <script lang="ts">
-  import CalendarIcon from '@/assets/svg/calendarWithClock.vue';
-  import DoubleInputsForm from '@/components/cashBext/heroForm.component.vue';
-  import HouseIcon from '@/assets/svg/houseWithMoneySign.vue';
-  import PercentIcon from '@/assets/svg/percentWithBackground.vue';
-  import VideoButton from '@/components/base/videoButton.component.vue';
   import information from '@/configurations/information';
-  import type { SwiperOptions } from 'swiper/types';
-  import { defineComponent, markRaw } from 'vue';
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import { defineAsyncComponent, defineComponent, markRaw } from 'vue';
 
   export default defineComponent({
     components: {
-      HouseIcon,
-      PercentIcon,
-      VideoButton,
-      CalendarIcon,
-      DoubleInputsForm,
+      DoubleInputsForm: defineAsyncComponent(
+        () => import('@/components/cashBext/heroForm.component.vue'),
+      ),
+      Swiper,
+      SwiperSlide,
     },
     props: {
       showMenu: {
@@ -117,37 +126,32 @@
         cards: [
           {
             id: 'percent',
-            icon: markRaw(PercentIcon),
+            icon: markRaw(
+              defineAsyncComponent(
+                () => import('@/assets/svg/percentWithBackground.vue'),
+              ),
+            ),
             description: 'A partir de 1.09% a.m. + IPCA ou 1.49% a.m. fixa.',
           },
           {
             id: 'house',
-            icon: markRaw(HouseIcon),
+            icon: markRaw(
+              defineAsyncComponent(
+                () => import('@/assets/svg/houseWithMoneySign.vue'),
+              ),
+            ),
             description: 'Até 60% do valor seu imóvel como empréstimo',
           },
           {
             id: 'calendar',
-            icon: markRaw(CalendarIcon),
+            icon: markRaw(
+              defineAsyncComponent(
+                () => import('@/assets/svg/calendarWithClock.vue'),
+              ),
+            ),
             description: 'Escolha como pagar. Em até 20 anos.',
           },
         ],
-        sliderOptions: {
-          spaceBetween: 0,
-          slidesPerView: 1,
-          loop: true,
-          autoHeight: false,
-          autoplay: {
-            delay: 2000,
-          },
-          breakpoints: {
-            667: {
-              slidesPerView: 3,
-              autoplay: false,
-              spaceBetween: 20,
-              loop: false,
-            },
-          },
-        } as SwiperOptions,
       };
     },
     methods: {
