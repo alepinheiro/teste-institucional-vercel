@@ -53,6 +53,8 @@
   </main>
 </template>
 <script lang="ts" setup>
+  import TopBar from '@/components/structure/topBar/index.component.vue';
+  import HeroSection from '@/components/cashBext/heroSection.component.vue';
   const AboutUs = defineAsyncComponent(
     () => import('@/components/base/aboutUs.component.vue'),
   );
@@ -81,16 +83,6 @@
     () => import('@/components/cashBext/theProduct.component.vue'),
   );
 
-  // import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
-  // import BusinessPartners from '@/components/homePage/businessPartners.component.vue';
-  // import ComparisonTable from '@/components/base/comparisonTable.component.vue';
-  import HeroSection from '@/components/cashBext/heroSection.component.vue';
-  // import Solutions from '@/components/cashBext/solutionsSection.component.vue';
-  // import Steps from '@/components/cashBext/stepsSection.component.vue';
-  // import Subscribe from '@/components/base/subscribeSection.component.vue';
-  // import TheFooter from '@/components/structure/theFooter.component.vue';
-  // import TheProduct from '@/components/cashBext/theProduct.component.vue';
-  import TopBar from '@/components/structure/topBar/index.component.vue';
   import {
     ref,
     onBeforeMount,
@@ -108,7 +100,6 @@
 
   const app = getCurrentInstance();
   const route = useRoute();
-  const utm = 'utm_source=organico&utm_medium=credito-com-garantia-de-imovel';
   const menuColor = ref(window.innerWidth > 667 ? 'black' : 'white');
 
   const setMenuColorOnResize = () => {
