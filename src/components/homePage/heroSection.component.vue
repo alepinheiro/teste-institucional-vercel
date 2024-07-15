@@ -108,7 +108,7 @@
     mounted() {
       setTimeout(() => {
         this.DOMLoaded = true;
-      }, 1000 * 1);
+      }, 1000 * 2);
     },
   });
 </script>

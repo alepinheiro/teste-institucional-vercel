@@ -1,6 +1,14 @@
 <template>
   <div class="w-full h-full">
-    <section class="bgBextCar">
+    <section class="relative w-full h-full">
+      <ResponsiveImage
+        imagePath="/images/BextCar/head.webp"
+        :imgAttrs="{
+          role: 'presentation',
+          loading: 'lazy',
+          class: 'w-screen h-screen object-left object-cover inset-0',
+        }"
+        class="absolute -z-10" />
       <div class="maxWidth xl:h-screen lg:h-screen">
         <TopBar
           v-if="showMenu"
@@ -83,10 +91,10 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
-  import TopBar from '@/components/structure/topBar/index.component.vue';
-  import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import InputMoney from '@/components/base/inputMoney.component.vue';
+  import TopBar from '@/components/structure/topBar/index.component.vue';
+  import { defineComponent } from 'vue';
+  import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   export default defineComponent({
     name: 'TopBarVideo',
     components: {

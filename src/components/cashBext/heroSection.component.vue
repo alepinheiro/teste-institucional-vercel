@@ -31,10 +31,13 @@
           class: 'object-contain object-right',
         }" />
 
-      <img
-        src="/images/Home/linesMd.png"
-        class="hidden md:block absolute inset-0 w-full object-contain -z-10"
-        role="presentation" />
+      <ResponsiveImage
+        imagePath="/images/Home/linesMd.png"
+        :imgAttrs="{
+          role: 'presentation',
+          loading: 'lazy',
+        }"
+        class="hidden md:block absolute inset-0 w-full object-contain -z-10" />
       <div
         class="flex flex-col gap-5 min-md:gap-10 items-center lg:w-8/12 xl:w-7/12 min-lg:mr-auto min-lg:items-start text-center xl:text-left lg:text-left -mt-16 min-md:mt-0 min-md:pt-28 min-md:pb-10 px-5">
         <h1
