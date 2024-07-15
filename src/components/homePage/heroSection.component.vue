@@ -70,12 +70,7 @@
           </span>
         </a>
       </div>
-      <img
-        src="/images/Home/heroBackground-sm.png"
-        width="300"
-        height="500"
-        alt="" />
-      <Products v-if="DOMLoaded" class="pt-24" />
+      <Products class="pt-24" />
     </div>
   </section>
 </template>
@@ -99,16 +94,10 @@
       return {
         information,
         topOfSalesSeals,
-        DOMLoaded: false,
         loadedPage: window,
         showHeroImage: false,
         useObjectToQueryString,
       };
-    },
-    mounted() {
-      setTimeout(() => {
-        this.DOMLoaded = true;
-      }, 1000 * 2);
     },
   });
 </script>
