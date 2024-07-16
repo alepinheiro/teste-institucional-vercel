@@ -21,6 +21,7 @@
             :src="$options.imageConfig.brand.youtubeLogo.image"
             :alt="$options.imageConfig.brand.youtubeLogo.alt"
             :title="$options.imageConfig.brand.youtubeLogo.alt"
+            loading="lazy"
             class="h-16" />
 
           <div class="flex flex-col gap-5 text-white">
@@ -31,10 +32,10 @@
               <div class="flex flex-row gap-5">
                 <div
                   v-for="{ description, icon, number, suffix } of stats"
-                  :key="icon"
+                  :key="description"
                   class="flex flex-col p-3 rounded-md w-full shadow-xl hover:shadow-2xl hover:scale-105 shadow-black/40 even:hidden border border-zinc-800/60 hover:border-primary transition cursor-default bg-[#181818]">
                   <div class="w-6 h-6 text-primary">
-                    <Icon :icon="icon" class="w-full h-full"></Icon>
+                    <Component :is="icon" class="w-full h-full" />
                   </div>
                   <span
                     class="text-4xl font-darkerGrotesque font-bold text-primary">
@@ -64,7 +65,7 @@
 
 <script lang="ts">
   import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-  import { defineComponent, ref } from 'vue';
+  import { defineAsyncComponent, defineComponent, markRaw, ref } from 'vue';
   import { gsap } from 'gsap';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   export default defineComponent({
@@ -90,19 +91,31 @@
         useObjectToQueryString,
         stats: [
           {
-            icon: 'fa-solid fa-video-camera',
+            icon: markRaw(
+              defineAsyncComponent(
+                () => import('@/assets/svg/faIcon/video.vue'),
+              ),
+            ),
             number: 500,
             suffix: '+',
             description: 'Vídeos grátis',
           },
           {
-            icon: 'fa-solid fa-people-group',
+            icon: markRaw(
+              defineAsyncComponent(
+                () => import('@/assets/svg/faIcon/peopleGroup.vue'),
+              ),
+            ),
             number: 2,
             suffix: 'MI+',
             description: 'Alcance mensal',
           },
           {
-            icon: 'fa-solid fa-people-group',
+            icon: markRaw(
+              defineAsyncComponent(
+                () => import('@/assets/svg/faIcon/peopleGroup.vue'),
+              ),
+            ),
             number: 60,
             suffix: 'K+',
             description: 'Inscritos no canal',

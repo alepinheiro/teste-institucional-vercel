@@ -7,9 +7,12 @@
     <div
       v-if="props.component.showBackGroundImage"
       class="absolute z-0 inset-0 flex">
-      <img
-        src="/images/finanBext/bgComparisonTable.png"
-        alt=""
+      <ResponsiveImage
+        imagePath="/images/finanBext/bgComparisonTable.png"
+        :imgAttrs="{
+          loading: 'lazy',
+          role: 'presentation',
+        }"
         class="self-end" />
     </div>
 
@@ -47,6 +50,7 @@
               <img
                 :src="$options.imageConfig.brand.blackAndBlueLogo.image"
                 :alt="$options.imageConfig.brand.blackAndBlueLogo.alt"
+                loading="lazy"
                 class="h-6 mx-auto sm:pr-2" />
             </div>
             <div class="w-1/4 text-center sm:text-xs">
@@ -60,19 +64,15 @@
             class="flex flex-row w-full py-4 items-center border-b border-zinc-300 last-of-type:border-0">
             <!-- eslint-disable-next-line vue/no-v-html -->
             <div class="w-1/2" v-html="text"></div>
-            <div class="w-1/4 text-center">
-              <Icon
-                v-if="ourProduct"
-                icon="fa-solid fa-check"
-                class="fa-solid fa-check text-primary w-6 h-6" />
-              <i v-else class="fa-solid fa-xmark w-6 h-6"></i>
+            <div class="w-1/4">
+              <Check v-if="ourProduct" class="text-primary w-6 h-6 mx-auto" />
+              <Xmark v-else class="w-6 h-6 mx-auto" />
             </div>
-            <div class="w-1/4 text-center">
-              <Icon
+            <div class="w-1/4">
+              <Check
                 v-if="otherProducts"
-                icon="fa-solid fa-check"
-                class="text-red-500 w-6 h-6" />
-              <Icon v-else icon="fa-solid fa-xmark" class="w-6 h-6" />
+                class="text-red-500 w-6 h-6 mx-auto" />
+              <Xmark v-else class="w-6 h-6 mx-auto" />
             </div>
           </div>
         </div>
@@ -81,6 +81,9 @@
   </section>
 </template>
 <script lang="ts" setup>
+  import Check from '@/assets/svg/faIcon/check.vue';
+  import Xmark from '@/assets/svg/faIcon/xmark.vue';
+
   defineProps<{
     props: {
       component: {
