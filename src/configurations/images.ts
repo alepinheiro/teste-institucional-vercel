@@ -157,6 +157,28 @@ export const aboutUsPage = {
       technology: '/images/webp/aboutUs/3Pilares/PilaresTecnologiaCor.webp',
     },
   },
+  editorial: {
+    agenciaOGlobo: {
+      src: '/images/logoMedia/AgenciaOGloboCinza.webp',
+      alt: 'Link para matéria no portal Agência O Globo',
+    },
+    economiaSC: {
+      src: '/images/logoMedia/EconomiaSCCinza.webp',
+      alt: 'Link para matéria no portal Economia SC',
+    },
+    imobileReport: {
+      src: '/images/logoMedia/ImobliReportCinza.webp',
+      alt: 'Link para matéria no portal Imobi Report',
+    },
+    peqEmpresasGrandesNegocios: {
+      src: '/images/logoMedia/PequenasEmpresasGrandeNegociosCinza.webp',
+      alt: 'Link para matéria no portal Pequenas empresas grandes negócios',
+    },
+    valorEconomico: {
+      src: '/images/logoMedia/ValorEconomicoCinza.webp',
+      alt: 'Link para matéria no portal Valor economico',
+    },
+  },
 };
 
 export const homePage = {
@@ -274,14 +296,26 @@ export const homeEquityPage = {
 export const icons = {
   percentageFill: '/images/Icons/iconePorcentagemFill.svg',
   calendarFill: '/images/Icons/iconeCalendarioFill.svg',
-  calendarOutline: '/images/Icons/iconeCalendárioOutlineWhite.svg',
-  moneyFill: '/images/Icons/iconeDinheiroFill.svg',
+  calendarOutline: {
+    src: '/images/Icons/iconeCalendárioOutlineWhite.svg',
+    alt: 'Ícone de calendário',
+  },
+  moneyFill: {
+    src: '/images/Icons/iconeDinheiroFill.svg',
+    alt: 'Ícone de dinheiro',
+  },
   checkFill: '/images/Icons/iconeCheckFill.svg',
   errorFill: '/images/Icons/iconeErradoFill.svg',
   errorDark: '/images/Icons/iconeErradoDark.svg',
-  phoneFill: '/images/Icons/iconeCelularFill.svg',
+  phoneFill: {
+    src: '/images/Icons/iconeCelularFill.svg',
+    alt: 'Ícone de celular',
+  },
   userFill: '/images/Icons/iconePessoaFill.svg',
-  notebookFill: '/images/Icons/iconeNotebookFill.svg',
+  notebookFill: {
+    src: '/images/Icons/iconeNotebookFill.svg',
+    alt: 'Ícone de notebook',
+  },
   errorBlue: '/images/Icons/iconeErradoAzul.svg',
   checkBlue: '/images/Icons/iconeCheckBlue.svg',
   checkCompleto: '/images/Icons/iconeCheckfillCompleto.svg',
@@ -305,30 +339,6 @@ export const image = {
     manIcon: '/images/webp/partner/ImageHomemForma.webp',
     mockupTablet: '/images/webp/partner/MockupTablet.webp',
   },
-  logoMedia: {
-    gray: {
-      agenciaOGlobo: {
-        src: '/images/logoMedia/AgenciaOGloboCinza.webp',
-        alt: 'Link para matéria no portal Agência O Globo',
-      },
-      economiaSC: {
-        src: '/images/logoMedia/EconomiaSCCinza.webp',
-        alt: 'Link para matéria no portal Economia SC',
-      },
-      imobileReport: {
-        src: '/images/logoMedia/ImobliReportCinza.webp',
-        alt: 'Link para matéria no portal Imobi Report',
-      },
-      peqEmpresasGrandesNegocios: {
-        src: '/images/logoMedia/PequenasEmpresasGrandeNegociosCinza.webp',
-        alt: 'Link para matéria no portal Pequenas empresas grandes negócios',
-      },
-      valorEconomico: {
-        src: '/images/logoMedia/ValorEconomicoCinza.webp',
-        alt: 'Link para matéria no portal Valor economico',
-      },
-    },
-  },
 };
 
 export const bestNews = {
@@ -345,7 +355,10 @@ export const bextCarPage = {
     alt: 'Uma mercedez benz branca com cédulas de cem reais ao fundo',
   },
   graficoBextCar: '/images/BextCar/graficoBextCar1.svg',
-  carro: '/images/BextCar/CARRO_2.webp',
+  carro: {
+    src: '/images/BextCar/CARRO_2.webp',
+    alt: 'Um carro branco sobre um fundo azul',
+  },
   graficoFinan: {
     src: '/images/BextCar/GRAFICO_FINANCIAMENTO.svg',
     alt: 'Gráfico comparando as taxas de juros do FinanBext e do empréstimo pessoal',

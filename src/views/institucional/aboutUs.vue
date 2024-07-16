@@ -37,34 +37,44 @@
 </template>
 
 <script lang="ts">
-  import BextExperience from '@/components/aboutUs/bextExperience.component.vue';
-  import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
-  import Editorial from '@/components/aboutUs/bestEditorial.component.vue';
   import HeroSection from '@/components/aboutUs/heroSection.component.vue';
-  import MissionSection from '@/components/aboutUs/missionSection.component.vue';
-  import Rebranding from '@/components/base/sections/rebranding/index.componente.vue';
-  import OurMotivation from '@/components/aboutUs/ourMission.component.vue';
-  import Team from '@/components/aboutUs/ourTeam.component.vue';
-  import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue';
-  import TheFooter from '@/components/structure/theFooter.component.vue';
   import TopBar from '@/components/structure/topBar/index.component.vue';
-  import { defineComponent } from 'vue';
+  import { defineAsyncComponent, defineComponent } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
 
   export default defineComponent({
     name: 'AboutUs',
     components: {
-      BextExperience,
-      BestPlay,
-      Editorial,
-      HeroSection,
-      MissionSection,
-      Rebranding,
-      OurMotivation,
-      Team,
-      Testimonials,
-      TheFooter,
       TopBar,
+      HeroSection,
+      Team: defineAsyncComponent(
+        () => import('@/components/aboutUs/ourTeam.component.vue'),
+      ),
+      OurMotivation: defineAsyncComponent(
+        () => import('@/components/aboutUs/ourMission.component.vue'),
+      ),
+      TheFooter: defineAsyncComponent(
+        () => import('@/components/structure/theFooter.component.vue'),
+      ),
+      Editorial: defineAsyncComponent(
+        () => import('@/components/aboutUs/bestEditorial.component.vue'),
+      ),
+      MissionSection: defineAsyncComponent(
+        () => import('@/components/aboutUs/missionSection.component.vue'),
+      ),
+      BextExperience: defineAsyncComponent(
+        () => import('@/components/aboutUs/bextExperience.component.vue'),
+      ),
+      Rebranding: defineAsyncComponent(
+        () =>
+          import('@/components/base/sections/rebranding/index.componente.vue'),
+      ),
+      Testimonials: defineAsyncComponent(
+        () => import('@/components/aboutUs/testimonialsSection.component.vue'),
+      ),
+      BestPlay: defineAsyncComponent(
+        () => import('@/components/base/sections/bestPlay/index.component.vue'),
+      ),
     },
     props: {
       showMenu: {

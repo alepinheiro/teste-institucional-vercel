@@ -30,26 +30,38 @@
 </template>
 
 <script lang="ts">
-  import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
-  import BusinessPartners from '@/components/homePage/businessPartners.component.vue';
-  import ComparisonTable from '@/components/base/comparisonTable.component.vue';
+  // import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
+  // import BusinessPartners from '@/components/homePage/businessPartners.component.vue';
+  // import ComparisonTable from '@/components/base/comparisonTable.component.vue';
   import HeadVideo from '@/components/vehicle/BextCarLP/headVideo.vue';
-  import Section2 from '@/components/vehicle/BextCarLP/section2.vue';
-  import Section3 from '@/components/vehicle/BextCarLP/section3.vue';
-  import TheFooter from '@/components/structure/theFooter.component.vue';
-  import { defineComponent } from 'vue';
+  // import Section2 from '@/components/vehicle/BextCarLP/section2.vue';
+  // import Section3 from '@/components/vehicle/BextCarLP/section3.vue';
+  // import TheFooter from '@/components/structure/theFooter.component.vue';
+  import { defineAsyncComponent, defineComponent } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
 
   export default defineComponent({
     name: 'BextCar',
     components: {
-      Section2,
-      Section3,
-      BestPlay,
       HeadVideo,
-      TheFooter,
-      ComparisonTable,
-      BusinessPartners,
+      Section2: defineAsyncComponent(
+        () => import('@/components/vehicle/BextCarLP/section2.vue'),
+      ),
+      Section3: defineAsyncComponent(
+        () => import('@/components/vehicle/BextCarLP/section3.vue'),
+      ),
+      BestPlay: defineAsyncComponent(
+        () => import('@/components/base/sections/bestPlay/index.component.vue'),
+      ),
+      TheFooter: defineAsyncComponent(
+        () => import('@/components/structure/theFooter.component.vue'),
+      ),
+      ComparisonTable: defineAsyncComponent(
+        () => import('@/components/base/comparisonTable.component.vue'),
+      ),
+      BusinessPartners: defineAsyncComponent(
+        () => import('@/components/homePage/businessPartners.component.vue'),
+      ),
     },
     props: {
       showMenu: {

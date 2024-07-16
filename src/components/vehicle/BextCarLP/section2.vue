@@ -3,8 +3,8 @@
     <div class="maxWidth flex flex-wrap pt-0">
       <div class="w-1/2 mt-auto mb-auto sm:w-full sm:hidden">
         <img
-          :src="$options.imageConfig.BextCar.carro"
-          alt="um carro branco sobre um fundo azul"
+          :src="bextCarPage.carro.src"
+          :alt="bextCarPage.carro.alt"
           class="sm:w-full md:max-w-[30rem] lg:max-w-3xl max-w-4xl h-auto xl:sticky xl:mt-[-35%] z-0" />
       </div>
       <div
@@ -33,14 +33,22 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
-  import card from '@/components/vehicle/BextCarLP/card.vue';
-  import banner from '@/components/vehicle/BextCarLP/banner.vue';
+  import { defineAsyncComponent, defineComponent } from 'vue';
+  import { bextCarPage } from '@/configurations/images';
   export default defineComponent({
     name: 'Section2',
     components: {
-      card,
-      banner,
+      Card: defineAsyncComponent(
+        () => import('@/components/vehicle/BextCarLP/card.vue'),
+      ),
+      Banner: defineAsyncComponent(
+        () => import('@/components/vehicle/BextCarLP/banner.vue'),
+      ),
+    },
+    data() {
+      return {
+        bextCarPage,
+      };
     },
   });
 </script>

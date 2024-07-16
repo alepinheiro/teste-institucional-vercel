@@ -10,10 +10,10 @@
           target="_blank"
           class="justify-center items-center flex">
           <ResponsiveImage
-            :imagePath="$options.imageConfig.logoMedia.gray.valorEconomico.src"
+            :imagePath="aboutUsPage.editorial.valorEconomico.src"
             :imgAttrs="{
-              alt: $options.imageConfig.logoMedia.gray.valorEconomico.alt,
-              title: $options.imageConfig.logoMedia.gray.valorEconomico.alt,
+              alt: aboutUsPage.editorial.valorEconomico.alt,
+              title: aboutUsPage.editorial.valorEconomico.alt,
               loading: 'lazy',
             }"
             class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
@@ -29,15 +29,10 @@
           target="_blank"
           class="justify-center items-center flex">
           <ResponsiveImage
-            :imagePath="
-              $options.imageConfig.logoMedia.gray.peqEmpresasGrandesNegocios.src
-            "
+            :imagePath="aboutUsPage.editorial.peqEmpresasGrandesNegocios.src"
             :imgAttrs="{
-              alt: $options.imageConfig.logoMedia.gray
-                .peqEmpresasGrandesNegocios.alt,
-              title:
-                $options.imageConfig.logoMedia.gray.peqEmpresasGrandesNegocios
-                  .alt,
+              alt: aboutUsPage.editorial.peqEmpresasGrandesNegocios.alt,
+              title: aboutUsPage.editorial.peqEmpresasGrandesNegocios.alt,
             }"
             class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
         </a>
@@ -52,10 +47,10 @@
           aria-label="Acesse a matéria no portal revistapegn.globo.com"
           class="justify-center items-center flex">
           <ResponsiveImage
-            :imagePath="$options.imageConfig.logoMedia.gray.imobileReport.src"
+            :imagePath="aboutUsPage.editorial.imobileReport.src"
             :imgAttrs="{
-              alt: $options.imageConfig.logoMedia.gray.imobileReport.alt,
-              title: $options.imageConfig.logoMedia.gray.imobileReport.alt,
+              alt: aboutUsPage.editorial.imobileReport.alt,
+              title: aboutUsPage.editorial.imobileReport.alt,
             }"
             class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
         </a>
@@ -70,10 +65,10 @@
           aria-label="Acesse a matéria no portal economiasc.com"
           class="justify-center items-center flex">
           <ResponsiveImage
-            :imagePath="$options.imageConfig.logoMedia.gray.economiaSC.src"
+            :imagePath="aboutUsPage.editorial.economiaSC.src"
             :imgAttrs="{
-              alt: $options.imageConfig.logoMedia.gray.economiaSC.alt,
-              title: $options.imageConfig.logoMedia.gray.economiaSC.alt,
+              alt: aboutUsPage.editorial.economiaSC.alt,
+              title: aboutUsPage.editorial.economiaSC.alt,
             }"
             class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
         </a>
@@ -88,10 +83,10 @@
           aria-label="Acesse a matéria no portal revistapegn.globo.com"
           class="justify-center items-center flex">
           <ResponsiveImage
-            :imagePath="$options.imageConfig.logoMedia.gray.agenciaOGlobo.src"
+            :imagePath="aboutUsPage.editorial.agenciaOGlobo.src"
             :imgAttrs="{
-              alt: $options.imageConfig.logoMedia.gray.agenciaOGlobo.alt,
-              title: $options.imageConfig.logoMedia.gray.agenciaOGlobo.alt,
+              alt: aboutUsPage.editorial.agenciaOGlobo.alt,
+              title: aboutUsPage.editorial.agenciaOGlobo.alt,
             }"
             class="w-8/12 h-auto transition ease-in-out duration-500 hover:scale-110 hover:translate-y-1" />
         </a>
@@ -100,11 +95,14 @@
   </section>
 </template>
 <script lang="ts">
+  import { aboutUsPage } from '@/configurations/images';
   import { defineComponent } from 'vue';
   export default defineComponent({
     name: 'BestEditorial',
     data() {
-      return {};
+      return {
+        aboutUsPage,
+      };
     },
   });
 </script>

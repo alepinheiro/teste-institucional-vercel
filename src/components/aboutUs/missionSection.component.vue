@@ -16,7 +16,7 @@
 
       <p
         class="md:text-xl lg:text-2xl xl:text-2xl lg:w-10/12 lg:mx-auto"
-        :html="description" />
+        v-html="description" />
     </div>
 
     <div
@@ -133,9 +133,9 @@
   </section>
 </template>
 <script lang="ts">
-  import { defineComponent, ImgHTMLAttributes, ref } from 'vue';
-  import { gsap } from 'gsap';
   import useWindowSize from '@/composables/useWindowSize';
+  import { defineComponent, ref } from 'vue';
+  import { gsap } from 'gsap';
   import { links } from '@/configurations/information';
 
   export default defineComponent({
@@ -189,7 +189,7 @@
             id: 'technology' as const,
             title: '2. Tecnologia',
             description:
-              'o cliente tem acesso a uma plataforma open finance, intuitiva e rápida, onde suas possibilidades são multiplicadas e apresentadas através do nosso simulador.',
+              'O cliente tem acesso a uma plataforma open finance, intuitiva e rápida, onde suas possibilidades são multiplicadas e apresentadas através do nosso simulador.',
             image: '/images/aboutUs/3Pilares/PilaresTecnologiaCorMobile.webp',
           },
           humanizedExperience: {

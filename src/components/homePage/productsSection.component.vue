@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <div class="pb-12 pt-8 xl:max-w-7xl max-w-[100vw]">
+    <div class="pb-12 pt-8 xl:max-w-7xl max-w-[100vw] w-full">
       <Swiper
         v-bind="{
           loop: useWindow.width.value < 1024,
@@ -30,7 +30,7 @@
           },
           breakpoints: {
             767: {
-              slidesPerView: 2.5,
+              slidesPerView: 2,
             },
             1023: {
               slidesPerView: 3.5,

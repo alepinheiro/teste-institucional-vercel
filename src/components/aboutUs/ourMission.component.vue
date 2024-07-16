@@ -26,6 +26,7 @@
                 :imagePath="`/images/aboutUs/cards/${index}.png`"
                 :imgAttrs="{
                   alt: item.title,
+                  loading: 'lazy',
                   class: 'object-cover object-left-top',
                 }"
                 class="absolute inset-0 h-full w-full -z-10 transition-all" />
@@ -35,7 +36,7 @@
                 <p class="font-bold text-white md:w-3/4 select-none">
                   {{ item.title }}
                 </p>
-                <Icon icon="fa-solid fa-chevron-up"></Icon>
+                <ChevronUp class="h-4 w-4 text-white" />
               </div>
             </div>
             <div
@@ -50,9 +51,14 @@
   </section>
 </template>
 <script lang="ts">
-  import { defineComponent } from 'vue';
+  import { defineAsyncComponent, defineComponent } from 'vue';
   export default defineComponent({
     name: 'OurMission',
+    components: {
+      ChevronUp: defineAsyncComponent(
+        () => import('@/assets/svg/faIcon/chevronUp.vue'),
+      ),
+    },
     data() {
       const cards = {
         capitalCatalyst: {

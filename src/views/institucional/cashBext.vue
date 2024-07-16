@@ -55,6 +55,16 @@
 <script lang="ts" setup>
   import TopBar from '@/components/structure/topBar/index.component.vue';
   import HeroSection from '@/components/cashBext/heroSection.component.vue';
+  import {
+    ref,
+    onMounted,
+    onBeforeMount,
+    onBeforeUnmount,
+    defineAsyncComponent,
+  } from 'vue';
+  import { getCurrentInstance } from 'vue';
+  import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+  import { useRoute } from 'vue-router';
   const AboutUs = defineAsyncComponent(
     () => import('@/components/base/aboutUs.component.vue'),
   );
@@ -82,17 +92,6 @@
   const TheProduct = defineAsyncComponent(
     () => import('@/components/cashBext/theProduct.component.vue'),
   );
-
-  import {
-    ref,
-    onBeforeMount,
-    onBeforeUnmount,
-    onMounted,
-    defineAsyncComponent,
-  } from 'vue';
-  import { getCurrentInstance } from 'vue';
-  import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
-  import { useRoute } from 'vue-router';
 
   defineProps<{
     showMenu: boolean;
