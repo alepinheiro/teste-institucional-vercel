@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import { convertImagesToWebP } from './src/plugins/convertImagesToWebP';
 import { findUnusedImages } from './src/plugins/findUnusedImages';
+import { lighthouse } from './src/plugins/lighthouse';
 import { generateResponsiveImages } from './src/plugins/generateResponsiveImages';
 import vercel from 'vite-plugin-vercel';
 
@@ -16,7 +17,7 @@ export default defineConfig({
       '@': resolve(projectRootDir, 'src'),
     },
   },
-  plugins: [alias(), vue(), vercel(), generateResponsiveImages()],
+  plugins: [alias(), vue(), vercel(), generateResponsiveImages(), lighthouse()],
   server: {
     host: '0.0.0.0',
     port: 10086,
