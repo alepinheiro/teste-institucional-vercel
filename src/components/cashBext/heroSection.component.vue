@@ -65,6 +65,7 @@
                 loop: false,
               },
             },
+            modules: [Autoplay],
           }"
           class="w-full sm:my-2">
           <SwiperSlide
@@ -72,7 +73,7 @@
             :key="id"
             class="cursor-default my-auto px-5 min-md:px-0 w-full">
             <div class="flex flex-row gap-2 items-center w-fit mx-auto">
-              <component :is="icon" class="text-primary flex-shrink-0" />
+              <Component :is="icon" class="text-primary flex-shrink-0" />
               <p
                 class="text-textPrimary text-center text-sm md:text-left min-lg:text-base">
                 {{ description }}
@@ -87,11 +88,12 @@
           @submit="onSubmit" />
         <button
           v-scroll-to="'#businessPartners'"
-          class="flex gap-2 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline">
-          <Icon icon="fa-solid fa-chevron-down" class="animate-bounce" />
+          class="flex gap-1 justify-between w-fit mx-auto text-textSecondary pt-10 hover:underline">
+          <ChevronDown class="animate-bounce h-4 w-3" />
           <span class="text-xs">
             Ou saiba mais sobre o cashBext rolando para baixo
           </span>
+          <ChevronDown class="animate-bounce h-4 w-3" />
         </button>
       </div>
     </div>
@@ -100,6 +102,7 @@
 
 <script lang="ts">
   import { links } from '@/configurations/information';
+  import { Autoplay } from 'swiper/modules';
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import { defineAsyncComponent, defineComponent, markRaw } from 'vue';
 
@@ -107,6 +110,9 @@
     components: {
       DoubleInputsForm: defineAsyncComponent(
         () => import('@/components/cashBext/heroForm.component.vue'),
+      ),
+      ChevronDown: defineAsyncComponent(
+        () => import('@/assets/svg/faIcon/chevronDown.vue'),
       ),
       Swiper,
       SwiperSlide,
@@ -119,6 +125,7 @@
     },
     data() {
       return {
+        Autoplay,
         doubleFormData: {
           assetValue: 500000,
           creditValue: 250000,

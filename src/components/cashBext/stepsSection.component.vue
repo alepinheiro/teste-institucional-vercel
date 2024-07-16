@@ -34,9 +34,9 @@
           class="bg-white rounded-lg p-6 h-auto w-80 lg:w-80 md:w-72 sm:w-60 mb-10 hover:shadow-lg hover:shadow-[#0524dd30] transition-all ease-linear cursor-default group hover:bg-primary">
           <div
             class="flex flex-col gap-5 xl:gap-8 items-start font-Public-Sans">
-            <i
-              :class="icon"
-              class="text-primary group-hover:text-white w-5 h-5"></i>
+            <Component
+              :is="icon"
+              class="text-primary group-hover:text-white w-5 h-5" />
             <h3
               class="text-2xl lg:text-lg sm:text-xl font-bold group-hover:text-white">
               {{ id }}. {{ title }}
@@ -59,9 +59,10 @@
 <script lang="ts">
   import { Pagination, Autoplay, Navigation } from 'swiper/modules';
   import { Swiper, SwiperSlide } from 'swiper/vue';
-  import { defineComponent } from 'vue';
+  import { defineAsyncComponent, defineComponent } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import { useRoute } from 'vue-router';
+  import { markRaw } from 'vue';
   export default defineComponent({
     components: {
       Swiper,
@@ -73,7 +74,11 @@
       const stepCards = [
         {
           id: 1,
-          icon: 'fa-solid fa-layer-group',
+          icon: markRaw(
+            defineAsyncComponent(
+              () => import('@/assets/svg/faIcon/layerGroup.vue'),
+            ),
+          ),
           title: 'Simule',
           description:
             'A simulação é feita através do nosso simulador. <b>Em até 20 minutos você tem o resultado, porque seu tempo é valioso.</b>',
@@ -84,7 +89,9 @@
         },
         {
           id: 2,
-          icon: 'fa-solid fa-file',
+          icon: markRaw(
+            defineAsyncComponent(() => import('@/assets/svg/faIcon/file.vue')),
+          ),
           title: 'Documentação',
           description:
             'Para uma análise de crédito detalhada, envie os documentos solicitados. <b>Então seus dados serão analisados e, em seguida, uma proposta será enviada.</b>',
@@ -95,7 +102,11 @@
         },
         {
           id: 3,
-          icon: 'fa-solid fa-search',
+          icon: markRaw(
+            defineAsyncComponent(
+              () => import('@/assets/svg/faIcon/magnifyingGlass.vue'),
+            ),
+          ),
           title: 'Avaliação e jurídico',
           description:
             'Nesta etapa, um engenheiro avalia quanto o imóvel vale. Além disso, é feita uma análise para conferir a <b>situação jurídica da propriedade e validar o bem como uma garantia.</b>',
@@ -103,7 +114,11 @@
         },
         {
           id: 4,
-          icon: 'fa-solid fa-circle-dollar-to-slot',
+          icon: markRaw(
+            defineAsyncComponent(
+              () => import('@/assets/svg/faIcon/circleDollarToSlot.vue'),
+            ),
+          ),
           title: 'Liberação',
           description:
             'Agora a documentação é encaminhada para o cartório e você assina os documentos digitalmente. <b>O seu bem é então alienado e seu recurso liberado na sua conta!</b>',

@@ -9,15 +9,18 @@
     class="rounded-lg px-4 py-2 optionsHover flex flex-row items-center w-full justify-between group"
     @click="$emit('click')">
     {{ $props.label }}
-    <Icon
-      icon="fa-solid fa-arrow-right"
+    <ArrowRight
       class="h-5 w-5 opacity-0 group-hover:opacity-100 transition-all" />
   </Component>
 </template>
 <script lang="ts">
+  import ArrowRight from '@/assets/svg/faIcon/arrowRight.vue';
   import { defineComponent } from 'vue';
   export default defineComponent({
     name: 'MenuMobileItem',
+    components: {
+      ArrowRight,
+    },
     props: {
       routePath: {
         type: String,

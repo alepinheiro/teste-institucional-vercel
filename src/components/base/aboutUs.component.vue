@@ -12,11 +12,12 @@
         class="flex flex-row gap-2 sm:flex-col sm:gap-5 w-10/12 mx-auto items-center">
         <div class="xl:w-4/12 w-1/3 sm:w-full sm:pb-4">
           <img
-            :src="$options.imageConfig.brand.whiteAndBlueLogo.image"
-            :alt="$options.imageConfig.brand.whiteAndBlueLogo.alt"
+            :src="bextImages.whiteAndBlueLogo.src"
+            :alt="bextImages.whiteAndBlueLogo.alt"
+            loading="lazy"
             class="object-contain h-auto w-full sm:w-2/3 mx-auto xl:w-10/12" />
         </div>
-        <div class="w-full xl:w-8/12 w-2/3">
+        <div class="xl:w-8/12 w-2/3">
           <h2
             class="text-3xl lg:text-2xl sm:text-xl font-bold text-white text-center">
             Há mais de 10 anos transformamos o acesso ao crédito para quem busca
@@ -36,6 +37,7 @@
             :key="id"
             :src="src"
             :alt="alt"
+            loading="lazy"
             class="mx-auto h-auto min-md:h-24 w-[20%] my-2" />
         </div>
       </div>
@@ -50,7 +52,7 @@
           }"
           class="rounded-xl p-8 flex flex-col gap-4 flex-1">
           <div>
-            <Icon :icon="icon" class="w-6 h-6" />
+            <Component :is="icon" class="w-6 h-6" />
           </div>
           <div>
             <h3 class="flex flex-col gap-4">
@@ -84,6 +86,8 @@
 </template>
 <script setup lang="ts">
   import { topOfSales } from '@/configurations/images';
+  import { bextImages } from '@/configurations/images';
+  import { defineAsyncComponent, markRaw } from 'vue';
 
   defineProps<{
     container: {
@@ -97,19 +101,27 @@
   const cardContent = [
     {
       id: 1,
-      icon: 'fa-solid fa-coins',
+      icon: markRaw(
+        defineAsyncComponent(() => import('@/assets/svg/faIcon/coins.vue')),
+      ),
       title: '+ de 3.000',
       description: 'Propostas lançadas mensalmente',
     },
     {
       id: 2,
-      icon: 'fa-solid fa-money-bill-wave',
+      icon: markRaw(
+        defineAsyncComponent(
+          () => import('@/assets/svg/faIcon/moneyBillWave.vue'),
+        ),
+      ),
       title: '+ de R$ 1 bilhão',
       description: 'Emprestados em crédito',
     },
     {
       id: 3,
-      icon: 'fa-solid fa-dice-d6',
+      icon: markRaw(
+        defineAsyncComponent(() => import('@/assets/svg/faIcon/diceD6.vue')),
+      ),
       title: '+ 20 parceiros',
       description: 'As maiores instituições do mercado',
     },

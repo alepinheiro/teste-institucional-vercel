@@ -49,7 +49,7 @@
               v-for="{ description, icon, id } of cards"
               :key="id"
               class="flex flex-row gap-2 items-center mx-auto w-full">
-              <component :is="icon" class="text-primary flex-shrink-0" />
+              <Component :is="icon" class="text-primary flex-shrink-0" />
               <p class="text-textPrimary text-left text-base">
                 {{ description }}
               </p>
@@ -63,34 +63,30 @@
             @submit="onSubmit" />
         </div>
         <!--  -->
-        <a
+        <button
           v-scroll-to="'#businessPartners'"
-          href="#"
           class="flex gap-2 justify-between w-fit mx-auto text-textSecondary sm:pt-4 pt-8 hover:underline">
-          <ChevronDown class="animate-bounce" />
+          <ChevronDown class="animate-bounce h-4 w-3" />
           <span class="text-xs">
             Ou saiba mais sobre o FinanBext rolando para baixo
           </span>
-        </a>
+          <ChevronDown class="animate-bounce h-4 w-3" />
+        </button>
       </div>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-  import { defineComponent, markRaw, ref } from 'vue';
+  import { defineComponent, markRaw, ref, defineAsyncComponent } from 'vue';
   import { links } from '@/configurations/information';
-  import CalendarIcon from '@/assets/svg/calendarWithClock.vue';
   import InputsForm from '@/components/finanBextLp/heroForm.component.vue';
-  import PercentIcon from '@/assets/svg/percentWithBackground.vue';
   import ChevronDown from '@/assets/svg/faIcon/chevronDown.vue';
 
   export default defineComponent({
     components: {
       InputsForm,
-      PercentIcon,
       ChevronDown,
-      CalendarIcon,
     },
     data() {
       const formData = ref({
@@ -101,12 +97,20 @@
       const cards = [
         {
           id: 'percent',
-          icon: markRaw(PercentIcon),
+          icon: markRaw(
+            defineAsyncComponent(
+              () => import('@/assets/svg/percentWithBackground.vue'),
+            ),
+          ),
           description: 'Taxas a partir de 9,70% a.a. + taxas referencial',
         },
         {
           id: 'calendar',
-          icon: markRaw(CalendarIcon),
+          icon: markRaw(
+            defineAsyncComponent(
+              () => import('@/assets/svg/calendarWithClock.vue'),
+            ),
+          ),
           description: 'Pague em até 420 meses',
         },
       ];

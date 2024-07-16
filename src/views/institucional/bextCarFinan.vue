@@ -96,28 +96,33 @@
 </template>
 
 <script lang="ts">
-  import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
   import CardWhite from '@/components/vehicle/BextCarFinan/cardWhite.vue';
-  import ComparisonTable from '@/components/base/comparisonTable.component.vue';
-  import StepByStep from '@/components/vehicle/BextCarFinan/stepByStep.vue';
-  import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue';
-  import TheFooter from '@/components/structure/theFooter.component.vue';
   import TopBarVideo from '@/components/vehicle/BextCarFinan/topBarVideo.vue';
-  import { defineComponent } from 'vue';
+  import { defineAsyncComponent, defineComponent } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import { links } from '@/configurations/information';
   import { bextCarPage } from '@/configurations/images';
 
   export default defineComponent({
-    name: 'BextCarFinanLP',
+    name: 'BextCarFinan',
     components: {
-      BestPlay,
       CardWhite,
-      TheFooter,
-      StepByStep,
+      TheFooter: defineAsyncComponent(
+        () => import('@/components/structure/theFooter.component.vue'),
+      ),
       TopBarVideo,
-      Testimonials,
-      ComparisonTable,
+      BestPlay: defineAsyncComponent(
+        () => import('@/components/base/sections/bestPlay/index.component.vue'),
+      ),
+      StepByStep: defineAsyncComponent(
+        () => import('@/components/vehicle/BextCarFinan/stepByStep.vue'),
+      ),
+      Testimonials: defineAsyncComponent(
+        () => import('@/components/aboutUs/testimonialsSection.component.vue'),
+      ),
+      ComparisonTable: defineAsyncComponent(
+        () => import('@/components/base/comparisonTable.component.vue'),
+      ),
     },
     props: {
       showMenu: {

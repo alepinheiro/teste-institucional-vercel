@@ -22,6 +22,7 @@
               :imagePath="image"
               :imgAttrs="{
                 class: 'object-cover',
+                loading: 'lazy',
               }"
               class="w-full h-full z-0" />
             <PlayButton
@@ -45,17 +46,44 @@
       class="md:flex lg:flex md:flex-row lg:flex-row md:gap-2 lg:gap-2 md:items-center lg:items-center md:max-w-[663px] lg:max-w-5xl md:mx-auto lg:mx-auto xl:hidden">
       <div
         class="bestExperiencePrev hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8">
-        <Icon icon="fa-solid fa-chevron-left" class="w-full h-full" />
+        <ChevronLeft class="w-full h-full" />
       </div>
 
-      <component
-        :is="'swiper-container'"
+      <Swiper
         ref="bestExperienceSwiper"
-        v-bind="sliderOptions"
+        v-bind="{
+          spaceBetween: 20,
+          slidesPerView: 1.2,
+          centeredSlides: true,
+          autoHeight: false,
+          pagination: true,
+          loop: true,
+          autoplay: {
+            delay: 8000,
+          },
+          navigation: {
+            nextEl: '.bestExperienceNext',
+            prevEl: '.bestExperiencePrev',
+          },
+          breakpoints: {
+            767: {
+              slidesPerView: 1.5,
+            },
+            1021: {
+              slidesPerView: 1,
+            },
+            1277: {
+              slidesPerView: 1,
+            },
+            1919: {
+              slidesPerView: 4,
+              centeredSlides: false,
+            },
+          },
+        }"
         :class="{ 'relative -z-0': showVideo }"
         class="w-full md:max-w-xl lg:max-w-xl">
-        <component
-          :is="'swiper-slide'"
+        <SwiperSlide
           v-for="{ title, description, image, videoId } of cards"
           :key="title"
           class="flex flex-col md:flex-row lg:flex-row rounded-xl w-full border border-[#D9D9D9] mb-12 h-auto">
@@ -80,53 +108,24 @@
               {{ description }}
             </p>
           </div>
-        </component>
-      </component>
+        </SwiperSlide>
+      </Swiper>
 
       <div
         class="bestExperienceNext hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8">
-        <Icon icon="fa-solid fa-chevron-right" class="w-full h-full" />
+        <ChevronRight class="w-full h-full" />
       </div>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
+  import ChevronLeft from '@/assets/svg/faIcon/chevronLeft.vue';
   import Overlay from '@/components/base/overlays/youtubeVideo.component.vue';
   import PlayButton from '@/components/base/buttons/playVideo.component.vue';
-  import { SwiperOptions } from 'swiper/types';
   import { ref } from 'vue';
-
-  const sliderOptions: SwiperOptions = {
-    spaceBetween: 20,
-    slidesPerView: 1.2,
-    centeredSlides: true,
-    autoHeight: false,
-    pagination: true,
-    loop: true,
-    autoplay: {
-      delay: 8000,
-    },
-    navigation: {
-      nextEl: '.bestExperienceNext',
-      prevEl: '.bestExperiencePrev',
-    },
-    breakpoints: {
-      767: {
-        slidesPerView: 1.5,
-      },
-      1021: {
-        slidesPerView: 1,
-      },
-      1277: {
-        slidesPerView: 1,
-      },
-      1919: {
-        slidesPerView: 4,
-        centeredSlides: false,
-      },
-    },
-  };
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import ChevronRight from '@/assets/svg/faIcon/chevronRight.vue';
 
   const showVideo = ref<boolean>(false);
   const overlayVideoId = ref<string>('');

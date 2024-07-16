@@ -18,7 +18,7 @@
       </div> -->
 
       <div
-        class="maxWidth m-auto min-md:mb-20 h-8/12 min-md:h-full xl:py-12  flex flex-col">
+        class="maxWidth m-auto min-md:mb-20 h-8/12 min-md:h-full xl:py-12 flex flex-col">
         <div
           class="flex flex-col items-center justify-center gap-10 text-center px-5 h-full">
           <video
@@ -26,7 +26,7 @@
             loop
             muted
             playsinline
-            :src="$options.imageConfig.brand.loadingBrandChangeLight.image"
+            :src="bextImages.loadingBrandChangeLight.src"
             class="py-5 h-4/12 xl:pt-36 pt-36 sm:pt-18"></video>
           <h2
             class="bg-primary text-white w-fit mx-auto px-3 py-2 rounded-xl text-lg">
@@ -43,6 +43,7 @@
 </template>
 
 <script lang="ts">
+  import { bextImages } from '@/configurations/images';
   import { defineComponent, type PropType } from 'vue';
 
   export default defineComponent({
@@ -62,7 +63,9 @@
       },
     },
     data() {
-      return {};
+      return {
+        bextImages,
+      };
     },
   });
 </script>

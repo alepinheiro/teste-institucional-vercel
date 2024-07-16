@@ -11,15 +11,43 @@
         class="md:flex lg:flex xl:flex md:flex-row lg:flex-row xl:flex-row md:gap-2 lg:gap-2 xl:gap-2 md:items-center lg:items-center xl:items-center w-full lg:w-fit md:max-w-[633px] lg:max-w-5xl xl:max-w-5xl md:mx-auto lg:mx-auto xl:mx-auto">
         <div
           class="testimonialsPrev hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8">
-          <i class="fa-solid fa-chevron-left w-full h-full"></i>
+          <ChevronLeft class="w-full h-full" />
         </div>
 
-        <component
-          :is="'swiper-container'"
-          v-bind="sliderOptions"
+        <Swiper
+          v-bind="{
+            spaceBetween: 12,
+            slidesPerView: 1.2,
+            centeredSlides: true,
+            autoHeight: false,
+            pagination: true,
+            loop: true,
+            autoplay: {
+              delay: 8000,
+            },
+            navigation: {
+              nextEl: '.testimonialsNext',
+              prevEl: '.testimonialsPrev',
+            },
+            breakpoints: {
+              767: {
+                slidesPerView: 1,
+              },
+              1021: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              1277: {
+                slidesPerView: 1,
+              },
+              1919: {
+                slidesPerView: 1,
+              },
+            },
+            modules: [Autoplay, Pagination],
+          }"
           class="w-full md:max-w-xl lg:max-w-xl xl:max-w-2xl">
-          <component
-            :is="'swiper-slide'"
+          <SwiperSlide
             v-for="{
               image,
               location,
@@ -58,12 +86,12 @@
                 {{ profissional }} - {{ location }}
               </span>
             </div>
-          </component>
-        </component>
+          </SwiperSlide>
+        </Swiper>
 
         <div
           class="testimonialsNext hidden md:block lg:block xl:block text-textprimary hover:text-primary h-8 w-8">
-          <i class="fa-solid fa-chevron-right w-full h-full"></i>
+          <ChevronRight class="w-full h-full" />
         </div>
       </div>
     </div>
@@ -71,10 +99,21 @@
 </template>
 
 <script lang="ts">
-  import { SwiperOptions } from 'swiper/types';
-  import { defineComponent } from 'vue';
+  import { Autoplay, Pagination } from 'swiper/modules';
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import { defineAsyncComponent, defineComponent } from 'vue';
   export default defineComponent({
     name: 'TestimonialsSection',
+    components: {
+      Swiper,
+      SwiperSlide,
+      ChevronLeft: defineAsyncComponent(
+        () => import('@/assets/svg/faIcon/chevronLeft.vue'),
+      ),
+      ChevronRight: defineAsyncComponent(
+        () => import('@/assets/svg/faIcon/chevronRight.vue'),
+      ),
+    },
     props: {
       title: {
         type: String,
@@ -84,37 +123,6 @@
       },
     },
     data() {
-      const sliderOptions: SwiperOptions = {
-        spaceBetween: 12,
-        slidesPerView: 1.2,
-        centeredSlides: true,
-        autoHeight: false,
-        pagination: true,
-        loop: true,
-        autoplay: {
-          delay: 8000,
-        },
-        navigation: {
-          nextEl: '.testimonialsNext',
-          prevEl: '.testimonialsPrev',
-        },
-        breakpoints: {
-          767: {
-            slidesPerView: 1,
-          },
-          1021: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          1277: {
-            slidesPerView: 1,
-          },
-          1919: {
-            slidesPerView: 1,
-          },
-        },
-      };
-
       const cards: {
         name: string;
         image: string;
@@ -166,7 +174,8 @@
 
       return {
         cards,
-        sliderOptions,
+        Autoplay,
+        Pagination,
       };
     },
   });
