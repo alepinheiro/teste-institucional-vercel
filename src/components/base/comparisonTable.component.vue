@@ -48,8 +48,8 @@
             <div class="w-1/2"></div>
             <div class="w-1/4 text-center">
               <img
-                :src="$options.imageConfig.brand.blackAndBlueLogo.image"
-                :alt="$options.imageConfig.brand.blackAndBlueLogo.alt"
+                :src="bextImages.blackAndBlueLogo.src"
+                :alt="bextImages.blackAndBlueLogo.alt"
                 loading="lazy"
                 class="h-6 mx-auto sm:pr-2" />
             </div>
@@ -83,6 +83,7 @@
 <script lang="ts" setup>
   import Check from '@/assets/svg/faIcon/check.vue';
   import Xmark from '@/assets/svg/faIcon/xmark.vue';
+  import { bextImages } from '@/configurations/images';
 
   defineProps<{
     props: {

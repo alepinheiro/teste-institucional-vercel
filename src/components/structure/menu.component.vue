@@ -6,21 +6,18 @@
           path: '/',
           query: $route.query,
         }"
-        class="decoration"
-      >
+        class="decoration">
         Início
       </RouterLink>
-      <dropdownMenu class="hover:cursor-pointer decoration" />
-      <dropdownForB class="hover:cursor-pointer decoration" />
+      <DropdownMenu class="hover:cursor-pointer decoration" />
+      <DropdownForB class="hover:cursor-pointer decoration" />
       <RouterLink
         :to="{
           path: '/sobre',
           query: $route.query,
         }"
         class="decoration"
-        target="_self"
-        active-class:
-      >
+        target="_self">
         Sobre Nós
       </RouterLink>
       <RouterLink
@@ -29,70 +26,65 @@
           query: $route.query,
         }"
         class="decoration"
-        target="_blank"
-      >
+        target="_blank">
         Seja um Parceiro
       </RouterLink>
       <a
-        :href="'https://portal.seja.best/' + $root.utms"
+        :href="links.bextNews.url + $root.utms"
         class="decoration"
-        target="_blank"
-      >
+        target="_blank">
         Portal Bext
       </a>
     </div>
     <a
-      :href="
-        $options.information.appSimulator + $root.utms
-      "
+      :href="links.simulator.url + $root.utms"
       style="text-decoration: none"
       target="_blank"
-      class="bg-primary rounded-lg px-4 py-2 font-semibold text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:text-sm"
-    >
+      class="bg-primary rounded-lg px-4 py-2 font-semibold text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 lg:text-sm">
       Simule seu crédito
     </a>
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue'
-import dropdownMenu from '../base/dropdownMenu.vue'
-import dropdownForB from '../base/PopUpForBusiness.vue'
-import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
-import { useRoute } from 'vue-router'
-export default defineComponent({
-  name: 'MenuComponent',
-  components: {
-    dropdownMenu,
-    dropdownForB,
-  },
-  props: {
-    linkStyle: {
-      type: String,
-      default: '',
+  import DropdownForB from '@/components/base/PopUpForBusiness.vue';
+  import DropdownMenu from '@/components/base/dropdownMenu.vue';
+  import { defineComponent } from 'vue';
+  import { links } from '@/configurations/information';
+  import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+  export default defineComponent({
+    name: 'MenuComponent',
+    components: {
+      DropdownMenu,
+      DropdownForB,
     },
-  },
-  data() {
-    const route = useRoute()
-    return {
-      isVisible: false,
-      useObjectToQueryString,
-    }
-  },
-})
+    props: {
+      linkStyle: {
+        type: String,
+        default: '',
+      },
+    },
+    data() {
+      return {
+        links,
+        isVisible: false,
+        useObjectToQueryString,
+      };
+    },
+  });
 </script>
 
 <style>
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .linkStyleDark {
-    padding-left: 0rem;
-    padding-right: 0rem;
-    margin-right: 1.25rem;
-  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    .linkStyleDark {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      margin-right: 1.25rem;
+    }
 
-  .linkStyle {
-    padding-left: 0rem;
-    padding-right: 0rem;
-    margin-right: 1.25rem;
+    .linkStyle {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      margin-right: 1.25rem;
+    }
   }
-}
 </style>

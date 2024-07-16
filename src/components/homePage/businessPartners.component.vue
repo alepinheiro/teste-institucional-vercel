@@ -16,10 +16,10 @@
         <div ref="phone" class="h-128 hidden min-md:block opacity-0">
           <ResponsiveImage
             ref="phone"
-            :imagePath="$options.imageConfig.mockUps.multiBankPhone.image"
+            :imagePath="homePage.businessPartners.phone.src"
             :imgAttrs="{
               loading: 'lazy',
-              alt: $options.imageConfig.mockUps.multiBankPhone.alt,
+              alt: homePage.businessPartners.phone.alt,
             }" />
         </div>
         <div
@@ -38,9 +38,10 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent, ImgHTMLAttributes, ref, type PropType } from 'vue';
   import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+  import { defineComponent, ref, type PropType } from 'vue';
   import { gsap } from 'gsap';
+  import { homePage } from '@/configurations/images';
 
   export default defineComponent({
     name: 'BusinessPartners',
@@ -166,6 +167,7 @@
       ];
 
       return {
+        homePage,
         partners: [firstRow, secondRow, thirdRow, fourthRow, fifthRow],
       };
     },

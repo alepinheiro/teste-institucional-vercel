@@ -6,9 +6,9 @@
       class="flex sm:flex-wrap-reverse maxWidth items-center my-24 xl:py-24 sm:my-0">
       <div class="w-5/12 md:w-4/12 sm:w-full md:hidden">
         <ResponsiveImage
-          :imagePath="$options.imageConfig.BextCar.carroNotas.src"
+          :imagePath="bextCarPage.carroNotas.src"
           :imgAttrs="{
-            alt: $options.imageConfig.BextCar.carroNotas.alt,
+            alt: bextCarPage.carroNotas.alt,
           }"
           class="h-64" />
       </div>
@@ -58,7 +58,7 @@
           <div
             class="p-3 w-4/12 lg:w-6/12 md:w-6/12 xl:w-1/2 text-xl bg-primary text-white text-center font-bold uppercase rounded-lg">
             <a
-              :href="$options.information.appVehicleSimulator + $root.utms"
+              :href="links.simulator.urlVehicle + $root.utms"
               aria-label="Clique aqui para contratar seu financiamento"
               target="_blank">
               Quero contratar
@@ -67,8 +67,8 @@
         </div>
         <div class="w-1/2 mt-auto mb-auto sm:w-full">
           <img
-            :src="$options.imageConfig.BextCar.graficoFinan"
-            alt="Gráfico comparando as taxas de juros do FinanBext e do empréstimo pessoal"
+            :src="bextCarPage.graficoFinan.src"
+            :alt="bextCarPage.graficoFinan.alt"
             class="sm:w-full md:w-11/12 w-full h-auto" />
         </div>
       </section>
@@ -96,15 +96,17 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
-  import TopBarVideo from '@/components/vehicle/BextCarFinan/topBarVideo.vue';
+  import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
   import CardWhite from '@/components/vehicle/BextCarFinan/cardWhite.vue';
+  import ComparisonTable from '@/components/base/comparisonTable.component.vue';
   import StepByStep from '@/components/vehicle/BextCarFinan/stepByStep.vue';
   import Testimonials from '@/components/aboutUs/testimonialsSection.component.vue';
-  import ComparisonTable from '@/components/base/comparisonTable.component.vue';
-  import BestPlay from '@/components/base/sections/bestPlay/index.component.vue';
-  import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import TheFooter from '@/components/structure/theFooter.component.vue';
+  import TopBarVideo from '@/components/vehicle/BextCarFinan/topBarVideo.vue';
+  import { defineComponent } from 'vue';
+  import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+  import { links } from '@/configurations/information';
+  import { bextCarPage } from '@/configurations/images';
 
   export default defineComponent({
     name: 'BextCarFinanLP',
@@ -126,6 +128,8 @@
     },
     data() {
       return {
+        links,
+        bextCarPage,
         utm: 'utm_source=organico&utm_medium=financiamento-veicular',
       };
     },
@@ -136,7 +140,7 @@
 </script>
 
 <style>
-  /* estilo das setas do carrosel */
+  /* estilo das setas do carrossel */
   .splide__arrow {
     opacity: 10;
   }

@@ -5,9 +5,9 @@
         <div class="overflow-hidden flex h-full pt-30 -mr-12">
           <img
             ref="bestPlayMockup"
-            :src="$options.imageConfig.mockUps.youtubePhone.image"
-            :alt="$options.imageConfig.mockUps.youtubePhone.alt"
-            :title="$options.imageConfig.mockUps.youtubePhone.alt"
+            :src="bextPlay.phoneMockup.src"
+            :alt="bextPlay.phoneMockup.alt"
+            :title="bextPlay.phoneMockup.alt"
             loading="lazy"
             class="w-full h-[26rem] object-contain object-top" />
         </div>
@@ -18,9 +18,9 @@
       <div class="my-auto">
         <div class="flex flex-col gap-5 py-10 px-5">
           <img
-            :src="$options.imageConfig.brand.youtubeLogo.image"
-            :alt="$options.imageConfig.brand.youtubeLogo.alt"
-            :title="$options.imageConfig.brand.youtubeLogo.alt"
+            :src="bextPlay.logo.src"
+            :alt="bextPlay.logo.alt"
+            :title="bextPlay.logo.alt"
             loading="lazy"
             class="h-16" />
 
@@ -52,7 +52,7 @@
               </p>
             </div>
             <a
-              :href="`${$options.information.socialMedia.youtube}${$root.utms}`"
+              :href="`${links.social.youtube}${$root.utms}`"
               class="bg-primary w-fit rounded-xl px-6 py-4 mx-auto font-bold">
               Inscreva-se agora
             </a>
@@ -68,6 +68,8 @@
   import { defineAsyncComponent, defineComponent, markRaw, ref } from 'vue';
   import { gsap } from 'gsap';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+  import { links } from '@/configurations/information';
+  import { bextPlay } from '@/configurations/images';
   export default defineComponent({
     name: 'BestPlay',
 
@@ -88,6 +90,8 @@
     },
     data() {
       return {
+        links,
+        bextPlay,
         useObjectToQueryString,
         stats: [
           {

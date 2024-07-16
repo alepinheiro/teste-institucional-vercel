@@ -12,11 +12,15 @@
     </div>
     <div class="text-white text-sm text-center sm:hidden md:hidden">
       <div>© {{ new Date().getFullYear() }} Bext Fintech</div>
-      <div><a href="https://www.bext.vc">www.bext.vc</a></div>
+      <div>
+        <a :href="links.app.url">
+          {{ links.app.domain }}
+        </a>
+      </div>
     </div>
     <div class="flex sm:w-full justify-center sm:pb-6">
       <a
-        :href="$options.information.socialMedia.youtube"
+        :href="links.social.youtube"
         aria-label="Acesse nosso Youtube"
         style="text-decoration: none"
         target="_blank">
@@ -30,7 +34,7 @@
         </svg>
       </a>
       <a
-        :href="$options.information.socialMedia.linkedin"
+        :href="links.social.linkedin.base"
         style="text-decoration: none"
         aria-label="Acesse nosso LinkedIn"
         target="_blank">
@@ -44,7 +48,7 @@
         </svg>
       </a>
       <a
-        :href="$options.information.socialMedia.instagram"
+        :href="links.social.instagram"
         aria-label="Acesse nosso Instagram"
         style="text-decoration: none"
         target="_blank">
@@ -58,7 +62,7 @@
         </svg>
       </a>
       <a
-        :href="$options.information.socialMedia.facebook"
+        :href="links.social.facebook"
         aria-label="Acesse nosso Facebook"
         style="text-decoration: none"
         target="_blank">
@@ -72,7 +76,7 @@
         </svg>
       </a>
       <a
-        :href="$options.information.socialMedia.telegram"
+        :href="links.social.telegram"
         aria-label="Acesse nosso Telegram"
         style="text-decoration: none"
         target="_blank">
@@ -89,18 +93,23 @@
     <div
       class="sm:w-full md:w-full md:pt-12 text-white text-sm text-center xl:hidden lg:hidden">
       <div>© {{ new Date().getFullYear() }} Bext Fintech</div>
-      <div><a href="https://www.bext.vc">www.bext.vc</a></div>
+      <div>
+        <a :href="links.app.url">
+          {{ links.app.domain }}
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-
+  import { links } from '@/configurations/information';
   export default defineComponent({
     name: 'FooterSection',
     data() {
       return {
+        links,
         isVisible: false,
       };
     },

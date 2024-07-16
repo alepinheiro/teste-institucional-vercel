@@ -46,8 +46,9 @@
                     class="flex w-full items-center justify-center border-b-1 border-primary pb-4">
                     <div class="mt-auto mb-auto p-2 sm:pr-4">
                       <img
-                        :src="$options.imageConfig.brand.blueIcon.image"
-                        :alt="$options.imageConfig.brand.blueIcon.alt"
+                        :src="bextImages.blueIcon.src"
+                        :alt="bextImages.blueIcon.alt"
+                        loading="lazy"
                         class="w-6 sm:w-12 h-auto mr-auto ml-auto" />
                     </div>
                     <p class="sm:text-base">
@@ -70,9 +71,7 @@
                     <div
                       class="py-3 px-8 w-full bg-primary rounded-xl text-white font-bold text-center">
                       <a
-                        :href="
-                          $options.information.appVehicleSimulator + $root.utms
-                        "
+                        :href="links.simulator.urlRealty + $root.utms"
                         style="text-decoration: none"
                         aria-label="Clique aqui para simular seu credito"
                         target="_blank">
@@ -94,7 +93,9 @@
   import InputMoney from '@/components/base/inputMoney.component.vue';
   import TopBar from '@/components/structure/topBar/index.component.vue';
   import { defineComponent } from 'vue';
+  import { links } from '@/configurations/information';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+  import { bextCarPage, bextImages } from '@/configurations/images';
   export default defineComponent({
     name: 'TopBarVideo',
     components: {
@@ -110,12 +111,15 @@
     },
     data() {
       return {
-        useObjectToQueryString,
-        isVisible: false,
+        links,
+        bextCarPage,
+        bextImages,
         value: 40000,
+        isVisible: false,
         showVideo: false,
-        videoStyle: 'w-full h-[36rem] mr-auto ml-auto rounded-2xl ',
+        useObjectToQueryString,
         videoUrl: 'https://www.youtube.com/embed/Mlg8eDX61uE',
+        videoStyle: 'w-full h-[36rem] mr-auto ml-auto rounded-2xl ',
         tutorial: {
           show1: false,
           show2: false,

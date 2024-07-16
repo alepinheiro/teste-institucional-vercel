@@ -1,8 +1,8 @@
 import { NotificationInterface } from '@/interfaces/notification.interface';
 import { ComponentInternalInstance } from 'vue';
-import type information from '@/configurations/information';
+// import type information from '@/configurations/information';
 import { FbEvents } from '@/interfaces/analytics/fbEvents';
-import imageConfig from './configurations/images';
+// import imageConfig from './configurations/images';
 
 declare module '*.vue' {
   import { Component } from 'vue';
@@ -32,10 +32,10 @@ declare module 'vue' {
       notificationData?: NotificationInterface;
       utms: string;
     };
-    $options: {
-      information: typeof information;
-      imageConfig: typeof imageConfig;
-    };
+    // $options: {
+    //   information: typeof information;
+    //   imageConfig: typeof imageConfig;
+    // };
   }
 }
 

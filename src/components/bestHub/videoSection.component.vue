@@ -3,21 +3,17 @@
     <img
       class="absolute h-full right-0 -z-10 object-cover sm:hidden md:hidden"
       src="/images/bestHub/videoPlayerDesktop.png"
-      alt=""
-    />
+      alt="" />
     <img
       class="absolute object-cover -z-10 w-full h-2/3 md:h-full -right-4 xl:hidden lg:hidden"
       src="/images/bestHub/videoPlayerMobile.png"
-      alt=""
-    />
+      alt="" />
     <div
-      class="flex flex-col lg:flex-row-reverse xl:flex-row-reverse max-w-7xl mx-auto z-10 lg:py-20 xl:py-20 px-5"
-    >
-      <VideoButton :video-id="'mWVJV3BnJCU'" class="z-10" />
+      class="flex flex-col lg:flex-row-reverse xl:flex-row-reverse max-w-7xl mx-auto z-10 lg:py-20 xl:py-20 px-5">
+      <VideoButton :videoId="'mWVJV3BnJCU'" class="z-10" />
 
       <div
-        class="md:w-4/6 md:mx-auto lg:w-1/2 xl:w-1/2 flex flex-col md:items-center gap-10 sm:gap-5 md:gap-5 h-fit my-auto md:pt-10 md:pb-20 sm:pt-10 sm:pb-20"
-      >
+        class="md:w-4/6 md:mx-auto lg:w-1/2 xl:w-1/2 flex flex-col md:items-center gap-10 sm:gap-5 md:gap-5 h-fit my-auto md:pt-10 md:pb-20 sm:pt-10 sm:pb-20">
         <h1 class="font-medium text-2xl sm:text-center md:text-center">
           Quem não <b>fintechiza</b>,<br />
           fica para trás
@@ -36,8 +32,7 @@
 
         <button
           class="text-black sm:text-center md:text-center text-xl font-bold px-5 py-3 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1 w-fit sm:mx-auto md:mx-auto"
-          @click="openLink()"
-        >
+          @click="openLink()">
           Quero fintechizar meu negócio
         </button>
       </div>
@@ -45,21 +40,21 @@
   </section>
 </template>
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue'
-import VideoButton from "@/components/bestHub/videoButton.component.vue";
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
-export default defineComponent({
-  name: 'VideoSection',
-  components: {
-    VideoButton
-  },
-  data() {
-    return {}
-  },
-  methods: {
-    openLink() {
-      window.open(this.$options.information.bestHubApp.subscribe + (this.$root as IRootExtension).utms, '_blank')
+  import { defineComponent } from 'vue';
+  import VideoButton from '@/components/bestHub/videoButton.component.vue';
+  import { links } from '@/configurations/information';
+  export default defineComponent({
+    name: 'VideoSection',
+    components: {
+      VideoButton,
     },
-  }
-})
+    data() {
+      return {};
+    },
+    methods: {
+      openLink() {
+        window.open(links.bestHub.register + this.$root.utms, '_blank');
+      },
+    },
+  });
 </script>

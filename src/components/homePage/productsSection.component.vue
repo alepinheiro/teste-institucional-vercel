@@ -57,8 +57,7 @@
             <div class="flex flex-row items-center gap-5 text-sm">
               <a
                 :href="
-                  information.appSimulator +
-                  useObjectToQueryString($route.query)
+                  links.simulator.url + useObjectToQueryString($route.query)
                 "
                 target="_blank"
                 class="bg-primary px-3 py-2 rounded-xl text-white font-bold">
@@ -84,7 +83,7 @@
   import DollarBagIcon from '@/components/homePage/icons/dollarBag.component.vue';
   import DollarSignIcon from '@/components/homePage/icons/dollarSign.component.vue';
   import PercentIcon from '@/components/homePage/icons/percentIcon.component.vue';
-  import information from '@/configurations/information';
+  import { links } from '@/configurations/information';
   import { Pagination, Autoplay, Navigation } from 'swiper/modules';
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import { defineComponent, ref, markRaw } from 'vue';
@@ -178,9 +177,9 @@
 
       return {
         steps,
+        links,
         Autoplay,
         Pagination,
-        information,
         Navigation,
         useWindow: useWindowSize(),
         useObjectToQueryString,

@@ -39,10 +39,10 @@
           <p
             class="text-xl text-left text-white leading-loose sm:text-center md:w-5/6 lg:w-4/6 xl:w-1/2">
             Agora você está a caminho de se tornar um Corretor 360°.
-            <b
-              >O que acha de se manter informado sobre o mercado financeiro e
-              imobiliário?</b
-            >
+            <b>
+              O que acha de se manter informado sobre o mercado financeiro e
+              imobiliário?
+            </b>
             Entre em nosso canal no <b>Telegram</b> e descubra o
             <b>BestNews:</b>
             <span class="underline">
@@ -51,7 +51,7 @@
             </span>
           </p>
           <a
-            :href="$options.information.socialMedia.telegram + $root.utms"
+            :href="links.social.telegram + $root.utms"
             target="_blank"
             class="px-10 py-6 bg-[#D0FE42] rounded-2xl hover:shadow-[#D0FE4260] hover:scale-105 hover:shadow-xl transition-all">
             <div class="flex flex-row items-center justify-center gap-4">
@@ -59,9 +59,9 @@
                 <i class="fa-brands fa-telegram w-8 h-8"></i>
               </span>
               <span
-                class="font-bold text-2xl sm:text-xl flex-grow w-full h-fit sm:text-center"
-                >Quero conteúdos gratuitos</span
-              >
+                class="font-bold text-2xl sm:text-xl flex-grow w-full h-fit sm:text-center">
+                Quero conteúdos gratuitos
+              </span>
             </div>
           </a>
         </div>
@@ -70,9 +70,11 @@
     <FooterSection class="border-t border-[#D0FE42] bg-black z-10" />
   </div>
 </template>
+
 <script lang="ts">
-  import { defineComponent } from 'vue';
   import FooterSection from '@/components/bestBroker/footerSection.component.vue';
+  import { defineComponent } from 'vue';
+  import { links } from '@/configurations/information';
 
   export default defineComponent({
     name: 'XoAluguelAdquirido',
@@ -85,7 +87,9 @@
       },
     },
     data() {
-      return {};
+      return {
+        links,
+      };
     },
     mounted() {
       // eslint-disable-next-line no-undef

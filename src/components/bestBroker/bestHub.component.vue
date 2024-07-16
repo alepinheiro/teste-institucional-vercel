@@ -6,14 +6,12 @@
           <img
             src="/images/bestBroker/logoBestHub.svg"
             class="mx-auto"
-            alt=""
-          />
+            alt="" />
           <img
             src="/images/bestBroker/bestHubNotebook.png"
             class="mx-auto sm:max-w-auto w-full"
             alt=""
-            srcset=""
-          />
+            srcset="" />
           <h2 class="text-center text-xl py-5">
             Seja um parceiro Best e potencialize seus conhecimentos em um
             <b class="text-[#D0FE42]">CRM de crédito</b>
@@ -22,11 +20,8 @@
           <div class="w-full text-center py-4">
             <a
               class="py-4 px-6 bg-[#C7C7C7] hover:bg-[#D0FE42] text-black text-sm font-bold rounded"
-              :href="
-                $options.information.bestHubApp.subscribe +$root.utms
-              "
-              target="_blank"
-            >
+              :href="links.bestHub.register + $root.utms"
+              target="_blank">
               Conheça o BestHub
             </a>
           </div>
@@ -35,11 +30,9 @@
           <div
             v-for="{ description, icon, id, title } of bestHubCards"
             :key="id"
-            class="border-1 border-[#D9D9D9] w-1/3 sm:w-full flex-grow px-5 py-10 rounded-xl my-0 flex flex-col justify-around gap-4"
-          >
+            class="border-1 border-[#D9D9D9] w-1/3 sm:w-full flex-grow px-5 py-10 rounded-xl my-0 flex flex-col justify-around gap-4">
             <div
-              class="flex flex-row gap-2 items-center w-fit mx-auto sm:text-center"
-            >
+              class="flex flex-row gap-2 items-center w-fit mx-auto sm:text-center">
               <i :class="icon"></i>
               <h3 class="text-xl">{{ title }}</h3>
             </div>
@@ -51,47 +44,47 @@
   </section>
 </template>
 <script lang="ts">
-import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
-import { defineComponent } from 'vue'
+  import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+  import { defineComponent } from 'vue';
+  import { links } from '@/configurations/information';
 
-export default defineComponent({
-  name: 'BestHub',
-  data() {
-    return {
-      useObjectToQueryString,
-      bestHubCards: [
-        {
-          id: 2,
-          icon: 'fa-solid fa-shapes',
-          title: 'Acompanhe os negócios',
-          description:
-            'Uma área no estilo kanban para facilitar seu dia a dia.',
-        },
-        {
-          id: 1,
-          icon: 'fa-solid fa-pen-to-square',
-          title: 'Plataforma white label',
-          description:
-            'Tanto a plataforma como os materiais saem com a cara e a cor da sua marca.',
-        },
+  export default defineComponent({
+    name: 'BestHub',
+    data() {
+      return {
+        links,
+        useObjectToQueryString,
+        bestHubCards: [
+          {
+            id: 2,
+            icon: 'fa-solid fa-shapes',
+            title: 'Acompanhe os negócios',
+            description:
+              'Uma área no estilo kanban para facilitar seu dia a dia.',
+          },
+          {
+            id: 1,
+            icon: 'fa-solid fa-pen-to-square',
+            title: 'Plataforma white label',
+            description:
+              'Tanto a plataforma como os materiais saem com a cara e a cor da sua marca.',
+          },
 
-        {
-          id: 3,
-          icon: 'fa-solid fa-percent',
-          title: 'Simulações em tempo real',
-          description: 'Mais agilidade para a sua rotina.',
-        },
-        {
-          id: 3,
-          icon: 'fa-solid fa-building-columns',
-          title: '+ de 15 bancos parceiros',
-          description:
-            'Uma plataforma multibancos com as maiores e melhores instituições ao seu dispor.',
-        },
-      ],
-    }
-  },
-  mounted() {
-  }
-})
+          {
+            id: 3,
+            icon: 'fa-solid fa-percent',
+            title: 'Simulações em tempo real',
+            description: 'Mais agilidade para a sua rotina.',
+          },
+          {
+            id: 3,
+            icon: 'fa-solid fa-building-columns',
+            title: '+ de 15 bancos parceiros',
+            description:
+              'Uma plataforma multibancos com as maiores e melhores instituições ao seu dispor.',
+          },
+        ],
+      };
+    },
+  });
 </script>
