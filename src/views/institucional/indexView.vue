@@ -1,15 +1,21 @@
 <template>
   <div class="relative z-0 overflow-hidden bg-[#efefef]">
-    <img
-      src="/images/Home/backgroundLines.jpg"
+    <ResponsiveImage
+      imagePath="/images/Home/backgroundLines.jpg"
       class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
-      alt="" />
-    <img
-      src="/images/Home/backgroundLines.jpg"
+      :imgAttrs="{
+        loading: 'lazy',
+        role: 'presentation',
+      }" />
+    <ResponsiveImage
+      imagePath="/images/Home/backgroundLines.jpg"
       class="absolute top-96 -right-96 -z-10 hidden md:block -scale-x-100"
-      alt="" />
+      :imgAttrs="{
+        loading: 'lazy',
+        role: 'presentation',
+      }" />
     <TopBar color="primary" class="text-textPrimary" />
-    <IndexHeroSection class="min-h-screen" />
+    <HeroSection class="min-h-screen" />
 
     <BusinessPartners
       title="A melhor plataforma multibancos."
@@ -43,15 +49,17 @@
     <TheFooter class="block z-10" />
   </div>
 </template>
+
 <script lang="ts">
   import TopBar from '@/components/structure/topBar/index.component.vue';
-
+  import HeroSection from '@/components/homePage/heroSection.component.vue';
   import { defineAsyncComponent, defineComponent } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   export default defineComponent({
     name: 'HomePage',
     components: {
       TopBar,
+      HeroSection,
       Mission: defineAsyncComponent(
         () => import('@/components/aboutUs/missionSection.component.vue'),
       ),

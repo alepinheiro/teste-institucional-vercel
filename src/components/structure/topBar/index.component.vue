@@ -17,24 +17,27 @@
           class="w-auto h-8" />
       </RouterLink>
 
-      <MenuDesktop class="sm:hidden md:hidden" />
+      <MenuDesktop v-if="windowSize.width > 1023" />
       <MenuMobile
+        v-else
         :color="customMobileMenuColor"
-        class="xl:hidden lg:hidden h-8 w-8 flex-shrink-0 aspect-square mr-0" />
+        class="h-8 w-8 flex-shrink-0 aspect-square mr-0" />
     </div>
   </header>
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
-  import MenuDesktop from '@/components/structure/menu.component.vue';
-  import MenuMobile from '@/components/structure/topBar/menuMobile/index.vue';
-
+  import { defineAsyncComponent, defineComponent } from 'vue';
+  import { useWindowSize } from '@vueuse/core';
   export default defineComponent({
     name: 'TopBar',
     components: {
-      MenuDesktop,
-      MenuMobile,
+      MenuDesktop: defineAsyncComponent(
+        () => import('@/components/structure/menu.component.vue'),
+      ),
+      MenuMobile: defineAsyncComponent(
+        () => import('@/components/structure/topBar/menuMobile/index.vue'),
+      ),
     },
     props: {
       customMobileMenuColor: {
@@ -44,7 +47,9 @@
       },
     },
     data() {
-      return {};
+      return {
+        windowSize: useWindowSize(),
+      };
     },
   });
 </script>

@@ -7,14 +7,14 @@
       :style="{
         color,
       }"
-      @click="toggleMenu()">
-      <Icon icon="fa-solid fa-bars" class="w-full h-full" />
+      @click="isOpen = !isOpen">
+      <Bars class="w-full h-full" />
     </button>
     <div
       ref="menuMobile"
-      :class="[open ? 'h-fit p-2 border-1 ' : 'h-0']"
+      :class="[isOpen ? 'h-fit p-2 border-1 ' : 'h-0']"
       class="w-full max-w-sm bgPopUpHover rounded-xl shadowDark z-40 fixed top-15 right-2 text-textPrimary flex flex-col gap-2 overflow-hidden transition-all ease-in-out">
-      <MenuItem routePath="/" label="Início" @click="open = !open" />
+      <MenuItem routePath="/" label="Início" @click="isOpen = !isOpen" />
 
       <DropDown
         title="Produtos"
@@ -53,18 +53,21 @@
       <MenuItem
         routePath="/besthub"
         label="Seja um Parceiro"
-        @click="open = !open" />
+        @click="isOpen = !isOpen" />
 
       <MenuItem
         routePath="https://portal.seja.best/"
         label="Portal Bext"
-        @click="open = !open" />
+        @click="isOpen = !isOpen" />
 
-      <MenuItem routePath="/sobre" label="Sobre Nós" @click="open = !open" />
+      <MenuItem
+        routePath="/sobre"
+        label="Sobre Nós"
+        @click="isOpen = !isOpen" />
 
       <div
         class="bg-primary text-white rounded-lg px-4 py-2 font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100 text-center"
-        @click="open = !open">
+        @click="isOpen = !isOpen">
         <a
           :href="
             $options.information.appSimulator +
@@ -85,9 +88,10 @@
   import { defineComponent, ref } from 'vue';
   import { onClickOutside } from '@vueuse/core';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+  import Bars from '@/assets/svg/faIcon/bars.vue';
   export default defineComponent({
     name: 'MenuMobileComponent',
-    components: { MenuItem, DropDown },
+    components: { MenuItem, DropDown, Bars },
     props: {
       color: {
         type: String,
@@ -107,18 +111,13 @@
     },
     data() {
       return {
-        open: false,
+        isOpen: false,
         useObjectToQueryString,
       };
     },
     mounted() {
       if (this.menuMobile)
-        onClickOutside(this.menuMobile, () => (this.open = false));
-    },
-    methods: {
-      toggleMenu() {
-        this.open = !this.open;
-      },
+        onClickOutside(this.menuMobile, () => (this.isOpen = false));
     },
   });
 </script>
