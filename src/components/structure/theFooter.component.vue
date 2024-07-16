@@ -18,10 +18,7 @@
 
           <div class="sm:text-sm text-textPrimary pb-6">
             <a
-              :href="
-                'https://portal.seja.best/' +
-                useObjectToQueryString($route.query)
-              "
+              :href="links.bextNews.url + useObjectToQueryString($route.query)"
               aria-label="Acesse nosso Portal"
               class="hover:text-textPrimary"
               style="text-decoration: none"
@@ -41,10 +38,7 @@
 
           <div class="sm:text-sm text-textPrimary pb-6">
             <a
-              :href="
-                $options.information.appPartner +
-                useObjectToQueryString($route.query)
-              "
+              :href="links.bestHub.url + useObjectToQueryString($route.query)"
               class="hover:text-textPrimary"
               style="text-decoration: none"
               aria-label="Acesse a área do Parceiro"
@@ -56,7 +50,8 @@
           <div class="sm:text-sm text-textPrimary pb-6">
             <a
               :href="
-                $options.information.jobs + useObjectToQueryString($route.query)
+                links.social.linkedin.jobs +
+                useObjectToQueryString($route.query)
               "
               class="hover:text-textPrimary"
               style="text-decoration: none"
@@ -83,8 +78,7 @@
             <div class="text-textPrimary pb-2">
               <a
                 :href="
-                  $options.information.socialMedia.whatsapp +
-                  useObjectToQueryString($route.query)
+                  links.social.whatsapp + useObjectToQueryString($route.query)
                 "
                 aria-label="Fale conosco pelo WhatsApp"
                 class="hover:text-textPrimary"
@@ -142,10 +136,7 @@
 
           <div class="sm:text-sm text-textPrimary pb-6">
             <a
-              :href="
-                $options.information.appSimulator +
-                useObjectToQueryString($route.query)
-              "
+              :href="links.simulator.url + useObjectToQueryString($route.query)"
               class="hover:text-textPrimary"
               style="text-decoration: none"
               aria-label="Simule seu crédito"
@@ -157,8 +148,7 @@
           <div class="sm:text-sm text-textPrimary pb-6">
             <a
               :href="
-                $options.information.appClient +
-                useObjectToQueryString($route.query)
+                links.clientAccount.url + useObjectToQueryString($route.query)
               "
               class="hover:text-textPrimary"
               style="text-decoration: none"
@@ -196,7 +186,7 @@
             <div class="text-xl font-semibold text-textPrimary py-4">
               <a
                 :href="
-                  $options.information.location +
+                  links.social.googleLocation +
                   useObjectToQueryString($route.query)
                 "
                 class="hover:text-textPrimary"
@@ -216,9 +206,10 @@
                 aria-label="Reclame Aqui"
                 target="_blank">
                 <img
-                  :src="$options.imageConfig.home.reclameaqui.src"
-                  :alt="$options.imageConfig.home.reclameaqui.alt"
-                  :title="$options.imageConfig.home.reclameaqui.alt"
+                  :src="homePage.reclameaqui.src"
+                  :alt="homePage.reclameaqui.alt"
+                  :title="homePage.reclameaqui.alt"
+                  loading="lazy"
                   class="w-auto h-12 rounded-xl" />
               </a>
             </div>
@@ -233,8 +224,7 @@
           <div class="text-textPrimary pb-2">
             <a
               :href="
-                $options.information.socialMedia.whatsapp +
-                useObjectToQueryString($route.query)
+                links.social.whatsapp + useObjectToQueryString($route.query)
               "
               class="hover:text-textPrimary"
               style="text-decoration: none"
@@ -271,7 +261,7 @@
           <div class="text-xl font-semibold text-textPrimary py-4">
             <a
               :href="
-                $options.information.location +
+                links.social.googleLocation +
                 useObjectToQueryString($route.query)
               "
               class="hover:text-textPrimary"
@@ -290,9 +280,10 @@
               aria-label="Empresa verificada no Reclame Aqui"
               target="_blank">
               <img
-                :src="$options.imageConfig.home.reclameaqui.src"
-                :alt="$options.imageConfig.home.reclameaqui.alt"
-                :title="$options.imageConfig.home.reclameaqui.alt"
+                :src="homePage.reclameaqui.src"
+                :alt="homePage.reclameaqui.alt"
+                :title="homePage.reclameaqui.alt"
+                loading="lazy"
                 class="w-auto h-12 rounded-xl" />
             </a>
           </div>
@@ -302,17 +293,17 @@
         <div class="w-full flex sm:flex-wrap justify-between py-2 sm:px-2">
           <div class="sm:w-5/12">
             <img
-              :src="$options.imageConfig.brand.grayLogo.image"
-              :alt="$options.imageConfig.brand.grayLogo.alt"
-              :title="$options.imageConfig.brand.grayLogo.alt"
+              :src="bextImages.grayLogo.src"
+              :alt="bextImages.grayLogo.alt"
+              :title="bextImages.grayLogo.alt"
+              loading="lazy"
               class="w-40 sm:w-11/12 h-auto" />
           </div>
           <div
             class="sm:w-7/12 flex justify-end sm:mr-0 sm:ml-auto mt-auto mb-auto">
             <a
               :href="
-                $options.information.socialMedia.youtube +
-                useObjectToQueryString($route.query)
+                links.social.youtube + useObjectToQueryString($route.query)
               "
               aria-label="Acesse nosso Youtube"
               style="text-decoration: none"
@@ -328,7 +319,7 @@
             </a>
             <a
               :href="
-                $options.information.socialMedia.linkedin +
+                links.social.linkedin.base +
                 useObjectToQueryString($route.query)
               "
               style="text-decoration: none"
@@ -345,8 +336,7 @@
             </a>
             <a
               :href="
-                $options.information.socialMedia.instagram +
-                useObjectToQueryString($route.query)
+                links.social.instagram + useObjectToQueryString($route.query)
               "
               aria-label="Acesse nosso Instagram"
               style="text-decoration: none"
@@ -362,8 +352,7 @@
             </a>
             <a
               :href="
-                $options.information.socialMedia.facebook +
-                useObjectToQueryString($route.query)
+                links.social.facebook + useObjectToQueryString($route.query)
               "
               aria-label="Acesse nosso Facebook"
               style="text-decoration: none"
@@ -379,8 +368,7 @@
             </a>
             <a
               :href="
-                $options.information.socialMedia.telegram +
-                useObjectToQueryString($route.query)
+                links.social.telegram + useObjectToQueryString($route.query)
               "
               aria-label="Acesse nosso Telegram"
               style="text-decoration: none"
@@ -443,16 +431,21 @@
     </div>
   </footer>
 </template>
+
 <script lang="ts">
-  import { defineComponent } from 'vue';
   import BacenImage from '@/components/imagesSVG/partnersLogo/bacen.image.vue';
+  import { bextImages, homePage } from '@/configurations/images';
+  import { defineComponent } from 'vue';
+  import { links } from '@/configurations/information';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   export default defineComponent({
     name: 'FooterComponent',
     components: { BacenImage },
-
     data() {
       return {
+        links,
+        homePage,
+        bextImages,
         isVisible: false,
         useObjectToQueryString,
       };

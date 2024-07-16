@@ -99,7 +99,7 @@
 </template>
 
 <script lang="ts">
-  import information from '@/configurations/information';
+  import { links } from '@/configurations/information';
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import { defineAsyncComponent, defineComponent, markRaw } from 'vue';
 
@@ -156,10 +156,7 @@
     },
     methods: {
       onSubmit() {
-        window.open(
-          information.appRealEstateSimulator + this.$root.utms,
-          '_blank',
-        );
+        window.open(links.simulator.urlRealty + this.$root.utms, '_blank');
       },
     },
   });

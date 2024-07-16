@@ -31,10 +31,10 @@
               que acha de aprender mais e ainda se manter informado sobre o
               mercado financeiro e imobiliário? Entre em nosso canal no Telegram
               e descubra o BestNews:
-              <span class="underline"
-                >uma comunidade ativa com tudo o que você precisa na palma da
-                sua mão. Clique agora no botão abaixo.</span
-              >
+              <span class="underline">
+                uma comunidade ativa com tudo o que você precisa na palma da sua
+                mão. Clique agora no botão abaixo.
+              </span>
             </p>
             <div class="sm:text-center md:text-center">
               <button
@@ -70,7 +70,7 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue';
-
+  import { links } from '@/configurations/information';
   export default defineComponent({
     name: 'SuccessBanner',
     data() {
@@ -80,10 +80,7 @@
     },
     methods: {
       openLink() {
-        window.open(
-          this.$options.information.socialMediaUTM.telegram,
-          '_blank',
-        );
+        window.open(links.social.telegram, '_blank');
       },
     },
   });

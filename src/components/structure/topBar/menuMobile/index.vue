@@ -56,7 +56,7 @@
         @click="isOpen = !isOpen" />
 
       <MenuItem
-        routePath="https://portal.seja.best/"
+        :routePath="links.bextNews.url"
         label="Portal Bext"
         @click="isOpen = !isOpen" />
 
@@ -69,10 +69,7 @@
         class="bg-primary text-white rounded-lg px-4 py-2 font-semibold transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-100 text-center"
         @click="isOpen = !isOpen">
         <a
-          :href="
-            $options.information.appSimulator +
-            useObjectToQueryString($route.query)
-          "
+          :href="links.simulator.url + useObjectToQueryString($route.query)"
           style="text-decoration: none"
           target="_blank">
           Simule seu crédito
@@ -83,12 +80,13 @@
 </template>
 
 <script lang="ts">
+  import Bars from '@/assets/svg/faIcon/bars.vue';
   import DropDown from '@/components/structure/topBar/menuMobile/dropDown.component.vue';
   import MenuItem from '@/components/structure/topBar/menuMobile/menuItem.component.vue';
   import { defineComponent, ref } from 'vue';
+  import { links } from '@/configurations/information';
   import { onClickOutside } from '@vueuse/core';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
-  import Bars from '@/assets/svg/faIcon/bars.vue';
   export default defineComponent({
     name: 'MenuMobileComponent',
     components: { MenuItem, DropDown, Bars },
@@ -111,6 +109,7 @@
     },
     data() {
       return {
+        links,
         isOpen: false,
         useObjectToQueryString,
       };

@@ -5,15 +5,15 @@
       <RouterLink :to="{ path: '/', query: $route.query }" class="w-auto h-fit">
         <img
           v-if="customMobileMenuColor !== 'white'"
-          :src="$options.imageConfig.brand.blackAndBlueLogo.image"
-          :alt="$options.imageConfig.brand.blackAndBlueLogo.alt"
-          :title="$options.imageConfig.brand.blackAndBlueLogo.alt"
+          :src="bextImages.blackAndBlueLogo.src"
+          :alt="bextImages.blackAndBlueLogo.alt"
+          :title="bextImages.blackAndBlueLogo.alt"
           class="w-auto h-8" />
         <img
           v-if="customMobileMenuColor === 'white'"
-          :src="$options.imageConfig.brand.whiteAndBlueLogo.image"
-          :alt="$options.imageConfig.brand.whiteAndBlueLogo.alt"
-          :title="$options.imageConfig.brand.whiteAndBlueLogo.alt"
+          :src="bextImages.whiteAndBlueLogo.src"
+          :alt="bextImages.whiteAndBlueLogo.alt"
+          :title="bextImages.whiteAndBlueLogo.alt"
           class="w-auto h-8" />
       </RouterLink>
 
@@ -29,6 +29,7 @@
 <script lang="ts">
   import { defineAsyncComponent, defineComponent } from 'vue';
   import { useWindowSize } from '@vueuse/core';
+  import { bextImages } from '@/configurations/images';
   export default defineComponent({
     name: 'TopBar',
     components: {
@@ -48,6 +49,7 @@
     },
     data() {
       return {
+        bextImages,
         windowSize: useWindowSize(),
       };
     },

@@ -4,9 +4,9 @@
       class="absolute -right-0 top-0 flex md:left-2/3 lg:left-[70%] xl:left-[55%] bottom-0">
       <img
         ref="bestPlayMockup"
-        :src="$options.imageConfig.mockUps.youtubePhone.image"
-        :alt="$options.imageConfig.mockUps.youtubePhone.alt"
-        :title="$options.imageConfig.mockUps.youtubePhone.alt"
+        :src="bextPlay.phoneMockup.src"
+        :alt="bextPlay.phoneMockup.alt"
+        :title="bextPlay.phoneMockup.alt"
         loading="lazy"
         class="w-auto h-[110vh] md:mt-48 mt-60 object-cover object-left-top" />
     </div>
@@ -16,9 +16,9 @@
           <div
             class="flex flex-col justify-between items-start gap-10 text-white lg:w-2/3 xl:w-1/2">
             <img
-              :src="$options.imageConfig.brand.youtubeLogo.image"
-              :alt="$options.imageConfig.brand.youtubeLogo.alt"
-              :title="$options.imageConfig.brand.youtubeLogo.alt"
+              :src="bextPlay.logo.src"
+              :alt="bextPlay.logo.alt"
+              :title="bextPlay.logo.alt"
               loading="lazy"
               class="h-16 w-64" />
             <h2 class="text-5xl font-bold text-left">
@@ -48,7 +48,7 @@
               mercado financeiro, visando levá-lo à sua melhor versão.
             </p>
             <a
-              :href="`${$options.information.socialMedia.youtube}${$root.utms}`"
+              :href="`${links.social.youtube}${$root.utms}`"
               class="bg-lightPrimary w-fit rounded-xl px-6 py-4 mx-auto font-bold ml-0">
               Inscreva-se agora
             </a>
@@ -65,6 +65,8 @@
   import { gsap } from 'gsap';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import { useRoute } from 'vue-router';
+  import { links } from '@/configurations/information';
+  import { bextPlay } from '@/configurations/images';
   export default defineComponent({
     name: 'BestPlayDesktop',
     props: {
@@ -84,6 +86,9 @@
     },
     data() {
       return {
+        links,
+        bextPlay,
+        route: useRoute(),
         useObjectToQueryString,
         stats: [
           {
@@ -117,7 +122,6 @@
             description: 'Inscritos no canal',
           },
         ],
-        route: useRoute(),
       };
     },
     mounted() {

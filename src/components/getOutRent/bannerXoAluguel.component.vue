@@ -54,8 +54,7 @@
               <a
                 class="bg-primary px-8 py-5 rounded-xl sm:mx-auto md:mx-auto transition-all hover:bg-[#0063f2] hover:scale-105 hover:shadow-md sm:tracking-wider"
                 :href="
-                  $options.information.hotmartXoAluguel +
-                  useObjectToQueryString($route.query)
+                  links.hotmart.xoAluguel + useObjectToQueryString($route.query)
                 "
                 target="_blank">
                 Quero sair do aluguel
@@ -82,7 +81,7 @@
             <div
               class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"></div>
             <div class="flex m-auto">
-              <Icon icon="fa-solid fa-play" class="z-10 text-black" />
+              <Play class="z-10 text-black" />
             </div>
           </button>
         </div>
@@ -95,13 +94,15 @@
   import GradientBackground from '@/components/bestBroker/gradientBackground.component.vue';
   import { defineComponent } from 'vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
-
+  import { links } from '@/configurations/information';
+  import Play from '@/assets/svg/faIcon/play.vue';
   export default defineComponent({
     name: 'BannerXoAluguel',
-    components: { GradientBackground },
+    components: { Play, GradientBackground },
     emits: ['openPopUp'],
     data() {
       return {
+        links,
         isVisible: false,
         windowInnerWidth: 360,
         useObjectToQueryString,
@@ -149,6 +150,9 @@
     border-radius: 8px;
     border: 6px solid transparent;
     background: linear-gradient(75deg, #0524dd, #0524dd00) border-box;
+    mask:
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask:
       linear-gradient(#fff 0 0) padding-box,
       linear-gradient(#fff 0 0);

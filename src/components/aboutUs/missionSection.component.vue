@@ -46,7 +46,7 @@
 
           <div class="flex flex-row justify-start">
             <a
-              :href="$options.information.socialMedia.youtube"
+              :href="links.social.youtube"
               aria-label="Acesse nosso Youtube"
               style="text-decoration: none"
               target="_blank">
@@ -60,7 +60,7 @@
               </svg>
             </a>
             <a
-              :href="$options.information.socialMedia.linkedin"
+              :href="links.social.linkedin.base"
               style="text-decoration: none"
               aria-label="Acesse nosso LinkedIn"
               target="_blank">
@@ -74,7 +74,7 @@
               </svg>
             </a>
             <a
-              :href="$options.information.socialMedia.instagram"
+              :href="links.social.instagram"
               aria-label="Acesse nosso Instagram"
               style="text-decoration: none"
               target="_blank">
@@ -88,7 +88,7 @@
               </svg>
             </a>
             <a
-              :href="$options.information.socialMedia.facebook"
+              :href="links.social.facebook"
               aria-label="Acesse nosso Facebook"
               style="text-decoration: none"
               target="_blank">
@@ -102,7 +102,7 @@
               </svg>
             </a>
             <a
-              :href="$options.information.socialMedia.telegram"
+              :href="links.social.telegram"
               aria-label="Acesse nosso Telegram"
               style="text-decoration: none"
               target="_blank">
@@ -136,6 +136,7 @@
   import { defineComponent, ImgHTMLAttributes, ref } from 'vue';
   import { gsap } from 'gsap';
   import useWindowSize from '@/composables/useWindowSize';
+  import { links } from '@/configurations/information';
 
   export default defineComponent({
     name: 'MissionSection',
@@ -171,6 +172,7 @@
     },
     data() {
       return {
+        links,
         activeCard: {
           image: '/images/aboutUs/3Pilares/PilaresEducacaoCorMobile.webp',
           id: 'education' as 'education' | 'technology' | 'humanizedExperience',

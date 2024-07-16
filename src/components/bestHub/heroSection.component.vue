@@ -9,8 +9,7 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
-        class="absolute sm:-top-[0%] inset-0 -z-10 -top-14 sm:hidden"
-      >
+        class="absolute sm:-top-[0%] inset-0 -z-10 -top-14 sm:hidden">
       </iframe>
       <iframe
         width="100%"
@@ -20,15 +19,12 @@
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
-        class="absolute sm:-top-[15%] inset-0 -z-10 -top-14 hidden sm:block"
-      >
+        class="absolute sm:-top-[15%] inset-0 -z-10 -top-14 hidden sm:block">
       </iframe>
       <div
-        class="w-full h-auto flex-grow bg-gradient-to-b from-transparent via-black/70 to-90% to-black flex items-center pb-10"
-      >
+        class="w-full h-auto flex-grow bg-gradient-to-b from-transparent via-black/70 to-90% to-black flex items-center pb-10">
         <div
-          class="flex flex-col max-w-3xl sm:px-5 items-center mx-auto text-center mt-auto pb-20 sm:pb-10"
-        >
+          class="flex flex-col max-w-3xl sm:px-5 items-center mx-auto text-center mt-auto pb-20 sm:pb-10">
           <h1 class="text-5xl font-bold">BestHub, o nome já diz tudo</h1>
           <h2 class="font-normal text-2xl">
             O melhor hub de crédito do mercado
@@ -36,8 +32,7 @@
           <button
             target="_blank"
             class="text-black text-xl font-bold px-10 py-6 rounded-xl font-hover transition-all bg-[#D0FE42] mt-5 font-sans hover:-translate-y-1"
-            @click="openLink()"
-          >
+            @click="openLink()">
             Quero ser um parceiro Best
           </button>
         </div>
@@ -46,17 +41,17 @@
   </section>
 </template>
 <script lang="ts">
-import { defineComponent, ComponentPublicInstance } from 'vue'
-type IRootExtension = ComponentPublicInstance & { [key: string]: string }
-export default defineComponent({
-  name: 'HeroSection',
-  data() {
-    return {}
-  },
-  methods:{
-    openLink() {
-      window.open(this.$options.information.bestHubApp.subscribe + (this.$root as IRootExtension).utms, '_blank')
+  import { defineComponent } from 'vue';
+  import { links } from '@/configurations/information';
+  export default defineComponent({
+    name: 'HeroSection',
+    data() {
+      return {};
     },
-  }
-})
+    methods: {
+      openLink() {
+        window.open(links.bestHub.register + this.$root.utms, '_blank');
+      },
+    },
+  });
 </script>

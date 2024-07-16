@@ -11,10 +11,7 @@
 
       <a
         class="bg-primary text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 rounded-lg text-2xl sm:text-xl sm:p-2 p-4 font-semibold"
-        :href="
-          $options.information.hotmartXoAluguel +
-          useObjectToQueryString($route.query)
-        "
+        :href="links.hotmart.xoAluguel + useObjectToQueryString($route.query)"
         target="_blank">
         <Icon icon="fa-solid fa-cart-shopping" /> COMPRE AGORA
       </a>
@@ -24,6 +21,7 @@
         imagePath="/images/getOutRent/casaBg.png"
         :imgAttrs="{
           role: 'presentation',
+          loading: 'lazy',
         }"
         class="w-full" />
     </div>
@@ -32,11 +30,13 @@
 
 <script lang="ts">
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
-  import { defineComponent, ComponentPublicInstance } from 'vue';
+  import { defineComponent } from 'vue';
+  import { links } from '@/configurations/information';
   export default defineComponent({
     name: 'BannerXoAluguel',
     data() {
       return {
+        links,
         isVisible: false,
         useObjectToQueryString,
       };

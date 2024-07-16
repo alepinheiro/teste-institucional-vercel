@@ -57,9 +57,7 @@
         </div>
 
         <a
-          :href="
-            information.appSimulator + useObjectToQueryString($route.query)
-          "
+          :href="links.simulator.url + useObjectToQueryString($route.query)"
           class="bg-primary px-5 py-3 rounded-xl text-white font-bold sm:mt-2"
           target="_blank">
           <span class="xl:hidden lg:hidden md:hidden">
@@ -76,7 +74,7 @@
 </template>
 
 <script lang="ts">
-  import information from '@/configurations/information';
+  import { links } from '@/configurations/information';
   import { defineAsyncComponent, defineComponent } from 'vue';
   import { topOfSales } from '@/configurations/images';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
@@ -92,7 +90,7 @@
       const topOfSalesSeals = topOfSales('black');
 
       return {
-        information,
+        links,
         topOfSalesSeals,
         loadedPage: window,
         showHeroImage: false,

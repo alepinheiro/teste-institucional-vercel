@@ -31,8 +31,5 @@
     emits: {
       click: () => true,
     },
-    data() {
-      return {};
-    },
   });
 </script>

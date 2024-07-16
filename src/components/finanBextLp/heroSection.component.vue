@@ -38,10 +38,10 @@
           <p
             class="text-base text-textPrimary text-justify sm:text-center min-lg:hidden">
             Financie seu imóvel com as melhores condições do mercado.
-            <b
-              >Sem filas, sem gerentes, sem complexidade e com um time de
-              especialistas totalmente pronto pra lhe ajudar.</b
-            >
+            <b>
+              Sem filas, sem gerentes, sem complexidade e com um time de
+              especialistas totalmente pronto pra lhe ajudar.
+            </b>
           </p>
           <!--  -->
           <div class="hidden min-lg:flex flex-row gap-4">
@@ -67,7 +67,7 @@
           v-scroll-to="'#businessPartners'"
           href="#"
           class="flex gap-2 justify-between w-fit mx-auto text-textSecondary sm:pt-4 pt-8 hover:underline">
-          <Icon icon="fa-solid fa-chevron-down" class="animate-bounce" />
+          <ChevronDown class="animate-bounce" />
           <span class="text-xs">
             Ou saiba mais sobre o FinanBext rolando para baixo
           </span>
@@ -79,16 +79,18 @@
 
 <script lang="ts">
   import { defineComponent, markRaw, ref } from 'vue';
-  import information from '@/configurations/information';
+  import { links } from '@/configurations/information';
   import CalendarIcon from '@/assets/svg/calendarWithClock.vue';
   import InputsForm from '@/components/finanBextLp/heroForm.component.vue';
   import PercentIcon from '@/assets/svg/percentWithBackground.vue';
+  import ChevronDown from '@/assets/svg/faIcon/chevronDown.vue';
 
   export default defineComponent({
     components: {
-      CalendarIcon,
       InputsForm,
       PercentIcon,
+      ChevronDown,
+      CalendarIcon,
     },
     data() {
       const formData = ref({
@@ -116,10 +118,7 @@
     },
     methods: {
       onSubmit() {
-        window.open(
-          information.appRealEstateSimulator + this.$root.utms,
-          '_blank',
-        );
+        window.open(links.simulator.urlRealty + this.$root.utms, '_blank');
       },
     },
   });

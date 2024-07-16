@@ -24,18 +24,17 @@
                 </h1>
                 <p class="py-4 pb-6">
                   Escolha o carro, novo ou usado, e financie até 100% do valor.
-                  <span class="font-semibold"
-                    >Faça uma simulação agora e veja como ficam as
-                    parcelas.</span
-                  >
+                  <span class="font-semibold">
+                    Faça uma simulação agora e veja como ficam as parcelas.
+                  </span>
                 </p>
                 <div class="bg-bgLight2Color p-3 rounded-xl">
                   <div
                     class="flex w-full items-center justify-center border-b-1 border-primary pb-4">
                     <div class="mt-auto mb-auto p-2 sm:pr-4">
                       <img
-                        :src="$options.imageConfig.brand.blueIcon.image"
-                        :alt="$options.imageConfig.brand.blueIcon.alt"
+                        :src="bextImages.blueIcon.src"
+                        :alt="bextImages.blueIcon.alt"
                         class="w-6 sm:w-12 h-auto mr-auto ml-auto" />
                     </div>
                     <p class="sm:text-base">
@@ -58,9 +57,7 @@
                     <div
                       class="py-3 px-8 w-full bg-primary rounded-xl text-white font-bold text-center">
                       <a
-                        :href="
-                          $options.information.appVehicleSimulator + $root.utms
-                        "
+                        :href="links.simulator.urlVehicle + $root.utms"
                         style="text-decoration: none"
                         aria-label="Clique aqui para simular seu financiamento"
                         target="_blank">
@@ -82,7 +79,9 @@
   import InputMoney from '@/components/base/inputMoney.component.vue';
   import TopBar from '@/components/structure/topBar/index.component.vue';
   import { defineComponent } from 'vue';
+  import { links } from '@/configurations/information';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
+  import { bextImages } from '@/configurations/images';
   export default defineComponent({
     name: 'TopBarVideo',
     components: {
@@ -98,10 +97,12 @@
     },
     data() {
       return {
-        useObjectToQueryString,
-        isVisible: false,
+        links,
+        bextImages,
         value: 40000,
+        isVisible: false,
         showVideo: false,
+        useObjectToQueryString,
         videoStyle: 'w-full h-[36rem] mr-auto ml-auto rounded-2xl ',
         videoUrl: 'https://www.youtube.com/embed/Mlg8eDX61uE',
         tutorial: {

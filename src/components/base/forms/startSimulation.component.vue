@@ -2,8 +2,7 @@
   <div class="w-full">
     <form
       class="w-full bg-white sm:bg-transparent rounded-xl p-5 flex flex-col gap-5"
-      @submit.prevent="onSubmit"
-    >
+      @submit.prevent="onSubmit">
       <div class="flex flex-col gap-2">
         <label for="name" class="sm:text-white">Nome Completo</label>
         <input
@@ -12,8 +11,7 @@
           type="text"
           placeholder="Digite seu nome completo"
           required
-          class="bg-zinc-200 rounded-xl p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
-        />
+          class="bg-zinc-200 rounded-xl p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none" />
       </div>
       <div class="flex flex-col gap-2">
         <label for="email" class="sm:text-white">E-mail</label>
@@ -23,8 +21,7 @@
           type="email"
           placeholder="Seu melhor e-mail"
           required
-          class="bg-zinc-200 rounded-xl p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
-        />
+          class="bg-zinc-200 rounded-xl p-2 focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none" />
       </div>
 
       <div class="flex flex-col gap-2">
@@ -38,14 +35,12 @@
           type="text"
           placeholder="R$ 250.000,00"
           required
-          class="bg-zinc-200 rounded-xl p-2 text-xl focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none"
-        />
+          class="bg-zinc-200 rounded-xl p-2 text-xl focus-within:shadow-md transition-all ring-0 focus-visible:ring-4 focus-visible:ring-blue-600 focus-visible:outline-none" />
       </div>
       <button
         title="Iniciar simulação agora"
         aria-label="Iniciar simulação agora"
-        class="bg-primary w-fit mx-auto px-3 py-2 rounded-xl text-white font-bold mt-4 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90"
-      >
+        class="bg-primary w-fit mx-auto px-3 py-2 rounded-xl text-white font-bold mt-4 hover:-translate-y-1 hover:shadow-md hover:shadow-black/50 transition-all active:scale-90">
         Iniciar simulação agora
       </button>
     </form>
@@ -53,70 +48,76 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { useRoute } from 'vue-router'
-import {
-  CurrencyInputOptions,
-  useCurrencyInput,
-  CurrencyDisplay,
-} from 'vue-currency-input'
-import { useObjectToQueryString } from '@/composables/useObjectToQueryString'
-import information from '@/configurations/information'
+  import { defineComponent, ref } from 'vue';
+  import { useRoute } from 'vue-router';
+  import {
+    CurrencyInputOptions,
+    useCurrencyInput,
+    CurrencyDisplay,
+  } from 'vue-currency-input';
+  import { links } from '@/configurations/information';
 
-export default defineComponent({
-  props: {
-    showHomeEquity: {
-      type: Boolean,
-      required: true,
-    }
-  },
-  data() {
-    const options: CurrencyInputOptions = {
-      currency: 'BRL',
-      currencyDisplay: CurrencyDisplay.narrowSymbol,
-      precision: 2,
-      hideCurrencySymbolOnFocus: false,
-      hideGroupingSeparatorOnFocus: false,
-      hideNegligibleDecimalDigitsOnFocus: false,
-      autoDecimalDigits: true,
-      useGrouping: true,
-      accountingSign: false,
-    }
+  export default defineComponent({
+    props: {
+      showHomeEquity: {
+        type: Boolean,
+        required: true,
+      },
+    },
+    data() {
+      const options: CurrencyInputOptions = {
+        currency: 'BRL',
+        currencyDisplay: CurrencyDisplay.narrowSymbol,
+        precision: 2,
+        hideCurrencySymbolOnFocus: false,
+        hideGroupingSeparatorOnFocus: false,
+        hideNegligibleDecimalDigitsOnFocus: false,
+        autoDecimalDigits: true,
+        useGrouping: true,
+        accountingSign: false,
+      };
 
-    const { inputRef: realtyValue } = useCurrencyInput(options)
-    const { inputRef: creditAmount } = useCurrencyInput(options)
+      const { inputRef: realtyValue } = useCurrencyInput(options);
+      const { inputRef: creditAmount } = useCurrencyInput(options);
 
-    return {
-      route: useRoute(),
-      realtyValue,
-      creditAmount
-    }
-  },
-  methods: {
-    onSubmit(event: Event) {
-      if (!event || !event.target) return
-      const formData = new FormData(event.target as HTMLFormElement)
+      return {
+        route: useRoute(),
+        realtyValue,
+        creditAmount,
+      };
+    },
+    methods: {
+      onSubmit(event: Event) {
+        if (!event || !event.target) return;
+        const formData = new FormData(event.target as HTMLFormElement);
 
-      const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        realtyValue: formData.get('realtyValue'),
-        creditAmount: formData.get('creditAmount'),
-        rangeSlider: '',
-      }
+        const data = {
+          name: formData.get('name'),
+          email: formData.get('email'),
+          realtyValue: formData.get('realtyValue'),
+          creditAmount: formData.get('creditAmount'),
+          rangeSlider: '',
+        };
 
-      if (data.creditAmount) {
-        const cleanedValue = data.creditAmount.toString().replace('R$', '').trim()
-        const formattedValue = cleanedValue.replace(/\./g, '').replace(',', '.')
-        const floatNumber = parseFloat(formattedValue)
-        data.creditAmount = `${floatNumber}`
-      }
+        if (data.creditAmount) {
+          const cleanedValue = data.creditAmount
+            .toString()
+            .replace('R$', '')
+            .trim();
+          const formattedValue = cleanedValue
+            .replace(/\./g, '')
+            .replace(',', '.');
+          const floatNumber = parseFloat(formattedValue);
+          data.creditAmount = `${floatNumber}`;
+        }
 
-      localStorage.setItem('simulationData', JSON.stringify(data))
-      window.fbq('track', 'ViewContent', { eventID: new Date().toISOString() })
-      window.open(information.appSimulator + this.$root.utms, '_blank')
-    }
-  }
-})
+        localStorage.setItem('simulationData', JSON.stringify(data));
+        // @ts-expect-error no types
+        window.fbq('track', 'ViewContent', {
+          eventID: new Date().toISOString(),
+        });
+        window.open(links.simulator.url + this.$root.utms, '_blank');
+      },
+    },
+  });
 </script>
-
