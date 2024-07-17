@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { Plugin } from 'vite';
 import { exec } from 'child_process';
-import { routes } from '@/router/routes';
+import { routes } from '../router/routes';
 const routesToAudit = routes.map((route) => route.path);
 
 export function lighthouse(): Plugin {
@@ -20,7 +20,7 @@ export function lighthouse(): Plugin {
       /**
        * Cria o diretório caso não exista
        */
-      const reportsDir = path.resolve(__dirname, 'lighthouse');
+      const reportsDir = path.resolve(__dirname, '../../lighthouse');
       if (!fs.existsSync(reportsDir)) {
         fs.mkdirSync(reportsDir, { recursive: true });
       }
@@ -32,10 +32,10 @@ export function lighthouse(): Plugin {
        */
       const runLighthouse = (url: string): Promise<void> => {
         return new Promise((resolve, reject) => {
-          const outputPath = path.resolve(
-            reportsDir,
-            `${url.replace(/\//g, '_')}.html`,
-          );
+          const fileName = url
+            .replace(/\//g, '_')
+            .replace(/[^a-zA-Z0-9_]/g, '');
+          const outputPath = path.resolve(reportsDir, `${fileName}.html`);
           const command = `lighthouse ${url} --output html --output-path ${outputPath}`;
           exec(command, (err, stdout, stderr) => {
             if (err) {
@@ -52,8 +52,12 @@ export function lighthouse(): Plugin {
         });
       };
 
-      for (const route of routesToAudit) {
-        await runLighthouse(`${baseUrl}${route}`);
+      try {
+        for (const route of routesToAudit) {
+          await runLighthouse(`${baseUrl}${route}`);
+        }
+      } finally {
+        await viteServer.close();
       }
 
       await viteServer.close();

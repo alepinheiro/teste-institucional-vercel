@@ -17,7 +17,7 @@ export default defineConfig({
       '@': resolve(projectRootDir, 'src'),
     },
   },
-  plugins: [alias(), vue(), vercel(), generateResponsiveImages(), lighthouse()],
+  plugins: [alias(), vue(), vercel(), generateResponsiveImages()],
   server: {
     host: '0.0.0.0',
     port: 10086,
