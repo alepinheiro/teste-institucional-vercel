@@ -13,7 +13,7 @@
         class="bg-primary text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 rounded-lg text-2xl sm:text-xl sm:p-2 p-4 font-semibold"
         :href="links.hotmart.xoAluguel + useObjectToQueryString($route.query)"
         target="_blank">
-        <Icon icon="fa-solid fa-cart-shopping" /> COMPRE AGORA
+        <CartShopping /> COMPRE AGORA
       </a>
     </div>
     <div class="mt-24 md:mt-0 sm:mt-0">
@@ -32,8 +32,10 @@
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import { defineComponent } from 'vue';
   import { links } from '@/configurations/information';
+  import CartShopping from '@/assets/svg/faIcon/cartShopping.vue';
   export default defineComponent({
     name: 'BannerXoAluguel',
+    components: { CartShopping },
     data() {
       return {
         links,
