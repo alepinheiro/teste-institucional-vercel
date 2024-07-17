@@ -58,7 +58,7 @@
 
         <a
           :href="links.simulator.url + useObjectToQueryString($route.query)"
-          class="bg-primary px-5 py-3 rounded-xl text-white font-bold sm:mt-2"
+          class="bg-primary px-5 py-3 rounded-xl text-white font-bold sm:mt-2 hover:scale-105 transition ease-in-out hover:drop-shadow-md"
           target="_blank">
           <span class="xl:hidden lg:hidden md:hidden">
             Simule seu crédito

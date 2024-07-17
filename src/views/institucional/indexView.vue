@@ -1,15 +1,16 @@
 <template>
-  <div class="relative z-0 overflow-hidden bg-[#efefef]">
+  <div class="relative z-0 overflow-hidden">
     <ResponsiveImage
       imagePath="/images/Home/backgroundLines.jpg"
-      class="absolute -top-40 -left-96 -z-10 hidden min-md:block"
+      class="absolute -left-40 inset-y-0 -z-10 hidden min-lg:block opacity-30"
       :imgAttrs="{
         loading: 'lazy',
         role: 'presentation',
+        class: ' max-w-sm h-1/3',
       }" />
     <ResponsiveImage
       imagePath="/images/Home/backgroundLines.jpg"
-      class="absolute top-96 -right-96 -z-10 hidden md:block -scale-x-100"
+      class="absolute top-96 -right-96 -z-10 min-lg:hidden block -scale-x-100"
       :imgAttrs="{
         loading: 'lazy',
         role: 'presentation',

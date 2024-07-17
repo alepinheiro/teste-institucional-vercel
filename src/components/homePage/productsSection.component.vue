@@ -16,6 +16,7 @@
       <Swiper
         v-bind="{
           loop: useWindow.width.value < 1024,
+          class: 'p-2',
           spaceBetween: 20,
           autoHeight: false,
           slidesPerView: 1.2,
@@ -44,7 +45,7 @@
         <SwiperSlide
           v-for="{ title, description, moreInformation } of steps"
           :key="title"
-          class="bg-white text-textPrimary hover:text-white py-8 px-4 rounded-lg mb-16 h-auto group hover:bg-bgDarkColor transition ease-in-out">
+          class="bg-white text-textPrimary hover:text-white py-8 px-4 rounded-lg mb-16 h-auto group hover:bg-bgDarkColor transition hover:-translate-y-2 hover:drop-shadow-md ease-in-out">
           <div class="flex flex-col gap-6 justify-between h-56">
             <h3 class="text-2xl font-bold">
               {{ title }}

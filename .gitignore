@@ -167,4 +167,6 @@ yarn.lock
 /storybook-static/
 
 # Vercel
+.vercel
+.vercel/
 .vercel/*
