@@ -16,7 +16,7 @@
         role: 'presentation',
       }" />
     <TopBar color="primary" class="text-textPrimary" />
-    <HeroSection class="min-h-screen" />
+    <HeroSection class="min-h-screen bg-[#efefef]" />
 
     <BusinessPartners
       title="A melhor plataforma multibancos."
