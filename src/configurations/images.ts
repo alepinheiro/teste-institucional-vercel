@@ -391,7 +391,7 @@ export const warrenPage = {
 
 export const mcfPage = {
   logo: {
-    src: '/images/mcf/logoMCF.svg',
-    alt: 'Minha casa Financiada',
+    src: '/images/warren/HeroLogosWhite.svg',
+    alt: 'Bext + BestHub',
   },
 };
