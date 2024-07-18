@@ -44,6 +44,7 @@
               <img
                 :src="`/images/bestHub/icons/banks/${logo}.svg`"
                 :alt="text"
+                loading="lazy"
                 class="my-auto mx-auto h-10 py-2" />
             </span>
           </div>
@@ -52,6 +53,7 @@
     </div>
   </section>
 </template>
+
 <script lang="ts">
   import { defineComponent } from 'vue';
   import { links } from '@/configurations/information';

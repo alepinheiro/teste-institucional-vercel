@@ -15,17 +15,19 @@
           <li
             v-for="{ banksFeature, bestFeature, id, title } of tableItems"
             :key="id"
-            class="flex flex-row h-14 sm:h-24 text-xl"
-          >
+            class="flex flex-row h-14 sm:h-24 text-xl">
             <div class="w-4/6 sm:w-1/2 my-auto">
               {{ title }}
             </div>
             <div class="w-1/6 sm:w-1/4 text-center my-auto">
-              <i :class="`fa-solid ${ bestFeature ? 'fa-check text-green-500' : 'fa-xmark text-zinc-600' }`"></i>
-
+              <Check
+                v-if="bestFeature"
+                class="text-green-500 w-5 h-5 mx-auto" />
+              <Xmark v-else class="text-zinc-600 w-5 h-5 mx-auto" />
             </div>
             <div class="w-1/6 sm:w-1/4 text-center my-auto">
-              <i :class="`fa-solid ${ banksFeature ? 'fa-check text-red-500' : 'fa-xmark text-zinc-600' }`"></i>
+              <Check v-if="banksFeature" class="text-red-500 w-5 h-5 mx-auto" />
+              <Xmark v-else class="text-zinc-600 w-5 h-5 mx-auto" />
             </div>
           </li>
         </ul>
@@ -33,76 +35,83 @@
     </div>
   </section>
 </template>
+
 <script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-  name: 'BestTable',
-  data() {
-    const tableItems = [
-      {
-        id: 1,
-        title: 'Plataforma multibancos',
-        bestFeature: true,
-        banksFeature: true,
-      },
-      {
-        id: 2,
-        title: 'CRM completo com a cara da sua marca',
-        bestFeature: true,
-        banksFeature: false,
-      },
-      {
-        id: 3,
-        title: 'Um time de especialistas para lhe ajudar',
-        bestFeature: true,
-        banksFeature: false,
-      },
-      {
-        id: 4,
-        title: 'Agilidade para as suas operações',
-        bestFeature: true,
-        banksFeature: false,
-      },
-      {
-        id: 5,
-        title: 'Assessoria personalizada para seu cliente',
-        bestFeature: true,
-        banksFeature: false,
-      },
-      {
-        id: 6,
-        title: 'Ecossistema educacional completo',
-        bestFeature: true,
-        banksFeature: false,
-      },
-      {
-        id: 7,
-        title: 'Programa de certificação e treinamento',
-        bestFeature: true,
-        banksFeature: false,
-      },
-      {
-        id: 8,
-        title: 'Foco em você e no seu cliente',
-        bestFeature: true,
-        banksFeature: false,
-      },
-      {
-        id: 9,
-        title: 'Vivemos do seu resultado',
-        bestFeature: true,
-        banksFeature: false,
-      },
-      {
-        id: 10,
-        title: 'Uma plataforma multiprodutos',
-        bestFeature: true,
-        banksFeature: true,
-      },
-    ]
-    return {
-      tableItems,
-    }
-  },
-})
+  import { defineComponent } from 'vue';
+  import Check from '@/assets/svg/faIcon/check.vue';
+  import Xmark from '@/assets/svg/faIcon/xmark.vue';
+  export default defineComponent({
+    name: 'BestTable',
+    components: {
+      Check,
+      Xmark,
+    },
+    data() {
+      const tableItems = [
+        {
+          id: 1,
+          title: 'Plataforma multibancos',
+          bestFeature: true,
+          banksFeature: true,
+        },
+        {
+          id: 2,
+          title: 'CRM completo com a cara da sua marca',
+          bestFeature: true,
+          banksFeature: false,
+        },
+        {
+          id: 3,
+          title: 'Um time de especialistas para lhe ajudar',
+          bestFeature: true,
+          banksFeature: false,
+        },
+        {
+          id: 4,
+          title: 'Agilidade para as suas operações',
+          bestFeature: true,
+          banksFeature: false,
+        },
+        {
+          id: 5,
+          title: 'Assessoria personalizada para seu cliente',
+          bestFeature: true,
+          banksFeature: false,
+        },
+        {
+          id: 6,
+          title: 'Ecossistema educacional completo',
+          bestFeature: true,
+          banksFeature: false,
+        },
+        {
+          id: 7,
+          title: 'Programa de certificação e treinamento',
+          bestFeature: true,
+          banksFeature: false,
+        },
+        {
+          id: 8,
+          title: 'Foco em você e no seu cliente',
+          bestFeature: true,
+          banksFeature: false,
+        },
+        {
+          id: 9,
+          title: 'Vivemos do seu resultado',
+          bestFeature: true,
+          banksFeature: false,
+        },
+        {
+          id: 10,
+          title: 'Uma plataforma multiprodutos',
+          bestFeature: true,
+          banksFeature: true,
+        },
+      ];
+      return {
+        tableItems,
+      };
+    },
+  });
 </script>

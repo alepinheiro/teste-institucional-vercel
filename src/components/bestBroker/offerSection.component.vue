@@ -49,7 +49,7 @@
                     useObjectToQueryString($route.query)
                   "
                   target="_blank">
-                  <i class="fa-solid fa-cart-shopping"></i>
+                  <CartShopping class="w-5 h-5" />
                   <span> Compre agora </span>
                 </a>
               </div>
@@ -70,10 +70,11 @@
   import GradientBackground from '@/components/bestBroker/gradientBackground.component.vue';
   import { useObjectToQueryString } from '@/composables/useObjectToQueryString';
   import { links } from '@/configurations/information';
+  import CartShopping from '@/assets/svg/faIcon/cartShopping.vue';
 
   export default defineComponent({
     name: 'OfferSection',
-    components: { GradientBackground },
+    components: { GradientBackground, CartShopping },
     data() {
       return {
         links,

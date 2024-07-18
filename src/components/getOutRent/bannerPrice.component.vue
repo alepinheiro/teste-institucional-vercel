@@ -10,10 +10,11 @@
         }" />
 
       <a
-        class="bg-primary text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 rounded-lg text-2xl sm:text-xl sm:p-2 p-4 font-semibold"
+        class="flex flex-row items-center gap-2 w-fit mx-auto bg-primary text-white transition duration-500 ease-in-out transform hover:translate-y-1 hover:scale-105 rounded-lg text-2xl sm:text-xl sm:p-2 p-4 font-semibold"
         :href="links.hotmart.xoAluguel + useObjectToQueryString($route.query)"
         target="_blank">
-        <CartShopping /> COMPRE AGORA
+        <CartShopping class="w-5 h-5 min-lg:w-6 min-lg:h-6" />
+        <span> COMPRE AGORA </span>
       </a>
     </div>
     <div class="mt-24 md:mt-0 sm:mt-0">
