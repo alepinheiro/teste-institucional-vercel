@@ -17,6 +17,7 @@
             spaceBetween: 30,
             pagination: true,
             loop: true,
+            modules: [Autoplay],
             autoplay: {
               delay: 3000,
               disableOnInteraction: false,
@@ -103,6 +104,7 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import { Swiper, SwiperSlide } from 'swiper/vue';
+  import { Autoplay } from 'swiper/modules';
 
   export default defineComponent({
     name: 'ToolsSection',
@@ -110,9 +112,8 @@
       Swiper,
       SwiperSlide,
     },
-
     data() {
-      return {};
+      return { Autoplay };
     },
   });
 </script>
