@@ -39,9 +39,10 @@
     </div>
   </section>
 </template>
+
 <script lang="ts">
-  import { defineComponent } from 'vue';
   import VideoButton from '@/components/bestHub/videoButton.component.vue';
+  import { defineComponent } from 'vue';
   import { links } from '@/configurations/information';
   export default defineComponent({
     name: 'VideoSection',

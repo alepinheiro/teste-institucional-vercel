@@ -38,6 +38,10 @@
     "src/translations/i18n.ts"
   ],
   "exclude": [
-    "node_modules"
+    "dist",
+    ".yarn",
+    "public",
+    "lighthouse",
+    "node_modules",
   ]
 }

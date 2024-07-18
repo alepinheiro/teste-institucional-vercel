@@ -12,6 +12,7 @@
     <TheFooter />
   </main>
 </template>
+
 <script lang="ts">
   import { defineComponent } from 'vue';
   import Hero from '@/components/warren/heroSection.component.vue';
@@ -27,12 +28,12 @@
     name: 'WarrenLandingPage',
     components: {
       Hero,
-      Products,
-      BusinessPartners,
-      ComparisonTable,
-      CreditSteps,
       Contact,
+      Products,
       TheFooter,
+      CreditSteps,
+      ComparisonTable,
+      BusinessPartners,
     },
     props: {
       showMenu: {

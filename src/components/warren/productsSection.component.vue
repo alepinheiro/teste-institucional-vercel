@@ -14,13 +14,52 @@
 
     <div
       class="relative z-0 px-5 md:px-0 lg:px-0 xl:px-0 lg:max-w-6xl xl:max-w-6xl mx-auto w-full">
-      <component
-        :is="'swiper-container'"
-        id="productSliderWarren"
-        v-bind="sliderOptions"
-        class="w-full">
-        <component
-          :is="'swiper-slide'"
+      <Swiper
+        v-bind="{
+          loop: true,
+          class: '',
+          spaceBetween: 20,
+          slidesPerView: 1,
+          modules: [Pagination, Autoplay, Navigation],
+          autoplay: {
+            delay: 6000,
+          },
+          pagination: {
+            clickable: true,
+            bulletActiveClass:
+              'bg-warren-terracota opacity-100 scale-110 transition',
+          },
+          navigation: {
+            enabled: true,
+            prevEl: '.wNavigationPrev',
+            nextEl: '.wNavigationNext',
+          },
+          breakpoints: {
+            668: {
+              slidesPerView: 2.5,
+              centeredSlides: true,
+              loop: false,
+            },
+            1024: {
+              slidesPerView: 3.5,
+              centeredSlides: true,
+              loop: false,
+              pagination: true,
+            },
+            1278: {
+              slidesPerView: 4,
+              centeredSlides: false,
+              pagination: false,
+              loop: false,
+            },
+            1919: {
+              slidesPerView: 4,
+              centeredSlides: false,
+              pagination: false,
+            },
+          },
+        }">
+        <SwiperSlide
           v-for="{ id, description, options, title } of slides"
           :key="id"
           class="bg-white py-10 px-5 md:px-10 rounded-2xl mb-14 h-auto md:w-96 w-full">
@@ -44,21 +83,23 @@
                   :alt="option.description"
                   loading="lazy"
                   class="w-7 h-7 object-contain" />
+
                 <!--  eslint-disable-next-line vue/no-v-html -->
                 <span class="text-warren-grey" v-html="option.description">
                 </span>
               </div>
             </div>
             <a
-              :href="`${links.warren.simulator}${$root.utms}`"
+              :href="`${links.warren.simulator}${$root?.utms}`"
               target="_blank"
               class="flex flex-row items-center gap-2 text-warren-terracota font-bold">
               <span> Simule grátis </span>
               <i class="fa-solid fa-arrow-right-long"></i>
             </a>
           </div>
-        </component>
-      </component>
+        </SwiperSlide>
+      </Swiper>
+
       <div
         class="absolute bottom-3 h-fit flex inset-x-0 z-[1] px-5 w-full lg:hidden xl:hidden">
         <div class="w-5/6 flex flex-row justify-between mx-auto">
@@ -99,61 +140,22 @@
     </div>
   </section>
 </template>
+
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import { SwiperOptions } from 'swiper/types';
   import { links } from '@/configurations/information';
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 
   export default defineComponent({
     name: 'ProductsSection',
+    components: { Swiper, SwiperSlide },
     setup() {
-      const sliderOptions: SwiperOptions = {
-        spaceBetween: 20,
-        slidesPerView: 1,
-        loop: true,
-        autoplay: {
-          delay: 6000,
-        },
-        pagination: {
-          clickable: true,
-          renderBullet: (index, className) => {
-            return `<span class="${className}"></span>`;
-          },
-        },
-        navigation: {
-          enabled: true,
-          prevEl: '.wNavigationPrev',
-          nextEl: '.wNavigationNext',
-        },
-        breakpoints: {
-          668: {
-            slidesPerView: 2.5,
-            centeredSlides: true,
-            loop: false,
-          },
-          1024: {
-            slidesPerView: 3.5,
-            centeredSlides: true,
-            loop: false,
-            pagination: true,
-          },
-          1278: {
-            slidesPerView: 4,
-            centeredSlides: false,
-            pagination: false,
-            loop: false,
-          },
-          1919: {
-            slidesPerView: 4,
-            centeredSlides: false,
-            pagination: false,
-          },
-        },
-      };
-
       return {
         links,
-        sliderOptions,
+        Pagination,
+        Autoplay,
+        Navigation,
       };
     },
     data() {
@@ -257,20 +259,3 @@
     },
   });
 </script>
-
-<style lang="scss" scoped>
-  swiper-container {
-    &::part(pagination) {
-      @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center z-10 bottom-3 h-5 lg:hidden xl:hidden;
-    }
-
-    &::part(bullet) {
-      @apply rounded-full scale-125 transition-all;
-      color: #d9d9d9;
-    }
-
-    &::part(bullet-active) {
-      @apply w-4 h-4 rounded-full transition-all bg-warren-terracota;
-    }
-  }
-</style>

@@ -14,13 +14,54 @@
 
     <div
       class="relative z-0 px-5 md:px-0 lg:px-0 xl:px-0 lg:max-w-6xl xl:max-w-6xl mx-auto w-full">
-      <component
-        :is="'swiper-container'"
+      <Swiper
         id="productSliderMcf"
-        v-bind="sliderOptions"
+        v-bind="{
+          loop: true,
+          spaceBetween: 20,
+          slidesPerView: 1,
+          modules: [Pagination, Autoplay, Navigation],
+          autoplay: {
+            delay: 6000,
+          },
+          updateOnWindowResize: true,
+          pagination: {
+            clickable: true,
+            bulletActiveClass:
+              'bg-mcf-freeSpeechAquamarine opacity-100 scale-110 transition',
+          },
+          navigation: {
+            enabled: true,
+            prevEl: '.wNavigationPrev',
+            nextEl: '.wNavigationNext',
+          },
+          breakpoints: {
+            668: {
+              slidesPerView: 2.5,
+              centeredSlides: true,
+              loop: false,
+            },
+            1024: {
+              slidesPerView: 3.5,
+              centeredSlides: true,
+              loop: false,
+              pagination: true,
+            },
+            1278: {
+              slidesPerView: 4,
+              centeredSlides: false,
+              pagination: false,
+              loop: false,
+            },
+            1919: {
+              slidesPerView: 4,
+              centeredSlides: false,
+              pagination: false,
+            },
+          },
+        }"
         class="w-full">
-        <component
-          :is="'swiper-slide'"
+        <SwiperSlide
           v-for="{ id, description, options, title } of slides"
           :key="id"
           class="bg-white py-10 px-5 md:px-10 rounded-2xl mb-14 h-auto md:w-96 w-full">
@@ -56,8 +97,8 @@
               <i class="fa-solid fa-arrow-right-long"></i>
             </a>
           </div>
-        </component>
-      </component>
+        </SwiperSlide>
+      </Swiper>
       <div
         class="absolute bottom-3 h-fit flex inset-x-0 z-[1] px-5 w-full lg:hidden xl:hidden">
         <div class="w-5/6 flex flex-row justify-between mx-auto">
@@ -99,15 +140,17 @@
   </section>
 </template>
 <script lang="ts">
-  import { defineComponent, markRaw } from 'vue';
-  import { SwiperOptions } from 'swiper/types';
-  import { links } from '@/configurations/information';
   import BuildingColumnIcon from '@/components/icons/buildingColumns.component.vue';
-  import Percent from '@/components/icons/percentIcon.component.vue';
   import Calendar from '@/components/icons/calendarIcon.component.vue';
-  import DollarSign from '@/components/icons/dollarSign.component.vue';
-  import DollarBag from '@/components/icons/dollarBag.component.vue';
   import Car from '@/components/icons/carIcon.component.vue';
+  import DollarBag from '@/components/icons/dollarBag.component.vue';
+  import DollarSign from '@/components/icons/dollarSign.component.vue';
+  import Percent from '@/components/icons/percentIcon.component.vue';
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+  import { defineComponent, markRaw } from 'vue';
+  import { links } from '@/configurations/information';
+  import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+
   /**
    * # Visão Geral
    * O componente `ProductsSection` é responsável por exibir uma seção de produtos de
@@ -119,56 +162,17 @@
    */
   export default defineComponent({
     name: 'ProductsSection',
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
     emits: ['click'],
     setup() {
-      const sliderOptions: SwiperOptions = {
-        spaceBetween: 20,
-        slidesPerView: 1,
-        loop: true,
-        autoplay: {
-          delay: 6000,
-        },
-        updateOnWindowResize: true,
-        pagination: {
-          clickable: true,
-          renderBullet: (index, className) => {
-            return `<span class="${className}"></span>`;
-          },
-        },
-        navigation: {
-          enabled: true,
-          prevEl: '.wNavigationPrev',
-          nextEl: '.wNavigationNext',
-        },
-        breakpoints: {
-          668: {
-            slidesPerView: 2.5,
-            centeredSlides: true,
-            loop: false,
-          },
-          1024: {
-            slidesPerView: 3.5,
-            centeredSlides: true,
-            loop: false,
-            pagination: true,
-          },
-          1278: {
-            slidesPerView: 4,
-            centeredSlides: false,
-            pagination: false,
-            loop: false,
-          },
-          1919: {
-            slidesPerView: 4,
-            centeredSlides: false,
-            pagination: false,
-          },
-        },
-      };
-
       return {
         links,
-        sliderOptions,
+        Autoplay,
+        Navigation,
+        Pagination,
       };
     },
     data() {
@@ -272,20 +276,3 @@
     },
   });
 </script>
-
-<style lang="scss" scoped>
-  swiper-container {
-    &::part(pagination) {
-      @apply absolute inset-x-0 flex flex-row items-center gap-5 w-auto justify-center z-10 bottom-3 h-5 lg:hidden xl:hidden;
-    }
-
-    &::part(bullet) {
-      @apply rounded-full scale-125 transition-all;
-      color: #d9d9d9;
-    }
-
-    &::part(bullet-active) {
-      @apply w-4 h-4 rounded-full transition-all bg-mcf-freeSpeechAquamarine;
-    }
-  }
-</style>

@@ -10,8 +10,9 @@
             role: 'presentation',
             loading: 'eager',
             fetchpriority: 'high',
+            class: 'object-contain object-right',
           }"
-          class="hidden xl:block absolute inset-y-0 -right-[15%] h-full object-cover z-0" />
+          class="hidden xl:block absolute inset-y-0 -right-[15%] h-full z-0" />
         <div
           class="sm:bg-black/50 rounded-xl sm:flex flex-row items-center gap-4 py-4 px-6 w-fit m-auto z-10 h-fit sm:mb-5">
           <button
@@ -20,7 +21,7 @@
             <div
               class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"></div>
             <div class="flex m-auto sm:w-6 sm:h-6 justify-center items-center">
-              <Icon icon="fa-solid fa-play" class="z-10 text-black" />
+              <Play class="z-10 text-black w-5 h-5" />
             </div>
           </button>
           <span class="font-bold font-Public-Sans text-base sm:block hidden">
@@ -90,9 +91,10 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import GradientBackground from '@/components/bestBroker/gradientBackground.component.vue';
+  import Play from '@/assets/svg/faIcon/play.vue';
   export default defineComponent({
     name: 'HeroSection',
-    components: { GradientBackground },
+    components: { Play, GradientBackground },
     emits: ['openPopUp'],
     data() {
       return {

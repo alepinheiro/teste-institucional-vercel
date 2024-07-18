@@ -12,7 +12,7 @@
             <div
               class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"></div>
             <div class="flex m-auto">
-              <Icon icon="fa-solid fa-play" class="z-10 text-black" />
+              <Play class="z-10 text-black w-5 h-5" />
             </div>
           </button>
           <span class="font-bold font-Public-Sans text-sm md:hidden">
@@ -81,7 +81,7 @@
             <div
               class="absolute bg-zinc-200 rounded-full inset-0 animate-ping z-0"></div>
             <div class="flex m-auto">
-              <Play class="z-10 text-black" />
+              <Play class="z-10 text-black w-5 h-5" />
             </div>
           </button>
         </div>
